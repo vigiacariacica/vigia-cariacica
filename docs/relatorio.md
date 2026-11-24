@@ -1,6 +1,6 @@
 # Vigia Cariacica: relatório automático
 
-_Gerado em 24/11/2026 16:40 (UTC). Dados públicos oficiais; como cada dado é obtido em [METODOLOGIA.md](METODOLOGIA.md)._
+_Gerado em 24/11/2026 18:10 (UTC). Dados públicos oficiais; como cada dado é obtido em [METODOLOGIA.md](METODOLOGIA.md)._
 
 ## Placar de resultados
 
@@ -391,7 +391,7 @@ Fonte: PNCP. Total no período: R$ 1.485.974.049,54 em 278 contratos.
 
 Cada pedido protocolado pelo Vigia e o prazo da resposta: 20 dias na Lei de Acesso, prorrogáveis por mais 10, e 30 dias na Ouvidoria. A lista completa, com protocolo e órgão, está em `data/pedidos/pedidos.csv`.
 
-**Respondidas: 3 de 56 (5%).** No prazo: 53. Vencidas sem resposta: 0.
+**Respondidas: 3 de 60 (5%).** No prazo: 57. Vencidas sem resposta: 0.
 
 ### Vencem nos próximos 7 dias
 
