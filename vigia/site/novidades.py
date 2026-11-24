@@ -126,5 +126,5 @@ MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "a
 def por_mes(eventos: list[dict]) -> list[tuple[str, list[dict]]]:
     meses: dict[str, list] = {}
     for e in eventos:
-        meses.setdefault(f"{MESES[e['data'].month - 1]} de {e['data'].year}", []).append(e)
+        meses.setdefault(f"{MESES[e['data'].month - 1].capitalize()} de {e['data'].year}", []).append(e)
     return list(meses.items())

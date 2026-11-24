@@ -8,7 +8,7 @@
 
 <div class="emergencia-linha">
   <p><strong>Emergência? Ligue de graça:</strong></p>
-  <ul>{% for n, nome in urgencia[:4] %}<li><a href="tel:{{ n }}"><b>{{ n }}</b><span>{{ nome|replace(' Militar', '') }}</span></a></li>{% endfor %}</ul>
+  <ul>{% for n, nome in urgencia %}<li><a href="tel:{{ n }}"><b>{{ n }}</b><span>{{ nome|replace(' Militar', '')|replace('Violência contra a mulher', 'Mulher')|replace('Direitos humanos', 'Direitos humanos') }}</span></a></li>{% endfor %}</ul>
 </div>
 
 <div class="grade-2 larga-esq">
@@ -37,7 +37,7 @@
         <p class="aviso" id="aviso-dado" role="alert" hidden></p>
       </div>
       <div class="campo">
-        <label for="d-prova">Onde dá para ver isso? <span class="opcional">(se quiser)</span></label>
+        <label for="d-prova">Onde dá para ver? <span class="opcional">(se quiser)</span></label>
         <p class="dica" id="dica-prova">Rua, nome do posto ou da escola. Tem foto? Diga o que ela mostra.</p>
         <textarea id="d-prova" name="{{ den.campos.prova }}" rows="3" maxlength="1500" aria-describedby="dica-prova"></textarea>
       </div>

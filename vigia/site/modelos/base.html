@@ -20,7 +20,7 @@
 <meta property="og:locale" content="pt_BR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#00923f">
-<link rel="icon" href="/marca.svg" type="image/svg+xml">
+<link rel="icon" href="/marca-v.svg" type="image/svg+xml">
 <link rel="icon" href="/icone-48.png" type="image/png" sizes="48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.webmanifest">
@@ -35,7 +35,7 @@
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
 <header class="topo">
   <div class="topo-in">
-    <a class="marca" href="/"><img src="/bandeira.svg" alt="" width="48" height="32"><span class="nome">Vigia Cariacica</span></a>
+    <a class="marca" href="/" aria-label="Vigia Cariacica, página inicial"><img src="/marca-v.svg" alt="" width="36" height="36"><span class="nome"><b>Vigia</b><small>Cariacica</small></span></a>
     {% if pagina != "denuncie" %}<a class="btn denunciar" href="/denuncie/">Denunciar</a>{% endif %}
     <details class="menu-cel">
       <summary class="btn">Menu</summary>
@@ -66,7 +66,7 @@
   </nav>
 </header>
 <main id="conteudo" tabindex="-1">
-<p class="ouvir-topo" data-nao-ler><button class="btn" type="button" data-ouvir aria-pressed="false">Ouvir esta página</button></p>
+<p class="linha-protocolo" data-nao-ler><span>Atualizado {{ hoje_dm }}</span><button class="ouvir" type="button" data-ouvir aria-pressed="false">Ouvir esta página</button></p>
 {% block conteudo %}{% endblock %}
 </main>
 <footer class="rodape">
