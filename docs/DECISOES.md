@@ -14,6 +14,13 @@ com a data e o motivo, no mesmo commit da mudança. O histórico do git guarda o
 
 ## Dados e publicação
 
+- **24/11/2026, Radar do dia (`vigia/radar.py`, workflow `radar.yml`).** Depois de cada coleta, o robô lê os dados que
+  já baixou e, se houver algo novo que pede atenção (pedido pela LAI que vence em 3 dias ou venceu sem resposta,
+  edição do Diário Oficial com compra sem licitação, emergência, aditivo ou crédito extra acima de R$ 1 milhão,
+  contrato novo acima de R$ 500 mil, aditivo que aumenta valor), abre ou comenta a issue "Radar do dia". A issue
+  avisa por e-mail quem acompanha o repositório. Só números, protocolos públicos e links; nenhum nome de pessoa ou
+  empresa. Motivo: o que é mecânico roda na nuvem, de graça e sem IA; a IA só entra para o que exige julgamento.
+
 - **24/11/2026, Diário Oficial de Cariacica entra na coleta diária** (`vigia/coletores/diario_oficial.py`). A fonte
   é a API pública que o próprio site do Diário usa. Para cada edição nova, o robô conta quantas vezes aparecem
   dispensa de licitação, inexigibilidade, contratação emergencial, termo aditivo, adesão a ata e contratação
