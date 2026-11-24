@@ -7,6 +7,8 @@ Nada é escrito à mão na página. Tudo sai de arquivos públicos deste reposit
 - data/pedidos/pedidos.csv e perguntas_publicas.csv: as perguntas pela Lei de Acesso.
 - data/pedidos/respostas_publicas.csv: o resumo público de uma resposta, quando já foi conferido.
 - data/resultados.csv: o que mudou, com prova.
+- data/site/orgaos.csv: cada caso que o Vigia levou a um órgão com poder de agir (Tribunal de Contas, Ministério
+  Público, Defensoria), só DEPOIS de protocolado (data, órgão, assunto, situação, prova pública).
 """
 from __future__ import annotations
 
@@ -18,6 +20,7 @@ from . import dados as D
 
 ARQ_PUB = D.SITE / "publicacoes.csv"
 ARQ_RESP = D.DADOS / "pedidos" / "respostas_publicas.csv"
+ARQ_ORGAOS = D.SITE / "orgaos.csv"
 TIPOS = {"video": "Vídeo", "post": "Post", "carrossel": "Carrossel", "apuracao": "Apuração"}
 REDES = (("instagram.com", "Ver no Instagram"), ("tiktok.com", "Ver no TikTok"), ("x.com", "Ver no X"),
          ("facebook.com", "Ver no Facebook"), ("youtube.com", "Ver no YouTube"), ("youtu.be", "Ver no YouTube"))
@@ -57,6 +60,11 @@ def publicacoes() -> list[dict]:
 def respostas() -> dict[str, dict]:
     """Resumo público de cada resposta já conferida, por número do pedido."""
     return {r["protocolo"]: r for r in _ler(ARQ_RESP)}
+
+
+def orgaos() -> list[dict]:
+    """Casos levados a órgãos de controle, já protocolados, do mais novo para o mais antigo."""
+    return sorted(_ler(ARQ_ORGAOS), key=lambda r: r["data"], reverse=True)
 
 
 def _plural(n: int, um: str, varios: str) -> str:
@@ -111,6 +119,10 @@ def linha_do_tempo(perg: dict, pubs: list[dict], resultados: list[dict], hoje: d
                    "titulo": f"{_plural(len(its), 'pergunta ficou', 'perguntas ficaram')} sem resposta no prazo",
                    "texto": f"Para: {_quem(its)}. Agora a gente cobra.", "link": "/perguntas/",
                    "ver": "Ver as perguntas", "selo": "", "ordem": 1})
+    for o in orgaos():
+        ev.append({"data": date.fromisoformat(o["data"]), "tipo": "orgao", "rotulo": "Levamos ao órgão",
+                   "titulo": f"{o['assunto']}: levado ao {o['orgao']}", "texto": o.get("situacao", ""),
+                   "link": o.get("prova", ""), "ver": "Ver a prova", "selo": "neutro", "ordem": 0})
     for r in resultados:
         ev.append({"data": date.fromisoformat(r["data"]), "tipo": "resultado", "rotulo": "O que mudou",
                    "titulo": r["o_que_mudou"], "texto": "", "link": r.get("fonte", ""), "ver": "Ver a prova",

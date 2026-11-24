@@ -15,6 +15,17 @@
   {% if p.proximo %}<div><b class="num">{{ ddmm(p.proximo) }}</b><span>próximo prazo de resposta</span></div>{% else %}<div><b class="num">{{ p.atrasadas }}</b><span>atrasadas, sem resposta</span></div>{% endif %}
 </div>
 
+<section class="bloco" aria-labelledby="h-mudou">
+  <h2 id="h-mudou">O que mudou em Cariacica</h2>
+  <p>Post é só o começo. O que conta é quando alguém com poder de agir age.</p>
+  <div class="placar quatro">
+    <div><b class="num">{{ p.respondidas + p.parciais + p.negadas }}</b><span>respostas oficiais recebidas</span></div>
+    <div><b class="num">{{ p.atrasadas }}</b><span>perguntas atrasadas, sendo cobradas</span></div>
+    <div><b class="num">{{ n_orgaos }}</b><span>casos levados a quem pode agir (Tribunal de Contas, Ministério Público, Defensoria)</span></div>
+    <div><b class="num">{{ n_mudou }}</b><span>mudanças comprovadas na cidade</span></div>
+  </div>
+</section>
+
 <div class="filtro" data-filtro hidden>
   <span class="rot">Ver:</span>
   <button type="button" data-ver="tudo" aria-pressed="true">Tudo</button>
