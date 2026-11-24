@@ -1,6 +1,6 @@
 # Vigia Cariacica: relatório automático
 
-_Gerado em 24/11/2026 20:54 (UTC). Dados públicos oficiais; como cada dado é obtido em [METODOLOGIA.md](METODOLOGIA.md)._
+_Gerado em 24/11/2026 21:54 (UTC). Dados públicos oficiais; como cada dado é obtido em [METODOLOGIA.md](METODOLOGIA.md)._
 
 ## Placar de resultados
 
@@ -35,17 +35,17 @@ Fonte: Portal da Transparência de Cariacica, campo "fonte de recursos" e "natur
 
 | Origem | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 | % em 2026 |
 |---|---|---|---|---|---|---|---|
-| Impostos e transferências livres (IPTU, ISS, ICMS, FPM…) | 467,6 | 610,0 | 666,9 | 772,7 | 902,7 | 891,9 | 52,6% |
+| Impostos e transferências livres (IPTU, ISS, ICMS, FPM…) | 467,6 | 610,0 | 666,9 | 772,7 | 902,7 | 892,7 | 52,6% |
 | FUNDEB (educação básica) | 250,7 | 312,2 | 354,3 | 432,5 | 445,6 | 451,6 | 26,6% |
-| Saúde: SUS (fundo a fundo) e convênios | 55,3 | 54,0 | 57,6 | 84,6 | 93,0 | 69,3 | 4,1% |
+| Saúde: SUS (fundo a fundo) e convênios | 55,3 | 54,0 | 57,6 | 84,6 | 93,0 | 69,4 | 4,1% |
 | Convênios e outras transferências da União e do Estado | 10,4 | 28,1 | 30,1 | 32,9 | 54,4 | 68,0 | 4,0% |
 | Operações de crédito (empréstimos) | 4,6 | 45,3 | 62,4 | 64,9 | 14,7 | 49,2 | 2,9% |
-| COSIP (contribuição de iluminação pública) | 41,6 | 31,2 | 41,2 | 38,3 | 37,9 | 40,8 | 2,4% |
+| COSIP (contribuição de iluminação pública) | 41,6 | 31,2 | 41,2 | 38,3 | 37,9 | 40,9 | 2,4% |
 | Educação: salário-educação, FNDE (merenda, transporte) e convênios | 24,4 | 38,3 | 31,6 | 52,8 | 53,4 | 39,0 | 2,3% |
 | Royalties e compensações financeiras (petróleo, minerais) | 13,4 | 17,8 | 21,3 | 21,5 | 22,3 | 24,3 | 1,4% |
 | Previdência dos servidores (RPPS) | 12,0 | 13,0 | 32,7 | 22,0 | 25,0 | 21,5 | 1,3% |
 | Assistência social: FNAS e convênios | 10,8 | 11,2 | 12,6 | 18,1 | 20,7 | 19,2 | 1,1% |
-| Fundos e outros recursos vinculados | 2,5 | 8,6 | 28,0 | 74,0 | 24,5 | 16,5 | 1,0% |
+| Fundos e outros recursos vinculados | 2,5 | 8,6 | 28,0 | 74,0 | 24,5 | 17,0 | 1,0% |
 | Emendas Pix (transferências especiais da União) | 0,8 | 1,9 | 0,5 | 18,2 | 9,3 | 3,2 | 0,2% |
 | Alienação de bens | 0,1 | 1,1 | 2,4 | 3,4 | 2,2 | 2,2 | 0,1% |
 | Não classificada | 0,0 | 0,0 | 0,0 | 0,0 | 0,0 | 0,0 | 0,0% |
@@ -54,8 +54,8 @@ Fonte: Portal da Transparência de Cariacica, campo "fonte de recursos" e "natur
 
 | Tipo de gasto | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 | % em 2026 |
 |---|---|---|---|---|---|---|---|
-| Custeio (serviços, materiais, contratos) | 385,7 | 485,6 | 525,8 | 682,1 | 703,7 | 708,5 | 41,8% |
-| Pessoal e encargos | 381,3 | 461,3 | 523,5 | 605,7 | 677,7 | 618,0 | 36,4% |
+| Custeio (serviços, materiais, contratos) | 385,7 | 485,6 | 525,8 | 682,1 | 703,7 | 709,7 | 41,8% |
+| Pessoal e encargos | 381,3 | 461,3 | 523,5 | 605,7 | 677,7 | 618,1 | 36,4% |
 | Investimentos (obras e equipamentos) | 96,8 | 184,9 | 234,9 | 285,9 | 252,1 | 304,9 | 18,0% |
 | Amortização da dívida | 20,7 | 19,3 | 28,7 | 34,3 | 40,4 | 36,4 | 2,1% |
 | Juros da dívida | 9,8 | 21,5 | 28,5 | 27,1 | 31,7 | 28,8 | 1,7% |
@@ -65,14 +65,14 @@ Fonte: Portal da Transparência de Cariacica, campo "fonte de recursos" e "natur
 
 | Quem recebeu | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 | % em 2026 |
 |---|---|---|---|---|---|---|---|
-| Empresa | 348,3 | 471,8 | 567,8 | 742,0 | 699,5 | 773,1 | 45,6% |
-| Servidores ativos e aposentados (folha, encargos, previdência) | 381,3 | 461,3 | 525,8 | 616,1 | 684,3 | 624,6 | 36,8% |
+| Empresa | 348,3 | 471,8 | 567,8 | 742,0 | 699,5 | 774,1 | 45,6% |
+| Servidores ativos e aposentados (folha, encargos, previdência) | 381,3 | 461,3 | 525,8 | 616,1 | 684,3 | 624,7 | 36,8% |
 | Órgão público, consórcio público ou previdência | 57,4 | 76,8 | 53,5 | 49,1 | 106,9 | 111,6 | 6,6% |
-| Entidade sem fins lucrativos | 52,6 | 63,5 | 64,3 | 80,8 | 84,8 | 79,5 | 4,7% |
+| Entidade sem fins lucrativos | 52,6 | 63,5 | 64,3 | 80,8 | 84,8 | 79,7 | 4,7% |
 | Dívida (bancos e credores) | 30,5 | 40,8 | 57,2 | 61,4 | 72,2 | 65,2 | 3,8% |
 | Consórcio de empresas | 0,0 | 30,2 | 52,4 | 63,7 | 33,3 | 22,4 | 1,3% |
 | Concessionária (energia, água, telefonia, correios) | 19,2 | 19,4 | 13,9 | 16,9 | 19,2 | 16,0 | 0,9% |
-| Pessoa física | 5,0 | 8,8 | 6,6 | 6,2 | 5,4 | 4,2 | 0,3% |
+| Pessoa física | 5,0 | 8,8 | 6,6 | 6,2 | 5,4 | 4,3 | 0,3% |
 
 ### Gasto por morador
 
@@ -85,7 +85,7 @@ População: a declarada ao Tesouro em cada ano (IBGE). Preços de 2025 pelo IPC
 | 2023 | 1.341,4 | 386.495 | 3.471 | 3.804 |
 | 2024 | 1.636,1 | 375.500 | 4.357 | 4.576 |
 | 2025 | 1.705,7 | 375.500 | 4.542 | 4.542 |
-| 2026 | 1.696,6 | 376.200 | 4.510 | 4.330 |
+| 2026 | 1.697,9 | 376.200 | 4.513 | 4.334 |
 
 ## Arrecadação de 2026 x previsão do orçamento (R$ milhões)
 
@@ -302,7 +302,7 @@ _Qualidade do dado oficial: em 2026-09, a coluna "Idade do paciente" bate com a 
 
 ## Quem mais recebe dinheiro da prefeitura (R$ milhões pagos, 2021–2026)
 
-Fonte: Portal da Transparência de Cariacica (pagamentos por empenho). Exclui folha de pagamento, previdência, tributos e outros órgãos públicos. Total pago a empresas e pessoas no período: R$ 4.406,0 mi; os 25 abaixo somam 55%.
+Fonte: Portal da Transparência de Cariacica (pagamentos por empenho). Exclui folha de pagamento, previdência, tributos e outros órgãos públicos. Total pago a empresas e pessoas no período: R$ 4.407,2 mi; os 25 abaixo somam 55%.
 
 | Fornecedor | CNPJ/CPF | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 | Total |
 |---|---|---|---|---|---|---|---|---|
@@ -312,7 +312,7 @@ Fonte: Portal da Transparência de Cariacica (pagamentos por empenho). Exclui fo
 | IDEAL ENGENHARIA LTDA | 06.021.395/0001-95 | 0,0 | 1,9 | 1,2 | 28,4 | 40,4 | 67,1 | 139,0 |
 | INSTITUTO ESPERANCA | 10.779.749/0001-32 | 0,0 | 21,6 | 33,3 | 45,2 | 37,9 | 0,0 | 138,0 |
 | LIMPSERVICE SERVIÇOS LTDA - EPP | 05.361.150/0001-44 | 18,3 | 18,6 | 22,1 | 20,3 | 28,2 | 25,0 | 132,4 |
-| EDP ESPIRITO SANTO DISTRIBUICAO DE ENERGIA S.A. | 28.152.650/0001-71 | 18,8 | 18,3 | 12,5 | 16,4 | 18,8 | 15,7 | 100,5 |
+| EDP ESPIRITO SANTO DISTRIBUICAO DE ENERGIA S.A. | 28.152.650/0001-71 | 18,8 | 18,3 | 12,5 | 16,4 | 18,8 | 15,8 | 100,5 |
 | CONSORCIO S3 ILUMINACAO | 43.663.727/0001-61 | 0,0 | 16,9 | 18,2 | 19,0 | 20,8 | 19,4 | 94,2 |
 | MAPA CONSTRUTORA E SERVICOS EIRELI | 08.362.784/0001-00 | 13,2 | 17,7 | 13,8 | 19,7 | 14,0 | 13,6 | 92,0 |
 | COMPROCARD LTDA | 06.175.892/0001-48 | 0,0 | 0,0 | 17,3 | 24,7 | 23,3 | 21,6 | 86,9 |
@@ -322,7 +322,7 @@ Fonte: Portal da Transparência de Cariacica (pagamentos por empenho). Exclui fo
 | ENGEVIL ENGENHARIA LTDA | 05.764.427/0001-80 | 0,3 | 3,2 | 14,0 | 19,9 | 15,3 | 9,6 | 62,4 |
 | MARCA CONSTRUTORA E SERVICOS LTDA | 35.971.738/0001-80 | 9,4 | 8,6 | 8,1 | 11,3 | 12,6 | 11,5 | 61,5 |
 | CINCO ESTRELAS CONSTRUTORA E INCORPORADORA EIRELI | 30.686.869/0001-00 | 3,8 | 3,3 | 0,1 | 0,0 | 3,0 | 51,1 | 61,3 |
-| ANDARES CONSTRUCAO CIVIL EIRELI EPP | 31.500.069/0001-08 | 0,0 | 9,6 | 16,2 | 17,6 | 12,1 | 5,6 | 61,1 |
+| ANDARES CONSTRUCAO CIVIL EIRELI EPP | 31.500.069/0001-08 | 0,0 | 9,6 | 16,2 | 17,6 | 12,1 | 5,6 | 61,2 |
 | DUTO ENGENHARIA EIRELI | 27.557.792/0001-56 | 8,2 | 9,6 | 8,2 | 13,3 | 13,6 | 5,0 | 57,8 |
 | PLUXEE BENEFICIOS BRASIL S.A. | 69.034.668/0001-56 | 0,0 | 0,0 | 11,6 | 16,4 | 15,6 | 14,1 | 57,7 |
 | CONSORCIO CINCO-SERPENGE | 51.199.890/0001-43 | 0,0 | 0,0 | 2,2 | 42,3 | 9,6 | 0,0 | 54,1 |
