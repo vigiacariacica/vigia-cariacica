@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% macro selo(it) -%}
-{% if it.estado == 'respondido' %}<span class="selo ok">Respondida</span>{% elif it.estado == 'parcial' %}<span class="selo neutro">Respondida só em parte</span>{% elif it.estado == 'negado' %}<span class="selo">Negada</span>{% elif it.estado == 'vencido' %}<span class="selo">Passou do prazo</span>{% else %}<span class="selo apagado">Esperando resposta</span>{% endif %}
+{% if it.estado == 'respondido' %}<span class="selo ok">Respondida</span>{% elif it.estado == 'parcial' %}<span class="selo parcial">Respondida só em parte</span>{% elif it.estado == 'negado' %}<span class="selo">Negada</span>{% elif it.estado == 'vencido' %}<span class="selo">Passou do prazo</span>{% else %}<span class="selo apagado">Esperando resposta</span>{% endif %}
 {%- endmacro %}
 {% macro pedido(it, aberto=False) -%}
 <div class="ped">

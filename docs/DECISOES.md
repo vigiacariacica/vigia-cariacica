@@ -138,3 +138,9 @@ com a data e o motivo, no mesmo commit da mudança. O histórico do git guarda o
   porque rodam código de terceiros e uma delas manda telemetria), do GOV.UK, da NN/g e da Lei 15.263/2025: menu
   de 5 itens, Denunciar no topo de toda página, uma mensagem por tela, sem rótulo em cima de título.
 - **"Todas" e "nenhuma" só com o número exato** (100,0% e 0,0%). Antes, 99,7% de casas com água virava "Todas".
+- **Visual v5 (24/11/2026)**, a partir de estudo de GOV.UK, USWDS, gov.br e Hallmark: uma família de letra no texto
+  (Atkinson Hyperlegible, feita para baixa visão); a condensada só na marca e nos números grandes; nada em caixa
+  alta; escala de títulos 32/24/20 px no celular e 48/32/24 no computador; branco nunca sobre #00923f (4,05:1),
+  só sobre #00753a; rosa só como fundo do botão Denunciar, e #d6338a nos gráficos (3:1); selos de situação com
+  palavra e fundo suave; foco amarelo com contorno escuro; cartões de borda fina. A Courier saiu: a página ficou
+  cerca de 15% mais leve.

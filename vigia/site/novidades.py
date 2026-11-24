@@ -80,7 +80,7 @@ def linha_do_tempo(perg: dict, pubs: list[dict], resultados: list[dict], hoje: d
         ev.append({"data": p["data"], "tipo": p["tipo"], "rotulo": p["rotulo"], "titulo": p["titulo"],
                    "texto": p["resumo"], "link": p["link"], "ver": p["ver"], "correcao": p.get("correcao", ""),
                    "outro": p.get("outro_lado", ""), "fonte": p.get("fonte", ""), "pagina": p.get("pagina", ""),
-                   "ordem": 0})
+                   "selo": "cheio", "ordem": 0})
     itens = [it for g in perg["grupos"].values() for it in g]
     por_dia: dict[str, list] = {}
     for it in itens:
@@ -91,7 +91,7 @@ def linha_do_tempo(perg: dict, pubs: list[dict], resultados: list[dict], hoje: d
                    "texto": f"Para: {_quem(its)}. A lei dá 20 dias para responder"
                             + (" (30 na Ouvidoria)." if any(it["para"] == "Ouvidoria" for it in its) else "."),
                    "link": "/perguntas/",
-                   "ver": "Ver as perguntas", "ordem": 2})
+                   "ver": "Ver as perguntas", "selo": "neutro", "ordem": 2})
     resp = respostas()
     for it in itens:
         if not it.get("respondido_em"):
@@ -100,7 +100,8 @@ def linha_do_tempo(perg: dict, pubs: list[dict], resultados: list[dict], hoje: d
         ev.append({"data": date.fromisoformat(it["respondido_em"]), "tipo": "resposta",
                    "rotulo": ESTADO_RESPOSTA.get(it["estado"], "Resposta"), "titulo": it["pergunta"],
                    "texto": " ".join(resumos) or f"Resposta de: {it['para']}. A gente está lendo e põe o resumo aqui.",
-                   "link": "/perguntas/", "ver": "Ver todas as respostas", "ordem": 1})
+                   "link": "/perguntas/", "ver": "Ver todas as respostas",
+                   "selo": {"respondido": "ok", "parcial": "parcial"}.get(it["estado"], ""), "ordem": 1})
     vencidas: dict[date, list] = {}
     for it in itens:
         if it["estado"] == "vencido":
@@ -109,11 +110,11 @@ def linha_do_tempo(perg: dict, pubs: list[dict], resultados: list[dict], hoje: d
         ev.append({"data": prazo + timedelta(days=1), "tipo": "prazo", "rotulo": "Prazo vencido",
                    "titulo": f"{_plural(len(its), 'pergunta ficou', 'perguntas ficaram')} sem resposta no prazo",
                    "texto": f"Para: {_quem(its)}. Agora a gente cobra.", "link": "/perguntas/",
-                   "ver": "Ver as perguntas", "ordem": 1})
+                   "ver": "Ver as perguntas", "selo": "", "ordem": 1})
     for r in resultados:
         ev.append({"data": date.fromisoformat(r["data"]), "tipo": "resultado", "rotulo": "O que mudou",
                    "titulo": r["o_que_mudou"], "texto": "", "link": r.get("fonte", ""), "ver": "Ver a prova",
-                   "ordem": 0})
+                   "selo": "ok", "ordem": 0})
     ev = [e for e in ev if e["data"] <= hoje]
     return sorted(ev, key=lambda e: (e["data"], -e["ordem"]), reverse=True)
 

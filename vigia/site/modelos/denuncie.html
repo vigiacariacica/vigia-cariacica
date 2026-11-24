@@ -6,7 +6,10 @@
   <p class="lead">Viu algo errado na cidade? Conte para a gente. <strong>Não pedimos o seu nome. Pode mandar sem dizer quem é.</strong></p>
 </section>
 
-<p class="emergencia-linha">Emergência? Ligue de graça: {% for n, nome in urgencia[:4] %}<a href="tel:{{ n }}" aria-label="{{ n }}, {{ nome }}">{{ n }}</a> {% endfor %}<a class="ver-todos" href="#urgencia">ver todos</a></p>
+<div class="emergencia-linha">
+  <p><strong>Emergência? Ligue de graça:</strong></p>
+  <ul>{% for n, nome in urgencia[:4] %}<li><a href="tel:{{ n }}"><b>{{ n }}</b><span>{{ nome|replace(' Militar', '') }}</span></a></li>{% endfor %}</ul>
+</div>
 
 <div class="grade-2 larga-esq">
   <section class="bloco folha" aria-labelledby="h-form">
