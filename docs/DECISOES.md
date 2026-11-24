@@ -14,6 +14,15 @@ com a data e o motivo, no mesmo commit da mudança. O histórico do git guarda o
 
 ## Dados e publicação
 
+- **24/11/2026, Diário Oficial de Cariacica entra na coleta diária** (`vigia/coletores/diario_oficial.py`). A fonte
+  é a API pública que o próprio site do Diário usa. Para cada edição nova, o robô conta quantas vezes aparecem
+  dispensa de licitação, inexigibilidade, contratação emergencial, termo aditivo, adesão a ata e contratação
+  temporária, e soma os créditos suplementares ou especiais abertos por decreto. Grava **só números** em
+  `data/diario_oficial/edicoes.csv`, sem nenhum trecho do texto, porque o Diário traz nomes de servidores
+  (nomeações, exonerações, fiscais). Quem quiser ler o ato abre o Diário. Motivo: o Diário é onde a prefeitura
+  publica as compras sem licitação e os remanejamentos do orçamento antes de qualquer outro lugar, e ler à mão
+  todo dia é trabalho manual que se repete.
+
 - **07/11/2026: CSV simples versionado.** Abre no Excel, e o git mostra o que mudou em cada coleta.
 - **07/11/2026: fontes.** O portal da prefeitura é a fonte principal de pagamentos; o PNCP complementa com
   licitações e itens; o Siconfi dá a visão geral e a comparação com a Grande Vitória, sempre por morador.
