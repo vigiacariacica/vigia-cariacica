@@ -355,7 +355,7 @@ def gerar(saida: Path, hoje: date | None = None) -> dict[str, dict]:
     escrever("/novidades/", "novidades.html", "Tudo o que o Vigia fez",
              "Os vídeos e posts do Vigia Cariacica, as perguntas oficiais à prefeitura, as respostas e os prazos. "
              "Do mais novo para o mais antigo, com data e prova.", "novidades",
-             p=perg, n_pubs=len(pubs), por_mes=N.por_mes(eventos),
+             p=perg, n_pubs=len(pubs), por_mes=N.por_mes(eventos), n_orgaos=len(N.orgaos()), n_mudou=len(resultados),
              zap="Tudo o que o Vigia Cariacica já fez: vídeos, perguntas à prefeitura, respostas e prazos.",
              **previa("novidades", "O que o Vigia fez", f"{len(pubs)} vídeos e posts",
                       f"e {perg['total']} perguntas oficiais à prefeitura e à Câmara. Veja as respostas e os prazos.",

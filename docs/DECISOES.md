@@ -14,6 +14,12 @@ com a data e o motivo, no mesmo commit da mudança. O histórico do git guarda o
 
 ## Dados e publicação
 
+- **24/11/2026, "O que mudou em Cariacica" no topo de /novidades/.** Um placar de efeito, além do de produção:
+  respostas oficiais recebidas, perguntas atrasadas sendo cobradas, casos levados a quem pode agir (Tribunal de
+  Contas, Ministério Público, Defensoria) e mudanças comprovadas (`data/resultados.csv`). Os casos levados a órgãos
+  ficam em `data/site/orgaos.csv` e só entram DEPOIS de protocolados, sem nome de quem assinou. Motivo: post é o
+  começo; o que muda a cidade é órgão agindo, e isso tem de ficar visível e contável.
+
 - **24/11/2026, Radar do dia (`vigia/radar.py`, workflow `radar.yml`).** Depois de cada coleta, o robô lê os dados que
   já baixou e, se houver algo novo que pede atenção (pedido pela LAI que vence em 3 dias ou venceu sem resposta,
   edição do Diário Oficial com compra sem licitação, emergência, aditivo ou crédito extra acima de R$ 1 milhão,
