@@ -1,6 +1,6 @@
 {% macro evento(e, filtro=False, curto=False) -%}
 <li class="ev ev-{{ e.tipo }}"{% if filtro %} data-cat="{{ 'pub' if e.tipo in ('video', 'post', 'carrossel', 'apuracao') else 'lai' if e.tipo in ('pergunta', 'resposta', 'prazo') else 'geral' }}"{% endif %}>
-  <p class="ev-topo"><span class="selo{% if e.tipo in ('video', 'post', 'carrossel', 'apuracao') %} cheio{% elif e.tipo == 'prazo' %}{% else %} neutro{% endif %}">{{ e.rotulo }}</span> <time class="meta" datetime="{{ e.data.isoformat() }}">{{ ddmm(e.data) }}</time>{% if curto and e.correcao %} <a class="selo" href="/novidades/">Tem correção</a>{% endif %}</p>
+  <p class="ev-topo"><span class="selo {{ e.selo }}">{{ e.rotulo }}</span> <time class="meta" datetime="{{ e.data.isoformat() }}">{{ ddmm(e.data) }}</time>{% if curto and e.correcao %} <a class="selo" href="/novidades/">Tem correção</a>{% endif %}</p>
   <h3>{{ e.titulo }}</h3>
   {% if not curto %}
   {% if e.texto %}<p>{{ e.texto }}</p>{% endif %}

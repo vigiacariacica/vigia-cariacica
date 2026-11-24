@@ -4,10 +4,11 @@
 {% block conteudo %}
 {# Início simples (24/11/2026): uma mensagem por tela. 1) o que é o Vigia; 2) o seu bairro; 3) três caminhos
    grandes; 4) um achado só; 5) as últimas. O resto fica no menu. #}
+<div class="abertura">
 <section class="heroi" aria-labelledby="h1">
   <h1 id="h1" tabindex="-1">O que a prefeitura faz com o seu dinheiro.</h1>
-  <p class="lead">A gente confere e mostra a prova. Você cobra.</p>
-  <p><strong>Feito por moradores de Cariacica. Sem partido. Não é site da prefeitura.</strong></p>
+  <p class="lead">A gente confere nos documentos oficiais e mostra a prova. Você cobra.</p>
+  <p class="marca-texto">Feito por moradores de Cariacica. Sem partido. Não é site da prefeitura.</p>
 </section>
 
 <section class="bloco folha" aria-labelledby="h-bairro">
@@ -15,6 +16,7 @@
   <p class="seu-bairro" data-seu-bairro hidden><a href="/bairros/"><span>Voltar para <b></b></span><span aria-hidden="true">→</span></a></p>
   {% include "_busca.html" %}
 </section>
+</div>
 
 <nav class="caminhos" aria-label="O que você quer fazer">
   <a class="caminho forte" href="/denuncie/"><b>Fazer uma denúncia</b><span>Viu algo errado? Conte. Não precisa dizer quem é.</span></a>
