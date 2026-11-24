@@ -23,6 +23,7 @@ from . import dados as D
 from . import categorias as C
 from . import fontes as F
 from . import mapa as M
+from . import novidades as N
 from . import legibilidade
 from . import previa as PV
 from . import problemas as P
@@ -45,7 +46,13 @@ MENU = [("/", "Início", "inicio"), ("/bairros/", "Meu bairro", "bairros"), ("/m
         ("/problemas/", "Maiores problemas", "problemas"),
         ("/fila/", "Fila da saúde", "fila"),
         ("/vereadores/", "Vereadores", "vereadores"), ("/perguntas/", "Perguntas", "perguntas"),
-        ("/dinheiro/", "Dinheiro", "dinheiro"), ("/fontes/", "Nossas fontes", "fontes"), ("/quem-somos/", "Quem somos", "quem")]
+        ("/dinheiro/", "Dinheiro", "dinheiro"), ("/novidades/", "O que fizemos", "novidades"),
+        ("/denuncie/", "Denuncie", "denuncie"),
+        ("/fontes/", "Nossas fontes", "fontes"), ("/quem-somos/", "Quem somos", "quem")]
+# Formulário de denúncia (página /denuncie/): as respostas caem no Google Formulários da conta do Vigia, nunca no
+# site. Sem este arquivo, a página mostra só o direct do Instagram e o e-mail.
+_DEN_JSON = D.DADOS / "site" / "denuncia.json"
+DENUNCIA = json.loads(_DEN_JSON.read_text(encoding="utf-8")) if _DEN_JSON.exists() else {}
 MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro",
          "novembro", "dezembro"]
 
@@ -121,6 +128,20 @@ def gerar(saida: Path, hoje: date | None = None) -> dict[str, dict]:
     g = D.dinheiro()
     por_morador = g["total"] / g["populacao"]
     resultados = D.resultados()
+    # o que o Vigia fez: publicações que já foram ao ar, perguntas, respostas e prazos (vigia/site/novidades.py)
+    pubs = N.publicacoes()
+    eventos = N.linha_do_tempo(perg, pubs, resultados, hoje)
+    resp_pub = N.respostas()
+    pubs_da_pergunta: dict[str, list] = {}
+    for pb in pubs:
+        for numero in pb["perguntas"]:
+            pubs_da_pergunta.setdefault(numero, []).append(pb)
+    for itens in perg["grupos"].values():
+        for it in itens:
+            it["resumos"] = [resp_pub[n] for n in it["numeros"] if n in resp_pub]
+            links: list = []
+            it["pubs"] = [pb for n in it["numeros"] for pb in pubs_da_pergunta.get(n, [])
+                          if pb["link"] not in links and not links.append(pb["link"])]
     primeiro_prazo = perg["proximo"].strftime("%d/%m") if perg["proximo"] else ""
     def casas_txt(pct):
         n = D.de_cada(pct)
@@ -154,7 +175,7 @@ def gerar(saida: Path, hoje: date | None = None) -> dict[str, dict]:
              bairros=bs, busca_id="inicio", busca_so_com_texto=True, padrao_baixa=padrao_baixa, pad=pad,
              padrao_alta=padrao_alta, pop_total=sum(b["populacao"] for b in bs), fila_falado=D.br(fl["pedidos"]), n_perguntas=perg["total"],
              por_mes=D.reais(round(por_morador / 12)), resultados=resultados, primeiro_prazo=primeiro_prazo, parciais=perg['parciais'], respondidas=perg['respondidas'],
-             zap=zap_padrao)
+             ultimas=eventos[:4], n_pubs=len(pubs), zap=zap_padrao)
 
     cesan = pergunta("2026111046")
     escrever("/bairros/", "bairros.html", "Como está o seu bairro?",
@@ -324,6 +345,25 @@ def gerar(saida: Path, hoje: date | None = None) -> dict[str, dict]:
              **previa("perguntas", "Perguntas oficiais do Vigia", f"{perg['total']} perguntas",
                       "à prefeitura, à Câmara e ao Governo do ES, com prazo para responder. Veja quem respondeu.",
                       "Lei de Acesso à Informação"))
+
+    escrever("/novidades/", "novidades.html", "Tudo o que o Vigia fez",
+             "Os vídeos e posts do Vigia Cariacica, as perguntas oficiais à prefeitura, as respostas e os prazos. "
+             "Do mais novo para o mais antigo, com data e prova.", "novidades",
+             p=perg, n_pubs=len(pubs), por_mes=N.por_mes(eventos),
+             zap="Tudo o que o Vigia Cariacica já fez: vídeos, perguntas à prefeitura, respostas e prazos.",
+             **previa("novidades", "O que o Vigia fez", f"{len(pubs)} vídeos e posts",
+                      f"e {perg['total']} perguntas oficiais à prefeitura e à Câmara. Veja as respostas e os prazos.",
+                      "Vigia Cariacica"))
+
+    escrever("/denuncie/", "denuncie.html", "Deixe aqui sua denúncia",
+             "Viu dinheiro público mal usado ou um serviço que não funciona em Cariacica? Conte para o Vigia. Você "
+             "não precisa dizer quem é. A gente confere antes de publicar.", "denuncie",
+             den=DENUNCIA, bairros=sorted(bs, key=lambda b: D.normalizar(b["nome"])),
+             urgencia=DENUNCIA.get("urgencia", []), canais=DENUNCIA.get("canais", []),
+             zap="Viu algo errado em Cariacica? Denuncie no Vigia. Não precisa dizer quem é.",
+             **previa("denuncie", "Vigia Cariacica · Denúncia", "Viu algo errado?",
+                      "Conte para o Vigia. Você não precisa dizer quem é. A gente confere e cobra.",
+                      "vigiacariacica.github.io/denuncie"))
 
     max_bloco = max(b["de_cada_100"] for b in g["blocos"])
     max_saude = max(s["por_morador"] for s in g["saude"])

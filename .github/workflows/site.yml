@@ -60,6 +60,10 @@ jobs:
       - name: Testes do site (linguagem simples, dados pessoais, fontes)
         run: python -m pytest -q tests/test_site.py
 
+      - name: Formulário de denúncia no ar bate com o site
+        continue-on-error: true    # o Google fora do ar não pode parar o site; a diferença aparece como aviso
+        run: python ferramentas/conferir_formulario.py
+
       - name: Gerar o site
         run: python -m vigia.site --saida _site
 

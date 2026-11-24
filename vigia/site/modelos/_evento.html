@@ -1,0 +1,13 @@
+{% macro evento(e, filtro=False, curto=False) -%}
+<li class="ev ev-{{ e.tipo }}"{% if filtro %} data-cat="{{ 'pub' if e.tipo in ('video', 'post', 'carrossel', 'apuracao') else 'lai' if e.tipo in ('pergunta', 'resposta', 'prazo') else 'geral' }}"{% endif %}>
+  <p class="ev-topo"><span class="selo{% if e.tipo in ('video', 'post', 'carrossel', 'apuracao') %} cheio{% elif e.tipo == 'prazo' %}{% else %} neutro{% endif %}">{{ e.rotulo }}</span> <time class="meta" datetime="{{ e.data.isoformat() }}">{{ ddmm(e.data) }}</time>{% if curto and e.correcao %} <a class="selo" href="/novidades/">Tem correção</a>{% endif %}</p>
+  <h3>{{ e.titulo }}</h3>
+  {% if not curto %}
+  {% if e.texto %}<p>{{ e.texto }}</p>{% endif %}
+  {% if e.outro %}<p><b>O outro lado:</b> {{ e.outro }}</p>{% endif %}
+  {% if e.correcao %}<p class="correcao"><b>Correção:</b> {{ e.correcao }}</p>{% endif %}
+  {% endif %}
+  {% if e.link and (e.link.startswith('http') or e.link.startswith('/')) %}<p class="acoes-ev"><a href="{{ e.link }}"{% if e.link.startswith('http') %} rel="noopener"{% endif %}>{{ e.ver }} →</a>{% if e.pagina and not curto %} <a href="{{ e.pagina }}">Ver os números no site →</a>{% endif %}</p>{% endif %}
+  {% if e.fonte and not curto %}<p class="meta">Fonte: {{ e.fonte }}</p>{% endif %}
+</li>
+{%- endmacro %}

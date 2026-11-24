@@ -21,7 +21,7 @@ def gerado(tmp_path_factory):
 def test_paginas_principais_existem(gerado):
     saida, rel = gerado
     for c in ("/", "/bairros/", "/fila/", "/perguntas/", "/dinheiro/", "/quem-somos/", "/problemas/", "/vereadores/",
-              "/fontes/", "/mapa/"):
+              "/fontes/", "/mapa/", "/novidades/", "/denuncie/"):
         assert c in rel
     assert len([c for c in rel if c.startswith("/bairros/") and c != "/bairros/"]) >= 90
     assert (saida / "fila" / "santa-fe" / "index.html").exists()
@@ -183,6 +183,42 @@ def test_mapa_e_numeros_brutos(gerado):
     assert D.extenso(297_000) == "297 mil reais" and D.posicao(10, [10, 20, 5]) == 2
     d = (saida / "dinheiro" / "index.html").read_text(encoding="utf-8")
     assert "R$ 1.663.887.317" in d
+
+
+def test_denuncia_cai_no_formulario_e_nada_e_publicado(gerado):
+    """A denúncia vai para o formulário do Google do Vigia (nunca para o site), com os mesmos campos e opções do
+    formulário; a página não carrega script de fora e tem o aviso de privacidade."""
+    import json as _json
+    saida, rel = gerado
+    assert "/denuncie/" in rel
+    t = (saida / "denuncie" / "index.html").read_text(encoding="utf-8")
+    den = _json.loads((D.DADOS / "site" / "denuncia.json").read_text(encoding="utf-8"))
+    assert den["form"].startswith("https://docs.google.com/forms/d/e/") and den["form"].endswith("/formResponse")
+    assert f'action="{den["form"]}"' in t and den["link"].endswith("/viewform")
+    for nome in den["campos"].values():
+        assert nome.startswith("entry.") and f'name="{nome}"' in t, nome
+    for a in den["assuntos"]:
+        assert f"<option>{a}</option>" in t, a
+    assert f'value="{den["ok"]}"' in t and 'id="privacidade"' in t
+    assert not re.search(r'<script[^>]+src="https?://', t)
+    for n, _ in den["urgencia"]:
+        assert f'href="tel:{n}"' in t
+
+
+def test_o_que_fizemos(gerado):
+    """Toda publicação listada já foi ao ar (data passada e link da rede) e aparece na linha do tempo."""
+    from vigia.site import novidades as N
+    saida, rel = gerado
+    assert "/novidades/" in rel
+    t = (saida / "novidades" / "index.html").read_text(encoding="utf-8")
+    pubs = N.publicacoes()
+    assert pubs
+    for p in pubs:
+        assert p["link"].startswith("https://") and p["data"] <= D.hoje_brasilia(), p["titulo"]
+        assert p["titulo"] and p["resumo"] and p["fonte"], p["link"]
+    hoje = date(2026, 11, 12)
+    assert all(e["data"] <= hoje for e in N.linha_do_tempo(D.perguntas(hoje), pubs, [], hoje))
+    assert "Mandamos" in t and "/perguntas/" in t
 
 
 def test_sinais_para_buscadores(gerado):

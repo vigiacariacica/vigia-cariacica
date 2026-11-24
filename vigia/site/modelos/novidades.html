@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% from "_cat.html" import icone with context %}
+{% from "_evento.html" import evento with context %}
+{% block conteudo %}
+<section class="bloco" aria-labelledby="h1">
+  <p class="prot">{{ icone("pergunta") }} <b>O que fizemos</b> · do mais novo para o mais antigo</p>
+  <h1 id="h1" tabindex="-1">Tudo o que o Vigia fez</h1>
+  <p class="lead">Cada vídeo, cada pergunta à prefeitura, cada resposta e cada prazo. Tudo aqui, com data e com a prova.</p>
+</section>
+
+<div class="placar quatro">
+  <div><b class="num">{{ n_pubs }}</b><span>vídeos e posts no ar</span></div>
+  <div><b class="num">{{ p.total }}</b><span>perguntas oficiais</span></div>
+  <div><b class="num">{{ p.respondidas + p.parciais + p.negadas }}</b><span>com resposta, mesmo que em parte</span></div>
+  {% if p.proximo %}<div><b class="num">{{ ddmm(p.proximo) }}</b><span>próximo prazo de resposta</span></div>{% else %}<div><b class="num">{{ p.atrasadas }}</b><span>atrasadas, sem resposta</span></div>{% endif %}
+</div>
+
+<div class="filtro" data-filtro hidden>
+  <span class="rot">Ver:</span>
+  <button type="button" data-ver="tudo" aria-pressed="true">Tudo</button>
+  <button type="button" data-ver="pub" aria-pressed="false">Vídeos e posts</button>
+  <button type="button" data-ver="lai" aria-pressed="false">Perguntas e respostas</button>
+</div>
+
+{% for mes, evs in por_mes %}
+<section class="bloco" aria-labelledby="m{{ loop.index }}" data-grupo-cat>
+  <h2 id="m{{ loop.index }}">{{ mes }}</h2>
+  <ol class="linha">
+  {% for e in evs %}
+    {{ evento(e, filtro=True) }}
+  {% endfor %}
+  </ol>
+</section>
+{% endfor %}
+
+<section class="bloco folha" aria-labelledby="h-falta">
+  <h2 id="h-falta">Viu algo que a gente precisa olhar?</h2>
+  <p>Conte para a gente. Você não precisa dizer quem é. A gente confere nos dados oficiais antes de publicar qualquer coisa.</p>
+  <p><a class="btn cheio" href="/denuncie/">Deixe aqui sua denúncia</a></p>
+</section>
+
+{% include "_compartilhar.html" %}
+
+<p class="fonte">Fonte: os vídeos e posts do Vigia no Instagram, com a fonte oficial de cada número na legenda; os números de registro das perguntas no sistema de pedidos da Prefeitura, da Câmara e do Governo do ES. Prazo de 20 dias corridos (Lei 12.527/2011, art. 11). Erro que a gente acha depois aparece aqui como correção.</p>
+{% endblock %}
