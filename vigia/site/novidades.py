@@ -99,7 +99,7 @@ def linha_do_tempo(perg: dict, pubs: list[dict], resultados: list[dict], hoje: d
         resumos = [resp[n]["resumo"] for n in it["numeros"] if n in resp]
         ev.append({"data": date.fromisoformat(it["respondido_em"]), "tipo": "resposta",
                    "rotulo": ESTADO_RESPOSTA.get(it["estado"], "Resposta"), "titulo": it["pergunta"],
-                   "texto": " ".join(resumos) or f"Quem respondeu: {it['para']}. A gente confere e cobra o que faltar.",
+                   "texto": " ".join(resumos) or f"Resposta de: {it['para']}. A gente está lendo e põe o resumo aqui.",
                    "link": "/perguntas/", "ver": "Ver todas as respostas", "ordem": 1})
     vencidas: dict[date, list] = {}
     for it in itens:

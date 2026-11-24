@@ -56,11 +56,12 @@ def reais(v: float) -> str:
 
 def de_cada(pct: float, base: int = 10) -> str:
     """71,7% -> '7 de cada 10'. Nas pontas, palavras: 'todas', 'quase todas', 'quase nenhuma'."""
-    if pct >= 99.5:
+    # "todas" e "nenhuma" só quando o número é exato (100,0% e 0,0%): 99,7% é "quase todas" (24/11/2026)
+    if pct >= 99.95:
         return "todas"
     if pct >= 95:
         return "quase todas"
-    if pct <= 0.5:
+    if pct < 0.05:
         return "nenhuma"
     if pct < 100 / base / 2:
         return "quase nenhuma"
@@ -220,7 +221,7 @@ def cartoes_bairro(b: dict, c: dict) -> list[dict]:
     agua, lixo = b["pct_agua_rede"], b["pct_lixo_coletado"]
     if agua >= 95 and lixo >= 95:
         cards.append({"tema": "Água e lixo", "pergunta": "Tem água da rede e coleta de lixo?",
-                      "numero": "Quase todas" if min(agua, lixo) < 99.5 else "Todas",
+                      "numero": "Quase todas" if min(agua, lixo) < 99.95 else "Todas",
                       "frase": "as casas têm água da rede e lixo recolhido.", "cidade": "",
                       "extra": "", "selo": "", "valor": None, "ref": None, "bom": True, "certo": True,
                       "exato": f"água {br(agua, 1)}% · lixo {br(lixo, 1)}%", "ref_exato": ""})
@@ -386,7 +387,9 @@ def perguntas(hoje: date) -> dict:
     esperando = [it for it in lista if "no prazo" in it["estados"]]
     prox = min((it["prazo"] for it in esperando), default=None)
     return {"total": len(lista), "pedidos": len(p), "respondidas": conta("respondido"), "parciais": conta("parcial"),
-            "negadas": conta("negado"), "atrasadas": conta("vencido"), "grupos": grupos, "proximo": prox,
+            "negadas": conta("negado"), "atrasadas": conta("vencido"), "esperando": conta("no prazo"),
+            "respondidos": [it for it in lista if it["estado"] in ("respondido", "parcial", "negado")],
+            "grupos": grupos, "proximo": prox,
             "n_proximo": sum(1 for it in esperando if it["prazo"] == prox)}
 
 

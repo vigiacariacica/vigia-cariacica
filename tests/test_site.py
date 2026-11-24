@@ -177,7 +177,7 @@ def test_mapa_e_numeros_brutos(gerado):
     t = (saida / "mapa" / "index.html").read_text(encoding="utf-8")
     assert t.count('data-qpop="') == 99 and (saida / "mapa" / "base.svg").exists()
     b = (saida / "bairros" / "itaquari" / "index.html").read_text(encoding="utf-8")
-    assert "Os números do bairro" in b and "º de 99" in b and 'data-filtro' in b and "/mapa/base.svg" in b
+    assert "Os números do bairro" in b and "º de 99" in b and "/mapa/base.svg" in b
     assert D.reais_cheio(76_413_310.65) == "R$ 76.413.311"
     assert D.extenso(1_663_887_316) == "1 bilhão e 664 milhões de reais"
     assert D.extenso(297_000) == "297 mil reais" and D.posicao(10, [10, 20, 5]) == 2

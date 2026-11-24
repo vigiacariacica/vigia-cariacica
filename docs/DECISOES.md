@@ -117,3 +117,8 @@ com a data e o motivo, no mesmo commit da mudança. O histórico do git guarda o
   família pode expor quem denunciou); contra robô, campo isca, limite de 5 envios por aba e o tempo de preenchimento
   vão no campo de controle; o texto que parece CPF é barrado e telefone gera aviso. Sem script, o formulário vai
   direto para o Google. Os dados ficam até 12 meses e o contato sai quando o caso termina.
+- **Site mais limpo (24/11/2026)**, depois de a dona do projeto achar o site poluído para quem lê pouco. Regras das
+  ferramentas de design que ela mandou (Hallmark, Impeccable, UI/UX Pro Max; só as regras, sem instalar programa,
+  porque rodam código de terceiros e uma delas manda telemetria), do GOV.UK, da NN/g e da Lei 15.263/2025: menu
+  de 5 itens, Denunciar no topo de toda página, uma mensagem por tela, sem rótulo em cima de título.
+- **"Todas" e "nenhuma" só com o número exato** (100,0% e 0,0%). Antes, 99,7% de casas com água virava "Todas".

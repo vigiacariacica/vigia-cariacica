@@ -3,28 +3,31 @@
   "use strict";
   var raiz = document.documentElement;
 
-  /* letra maior, lembrada neste aparelho */
-  var bLetra = document.getElementById("b-letra");
+  /* letra maior, lembrada neste aparelho (o botão aparece no menu do celular e no topo do computador) */
+  var bLetras = Array.prototype.slice.call(document.querySelectorAll("[data-letra]"));
   function letra(on) {
     raiz.classList.toggle("letra-maior", on);
-    if (bLetra) bLetra.setAttribute("aria-pressed", on ? "true" : "false");
+    bLetras.forEach(function (b) { b.setAttribute("aria-pressed", on ? "true" : "false"); });
   }
   try { letra(localStorage.getItem("vigia-letra") === "1"); } catch (e) {}
-  if (bLetra) bLetra.addEventListener("click", function () {
-    var on = bLetra.getAttribute("aria-pressed") !== "true";
-    letra(on);
-    try { localStorage.setItem("vigia-letra", on ? "1" : "0"); } catch (e) {}
+  bLetras.forEach(function (bLetra) {
+    bLetra.addEventListener("click", function () {
+      var on = bLetra.getAttribute("aria-pressed") !== "true";
+      letra(on);
+      try { localStorage.setItem("vigia-letra", on ? "1" : "0"); } catch (e) {}
+    });
   });
 
   /* ouvir a página com a voz do próprio celular (não gasta dados) */
-  var bOuvir = document.getElementById("b-ouvir");
+  var bOuvires = Array.prototype.slice.call(document.querySelectorAll("[data-ouvir]"));
   var temFala = "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
-  if (bOuvir && !temFala) bOuvir.hidden = true;
+  if (!temFala) bOuvires.forEach(function (b) { b.hidden = true; });
   function parar() {
     if (temFala) speechSynthesis.cancel();
-    if (bOuvir) { bOuvir.setAttribute("aria-pressed", "false"); bOuvir.textContent = "Ouvir esta página"; }
+    bOuvires.forEach(function (b) { b.setAttribute("aria-pressed", "false"); b.textContent = b.dataset.rotulo || b.textContent; });
   }
-  if (bOuvir && temFala) bOuvir.addEventListener("click", function () {
+  bOuvires.forEach(function (b) { b.dataset.rotulo = b.textContent; });
+  if (temFala) bOuvires.forEach(function (bOuvir) { bOuvir.addEventListener("click", function () {
     if (bOuvir.getAttribute("aria-pressed") === "true") { parar(); return; }
     var main = document.querySelector("main");
     var vistos = {}, partes = [];
@@ -40,8 +43,8 @@
     if (voz) u.voice = voz;
     u.onend = parar; u.onerror = parar;
     speechSynthesis.cancel(); speechSynthesis.speak(u);
-    bOuvir.setAttribute("aria-pressed", "true"); bOuvir.textContent = "Parar de ouvir";
-  });
+    bOuvires.forEach(function (b) { b.setAttribute("aria-pressed", "true"); b.textContent = "Parar de ouvir"; });
+  }); });
 
   /* relógios do prazo de resposta */
   var agora = new Date(Date.now() - 3 * 3600 * 1000);
