@@ -1,6 +1,6 @@
 # Vigia Cariacica: relatório automático
 
-_Gerado em 24/11/2026 19:51 (UTC). Dados públicos oficiais; como cada dado é obtido em [METODOLOGIA.md](METODOLOGIA.md)._
+_Gerado em 24/11/2026 20:54 (UTC). Dados públicos oficiais; como cada dado é obtido em [METODOLOGIA.md](METODOLOGIA.md)._
 
 ## Placar de resultados
 

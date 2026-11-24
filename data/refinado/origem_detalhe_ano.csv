@@ -866,9 +866,9 @@ ano,CodFonte,Fonte,origem,pago,registros,exercicio_anterior,origem_pelo_nome,avi
 2025,2.700.0099.0000,CONVENIOS FEDERAIS,convenios,0.0,2,True,convenios,
 2025,2.700.2011.0000,URBAN. INTEGRADA OPERARIO - CONT 0222904-11,convenios,0.0,1,True,,
 2025,2.701.0000.0000,OUTRAS TRANSFERENCIAS DE CONVENIOS DO ESTADO,convenios,0.0,1,True,convenios,
-2026,1.500.0000.0000,RECURSOS ORDINÁRIOS,livres,553092308.91,10663,False,livres,
+2026,1.500.0000.0000,RECURSOS ORDINÁRIOS,livres,553093077.06,10665,False,livres,
 2026,1.540.0070.0000,TRANSFERÊNCIAS DO FUNDEB [70%],fundeb,264783918.61,2418,False,fundeb,
-2026,1.500.0015.0000,RECEITA DE IMPOSTOS E TRANSFERÊNCIA DE IMPOSTOS -,livres,167049486.99,3917,False,livres,
+2026,1.500.0015.0000,RECEITA DE IMPOSTOS E TRANSFERÊNCIA DE IMPOSTOS -,livres,167049403.39,3918,False,livres,
 2026,1.500.0025.0000,RECEITA DE IMPOSTOS E DE TRANSFERÊNCIA DE IMPOSTOS,livres,116851557.84,2287,False,livres,
 2026,1.540.0030.0000,TRANSFERÊNCIAS DO FUNDEB [30%],fundeb,101917902.12,346,False,fundeb,
 2026,1.754.0000.0000,RECURSOS DE OPERAÇÕES DE CRÉDITO - INTERNA,emprestimos,49206412.76,15,False,emprestimos,
@@ -892,7 +892,7 @@ ano,CodFonte,Fonte,origem,pago,registros,exercicio_anterior,origem_pelo_nome,avi
 2026,1.552.0000.0000,TRANSF.FNDE PROG NAC ALIM ESCOLAR - PNAE,educacao_vinc,7945806.27,130,False,educacao_vinc,
 2026,2.546.0030.0000,TRANSF.FUNDEB 30 - COMPL.UNIÃO ETI,fundeb,7765246.96,8,True,fundeb,
 2026,1.752.0000.0000,REC VINCULADOS AO TRÂNSITO,outros_vinc,7366746.96,18,False,,
-2026,1.661.0000.0000,OUTROS RECURSOS VINCULADOS À ASSINTÊNCIA SOCIAL -,assistencia,5695819.97,41,False,assistencia,
+2026,1.661.0000.0000,OUTROS RECURSOS VINCULADOS À ASSINTÊNCIA SOCIAL -,assistencia,5695819.97,42,False,assistencia,
 2026,2.501.0000.0000,OUTROS REC NÃO VINCULADOS,livres,5602573.73,5,True,livres,
 2026,1.801.0000.0000,RECURSOS VINCULADOS AO RPPS – PLANO FINANCEIRO - P,rpps,5318715.26,120,False,rpps,
 2026,2.601.0001.0000,RECURSOS DO SUS- INVESTIMENTOS,saude_vinc,4879799.11,27,True,saude_vinc,
@@ -993,6 +993,7 @@ ano,CodFonte,Fonte,origem,pago,registros,exercicio_anterior,origem_pelo_nome,avi
 2026,2.553.0000.0000,TRANSF REC FNDE REF PNATE,educacao_vinc,3904.66,1,True,educacao_vinc,
 2026,2.701.2137.0000,CONVÊNIO Nº 005/2024-Aquis.mat.perm.Assist.Social,convenios,3754.04,2,True,assistencia,nome da fonte sugere outra origem
 2026,2.700.1035.0000,CONVENIO FEDERAL Nº 0498430-20,convenios,3575.23,1,True,convenios,
+2026,1.631.0010.0000,Contrato Repasse Federal Nº 953800/2023,saude_vinc,3286.85,3,False,convenios,nome da fonte sugere outra origem
 2026,1.569.0000.0000,OUTRAS TRANSFERÊNCIAS DE RECURSOS DO FNDE,educacao_vinc,2964.02,1,False,educacao_vinc,
 2026,1.701.1102.0000,CONV ESTADUAL - SEDURB-FEHAB 002/2023,convenios,2101.14,2,False,,
 2026,1.700.2141.0000,CONV. FEDERAL-Nº 946075/2023 - DRENAGEM GRAÚNA,convenios,916.35,3,False,,
@@ -1004,7 +1005,6 @@ ano,CodFonte,Fonte,origem,pago,registros,exercicio_anterior,origem_pelo_nome,avi
 2026,1.601.0000.0000,TRANSF FUNDO A FUNDO DE REC SUS GOV FED BL EST,saude_vinc,0.0,2,False,saude_vinc,
 2026,1.601.0001.0000,TRANSF FUNDO A FUNDO DE REC SUS GOV FED-INVEST,saude_vinc,0.0,1,False,saude_vinc,
 2026,1.601.0002.3110,EMENDA PAR.IND-TRANS.FUNDO A FUNDO SUS INVEST,saude_vinc,0.0,3,False,saude_vinc,
-2026,1.631.0010.0000,Contrato Repasse Federal Nº 953800/2023,saude_vinc,0.0,3,False,convenios,nome da fonte sugere outra origem
 2026,1.665.0001.0000,TRANSF CONV INST CONG – ASSISTÊNCIA SOCIAL,assistencia,0.0,1,False,assistencia,
 2026,1.700.1207.0000,CONV.FEDERAL N°964974/2024 CONT.ENCOSTAS,convenios,0.0,2,False,,
 2026,1.700.2041.0000,CONVÊNIO Nº 922091/21 (PLATAFORMA + BRASIL),convenios,0.0,3,False,convenios,
