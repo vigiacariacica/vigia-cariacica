@@ -1,13 +1,13 @@
 # Qualidade dos dados
 
-_Última execução: 2026-11-24T19:17:06Z (UTC). Gerado automaticamente; regras em `vigia/qualidade.py`._
+_Última execução: 2026-11-24T19:51:47Z (UTC). Gerado automaticamente; regras em `vigia/qualidade.py`._
 
 **Status:** ⚠️ fonte fora do ar há pouco tempo (sem alarme; vira alarme se passar de 20 h)
 
-- Checagens feitas: 695 · falharam: 12 (bloqueantes: 0)
+- Checagens feitas: 441 · falharam: 6 (bloqueantes: 0)
 - Fontes que não responderam: nenhuma
-- Fora do ar há pouco tempo (bloqueio ou queda da fonte, sem alarme): tesouro, externos (histórico em `data/qualidade/fontes_fora.csv`)
-- Arquivos crus baixados hoje: 85 (hash SHA-256 em `data/qualidade/manifesto.csv`)
+- Fora do ar há pouco tempo (bloqueio ou queda da fonte, sem alarme): transparencia, emendas, obras, diarias, receitas, licitacoes, folha (histórico em `data/qualidade/fontes_fora.csv`)
+- Arquivos crus baixados hoje: 4 (hash SHA-256 em `data/qualidade/manifesto.csv`)
 
 Quando uma checagem bloqueante falha, o arquivo novo **não** é gravado: fica a versão anterior.
 
@@ -15,18 +15,12 @@ Quando uma checagem bloqueante falha, o arquivo novo **não** é gravado: fica a
 
 | Arquivo | Regra | Bloqueante | Detalhe |
 |---|---|---|---|
-| emendas/anos | ano_fora_da_lista | não | a lista de anos da prefeitura não traz 2025, 2026; consultado(s) mesmo assim |
-| emendas_2025.csv | erro_na_fonte | não | emendas/csv?exercicio=2025 respondeu HTTP 500 { "Message": "An error has occurred." }; a prefeitura precisa corrigir; nada gravado |
-| emendas_2026.csv | erro_na_fonte | não | emendas/csv?exercicio=2026 respondeu HTTP 500 { "Message": "An error has occurred." }; a prefeitura precisa corrigir; nada gravado |
-| emendas_2027.csv | ano_no_futuro | não | a prefeitura lista emendas no exercício 2027 (provavelmente data de validade digitada como ano) |
-| emendas_2031.csv | ano_no_futuro | não | a prefeitura lista emendas no exercício 2031 (provavelmente data de validade digitada como ano) |
-| obras_2026.csv | sem_dados | não | a prefeitura respondeu 'sem dados' para as obras de 2026; nada gravado |
-| diarias | pseudonimo_sem_segredo | não | segredo VIGIA_SAL_PSEUDONIMO ausente: a coluna IdBeneficiario fica vazia (nome e CPF nunca são gravados) |
-| vinculos.csv | folha_nominal_adiada | não | 2026/8: HTTPError: 524 Server Error: <none> for url: https://wstransparencia.cariacica.es.gov.br/ap; tenta de novo amanhã |
-| vinculos.csv | folha_nominal_adiada | não | 2026/7: HTTPError: 524 Server Error: <none> for url: https://wstransparencia.cariacica.es.gov.br/ap; tenta de novo amanhã |
-| vinculos.csv | folha_nominal_adiada | não | 2026/4: HTTPError: 524 Server Error: <none> for url: https://wstransparencia.cariacica.es.gov.br/ap; tenta de novo amanhã |
-| vinculos.csv | folha_nominal_x_cargos | não | 2026/10: 8849 matrículas na folha nominal x 9063 na consulta por cargo (-2.4%) |
 | fila_resumo_mensal.csv | links_da_fila | não | página da fila fora para o robô e nenhum link guardado |
+| diarias | pseudonimo_sem_segredo | não | segredo VIGIA_SAL_PSEUDONIMO ausente: a coluna IdBeneficiario fica vazia (nome e CPF nunca são gravados) |
+| receitas_2025.csv | erro_na_fonte | não | HTTP 403 <!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]--> <!--[if IE 7]> <html class="n; arquivo anterior mantido |
+| receitas_2026.csv | erro_na_fonte | não | HTTP 403 <!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]--> <!--[if IE 7]> <html class="n; arquivo anterior mantido |
+| licitacoes_2025.csv | erro_na_fonte | não | HTTP 403 <!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]--> <!--[if IE 7]> <html class="n; arquivo anterior mantido |
+| licitacoes_2026.csv | erro_na_fonte | não | HTTP 403 <!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]--> <!--[if IE 7]> <html class="n; arquivo anterior mantido |
 
 ## Conciliação: portal da prefeitura x Tesouro (Siconfi)
 

@@ -1,6 +1,6 @@
 # Vigia Cariacica: relatório automático
 
-_Gerado em 24/11/2026 19:16 (UTC). Dados públicos oficiais; como cada dado é obtido em [METODOLOGIA.md](METODOLOGIA.md)._
+_Gerado em 24/11/2026 19:51 (UTC). Dados públicos oficiais; como cada dado é obtido em [METODOLOGIA.md](METODOLOGIA.md)._
 
 ## Placar de resultados
 
@@ -225,7 +225,7 @@ Fonte: Ministério da Previdência, Indicador de Situação Previdenciária (A �
 | Vila Velha | B | A | A | B |
 | Vitória | B | A | B | A |
 
-## Pendências no CAUC (2026-11-13)
+## Pendências no CAUC (2026-11-19)
 
 Fonte: Tesouro Nacional, CAUC (situação para receber transferências voluntárias da União). "!" no relatório do Tesouro = sem comprovação válida naquele dia; o nome de cada código está nos metadados do Tesouro.
 
@@ -391,7 +391,7 @@ Fonte: PNCP. Total no período: R$ 1.485.974.049,54 em 278 contratos.
 
 Cada pedido protocolado pelo Vigia e o prazo da resposta: 20 dias na Lei de Acesso, prorrogáveis por mais 10, e 30 dias na Ouvidoria. A lista completa, com protocolo e órgão, está em `data/pedidos/pedidos.csv`.
 
-**Respondidas: 3 de 60 (5%).** No prazo: 57. Vencidas sem resposta: 0.
+**Respondidas: 5 de 62 (8%).** No prazo: 57. Vencidas sem resposta: 0.
 
 ### Vencem nos próximos 7 dias
 
@@ -432,7 +432,6 @@ Cada pedido protocolado pelo Vigia e o prazo da resposta: 20 dias na Lei de Aces
 | 30/11/2026 | Pedido 31 | 008943.2026-06 | Limpeza das ruas: contrato da Forte Ambiental acaba em 02/12 sem licitação nova |
 | 30/11/2026 | Pedido 32 | 008944.2026-76 | Emergências que o Plano de Contratações 2026 previa licitar |
 | 30/11/2026 | Pedido 33 | 008945.2026-49 | Material da Moderna em 2024: R$ 38,5 mi pagos, contrato publicado de R$ 16,0 mi |
-| 30/11/2026 | Pedido 34 | 008946.2026-22 | Viadutos de Alto Lage e do Kleber Andrade |
 | 30/11/2026 | Pedido 35 | 008947.2026-92 | Iluminação LED: contrato de R$ 107 mi que vence em 21/03/2027 |
 | 30/11/2026 | Pedido 37 | 008949.2026-38 | Fila de consultas especializadas e exames, por posto |
 | 30/11/2026 | Pedido 38 | 008950.2026-11 | Alfabetização por escola, 2023 a 2025, e metas |
