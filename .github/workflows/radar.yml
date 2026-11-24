@@ -1,0 +1,61 @@
+name: Radar
+
+# Depois de cada coleta: lê os dados que o robô já baixou (pedidos pela LAI, Diário Oficial, contratos e aditivos
+# do PNCP) e, se houver algo novo que pede atenção, abre ou atualiza a issue "Radar do dia". A issue avisa por
+# e-mail quem acompanha o repositório. Sem rede, sem IA, sem segredo: só o GITHUB_TOKEN da própria execução.
+on:
+  workflow_run:
+    workflows: [Coleta]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: radar
+  cancel-in-progress: false
+
+jobs:
+  radar:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Radar
+        id: radar
+        run: |
+          set -euo pipefail
+          python -m vigia.radar | tee radar.txt
+          echo "status=$(tail -n 1 radar.txt)" >> "$GITHUB_OUTPUT"
+
+      - name: Guardar o que já foi avisado
+        run: |
+          set -euo pipefail
+          git config user.name "vigia-bot"
+          git config user.email "vigia-bot@users.noreply.github.com"
+          git add data/radar/
+          git diff --cached --quiet || { git commit -m "radar: $(date -u +%F)"; git pull --rebase -q; git push; }
+
+      - name: Abrir ou atualizar a issue "Radar do dia"
+        if: steps.radar.outputs.status == 'novo'
+        run: |
+          set -euo pipefail
+          gh label create radar --color 0E8A16 --description "Radar diário do Vigia" 2>/dev/null || true
+          num=$(gh issue list --label radar --state open --json number --jq '.[0].number // empty')
+          if [ -n "$num" ]; then
+            gh issue comment "$num" --body-file data/radar/hoje.md
+          else
+            gh issue create --title "Radar do dia" --label radar --body-file data/radar/hoje.md
+          fi
