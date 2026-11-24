@@ -45,10 +45,10 @@ INDEXNOW = _BUSCA.get("indexnow", "")
 # Menu curto (24/11/2026): o que o morador mais procura. O resto fica em "Mais páginas" e no rodapé.
 # Até 5 itens (NN/g, UI/UX Pro Max "bottom-nav-limit"); o Início é a marca no topo.
 MENU = [("/bairros/", "Meu bairro", "bairros"), ("/denuncie/", "Fazer uma denúncia", "denuncie"),
-        ("/problemas/", "Os problemas da cidade", "problemas"), ("/perguntas/", "O que perguntamos", "perguntas"),
-        ("/novidades/", "O que o Vigia fez", "novidades")]
+        ("/problemas/", "Os problemas da cidade", "problemas"), ("/mapa/", "Mapa da cidade", "mapa"),
+        ("/perguntas/", "O que perguntamos", "perguntas"), ("/novidades/", "O que o Vigia fez", "novidades")]
 MENU_MAIS = [("/fila/", "Fila da saúde", "fila"), ("/vereadores/", "Vereadores", "vereadores"),
-             ("/dinheiro/", "Dinheiro da prefeitura", "dinheiro"), ("/mapa/", "Mapa dos bairros", "mapa"),
+             ("/dinheiro/", "Dinheiro da prefeitura", "dinheiro"),
              ("/fontes/", "De onde vêm os números", "fontes"), ("/quem-somos/", "Quem somos", "quem")]
 # Formulário de denúncia (página /denuncie/): as respostas caem no Google Formulários da conta do Vigia, nunca no
 # site. Sem este arquivo, a página mostra só o direct do Instagram e o e-mail.
@@ -77,7 +77,7 @@ def gerar(saida: Path, hoje: date | None = None) -> dict[str, dict]:
                       trim_blocks=True, lstrip_blocks=True)
     css = (AQUI / "estatico" / "estilo.css").read_bytes() + (AQUI / "estatico" / "site.js").read_bytes()
     comum = {"base": BASE, "menu": MENU, "menu_mais": MENU_MAIS, "versao": hashlib.sha1(css).hexdigest()[:8],
-             "hoje_texto": _data_texto(hoje), "br": D.br, "meses": D.meses, "falado": D.falado,
+             "hoje_texto": _data_texto(hoje), "hoje_dm": hoje.strftime("%d/%m/%Y"), "br": D.br, "meses": D.meses, "falado": D.falado,
              "de_cada": D.de_cada, "ddmm": _ddmm, "cem": _cem, "rot": V.rot, "rot_palavras": V.rot_palavras,
              "verificacao": VERIFICACAO, "redes": REDES,
              "rf": D.reais_cheio, "cheio": D.reais_cheio, "extenso": D.extenso, "categorias": C.CATEGORIAS}
@@ -85,12 +85,14 @@ def gerar(saida: Path, hoje: date | None = None) -> dict[str, dict]:
     if saida.exists():
         shutil.rmtree(saida)
     saida.mkdir(parents=True)
-    for f in ("estilo.css", "site.js", "marca.svg", "bandeira.svg", "compartilhar.png", "manifest.webmanifest",
+    for f in ("estilo.css", "site.js", "marca.svg", "marca-v.svg", "bandeira.svg", "compartilhar.png", "manifest.webmanifest",
               "icone-48.png", "icone-192.png", "icone-512.png", "apple-touch-icon.png", "favicon.ico"):
         orig = AQUI / "estatico" / f
         if orig.exists():
             shutil.copy(orig, saida / f)
     shutil.copytree(AQUI / "estatico" / "fontes", saida / "fontes")
+    if (AQUI / "estatico" / "fotos").exists():   # fotos reais de Cariacica (Wikimedia Commons, com crédito na página)
+        shutil.copytree(AQUI / "estatico" / "fotos", saida / "fotos")
     (saida / ".nojekyll").write_text("")
     if INDEXNOW:   # chave do IndexNow (Bing, Yandex, Seznam, Naver): arquivo público na raiz, com a própria chave
         (saida / f"{INDEXNOW}.txt").write_text(INDEXNOW, encoding="utf-8")
@@ -176,7 +178,8 @@ def gerar(saida: Path, hoje: date | None = None) -> dict[str, dict]:
              bairros=bs, busca_id="inicio", busca_so_com_texto=True, padrao_baixa=padrao_baixa, pad=pad,
              padrao_alta=padrao_alta, pop_total=sum(b["populacao"] for b in bs), fila_falado=D.br(fl["pedidos"]), n_perguntas=perg["total"],
              por_mes=D.reais(round(por_morador / 12)), resultados=resultados, primeiro_prazo=primeiro_prazo, parciais=perg['parciais'], respondidas=perg['respondidas'],
-             ultimas=eventos[:4], n_pubs=len(pubs), zap=zap_padrao)
+             ultimas=eventos[:4], n_pubs=len(pubs), zap=zap_padrao,
+             mapa_inicio=M.mapa(bs) if M.existe() else None)
 
     cesan = pergunta("2026111046")
     escrever("/bairros/", "bairros.html", "Como está o seu bairro?",

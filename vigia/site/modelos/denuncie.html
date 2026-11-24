@@ -8,7 +8,7 @@
 
 <div class="emergencia-linha">
   <p><strong>Emergência? Ligue de graça:</strong></p>
-  <ul>{% for n, nome in urgencia[:4] %}<li><a href="tel:{{ n }}"><b>{{ n }}</b><span>{{ nome|replace(' Militar', '') }}</span></a></li>{% endfor %}</ul>
+  <ul>{% for n, nome in urgencia %}<li><a href="tel:{{ n }}"><b>{{ n }}</b><span>{{ nome|replace(' Militar', '')|replace('Violência contra a mulher', 'Mulher')|replace('Direitos humanos', 'Direitos humanos') }}</span></a></li>{% endfor %}</ul>
 </div>
 
 <div class="grade-2 larga-esq">

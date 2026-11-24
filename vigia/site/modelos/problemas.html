@@ -2,7 +2,7 @@
 {% from "_cat.html" import cat, icone with context %}
 {% block conteudo %}
 <section class="bloco" aria-labelledby="h1">
-  <p class="prot"><b>Maiores problemas</b> · com fonte oficial</p>
+  <p class="prot"><b>Problemas</b> · fonte oficial</p>
   <h1 id="h1" tabindex="-1">Os maiores problemas de Cariacica</h1>
   <p class="lead">Escolhemos {{ problemas|length }}. São os que atingem mais gente, fazem mais estrago e podem ser resolvidos pela cidade.</p>
   <div class="oque"><b>O que já fizemos</b><p>Para cada problema, fizemos perguntas oficiais com prazo e mostramos os números. Quem conserta é a prefeitura. Quando algo mudar de verdade, a gente mostra em <a href="/novidades/">O que o Vigia fez</a>.</p></div>
@@ -16,7 +16,7 @@
       <b class="titulo">{{ x.titulo }}</b>
       <span class="numero num">{{ x.numero }}</span>
       <span class="t">{{ x.legenda }}</span>
-      <span class="mais">{% if x.perg %}{{ x.perg|length }} {{ "pergunta" if x.perg|length == 1 else "perguntas" }} do Vigia · {% endif %}Ver o problema →</span>
+      <span class="mais">{% if x.perg %}{{ x.perg|length }} {{ "pergunta" if x.perg|length == 1 else "perguntas" }} do Vigia<span class="sep"> · </span>{% endif %}<span class="nw">Ver o problema&nbsp;→</span></span>
     </a>
   </li>
 {% endfor %}

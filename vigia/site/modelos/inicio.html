@@ -2,16 +2,24 @@
 {% from "_graficos.html" import dez %}
 {% from "_evento.html" import evento with context %}
 {% block conteudo %}
-{# Início simples (24/11/2026): uma mensagem por tela. 1) o que é o Vigia; 2) o seu bairro; 3) três caminhos
-   grandes; 4) um achado só; 5) as últimas. O resto fica no menu. #}
+{# Início (24/11/2026, rodada de "alma"): Cariacica na capa (foto real, corte em V como a bandeira), a manchete da
+   marca, o seu bairro, três caminhos, o mapa da cidade e um achado. O resto fica no menu. #}
+<figure class="capa-foto">
+  <picture>
+    <source media="(min-width:760px)" srcset="/fotos/cariacica-moxuara-1280.webp">
+    <img src="/fotos/cariacica-moxuara-720.webp" alt="Casas de Cariacica com o Monte Moxuara ao fundo, num dia de sol." width="720" height="352" fetchpriority="high">
+  </picture>
+  <figcaption>Moxuara, Cariacica · Foto: HVL, <a href="https://commons.wikimedia.org/wiki/File:Vista_parcial_da_sede_de_Cariacica_ES_com_o_Monte_Mochuara_ao_fundo.JPG" rel="noopener">CC BY 4.0</a></figcaption>
+</figure>
+
 <div class="abertura">
 <section class="heroi" aria-labelledby="h1">
-  <h1 id="h1" tabindex="-1">O que a prefeitura faz com o seu dinheiro.</h1>
+  <h1 id="h1" tabindex="-1">O que a prefeitura faz com o <span class="mk">seu dinheiro</span></h1>
   <p class="lead">A gente confere nos documentos oficiais e mostra a prova. Você cobra.</p>
   <p class="marca-texto">Feito por moradores de Cariacica. Sem partido. Não é site da prefeitura.</p>
 </section>
 
-<section class="bloco folha" aria-labelledby="h-bairro">
+<section class="bloco folha colchete" aria-labelledby="h-bairro">
   <h2 id="h-bairro">Como está o seu bairro?</h2>
   <p class="seu-bairro" data-seu-bairro hidden><a href="/bairros/"><span>Voltar para <b></b></span><span aria-hidden="true">→</span></a></p>
   {% include "_busca.html" %}
@@ -23,6 +31,27 @@
   <a class="caminho" href="/problemas/"><b>Os problemas da cidade</b><span>Saúde, esgoto, escola e mais, com número oficial.</span></a>
   <a class="caminho" href="/perguntas/"><b>O que perguntamos</b><span>{{ n_perguntas }} perguntas à prefeitura. Veja quem respondeu.</span></a>
 </nav>
+
+{% if mapa_inicio %}
+<section class="mapa-inicio" aria-labelledby="h-mapa">
+  <div class="bloco mapa-texto">
+    <p class="prot">Mapa · Censo do IBGE de 2022</p>
+    <h2 id="h-mapa">Cariacica, bairro por bairro</h2>
+    <p>Quanto mais escuro, mais casas sem esgoto ligado na rede. Toque no seu bairro para ver o resto: posto de saúde, escola, obras.</p>
+    <ul class="faixas mini" aria-label="Cores do mapa">
+      <li>menos</li><li><i class="m0" aria-hidden="true"></i><i class="m1" aria-hidden="true"></i><i class="m2" aria-hidden="true"></i><i class="m3" aria-hidden="true"></i><i class="m4" aria-hidden="true"></i></li><li>mais sem esgoto</li>
+    </ul>
+    <p><a class="btn cheio" href="/mapa/">Abrir o mapa completo</a></p>
+    <p class="fonte">Fonte: IBGE, Censo 2022, resultados por bairro. Cada cor tem cerca de 20 bairros. Contorno tracejado: área sem bairro no Censo, quase toda zona rural.</p>
+  </div>
+  <figure class="mapa mapa-mini">
+    <svg viewBox="0 0 {{ mapa_inicio.largura }} {{ mapa_inicio.altura }}" data-camada="esg" role="img" aria-labelledby="mapa-inicio-tit">
+      <title id="mapa-inicio-tit">Mapa dos bairros de Cariacica, pintado pelas casas sem esgoto na rede. Cada bairro leva à página dele.</title>
+      {% for c in mapa_inicio.caminhos %}{% if c.tem %}<a href="/bairros/{{ c.slug }}/"><title>{{ c.nome }}</title><path d="{{ c.d }}" data-qesg="{{ c.q.esg }}"/></a>{% else %}<path class="sem" d="{{ c.d }}"/>{% endif %}{% endfor %}
+    </svg>
+  </figure>
+</section>
+{% endif %}
 
 <section class="bloco achado" aria-labelledby="h-padrao">
   <h2 id="h-padrao">Onde a renda é menor, falta mais esgoto</h2>

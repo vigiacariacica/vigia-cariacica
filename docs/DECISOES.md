@@ -144,3 +144,9 @@ com a data e o motivo, no mesmo commit da mudança. O histórico do git guarda o
   só sobre #00753a; rosa só como fundo do botão Denunciar, e #d6338a nos gráficos (3:1); selos de situação com
   palavra e fundo suave; foco amarelo com contorno escuro; cartões de borda fina. A Courier saiu: a página ficou
   cerca de 15% mais leve.
+- **Alma da marca (v6, 24/11/2026)**, depois de a dona achar a v5 "sem alma": ciclo de crítico de design
+  independente e melhoria, até aprovar. Volta a manchete condensada em caixa alta (só em título de até 8 palavras),
+  a linha de protocolo em máquina de escrever, o marca-texto rosa, o V da bandeira no topo, o canto reto e os
+  colchetes. Foto real de Cariacica na capa (Moxuara, Wikimedia Commons, CC BY 4.0, com crédito). O mapa volta ao
+  menu e ao início, em tons de tinta (mais escuro = mais casas sem esgoto na rede, também no modo escuro), e cada
+  bairro leva à sua página. O texto continua na Atkinson e o contraste segue a v5.

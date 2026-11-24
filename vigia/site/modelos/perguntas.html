@@ -22,7 +22,7 @@
   <div><b class="num">{{ p.respondidas }}</b><span>respondidas por inteiro</span></div>
   <div><b class="num">{{ p.parciais }}</b><span>respondidas só em parte</span></div>
   <div><b class="num">{{ p.esperando }}</b><span>esperando, ainda no prazo</span></div>
-  {% if p.atrasadas %}<div><b class="num">{{ p.atrasadas }}</b><span>passaram do prazo sem resposta</span></div>{% else %}<div><b class="texto">Nenhuma</b><span>passou do prazo até agora</span></div>{% endif %}
+  {% if p.atrasadas %}<div><b class="num">{{ p.atrasadas }}</b><span>passaram do prazo sem resposta</span></div>{% else %}<div><b class="num">0</b><span>passaram do prazo até agora</span></div>{% endif %}
 </div>
 
 {% if p.respondidos %}

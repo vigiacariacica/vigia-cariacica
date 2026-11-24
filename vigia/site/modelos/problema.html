@@ -2,7 +2,7 @@
 {% from "_cat.html" import cat, icone with context %}
 {% block conteudo %}
 <section class="bloco" aria-labelledby="h1">
-  <p class="prot">{{ icone(x.cat) }} <a href="/problemas/">Maiores problemas</a> · {{ i }} de {{ total }} · <b>{{ x.titulo }}</b></p>
+  <p class="prot">{{ icone(x.cat) }} <a href="/problemas/">Maiores problemas</a>&nbsp;· {{ i }} de {{ total }}&nbsp;· <b>{{ x.titulo }}</b></p>
   <h1 id="h1" tabindex="-1" class="h1-achado"><span class="numero num quebra">{{ x.numero }}</span> <span class="resto">{{ x.legenda }}</span></h1>
 </section>
 
