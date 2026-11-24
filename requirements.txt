@@ -10,6 +10,6 @@ pytest==9.2.0
 jinja2==3.1.6
 segno==1.6.6
 # site: imagem de prévia de cada página (vigia/site/previa.py) com as letras do site (woff2 → TTF na memória)
-pillow==12.3.0
+pillow==13.0.0
 fonttools==4.67.0
 brotli==1.2.1
