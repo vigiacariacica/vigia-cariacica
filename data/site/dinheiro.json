@@ -1,0 +1,73 @@
+{
+ "ano": 2025,
+ "total": 1663887316.63,
+ "populacao": 375500,
+ "fonte_total": "Tribunal de Contas do ES (TCE-ES), dados abertos, despesas da prefeitura em 2025, valor liquidado (o que a prefeitura conferiu que recebeu): R$ 1.663.887.316,63. População: IBGE, estimativa de 2025 usada pelo Tesouro Nacional (375.500).",
+ "blocos": [
+  {
+   "nome": "Salários e aposentadorias",
+   "detalhe": "dos servidores da prefeitura",
+   "milhoes": 750.6,
+   "de_cada_100": 45.1
+  },
+  {
+   "nome": "Empresas contratadas",
+   "detalhe": "obras, limpeza, coleta de lixo e manutenção",
+   "milhoes": 664.6,
+   "de_cada_100": 39.9
+  },
+  {
+   "nome": "Entidades",
+   "detalhe": "que cuidam de unidades de saúde e de assistência social",
+   "milhoes": 91.2,
+   "de_cada_100": 5.5
+  },
+  {
+   "nome": "Parcelas de empréstimos",
+   "detalhe": "e os juros",
+   "milhoes": 72.2,
+   "de_cada_100": 4.3
+  },
+  {
+   "nome": "Compras junto com outras cidades",
+   "detalhe": "os consórcios, como o da merenda",
+   "milhoes": 55.4,
+   "de_cada_100": 3.3
+  },
+  {
+   "nome": "Outros gastos",
+   "detalhe": "impostos, auxílios e indenizações",
+   "milhoes": 30.0,
+   "de_cada_100": 1.8
+  }
+ ],
+ "saude": [
+  {
+   "cidade": "Vitória",
+   "por_morador": 1374
+  },
+  {
+   "cidade": "Viana",
+   "por_morador": 1117
+  },
+  {
+   "cidade": "Serra",
+   "por_morador": 857
+  },
+  {
+   "cidade": "Vila Velha",
+   "por_morador": 753
+  },
+  {
+   "cidade": "Guarapari",
+   "por_morador": 718
+  },
+  {
+   "cidade": "Cariacica",
+   "por_morador": 649
+  }
+ ],
+ "fonte_saude": "Tesouro Nacional (Siconfi), contas anuais de 2025: gasto com saúde dividido pela população estimada pelo IBGE para 2025.",
+ "pergunta_saude": "008907.2026-08",
+ "atualizado": "2026-11-11"
+}

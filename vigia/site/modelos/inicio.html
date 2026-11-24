@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% from "_graficos.html" import dez %}
+{% from "_cat.html" import cat, icone with context %}
+{% block conteudo %}
+<div class="grade-2 larga-esq">
+  <section class="bloco" aria-labelledby="h1">
+    <h1 id="h1" tabindex="-1">A gente mostra como a prefeitura usa o <span class="mk">seu dinheiro</span>.</h1>
+    <p class="lead">O <strong>Vigia Cariacica</strong> olha as contas da prefeitura e da Câmara. Perguntamos o que não está claro. E mostramos a resposta, para você cobrar.</p>
+  </section>
+  <section class="bloco folha" aria-labelledby="h-bairro">
+    <h2 id="h-bairro">Como está o seu bairro?</h2>
+    <p>Veja o esgoto, o posto de saúde, as obras e a fila do seu bairro. E compare com o resto da cidade.</p>
+    <p class="seu-bairro" data-seu-bairro hidden><a href="/bairros/"><span>Voltar para <b></b></span><span aria-hidden="true">→</span></a></p>
+    {% include "_busca.html" %}
+  </section>
+</div>
+
+<section class="bloco faixa" aria-labelledby="h-padrao">
+  <div class="grade-2">
+    <div class="bloco">
+      <p class="prot">O que os números mostram</p>
+      <h2 id="h-padrao">Onde a renda é menor, falta mais esgoto</h2>
+      <p class="lead">Nos 20 bairros de menor renda, <strong>{{ padrao_baixa }}</strong> têm esgoto ligado na rede. Nos 20 bairros de maior renda, <strong>{{ padrao_alta }}</strong>.</p>
+      <p>É por isso que a gente olha as contas: o dinheiro precisa chegar primeiro onde falta mais.</p>
+      <p><a href="/bairros/">Veja todos os bairros →</a></p>
+    </div>
+    <div class="bloco">
+      <p><strong>Casas com esgoto ligado na rede, de cada 10</strong></p>
+      {{ dez(pad.esgoto_renda_baixa, pad.esgoto_renda_alta, "Bairros de menor renda", "Bairros de maior renda", padrao_baixa, padrao_alta) }}
+    </div>
+  </div>
+  <p class="fonte">Fonte: IBGE, Censo 2022, resultados por bairro. Bairros com 100 casas ou mais, separados pela renda de quem sustenta a casa. Contas do Vigia.</p>
+</section>
+
+<section class="bloco" aria-labelledby="h-portas">
+  <h2 id="h-portas">O que mais você quer saber?</h2>
+  <div class="grade-3">
+    <a class="porta" href="/problemas/">{{ cat("seguranca", "Cariacica") }}<b>Os maiores problemas</b><span class="t">Fila, esgoto, escola, violência e mais. O número e o que já perguntamos.</span><span class="seta" aria-hidden="true">→</span></a>
+    <a class="porta" href="/fila/">{{ cat("saude") }}<b>A fila do seu posto</b><span class="t">{{ fila_falado }} consultas e exames esperam vaga. Veja o seu posto.</span><span class="seta" aria-hidden="true">→</span></a>
+    <a class="porta" href="/perguntas/">{{ cat("pergunta") }}<b>O que perguntamos</b><span class="t">{{ n_perguntas }} perguntas à prefeitura e à Câmara. Veja quem já respondeu.</span><span class="seta" aria-hidden="true">→</span></a>
+    <a class="porta" href="/dinheiro/">{{ cat("dinheiro") }}<b>Para onde vai o dinheiro</b><span class="t">É como se a prefeitura gastasse {{ por_mes }} por mês com cada morador. Veja em quê.</span><span class="seta" aria-hidden="true">→</span></a>
+    <a class="porta" href="/vereadores/">{{ cat("camara") }}<b>O que fizeram os vereadores</b><span class="t">Os projetos de cada um, do que muda a vida ao simbólico. E a conta.</span><span class="seta" aria-hidden="true">→</span></a>
+    <a class="porta" href="/mapa/">{{ cat("mapa") }}<b>Onde mora a gente</b><span class="t">{{ br(pop_total) }} pessoas em 99 bairros. Veja no mapa onde é mais apertado e onde falta esgoto.</span><span class="seta" aria-hidden="true">→</span></a>
+    <a class="porta" href="/fontes/">{{ cat("fonte", "Nossas fontes") }}<b>De onde vêm os números</b><span class="t">Cada fonte oficial, como fazemos a conta e o que o dado não mostra.</span><span class="seta" aria-hidden="true">→</span></a>
+  </div>
+</section>
+
+<div class="grade-2">
+  <section class="bloco" aria-labelledby="h-funciona">
+    <h2 id="h-funciona">Como o Vigia funciona</h2>
+    <ol class="passos">
+      <li><b>Olhamos as contas</b><span>Todo dia, um programa baixa as contas oficiais da cidade.</span></li>
+      <li><b>Perguntamos</b><span>O que não está claro vira pergunta. A lei manda responder em 20 dias.</span></li>
+      <li><b>Você cobra</b><span>A resposta sai aqui, do jeito que veio. Com a prova na mão, você cobra.</span></li>
+    </ol>
+    <p>Não somos contra nenhum governo. <a href="/quem-somos/">Quem somos e no que acreditamos →</a></p>
+  </section>
+  <section class="bloco folha" aria-labelledby="h-mudou">
+    <p class="prot">Placar</p>
+    <h2 id="h-mudou">O que já mudou</h2>
+    <p class="grande num">{{ resultados|length }}</p>
+    {% if resultados %}
+    <ul class="regras">{% for r in resultados %}<li>{{ r.o_que_mudou }} <span class="meta">({{ r.data }})</span></li>{% endfor %}</ul>
+    {% else %}
+    {% if parciais and not respondidas %}<p>Ainda nada. As primeiras respostas chegaram incompletas, e a gente cobra o resto.</p>{% elif respondidas %}<p>Ainda nada mudou de fato. Já chegaram respostas, e a gente confere cada uma.</p>{% else %}<p>Ainda nada. As primeiras respostas chegam a partir de {{ primeiro_prazo }}.</p>{% endif %}
+    {% endif %}
+    <p class="miuda">Contamos só o que tem prova oficial: uma resposta completa, um dado publicado, um serviço que melhorou. Nossa meta: 3 até fevereiro de 2027.</p>
+  </section>
+</div>
+
+{% include "_compartilhar.html" %}
+{% endblock %}

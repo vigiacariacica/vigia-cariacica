@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<section class="bloco" aria-labelledby="h1">
+  <p class="prot"><b>Nossas fontes</b> · como fazemos</p>
+  <h1 id="h1" tabindex="-1">De onde vêm os nossos números</h1>
+  <p class="lead">Nenhum número do site é inventado ou chutado. Aqui está de onde vem cada um, como fazemos a conta e o que o dado não mostra.</p>
+</section>
+
+<section class="bloco" aria-labelledby="h-regras">
+  <h2 id="h-regras">Nossas regras</h2>
+  <ul class="tarefas grade-3">
+  {% for forte, resto in principios %}<li><b>{{ forte }}</b><span>{{ resto }}</span></li>
+  {% endfor %}
+  </ul>
+</section>
+
+<section class="bloco" aria-labelledby="h-partes">
+  <h2 id="h-partes">Parte por parte</h2>
+  <p>Abra a parte do site que você quer conferir.</p>
+  <div>
+  {% for p in partes %}
+  <details class="grupo" id="{{ p.id }}">
+    <summary><b>{{ p.titulo }}</b><span>{{ p.fontes|length }} {{ "fonte" if p.fontes|length == 1 else "fontes" }}</span></summary>
+    <div class="bloco aberto">
+      <p class="lead">{{ p.o_que }} <a href="{{ p.link }}">Ir para a página →</a></p>
+      <div class="grade-3">
+        <div class="folha">
+          <h3>De onde vem</h3>
+          <ul class="regras">
+          {% for nome, url, tira in p.fontes %}<li><span class="meta">{% if url %}<a href="{{ url }}">{{ nome }}</a>{% else %}{{ nome }}{% endif %}</span>{% if tira %}<br>{{ tira|capitalize }}.{% endif %}</li>
+          {% endfor %}
+          </ul>
+        </div>
+        <div class="folha">
+          <h3>Como fazemos a conta</h3>
+          <ul class="regras">{% for t in p.como %}<li>{{ t }}</li>{% endfor %}</ul>
+          <p><strong>Atualiza:</strong> {{ p.atualiza }}</p>
+        </div>
+        <div class="outro">
+          <h3>O que o dado não mostra</h3>
+          <ul class="regras">{% for t in p.limites %}<li>{{ t }}</li>{% endfor %}</ul>
+        </div>
+      </div>
+    </div>
+  </details>
+  {% endfor %}
+  </div>
+</section>
+
+<section class="bloco" aria-labelledby="h-palavras">
+  <h2 id="h-palavras">Palavras difíceis</h2>
+  <dl class="glossario">
+  {% for t, d in palavras %}<div><dt data-fora-da-regua>{{ t }}</dt><dd>{{ d }}</dd></div>
+  {% endfor %}
+  </dl>
+</section>
+
+<section class="bloco" aria-labelledby="h-erro">
+  <h2 id="h-erro">Achou um erro?</h2>
+  <p>Mande no Instagram <a href="https://www.instagram.com/vigiacariacica/">@vigiacariacica</a>. Diga a página e o número. A gente confere na fonte, corrige e avisa o que mudou.</p>
+</section>
+
+{% include "_compartilhar.html" %}
+<p class="fonte">Esta página lista as fontes de todas as outras. Cada página do site também traz a sua fonte no pé, com a data do dado.</p>
+{% endblock %}

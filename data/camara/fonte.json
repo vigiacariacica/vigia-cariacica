@@ -1,0 +1,20 @@
+{
+ "coletado_em": "2026-11-06",
+ "periodo_inicio": "2025-01-01",
+ "fonte_producao": "Sistema da Câmara Municipal de Cariacica, consulta de produção por autor",
+ "url_producao": "https://cariacica.camarasempapel.com.br/consulta-producao.aspx",
+ "classificacao": "Feita pelo Vigia lendo a ementa de cada projeto (efeito concreto, efeito fraco, simbólico, provavelmente inconstitucional, ementa não permite avaliar).",
+ "salario_mensal": 13500,
+ "salario_desde": "2025-01",
+ "salario_fonte": "Folha de pagamento da Câmara no Portal da Transparência (19 x R$ 13.500); era R$ 8.016,94 em 2024",
+ "gasto_camara": {
+  "2025": 37534881.47,
+  "2026": 38878429.18
+ },
+ "gasto_camara_ate": "2026-11-11",
+ "gasto_fonte": "Portal da Transparência da Câmara, despesa liquidada por unidade",
+ "url_gasto": "https://transparenciacmc.cariacica.es.gov.br/Despesa.Secretaria.aspx",
+ "gasto_por_morador_2025": 99.77,
+ "gabinete_teto_mensal": 60000,
+ "gabinete_teto_lei": "Lei 6.865/2026 (antes R$ 50 mil)"
+}

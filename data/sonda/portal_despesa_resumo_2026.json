@@ -1,0 +1,71 @@
+{
+  "Orcado": 1859974203.00,
+  "Mensal": [
+    {
+      "Mes": 1,
+      "ValorEmpenhado": 616785368.40,
+      "ValorLiquidado": 90221746.55,
+      "ValorPago": 83653172.73
+    },
+    {
+      "Mes": 2,
+      "ValorEmpenhado": 105655413.60,
+      "ValorLiquidado": 118468504.67,
+      "ValorPago": 118582422.89
+    },
+    {
+      "Mes": 3,
+      "ValorEmpenhado": 120929906.27,
+      "ValorLiquidado": 146928310.76,
+      "ValorPago": 147771064.74
+    },
+    {
+      "Mes": 4,
+      "ValorEmpenhado": 145266003.81,
+      "ValorLiquidado": 166957874.68,
+      "ValorPago": 161324262.90
+    },
+    {
+      "Mes": 5,
+      "ValorEmpenhado": 138097154.61,
+      "ValorLiquidado": 148204989.51,
+      "ValorPago": 152815960.48
+    },
+    {
+      "Mes": 6,
+      "ValorEmpenhado": 97477034.45,
+      "ValorLiquidado": 161036832.74,
+      "ValorPago": 159729673.63
+    },
+    {
+      "Mes": 7,
+      "ValorEmpenhado": 126938498.68,
+      "ValorLiquidado": 179302006.39,
+      "ValorPago": 181945353.82
+    },
+    {
+      "Mes": 8,
+      "ValorEmpenhado": 88781784.15,
+      "ValorLiquidado": 142733304.04,
+      "ValorPago": 143337712.05
+    },
+    {
+      "Mes": 9,
+      "ValorEmpenhado": 121599168.19,
+      "ValorLiquidado": 176405438.20,
+      "ValorPago": 172389220.54
+    },
+    {
+      "Mes": 10,
+      "ValorEmpenhado": 106706130.63,
+      "ValorLiquidado": 150539684.90,
+      "ValorPago": 152379009.85
+    },
+    {
+      "Mes": 11,
+      "ValorEmpenhado": 23757379.94,
+      "ValorLiquidado": 38058929.54,
+      "ValorPago": 30268675.54
+    }
+  ]
+}

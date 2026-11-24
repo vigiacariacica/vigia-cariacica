@@ -1,0 +1,63 @@
+name: Câmara (sessões)
+
+# Transcreve e resume as sessões novas da Câmara de Cariacica (canal do YouTube) com o Gemini.
+# Saída: data/camara/sessoes/<data>_<vídeo>.md (transcrição com horário) e .json (votações, falas sobre
+# dinheiro, temas e momentos para vídeo), e o índice data/camara/sessoes.csv.
+# Transcrição automática erra: nada vai a público sem conferir no vídeo, no minuto indicado. Por isso, com o
+# repositório público, roda só pelo botão e guarda a saída fora do git (.gitignore), até existir a etapa de
+# conferência (docs/DECISOES.md, 24/11/2026).
+on:
+  workflow_dispatch:
+    inputs:
+      video:
+        description: "ID de um vídeo específico (vazio = sessões novas)"
+        required: false
+        default: ""
+      max:
+        description: "Quantas sessões novas processar"
+        required: false
+        default: "3"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: camara
+  cancel-in-progress: false
+
+jobs:
+  transcrever:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests==2.34.2
+      - name: Transcrever e resumir
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          MAX: ${{ inputs.max || '3' }}
+          VIDEO: ${{ inputs.video }}
+        run: |
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "::warning::Segredo GEMINI_API_KEY ainda não foi criado; nada a fazer."; exit 0
+          fi
+          if [ -n "$VIDEO" ]; then python ferramentas/camara_sessoes/transcrever.py --max "$MAX" --video "$VIDEO"
+          else python ferramentas/camara_sessoes/transcrever.py --max "$MAX"; fi
+      - name: Salvar
+        run: |
+          git config user.name "vigia-bot"
+          git config user.email "vigia-bot@users.noreply.github.com"
+          git add data/camara
+          git diff --cached --quiet && { echo "Nada mudou."; exit 0; }
+          git commit -m "câmara: sessões transcritas ($(date -u +%Y-%m-%d))"
+          for tentativa in 1 2 3; do
+            if git pull --rebase -X theirs origin main && git push; then exit 0; fi
+            git rebase --abort 2>/dev/null || true; sleep 10
+          done
+          exit 1

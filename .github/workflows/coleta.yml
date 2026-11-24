@@ -1,0 +1,207 @@
+name: Coleta
+
+# Diário: portal da prefeitura (pagamentos, contratos, emendas, obras, diárias, receitas), Tesouro (Siconfi),
+# PNCP de Cariacica e empresas novas; 26 regras.
+# Semanal: preços das cidades vizinhas no PNCP (referência para sobrepreço), empresas punidas (CEIS/CNEP)
+# e emendas Pix (Transferegov).
+# No dia 1 de cada mês o diário também baixa de novo os anos fechados do portal (dado antigo alterado).
+on:
+  schedule:
+    - cron: "23 9 * * *"   # todo dia, 06:23 de Brasília
+    - cron: "47 5 * * 0"   # domingo, 02:47 de Brasília
+  workflow_dispatch:        # botão "Run workflow"
+    inputs:
+      modo:
+        description: "diario ou semanal"
+        type: choice
+        options: [diario, semanal]
+        default: diario
+      completo:
+        description: "Baixar também os anos fechados do portal (detecta dado antigo alterado)"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: ["vigia/**", "tests/**", "config.toml", "requirements.txt", ".github/workflows/coleta.yml"]
+
+permissions:
+  contents: write           # commit dos dados e release "banco"
+
+concurrency:
+  group: coleta
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    env:
+      GH_TOKEN: ${{ github.token }}
+      MODO: ${{ github.event.schedule == '47 5 * * 0' && 'semanal' || inputs.modo || 'diario' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main          # sempre a versão mais nova (não a do momento em que a execução foi pedida)
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Testes
+        run: python -m pytest -q
+
+      - name: Baixar o banco (release "banco")
+        # Nunca começar de um banco vazio por engano: só um 404 explícito conta como "release não existe",
+        # e se o git já tem retrato do banco (data/qualidade/banco.csv) a release é obrigatória.
+        # O banco fica criptografado na release (segredo VIGIA_CHAVE_BANCO): tem sócios e respostas
+        # cruas das APIs, que não devem ficar públicos quando o repositório abrir.
+        env:
+          VIGIA_CHAVE_BANCO: ${{ secrets.VIGIA_CHAVE_BANCO }}
+        run: |
+          set -euo pipefail
+          mkdir -p banco
+          code=$(curl -sS -o rel.json -w '%{http_code}' -H "Authorization: Bearer $GH_TOKEN" \
+                 "https://api.github.com/repos/$GITHUB_REPOSITORY/releases/tags/banco")
+          if [ "$code" = "200" ]; then
+            nome=$(jq -r '[.assets[].name | select(test("^vigia-[0-9]{8}T[0-9]{4}\\.db\\.gz(\\.enc)?$"))] | sort_by(.[6:19]) | last // empty' rel.json)
+            [ -z "$nome" ] && nome=$(jq -r '[.assets[].name | select(. == "vigia.db.gz")] | first // empty' rel.json)
+            [ -z "$nome" ] && { echo "::error::Release 'banco' sem nenhum arquivo de banco"; exit 1; }
+            echo "Baixando $nome"
+            gh release download banco --pattern "$nome" --dir banco --clobber
+            if [[ "$nome" == *.enc ]]; then
+              [ -z "${VIGIA_CHAVE_BANCO:-}" ] && { echo "::error::Banco criptografado e segredo VIGIA_CHAVE_BANCO ausente"; exit 1; }
+              openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -pass env:VIGIA_CHAVE_BANCO \
+                -in "banco/$nome" -out banco/vigia.db.gz
+              rm "banco/$nome"; nome=vigia.db.gz
+            fi
+            gunzip -c "banco/$nome" > banco/vigia.db && rm "banco/$nome"
+          elif [ "$code" = "404" ]; then
+            if [ -f data/qualidade/banco.csv ]; then
+              echo "::error::O git tem retrato do banco, mas a release 'banco' sumiu. Parando para não começar do zero."
+              exit 1
+            fi
+            # Primeira execução: o banco inicial trazido do computador do projeto (07/11/2026) está no branch "semente"
+            git fetch -q origin semente
+            git show origin/semente:vigia.db.gz > banco/vigia.db.gz
+            git show origin/semente:SHA256 | awk '{print $1"  banco/vigia.db.gz"}' | sha256sum -c -
+            gunzip -f banco/vigia.db.gz
+          else
+            echo "::error::GitHub respondeu HTTP $code ao consultar a release 'banco'. Parando."
+            exit 1
+          fi
+          python -c "import sqlite3,sys; r=sqlite3.connect('banco/vigia.db').execute('pragma integrity_check').fetchone()[0]; print('integridade:', r); sys.exit(r!='ok')"
+
+      - name: Coletar, checar e gerar alertas (${{ env.MODO }})
+        env:
+          VIGIA_COMPLETO: ${{ inputs.completo && '1' || '0' }}
+          CHAVE_TRANSPARENCIA: ${{ secrets.CHAVE_TRANSPARENCIA }}
+          # Pseudônimo de quem recebe diárias (sem nome nem CPF no git). Sem o segredo, a coluna fica vazia.
+          VIGIA_SAL_PSEUDONIMO: ${{ secrets.VIGIA_SAL_PSEUDONIMO }}
+        # Se algo falhar, o que deu certo é salvo mesmo assim e o job fica vermelho no fim. Fonte fora do ar
+        # (bloqueio do portal, PNCP caído) só deixa vermelho se durar mais de 20 h (vigia/qualidade.py).
+        run: python -m vigia "$MODO" || echo "VIGIA_FALHOU=1" >> "$GITHUB_ENV"
+
+      - name: Salvar dados no repositório
+        run: |
+          git config user.name "vigia-bot"
+          git config user.email "vigia-bot@users.noreply.github.com"
+          git add data docs/relatorio.md docs/qualidade.md docs/REGRAS.md
+          if git diff --cached --quiet; then
+            echo "Nada novo hoje."
+            exit 0
+          fi
+          git commit -m "dados: coleta ${MODO} de $(date -u +%Y-%m-%d)"
+          # Se alguém publicou algo durante a coleta: os dados desta coleta (mais novos) prevalecem.
+          # Se mesmo assim não der para salvar, o passo falha (vermelho) em vez de perder em silêncio.
+          for tentativa in 1 2 3; do
+            if git pull --rebase -X theirs origin main && git push; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep 10
+          done
+          exit 1
+
+      - name: Subir o banco (só se passou na checagem de não encolher)
+        # Sobe sempre com nome novo (vigia-AAAAMMDDTHHMM.db.gz[.enc]) e só apaga os antigos depois de
+        # confirmar que o novo está lá: um upload que falha nunca deixa a release sem banco.
+        # Com o segredo VIGIA_CHAVE_BANCO, sobe criptografado e apaga as cópias abertas. Sem o segredo,
+        # só sobe aberto enquanto o repositório for privado.
+        if: always()
+        env:
+          VIGIA_CHAVE_BANCO: ${{ secrets.VIGIA_CHAVE_BANCO }}
+          PRIVADO: ${{ github.event.repository.private }}
+        run: |
+          set -euo pipefail
+          if [ ! -f banco/OK ]; then
+            echo "::warning::Banco não aprovado (ver docs/qualidade.md): a versão anterior da release foi mantida."
+            exit 0
+          fi
+          python -c "import sqlite3; c=sqlite3.connect('banco/vigia.db'); c.execute('pragma wal_checkpoint(TRUNCATE)'); c.close()"
+          nome="vigia-$(date -u +%Y%m%dT%H%M).db.gz"
+          gzip -c -6 banco/vigia.db > "banco/$nome"
+          if [ -n "${VIGIA_CHAVE_BANCO:-}" ]; then
+            openssl enc -aes-256-cbc -pbkdf2 -iter 200000 -salt -pass env:VIGIA_CHAVE_BANCO \
+              -in "banco/$nome" -out "banco/$nome.enc"
+            nome="$nome.enc"
+          elif [ "$PRIVADO" != "true" ]; then
+            echo "::error::Repositório público sem o segredo VIGIA_CHAVE_BANCO: o banco NÃO foi publicado aberto."
+            exit 1
+          else
+            echo "::warning::Banco subiu aberto (repositório privado). Cadastre o segredo VIGIA_CHAVE_BANCO antes de abrir o repositório."
+          fi
+          gh release view banco >/dev/null 2>&1 || gh release create banco --title "Banco do Vigia" \
+            --notes "Banco SQLite com o PNCP completo e as respostas cruas das APIs (prova de origem). Atualizado a cada coleta. Como usar: docs/METODOLOGIA.md."
+          gh release upload banco "banco/$nome"
+          ativos=$(gh release view banco --json assets --jq '.assets[].name')
+          echo "$ativos" | grep -qx "$nome" || { echo "::error::Upload do banco não confirmado"; exit 1; }
+          sufixo=""; [[ "$nome" == *.enc ]] && sufixo=".enc"
+          if [ "$MODO" = "semanal" ]; then
+            semana="vigia-semana-$(date -u +%Y-%m-%d).db.gz$sufixo"
+            cp "banco/$nome" "banco/$semana"
+            gh release upload banco "banco/$semana" --clobber
+          fi
+          # mantém os 14 bancos diários e os 8 retratos semanais mais recentes
+          ativos=$(gh release view banco --json assets --jq '.assets[].name')
+          { echo "$ativos" | grep -E '^vigia-[0-9]{8}T[0-9]{4}\.db\.gz(\.enc)?$' | sort | head -n -14 || true
+            echo "$ativos" | grep -E '^vigia-semana-[0-9-]+\.db\.gz(\.enc)?$' | sort | head -n -8 || true
+            echo "$ativos" | grep -E '^vigia(-[0-9]{4}-[0-9]{2}-[0-9]{2})?\.db\.gz$' || true
+            # banco criptografado confirmado: nenhuma cópia aberta fica na release
+            if [ -n "$sufixo" ]; then echo "$ativos" | grep -E '\.db\.gz$' || true; fi
+          } | sort -u | { grep -v -x "$nome" || true; } | xargs -r -I{} gh release delete-asset banco {} --yes
+
+      - name: Manutenção do repositório (tag da release na versão atual, sem branch antigo)
+        # A tag "banco" acompanha o último commit; os branches aposentados (semente, coletores-novos) são
+        # apagados assim que a release existe. Nada disso afeta os dados; falha aqui só gera aviso.
+        if: always()
+        run: |
+          if gh release view banco >/dev/null 2>&1; then
+            git tag -f banco HEAD && git push -f origin refs/tags/banco || echo "::warning::Não consegui mover a tag banco"
+            # Branches aposentados: "semente" (banco inicial) e "coletores-novos" (incorporado ao main em
+            # 07/11/2026; guardava versões antigas do arquivo do TSE apagadas do histórico em 08/11/2026).
+            for velho in semente coletores-novos; do
+              if git ls-remote --exit-code origin "refs/heads/$velho" >/dev/null 2>&1; then
+                git push origin --delete "$velho" || echo "::warning::Não consegui apagar o branch $velho"
+              fi
+            done
+          fi
+
+      - name: Guardar arquivos crus, painel e dossiês (30 dias; só enquanto o repositório for privado)
+        # Os arquivos crus da prefeitura e o painel trazem dados pessoais (CPF em descrições, telefones).
+        # Com o repositório público, artefatos ficam baixáveis: por isso este passo para sozinho.
+        if: always() && github.event.repository.private
+        uses: actions/upload-artifact@v4
+        with:
+          name: vigia-${{ env.MODO }}-${{ github.run_id }}
+          path: |
+            brutos/
+            saida/
+          retention-days: 30
+          if-no-files-found: ignore
+
+      - name: Avisar se houve problema
+        if: env.VIGIA_FALHOU == '1'
+        run: |
+          echo "::error::A coleta teve problemas. Veja docs/qualidade.md e o log acima."
+          exit 1

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLG7M8619Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PLG7M8619Z');
+        gtag('config', 'G-TE8T0KNP2E');
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta name="description" content="">
+    <meta name="author" content="NDCORP SGTI - TCEES">
+    <meta name="generator" content="TCEES">
+    <title>TCEES - Acesso Único</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/lib/bootstrap5/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/estilo.css?v=639297272643008284">
+</head>
+<body>
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/bootstrap5/bootstrap.bundle.min.js"></script>
+    <script src="/js/token-manager.js"></script>
+    
+    <div class='Production'>Production</div>
+    
+    <div class="body-container">
+                
+<div class="d-flex flex-column min-vh-100 justify-content-center align-items-center" id="login-form">
+    <div class="box-login">
+        <div class="conteudo" id="container">
+            <div id="principal-content">
+                <div class="logo">
+                    <img src=/images/logo-cidades.png class="mx-auto d-block img-fluid" />
+                </div>
+                <p style="display:none">Teste Atualização Deploy - 5</p>
+                <!-- Login -->
+                <form autocomplete="off" class="pb-2 top-15" action="/Conta/Entrar" method="post">
+                    <input type="hidden" id="campo-url-retorno" name="UrlRetorno" value="/connect/authorize/callback?client_id=CidadES&amp;redirect_uri=https%3A%2F%2Fcidades.tcees.tc.br%2FCidadESPortalWeb%2FLogin%2FRetornoIdentityServer&amp;response_type=code%20id_token&amp;scope=openid%20profile%20LoginUnicoAssinatura&amp;response_mode=form_post&amp;nonce=639297272630644022.OTJhZWRmOTAtOTQwNy00ZmU1LWEyZjMtNWE1NmFhYzNjZGNhYmE2OWYyZWItNTQ5Ni00ODAxLWJlNDItMDA3NTU4ZGZmNTlk&amp;state=CfDJ8GUGdZ-aBZhDvwCNmmeOIb20TIC8XpePktLpTpXJoHK7c_P934yUuTKcRW7TNCAL5LLL7wb3kNQXlLEsEQLlS0r3hEfEPRb3eozK5YIva6NkifWlQ1g5AVqv7HhcqXzA2SZ22otf78qEdD7FgydFCFWx83Jzq8AAJFoJFYK94NHoT5wjITLmS0dy0ZzNMLbpmktcJWDro_NmuFkaQcwLxnqjfKjn-JnKHBot6e1SMwApUaYEETnC68puyd4xtbmAkIY4RmiW773EoOXnWlSoHfr7bvNwxQq7AH20DOX8ql4jYkCU62_IjVvpL3SpZDBf6zqOiFE7GAHbaBVbkXOanZx7KpranSAdU6y9D0qQCIxz&amp;x-client-SKU=ID_NET9_0&amp;x-client-ver=8.14.0.0" />
+                    <div class="form-login">
+                        <div class="g-input fill">
+                            <input type="text" id="usuario" placeholder=" " class="validate" autocomplete="off" data-val="true" data-val-required="Usu&#xE1;rio ou senha inv&#xE1;lida." name="Usuario" value="">
+                            <label for="usuario">Usuário</label>
+                        </div>
+                        <div class="g-input fill mt-3">
+                            <input type="password" id="senha" placeholder=" " class="validate" autocomplete="off" data-val="true" data-val-required="Usu&#xE1;rio ou senha inv&#xE1;lida." name="Senha">
+                            <label for="senha">Senha</label>
+                        </div>
+                        <div class="d-grid gap-2 mt-3 fw-bolder">
+                            <button id="entrar" class="btn btn-primary btn-login" value="entrar">
+                                Entrar
+                            </button>
+                        </div>
+                    </div>
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8H-jtgsMKU9Jgl5cw7W8OGmb4GKjlsNbcFIpfoKTr8o3Ip0OhKYkD0wZzhRbOTsB7XDSD9gmO5dmO9N82cNqcWcHtXeb1UbiJ1vKF07nI0dRYF8A1XIUZ_BKS5MaZrYf-BUzRcuW-ePBSs1ESgtddQ0" /></form>
+
+                <!-- Criar nova conta e Esqueci a senha -->
+                <div class="row mt-2 mb-2">
+                    <div class="col-6 text-start pe-0">
+                    </div>
+
+                    <div class="col-6 text-end ps-0">
+                        <a id="btn-esqueci-a-senha-default" href="#" class="button link-conta btn-default-esqueci-senha" data-bs-toggle="modal" data-bs-target="#modal-default-esqueci-senha">Esqueci a senha</a>
+                        <div class="modal fade" id="modal-default-esqueci-senha" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-width-650">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5">Esqueci a senha</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body p-0">
+                                        <iframe src="https://acessoidentificado.tcees.tc.br/Autenticacao/RecuperarSenha/" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col mt-2 mb-2">
+                        <div class="label-outras">
+                            Outras opções de identificação:
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entrar com Acesso GovBr -->
+                <div class="row">
+                    <div class="col">
+                        <div class="d-grid gap-2 mt-0">
+                            <a id="btn-govbr" class="btn btn-outline-secondary" href="/Conta/LoginExterno?urlRetorno=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3DCidadES%26redirect_uri%3Dhttps%253A%252F%252Fcidades.tcees.tc.br%252FCidadESPortalWeb%252FLogin%252FRetornoIdentityServer%26response_type%3Dcode%2520id_token%26scope%3Dopenid%2520profile%2520LoginUnicoAssinatura%26response_mode%3Dform_post%26nonce%3D639297272630644022.OTJhZWRmOTAtOTQwNy00ZmU1LWEyZjMtNWE1NmFhYzNjZGNhYmE2OWYyZWItNTQ5Ni00ODAxLWJlNDItMDA3NTU4ZGZmNTlk%26state%3DCfDJ8GUGdZ-aBZhDvwCNmmeOIb20TIC8XpePktLpTpXJoHK7c_P934yUuTKcRW7TNCAL5LLL7wb3kNQXlLEsEQLlS0r3hEfEPRb3eozK5YIva6NkifWlQ1g5AVqv7HhcqXzA2SZ22otf78qEdD7FgydFCFWx83Jzq8AAJFoJFYK94NHoT5wjITLmS0dy0ZzNMLbpmktcJWDro_NmuFkaQcwLxnqjfKjn-JnKHBot6e1SMwApUaYEETnC68puyd4xtbmAkIY4RmiW773EoOXnWlSoHfr7bvNwxQq7AH20DOX8ql4jYkCU62_IjVvpL3SpZDBf6zqOiFE7GAHbaBVbkXOanZx7KpranSAdU6y9D0qQCIxz%26x-client-SKU%3DID_NET9_0%26x-client-ver%3D8.14.0.0&amp;scheme=acessogovbr">
+                                <img src="/images/icone-govbr.png" class="icone-govbr-btn" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Entrar com certificado -->
+                <div class="row">
+                    <div class="col">
+                        <div id="btn-certificado-digital" class="d-grid gap-2 mt-2">
+                            <button class="btn btn-outline-secondary btn-login modal-trigger" type="button" data-bs-toggle="modal" data-bs-target="#modal-login-token">
+                               Certificado Digital
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entrar com Login Institucional TCEES -->
+                <div class="row">
+                    <div class="col">
+                        <div class="d-grid gap-2 mt-2">
+                            <a id="btn-tcees" class="btn btn-outline-secondary" href="/Conta/LoginExterno?urlRetorno=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3DCidadES%26redirect_uri%3Dhttps%253A%252F%252Fcidades.tcees.tc.br%252FCidadESPortalWeb%252FLogin%252FRetornoIdentityServer%26response_type%3Dcode%2520id_token%26scope%3Dopenid%2520profile%2520LoginUnicoAssinatura%26response_mode%3Dform_post%26nonce%3D639297272630644022.OTJhZWRmOTAtOTQwNy00ZmU1LWEyZjMtNWE1NmFhYzNjZGNhYmE2OWYyZWItNTQ5Ni00ODAxLWJlNDItMDA3NTU4ZGZmNTlk%26state%3DCfDJ8GUGdZ-aBZhDvwCNmmeOIb20TIC8XpePktLpTpXJoHK7c_P934yUuTKcRW7TNCAL5LLL7wb3kNQXlLEsEQLlS0r3hEfEPRb3eozK5YIva6NkifWlQ1g5AVqv7HhcqXzA2SZ22otf78qEdD7FgydFCFWx83Jzq8AAJFoJFYK94NHoT5wjITLmS0dy0ZzNMLbpmktcJWDro_NmuFkaQcwLxnqjfKjn-JnKHBot6e1SMwApUaYEETnC68puyd4xtbmAkIY4RmiW773EoOXnWlSoHfr7bvNwxQq7AH20DOX8ql4jYkCU62_IjVvpL3SpZDBf6zqOiFE7GAHbaBVbkXOanZx7KpranSAdU6y9D0qQCIxz%26x-client-SKU%3DID_NET9_0%26x-client-ver%3D8.14.0.0&amp;scheme=loginmicrosoft">
+                                Login Institucional TCEES
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer mt-2">
+        <div class="conteudo">
+            <div class="row">
+                <div class="col-5 logo-rodape">
+                        <a href="https://www.tcees.tc.br" target="_blank" title="Portal do TCE-ES">
+                            <img src="/images/logo-tcees.png" class="float-start img-fluid" />
+                        </a>
+                </div>
+                <div class="col-7">
+                    <div class="row mt-1">
+                        <div class="col-1">
+                        </div>
+                        <div class="col-6 text-end">
+                            <a href="https://www.tcees.tc.br/ajuda/demais-sistemas/" target="_blank" class="link-footer">Ajuda</a>
+                        </div>
+                        <div class="col-4 text-end">
+                            <a href="https://www.tcees.tc.br/lgpd/" target="_blank" class="link-footer">Privacidade</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script type="text/javascript">
+        function ajustarAlturaIframeInformacoesLogin() {
+            $('#IframeUrlInformacoesLogin').height($(window).height() - 10);
+        }
+
+        $(document).ready(function () {
+            ajustarAlturaIframeInformacoesLogin();
+            $(window).resize(function () {
+                ajustarAlturaIframeInformacoesLogin();
+            });
+
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl,
+                    {
+                        html: true
+                    }
+                )
+            })
+        });
+    </script>
+    <!-- Modal -->
+<div class="modal fade" id="modal-login-token" tabindex="-1" aria-labelledby="modal-login-tokenLabel" aria-hidden="true">
+    <div class="modal-dialog modal-width-650">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Entrar com Certificado Digital</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row center-align" id="mensagem-certificado" style="color:tomato"></div>
+
+                <div id="loading-certificado" class="row">
+                    <div class="col">
+                        <div class="progress-bar mb-3">
+                            <div class="progress-bar-value"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-3 mt-3">
+                    <div class="col-11 pe-0">
+                        <select id="select-cetificado" class="form-select"></select>
+                    </div>
+                    <div class="col-1 mt-1" style="padding-left:5px;">
+                        <a class="btn btn-outline-secondary btn-sm" id="botao-recarregar-certificado" title="recarregar lista de certificado digital">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" style="fill: currentcolor;"><path d="M13.5 2c-5.621 0-10.211 4.443-10.475 10h-3.025l5 6.625 5-6.625h-2.975c.257-3.351 3.06-6 6.475-6 3.584 0 6.5 2.916 6.5 6.5s-2.916 6.5-6.5 6.5c-1.863 0-3.542-.793-4.728-2.053l-2.427 3.216c1.877 1.754 4.389 2.837 7.155 2.837 5.79 0 10.5-4.71 10.5-10.5s-4.71-10.5-10.5-10.5z" /></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary px-5" id="botao-entrar-certificado">Entrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var modalLoginToken = document.getElementById('modal-login-token')
+    modalLoginToken.addEventListener('shown.bs.modal', function (event) {
+        TokenManager.GetInstance().IniciarLoginComToken(
+            '#mensagem-certificado',
+            '#select-cetificado',
+            '#botao-recarregar-certificado',
+            '#loading-certificado',
+            '#botao-entrar-certificado',
+            '#campo-url-retorno'
+        )
+    });
+</script>
+
+    </div>
+</body>
+</html>

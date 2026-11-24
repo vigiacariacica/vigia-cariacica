@@ -1,0 +1,9 @@
+<form class="busca" data-busca-bairro="lista-{{ busca_id }}"{% if busca_so_com_texto %} data-so-busca{% endif %} role="search">
+  <label for="q-{{ busca_id }}">Escreva o nome do seu bairro</label>
+  <input type="search" id="q-{{ busca_id }}" name="q" autocomplete="off" placeholder="Ex.: Nova Rosa da Penha">
+  <p class="miuda" data-aviso hidden>Não achamos. O Censo junta alguns bairros pequenos com o vizinho. Tente o bairro ao lado, ou <a href="/bairros/">veja a lista</a>.</p>
+</form>
+<ul class="lista-bairros" id="lista-{{ busca_id }}">
+  {% for b in bairros %}<li data-nomes="{{ b.nome }} {{ b.apelidos }}"{% if busca_so_com_texto %} hidden{% endif %}><a href="/bairros/{{ b.slug }}/">{{ b.nome }}</a></li>
+  {% endfor %}
+</ul>

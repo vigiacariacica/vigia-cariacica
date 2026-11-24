@@ -1,0 +1,2 @@
+NumeroContrato,AnoContrato,TipoContrato,Processo,AnoProcesso,ValorContratado,Aditivo,ValorTotal,CPFCNPJ,Fornecedor,Secretaria,Fiscal,DataInicio,DataFinal,DataPublicacao,DataAssinatura,Situacao,Coronavirus,Objeto,Prioritario,UnidadeGestora
+78,2022,Aquisição,25093,2022,17422.70,0.00,17422.70,36.221.828/0001-17,CIDADE ENGENHARIA LTDA,Secretaria Municipal de Serviços,(servidor designado; nome omitido),27/09/2022,05/10/2022,,27/09/2022,Encerrado,False,Aquisição de artefatos de concreto para atender a Secretaria Municipal de Serviços.,Sim,PREFEITURA

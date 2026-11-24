@@ -1,0 +1,17 @@
+[
+ {
+  "LotacaoNome": "str",
+  "cd_LotacaoServidor": "int",
+  "NumeroServidores": "int",
+  "VencimentoPadrao": "float",
+  "OutrosVencimentos": "float",
+  "Descontos": "float",
+  "RemuneracaoLiquida": "float",
+  "RemuneracaoBruta": "float",
+  "Nivel": "int",
+  "cd_Secretaria": "int",
+  "SecretariaNome": "str",
+  "QuantidadeFilhas": "int"
+ },
+ "21 itens"
+]

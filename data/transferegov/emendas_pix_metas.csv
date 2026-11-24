@@ -1,0 +1,141 @@
+id_executor,id_meta,sequencial_meta,nome_meta,desc_meta,un_medida_meta,qt_uniade_meta,vl_custeio_emenda_especial_meta,vl_investimento_emenda_especial_meta,vl_custeio_recursos_proprios_meta,vl_investimento_recursos_proprios_meta,vl_custeio_rendimento_meta,vl_investimento_rendimento_meta,vl_custeio_doacao_meta,vl_investimento_doacao_meta,qt_meses_meta
+110,148,1,Meta 1,CUSTEIO - Mantença dos serviços de manutenção de vias e equipamentos públicos pela Secretaria Municipal de Serviços.,UN,1,5640000,0,0,0,0,0,0,0,10
+110,304,1,Meta 1,INVESTIMENTO - Execução de obra referente a infraestrutura e mobilidade urbana pela Secretaria Municipal de Obra.,UN,1,0,5087183.65,0,0,0,0,0,0,10
+110,7369,1,Meta 1,"Prestação do serviço de manejo e triagem dos resíduos sólidos domiciliares, provenientes da coleta seletiva nos Bairros: Campo Grande, Jardim América, Vila Capixaba, Vila Palestina, São Geraldo I, São Geraldo II, Cruzeiro do Sul, Rosa da Penha",MÊS,2,18579.81,0,0,0,0,0,0,0,2
+110,41389,2,Meta 2,"Prestação do serviço de operacionalização de 08 (oito) cemitérios públicos para executar serviços de sepultamento (abertura e fechamento de sepulturas), inumação e exumação de cadáveres, bem como a manutenção e conservação (capina, roçada, varrição)",UN,8,310000,0,0,0,0,0,0,0,2
+110,47197,3,Meta 3,"Prestação do serviço de limpeza e desobstrução de redes e galerias nas Regiões 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11 E 12, no Município de Cariacica/ES",MESES,2,473364.25,0,0,0,0,0,0,0,2
+110,47198,4,Meta 4,"Prestação do serviço de manutenção /melhoria de vias urbanas não pavimentadas, limpeza de pontos viciados, limpeza de canais e valas a céu aberto nas Regiões 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11 E 12, no Município de Cariacica/ES",MESES,2,1323243.94,0,0,0,0,0,0,0,2
+110,47199,5,Meta 5,"Contratação de empresa especializada para prestação de serviços de locação de máquinas, equipamentos e caminhões, com operador, no Município de Cariacica/ES.",MESES,2,398592.44,0,0,0,0,0,0,0,2
+110,47200,6,Meta 6,"Prestação de serviços de manutenção de equipamentos públicos nos Bairros: Nova Rosa da Penha, Sotema, Itapemirim, Boa Sorte, Tucum, Vila Progresso e Itaquari",DIA,72,724466.63,0,0,0,0,0,0,0,3
+110,47201,7,Meta 7,"Prestação de Serviços de Paisagismo, Manutenção de Áreas Verdes, de Parques, Praças, Jardins, Espaços Públicos e Afins nos Bairros: Alto Lage, Sotema, Jardim América, Porto de Santana, Campo Grande, Rio Branco, São Francisco, Tucum,Tabajara,Cariacica-Sede",MESES,2,279604.25,0,0,0,0,0,0,0,2
+110,47202,8,Meta 8,"Execução de Serviços de Poda de Árvores nos Bairros: Vista Dourada, Prolar, Sotelandia, Santa Cecília, Campo Grande,Vila Palestina,Nova Campo Grande,Nova Esperança, Vera Cruz,Operario,Vale dos Reis,Roda D ´água,Tabajara,Vila Oásis,Tucum e Cruzeiro do Sul",MESES,2,480426.1,0,0,0,0,0,0,0,2
+110,47203,9,Meta 9,"Prestação do serviço de manejo e triagem dos resíduos sólidos domiciliares,provenientes da coleta seletiva em Campo Grande,Jardim América,Vila Capixaba,Vila Palestina,São Geraldo I,São Geraldo II,Cruzeiro do Sul,Rosa da Penha,Morada de Santa Fé,Dom Bosco,",MESES,2,10876.98,0,0,0,0,0,0,0,2
+110,47204,10,Meta 10,"Serviços de limpeza de logradouros públicos inclusive serviços gerais e complementares, raspagem de sarjetas, limpeza de bocas de lobo, roçadas e capina, limpeza, desinfecção e lavagem de vias Regiões 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11 e 12",MESES,1,1620845.6,0,0,0,0,0,0,0,1
+110,47205,11,Meta 11,"Execução do projeto básico, de engenharia e arquitetura na execução das obras e serviços de implantação de passagem de 2 níveis localizada na Av. Mario Gurgel, zona urbana.",M,700,0,11000000,0,0,0,0,0,0,21
+110,47206,12,Meta 12,"Prestação de serviços de manutenção predial e viária preventiva e corretiva, de forma contínua e por demanda, de vias, prédios e espaços públicos municipais com fornecimento de peças, equipamentos, materiais e mão-de-obra, Região 09, 02, 11, 03,01,12,07,",DIAS,40,0,2160000,0,0,0,0,0,0,2
+8128,12293,1,Meta 1,"Iluminação do Campo do Apolo no bairro Flexal II, na zona urbana de Cariacica, com instalação de 6 postes de concreto com 14m de altura e 9 projetores de Led",UN,6,0,290133.28,0,0,0,0,0,0,3
+8128,12294,2,Meta 2,"Execução de obras de drenagem e pavimentação na Rua Anchieta, no bairro Santana, com extensão de 265,54m, na zona urbana do município de Cariacica/ES.",M2,26554,0,363705.48,0,0,0,0,0,0,2
+8128,12295,3,Meta 3,"Construção de vestiário e plantação de grama do Clube Atlético Cariacica (CAC) no bairro Jardim Botânico, zona urbana de Cariacica com área de 129,6m²",MM2,1296,0,389369.65,0,0,0,0,0,0,4
+8128,14182,4,Meta 4,"Contratação de mão de obra para pavimentação parcial da Rua Atenas no bairro Vale dos Reis, zona urbana localizada em Cariacica",M2,26452,0,156791.59,0,0,0,0,0,0,1
+8128,14183,5,Meta 5,Aquisição de Material Permanente para Academia Cariaciquense de Letras - ACL - Ar condicionado 18000btus,UN,1,0,3900,0,0,0,0,0,0,11
+8128,50146,6,Meta 6,Aquisição de Material Permanente para Academia Cariaciquense de Letras - ACL - Bebedouro de aço,UN,1,0,2300,0,0,0,0,0,0,11
+8128,50147,7,Meta 7,Aquisição de Material Permanente para Academia Cariaciquense de Letras - ACL - Cadeiras para mesa,UN,8,0,3184,0,0,0,0,0,0,11
+8128,50148,8,Meta 8,Aquisição de Material Permanente para Academia Cariaciquense de Letras - ACL - Câmera Fotográfica semiprofissional,UN,1,0,4700,0,0,0,0,0,0,11
+8128,50149,9,Meta 9,Aquisição de Material Permanente para Academia Cariaciquense de Letras - ACL - Computador,UN,1,0,2700,0,0,0,0,0,0,11
+8128,50150,10,Meta 10,Aquisição de Material Permanente para Academia Cariaciquense de Letras - ACL - Estantes com prateleiras,UN,4,0,4561.44,0,0,0,0,0,0,11
+8128,50151,11,Meta 11,Aquisição de Material Permanente para Academia Cariaciquense de Letras - ACL - Impressora Multifuncional,UN,2,0,3038.02,0,0,0,0,0,0,11
+8128,50152,12,Meta 12,Aquisição de Material Permanente para Academia Cariaciquense de Letras - ACL - Mesa de computador em L,UN,1,0,797,0,0,0,0,0,0,11
+8128,50153,13,Meta 13,Aquisição de Material Permanente para Academia Cariaciquense de Letras - ACL - Mesa para reuniões,UN,1,0,1425.2,0,0,0,0,0,0,11
+8128,50154,14,Meta 14,Aquisição de Material Permanente para Academia Cariaciquense de Letras - ACL - Notebook,UN,1,0,3900,0,0,0,0,0,0,11
+8128,50155,15,Meta 15,Aquisição de Material Permanente para Academia Cariaciquense de Letras - ACL - Projetor Multimídia,UN,1,0,3280,0,0,0,0,0,0,11
+8128,50156,16,Meta 16,Aquisição de Material Permanente para Academia Cariaciquense de Letras - ACL - Tela de projeção,UN,1,0,990,0,0,0,0,0,0,11
+8128,50157,17,Meta 17,Aquisição de Material Permanente para Academia Cariaciquense de Letras - ACL - Nobreak,UN,1,0,600,0,0,0,0,0,0,11
+8128,50158,18,Meta 18,Aquisição de Material Permanente para Academia Cariaciquense de Letras - ACL - Microfones,UN,2,0,934.34,0,0,0,0,0,0,11
+8128,50159,19,Meta 19,Aquisição de Material Permanente para Academia Cariaciquense de Letras - ACL - Pedestal para microfone,UN,1,0,150,0,0,0,0,0,0,11
+8128,50160,20,Meta 20,Aquisição de Material Permanente para Academia Cariaciquense de Letras - ACL - Caixa de Som,UN,1,0,2300,0,0,0,0,0,0,11
+8128,50161,21,Meta 21,Aquisição de Material Permanente para Academia Cariaciquense de Letras - ACL - Mesa de desmontagem,UN,2,0,1240,0,0,0,0,0,0,11
+9239,14185,1,Meta 1,Pagamento mensal de aluguel da nova sede da Academia Cariaciquense de Letras.,MÊS,10,37874.7,0,0,0,0,0,0,0,10
+9239,45979,2,Meta 2,"Material de consumo - Papel A4, Banner, Painel em tecido, Tinta impressora, caixa de Canetas, marcador e limpador de livro, tesoura, caixa de grampo, clips,",MESES,1,12125.3,0,0,0,0,0,0,0,1
+9239,45980,3,Meta 3,Elaboração de projeto pela ACL visando o incentivo e fortalecimento da cultura literária no município de Cariacica.,MESES,1,10000,0,0,0,0,0,0,0,1
+9239,45981,4,Meta 4,Efetuar o pagamento de aluguel através do recurso adquirido através de Emenda Parlamentar Federal;,MESES,1,0,0,0,0,0,0,0,0,1
+9239,45982,4,Meta 4,"Valorizar os membros da Academia Cariaciquense de Letras, assim como toda a sociedade cariaciquense com um ambiente para o melhor atendimento e pesquisas;",MESES,9,0,0,0,0,0,0,0,0,9
+9239,45983,5,Meta 5,Ampliar o espaço de artistas para possíveis exposições de suas artes,MESES,9,0,0,0,0,0,0,0,0,9
+9239,45984,5,Meta 5,Aquisição de Material de Consumo - Caixa de canetas,UN,1,79.99,0,0,0,0,0,0,0,1
+9239,45985,5,Meta 5,Aquisição de Material de Consumo - Pano de Chão,UN,5,199.5,0,0,0,0,0,0,0,1
+9239,45986,5,Meta 5,Aquisição de Material de Consumo - Desinfetante,UN,15,780,0,0,0,0,0,0,0,1
+9239,45987,5,Meta 5,Aquisição de Material de Consumo - Lampadas Led 15w,UN,28,315.28,0,0,0,0,0,0,0,1
+9239,45988,5,Meta 5,Aquisição de Material de Consumo - Saco Plástico PP,UN,10,699,0,0,0,0,0,0,0,1
+9239,45989,5,Meta 5,Aquisição de Material de Consumo - Caixa Marcador de Texto,UN,5,436,0,0,0,0,0,0,0,1
+9239,45990,5,Meta 5,Aquisição de Material de Consumo - Limpador de livro,UN,2,506.58,0,0,0,0,0,0,0,1
+9239,45991,5,Meta 5,Aquisição de Material de Consumo - Flanela Kit,UN,10,302.5,0,0,0,0,0,0,0,1
+9239,45992,5,Meta 5,Aquisição de Material de Consumo - Álcool Liquido 5L,UN,10,525.1,0,0,0,0,0,0,0,1
+9239,45993,5,Meta 5,Aquisição de Material de Consumo - Vassoura com cabo,UN,2,95.8,0,0,0,0,0,0,0,1
+9239,45994,5,Meta 5,Aquisição de Material de Consumo - Rodo com cabo,UN,2,157.98,0,0,0,0,0,0,0,1
+9239,45995,5,Meta 5,Aquisição de Material de Consumo - Papel Higiênico,UN,10,571.9,0,0,0,0,0,0,0,1
+9239,45996,5,Meta 5,Aquisição de Material de Consumo - Papel toalha,UN,20,578,0,0,0,0,0,0,0,1
+9239,45997,5,Meta 5,Aquisição de Material de Consumo - Sabonete Líquido 5L,UN,10,397.7,0,0,0,0,0,0,0,1
+9239,45998,5,Meta 5,Aquisição de Material de Consumo - Tesoura,UN,2,38.36,0,0,0,0,0,0,0,1
+9239,45999,5,Meta 5,Aquisição de Material de Consumo - Caixa de grampeador,UN,5,167.85,0,0,0,0,0,0,0,10
+9239,46000,5,Meta 5,Aquisição de Material de Consumo - Clips,UN,10,441.5,0,0,0,0,0,0,0,1
+9239,46001,5,Meta 5,Aquisição de Material de Consumo - Lixeira,UN,4,101.16,0,0,0,0,0,0,0,1
+9239,46002,5,Meta 5,Aquisição de Material de Consumo - marcador de livro,UN,5,299.5,0,0,0,0,0,0,0,1
+9901,15278,1,Meta 1,"Drenagem, Pavimentação, Reabilitação e Recapeamento (construção e reforma de escadarias no Município )",UN,1,0,500000,0,0,0,0,0,0,1
+9901,45968,1,Meta 1,"Execução de escada na rua Beco Canadá, bairro Porto Novo, medindo 72,00 m², na zona urbana de Cariacica/ES.",M2,72,0,70000,0,0,0,0,0,0,9
+9901,45969,2,Meta 2,"Execução de escada na Rua Mato Grosso, bairro Porto Novo, medindo de 108,0m², na zona urbana de Cariacica/ES.",M2,108,0,105000,0,0,0,0,0,0,9
+9901,45970,3,Meta 3,"Execução de escada na Avenida Nossa Senhora da Penha, bairro Flexal II, medindo 156,0m², na zona urbana de Cariacica/ES",M2,156,0,150000,0,0,0,0,0,0,9
+9901,45971,4,Meta 4,"Execução de escada na Rua Guadalajara, bairro Porto de Santana, medindo de 62,0m², na zona urbana de Cariacica/ES.",M2,62,0,60000,0,0,0,0,0,0,9
+9901,45972,5,Meta 5,"Execução de escada na Rua São Patrício, bairro Graúna, medindo de 120,0m², na zona urbana de Cariacica/ES.",M2,120,0,115000,0,0,0,0,0,0,9
+10419,16071,1,Meta 1,CRAS BELA AURORA - mesas reunião com 8 lugares 2400 X 900 X 745,UN,6,0,17930.46,0,0,0,0,0,0,12
+10419,53392,2,Meta 2,CRAS DE BELA AURORA - mesas atendimento 1400 X 600 X 740,UN,19,0,5255.55,0,24007.87,0,0,0,0,12
+10419,53393,3,Meta 3,CRAS BELA AURORA - Cadeiras de rodinha,UN,12,0,0,0,31840.51,0,0,0,0,12
+10419,53394,3,Meta 3,CRAS BELA AURORA - cadeiras atendimento,UN,40,0,0,0,43992.8,0,0,0,0,12
+10419,53395,3,Meta 3,CRAS BELA AURORA - armários com 2 portas 2000 x 800 x 460,UN,12,0,0,0,37600.68,0,0,0,0,12
+10419,53396,3,Meta 3,CRAS DE PORTO DE SANTANA - mesas atendimento 1400 X 600 X 740,UN,22,0,33883.96,0,0,0,0,0,0,12
+10419,53397,4,Meta 4,CRAS DE PORTO DE SANTANA - cadeiras de rodinhas,UN,22,0,30456.14,0,0,0,0,0,0,12
+10419,53398,5,Meta 5,CRAS DE PORTO DE SANTANA - cadeiras de atendimento,UN,40,0,43992.8,0,0,0,0,0,0,12
+10419,53399,6,Meta 6,CRAS DE PORTO DE SANTANA - Armários com 2 portas 2000 x 800 x 460,UN,16,0,50134.24,0,0,0,0,0,0,12
+10419,53400,7,Meta 7,CRAS DE PORTO DE SANTANA - Mesas de reunião com 8 lugares 2400 x 900 x 745,UN,7,0,20918.87,0,0,0,0,0,0,12
+10419,53401,8,Meta 8,CRAS DE PORTO DE SANTANA - cadeiras para mini auditório,UN,37,0,109150,0,0,0,0,0,0,12
+10419,53402,9,Meta 9,CRAS DE PORTO DE SANTANA - cadeiras obesas para mini auditório,UN,2,0,9999.98,0,0,0,0,0,0,12
+10419,53403,10,Meta 10,CRAS DE PORTO DE SANTANA - Longarinas de 3 lugares,UN,10,0,28278,0,0,0,0,0,0,12
+11306,17665,1,Meta 1,Aquisição de equipamentos para Casa de apoio Campo Grande,UN,5,0,100000,0,0,0,0,0,0,12
+11306,49769,1,Meta 1,Aquisição de equipamentos para Casa de apoio Campo Grande - Smartphone,UN,1,0,1549,0,0,0,0,0,0,12
+11306,49770,2,Meta 2,Aquisição de equipamentos para Casa de apoio Campo Grande - Freezer Horizontal 02 portas,UN,1,0,3960,0,0,0,0,0,0,12
+11306,49771,3,Meta 3,Aquisição de equipamentos para Casa de apoio Campo Grande - Impressora,UN,1,0,1149,0,0,0,0,0,0,12
+11306,49772,4,Meta 4,Aquisição de equipamentos para Casa de apoio Campo Grande - Computador,UN,1,0,2299,0,0,0,0,0,0,12
+11306,49773,5,Meta 5,Custeio de Material de Consumo,UN,1,69692.81,0,0,0,0,0,0,0,12
+11306,49774,6,Meta 6,Contratação de Coordenador Administrativo,UN,1,30307.19,0,0,0,0,0,0,0,12
+11306,50930,7,Meta 7,Aquisição de equipamentos para Casa de apoio Campo Grande - Automóvel Fiat - Carroceria,UN,1,0,89872.19,0,0,0,0,0,0,12
+11306,51266,8,Meta 8,Utilizado para cobrir despesa da meta 5,UN,1,0,1170.81,0,0,0,0,0,0,12
+11867,18496,1,Meta 1,"Prestação de serviços continuado de manutenção predial, preventiva e corretiva para SEMUS;",UN,1,600000,0,0,0,0,0,0,0,1
+11867,18497,2,Meta 2,"Prestação de serviços continuado de manutenção predial, preventiva e corretiva; Execução de Serviços de Manutenção de Redes de Drenagem de Logradouros e Equipamentos Públicos.",UN,1,0,1400000,0,0,0,0,0,0,1
+19353,29717,1,Meta 1,"aquisição de estrutura tecnológica para construção de núcleo de esportes eletrônicos em Cariacica, contando com aquisição de equipamentos eletrônicos, como computadores, servidores, material de preparação de ambiente para recebimento de estrutura tecnoló",UN,1,0,1000000,0,0,0,0,0,0,12
+19353,46280,1,Meta 1,Aquisição de computadores,UN,15,0,247993.35,0,0,0,0,0,0,12
+19353,46281,2,Meta 2,Aquisição de cadeiras ergonômicas,UN,20,0,30000,0,0,0,0,0,0,12
+19353,46282,3,Meta 3,Aquisição de placas solares,UN,14,0,91000,0,0,0,0,0,0,12
+19353,46283,4,Meta 4,Aquisição de servidores,UN,3,0,105000,0,0,0,0,0,0,12
+19353,46284,5,Meta 5,Aquisição de ar condicionado,UN,8,0,56000,0,0,0,0,0,0,12
+19353,46285,6,Meta 6,Aquisição de estrutura tecnológica na forma de plataformas ou jogos de E-Sports,UN,2,0,470006.65,0,0,0,0,0,0,2
+19929,30639,1,Meta 1,Assistência Hospitalar e Ambulatorial / Educação Básica,UN,1,535434,491556,0,0,0,0,0,0,12
+19929,30645,1,Meta 1,Realização de exames laboratoriais nas Unidades Básicas de Saúde do Município de Cariacica -,MESES,3,491556,0,0,0,0,0,0,0,3
+19929,30646,2,Meta 2,"Reforma UBS de Cariacica Sede -Execução de demolições, retiradas, reparos, serviços de alvenaria, revestimento, rebaixamento, esquadrias, vidros, espelhos, piso, pintura, construção de rampas de acesso, instalação hidrossanitárias",MESES,8,0,535434,0,109529.44,0,0,0,0,8
+26854,41380,1,Meta 1,"Fornecimento de bloco intertravado para pavimentação da Rua Alzira Ramos bairro Jardim Botânico, Rua São Lucas bairro Porto Novo, Rua Atenas bairro Vale dos Reis, Rua Genova bairro Vale dos Reis na zona urbana do Município de Cariacica.",M2,20000,0,1660990.82,0,0,0,0,0,0,12
+26854,41381,2,Meta 2,"Contratação de mão de obra para pavimentação parcial das ruas na zona urbana: Rua Alzira Ramos bairro Jardim Botânico, Ruas Genova e Atenas no bairro Vale dos Reis, Rua São Lucas no bairro Porto Novo",M2,13140,0,1246303.52,0,0,0,0,0,0,7
+26854,75545,3,Meta 3,"Contratação de mão de obra para pavimentação parcial na zona rural: Roda D’água com a área de 997,50m2 de pavimentação no município de Cariacica-ES.",M2,99750,0,92705.66,0,0,0,0,0,0,7
+26855,41385,1,Meta 1,"Aquisição de veículo utilitário tipo furgão de pequeno porte, para atender a Associação de Mulheres Rurais das Comunidades de Cachoeirinha e Sabão – ASMURCAS, localizados na Zona Rural do Município de Cariacica",UN,1,0,150000,0,0,0,0,0,0,12
+26855,41386,2,Meta 2,"Aquisição de Usina de produção de energia fotovoltaica, execução das obras e serviços de implantação da referida usina de produção fotovoltaica para a atender a Associação Comunitária de Produtores Rurais de Munguba - ASCOPRUM, localizada na área rural.",UN,1,0,100000,0,0,0,0,0,0,12
+26855,41387,3,Meta 3,"Aquisição de caminhão leve com baú, para atender a Associação de Produtores Rurais de Cachoeirinha e Sabão – APRUCAS, localizado na região rural de Cariacica.",UN,1,0,180000,0,0,0,0,0,0,12
+28326,44462,1,Meta 1,"Estrutura e logística para realização da 2ª Feira Cultura, Arte, Sabor e do Empreendedor de Cariacica - Estandes, locação, montagem e desmontagem",M2,450,18000,0,0,0,0,0,0,0,1
+28326,49743,2,Meta 2,"Estrutura e logística para realização da 2ª Feira Cultura, Arte, Sabor e do Empreendedor de Cariacica - Toldo modelo pavilhão alternativo (locação), medindo 90,00m x 20,00m",M2,1800,28800,0,0,0,0,0,0,0,1
+28326,49744,3,Meta 3,"Estrutura e logística para realização da 2ª Feira Cultura, Arte, Sabor e do Empreendedor de Cariacica - Toldo modelo pavilhão alternativo (locação), medindo 40,00m x 10,00m",M2,400,10000,0,0,0,0,0,0,0,1
+28326,49745,4,Meta 4,"Estrutura e logística para realização da 2ª Feira Cultura, Arte, Sabor e do Empreendedor de Cariacica - Piso estruturado em compensado naval",M2,2042,26546,0,0,0,0,0,0,0,1
+28326,49746,5,Meta 5,"Estrutura e logística para realização da 2ª Feira Cultura, Arte, Sabor e do Empreendedor de Cariacica - Locação de material elétrico",UN,1,6404,0,0,0,0,0,0,0,1
+28326,49747,6,Meta 6,"Estrutura e logística para realização da 2ª Feira Cultura, Arte, Sabor e do Empreendedor de Cariacica - Locação de grupo gerador olympian 200kva",DIAS,8,23200,0,0,0,0,0,0,0,1
+28326,49748,7,Meta 7,"Estrutura e logística para realização da 2ª Feira Cultura, Arte, Sabor e do Empreendedor de Cariacica - Locação de grupo gerador olympian 100kva",DIAS,18,34200,0,0,0,0,0,0,0,1
+28326,49749,8,Meta 8,"Estrutura e logística para realização da 2ª Feira Cultura, Arte, Sabor e do Empreendedor de Cariacica - Stands locação de área especial, com área de 350m2 , com 25 stands de 9m2 , Rua em carpete na cor grafite, pórtico em Marcenaria (locação)",M2,350,52850,0,0,0,0,0,0,0,1
+31060,57386,1,Meta 1,"VEICULO CAMINHONETE CABINE DUPLA 4X4: Veículo tipo Caminhonete, modelo: Cabine Dupla, 04 (quatro) portas, com capacidade para transporte de 05 (cinco) passageiros, câmbio automático, tração:4x2,4x4 e 4x4,equipado com barra sinalizadora visual e acústica",UN,2,0,500000,0,84180,0,0,0,0,12
+31060,57387,2,Meta 2,CÂMERAS IP'S E INSUMOS PARA SISTEMA DE VIDEOMONITORAMENTO URBANO - Gabinete Outdoor para ponto de Videomonitoramento. 06-Segurança/181- Policiamento,UN,10,0,36715,0,0,0,0,0,0,12
+31060,57388,3,Meta 3,CÂMERAS IP'S E INSUMOS PARA SISTEMA DE VIDEOMONITORAMENTO URBANO - Câmera de Videomonitoramento DOME PTZ - 06-Segurança/181- Policiamento,UN,10,0,167249,0,0,0,0,0,0,12
+31060,57389,4,Meta 4,CÂMERAS IP'S E INSUMOS PARA SISTEMA DE VIDEOMONITORAMENTO URBANO - Câmera de Videomonitoramento FIXA IP. 06-Segurança/181- Policiamento,UN,24,0,96036,0,0,0,0,0,0,12
+40531,87158,1,Meta 1,Caçamba basculante com capacidade de 10m3 188 KW,H,1440,200505.28,0,46209.92,0,0,0,0,0,12
+40531,87159,2,Meta 2,Motoniveladora 93 KW,H,540,81434.49,0,18767.91,0,0,0,0,0,12
+40531,87160,3,Meta 3,Retroescavadeira de pneus 58 KW,H,180,15060.23,0,3467.16,0,0,0,0,0,12
+40576,87221,1,Meta 1,"Drenagem de corpo BSTC (greide) diâmetro 0,80 e instalação de poço de visitas no TRECHO da ESTRADA VELHA – BAIRRO SANTA LUZIA - Perímetro Urbano",M,250,0,248738.25,0,0,0,0,0,0,1
+40576,87222,2,Meta 2,Demolição e pavimentação com utilização de asfalto – PRAÇA HUGO VIOLA – BAIRRO JARDIM AMÉRICA - Perímetro Urbano,M2,697,0,59419.81,0,0,0,0,0,0,1
+40576,87223,3,Meta 3,Demolição e pavimentação com utilização de asfalto –TRAVESSA MANOEL COELHO MATOS – BAIRRO PORTO CARIACICA - Perímetro Urbano,M2,595,0,87841.94,0,0,0,0,0,0,1
+47038,99320,1,Meta 1,"Manutenção de Áreas de Lazer e Estruturas Para Atividades Físicas em Espaços Públicos (Parques e Praças) e Passarelas, Travessias.",MESES,21,337534.97,0,0,0,0,0,0,0,21
+47038,99321,2,Meta 2,"Serviços de remoção de resíduos nos logradouros públicos (varrição mecanizada e/ou manual) inclusive serviços remoção de resíduos com raspagem de sarjetas, limpeza de bocas de lobo, roçadas e capina nas Regiões 01,02,03,04,05, 06, 07, 08, 09, 10, 11 e 12.",MESES,9,1162465.03,0,0,0,0,0,0,0,9
+54075,130166,1,Meta 1,"Recapeamento asfáltico da via pública Estrada Roças Velhas, localizada no Bairro Santa Luzia, Cariacica/ES",M,600,0,667746.48,0,0,0,0,0,0,6
+54075,130167,2,Meta 2,"Recapeamento asfáltico da via pública Rua C, localizada no Bairro Santa Luzia, Cariacica/ES",M,210,0,253171.43,0,0,0,0,0,0,6
+54075,130168,3,Meta 3,"Recapeamento asfáltico da via pública Rua Ceará, localizada no Bairro Santa Luzia, Cariacica/ES",M,620,0,746967.07,0,0,0,0,0,0,6
+54075,130169,4,Meta 4,"Recapeamento asfáltico da via pública Rua Oswaldo Prudêncio, localizada no Bairro Santa Luzia, Cariacica/ES",M,440,0,256479.34,0,0,0,0,0,0,6
+54075,130170,5,Meta 5,"Recapeamento asfáltico da via pública trecho da Rua P, localizada no Bairro Santa Luzia, Cariacica/ES",M,60,0,65635.68,0,0,0,0,0,0,6
+56178,134064,1,Meta 1,"Contratação de empresa e/ou entidade de Planejamento, Visando a organização da Feira Literária.",UN,6,24000,0,0,0,0,0,0,0,12
+56178,148498,2,Meta 2,"Contratação de Serviços Gráficos, visando atender a divulgação e material de leitura da Feira Literária.",UN,1,10300,0,0,0,0,0,0,0,12
+56178,148499,3,Meta 3,"Contratação de serviços de divulgação e material promocional, visando atender a promoção da Feira Literária.",UN,1,2900,0,0,0,0,0,0,0,12
+56178,148500,4,Meta 4,"Contratação de Infraestrutura, visando atender a estrutura necessária para realização da Feira Literária.",UN,1,2800,0,0,0,0,0,0,0,12
+56178,148501,5,Meta 5,Contratação de Manifestações Culturais para apresentação na Feira Literária.,UN,1,17000,0,0,0,0,0,0,0,12
+56178,148502,6,Meta 6,"Contratação de serviços de apoio, especializada em atendimento alimentício com fornecimento de Coffee Break para a Feira Literária.",UN,1,1000,0,0,0,0,0,0,0,12
+56178,148503,7,Meta 7,Contratação de equipe de coordenadores e produtor áudio visual para execução da Feira Literária.,UN,1,87000,0,0,0,0,0,0,0,12
+56178,148504,8,Meta 8,"Contratação de atividades literárias, como palestras, oficinas e rodas de leitura, para a feira literária, visando ao incentivo à produção literária e à formação de leitores, visando atender a Feira Literária.",UN,1,14000,0,0,0,0,0,0,0,12
+56178,148505,9,Meta 9,Contratação de produção executiva e curadoria para atendimento a etapa de seleção e encerramento da Feira Literária.,UN,1,40000,0,0,0,0,0,0,0,12

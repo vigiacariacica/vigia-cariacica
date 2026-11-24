@@ -1,0 +1,51 @@
+{
+  "Previsto": 1994764188.00,
+  "Realizado": 1716607771.47,
+  "Lancado": 454126931.63,
+  "Mensal": [
+    {
+      "Mes": 1,
+      "Realizado": 228211785.27
+    },
+    {
+      "Mes": 2,
+      "Realizado": 139104466.19
+    },
+    {
+      "Mes": 3,
+      "Realizado": 158457088.42
+    },
+    {
+      "Mes": 4,
+      "Realizado": 200142889.34
+    },
+    {
+      "Mes": 5,
+      "Realizado": 163171099.40
+    },
+    {
+      "Mes": 6,
+      "Realizado": 179466883.02
+    },
+    {
+      "Mes": 7,
+      "Realizado": 180741244.89
+    },
+    {
+      "Mes": 8,
+      "Realizado": 154304502.18
+    },
+    {
+      "Mes": 9,
+      "Realizado": 158045084.24
+    },
+    {
+      "Mes": 10,
+      "Realizado": 149074458.62
+    },
+    {
+      "Mes": 11,
+      "Realizado": 5888269.90
+    }
+  ]
+}

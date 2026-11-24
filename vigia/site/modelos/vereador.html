@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% from "_vereador.html" import pilha, legenda, resumo with context %}
+{% block conteudo %}
+{% set k = v.conta %}
+<section class="bloco" aria-labelledby="h1">
+  <p class="prot"><a href="/vereadores/">Vereadores</a> · dados da Câmara de {{ v.coleta }}</p>
+  <h1 id="h1" tabindex="-1">{{ x.nome }}</h1>
+  {% if x.n %}
+  <p class="lead">Apresentou {{ x.n }} {{ "projeto de lei" if x.n == 1 else "projetos de lei" }} {{ v.periodo }}. Aqui está cada um, pelo que muda na vida de quem mora em Cariacica.</p>
+  {% else %}
+  <p class="lead">Não apresentou projeto de lei {{ v.periodo }}. Fez {{ br(x.pedidos) }} pedidos à prefeitura e {{ br(x.homenagens) }} homenagens.</p>
+  {% endif %}
+</section>
+
+<div class="grade-2">
+  <article class="cartao vereador">
+    <p class="prot">Resumo</p>
+    {{ resumo(x, v.periodo) }}
+  </article>
+  <div class="folha">
+    <p class="prot">A conta deste mandato</p>
+    <p>O cargo paga {{ k.salario_mes }} por mês. Em {{ k.meses }} meses, são {{ k.salario_periodo }}.</p>
+    <p>Nesse tempo, saíram deste gabinete:</p>
+    <ul class="regras">
+      <li>{{ x.cont.concreto }} {{ "projeto" if x.cont.concreto == 1 else "projetos" }} que {{ "muda" if x.cont.concreto == 1 else "mudam" }} algo na prática, com {{ x.concreto_aprovado }} {{ "aprovado" if x.concreto_aprovado == 1 else "aprovados" }};</li>
+      <li>{{ x.cont.simbolico }} {{ "projeto simbólico" if x.cont.simbolico == 1 else "projetos simbólicos" }};</li>
+      <li>{{ br(x.pedidos) }} pedidos à prefeitura;</li>
+      <li>{{ br(x.homenagens) }} homenagens.</li>
+    </ul>
+    <p><a href="/vereadores/#conta">Veja a conta dos 19 e da Câmara →</a></p>
+  </div>
+</div>
+
+{% if x.n %}
+<section class="bloco" aria-labelledby="h-proj">
+  <h2 id="h-proj">Cada projeto</h2>
+  <p>Do mais novo para o mais antigo. O texto de cada projeto é o resumo oficial da Câmara.</p>
+  {% for g in x.grupos if g.itens %}
+  <details class="grupo"{% if loop.first %} open{% endif %}>
+    <summary><b><i class="nv n-{{ g.chave }}" aria-hidden="true"></i> {{ g.nome }}</b><span>{{ g.itens|length }} {{ "projeto" if g.itens|length == 1 else "projetos" }}</span></summary>
+    <p class="miuda">{{ g.o_que }}</p>
+    <ol class="projetos">
+    {% for p in g.itens %}
+      <li>
+        <p class="linha"><span class="prot">{{ p.numero }} · {{ p.data_txt }}</span><span class="selo {{ 'cheio' if p.situacao == 'Aprovado' else 'apagado' if p.situacao == 'Arquivado' else 'neutro' }}">{{ p.situacao }}</span></p>
+        <p data-fora-da-regua>{{ p.ementa_txt }}</p>
+        {% if p.motivo %}<p class="miuda" data-fora-da-regua>Por que pode ser barrado: {{ p.motivo }}</p>{% endif %}
+        <p class="miuda">{% if p.coautoria %}Apresentado junto com outro vereador. {% endif %}<a href="{{ p.link }}">Ver na Câmara →</a></p>
+      </li>
+    {% endfor %}
+    </ol>
+  </details>
+  {% endfor %}
+</section>
+{% endif %}
+
+<section class="bloco" aria-labelledby="h-erro">
+  <h2 id="h-erro">Achou um erro?</h2>
+  <p>A separação por nível é nossa, feita lendo cada resumo. Pode ter erro. Mande no Instagram <a href="https://www.instagram.com/vigiacariacica/">@vigiacariacica</a> e a gente corrige.</p>
+  <p><a href="/vereadores/">← Os 19 vereadores</a></p>
+</section>
+
+{% include "_compartilhar.html" %}
+<p class="fonte">Fonte: Câmara Municipal de Cariacica, <a href="{{ v.meta.url_producao }}">sistema de projetos</a>, consulta por autor de 01/01/2025 a {{ v.coleta }}. Salário: folha de pagamento no <a href="{{ v.meta.url_gasto }}">Portal da Transparência da Câmara</a> ({{ k.salario_mes }} × {{ k.meses }} meses = {{ k.salario_periodo_exato }}). Separação por impacto feita pelo Vigia. <a href="/fontes/#vereadores">Como fizemos →</a></p>
+{% endblock %}

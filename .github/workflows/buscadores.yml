@@ -1,0 +1,31 @@
+name: Avisar buscadores
+# Avisa Bing/DuckDuckGo/Yahoo/Yandex (IndexNow) das páginas do site que mudaram. O Google entra pelo Search Console.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 */6 * * *"
+  push:
+    branches: [main]
+    paths: ["ferramentas/avisar_buscadores.py", ".github/workflows/buscadores.yml", "data/site/buscadores.json"]
+permissions:
+  contents: read
+concurrency:
+  group: buscadores
+  cancel-in-progress: false
+jobs:
+  avisar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache/restore@v4
+        with:
+          path: .indexnow
+          key: indexnow-${{ github.run_id }}
+          restore-keys: indexnow-
+      - run: python ferramentas/avisar_buscadores.py
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: .indexnow
+          key: indexnow-${{ github.run_id }}

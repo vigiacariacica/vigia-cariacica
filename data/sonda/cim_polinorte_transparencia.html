@@ -1,0 +1,409 @@
+<!DOCTYPE HTML>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
+<head><title>
+	
+</title><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="Portal da Transparência" /><meta name="copyright" content="E&amp;L Produções de Software" /><meta name="author" content="E&amp;L Produções de Software" /><link href="/content/bootstrap.css" rel="stylesheet" media="screen" /><link href="/content/fontawesome-pro/css/all.css" rel="stylesheet" media="screen" /><link href="/content/bootstro.css" rel="stylesheet" media="screen" /><link href="/content/base_site.css" rel="stylesheet" media="screen" /><link href="/content/base_tiles.css" rel="stylesheet" media="screen" />
+
+    <script src="/scripts/jquery-2.2.4.js"></script>
+    <script src="/scripts/bootstrap.js"></script>
+    <script src="/scripts/bootstro.js"></script>
+    <script src="/scripts/jquery.font-accessibility.dev.js"></script>
+    <script src="/scripts/base_site.js"></script>
+    
+    <script>
+    
+    </script>
+</head>
+
+<body lang="pt-BR" style="background-color: ;">
+    <ol class="skiplist">
+        <li class="skip"><a href="#containerCabecalho" accesskey="1">Ir para o Cabeçalho</a></li>
+        <li class="skip"><a href="#containerConteudo" accesskey="2">Ir para o Conteúdo</a></li>
+        <li class="skip"><a href="#containerRodape" accesskey="3">Ir para o Rodapé</a></li>
+        <li class="skip"><a href="/mapasite.aspx" accesskey="4">Ir para o Mapa do Site</a></li>
+        <li class="skip"><a href="/acessibilidade.aspx" accesskey="5">Sobre Acessibilidade</a></li>
+    </ol>
+    <div class="container-fluid">
+        <div class="row">
+            <header id="containerCabecalho" class="container-fluid">
+                <div id="ctl00_internalHeader" role="navigation" aria-label="Cabeçalho"><div class="row linha-topo" role="navigation" aria-label="Menu Acessibilidade"><div class="col-lg-12"><div class="row"><div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 acesso-informcao" style="display:flex"><div style="flex:1 "><a href="/consultas/informacoes/acesso.aspx"><a href="/consultas/informacoes/acesso.aspx"><img alt="Ícone do e-Sic" src="/Content/Images/sic.png"><strong>Acesso à informação</strong></a></div><div style="flex:conteiner">Acesso Rápido:<input type="text" id="lblPalavraChave" placeholder="Palavra-chave..." style="color:#000 !important;height:25px;border-radius:4px;padding:0 0 0 5px" onkeyup="handleKeyPress(event)"><a class="btn btn-primary" style="margin-left:3px;height:25px !important;padding:0 8px;text-align:center;margin-right:3px" onclick="funcPesquisar(document.getElementById('lblPalavraChave').value)" >Pesquisar</a></div></div><script>function handleKeyPress(event) {if (event.keyCode === 13) {funcPesquisar(document.getElementById('lblPalavraChave').value);}}document.addEventListener('DOMContentLoaded', function() {const searchInput = document.getElementById('lblPalavraChave');if (searchInput) {searchInput.addEventListener('keypress', function(event) {if (event.key === 'Enter') {event.preventDefault();funcPesquisar(searchInput.value);}});}});</script><div id="menu-topo_acessibilidade" class="pull-right acessibilidade"><span style="margin-right:5px;"><a href="/mapasite.aspx"><i class="fal fa-sitemap fa-fw" aria-hidden="true" style="margin-right:10px;"></i>Mapa do Site</a></li>
+<span style="margin-right:5px;"><i class="fa fa-adjust fa-fw change-me" style="color:#fff; cursor:pointer;" data-toggle="tooltip" data-placement="bottom" title="Alto Contraste"></i></span><span id="zoom_triggers" class="zoom_triggers_style"><span class="hidden-text">|</span><a id="zoom_out" class="decrease-me" data-toggle="tooltip" data-placement="bottom" title="Reduz a Fonte">A-</a><span class="hidden-text">|</span><a id="zoom_reset" class="reset-me" data-toggle="tooltip" data-placement="bottom" title="Retorna ao Padrão">A</a><span class="hidden-text">|</span><a id="zoom_in" class="increase-me" data-toggle="tooltip" data-placement="bottom" title="Aumenta a Fonte">A+</a></span><span style="margin-left:10px; color: #fff;"><span class="hidden-text">|</span><a data-placement="bottom" title="Acessibilidade" href="/acessibilidade.aspx" data-toggle="tooltip" class="link-acessibilidade"><img src="/imagens/acessibilidade.png?v=2" alt="Acessibilidade" class="icon-acessibilidade" /><span class="hidden-text">Sobre a Acessibilidade do Site</span></a><span class="hidden-text">|</span><a data-placement="bottom" title="VLibras" href="http://www.vlibras.gov.br/ " target="_blank" data-toggle="tooltip"><i class="fal fa-sign-language fa-fw" aria-hidden="true"></i><span class="hidden-text">VLibras</span></a><span class="hidden-text">|</span><a data-placement="bottom" title="Fale Conosco" href="/consultas/institucional/faleconosco.aspx" data-toggle="tooltip"><i class="fal fa-comments-alt fa-fw" aria-hidden="true"></i><span class="hidden-text">Fale Conosco</span></a><span class="hidden-text">|</span><a data-placement="bottom" title="Sobre o Portal" href="/consultas/informacoes/sobre.aspx" data-toggle="tooltip"><i class="fal fa-info-circle fa-fw" aria-hidden="true"></i><span class="hidden-text">Sobre o Portal</span></a></span></div>
+<div id="menu-top-aux" class="collapse navbar-collapse"><ol class="nav navbar-nav menu-navegacao linha-menu-topo"><li class="dropdown"><a tabindex="0" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars fa-fw" aria-hidden="true"></i> MENU <i class="fa fa-angle-down" aria-hidden="true" style="margin-left:3px;"></i></a><ol class="dropdown-menu"><li><a href="https://s3.amazonaws.com/el.com.br/portal/files/manual_ptm.pdf" target="_blank"><i class="fal fa-book fa-fw" aria-hidden="true" style="margin-right:10px;"></i>Manual de Navegação do Portal da Transparência</a></li>
+<li><a href="/mapasite.aspx"><i class="fal fa-sitemap fa-fw" aria-hidden="true" style="margin-right:10px;"></i>Mapa do Site</a></li>
+<li class="divider" role="separator"></li>
+<li><a href="/api/dadosabertos.aspx"><i class="fab fa-creative-commons fa-fw" aria-hidden="true" style="margin-right:10px;"></i>Dados Abertos</a></li>
+<li><a href="https://download.nvaccess.org/releases/stable/documentation/pt_PT/userGuide.html" target="_blank">
+<i class="fal fa-book-open fa-fw" aria-hidden="true" style="margin-right:10px;"></i>NVDA - Leitor de Tela</a></li>
+<li class="divider" role="separator"></li>
+<li><a href="/consultas/informacoes/legislacao.aspx" ><i class="fal fa-balance-scale fa-fw" aria-hidden="true" style="margin-right:10px;"></i>Legislação da Transparência (Federal e Estadual)</a></li>
+<li><a href="" target="_blank"><i class="fal fa-balance-scale fa-fw" aria-hidden="true" style="margin-right:10px;"></i>Regulamentação da Lei de Acesso à Informação</a></li>
+<li><a href="https://geoobras.tce.es.gov.br/Cidadao/" target="_blank"><i class="fal fa-map-marker fa-fw" aria-hidden="true" style="margin-right:10px;"></i>Painel de Controle</a></li>
+<li class="divider" role="separator"></li>
+<li><a href="/consultas/institucional/ouvidoria.aspx"><i class="fal fa-comments-alt fa-fw" aria-hidden="true" style="margin-right:10px;"></i>Ouvidoria</a></li>
+<li class="divider" role="separator"></li>
+<li><a href="/consultas/informacoes/faq.aspx" ><i class="fal fa-question-circle fa-fw" aria-hidden="true" style="margin-right:10px;"></i>Perguntas Frequentes</a></li>
+<li class="divider" role="separator"></li>
+<li><a href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank"><i class="fas fa-lock fa-fw" aria-hidden="true" style="margin-right:10px;"></i>LGPD</a></li>
+<li class="divider" role="separator"></li>
+<li><button type="button" class="btn btn-link" data-toggle="modal" data-target="#historyModal">
+<i class="fal fa-history fa-fw" aria-hidden="true" style="margin-right:10px;"></i>Histórico de Navegação</button></li>
+</ol></li>
+</ol></div>
+
+<li class="pull-right acessibilidade" style="margin-right:1px; margin-left:1px;">
+<a href="https://download.nvaccess.org/releases/stable/documentation/pt_PT/userGuide.html" target="_blank">
+<i class="fal fa-book-open fa-fw" style="margin-right:1px;"></i>NVDA - Leitor de Tela</a></li>
+<li class="pull-right acessibilidade" style="margin-right:1px; margin-left:1px;">
+<a href="/api/dadosabertos.aspx">
+<i class="fab fa-creative-commons fa-fw" style="margin-right:1px;"></i>Dados Abertos</a></li>
+<li class="pull-right acessibilidade" style="margin-right:1px; margin-left:1px;">
+<a href="/consultas/listagemGrafica.aspx" target="_blank">
+<i class="fas fa-chart-line fa-fw" style="margin-right:1px;"></i>Consulta Gráfica</a></li>
+</div></div></div></div></div><div class="row topo"><div class="col-xs-12"><div class="pull-left hidden-xs"><a href="/"><img class="img-responsive topo-logo" src="https://s3.amazonaws.com/el.com.br/portal/uploads/12464/brasao/brasao.png" alt="Brasão da Entidade"/></a></div><div class="pull-left topo-titulo"><a href="/"><span><strong>PORTAL DA</strong></span><h1><strong>TRANSPARÊNCIA</strong></h1><span class="text-uppercase"><strong>Consórcio Publico da Região Polinorte - CIM POLINORTE</strong></span></a></div><div class="pull-right hidden-xs" style="display: flex; gap: 30px; align-items: flex-start;"><div class="topo-selos" style="display: flex; gap: 10px; flex-wrap: wrap;"></div><div class="topo-botoes" style="display: flex; flex-direction: column; gap: 10px;"></div></div></div></div></div>
+            </header>
+            <main id="containerConteudo" class="container-fluid main-content-row">
+                
+  <div id="ctl00_contentTiles_corpoTile" class="container" style="padding-top: 20px;"><div class="row">
+<div class="col-sm-3 dropdownArea">
+<div class="tile-progress tile-black bootstro dropTile" >
+<a href="/consultas/compras.aspx">
+<div class="tile-header">
+<div style="text-align:center;"><h2 style="">Compras</h2></div>
+<div class="tile-header-info" style="">Dispõe dos processos licitatórios e dispensados de licitação, contratos e aditivos firmados, fornecimentos e documentos firmados pela Administração Pública.</div>
+</div></a>
+<div class="tile-progressbar"><span data-fill="15.0%" style="width:15.0%;"></span></div>
+<div class="tile-footer" style="">
+<div style="margin-bottom:10px;">15,0% das Visualizações</div>
+<div style="margin-bottom:15px;">Alterado em: 07/11/2026</div>
+<div class="dropdown" style="text-align:left">
+<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="">Acesso Rápido<i class="fa fa-angle-down fa-fw" style="margin-left:3px;"></i></a>
+<ul id="menuBase01" class="dropdown-menu dropdownTileConteudo tile-progress tile-black" style="margin-left:-16px; background-color:tile-black;"><li class=""><a href="/consultas/compras/dispensas.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Dispensas e Inexigibilidades</a></li><li class=""><a href="/consultas/compras/licitacoes.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Licitações</a></li><li class=""><a href="/consultas/compras/contratos.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Contratos e Aditivos</a></li><li class=""><a href="/consultas/compras/atas.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Termos de Compromisso/Atas</a></li><li class=""><a href="/consultas/compras/ordemcompras.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Ordem de Compras</a></li><li class=""><a href="/consultas/documentos.aspx?id=8" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Contratos e Aditivos (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=9" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Licitações, Dispensas e Outros (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=41" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Atas de Registro de Preço (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=77" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Atas de Adesão (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=55" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Atas das Licitações (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=219" style="color:;"><i class="far fa-cloud-download fa-fw" style="margin-right: 5px; "></i>Fiscal de Contratos (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=34" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Editais (Documentos)</a></li><li class=""><a href="http://www.cimpolinorte.es.gov.br/licitacao" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Editais Anos Anteriores (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=1181" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Resultado de Editais (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=10" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Ordem de Compras (Documentos)</a></li><li class=""><a href="https://portaldatransparencia.gov.br/pagina-interna/603244-cnep" target="_blank" style="color:;"><i class="far fa-external-link-square fa-fw" style="margin-right: 5px; "></i>Cadastro Nacional de Empresas Punidas (CNEP)</a></li><li class=""><a href="\consultas\documentos.aspx?id=1012" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Plano Anual de Contratações (Documentos)</a></li></ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-3 dropdownArea">
+<div class="tile-progress tile-red bootstro dropTile" >
+<a href="/consultas/materiais.aspx">
+<div class="tile-header">
+<div style="text-align:center;"><h2 style="">Materiais e Bens</h2></div>
+<div class="tile-header-info" style="">Dispõe das informações de entradas e saídas do almoxarifado da Administração Pública e das informações patrimoniais do conjunto de bens sob domínio do órgão.</div>
+</div></a>
+<div class="tile-progressbar"><span data-fill="4.7%" style="width:4.7%;"></span></div>
+<div class="tile-footer" style="">
+<div style="margin-bottom:10px;">4,7% das Visualizações</div>
+<div style="margin-bottom:15px;">Alterado em: 04/11/2026</div>
+<div class="dropdown" style="text-align:left">
+<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="">Acesso Rápido<i class="fa fa-angle-down fa-fw" style="margin-left:3px;"></i></a>
+<ul id="menuBase02" class="dropdown-menu dropdownTileConteudo tile-progress tile-red" style="margin-left:-16px; background-color:tile-red;"><li class=""><a href="/consultas/materiais/entradas.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Entrada de Estoque</a></li><li class=""><a href="/consultas/materiais/saidas.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Saída de Estoque</a></li><li class="divider" role="separator"></li>
+<li class=""><a href="/consultas/materiais/patrimonio.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Bens Consolidados</a></li><li class=""><a href="/consultas/bens/moveis.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Bens Móveis</a></li><li class=""><a href="/consultas/bens/imoveis.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Bens Imóveis</a></li><li class=""><a href="/consultas/bens/semoventes.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Bens Semoventes</a></li><li class=""><a href="/consultas/bens/intangiveis.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Bens Intangíveis</a></li><li class="divider" role="separator"></li>
+<li class=""><a href="/consultas/frota/veiculos.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Frota</a></li><li class="divider" role="separator"></li>
+<li class=""><a href="/consultas/documentos.aspx?id=12" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Estoque (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=13" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Patrimônio (Documentos do Patrimônio)</a></li><li class=""><a href="/consultas/documentos.aspx?id=67" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Frota (Documentos)</a></li></ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-3 dropdownArea">
+<div class="tile-progress tile-blue bootstro dropTile" >
+<a href="/consultas/receitas.aspx">
+<div class="tile-header">
+<div style="text-align:center;"><h2 style="">Receitas</h2></div>
+<div class="tile-header-info" style="">Dispõe dos recursos auferidos pela Administração Pública, ou seja, montante total como impostos, taxas e contribuições  em dinheiro, recolhido e incorporado.</div>
+</div></a>
+<div class="tile-progressbar"><span data-fill="5.1%" style="width:5.1%;"></span></div>
+<div class="tile-footer" style="">
+<div style="margin-bottom:10px;">5,1% das Visualizações</div>
+<div style="margin-bottom:15px;">Alterado em: 03/11/2026</div>
+<div class="dropdown" style="text-align:left">
+<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="">Acesso Rápido<i class="fa fa-angle-down fa-fw" style="margin-left:3px;"></i></a>
+<ul id="menuBase03" class="dropdown-menu dropdownTileConteudo tile-progress tile-blue" style="margin-left:-16px; background-color:tile-blue;"><li class=""><a href="/consultas/documentos.aspx?id=371" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Legislação Tributária Municipal (Documentos)</a></li><li class=""><a href="/consultas/orcamento/orcamentoreceitas.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Orçamento das Receitas</a></li><li class="divider" role="separator"></li>
+<li class=""><a href="/consultas/receitas/execucaoReceitasAgrup.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Receita Realizada</a></li><li class=""><a href="/consultas/receitas/receitaspercentual.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Arrecadação das Receitas por Percentual</a></li><li class=""><a href="/consultas/receitas/receitaslancadastrb.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Receita Lançada</a></li></ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-3 dropdownArea">
+<div class="tile-progress tile-aqua bootstro dropTile" >
+<a href="/consultas/despesas.aspx">
+<div class="tile-header">
+<div style="text-align:center;"><h2 style="">Despesas</h2></div>
+<div class="tile-header-info" style="">Dispõe da aplicação de recursos da Administração Pública em empenhos, liquidações e pagamentos para custear serviços ou investir no desenvolvimento econômico.</div>
+</div></a>
+<div class="tile-progressbar"><span data-fill="8.4%" style="width:8.4%;"></span></div>
+<div class="tile-footer" style="">
+<div style="margin-bottom:10px;">8,4% das Visualizações</div>
+<div style="margin-bottom:15px;">Alterado em: 07/11/2026</div>
+<div class="dropdown" style="text-align:left">
+<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="">Acesso Rápido<i class="fa fa-angle-down fa-fw" style="margin-left:3px;"></i></a>
+<ul id="menuBase04" class="dropdown-menu dropdownTileConteudo tile-progress tile-aqua" style="margin-left:-16px; background-color:tile-aqua;"><li class=""><a href="/consultas/orcamento/orcamentodespesas.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Orçamento das Despesas</a></li><li class="divider" role="separator"></li>
+<li class=""><a href="/consultas/despesas/empenhos.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Empenhos e Favorecidos</a></li><li class=""><a href="/consultas/despesas/liquidacoes.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Liquidações e Favorecidos</a></li><li class=""><a href="/consultas/despesas/pagamentos.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Pagamentos e Favorecidos</a></li><li class=""><a href="/consultas/despesas/ordemcronologica.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Ordem Cronológica dos Pagamentos</a></li><li class=""><a href="/consultas/despesas/ProjetosAcoes.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Programas, Projetos e Ações</a></li><li class=""><a href="/consultas/despesas/passagens.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Despesas com Passagens</a></li><li class=""><a href="/consultas/despesas/obras.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Despesas com Obras</a></li><li class=""><a href="/consultas/despesas/restosPagar.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Despesas com Restos a Pagar</a></li><li class=""><a href="/consultas/despesas/subvencoes.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Despesas com Subvenções</a></li><li class=""><a href="/consultas/despesas/diarias.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Despesas com Diárias</a></li><li class=""><a href="/consultas/documentos.aspx?id=76" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Ordem Cronológica dos Pagamentos (Documentos)</a></li></ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-3 dropdownArea">
+<div class="tile-progress tile-cyan bootstro dropTile" >
+<a href="/consultas/repasses.aspx">
+<div class="tile-header">
+<div style="text-align:center;"><h2 style="">Repasses</h2></div>
+<div class="tile-header-info" style="">Dispõe dos acordos firmados pela Administração Pública para a realização de atividades de interesse comum aos dos participantes.</div>
+</div></a>
+<div class="tile-progressbar"><span data-fill="5.2%" style="width:5.2%;"></span></div>
+<div class="tile-footer" style="">
+<div style="margin-bottom:10px;">5,2% das Visualizações</div>
+<div style="margin-bottom:15px;">Alterado em: 07/11/2026</div>
+<div class="dropdown" style="text-align:left">
+<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="">Acesso Rápido<i class="fa fa-angle-down fa-fw" style="margin-left:3px;"></i></a>
+<ul id="menuBase06" class="dropdown-menu dropdownTileConteudo tile-progress tile-cyan" style="margin-left:-16px; background-color:tile-cyan;"><li class=""><a href="/consultas/repasses/conveniosconcedidos.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Transferências Cedidas</a></li><li class=""><a href="/consultas/repasses/conveniosrecebidos.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Transferências Recebidas</a></li><li class="divider" role="separator"></li>
+<li class=""><a href="/consultas/repasses/extraorcamentarias.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Transferências Extraorçamentárias</a></li><li class=""><a href="/consultas/repasses/intraorcamentarias.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Transferências Intraorçamentárias</a></li><li class="divider" role="separator"></li>
+<li class=""><a href="/consultas/documentos.aspx?id=33" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Termo de Convênios (Documentos)</a></li><li class="divider" role="separator"></li>
+<li class=""><a href="" style="color:;"><i class="far fa-external-link-square fa-fw" style="margin-right: 5px; "></i>Transferências Federais</a></li></ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-3 dropdownArea">
+<div class="tile-progress tile-green bootstro dropTile" >
+<a href="/consultas/orcamento.aspx">
+<div class="tile-header">
+<div style="text-align:center;"><h2 style="">Contas Públicas</h2></div>
+<div class="tile-header-info" style="">Contas públicas faz referência a contabilidade interna do órgão, são elas as responsáveis pelos balanços e demonstrativos financeiros de receita e gastos.</div>
+</div></a>
+<div class="tile-progressbar"><span data-fill="5.9%" style="width:5.9%;"></span></div>
+<div class="tile-footer" style="">
+<div style="margin-bottom:10px;">5,9% das Visualizações</div>
+<div style="margin-bottom:15px;">Alterado em: 17/10/2026</div>
+<div class="dropdown" style="text-align:left">
+<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="">Acesso Rápido<i class="fa fa-angle-down fa-fw" style="margin-left:3px;"></i></a>
+<ul id="menuBase05" class="dropdown-menu dropdownTileConteudo tile-progress tile-green" style="margin-left:-16px; background-color:tile-green;"><li class=""><a href="/consultas/documentos.aspx?id=1043" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Resolução Orçamentária (Documentos)</a></li><li class="divider" role="separator"></li>
+<li class=""><a href="/consultas/documentos.aspx?id=891" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Balanco Orçamentário - Bimestral (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=1599" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Despesas por Função e Sub-Função (Documentos)</a></li><li class="divider" role="separator"></li>
+<li class=""><a href="/consultas/documentos.aspx?id=1598" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Demonstrativo da Despesa com Pessoal (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=1597" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Demonstrativo da Disp. de Caixa (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=254" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Demonstrativo de Restos a Pagar (Documentos)</a></li><li class="divider" role="separator"></li>
+<li class=""><a href="/consultas/documentos.aspx?id=1600" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Balancete Analítico da Desp. Orçamentária e Extra Orçamentária (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=1601" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Balancete Anual da Receita Orçamentária e Extra Orçamentária (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=1602" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Balancete Financeiro (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=1603" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Balancetes Contábeis (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=888" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Balanços Patrimoniais (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=1604" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Balexo (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=1606" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Patrimônio Líquido (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=1607" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Termo de Verificação Bancária (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=1608" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Variações Patrimoniais (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=1605" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Dívida Flutuante e Fundada (Documentos)</a></li></ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-3 dropdownArea">
+<div class="tile-progress tile-purple bootstro dropTile" >
+<a href="/consultas/pessoal.aspx">
+<div class="tile-header">
+<div style="text-align:center;"><h2 style="">Pessoal</h2></div>
+<div class="tile-header-info" style="">Dispõe das informações dos servidores da Administração Pública, demonstrando sua situação funcional, cargo, lotação e demonstrativo das suas remunerações.</div>
+</div></a>
+<div class="tile-progressbar"><span data-fill="26.1%" style="width:26.1%;"></span></div>
+<div class="tile-footer" style="">
+<div style="margin-bottom:10px;">26,1% das Visualizações</div>
+<div style="margin-bottom:15px;">Alterado em: 05/10/2026</div>
+<div class="dropdown" style="text-align:left">
+<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="">Acesso Rápido<i class="fa fa-angle-down fa-fw" style="margin-left:3px;"></i></a>
+<ul id="menuBase07" class="dropdown-menu dropdownTileConteudo tile-progress tile-purple" style="margin-left:-16px; background-color:tile-purple;"><li class=""><a href="/consultas/pessoal/servEstagiarios.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Listas de Estagiarios</a></li><li class=""><a href="/consultas/pessoal/servidores.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Servidores</a></li><li class=""><a href="/consultas/pessoal/servsecretarias.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Servidores por Secretarias</a></li><li class=""><a href="/consultas/pessoal/planocarreiras.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Plano de Cargos e Salários</a></li><li class=""><a href="/consultas/pessoal/cargosevagas.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Cargos e Vagas</a></li><li class=""><a href="/consultas/pessoal/atoscargos.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Atos dos Cargos</a></li><li class=""><a href="/consultas/pessoal/cargosconfianca.aspx" style="color:;"><i class="fal fa-table fa-fw" style="margin-right: 5px; "></i>Cargos Comissionados</a></li><li class="divider" role="separator"></li>
+<li class=""><a href="\consultas\documentos.aspx?id=1251" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Trabalhadores de Empresas Terceirizadas (Documentos)</a></li><li class="divider" role="separator"></li>
+<li class=""><a href="/consultas/documentos.aspx?id=11" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Atos Oficiais (Documentos)</a></li><li class="divider" role="separator"></li>
+<li class=""><a href="/consultas/documentos.aspx?id=1390" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Concursos em Andamento (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=49" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Concursos Encerrados (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=64" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Resultados dos Concursos (Documentos)</a></li><li class="divider" role="separator"></li>
+<li class=""><a href="/consultas/documentos.aspx?id=15" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Pessoal (Outros Documentos)</a></li></ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-3 dropdownArea">
+<div class="tile-progress tile-light-pink bootstro dropTile" >
+<a href="/consultas/legislativo.aspx">
+<div class="tile-header">
+<div style="text-align:center;"><h2 style="">Legislativo</h2></div>
+<div class="tile-header-info" style="">Consulte a Legislação Municipal</div>
+</div></a>
+<div class="tile-progressbar"><span data-fill="2.9%" style="width:2.9%;"></span></div>
+<div class="tile-footer" style="">
+<div style="margin-bottom:10px;">2,9% das Visualizações</div>
+<div style="margin-bottom:15px;">Alterado em: 01/11/2026</div>
+<div class="dropdown" style="text-align:left">
+<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="">Acesso Rápido<i class="fa fa-angle-down fa-fw" style="margin-left:3px;"></i></a>
+<ul id="menuBase11" class="dropdown-menu dropdownTileConteudo tile-progress tile-light-pink" style="margin-left:-16px; background-color:tile-light-pink;"></ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-3 dropdownArea">
+<div class="tile-progress tile-orange bootstro dropTile" style="color:#003366;">
+<a href="/consultas/controleinterno.aspx">
+<div class="tile-header">
+<div style="text-align:center;"><h2 style="color:#003366;">Controle Interno</h2></div>
+<div class="tile-header-info" style="color:#003366;">Dispõe das auditorias e inspeções, instruções normativas, recomendações, pareceres técnicos e outras atividades de controle da Administração Pública.</div>
+</div></a>
+<div class="tile-progressbar"><span data-fill="4.6%" style="width:4.6%;"></span></div>
+<div class="tile-footer" style="color:#003366;">
+<div style="margin-bottom:10px;">4,6% das Visualizações</div>
+<div style="margin-bottom:15px;">Alterado em: 01/11/2026</div>
+<div class="dropdown" style="text-align:left">
+<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#003366;">Acesso Rápido<i class="fa fa-angle-down fa-fw" style="margin-left:3px;"></i></a>
+<ul id="menuBase10" class="dropdown-menu dropdownTileConteudo tile-progress tile-orange" style="margin-left:-16px; background-color:tile-orange;"><li class=""><a href="/consultas/documentos.aspx?id=2107" style="color:#003366;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Portaria - P (Documentos) </a></li><li class=""><a href="/consultas/documentos.aspx?id=2108" style="color:#003366;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Portaria - R (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=2109" style="color:#003366;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Portaria - OR (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=2408" style="color:#003366;"><i class="far fa-cloud-download fa-fw" style="margin-right: 5px; "></i>Relatório Gestão Fiscal RGF e RREO</a></li><li class=""><a href="/consultas/documentos.aspx?id=57" style="color:#003366;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Instruções Normativas (INs) (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=63" style="color:#003366;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Recomendações e Pareceres Técnicos (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=58" style="color:#003366;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Relatórios (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=59" style="color:#003366;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Legislação Específica (Documentos)</a></li><li class="divider" role="separator"></li>
+<li class=""><a href="/consultas/documentos.aspx?id=1462" style="color:#003366;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Prestação de Contas Anual (PCA) (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=61" style="color:#003366;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Parecer do Tribunal de Contas (Documentos)</a></li><li class="divider" role="separator"></li>
+<li class=""><a href="/consultas/documentos.aspx?id=39" style="color:#003366;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Relatório Estatístico do e-SIC (Documentos)</a></li><li class=""><a href="/consultas/documentos.aspx?id=230" style="color:#003366;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Plano de Ação (SIAFIC) (Documentos)</a></li></ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-3 dropdownArea">
+<div class="tile-progress tile-red-400 bootstro dropTile" >
+<a href="/consultas/customizavel.aspx">
+<div class="tile-header">
+<div style="text-align:center;"><h2 style="">Contratos / CIM POLINORTE</h2></div>
+<div class="tile-header-info" style="">Dispõe das informações dos contratos firmados com os município consorciados.</div>
+</div></a>
+<div class="tile-progressbar"><span data-fill="13.4%" style="width:13.4%;"></span></div>
+<div class="tile-footer" style="">
+<div style="margin-bottom:10px;">13,4% das Visualizações</div>
+<div style="margin-bottom:15px;">Alterado em: 07/11/2026</div>
+<div class="dropdown" style="text-align:left">
+<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="">Acesso Rápido<i class="fa fa-angle-down fa-fw" style="margin-left:3px;"></i></a>
+<ul id="menuBase12" class="dropdown-menu dropdownTileConteudo tile-progress tile-red-400" style="margin-left:-16px; background-color:tile-red-400;"><li class=""><a href="/consultas/documentos.aspx?id=1184" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Contrato de Prestação de Serviço Médico</a></li><li class=""><a href="/consultas/documentos.aspx?id=1185" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Contrato de Programa - Câmara Setorial de Saúde</a></li><li class=""><a href="/consultas/documentos.aspx?id=1186" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Contrato de Programa - Rede Cuidar Linhares</a></li><li class=""><a href="/consultas/documentos.aspx?id=1187" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Contrato de Programa - Samu</a></li><li class=""><a href="/consultas/documentos.aspx?id=1188" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Contrato de Programa - UPAI Linhares</a></li><li class=""><a href="/consultas/documentos.aspx?id=1196" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Contrato de Programa - Service</a></li><li class="divider" role="separator"></li>
+<li class=""><a href="/consultas/documentos.aspx?id=1190" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Contrato de Rateio - Câmara Setorial de Agricultura e Meio Ambiente</a></li><li class=""><a href="/consultas/documentos.aspx?id=1191" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Contrato de Rateio - Câmara Setorial de Compras Compartilhadas</a></li><li class=""><a href="/consultas/documentos.aspx?id=1192" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Contrato de Rateio - Câmara Setorial de Saúde</a></li><li class=""><a href="/consultas/documentos.aspx?id=1525" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Contrato de Rateio - Samu</a></li><li class=""><a href="/consultas/documentos.aspx?id=1194" style="color:;"><i class="far fa-cloud-download-alt fa-fw" style="margin-right: 5px; "></i>Contratos de Prestação de Serviços</a></li></ul>
+
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-3 dropdownArea">
+<div class="tile-progress tile-black bootstro dropTile" >
+<a href="/consultas/informacoes.aspx">
+<div class="tile-header">
+<div style="text-align:center;"><h2 style="">Informações</h2></div>
+<div class="tile-header-info" style=""></div>
+</div></a>
+<div class="tile-progressbar"><span data-fill="4.4%" style="width:4.4%;"></span></div>
+<div class="tile-footer" style="">
+<div style="margin-bottom:10px;">4,4% das Visualizações</div>
+<div style="margin-bottom:15px;">Alterado em: 01/11/2026</div>
+<div class="dropdown" style="text-align:left">
+<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="">Acesso Rápido<i class="fa fa-angle-down fa-fw" style="margin-left:3px;"></i></a>
+<ul id="menuBase09" class="dropdown-menu dropdownTileConteudo tile-progress tile-black" style="margin-left:-16px; background-color:tile-black;"><li class=""><a href="/consultas/informacoes/faq.aspx" style="color:;">Perguntas Frequentes</a></li><li class=""><a href="/consultas/informacoes/glossario.aspx" style="color:;">Glossário</a></li><li class=""><a href="/consultas/informacoes/linksUteis.aspx" style="color:;">Links Úteis</a></li><li class=""><a href="/consultas/informacoes/sobre.aspx" style="color:;">Sobre o Portal</a></li><li class=""><a href="/mapasite.aspx" style="color:;">Mapa do Site</a></li></ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+            </main>
+            <div class="dados-abertos-global-row">
+                <div class="container">
+                    <div class="texto-dados-abertos">TENHA ACESSO ÀS INFORMAÇÕES ATRAVÉS DA API DE </div>
+                    <button type="button" class="btn btn-primary" onclick="location.href='/api/dadosabertos.aspx'">DADOS ABERTOS</button>
+                </div>
+            </div>
+            <footer id="containerRodape" class="container-fluid rodape">
+                <div id="ctl00_internalFooter"><a id="arodape" name="arodape"></a>
+<div style="background-color:#BFBFBF; width:100vw; margin-left:calc(50% - 50vw); padding:10px 0;">
+<div class="banners-container" style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:20px; margin:20px 0; max-width:100%;">
+<div class="area-banner" style="flex:0 1 auto; text-align:center; margin:0 20px;"><a href="https://paineldecontrole.tcees.tc.br/" target="_blank"><img class="img-fluid" style="max-height:130px; height:auto; width:auto; border-radius:4px;" src="https://s3.amazonaws.com/el.com.br/portal/uploads/ES/banner/TCEES.png" alt="GEO-Obras TCE-ES" /></a></div><div class="area-banner" style="flex:0 1 auto; text-align:center; margin:0 20px;"><a href="https://landpage.cgu.gov.br/redirectfalabr/index.html" target="_blank"><img class="img-fluid" style="max-height:130px; height:auto; width:auto; border-radius:4px;" src="https://s3.amazonaws.com/el.com.br/portal/uploads/geral/banner/e-sic3.fw.png" alt="Serviço de Informação ao Cidadão" /></a></div><div class="area-banner" style="flex:0 1 auto; text-align:center; margin:0 20px;"><a href="https://radardatransparencia.atricon.org.br/#panel" target="_blank"><img class="img-fluid" style="max-height:130px; height:auto; width:auto; border-radius:4px;" src="https://s3.us-east-1.amazonaws.com/el.com.br/portal/uploads/geral/banner/logo-tce2.jpg" alt="Radar da Transparência - TCE" /></a></div></div>
+
+</div>
+<div class="row" style="margin-top:20px;">
+<div class="col-sm-3">
+<ul class="list-unstyled">
+<li class="rodape-titulo">Consultas</li>
+<li class="rodape-item-link"><a href="/consultas/compras.aspx">Compras</a></li><li class="rodape-item-link"><a href="/consultas/materiais.aspx">Materiais e Bens</a></li><li class="rodape-item-link"><a href="/consultas/receitas.aspx">Receitas</a></li><li class="rodape-item-link"><a href="/consultas/despesas.aspx">Despesas</a></li><li class="rodape-item-link"><a href="/consultas/repasses.aspx">Repasses</a></li><li class="rodape-item-link"><a href="/consultas/orcamento.aspx">Contas Públicas</a></li><li class="rodape-item-link"><a href="/consultas/pessoal.aspx">Pessoal</a></li><li class="rodape-item-link"><a href="/consultas/legislativo.aspx">Legislativo</a></li><li class="rodape-item-link"><a href="/consultas/controleinterno.aspx">Controle Interno</a></li><li class="rodape-item-link"><a href="/consultas/customizavel.aspx">Contratos / CIM POLINORTE</a></li><li class="rodape-item-link"><a href="/consultas/informacoes.aspx">Informações</a></li></ul>
+</div>
+
+<div class="col-sm-3">
+<ul class="list-unstyled">
+<li class="rodape-titulo">Institucional</li><li class="rodape-item-link"><a href="/consultas/institucional/secretarias.aspx">Secretarias/Unidades Administrativas</a></li><li class="rodape-item-link"><a href="/consultas/institucional/organizacional.aspx">Estrutura Organizacional</a></li><li class="rodape-item-link"><a href="/consultas/institucional/ouvidoria.aspx">Ouvidoria</a></li><li class="rodape-item-link"><a href="/consultas/institucional/arquivo.aspx">Biblioteca de Arquivos</a></li></ul>
+</div>
+
+<div class="col-sm-3">
+<ul class="list-unstyled">
+<li class="rodape-titulo">Informações</li><li class="rodape-item-link"><a href="/consultas/informacoes/faq.aspx">Perguntas Frequentes</a></li><li class="rodape-item-link"><a href="/consultas/informacoes/glossario.aspx">Glossário</a></li><li class="rodape-item-link"><a href="/consultas/informacoes/linksUteis.aspx">Links Úteis</a></li><li class="rodape-item-link"><a href="/consultas/informacoes/sobre.aspx">Sobre o Portal</a></li><li class="rodape-item-link"><a href="/mapasite.aspx">Mapa do Site</a></li></ul>
+</div>
+
+<div class="col-sm-3 text-right hidden-xs">
+<div class="area-endereco" data-toggle="tooltip" title="Endereço para Correspondência">
+<i class="fa fa-map-marker-alt"></i> 
+Rua dos Pescadores Ericina<br />Ibiraçu - ES<br />CEP: 29670-970</div>
+<div class="area-telefones">
+<div><i class="fa fa-mobile fa-fw"></i>(27) 98125-0110</div></div>
+</div>
+
+<div class="row">
+</div>
+            </footer>
+            <footer id="ctl00_internalMapa" class="container-fluid mapa"></footer>
+            <footer id="ctl00_internalFooter2" class="container-fluid rodape"><div class="row rodape-final">
+<div class="col-xs-12 col-sm-4"><div class="pull-left"><img alt="Licença Creative Commons" style="border-width:0; margin-right:15px;" src="/Content/Images/ccImagem.png"/></div><div class="pull-left hidden-xs" style="padding-top: 6px;">O conteúdo deste portal está licenciado com uma Licença<a style="color:#fff; text-decoration:none;" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"> Creative Commons 4.0 Internacional</a>.</div></div><div class="col-xs-12 col-sm-4 text-center">
+Desenvolvido e mantido por 
+<a href="https://www.el.com.br" target="_blank" style="color:#fff; font-weight:600; text-decoration:none;">EL Produções de Software</a>
+</div>
+<div class="col-xs-12 col-sm-4 text-right"><div class="pull-right" style="padding-top: 6px;">Versão: 2.26.10.2-12464</div></div></div>
+</footer>
+        </div>
+    </div>
+
+    <!-- Modal para exibir o histórico de navegação -->
+    <div class="modal fade" id="historyModal" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="historyModalLabel">Histórico de Navegação</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul id="historyList"></ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Aviso de Implantação -->  
+    
+</div>
+
+    <script>
+        // Chamar saveNavigationHistory quando a página carregar
+        document.addEventListener('DOMContentLoaded', function () {
+            saveNavigationHistory();
+
+            // Mostrar automaticamente o aviso de implantação
+            $('#modalAvisoImplantacao').modal('show');
+            $('#modalAvisos').modal('show');
+        });
+
+        // Adicionar evento para exibir o histórico ao abrir o modal
+        $('#historyModal').on('show.bs.modal', function () {
+            displayNavigationHistory();
+        });
+    </script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+<script src="/scripts/trianglify.min.js"></script>
+</html>

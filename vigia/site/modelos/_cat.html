@@ -1,0 +1,6 @@
+{% macro icone(chave, classe="ic") -%}
+<svg class="{{ classe }}" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="{{ categorias[chave][1] }}"/></svg>
+{%- endmacro %}
+{% macro cat(chave, rotulo="") -%}
+<span class="cat">{{ icone(chave) }}<span>{{ rotulo or categorias[chave][0] }}</span></span>
+{%- endmacro %}

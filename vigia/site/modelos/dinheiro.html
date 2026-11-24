@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% from "_cat.html" import cat, icone with context %}
+{% block conteudo %}
+<div class="grade-2 larga-esq">
+  <section class="bloco" aria-labelledby="h1">
+    <p class="prot">{{ icone("dinheiro") }} <b>Prefeitura de Cariacica</b> · {{ g.ano }}</p>
+    <h1 id="h1" tabindex="-1">Para onde vai o dinheiro da prefeitura?</h1>
+    <p class="numero num cheio">{{ cheio(g.total) }}</p>
+    <p class="extenso">{{ extenso(g.total) }} gastos em {{ g.ano }}.</p>
+    <p class="lead">Dá {{ cheio(g.total / 365) }} por dia, todo dia do ano.</p>
+  </section>
+  <section class="folha" aria-label="Por morador">
+    <p class="prot">Por morador</p>
+    <p class="numero num">R$ {{ por_mes_num }}</p>
+    <p><strong>por mês, com cada morador.</strong> É como se a prefeitura gastasse isso com cada pessoa da cidade em {{ g.ano }}.</p>
+    <p>No ano, são {{ cheio(g.total / g.populacao) }} por morador. Uma família de 4 pessoas: {{ cheio(4 * g.total / g.populacao) }}.</p>
+  </section>
+</div>
+
+<div class="grade-2">
+  <section class="bloco" aria-labelledby="h-cada100">
+    <h2 id="h-cada100">{{ icone("dinheiro") }}Em que foi gasto</h2>
+    <div class="filtro" data-trocar="blocos" hidden role="group" aria-label="Ver os valores">
+      <span class="rot">Ver:</span>
+      <button type="button" data-modo="cem" aria-pressed="true">De cada R$ 100</button>
+      <button type="button" data-modo="reais" aria-pressed="false">Em reais</button>
+      <button type="button" data-modo="morador" aria-pressed="false">Por morador</button>
+    </div>
+    <p>A barra cheia é tudo o que a prefeitura gastou. A parte verde é o que foi para cada coisa.</p>
+    <div class="barras" id="blocos">
+    {% for b in g.blocos %}
+      <div class="barra"><div class="cab"><strong>{{ b.nome }}</strong><span class="v num" data-cem="R$ {{ cem(b.de_cada_100) }}" data-reais="{{ cheio(b.milhoes * 1000000) }}" data-morador="{{ cheio(b.milhoes * 1000000 / g.populacao) }} no ano">R$ {{ cem(b.de_cada_100) }}</span></div><div class="trilho" aria-hidden="true"><i style="width:{{ '%.1f'|format(b.de_cada_100) }}%"></i></div><small>{{ b.detalhe }}</small></div>
+    {% endfor %}
+    </div>
+    <p class="miuda">Em reais, os valores estão arredondados para centenas de milhares. Por morador: o valor ÷ {{ br(g.populacao) }} moradores.</p>
+    <p class="fonte">{{ g.fonte_total }}</p>
+  </section>
+
+  <section class="bloco" aria-labelledby="h-saude">
+    <h2 id="h-saude">Cariacica gasta menos com a sua saúde que as vizinhas</h2>
+    <p>Gasto da prefeitura com saúde, por morador, em {{ g.ano }}. Em Cariacica, dá R$ {{ saude_dia }} por dia.</p>
+    {% if saude_diferenca %}<p class="destaque-conta">Se Cariacica gastasse por morador o mesmo que {{ saude_ref }}, seriam <strong class="num">{{ cheio(saude_diferenca) }}</strong> a mais por ano para a saúde. São {{ extenso(saude_diferenca) }}.</p>{% endif %}
+    <div class="barras">
+    {% for s in g.saude %}
+      <div class="barra{{ ' eu' if s.cidade == 'Cariacica' else '' }}"><div class="cab"><strong>{{ s.cidade }}</strong><span class="v num">R$ {{ br(s.por_morador) }}</span></div><div class="trilho" aria-hidden="true"><i class="{{ 'eu' if s.cidade == 'Cariacica' else '' }}" style="width:{{ '%.1f'|format(s.por_morador / max_saude * 100) }}%"></i></div></div>
+    {% endfor %}
+    </div>
+    <div class="outro">
+      <p class="prot">O outro lado</p>
+      <p>A prefeitura pode dizer que os hospitais da cidade são do Estado. Por isso eles ficam fora desta conta. Perguntamos à Secretaria de Saúde, e a resposta sai aqui.</p>
+      {% if pergunta_saude %}<p><span class="relogio" data-prazo="{{ pergunta_saude.prazo.isoformat() }}" data-respondido="{{ pergunta_saude.respondido_em }}" data-estado="{{ pergunta_saude.estado }}">Prazo: {{ pergunta_saude.prazo.strftime('%d/%m/%Y') }}</span></p>{% endif %}
+    </div>
+    <p class="fonte">{{ g.fonte_saude }}</p>
+  </section>
+</div>
+
+{% include "_compartilhar.html" %}
+{% endblock %}

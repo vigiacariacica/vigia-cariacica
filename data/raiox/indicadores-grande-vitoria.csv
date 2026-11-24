@@ -1,0 +1,15 @@
+indicador_id,indicador,tema,unidade,melhor,ano,fonte,Cariacica,Vitória,Vila Velha,Serra,Viana
+pobreza,Pessoas em pobreza no Cadastro Único,Renda,% da população,menor,jun/2026,MDS (Cadastro Único) via Caravela,21.3,12.4,11.8,15.9,19.0
+extrema_pobreza,Pessoas em extrema pobreza no Cadastro Único,Renda,% da população,menor,jun/2026,MDS (Cadastro Único) via Caravela,13.3,7.7,8.7,11.8,13.6
+renda_domicilio,Renda média do responsável pelo domicílio,Renda,R$,maior,não informado,IBGE via Caravela,2220,5961,4272,2815,2092
+remuneracao_formal,Salário médio do emprego formal,Renda,R$,maior,não informado,RAIS via Caravela,2800,5500,2900,3200,2800
+atencao_basica,Cobertura da atenção básica de saúde,Saúde,% da população,maior,2025,DATASUS via Caravela,66.3,100,78.4,70.4,100
+saude_familia,Cobertura da Estratégia Saúde da Família,Saúde,% da população,maior,2025,DATASUS via Caravela,36.8,85.5,67.2,36.8,100
+prenatal,Nascidos com pré-natal adequado,Saúde,% dos nascidos,maior,2025,DATASUS via Caravela,58.6,76.4,67.7,65.5,70.5
+sem_prenatal,Nascidos sem nenhuma consulta de pré-natal,Saúde,% dos nascidos,menor,2025,DATASUS via Caravela,2.2,0.7,1.8,1.3,0.6
+vacinacao,Cobertura média de 9 vacinas,Saúde,%,maior,último ano disponível,DATASUS via Caravela,89.0,94.2,93.2,91.9,96.6
+mortes_evitaveis,Mortes por causas evitáveis,Saúde,por 100 mil hab.,menor,não informado,DATASUS via Caravela,135,106,115,99,126
+homicidios,Taxa de homicídios,Segurança,por 100 mil hab.,menor,2024,Fórum Brasileiro de Segurança Pública via Caravela,27.7,18.3,22.7,25.7,20.4
+ideb_iniciais,Ideb dos anos iniciais (1º ao 5º ano),Educação,nota de 0 a 10,maior,Ideb 2025,"INEP, planilha oficial (rede pública)",6.1,6.4,6.6,5.9,6.9
+ocupacao_irregular,Domicílios em ocupação irregular,Moradia,% dos domicílios,menor,Censo 2022,IBGE via Caravela,61.1,33.2,30.0,36.3,68.9
+ods,Índice de Desenvolvimento Sustentável das Cidades,Geral,nota de 0 a 100,maior,não informado,ODS Brasil via Caravela,44.41,53.05,48.19,45.53,45.75

@@ -1,0 +1,18 @@
+{% macro pilha(partes, rotulo) -%}
+<div class="pilha" role="img" aria-label="{{ rotulo }}: {% for s in partes %}{{ rot(s.chave, s.n) }}{{ ', ' if not loop.last else '.' }}{% endfor %}">{% for s in partes %}<i class="n-{{ s.chave }}" style="width:{{ s.pct }}%"></i>{% endfor %}</div>
+{%- endmacro %}
+{% macro legenda(partes) -%}
+<ul class="niveis">{% for s in partes %}<li><i class="nv n-{{ s.chave }}" aria-hidden="true"></i><span><b class="num">{{ s.n }}</b> {{ rot_palavras(s.chave, s.n) }}</span></li>{% endfor %}</ul>
+{%- endmacro %}
+{% macro resumo(x, periodo) -%}
+{% if x.n %}
+<p class="valor">{{ x.n }} <small>{{ "projeto de lei" if x.n == 1 else "projetos de lei" }}</small></p>
+{{ pilha(x.pilha, "Projetos de " ~ x.nome) }}
+{{ legenda(x.pilha) }}
+<p>Aprovados pela Câmara: <b class="num">{{ x.aprovados }}</b>{% if x.aprovados %}. {{ "Muda" if x.concreto_aprovado == 1 else "Mudam" }} algo na prática: <b class="num">{{ x.concreto_aprovado }}</b>{% endif %}.</p>
+{% else %}
+<p class="valor">0 <small>projetos de lei</small></p>
+<p>Não apresentou projeto de lei {{ periodo }}.</p>
+{% endif %}
+<p class="miuda">Pedidos à prefeitura: <b class="num">{{ br(x.pedidos) }}</b> · Homenagens: <b class="num">{{ br(x.homenagens) }}</b></p>
+{%- endmacro %}

@@ -1,0 +1,562 @@
+[
+  {
+    "Id": 4,
+    "Nome": "Alice Coutinho"
+  },
+  {
+    "Id": 5,
+    "Nome": "Alto Boa Vista"
+  },
+  {
+    "Id": 6,
+    "Nome": "Alto Lage"
+  },
+  {
+    "Id": 7,
+    "Nome": "Alzira Ramos"
+  },
+  {
+    "Id": 111,
+    "Nome": "Antônio Ferreira Borges"
+  },
+  {
+    "Id": 9,
+    "Nome": "Aparecida"
+  },
+  {
+    "Id": 11,
+    "Nome": "Bandeirantes"
+  },
+  {
+    "Id": 12,
+    "Nome": "Bela Aurora"
+  },
+  {
+    "Id": 13,
+    "Nome": "Bela Vista"
+  },
+  {
+    "Id": 14,
+    "Nome": "Boa Sorte"
+  },
+  {
+    "Id": 103,
+    "Nome": "Bubu"
+  },
+  {
+    "Id": 16,
+    "Nome": "Caçaroca"
+  },
+  {
+    "Id": 17,
+    "Nome": "Campina Grande"
+  },
+  {
+    "Id": 18,
+    "Nome": "Campo Belo"
+  },
+  {
+    "Id": 19,
+    "Nome": "Campo Grande"
+  },
+  {
+    "Id": 20,
+    "Nome": "Campo Verde"
+  },
+  {
+    "Id": 21,
+    "Nome": "Cangaíba"
+  },
+  {
+    "Id": 166,
+    "Nome": "Cariacica"
+  },
+  {
+    "Id": 22,
+    "Nome": "Cariacica Sede"
+  },
+  {
+    "Id": 23,
+    "Nome": "Castelo Branco"
+  },
+  {
+    "Id": 24,
+    "Nome": "Chácaras União"
+  },
+  {
+    "Id": 25,
+    "Nome": "Cruzeiro do Sul"
+  },
+  {
+    "Id": 169,
+    "Nome": "Destacamento de Baixo"
+  },
+  {
+    "Id": 26,
+    "Nome": "Dom Bosco"
+  },
+  {
+    "Id": 27,
+    "Nome": "Expedito"
+  },
+  {
+    "Id": 28,
+    "Nome": "Flexal I"
+  },
+  {
+    "Id": 29,
+    "Nome": "Flexal II"
+  },
+  {
+    "Id": 156,
+    "Nome": "Flor de Piranema"
+  },
+  {
+    "Id": 30,
+    "Nome": "Formate"
+  },
+  {
+    "Id": 32,
+    "Nome": "Graúna"
+  },
+  {
+    "Id": 154,
+    "Nome": "Ibiapaba"
+  },
+  {
+    "Id": 33,
+    "Nome": "Itacibá"
+  },
+  {
+    "Id": 34,
+    "Nome": "Itanguá"
+  },
+  {
+    "Id": 35,
+    "Nome": "Itapemirim"
+  },
+  {
+    "Id": 105,
+    "Nome": "Itaquari"
+  },
+  {
+    "Id": 37,
+    "Nome": "Jardim América"
+  },
+  {
+    "Id": 38,
+    "Nome": "Jardim Botânico"
+  },
+  {
+    "Id": 39,
+    "Nome": "Jardim Campo Grande"
+  },
+  {
+    "Id": 40,
+    "Nome": "Jardim de Alah"
+  },
+  {
+    "Id": 41,
+    "Nome": "Maracanã"
+  },
+  {
+    "Id": 42,
+    "Nome": "Morada de Santa Fé"
+  },
+  {
+    "Id": 168,
+    "Nome": "Morrinhos"
+  },
+  {
+    "Id": 43,
+    "Nome": "Mucuri"
+  },
+  {
+    "Id": 167,
+    "Nome": "Não identificado"
+  },
+  {
+    "Id": 104,
+    "Nome": "Nova Brasília"
+  },
+  {
+    "Id": 45,
+    "Nome": "Nova Campo Grande"
+  },
+  {
+    "Id": 1,
+    "Nome": "Nova Canaã"
+  },
+  {
+    "Id": 46,
+    "Nome": "Nova Esperança"
+  },
+  {
+    "Id": 47,
+    "Nome": "Nova Rosa da Penha"
+  },
+  {
+    "Id": 48,
+    "Nome": "Nova Valverde"
+  },
+  {
+    "Id": 49,
+    "Nome": "Novo Brasil"
+  },
+  {
+    "Id": 50,
+    "Nome": "Novo Horizonte"
+  },
+  {
+    "Id": 51,
+    "Nome": "Operário"
+  },
+  {
+    "Id": 52,
+    "Nome": "Oriente"
+  },
+  {
+    "Id": 53,
+    "Nome": "Padre Gabriel"
+  },
+  {
+    "Id": 54,
+    "Nome": "Padre Mathias"
+  },
+  {
+    "Id": 55,
+    "Nome": "Parque Gramado"
+  },
+  {
+    "Id": 56,
+    "Nome": "Piranema"
+  },
+  {
+    "Id": 57,
+    "Nome": "Planeta"
+  },
+  {
+    "Id": 157,
+    "Nome": "Porto Belo"
+  },
+  {
+    "Id": 58,
+    "Nome": "Porto das Pedras"
+  },
+  {
+    "Id": 59,
+    "Nome": "Porto de Cariacica"
+  },
+  {
+    "Id": 60,
+    "Nome": "Porto de Santana"
+  },
+  {
+    "Id": 61,
+    "Nome": "Porto Engenho"
+  },
+  {
+    "Id": 62,
+    "Nome": "Porto Novo"
+  },
+  {
+    "Id": 63,
+    "Nome": "Presidente Médici"
+  },
+  {
+    "Id": 64,
+    "Nome": "Prolar"
+  },
+  {
+    "Id": 125,
+    "Nome": "Região Rural - Alegre"
+  },
+  {
+    "Id": 138,
+    "Nome": "Região Rural - Aritoá"
+  },
+  {
+    "Id": 133,
+    "Nome": "Região Rural - Azeredo"
+  },
+  {
+    "Id": 151,
+    "Nome": "Região Rural - Biririca"
+  },
+  {
+    "Id": 126,
+    "Nome": "Região Rural - Boa Vista"
+  },
+  {
+    "Id": 134,
+    "Nome": "Região Rural - Boca do Mato"
+  },
+  {
+    "Id": 152,
+    "Nome": "Região Rural - Boqueirão"
+  },
+  {
+    "Id": 146,
+    "Nome": "Região Rural - Cachoeirinha"
+  },
+  {
+    "Id": 149,
+    "Nome": "Região Rural - Capoeira Grande"
+  },
+  {
+    "Id": 139,
+    "Nome": "Região Rural - Destacamento de Baixo"
+  },
+  {
+    "Id": 140,
+    "Nome": "Região Rural - Destacamento de Cima"
+  },
+  {
+    "Id": 141,
+    "Nome": "Região Rural - Duas Bocas"
+  },
+  {
+    "Id": 127,
+    "Nome": "Região Rural - Encantado"
+  },
+  {
+    "Id": 145,
+    "Nome": "Região Rural - Limão"
+  },
+  {
+    "Id": 147,
+    "Nome": "Região Rural - Maricará"
+  },
+  {
+    "Id": 142,
+    "Nome": "Região Rural - Morro do Óleo"
+  },
+  {
+    "Id": 136,
+    "Nome": "Região Rural - Moxuara"
+  },
+  {
+    "Id": 128,
+    "Nome": "Região Rural - Mumbeca"
+  },
+  {
+    "Id": 129,
+    "Nome": "Região Rural - Munguba"
+  },
+  {
+    "Id": 143,
+    "Nome": "Região Rural - Patioba"
+  },
+  {
+    "Id": 153,
+    "Nome": "Região Rural - Pau Amarelo"
+  },
+  {
+    "Id": 137,
+    "Nome": "Região Rural - Roças Velhas"
+  },
+  {
+    "Id": 130,
+    "Nome": "Região Rural - Roda D'Água"
+  },
+  {
+    "Id": 148,
+    "Nome": "Região Rural - Sabão"
+  },
+  {
+    "Id": 144,
+    "Nome": "Região Rural - Sertão Velho"
+  },
+  {
+    "Id": 131,
+    "Nome": "Região Rural - Taquaraçu"
+  },
+  {
+    "Id": 132,
+    "Nome": "Região Rural - Trincheira"
+  },
+  {
+    "Id": 65,
+    "Nome": "Retiro Saudoso"
+  },
+  {
+    "Id": 66,
+    "Nome": "Rio Branco"
+  },
+  {
+    "Id": 67,
+    "Nome": "Rio Marinho"
+  },
+  {
+    "Id": 159,
+    "Nome": "Rod. Leste-Oeste"
+  },
+  {
+    "Id": 165,
+    "Nome": "Roda D'água"
+  },
+  {
+    "Id": 158,
+    "Nome": "Rodovia do Contorno"
+  },
+  {
+    "Id": 68,
+    "Nome": "Rosa da Penha"
+  },
+  {
+    "Id": 69,
+    "Nome": "Santa Bárbara"
+  },
+  {
+    "Id": 70,
+    "Nome": "Santa Cecília"
+  },
+  {
+    "Id": 71,
+    "Nome": "Santa Luzia"
+  },
+  {
+    "Id": 72,
+    "Nome": "Santa Paula"
+  },
+  {
+    "Id": 164,
+    "Nome": "Santa Rosa"
+  },
+  {
+    "Id": 73,
+    "Nome": "Santana"
+  },
+  {
+    "Id": 74,
+    "Nome": "Santo André"
+  },
+  {
+    "Id": 75,
+    "Nome": "Santo Antônio"
+  },
+  {
+    "Id": 76,
+    "Nome": "São Benedito"
+  },
+  {
+    "Id": 77,
+    "Nome": "São Conrado"
+  },
+  {
+    "Id": 78,
+    "Nome": "São Francisco"
+  },
+  {
+    "Id": 161,
+    "Nome": "São Geraldo"
+  },
+  {
+    "Id": 79,
+    "Nome": "São Geraldo I"
+  },
+  {
+    "Id": 80,
+    "Nome": "São Geraldo II"
+  },
+  {
+    "Id": 81,
+    "Nome": "São Gonçalo"
+  },
+  {
+    "Id": 110,
+    "Nome": "São João Batista"
+  },
+  {
+    "Id": 120,
+    "Nome": "São Vicente"
+  },
+  {
+    "Id": 82,
+    "Nome": "Serra do Anil"
+  },
+  {
+    "Id": 83,
+    "Nome": "Sotelândia"
+  },
+  {
+    "Id": 84,
+    "Nome": "Sotema"
+  },
+  {
+    "Id": 85,
+    "Nome": "Tabajara"
+  },
+  {
+    "Id": 86,
+    "Nome": "Tiradentes"
+  },
+  {
+    "Id": 87,
+    "Nome": "Tucum"
+  },
+  {
+    "Id": 89,
+    "Nome": "Vale dos Reis"
+  },
+  {
+    "Id": 122,
+    "Nome": "Vale Esperança"
+  },
+  {
+    "Id": 124,
+    "Nome": "Valparaíso"
+  },
+  {
+    "Id": 90,
+    "Nome": "Vasco da Gama"
+  },
+  {
+    "Id": 91,
+    "Nome": "Vera Cruz"
+  },
+  {
+    "Id": 92,
+    "Nome": "Vila Cajueiro"
+  },
+  {
+    "Id": 93,
+    "Nome": "Vila Capixaba"
+  },
+  {
+    "Id": 94,
+    "Nome": "Vila Independência"
+  },
+  {
+    "Id": 95,
+    "Nome": "Vila Isabel"
+  },
+  {
+    "Id": 3,
+    "Nome": "Vila Merlo"
+  },
+  {
+    "Id": 96,
+    "Nome": "Vila Palestina"
+  },
+  {
+    "Id": 155,
+    "Nome": "Vila Progresso"
+  },
+  {
+    "Id": 97,
+    "Nome": "Vila Prudêncio"
+  },
+  {
+    "Id": 98,
+    "Nome": "Vista Dourada"
+  },
+  {
+    "Id": 99,
+    "Nome": "Vista Linda"
+  },
+  {
+    "Id": 100,
+    "Nome": "Vista Mar"
+  }
+]

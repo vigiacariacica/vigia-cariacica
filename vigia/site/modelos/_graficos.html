@@ -1,0 +1,14 @@
+{% macro dez(aqui, cidade, rot_aqui="Neste bairro", rot_cid="Em Cariacica", txt_aqui="", txt_cid="") -%}
+{% set na = (aqui / 10)|round|int %}{% set nc = (cidade / 10)|round|int %}
+<div class="dez" role="img" aria-label="{{ rot_aqui }}: {{ txt_aqui }}. {{ rot_cid }}: {{ txt_cid }}.">
+  <div class="dez-lin"><span class="rot">{{ rot_aqui }}</span><span class="casas">{% for i in range(10) %}<i{% if i < na %} class="on"{% endif %}></i>{% endfor %}</span>{% if txt_aqui %}<span class="val">{{ txt_aqui }}</span>{% endif %}</div>
+  <div class="dez-lin cid"><span class="rot">{{ rot_cid }}</span><span class="casas">{% for i in range(10) %}<i{% if i < nc %} class="on"{% endif %}></i>{% endfor %}</span>{% if txt_cid %}<span class="val">{{ txt_cid }}</span>{% endif %}</div>
+</div>
+{%- endmacro %}
+{% macro cem(aqui, cidade, rot_aqui="Neste bairro", rot_cid="Em Cariacica") -%}
+{% set na = aqui|round|int %}{% set nc = cidade|round|int %}
+<div class="cem-par" role="img" aria-label="{{ rot_aqui }}: {{ na }} de cada 100. {{ rot_cid }}: {{ nc }} de cada 100.">
+  <figure><figcaption>{{ rot_aqui }}: {{ na }}</figcaption><span class="cem">{% for i in range(100) %}<i{% if i < na %} class="on"{% endif %}></i>{% endfor %}</span></figure>
+  <figure><figcaption>{{ rot_cid }}: {{ nc }}</figcaption><span class="cem cid">{% for i in range(100) %}<i{% if i < nc %} class="on"{% endif %}></i>{% endfor %}</span></figure>
+</div>
+{%- endmacro %}

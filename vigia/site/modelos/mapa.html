@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% from "_cat.html" import cat, icone with context %}
+{% block conteudo %}
+<section class="bloco" aria-labelledby="h1">
+  <p class="prot"><b>Mapa</b> · Censo do IBGE de 2022</p>
+  <h1 id="h1" tabindex="-1" class="h1-achado"><span class="numero num quebra">{{ br(r.total) }}</span> <span class="resto">pessoas moram nos {{ r.bairros }} bairros de Cariacica. Metade delas em só {{ r.metade }} bairros.</span></h1>
+</section>
+
+<section class="bloco" aria-labelledby="h-mapa">
+  <h2 id="h-mapa" class="visual-oculto">O mapa</h2>
+  <div class="filtro camadas" role="group" aria-label="O que o mapa mostra">
+    <span class="rot">Pintar por:</span>
+    {% for k, cam in m.camadas.items() %}<button type="button" data-camada="{{ k }}" aria-pressed="{{ 'true' if loop.first else 'false' }}">{{ cam[0] }}</button>
+    {% endfor %}
+  </div>
+  <div class="grade-2 larga-esq mapa-grade">
+    <figure class="mapa">
+      <svg viewBox="0 0 {{ m.largura }} {{ m.altura }}" data-mapa data-camada="pop" role="img" aria-labelledby="mapa-tit">
+        <title id="mapa-tit">Mapa dos {{ r.bairros }} bairros de Cariacica. A tabela abaixo tem os mesmos números.</title>
+        {% for c in m.caminhos %}<path d="{{ c.d }}"{% if c.tem %} id="m-{{ c.slug }}" data-n="{{ c.nome }}" data-s="{{ c.slug }}" data-c="{{ c.casas }}"{% for k in m.camadas %} data-q{{ k }}="{{ c.q[k] }}" data-v{{ k }}="{{ c.v[k] }}"{% endfor %}{% else %} class="sem"{% endif %}/>{% endfor %}
+      </svg>
+      <figcaption class="miuda">Cinza: área sem bairro no Censo, quase toda zona rural.</figcaption>
+    </figure>
+    <aside class="mapa-info">
+      <div class="folha escolhido" data-escolhido aria-live="polite">
+        <p class="prot">{{ icone("mapa") }} Bairro</p>
+        <p data-vazio>Toque num bairro do mapa para ver os números dele.</p>
+      </div>
+      {% for k, l in m.legendas.items() %}
+      <div class="legenda folha" data-legenda="{{ k }}"{% if not loop.first %} hidden{% endif %}>
+        <p class="prot">{{ l.rotulo }}</p>
+        <p>{{ l.explica }}</p>
+        <ul class="faixas">{% for f in l.faixas %}<li><i class="m{{ loop.index0 }}" aria-hidden="true"></i>{{ f }}</li>{% endfor %}</ul>
+        <p class="miuda">Cada cor tem o mesmo número de bairros (cerca de 20).</p>
+      </div>
+      {% endfor %}
+    </aside>
+  </div>
+</section>
+
+<section class="bloco" aria-labelledby="h-destaques">
+  <h2 id="h-destaques">Os extremos</h2>
+  <div class="grade-3 placar extremos">
+    <div><span class="prot">Mais gente</span><b class="num">{{ br(r.maior.populacao) }}</b><p>moradores em <a href="/bairros/{{ r.maior.slug }}/">{{ r.maior.nome }}</a>.</p></div>
+    <div><span class="prot">Mais apertado</span><b class="num">{{ br(r.densidade_max) }}</b><p>moradores por km² em <a href="/bairros/{{ r.mais_denso.slug }}/">{{ r.mais_denso.nome }}</a>. Na cidade, a média é {{ br(r.dens_cidade) }}.</p></div>
+    <div><span class="prot">Menos gente</span><b class="num">{{ br(r.menor.populacao) }}</b><p>moradores em <a href="/bairros/{{ r.menor.slug }}/">{{ r.menor.nome }}</a>.</p></div>
+  </div>
+</section>
+
+<section class="bloco" aria-labelledby="h-tabela">
+  <h2 id="h-tabela">Todos os bairros em números</h2>
+  <details class="grupo">
+    <summary><b>Abrir a tabela</b><span>{{ r.bairros }} bairros · toque no título da coluna para ordenar</span></summary>
+    <table class="tabela ordenavel" data-ordenavel>
+      <thead><tr>
+        <th scope="col"><button type="button" data-col="0" data-tipo="txt">Bairro</button></th>
+        <th scope="col"><button type="button" data-col="1">Moradores</button></th>
+        <th scope="col"><button type="button" data-col="2">Casas</button></th>
+        <th scope="col"><button type="button" data-col="3">Por km²</button></th>
+        <th scope="col"><button type="button" data-col="4">Casas sem esgoto na rede</button></th>
+        <th scope="col"><button type="button" data-col="5">Metade ganha até</button></th>
+      </tr></thead>
+      <tbody>
+      {% for b in tabela %}
+        <tr><th scope="row" data-v="{{ b.nome }}"><a href="/bairros/{{ b.slug }}/">{{ b.nome }}</a></th><td data-rot="Moradores" data-v="{{ b.populacao }}">{{ br(b.populacao) }}</td><td data-rot="Casas" data-v="{{ b.domicilios }}">{{ br(b.domicilios) }}</td><td data-rot="Por km²" data-v="{{ b.densidade|round|int }}">{{ br(b.densidade|round|int) }}</td><td data-rot="Sem esgoto na rede" data-v="{{ b.sem_rede }}">{{ br(b.sem_rede) }}</td><td data-rot="Metade ganha até" data-v="{{ b.renda_mediana|round|int }}">R$ {{ br(b.renda_mediana|round|int) }}</td></tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </details>
+</section>
+
+{% include "_compartilhar.html" %}
+<p class="fonte">Fontes: IBGE, Censo 2022, resultados por bairro (moradores, casas, esgoto e renda de quem sustenta a casa) e malha de bairros do Censo 2022 (o desenho de cada bairro e a área em km²). Contas do Vigia: moradores por km² = moradores ÷ área. O Censo junta alguns bairros pequenos com o vizinho. <a href="/fontes/#mapa">Como fizemos →</a></p>
+{% endblock %}

@@ -1,0 +1,36 @@
+name: Mapa dos bairros
+# Baixa a malha de bairros do IBGE (Censo 2022), recorta Cariacica e grava data/raiox/bairros-cariacica.geojson.
+# Roda quando o script muda ou à mão (Actions > Mapa dos bairros > Run workflow). O IBGE só abre daqui.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["ferramentas/malha_bairros.py", ".github/workflows/malha.yml"]
+permissions:
+  contents: write
+concurrency:
+  group: malha
+  cancel-in-progress: false
+jobs:
+  malha:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install geopandas==1.0.1 pyogrio==0.10.0 shapely==2.0.6
+      - run: python ferramentas/malha_bairros.py
+      - name: Gravar o mapa
+        run: |
+          git config user.name "vigia-bot"
+          git config user.email "vigia-bot@users.noreply.github.com"
+          git add data/raiox/bairros-cariacica.geojson
+          git diff --cached --quiet && { echo "Mapa igual ao anterior"; exit 0; }
+          git commit -m "dados: mapa dos bairros de Cariacica (IBGE, Censo 2022)"
+          for i in 1 2 3; do
+            if git pull --rebase -X theirs origin main && git push; then exit 0; fi
+            sleep 10
+          done
+          exit 1

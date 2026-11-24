@@ -1,0 +1,6 @@
+mes,data_referencia,pedidos,mediana_dias_espera,mais_de_180_dias,mais_de_1_ano,mais_de_2_anos,criancas_ate_12,idosos_60_mais,muito_alta_pedidos,muito_alta_mediana_dias,muito_alta_mais_de_1_ano,neuro_pediatria_pedidos,neuro_pediatria_mediana_dias,neuro_pediatria_mais_de_1_ano,neuro_adulto_pedidos,neuro_adulto_mediana_dias,neuro_adulto_mais_de_1_ano,pessoas,procedimentos,sem_idade,idade_planilha_confere_pct,neuro_pediatria_pessoas,neuro_pediatria_ate_5_anos
+2026-05,2026-05-31,30329,272,19431,11862,4944,6676,10975,1093,136,190,4769,445,2913,2038,1200,1915,25471,121,0,100,4747,1197
+2026-06,2026-06-30,33669,267,20639,12553,5248,7152,12265,1395,118,206,4915,463,3027,2041,1230,1924,27753,128,0,100,4893,1224
+2026-07,2026-07-31,37964,248,21949,13890,5715,7899,13790,1757,87,243,5046,485,3174,2054,1260,1937,30533,140,0,100,5024,1241
+2026-08,2026-08-31,36591,285,22319,15102,5977,7316,13524,1754,104,319,4849,509,3228,2031,1281,1937,30221,147,20,100,4736,1183
+2026-09,2026-09-30,40829,236,23135,15349,6043,,,2081,99,349,5063,497,3265,2000,1306,1917,,,,,,

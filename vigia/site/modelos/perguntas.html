@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% from "_cat.html" import cat, icone with context %}
+{% block conteudo %}
+<section class="bloco" aria-labelledby="h1">
+  <p class="prot">{{ icone("pergunta") }} <b>Perguntas</b> · feitas pela lei de acesso à informação</p>
+  <h1 id="h1" tabindex="-1">O que perguntamos à prefeitura</h1>
+  <p class="lead">Quando algo não está claro, a gente pergunta. A lei manda a prefeitura responder em até 20 dias. Ela pode pedir mais 10, se explicar o motivo.</p>
+</section>
+
+<div class="placar">
+  <div><b class="num">{{ p.total }}</b><span>perguntas feitas</span></div>
+  {% if p.respondidas or not p.parciais %}<div><b class="num">{{ p.respondidas }}</b><span>respondidas por completo</span></div>{% endif %}
+  {% if p.parciais %}<div><b class="num">{{ p.parciais }}</b><span>respondidas só em parte</span></div>{% endif %}
+  <div><b class="num">{{ p.atrasadas }}</b><span>atrasadas, sem resposta</span></div>
+</div>
+{% if p.proximo %}<p class="lead">Próximo prazo: {{ p.proximo.strftime('%d/%m') }}, para {{ p.n_proximo }} {{ 'pergunta que ainda espera' if p.n_proximo == 1 else 'perguntas que ainda esperam' }} resposta.</p>{% endif %}
+
+<div class="bloco" style="gap:0">
+{% for prazo, itens in p.grupos.items() %}
+  <details class="grupo"{% if loop.first %} open{% endif %}>
+    <summary><b>Prazo {{ prazo.strftime('%d/%m') }}</b>{% set n = itens|length %}<span><span class="falta" data-prazo="{{ prazo.isoformat() }}">{{ quando(prazo) }}</span> · {{ n }} {{ 'pergunta' if n == 1 else 'perguntas' }}</span></summary>
+    <div class="peds">
+    {% for it in itens %}
+    <div class="ped">
+      {% if it.estado == 'respondido' %}<span class="selo ok">Respondida</span>{% elif it.estado == 'parcial' %}<span class="selo neutro">Respondida só em parte</span>{% elif it.estado == 'negado' %}<span class="selo">Negada</span>{% elif it.estado == 'vencido' %}<span class="selo">Atrasada</span>{% else %}<span class="selo neutro">Esperando resposta</span>{% endif %}
+      <p>{{ it.pergunta }}</p>
+      <span class="meta">Para: {{ it.para }} · enviada em {{ ddmm(it.enviado) }} · número {{ it.numeros|join(' e ') }}</span>
+    </div>
+    {% endfor %}
+    </div>
+  </details>
+{% endfor %}
+</div>
+
+{% include "_compartilhar.html" %}
+
+<p class="fonte">{% if p.pedidos != p.total %}São {{ p.pedidos }} pedidos: algumas perguntas foram mandadas a mais de um órgão, e cada uma conta uma vez. {% endif %}Fonte: números de registro do Vigia no sistema de pedidos da Prefeitura e da Câmara de Cariacica e do Governo do ES. Prazo de 20 dias corridos (Lei 12.527/2011, art. 11); 30 dias na Ouvidoria. Prazo que cai no fim de semana passa para a segunda-feira.</p>
+{% endblock %}

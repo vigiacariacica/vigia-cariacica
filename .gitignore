@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.env
+*.log
+brutos/
+banco/
+saida/
+ferramentas/financas/dados/
+ferramentas/raiox/dados_brutos/
+ferramentas/raiox/dados_prontos/
+ferramentas/raiox/LOG.txt
+ferramentas/raiox/resumo.json
+_site/
+.indexnow/
+# Fila da saúde: as planilhas da prefeitura trazem nome e data de nascimento de pacientes. Os links
+# diretos e o registro de arquivos lidos ficam fora do repositório público (docs/DECISOES.md, 24/11/2026).
+data/fila/links.csv
+data/fila/arquivos.csv
+# Câmara: transcrição automática ainda sem conferência; TSE: entrada da R25, em revisão jurídica.
+data/camara/sessoes/
+data/camara/sessoes.csv
+data/tse/
+# Listas recebidas por LAI (ex.: servidores) nunca vão para o git público.
+data/entrada/

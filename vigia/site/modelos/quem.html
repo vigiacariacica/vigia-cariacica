@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<div class="grade-2 larga-esq">
+  <section class="bloco" aria-labelledby="h1">
+    <p class="prot"><b>Quem somos</b></p>
+    <h1 id="h1" tabindex="-1">Somos moradores de Cariacica</h1>
+    <p class="lead">A gente olha as contas da prefeitura e mostra para todo mundo, em palavras simples. Não somos contra nenhum governo. Mostramos fatos e cobramos respostas.</p>
+  </section>
+  <figure class="bloco" style="margin:0">
+    <img class="bandeira-grande" src="/bandeira.svg" alt="Bandeira de Cariacica, verde e branca, com o nome Vigia no lugar do brasão" width="480" height="320">
+    <figcaption class="miuda">A bandeira de Cariacica com o nome Vigia no lugar do brasão. O brasão é do governo. No lugar dele, entra o morador.</figcaption>
+  </figure>
+</div>
+
+<section class="bloco" aria-labelledby="h-cremos">
+  <h2 id="h-cremos">No que a gente acredita</h2>
+  <div class="grade-3">
+    <div class="crenca"><b>O dinheiro é de quem mora aqui</b><p>Cada real da prefeitura vem do povo de Cariacica. Todo mundo tem o direito de saber como ele é usado.</p></div>
+    <div class="crenca"><b>Nosso lado é o povo de Cariacica</b><p>Não temos partido. O que guia o Vigia é o que o povo precisa: saúde, escola, esgoto e asfalto.</p></div>
+    <div class="crenca"><b>Fatos, não ataques</b><p>Não somos contra o governo de hoje nem os de antes. Mostramos o que está no papel e perguntamos o porquê.</p></div>
+    <div class="crenca"><b>Quem tem menos vem primeiro</b><p>Quem mais precisa da prefeitura é quem tem menos. É por essa pessoa que a gente olha as contas.</p></div>
+    <div class="crenca"><b>O que está certo também aparece</b><p>Quando a prefeitura faz direito, a gente mostra. Com o mesmo destaque.</p></div>
+    <div class="crenca"><b>Todo mundo pode perguntar</b><p>A lei garante a qualquer pessoa o direito de perguntar à prefeitura. A gente mostra como.</p></div>
+  </div>
+</section>
+
+<div class="grade-2">
+  <section class="bloco folha" aria-labelledby="h-fazemos">
+    <h2 id="h-fazemos">O que a gente faz</h2>
+    <ul class="regras">
+      <li>Olha as contas oficiais da prefeitura todo dia.</li>
+      <li>Pergunta à prefeitura o que não está claro.</li>
+      <li>Mostra a resposta, do jeito que veio.</li>
+      <li>Mostra o que está certo.</li>
+      <li>Ensina como cobrar.</li>
+    </ul>
+  </section>
+  <section class="bloco folha" aria-labelledby="h-naofazemos">
+    <h2 id="h-naofazemos">O que a gente não faz</h2>
+    <ul class="regras nao">
+      <li>Não apoia candidato nem partido.</li>
+      <li>Não fala de religião.</li>
+      <li>Não acusa pessoas. Pergunta e mostra o documento.</li>
+      <li>Não mostra dados pessoais nem foto de político.</li>
+      <li>Não aceita dinheiro nem favor de quem a gente olha.</li>
+    </ul>
+  </section>
+</div>
+
+<section class="bloco" aria-labelledby="h-como">
+  <h2 id="h-como">Como a gente trabalha</h2>
+  <p class="lead">Ninguém lê sozinho as contas de uma cidade inteira. Por isso a gente usa um programa de computador. E a gente confere tudo.</p>
+  <ol class="passos grade-4">
+    <li><b>Contas oficiais</b><span>Todo dia, o programa baixa as contas da prefeitura, do Tribunal de Contas, do Tesouro Nacional e da Câmara.</span></li>
+    <li><b>Comparação</b><span>O programa compara pagamentos, contratos, prazos e preços. E aponta o que foge do normal.</span></li>
+    <li><b>Conferência</b><span>A gente confere cada ponto no documento original. Apontar não é acusar.</span></li>
+    <li><b>Pergunta</b><span>O que não está claro vira pergunta à prefeitura. A resposta entra aqui, do jeito que veio.</span></li>
+  </ol>
+</section>
+
+<div class="grade-2">
+  <section class="bloco" aria-labelledby="h-exemplo">
+    <h2 id="h-exemplo">Um exemplo, do começo ao fim</h2>
+    <ol class="tempo">
+      <li><span class="data">2025</span><p>Cariacica gastou R$ 649 por morador com saúde. É o menor valor da Grande Vitória.</p></li>
+      <li><span class="data">09/11/2026</span><p>Perguntamos à Secretaria de Saúde por quê.</p></li>
+      {% if pergunta_saude %}<li><span class="data">{{ pergunta_saude.prazo.strftime('%d/%m/%Y') }}</span><p>É o prazo da resposta.<br><span class="relogio" data-prazo="{{ pergunta_saude.prazo.isoformat() }}" data-respondido="{{ pergunta_saude.respondido_em }}" data-estado="{{ pergunta_saude.estado }}">Prazo: {{ pergunta_saude.prazo.strftime('%d/%m/%Y') }}</span></p></li>{% endif %}
+      <li><span class="data">Depois</span><p>A resposta sai aqui, inteira. Se a prefeitura explicar, isso aparece com o mesmo destaque.</p></li>
+    </ol>
+  </section>
+  <section class="bloco folha" aria-labelledby="h-fontes">
+    <h2 id="h-fontes" class="h-pequeno">De onde vêm os dados</h2>
+    <p>Só de fonte oficial: prefeitura, Câmara, Governo do ES, Governo Federal, IBGE e Tribunal de Contas.</p>
+    <p><a href="/fontes/">Veja cada fonte, como fazemos a conta e as palavras difíceis →</a></p>
+  </section>
+</div>
+
+<div class="grade-2">
+  <section class="bloco folha" aria-labelledby="h-correcoes">
+    <p class="prot" id="h-correcoes">Correções</p>
+    <p>Nenhuma até agora. Se a gente errar, a correção aparece aqui, com a data e o que mudou.</p>
+  </section>
+  <section class="bloco folha" aria-labelledby="h-contato">
+    <p class="prot" id="h-contato">Fale com a gente</p>
+    <p>No Instagram: <a href="https://www.instagram.com/vigiacariacica/">@vigiacariacica</a>. Mande sua pergunta, uma correção ou uma ideia.</p>
+  </section>
+</div>
+
+{% include "_compartilhar.html" %}
+{% endblock %}

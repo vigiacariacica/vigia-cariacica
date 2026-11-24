@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{{ titulo }}{% if "Vigia Cariacica" not in titulo %} · Vigia Cariacica{% endif %}</title>
+<meta name="description" content="{{ descricao }}">
+{% if pagina == "404" %}<meta name="robots" content="noindex">{% else %}<meta name="robots" content="index,follow,max-image-preview:large">{% endif %}
+{% if pagina == "inicio" and verificacao.google %}<meta name="google-site-verification" content="{{ verificacao.google }}">{% endif %}
+{% if pagina == "inicio" and verificacao.bing %}<meta name="msvalidate.01" content="{{ verificacao.bing }}">{% endif %}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vigia Cariacica">
+<meta property="og:title" content="{{ titulo }}">
+<meta property="og:description" content="{{ descricao }}">
+<meta property="og:url" content="{{ base }}{{ caminho }}">
+<meta property="og:image" content="{{ og_imagem or base ~ '/compartilhar.png' }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ og_alt or descricao }}">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#00923f">
+<link rel="icon" href="/marca.svg" type="image/svg+xml">
+<link rel="icon" href="/icone-48.png" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="canonical" href="{{ base }}{{ caminho }}">
+<link rel="preload" href="/fontes/atkinson-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fontes/big-shoulders-900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/estilo.css?v={{ versao }}">
+{% if pagina == "inicio" %}<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"{{ base }}/#site","name":"Vigia Cariacica","alternateName":["Vigia","VigiaCariacica","Vigia de Cariacica"],"url":"{{ base }}/","inLanguage":"pt-BR","publisher":{"@id":"{{ base }}/#org"}},{"@type":"Organization","@id":"{{ base }}/#org","name":"Vigia Cariacica","alternateName":"Vigia","url":"{{ base }}/","logo":"{{ base }}/icone-512.png","description":"Moradores de Cariacica (ES) que olham as contas da prefeitura e da Câmara e mostram para todo mundo, com fonte oficial e sem partido.","areaServed":{"@type":"City","name":"Cariacica","containedInPlace":{"@type":"State","name":"Espírito Santo"}},"sameAs":{{ redes|tojson }}}]}</script>{% endif %}
+</head>
+<body>
+<div class="app">
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="topo-in">
+    <a class="marca" href="/"><img src="/bandeira.svg" alt="" width="66" height="44"><span class="nome">Vigia Cariacica<small>Feito por moradores · sem partido</small></span></a>
+    <div class="ferr">
+      <button class="btn" type="button" id="b-ouvir" aria-pressed="false">Ouvir esta página</button>
+      <button class="btn" type="button" id="b-letra" aria-pressed="false">Letra maior</button>
+    </div>
+    <details class="menu-cel">
+      <summary class="btn">Menu</summary>
+      <nav aria-label="Partes do site">
+        <ul>
+          {% for href, nome, chave in menu %}<li><a href="{{ href }}"{% if chave == pagina %} aria-current="page"{% endif %}>{{ nome }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </details>
+  </div>
+  <nav class="menu-pc" aria-label="Partes do site">
+    <ul>
+      {% for href, nome, chave in menu %}<li><a href="{{ href }}"{% if chave == pagina %} aria-current="page"{% endif %}>{{ nome }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
+<main id="conteudo" tabindex="-1">
+{% block conteudo %}{% endblock %}
+</main>
+<footer class="rodape">
+  <img src="/bandeira.svg" alt="Bandeira de Cariacica com o nome Vigia no lugar do brasão" width="180" height="120">
+  <p class="lema">A gente confere. Você cobra.</p>
+  <p class="miuda">Feito por moradores de Cariacica. Nosso lado é o povo de Cariacica e o que ele precisa. <a href="/quem-somos/">Quem somos →</a> · <a href="/fontes/">Nossas fontes →</a></p>
+  <p class="miuda">Fale com a gente: <a href="https://www.instagram.com/vigiacariacica/">@vigiacariacica</a> no Instagram.</p>
+  <p class="fonte">Atualizado em {{ hoje_texto }}. O robô do Vigia atualiza este site sozinho, com dados oficiais.</p>
+</footer>
+</div>
+<script src="/site.js?v={{ versao }}" defer></script>
+</body>
+</html>

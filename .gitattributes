@@ -1,0 +1,3 @@
+# Amostras reais das APIs (windows-1252, quebras de linha \r\n e \n misturadas, como a prefeitura entrega):
+# o git nunca converte esses bytes, em nenhum sistema.
+tests/amostras/** -text

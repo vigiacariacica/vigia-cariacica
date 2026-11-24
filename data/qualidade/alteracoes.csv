@@ -1,0 +1,2 @@
+detectado_em,arquivo,ano,linhas_antes,linhas_depois,total_antes,total_depois,origem
+2026-11-07T18:43:55Z,pagamentos_2023.csv,2023,24625,24623,1336095503.11,1336095503.11,nosso leitor (correção de 07/11/2026: 2 registros vazios removidos; total igual)

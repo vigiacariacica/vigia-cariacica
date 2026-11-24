@@ -1,0 +1,45 @@
+name: Sonda de fontes
+
+# Testa, de dentro do Actions, as fontes de dados que o Vigia ainda não usa (ferramentas/sonda/sondar.py)
+# e grava as amostras em data/sonda/. Não mexe no banco nem nos dados publicados.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["ferramentas/sonda/**", ".github/workflows/sonda.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sonda
+  cancel-in-progress: true
+
+jobs:
+  sondar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests==2.34.2
+      - name: Sondar as fontes
+        env:
+          CHAVE_TRANSPARENCIA: ${{ secrets.CHAVE_TRANSPARENCIA }}
+        run: python ferramentas/sonda/sondar.py
+      - name: Salvar as amostras
+        run: |
+          git config user.name "vigia-bot"
+          git config user.email "vigia-bot@users.noreply.github.com"
+          git add data/sonda
+          git diff --cached --quiet && { echo "Nada mudou."; exit 0; }
+          git commit -m "sonda: amostras das fontes candidatas ($(date -u +%Y-%m-%d))"
+          for tentativa in 1 2 3; do
+            if git pull --rebase origin main && git push; then exit 0; fi
+            git rebase --abort 2>/dev/null || true; sleep 10
+          done
+          exit 1

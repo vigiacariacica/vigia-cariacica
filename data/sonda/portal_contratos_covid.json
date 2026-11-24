@@ -1,0 +1,23 @@
+[
+  {
+    "CPFCNPJ": "02399641000196",
+    "Nome": "SM COMUNICAÇÕES LTDA.",
+    "Data": "04/11/2020",
+    "Valor": 4575000.00,
+    "Coronavirus": true
+  },
+  {
+    "CPFCNPJ": "17280287000153",
+    "Nome": "LSANDOVAL SERVICOS MEDICOS E ODONTOLOGICOS LTDA ME",
+    "Data": "21/05/2021",
+    "Valor": 3207600.00,
+    "Coronavirus": true
+  },
+  {
+    "CPFCNPJ": "10765276000114",
+    "Nome": "ASSOCIAÇÃO DOS PRODUTORES RURAIS DE RODA D'AGUA E REGIÃO - APRODER",
+    "Data": "24/04/2020",
+    "Valor": 479630.99,
+    "Coronavirus": true
+  }
+]

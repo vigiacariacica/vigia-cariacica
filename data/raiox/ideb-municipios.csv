@@ -1,0 +1,46 @@
+cidade,rede,etapa,ideb_2023,ideb_2025
+Cariacica,Estadual,Anos iniciais (1º–5º),5.9,
+Cariacica,Municipal,Anos iniciais (1º–5º),5.7,6.1
+Cariacica,Pública,Anos iniciais (1º–5º),5.7,6.1
+Serra,Estadual,Anos iniciais (1º–5º),6.2,6.5
+Serra,Municipal,Anos iniciais (1º–5º),5.5,5.9
+Serra,Pública,Anos iniciais (1º–5º),5.6,6.0
+Viana,Estadual,Anos iniciais (1º–5º),,
+Viana,Municipal,Anos iniciais (1º–5º),6.3,6.9
+Viana,Pública,Anos iniciais (1º–5º),6.3,6.9
+Vila Velha,Estadual,Anos iniciais (1º–5º),,
+Vila Velha,Municipal,Anos iniciais (1º–5º),6.1,6.6
+Vila Velha,Pública,Anos iniciais (1º–5º),6.1,6.6
+Vitória,Estadual,Anos iniciais (1º–5º),,
+Vitória,Municipal,Anos iniciais (1º–5º),6.1,6.4
+Vitória,Pública,Anos iniciais (1º–5º),6.1,6.4
+Cariacica,Estadual,Anos finais (6º–9º),4.9,5.1
+Cariacica,Municipal,Anos finais (6º–9º),4.4,4.8
+Cariacica,Pública,Anos finais (6º–9º),4.7,4.9
+Serra,Estadual,Anos finais (6º–9º),5.1,5.5
+Serra,Municipal,Anos finais (6º–9º),4.5,4.9
+Serra,Pública,Anos finais (6º–9º),4.8,5.2
+Viana,Estadual,Anos finais (6º–9º),4.9,4.9
+Viana,Municipal,Anos finais (6º–9º),4.9,5.0
+Viana,Pública,Anos finais (6º–9º),4.9,5.0
+Vila Velha,Estadual,Anos finais (6º–9º),5.1,4.9
+Vila Velha,Municipal,Anos finais (6º–9º),5.2,5.2
+Vila Velha,Pública,Anos finais (6º–9º),5.2,5.2
+Vitória,Estadual,Anos finais (6º–9º),4.4,4.4
+Vitória,Municipal,Anos finais (6º–9º),5.0,5.4
+Vitória,Pública,Anos finais (6º–9º),4.9,5.3
+Cariacica,Estadual,Ensino médio,4.4,4.7
+Cariacica,Federal,Ensino médio,,
+Cariacica,Pública,Ensino médio,4.5,4.7
+Serra,Estadual,Ensino médio,4.5,4.8
+Serra,Federal,Ensino médio,,
+Serra,Pública,Ensino médio,4.5,4.8
+Viana,Estadual,Ensino médio,4.5,4.6
+Viana,Federal,Ensino médio,,
+Viana,Pública,Ensino médio,4.5,4.6
+Vila Velha,Estadual,Ensino médio,4.7,4.7
+Vila Velha,Federal,Ensino médio,,
+Vila Velha,Pública,Ensino médio,4.7,4.7
+Vitória,Estadual,Ensino médio,4.9,4.9
+Vitória,Federal,Ensino médio,,
+Vitória,Pública,Ensino médio,4.6,4.7

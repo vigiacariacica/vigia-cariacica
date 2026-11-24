@@ -1,0 +1,13 @@
+[
+ {
+  "CargoNome": "str",
+  "cd_CargoServidor": "int",
+  "NumeroServidores": "int",
+  "VencimentoPadrao": "float",
+  "OutrosVencimentos": "float",
+  "RemuneracaoBruta": "float",
+  "Descontos": "float",
+  "RemuneracaoLiquida": "float"
+ },
+ "590 itens"
+]

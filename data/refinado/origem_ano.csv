@@ -1,0 +1,104 @@
+origem,origem_nome,ano,empenhado,liquidado,pago,registros,pct_do_ano
+livres,"Impostos e transferências livres (IPTU, ISS, ICMS, FPM…)",2019,309206322.33,306852965.53,306849075.05,9033,0.4374
+fundeb,FUNDEB (educação básica),2019,170148373.79,170422794.39,170422794.39,1640,0.2429
+emprestimos,Operações de crédito (empréstimos),2019,54250388.48,54097268.02,54097268.02,217,0.0771
+rpps,Previdência dos servidores (RPPS),2019,53132292.42,53132964.36,53132964.36,505,0.0757
+saude_vinc,Saúde: SUS (fundo a fundo) e convênios,2019,33271124.26,33274168.88,33274168.88,915,0.0474
+cosip,COSIP (contribuição de iluminação pública),2019,24333015.64,23303189.49,23303189.49,30,0.0332
+educacao_vinc,"Educação: salário-educação, FNDE (merenda, transporte) e convênios",2019,20404210.89,21347596.89,21347596.89,763,0.0304
+convenios,Convênios e outras transferências da União e do Estado,2019,17497194.72,17243008.57,17243008.57,138,0.0246
+royalties,"Royalties e compensações financeiras (petróleo, minerais)",2019,13226749.27,13190669.54,13190669.54,57,0.0188
+assistencia,Assistência social: FNAS e convênios,2019,8556870.11,8563844.1,8563844.1,156,0.0122
+outros_vinc,Fundos e outros recursos vinculados,2019,-402663.85,106278.85,106278.85,116,0.0002
+nao_classificada,Não classificada,2019,-1653680.82,0.0,0.0,26,0.0
+livres,"Impostos e transferências livres (IPTU, ISS, ICMS, FPM…)",2020,380985736.08,381896601.97,381896601.97,9494,0.4931
+fundeb,FUNDEB (educação básica),2020,177526338.94,177593513.25,177593513.25,2062,0.2293
+emprestimos,Operações de crédito (empréstimos),2020,59977326.87,60150468.96,60150468.96,252,0.0777
+saude_vinc,Saúde: SUS (fundo a fundo) e convênios,2020,39968318.68,40961845.23,40961845.23,1282,0.0529
+cosip,COSIP (contribuição de iluminação pública),2020,31616123.43,27176477.25,27176477.25,30,0.0351
+educacao_vinc,"Educação: salário-educação, FNDE (merenda, transporte) e convênios",2020,24475590.6,26133196.33,26133196.33,524,0.0337
+convenios,Convênios e outras transferências da União e do Estado,2020,25612317.38,24160824.09,24160824.09,165,0.0312
+royalties,"Royalties e compensações financeiras (petróleo, minerais)",2020,12647998.75,12228257.85,12228257.85,51,0.0158
+assistencia,Assistência social: FNAS e convênios,2020,10954711.93,10529763.73,10529763.73,214,0.0136
+rpps,Previdência dos servidores (RPPS),2020,9537665.55,9542026.94,9542026.94,371,0.0123
+outros_vinc,Fundos e outros recursos vinculados,2020,4839082.82,4132414.71,4132414.71,324,0.0053
+alienacao,Alienação de bens,2020,31373.0,31373.0,31373.0,7,0.0
+livres,"Impostos e transferências livres (IPTU, ISS, ICMS, FPM…)",2021,470182433.54,467591723.85,467591723.85,10270,0.5229
+fundeb,FUNDEB (educação básica),2021,250670390.36,250661954.18,250661954.18,2903,0.2803
+saude_vinc,Saúde: SUS (fundo a fundo) e convênios,2021,55682283.31,55302482.09,55302482.09,1308,0.0618
+cosip,COSIP (contribuição de iluminação pública),2021,36468046.56,41623074.08,41623074.08,92,0.0465
+educacao_vinc,"Educação: salário-educação, FNDE (merenda, transporte) e convênios",2021,26186291.34,24395783.83,24395783.83,350,0.0273
+royalties,"Royalties e compensações financeiras (petróleo, minerais)",2021,12898387.53,13354208.16,13354208.16,33,0.0149
+rpps,Previdência dos servidores (RPPS),2021,11975611.89,11976011.89,11976011.89,495,0.0134
+assistencia,Assistência social: FNAS e convênios,2021,10924998.89,10804659.07,10804659.07,130,0.0121
+convenios,Convênios e outras transferências da União e do Estado,2021,10098720.57,10442391.25,10442391.25,117,0.0117
+emprestimos,Operações de crédito (empréstimos),2021,4604404.16,4621692.43,4621692.43,41,0.0052
+outros_vinc,Fundos e outros recursos vinculados,2021,1794672.55,2529606.32,2529606.32,170,0.0028
+emendas_pix,Emendas Pix (transferências especiais da União),2021,850000.0,850000.0,850000.0,2,0.001
+alienacao,Alienação de bens,2021,61520.99,61520.99,61520.99,6,0.0001
+livres,"Impostos e transferências livres (IPTU, ISS, ICMS, FPM…)",2022,608741031.78,610005311.87,610005311.87,13508,0.5202
+fundeb,FUNDEB (educação básica),2022,312097580.92,312162579.7,312162579.7,3101,0.2662
+saude_vinc,Saúde: SUS (fundo a fundo) e convênios,2022,53305790.05,53984599.16,53984599.16,1073,0.046
+emprestimos,Operações de crédito (empréstimos),2022,47889577.47,45252393.13,45252393.13,61,0.0386
+educacao_vinc,"Educação: salário-educação, FNDE (merenda, transporte) e convênios",2022,37379182.68,38312978.43,38312978.43,415,0.0327
+cosip,COSIP (contribuição de iluminação pública),2022,31202853.67,31177381.01,31177381.01,62,0.0266
+convenios,Convênios e outras transferências da União e do Estado,2022,28849497.0,28062408.57,28062408.57,224,0.0239
+royalties,"Royalties e compensações financeiras (petróleo, minerais)",2022,17911019.73,17809696.09,17809696.09,42,0.0152
+rpps,Previdência dos servidores (RPPS),2022,13011162.56,13011107.56,13011107.56,497,0.0111
+assistencia,Assistência social: FNAS e convênios,2022,10655220.25,11246135.1,11246135.1,213,0.0096
+outros_vinc,Fundos e outros recursos vinculados,2022,12903227.5,8563396.72,8563396.72,28,0.0073
+emendas_pix,Emendas Pix (transferências especiais da União),2022,1900000.0,1900000.0,1900000.0,3,0.0016
+alienacao,Alienação de bens,2022,1139892.94,1139892.94,1139892.94,7,0.001
+livres,"Impostos e transferências livres (IPTU, ISS, ICMS, FPM…)",2023,670323253.98,666858682.71,666858682.71,17637,0.4971
+fundeb,FUNDEB (educação básica),2023,354161833.85,354260833.85,354260833.85,3804,0.2641
+emprestimos,Operações de crédito (empréstimos),2023,64520613.01,62393753.36,62393753.36,101,0.0465
+saude_vinc,Saúde: SUS (fundo a fundo) e convênios,2023,57692006.87,57606351.35,57606351.35,1175,0.0429
+cosip,COSIP (contribuição de iluminação pública),2023,41288791.83,41243361.98,41243361.98,89,0.0307
+rpps,Previdência dos servidores (RPPS),2023,32655736.67,32655736.67,32655736.67,683,0.0243
+educacao_vinc,"Educação: salário-educação, FNDE (merenda, transporte) e convênios",2023,31672740.1,31552668.35,31552668.35,476,0.0235
+convenios,Convênios e outras transferências da União e do Estado,2023,30813494.9,30130563.53,30130563.53,174,0.0225
+outros_vinc,Fundos e outros recursos vinculados,2023,28880184.99,27952145.72,27952145.72,50,0.0208
+royalties,"Royalties e compensações financeiras (petróleo, minerais)",2023,21578115.92,21286913.43,21286913.43,48,0.0159
+assistencia,Assistência social: FNAS e convênios,2023,12583815.52,12582144.48,12582144.48,98,0.0094
+alienacao,Alienação de bens,2023,2386167.32,2386167.32,2386167.32,10,0.0018
+emendas_pix,Emendas Pix (transferências especiais da União),2023,677931.36,467436.85,467436.85,4,0.0003
+nao_classificada,Não classificada,2023,-13139183.21,0.0,0.0,274,0.0
+livres,"Impostos e transferências livres (IPTU, ISS, ICMS, FPM…)",2024,773461606.84,772746213.58,772746213.58,14630,0.4723
+fundeb,FUNDEB (educação básica),2024,432540707.06,432536042.15,432536042.15,2433,0.2644
+saude_vinc,Saúde: SUS (fundo a fundo) e convênios,2024,85384032.81,84625243.19,84625243.19,1253,0.0517
+outros_vinc,Fundos e outros recursos vinculados,2024,77218389.65,74013999.94,74013999.94,142,0.0452
+emprestimos,Operações de crédito (empréstimos),2024,64791631.94,64915675.54,64915675.54,103,0.0397
+educacao_vinc,"Educação: salário-educação, FNDE (merenda, transporte) e convênios",2024,54355496.22,52827699.71,52827699.71,572,0.0323
+cosip,COSIP (contribuição de iluminação pública),2024,38278080.58,38313504.27,38313504.27,59,0.0234
+convenios,Convênios e outras transferências da União e do Estado,2024,36124359.22,32893682.12,32893682.12,279,0.0201
+rpps,Previdência dos servidores (RPPS),2024,22018816.39,22018816.29,22018816.29,700,0.0135
+royalties,"Royalties e compensações financeiras (petróleo, minerais)",2024,21413806.26,21518559.62,21518559.62,74,0.0132
+emendas_pix,Emendas Pix (transferências especiais da União),2024,18842813.42,18232017.44,18232017.44,48,0.0111
+assistencia,Assistência social: FNAS e convênios,2024,18100075.43,18082573.48,18082573.48,158,0.0111
+alienacao,Alienação de bens,2024,3514272.13,3425433.28,3425433.28,22,0.0021
+livres,"Impostos e transferências livres (IPTU, ISS, ICMS, FPM…)",2025,902855821.94,902718818.2,902718818.2,14890,0.5292
+fundeb,FUNDEB (educação básica),2025,445595106.98,445552554.81,445552554.81,2590,0.2612
+saude_vinc,Saúde: SUS (fundo a fundo) e convênios,2025,92407909.74,93024869.6,93019161.1,1767,0.0545
+convenios,Convênios e outras transferências da União e do Estado,2025,52364282.16,54434681.68,54434681.68,287,0.0319
+educacao_vinc,"Educação: salário-educação, FNDE (merenda, transporte) e convênios",2025,52413822.47,53378745.18,53378745.18,187,0.0313
+cosip,COSIP (contribuição de iluminação pública),2025,37902130.78,37891744.84,37891187.09,57,0.0222
+rpps,Previdência dos servidores (RPPS),2025,24986175.08,24986175.18,24986175.18,735,0.0146
+outros_vinc,Fundos e outros recursos vinculados,2025,20652181.0,24489657.86,24489657.86,239,0.0144
+royalties,"Royalties e compensações financeiras (petróleo, minerais)",2025,22425479.36,22335825.12,22335825.12,82,0.0131
+assistencia,Assistência social: FNAS e convênios,2025,20920418.68,20713049.24,20713049.24,149,0.0121
+emprestimos,Operações de crédito (empréstimos),2025,12676840.54,14651681.35,14651681.35,31,0.0086
+emendas_pix,Emendas Pix (transferências especiais da União),2025,8520455.36,9341745.85,9341745.85,18,0.0055
+alienacao,Alienação de bens,2025,2066366.3,2155205.15,2155205.15,18,0.0013
+livres,"Impostos e transferências livres (IPTU, ISS, ICMS, FPM…)",2026,958979973.78,877072350.5,872606257.1,16072,0.5247
+fundeb,FUNDEB (educação básica),2026,465647434.34,450949639.44,448576219.07,3053,0.2697
+saude_vinc,Saúde: SUS (fundo a fundo) e convênios,2026,77928987.89,68473363.0,68377161.44,1663,0.0411
+convenios,Convênios e outras transferências da União e do Estado,2026,102731649.28,66513405.47,66480084.74,169,0.04
+emprestimos,Operações de crédito (empréstimos),2026,51494524.76,46042968.98,46042968.98,16,0.0277
+educacao_vinc,"Educação: salário-educação, FNDE (merenda, transporte) e convênios",2026,50889550.9,38852757.01,38638600.83,177,0.0232
+cosip,COSIP (contribuição de iluminação pública),2026,39316106.0,37446115.51,37170039.52,28,0.0224
+royalties,"Royalties e compensações financeiras (petróleo, minerais)",2026,25602643.1,23650833.41,23423570.38,76,0.0141
+rpps,Previdência dos servidores (RPPS),2026,21808987.04,21454140.61,21386230.09,613,0.0129
+assistencia,Assistência social: FNAS e convênios,2026,21547319.68,18704454.95,18629454.95,178,0.0112
+outros_vinc,Fundos e outros recursos vinculados,2026,19733724.89,16409775.44,16320091.24,91,0.0098
+emendas_pix,Emendas Pix (transferências especiais da União),2026,3745915.47,3151833.16,3151833.16,11,0.0019
+alienacao,Alienação de bens,2026,2213922.63,2154488.07,2154488.07,10,0.0013

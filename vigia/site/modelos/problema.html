@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% from "_cat.html" import cat, icone with context %}
+{% block conteudo %}
+<section class="bloco" aria-labelledby="h1">
+  <p class="prot">{{ icone(x.cat) }} <a href="/problemas/">Maiores problemas</a> · {{ i }} de {{ total }} · <b>{{ x.titulo }}</b></p>
+  <h1 id="h1" tabindex="-1" class="h1-achado"><span class="numero num quebra">{{ x.numero }}</span> <span class="resto">{{ x.legenda }}</span></h1>
+</section>
+
+<div class="grade-2 larga-esq">
+  <section class="bloco" aria-label="O número">
+    {% for t in x.texto if t %}<p>{{ t }}</p>{% endfor %}
+    {% if x.melhorou %}<div class="melhorou"><span class="selo ok">Está melhorando</span><p>{{ x.melhorou }}</p></div>{% endif %}
+    {% if x.outro_lado %}<div class="outro"><p class="prot">O outro lado</p><p>{{ x.outro_lado }}</p></div>{% endif %}
+  </section>
+  <div class="bloco">
+    {% if x.perg %}
+    <section class="folha" aria-labelledby="h-fez">
+      <h2 id="h-fez" class="h-pequeno">O que o Vigia já perguntou</h2>
+      {% for p in x.perg %}
+      <div class="ped">
+        <p><strong>{{ p.pergunta }}</strong></p>
+        <span class="meta">Para: {{ p.para }} · número {{ p.numeros|join(' e ') }}</span>
+        <span><span class="relogio" data-prazo="{{ p.prazo.isoformat() }}" data-respondido="{{ p.respondido_em }}" data-estado="{{ p.estado }}">Prazo: {{ p.prazo.strftime('%d/%m/%Y') }}</span></span>
+      </div>
+      {% endfor %}
+      {% if x.link %}<p><a href="{{ x.link[0] }}">{{ x.link[1] }} →</a></p>{% endif %}
+    </section>
+    {% endif %}
+    <section class="bloco" aria-labelledby="h-faca">
+      <h2 id="h-faca" class="h-pequeno">O que você pode fazer</h2>
+      <ol class="faca">
+        {% for forte, resto in x.acoes %}<li><p><strong>{{ forte }}</strong> {{ resto }}</p></li>{% endfor %}
+      </ol>
+    </section>
+  </div>
+</div>
+
+<nav class="vizinhos" aria-label="Outros problemas">
+  {% if ant %}<a href="/problemas/{{ ant.slug }}/"><span class="prot">← Anterior</span><b>{{ ant.titulo }}</b></a>{% else %}<span></span>{% endif %}
+  {% if prox %}<a class="prox" href="/problemas/{{ prox.slug }}/"><span class="prot">Próximo →</span><b>{{ prox.titulo }}</b></a>{% endif %}
+</nav>
+
+{% include "_compartilhar.html" %}
+<p class="fonte">Fontes: {% for nome, url in x.fontes %}{% if url %}<a href="{{ url }}">{{ nome }}</a>{% else %}{{ nome }}{% endif %}{{ "; " if not loop.last else "." }}{% endfor %} <a href="/fontes/#problemas">Como fazemos →</a></p>
+{% endblock %}

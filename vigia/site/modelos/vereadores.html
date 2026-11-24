@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+{% from "_vereador.html" import pilha, legenda, resumo with context %}
+{% from "_cat.html" import cat, icone with context %}
+{% block conteudo %}
+{% set c = v.cidade %}{% set k = v.conta %}
+<section class="bloco" aria-labelledby="h1">
+  <p class="prot">{{ icone("camara") }} <b>Vereadores</b> · dados da Câmara de {{ v.coleta }}</p>
+  <h1 id="h1" tabindex="-1">O que fizeram os 19 vereadores</h1>
+  <p class="lead"><strong>Em quase 2 anos, os 19 apresentaram {{ c.n }} projetos de lei. {{ de_cada(100 * c.cont.concreto / c.n)|capitalize }} mudam algo na prática. E {{ c.aprovados }} foram aprovados.</strong></p>
+  <p>Contamos tudo o que cada um apresentou {{ v.periodo }}. E separamos pelo que muda na vida de quem mora aqui.</p>
+  <div class="oque"><b>Mesma régua para os 19</b><p>Ordem alfabética, sem partido e sem foto. Cada projeto tem link para o site da Câmara. Assim você mesmo confere.</p></div>
+</section>
+
+<section class="bloco" aria-labelledby="h-faz">
+  <h2 id="h-faz">O que faz um vereador</h2>
+  <ul class="tarefas curtas grade-4">
+    <li><b>Faz leis</b><span>Propõe projetos de lei. Se a Câmara aprova, vira lei da cidade.</span></li>
+    <li><b>Pede obras</b><span>Pede asfalto, poste e limpeza. Quem decide e paga é a prefeitura.</span></li>
+    <li><b>Vota</b><span>Vota as leis que a prefeitura manda e o orçamento da cidade.</span></li>
+    <li><b>Cobra</b><span>Pergunta e vigia como a prefeitura usa o dinheiro.</span></li>
+  </ul>
+  <p>Aqui mostramos as leis que eles propõem e os pedidos que fazem. Votos e presença vêm depois: <a href="#perguntas">já perguntamos à Câmara</a>.</p>
+</section>
+
+<section class="bloco" aria-labelledby="h-niveis">
+  <h2 id="h-niveis">Do que muda a vida ao simbólico</h2>
+  <p>Lemos o resumo oficial de cada projeto e separamos em quatro níveis.</p>
+  <ol class="niveis-grade grade-4">
+  {% for chave, _, nome, oque in v.niveis if chave != "sem" %}
+    <li class="cartao">
+      <i class="nv grande n-{{ chave }}" aria-hidden="true"></i>
+      <h3>{{ nome }}</h3>
+      <p>{{ oque }}</p>
+      <p class="miuda">Exemplo: {{ v.exemplos[chave][0] }}. <span class="meta">{{ v.exemplos[chave][1] }}</span></p>
+      <p><b class="num">{{ c.cont[chave] }}</b> projetos na cidade.</p>
+    </li>
+  {% endfor %}
+  </ol>
+  <p class="miuda">Outros {{ c.cont.sem }} projetos ficaram sem nível: o resumo só diz que muda outra lei, sem dizer o quê.</p>
+</section>
+
+<section class="bloco" aria-labelledby="h-cidade">
+  <h2 id="h-cidade">Em quase 2 anos, {{ c.n }} projetos de lei</h2>
+  <div class="grade-2">
+    <div class="folha">
+      <h3>Se fossem 100 projetos</h3>
+      <span class="cem grande" role="img" aria-label="De cada 100 projetos: {% for s in c.pilha %}{{ s.pct|round|int }} {{ rot_palavras(s.chave, 2) }}{{ ', ' if not loop.last else '.' }}{% endfor %}">{% for n in c.cem %}<i class="n-{{ n }}"></i>{% endfor %}</span>
+      <ul class="niveis">{% for s in c.pilha %}<li><i class="nv n-{{ s.chave }}" aria-hidden="true"></i><span><b class="num">{{ s.pct|round|int }}</b> {{ rot_palavras(s.chave, 2) }}</span></li>{% endfor %}</ul>
+    </div>
+    <div class="folha">
+      <h3>Poucos foram aprovados</h3>
+      <p class="valor">{{ c.aprovados }} <small>aprovados pela Câmara</small></p>
+      <p>É {{ c.parte_aprovados }} projetos. Os outros estão em análise, prontos para votar ou foram arquivados.</p>
+      {{ pilha(c.pilha_aprov, "Projetos aprovados") }}
+      {{ legenda(c.pilha_aprov) }}
+      <p>Os vereadores também fizeram {{ br(c.pedidos) }} pedidos à prefeitura e {{ br(c.homenagens) }} homenagens, como moções e títulos.</p>
+    </div>
+  </div>
+</section>
+
+<section class="bloco" aria-labelledby="h-cada">
+  <h2 id="h-cada">O que cada vereador fez</h2>
+  <form class="busca" data-busca-bairro="lista-vereadores" role="search">
+    <label for="q-vereador">Escreva o nome do vereador</label>
+    <input type="search" id="q-vereador" name="q" autocomplete="off" placeholder="Ex.: Açucena">
+    <p class="miuda" data-aviso hidden>Não achamos. Os 19 nomes estão logo abaixo, em ordem alfabética.</p>
+  </form>
+  <ul class="niveis em-linha" aria-label="O que quer dizer cada cor">{% for chave, _, nome, _ in v.niveis if chave != "sem" %}<li><i class="nv n-{{ chave }}" aria-hidden="true"></i>{{ nome }}</li>{% endfor %}</ul>
+  <ol class="vereadores" id="lista-vereadores">
+  {% for x in v.lista %}
+    <li data-nomes="{{ x.nome }}"><a class="ver-linha" href="/vereadores/{{ x.slug }}/" id="{{ x.slug }}">
+      <b class="nome">{{ x.nome }}</b>
+      {% if x.n %}{{ pilha(x.pilha, "Projetos de " ~ x.nome) }}{% else %}<span class="pilha vazia">Nenhum projeto de lei</span>{% endif %}
+      <span class="nums">
+        <span><b class="num">{{ x.n }}</b> {{ "projeto" if x.n == 1 else "projetos" }}</span>
+        <span><b class="num">{{ x.cont.concreto }}</b> {{ "muda" if x.cont.concreto == 1 else "mudam" }} algo</span>
+        <span><b class="num">{{ x.cont.simbolico }}</b> {{ "simbólico" if x.cont.simbolico == 1 else "simbólicos" }}</span>
+        <span><b class="num">{{ x.concreto_aprovado }}</b> {{ "aprovado" if x.concreto_aprovado == 1 else "aprovados" }} que {{ "muda" if x.concreto_aprovado == 1 else "mudam" }} algo</span>
+        <span><b class="num">{{ br(x.pedidos) }}</b> pedidos à prefeitura</span>
+      </span>
+    </a></li>
+  {% endfor %}
+  </ol>
+</section>
+
+<section class="bloco conta" id="conta" aria-labelledby="h-conta">
+  <p class="prot">A conta</p>
+  <h2 id="h-conta">Quanto custa e o que saiu</h2>
+  <div class="grade-2">
+    <div class="folha">
+      <p class="prot">Salário</p>
+      <h3>Quanto ganha um vereador</h3>
+      <p class="numero num">{{ k.salario_mes }}</p>
+      <p class="lead"><strong>por mês, igual para os 19.</strong></p>
+      <p>Em {{ k.meses }} meses, são {{ k.salario_periodo }} para cada um. Os 19 juntos somam {{ k.salario_19 }} ({{ k.salario_19_ext }}) só de salário.</p>
+      <p>Cada gabinete ainda pode gastar até {{ k.gabinete }} por mês com assessores. Perguntamos quanto cada um gasta.</p>
+    </div>
+    <div class="folha">
+      <p class="prot">A Câmara inteira</p>
+      <h3>Quanto custou cada lei aprovada</h3>
+      <p>A Câmara gastou {{ k.gasto }} ({{ k.gasto_ext }}) de janeiro de 2025 a {{ k.gasto_ate }}. Nesse tempo, aprovou {{ c.aprovados }} projetos de lei dos vereadores.</p>
+      <p class="numero num cheio">{{ k.por_lei }}</p>
+      <p class="extenso">{{ k.por_lei_ext }}</p>
+      <p class="lead"><strong>por lei aprovada, dividindo uma coisa pela outra.</strong></p>
+      <p>Só {{ c.cont_aprov.concreto }} delas mudam algo na prática. Contando só essas, cada uma saiu por {{ k.por_lei_concreta }} ({{ k.por_lei_concreta_ext }}).</p>
+      <p>E {{ c.cont_aprov.simbolico }} das aprovadas são simbólicas, quase todas datas no calendário: {{ c.parte_simb_aprov }}.</p>
+      <p class="miuda">A Câmara também vota as leis da prefeitura e o orçamento. Por isso, essa conta não é o preço de uma lei. Ela mostra o tamanho.</p>
+    </div>
+  </div>
+
+  <div class="bloco">
+    <p class="lead">O salário é o mesmo para os 19: {{ k.salario_periodo }} para cada um em {{ k.meses }} meses. O que saiu de cada mandato está na <a href="#h-cada">lista acima</a>.</p>
+    <div class="outro">
+      <p class="prot">Por que não dividimos o salário de cada um</p>
+      <p>Quem apresenta mais projetos nem sempre faz mais pela cidade. Um projeto bom vale mais que dez fracos.</p>
+      <p>E aprovar não depende só do autor. Depende dos votos da maioria da Câmara.</p>
+    </div>
+    <div class="outro">
+      <p class="prot">O outro lado</p>
+      <p>A Câmara diz que não paga viagem nem cota para vereador. Em 2025, gastou R$ {{ k.por_morador }} por morador. Ficou entre os menores das cidades vizinhas.</p>
+    </div>
+  </div>
+</section>
+
+<div class="grade-2">
+<section class="bloco" id="perguntas" aria-labelledby="h-perg">
+  <h2 id="h-perg">O que perguntamos à Câmara</h2>
+  <div class="peds">
+  {% for p in perguntas %}
+    <div class="ped">
+      <p><strong>{{ p.pergunta }}</strong></p>
+      <span class="meta">Para: {{ p.para }} · número {{ p.numeros|join(' e ') }}</span>
+      <span><span class="relogio" data-prazo="{{ p.prazo.isoformat() }}" data-respondido="{{ p.respondido_em }}" data-estado="{{ p.estado }}">Prazo: {{ p.prazo.strftime('%d/%m/%Y') }}</span></span>
+    </div>
+  {% endfor %}
+  </div>
+</section>
+<section class="bloco" aria-labelledby="h-faca">
+  <h2 id="h-faca">O que você pode fazer</h2>
+  <ol class="faca">
+    <li><p><strong>Ache o seu vereador</strong> e veja cada projeto que ele apresentou.</p></li>
+    <li><p><strong>Pergunte a ele</strong> qual projeto muda a vida do seu bairro.</p></li>
+    <li><p><strong>Achou um erro?</strong> Mande no Instagram <a href="https://www.instagram.com/vigiacariacica/">@vigiacariacica</a>. A gente confere e corrige.</p></li>
+  </ol>
+</section>
+</div>
+
+{% include "_compartilhar.html" %}
+<p class="fonte">Fontes: Câmara Municipal de Cariacica, <a href="{{ v.meta.url_producao }}">sistema de projetos</a>, consulta por autor de 01/01/2025 a {{ v.coleta }}; <a href="{{ v.meta.url_gasto }}">Portal da Transparência da Câmara</a>, despesa liquidada de 2025 ({{ k.gasto_anos['2025'] }}) e de 2026 até {{ k.gasto_ate }} ({{ k.gasto_anos['2026'] }}), e folha de pagamento ({{ k.salario_mes }} por vereador; era R$ 8.016,94 em 2024); {{ k.gabinete_lei }}. Salário no período: {{ k.salario_mes }} × {{ k.meses }} meses = {{ k.salario_periodo_exato }}. A separação por impacto é do Vigia, feita lendo a ementa de cada projeto. Projeto com mais de um autor conta para cada autor ({{ c.coautoria }} casos); na conta da cidade, conta uma vez. <a href="/fontes/#vereadores">Como fizemos esta página →</a></p>
+{% endblock %}

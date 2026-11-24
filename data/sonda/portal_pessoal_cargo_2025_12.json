@@ -1,0 +1,5792 @@
+[
+  {
+    "CargoNome": " ARQUIVISTA",
+    "cd_CargoServidor": 1798,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 6454.62,
+    "OutrosVencimentos": 9212.68,
+    "RemuneracaoBruta": 16727.17,
+    "Descontos": 60.72,
+    "RemuneracaoLiquida": 7557.01
+  },
+  {
+    "CargoNome": "AGENTE ADMINISTRATIVO",
+    "cd_CargoServidor": 1809,
+    "NumeroServidores": 254,
+    "VencimentoPadrao": 532359.57,
+    "OutrosVencimentos": 662778.59,
+    "RemuneracaoBruta": 1278404.43,
+    "Descontos": 12555.83,
+    "RemuneracaoLiquida": 862800.23
+  },
+  {
+    "CargoNome": "AGENTE ADMINISTRATIVO I",
+    "cd_CargoServidor": 403,
+    "NumeroServidores": 9,
+    "VencimentoPadrao": 15739.13,
+    "OutrosVencimentos": 52269.80,
+    "RemuneracaoBruta": 82573.60,
+    "Descontos": 356.23,
+    "RemuneracaoLiquida": 28456.63
+  },
+  {
+    "CargoNome": "AGENTE COMUNITARIO DE SAUDE ",
+    "cd_CargoServidor": 1013,
+    "NumeroServidores": 204,
+    "VencimentoPadrao": 596675.20,
+    "OutrosVencimentos": 654632.86,
+    "RemuneracaoBruta": 1635264.77,
+    "Descontos": 22836.85,
+    "RemuneracaoLiquida": 1034525.53
+  },
+  {
+    "CargoNome": "AGENTE DE APOIO CENICO",
+    "cd_CargoServidor": 1210,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1874.25,
+    "OutrosVencimentos": 3748.50,
+    "RemuneracaoBruta": 5622.75,
+    "Descontos": 1122.80,
+    "RemuneracaoLiquida": 1751.05
+  },
+  {
+    "CargoNome": "AGENTE DE COMBATE  AS ENDEMIAS",
+    "cd_CargoServidor": 1810,
+    "NumeroServidores": 64,
+    "VencimentoPadrao": 188434.40,
+    "OutrosVencimentos": 216222.07,
+    "RemuneracaoBruta": 527497.08,
+    "Descontos": 15327.98,
+    "RemuneracaoLiquida": 326186.32
+  },
+  {
+    "CargoNome": "AGENTE DE COMBATE AS ENDEMIAS",
+    "cd_CargoServidor": 211,
+    "NumeroServidores": 37,
+    "VencimentoPadrao": 99985.60,
+    "OutrosVencimentos": 142584.80,
+    "RemuneracaoBruta": 322171.26,
+    "Descontos": 5128.74,
+    "RemuneracaoLiquida": 143078.41
+  },
+  {
+    "CargoNome": "AGENTE DE CONTRATACAO",
+    "cd_CargoServidor": 1822,
+    "NumeroServidores": 5,
+    "VencimentoPadrao": 17184.95,
+    "OutrosVencimentos": 32637.50,
+    "RemuneracaoBruta": 53262.12,
+    "Descontos": 52.63,
+    "RemuneracaoLiquida": 27144.49
+  },
+  {
+    "CargoNome": "AGENTE DE TRANSITO I",
+    "cd_CargoServidor": 183,
+    "NumeroServidores": 22,
+    "VencimentoPadrao": 74945.29,
+    "OutrosVencimentos": 221269.83,
+    "RemuneracaoBruta": 395523.90,
+    "Descontos": 2571.37,
+    "RemuneracaoLiquida": 171352.04
+  },
+  {
+    "CargoNome": "AGENTE SERVICOS GERAIS",
+    "cd_CargoServidor": 421,
+    "NumeroServidores": 6,
+    "VencimentoPadrao": 8004.15,
+    "OutrosVencimentos": 15791.85,
+    "RemuneracaoBruta": 26046.28,
+    "Descontos": 396.78,
+    "RemuneracaoLiquida": 14277.72
+  },
+  {
+    "CargoNome": "AGRONOMO",
+    "cd_CargoServidor": 745,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2245.36,
+    "OutrosVencimentos": 2245.36,
+    "RemuneracaoBruta": 4490.72,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2498.54
+  },
+  {
+    "CargoNome": "AMNS I - BIBLIOTECONOMIA",
+    "cd_CargoServidor": 627,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 4771.51,
+    "OutrosVencimentos": 4894.32,
+    "RemuneracaoBruta": 13051.52,
+    "Descontos": 69.46,
+    "RemuneracaoLiquida": 5267.44
+  },
+  {
+    "CargoNome": "AMNS I - ECONOMIA",
+    "cd_CargoServidor": 1117,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3158.05,
+    "OutrosVencimentos": 32176.42,
+    "RemuneracaoBruta": 49317.13,
+    "Descontos": 60.72,
+    "RemuneracaoLiquida": 23558.52
+  },
+  {
+    "CargoNome": "AMNS I - FARMACIA-BIOQUIMICA",
+    "cd_CargoServidor": 232,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 5034.02,
+    "OutrosVencimentos": 10146.19,
+    "RemuneracaoBruta": 19001.01,
+    "Descontos": 60.72,
+    "RemuneracaoLiquida": 8411.58
+  },
+  {
+    "CargoNome": "ANALISTA DO EXECUTIVO MUNICIPAL",
+    "cd_CargoServidor": 1811,
+    "NumeroServidores": 15,
+    "VencimentoPadrao": 53642.67,
+    "OutrosVencimentos": 98884.98,
+    "RemuneracaoBruta": 169101.14,
+    "Descontos": 685.76,
+    "RemuneracaoLiquida": 69120.26
+  },
+  {
+    "CargoNome": "ANALISTA EM TEC DA INF-SIS DA INFORMACAO",
+    "cd_CargoServidor": 1812,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 7602.69,
+    "OutrosVencimentos": 12983.16,
+    "RemuneracaoBruta": 20585.85,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5158.98
+  },
+  {
+    "CargoNome": "ARQUITETO E URBANISTA",
+    "cd_CargoServidor": 1813,
+    "NumeroServidores": 4,
+    "VencimentoPadrao": 29094.98,
+    "OutrosVencimentos": 26095.61,
+    "RemuneracaoBruta": 58151.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 30710.52
+  },
+  {
+    "CargoNome": "ARTIFICE DE OBRAS E SERVIÇOS PUBLICOS",
+    "cd_CargoServidor": 221,
+    "NumeroServidores": 27,
+    "VencimentoPadrao": 48004.68,
+    "OutrosVencimentos": 87007.18,
+    "RemuneracaoBruta": 147156.75,
+    "Descontos": 3095.48,
+    "RemuneracaoLiquida": 55332.35
+  },
+  {
+    "CargoNome": "ASSE EXEC DE CAPT DE REC E PLANEJAMENTO",
+    "cd_CargoServidor": 1965,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 15000.00,
+    "OutrosVencimentos": 15000.00,
+    "RemuneracaoBruta": 30000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 8170.63
+  },
+  {
+    "CargoNome": "ASSESSOR ADJUNTO ",
+    "cd_CargoServidor": 1888,
+    "NumeroServidores": 229,
+    "VencimentoPadrao": 519877.14,
+    "OutrosVencimentos": 950984.35,
+    "RemuneracaoBruta": 1576937.55,
+    "Descontos": 14028.96,
+    "RemuneracaoLiquida": 699948.09
+  },
+  {
+    "CargoNome": "ASSESSOR ADJUNTO ACESSUAS",
+    "cd_CargoServidor": 1953,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2300.00,
+    "OutrosVencimentos": 2300.00,
+    "RemuneracaoBruta": 4600.00,
+    "Descontos": 69.00,
+    "RemuneracaoLiquida": 2046.77
+  },
+  {
+    "CargoNome": "ASSESSOR ADJUNTO MOBILIZA CARIACICA",
+    "cd_CargoServidor": 1890,
+    "NumeroServidores": 9,
+    "VencimentoPadrao": 18400.00,
+    "OutrosVencimentos": 19930.66,
+    "RemuneracaoBruta": 43694.67,
+    "Descontos": 276.00,
+    "RemuneracaoLiquida": 19415.17
+  },
+  {
+    "CargoNome": "ASSESSOR ADMINISTRATIVO",
+    "cd_CargoServidor": 507,
+    "NumeroServidores": 65,
+    "VencimentoPadrao": 171143.40,
+    "OutrosVencimentos": 213851.46,
+    "RemuneracaoBruta": 418050.58,
+    "Descontos": 5997.01,
+    "RemuneracaoLiquida": 193785.34
+  },
+  {
+    "CargoNome": "ASSESSOR DE COMUNICACAO",
+    "cd_CargoServidor": 1843,
+    "NumeroServidores": 4,
+    "VencimentoPadrao": 9300.00,
+    "OutrosVencimentos": 22249.08,
+    "RemuneracaoBruta": 40487.97,
+    "Descontos": 458.72,
+    "RemuneracaoLiquida": 18890.61
+  },
+  {
+    "CargoNome": "ASSESSOR DO PROCURADOR-GERAL",
+    "cd_CargoServidor": 1831,
+    "NumeroServidores": 8,
+    "VencimentoPadrao": 31500.00,
+    "OutrosVencimentos": 76596.71,
+    "RemuneracaoBruta": 131717.85,
+    "Descontos": 833.30,
+    "RemuneracaoLiquida": 65155.89
+  },
+  {
+    "CargoNome": "ASSESSOR ESP DE PLANEJAMENTO EM SAUDE",
+    "cd_CargoServidor": 202,
+    "NumeroServidores": 3,
+    "VencimentoPadrao": 7488.40,
+    "OutrosVencimentos": 24142.15,
+    "RemuneracaoBruta": 38047.22,
+    "Descontos": 364.45,
+    "RemuneracaoLiquida": 17014.09
+  },
+  {
+    "CargoNome": "ASSESSOR ESPECIAL",
+    "cd_CargoServidor": 272,
+    "NumeroServidores": 48,
+    "VencimentoPadrao": 257220.53,
+    "OutrosVencimentos": 324274.19,
+    "RemuneracaoBruta": 622124.55,
+    "Descontos": 1863.63,
+    "RemuneracaoLiquida": 276699.24
+  },
+  {
+    "CargoNome": "ASSESSOR ESPECIAL DE ENGENHARIA E OBRAS",
+    "cd_CargoServidor": 429,
+    "NumeroServidores": 7,
+    "VencimentoPadrao": 34881.24,
+    "OutrosVencimentos": 41344.58,
+    "RemuneracaoBruta": 90100.82,
+    "Descontos": 362.60,
+    "RemuneracaoLiquida": 41660.14
+  },
+  {
+    "CargoNome": "ASSESSOR ESPECIAL DE RECURSOS HUMANOS",
+    "cd_CargoServidor": 1984,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 5500.00,
+    "OutrosVencimentos": 5250.00,
+    "RemuneracaoBruta": 12250.00,
+    "Descontos": 186.20,
+    "RemuneracaoLiquida": 4554.66
+  },
+  {
+    "CargoNome": "ASSESSOR EXE DE MANUTENCAO DE REGIONAL 1",
+    "cd_CargoServidor": 1891,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 15000.00,
+    "OutrosVencimentos": 15000.00,
+    "RemuneracaoBruta": 30000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 11093.81
+  },
+  {
+    "CargoNome": "ASSESSOR EXE DE MANUTENCAO DE REGIONAL 2",
+    "cd_CargoServidor": 1892,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 15000.00,
+    "OutrosVencimentos": 29048.38,
+    "RemuneracaoBruta": 44048.38,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 22187.62
+  },
+  {
+    "CargoNome": "ASSESSOR EXE DE MANUTENCAO DE REGIONAL 3",
+    "cd_CargoServidor": 1893,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 15000.00,
+    "OutrosVencimentos": 15000.00,
+    "RemuneracaoBruta": 35000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 14718.81
+  },
+  {
+    "CargoNome": "ASSESSOR EXECUTIVO DE ENGENHARIA E OBRAS",
+    "cd_CargoServidor": 1844,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 22000.00,
+    "OutrosVencimentos": 23350.00,
+    "RemuneracaoBruta": 45350.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 15735.34
+  },
+  {
+    "CargoNome": "ASSESSOR EXECUTIVO DE GABINETE I",
+    "cd_CargoServidor": 1495,
+    "NumeroServidores": 11,
+    "VencimentoPadrao": 121000.00,
+    "OutrosVencimentos": 106873.39,
+    "RemuneracaoBruta": 232618.29,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 101108.35
+  },
+  {
+    "CargoNome": "ASSESSOR EXECUTIVO DE GABINETE II",
+    "cd_CargoServidor": 1496,
+    "NumeroServidores": 20,
+    "VencimentoPadrao": 300000.00,
+    "OutrosVencimentos": 325911.62,
+    "RemuneracaoBruta": 661754.41,
+    "Descontos": 12790.69,
+    "RemuneracaoLiquida": 298483.25
+  },
+  {
+    "CargoNome": "ASSESSOR JURIDICO DE DEF DO CONSUMIDOR",
+    "cd_CargoServidor": 722,
+    "NumeroServidores": 3,
+    "VencimentoPadrao": 9300.00,
+    "OutrosVencimentos": 8149.94,
+    "RemuneracaoBruta": 17449.94,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 8944.86
+  },
+  {
+    "CargoNome": "ASSESSOR TECNICO",
+    "cd_CargoServidor": 1017,
+    "NumeroServidores": 60,
+    "VencimentoPadrao": 221852.62,
+    "OutrosVencimentos": 282416.13,
+    "RemuneracaoBruta": 536989.58,
+    "Descontos": 1960.50,
+    "RemuneracaoLiquida": 230961.70
+  },
+  {
+    "CargoNome": "ASSESSOR TECNICO DE GABINETE",
+    "cd_CargoServidor": 1497,
+    "NumeroServidores": 18,
+    "VencimentoPadrao": 114020.29,
+    "OutrosVencimentos": 121573.62,
+    "RemuneracaoBruta": 247800.67,
+    "Descontos": 186.20,
+    "RemuneracaoLiquida": 114172.97
+  },
+  {
+    "CargoNome": "ASSESSOR TECNICO MOBILIZA CARIACICA",
+    "cd_CargoServidor": 1894,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3800.00,
+    "OutrosVencimentos": 3800.00,
+    "RemuneracaoBruta": 7600.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3365.84
+  },
+  {
+    "CargoNome": "ASSISTENTE EDUCACIONAL",
+    "cd_CargoServidor": 1826,
+    "NumeroServidores": 290,
+    "VencimentoPadrao": 516043.53,
+    "OutrosVencimentos": 434045.19,
+    "RemuneracaoBruta": 1317329.97,
+    "Descontos": 19263.23,
+    "RemuneracaoLiquida": 954147.75
+  },
+  {
+    "CargoNome": "ASSISTENTE SOCIAL",
+    "cd_CargoServidor": 816,
+    "NumeroServidores": 79,
+    "VencimentoPadrao": 249505.83,
+    "OutrosVencimentos": 305207.33,
+    "RemuneracaoBruta": 621066.63,
+    "Descontos": 9939.37,
+    "RemuneracaoLiquida": 349269.27
+  },
+  {
+    "CargoNome": "ASSISTENTE SOCIAL - BOLSISTA",
+    "cd_CargoServidor": 1409,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 0.00,
+    "RemuneracaoBruta": 8750.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 8750.00
+  },
+  {
+    "CargoNome": "AUDITOR FISCAL DE TRIBUTOS MUNICIPAIS",
+    "cd_CargoServidor": 1199,
+    "NumeroServidores": 20,
+    "VencimentoPadrao": 71948.68,
+    "OutrosVencimentos": 831361.52,
+    "RemuneracaoBruta": 932169.43,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 340400.27
+  },
+  {
+    "CargoNome": "AUDITOR INTERNO",
+    "cd_CargoServidor": 823,
+    "NumeroServidores": 7,
+    "VencimentoPadrao": 50815.18,
+    "OutrosVencimentos": 60031.43,
+    "RemuneracaoBruta": 119316.11,
+    "Descontos": 372.40,
+    "RemuneracaoLiquida": 46637.96
+  },
+  {
+    "CargoNome": "AUXILIAR ADMINISTRATIVO",
+    "cd_CargoServidor": 1113,
+    "NumeroServidores": 252,
+    "VencimentoPadrao": 447486.53,
+    "OutrosVencimentos": 859550.45,
+    "RemuneracaoBruta": 1445723.12,
+    "Descontos": 29603.33,
+    "RemuneracaoLiquida": 546362.06
+  },
+  {
+    "CargoNome": "AUXILIAR COORD ENSINO",
+    "cd_CargoServidor": 1022,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 3201.66,
+    "OutrosVencimentos": 3201.66,
+    "RemuneracaoBruta": 7470.54,
+    "Descontos": 60.72,
+    "RemuneracaoLiquida": 4835.83
+  },
+  {
+    "CargoNome": "AUXILIAR DE CONSULTORIO DENTARIO",
+    "cd_CargoServidor": 522,
+    "NumeroServidores": 30,
+    "VencimentoPadrao": 56180.96,
+    "OutrosVencimentos": 84233.62,
+    "RemuneracaoBruta": 179179.49,
+    "Descontos": 2530.24,
+    "RemuneracaoLiquida": 82244.95
+  },
+  {
+    "CargoNome": "AUXILIAR DE SERVICOS GERAIS",
+    "cd_CargoServidor": 321,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 3201.66,
+    "OutrosVencimentos": 9016.47,
+    "RemuneracaoBruta": 14187.91,
+    "Descontos": 286.87,
+    "RemuneracaoLiquida": 8033.97
+  },
+  {
+    "CargoNome": "AUXILIAR DE SERVICOS MEDICOS",
+    "cd_CargoServidor": 904,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 1600.83,
+    "OutrosVencimentos": 1799.28,
+    "RemuneracaoBruta": 3994.66,
+    "Descontos": 121.66,
+    "RemuneracaoLiquida": 2664.68
+  },
+  {
+    "CargoNome": "AUXILIAR OFIC. MECANICA",
+    "cd_CargoServidor": 924,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1600.83,
+    "OutrosVencimentos": 2900.83,
+    "RemuneracaoBruta": 5251.94,
+    "Descontos": 156.76,
+    "RemuneracaoLiquida": 2120.93
+  },
+  {
+    "CargoNome": "AUXILIAR SERV. TECNICOS",
+    "cd_CargoServidor": 254,
+    "NumeroServidores": 8,
+    "VencimentoPadrao": 12806.64,
+    "OutrosVencimentos": 29394.99,
+    "RemuneracaoBruta": 48375.26,
+    "Descontos": 2487.48,
+    "RemuneracaoLiquida": 28086.58
+  },
+  {
+    "CargoNome": "AUXILIAR SERV. URBANOS",
+    "cd_CargoServidor": 479,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1600.83,
+    "OutrosVencimentos": 3298.56,
+    "RemuneracaoBruta": 6459.27,
+    "Descontos": 60.72,
+    "RemuneracaoLiquida": 3897.97
+  },
+  {
+    "CargoNome": "AUXILIAR SERVIÇOS EDUCACIONAIS 'A'",
+    "cd_CargoServidor": 1121,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1600.83,
+    "OutrosVencimentos": 1600.83,
+    "RemuneracaoBruta": 3396.66,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2353.64
+  },
+  {
+    "CargoNome": "AUXILIAR SERVIÇOS EDUCACIONAIS 'B'",
+    "cd_CargoServidor": 725,
+    "NumeroServidores": 7,
+    "VencimentoPadrao": 11205.81,
+    "OutrosVencimentos": 13162.26,
+    "RemuneracaoBruta": 28320.01,
+    "Descontos": 249.50,
+    "RemuneracaoLiquida": 18020.58
+  },
+  {
+    "CargoNome": "AUXILIAR TOPOGRAFIA",
+    "cd_CargoServidor": 781,
+    "NumeroServidores": 4,
+    "VencimentoPadrao": 6403.32,
+    "OutrosVencimentos": 18315.82,
+    "RemuneracaoBruta": 28782.74,
+    "Descontos": 1170.03,
+    "RemuneracaoLiquida": 17403.12
+  },
+  {
+    "CargoNome": "BIBLIOTECARIO",
+    "cd_CargoServidor": 11,
+    "NumeroServidores": 38,
+    "VencimentoPadrao": 119809.83,
+    "OutrosVencimentos": 128854.84,
+    "RemuneracaoBruta": 312422.20,
+    "Descontos": 5233.88,
+    "RemuneracaoLiquida": 154405.04
+  },
+  {
+    "CargoNome": "BRACAL",
+    "cd_CargoServidor": 53,
+    "NumeroServidores": 24,
+    "VencimentoPadrao": 36819.09,
+    "OutrosVencimentos": 64578.59,
+    "RemuneracaoBruta": 116974.02,
+    "Descontos": 3438.61,
+    "RemuneracaoLiquida": 65247.60
+  },
+  {
+    "CargoNome": "CAVOUQUEIRO",
+    "cd_CargoServidor": 951,
+    "NumeroServidores": 4,
+    "VencimentoPadrao": 6403.32,
+    "OutrosVencimentos": 13403.71,
+    "RemuneracaoBruta": 24141.19,
+    "Descontos": 434.96,
+    "RemuneracaoLiquida": 13663.02
+  },
+  {
+    "CargoNome": "CEDIDOS A PMC",
+    "cd_CargoServidor": 2093,
+    "NumeroServidores": 19,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 0.00,
+    "RemuneracaoBruta": 0.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 0.00
+  },
+  {
+    "CargoNome": "CH DO NUC DE APOIO ADM ORCAMENT E FINANC",
+    "cd_CargoServidor": 697,
+    "NumeroServidores": 17,
+    "VencimentoPadrao": 53017.91,
+    "OutrosVencimentos": 114959.95,
+    "RemuneracaoBruta": 175198.87,
+    "Descontos": 554.43,
+    "RemuneracaoLiquida": 79484.19
+  },
+  {
+    "CargoNome": "CHEFE DO CERIMONIAL",
+    "cd_CargoServidor": 1895,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 5500.00,
+    "OutrosVencimentos": 5500.00,
+    "RemuneracaoBruta": 11000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4483.63
+  },
+  {
+    "CargoNome": "CHEFE DO NUCLEO DE CONTROLE DE PROCESSOS",
+    "cd_CargoServidor": 582,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 1990.55
+  },
+  {
+    "CargoNome": "CHEFE DO NUCLEO DE TRATAMENTO DE DIVIDAS",
+    "cd_CargoServidor": 252,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 1491.88,
+    "RemuneracaoBruta": 4591.88,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3551.48
+  },
+  {
+    "CargoNome": "CIRURGIAO DENTISTA",
+    "cd_CargoServidor": 1148,
+    "NumeroServidores": 49,
+    "VencimentoPadrao": 194334.76,
+    "OutrosVencimentos": 245605.63,
+    "RemuneracaoBruta": 557146.72,
+    "Descontos": 8512.48,
+    "RemuneracaoLiquida": 265199.06
+  },
+  {
+    "CargoNome": "CIRURGIAO DENTISTA - BOLSISTA",
+    "cd_CargoServidor": 1344,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 0.00,
+    "RemuneracaoBruta": 8750.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 8750.00
+  },
+  {
+    "CargoNome": "CONSELHEIRO TUTELAR",
+    "cd_CargoServidor": 1033,
+    "NumeroServidores": 23,
+    "VencimentoPadrao": 62000.00,
+    "OutrosVencimentos": 87520.82,
+    "RemuneracaoBruta": 177040.14,
+    "Descontos": 1674.00,
+    "RemuneracaoLiquida": 76402.85
+  },
+  {
+    "CargoNome": "CONTADOR",
+    "cd_CargoServidor": 530,
+    "NumeroServidores": 7,
+    "VencimentoPadrao": 43648.93,
+    "OutrosVencimentos": 91018.44,
+    "RemuneracaoBruta": 143333.62,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 51004.53
+  },
+  {
+    "CargoNome": "COO DE CAD MOV FUNC E CONT DE CARG E SAL",
+    "cd_CargoServidor": 1608,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 4600.00,
+    "RemuneracaoBruta": 9200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2604.88
+  },
+  {
+    "CargoNome": "COO DE DES E A DE C DE TEC DA INFORMACAO",
+    "cd_CargoServidor": 1966,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 12704.80,
+    "RemuneracaoBruta": 15804.80,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 9041.80
+  },
+  {
+    "CargoNome": "COO DE GE DOS CE DE REF ESP  A S - CREAS",
+    "cd_CargoServidor": 2098,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 1808.34,
+    "RemuneracaoBruta": 4908.34,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COO DE GES DOS CEN DE REF AS SOC - CRAS",
+    "cd_CargoServidor": 2099,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2042.91
+  },
+  {
+    "CargoNome": "COO DE POL  P POVOS E COMUN TRADICIONAIS",
+    "cd_CargoServidor": 1786,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 4956.93,
+    "RemuneracaoBruta": 8056.93,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 4227.62
+  },
+  {
+    "CargoNome": "COOD DE CAD UNIC E DO PROG BOLSA FAMILIA",
+    "cd_CargoServidor": 2100,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 1808.33,
+    "RemuneracaoBruta": 4908.33,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COOR DE EQ E REL ETNICO RACIAIS (ERER)",
+    "cd_CargoServidor": 1896,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 775.00,
+    "RemuneracaoBruta": 3875.00,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 3365.48
+  },
+  {
+    "CargoNome": "COOR DE POL DE PRO E DEF D DIR DA MULHER",
+    "cd_CargoServidor": 1784,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 1862.15
+  },
+  {
+    "CargoNome": "COOR JURIDICO DE REGULARIZACAO FUNDIARIA",
+    "cd_CargoServidor": 1424,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 1994.57
+  },
+  {
+    "CargoNome": "COOR REG DO POLO DA UNI ABERTA DO BRASIL",
+    "cd_CargoServidor": 1898,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4225.00,
+    "OutrosVencimentos": 4225.00,
+    "RemuneracaoBruta": 8450.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3949.86
+  },
+  {
+    "CargoNome": "COOR SERV CONV FOT VINC CEN CONVIVENCIA",
+    "cd_CargoServidor": 2101,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORC DA LEI JOAO BANAN. E F M CULTURA",
+    "cd_CargoServidor": 1899,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORD ADM DE REGULARIZACAO FUNDIARIA",
+    "cd_CargoServidor": 1967,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 2583.33,
+    "RemuneracaoBruta": 5683.33,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5208.21
+  },
+  {
+    "CargoNome": "COORD DA LEI DE INC AS MICRO E PEQ EMPRE",
+    "cd_CargoServidor": 1368,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORD DA PRACA CEU - CENTRO DE ARTES E",
+    "cd_CargoServidor": 1900,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 7233.33,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3609.17
+  },
+  {
+    "CargoNome": "COORD DAS ESCOLAS EM TEMPO INTEGRAL",
+    "cd_CargoServidor": 1901,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 1808.33,
+    "RemuneracaoBruta": 5094.33,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2575.46
+  },
+  {
+    "CargoNome": "COORD DE ACOMP DE CONTRATOS DA EDUCACAO",
+    "cd_CargoServidor": 1985,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 4463.52,
+    "RemuneracaoBruta": 7563.52,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 4787.12
+  },
+  {
+    "CargoNome": "COORD DE ACOMP E CONTROLE DO SIMPLES NAC",
+    "cd_CargoServidor": 1180,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1988.40,
+    "OutrosVencimentos": 16464.80,
+    "RemuneracaoBruta": 18453.20,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3654.14
+  },
+  {
+    "CargoNome": "COORD DE ACOMPAN DE CONTRATOS E SERVICOS",
+    "cd_CargoServidor": 1253,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 1985.67
+  },
+  {
+    "CargoNome": "COORD DE ACOMPANHAMENTO DE CONTRATOS",
+    "cd_CargoServidor": 1015,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 5088.40,
+    "OutrosVencimentos": 12118.40,
+    "RemuneracaoBruta": 17206.80,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 5474.51
+  },
+  {
+    "CargoNome": "COORD DE ADMINIS DE PRACAS E LOGRADOUROS",
+    "cd_CargoServidor": 608,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3800.00,
+    "RemuneracaoBruta": 7600.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3365.84
+  },
+  {
+    "CargoNome": "COORD DE ADMINISTRACAO DA DIVIDA ATIVA",
+    "cd_CargoServidor": 151,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1874.25,
+    "OutrosVencimentos": 10596.51,
+    "RemuneracaoBruta": 12470.76,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6437.69
+  },
+  {
+    "CargoNome": "COORD DE ADMINISTRACAO DE NECROPOLES",
+    "cd_CargoServidor": 815,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORD DE ALIM E MANUT DE BANCO DE DADOS",
+    "cd_CargoServidor": 1332,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 4483.33,
+    "RemuneracaoBruta": 7583.33,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5077.48
+  },
+  {
+    "CargoNome": "COORD DE ANÁLISE E ACOMPANHAM CONTABIL",
+    "cd_CargoServidor": 1172,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 9839.60,
+    "RemuneracaoBruta": 12939.60,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4494.78
+  },
+  {
+    "CargoNome": "COORD DE ANALISE TECNICA E LICENCIMENTO",
+    "cd_CargoServidor": 591,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 7166.67,
+    "RemuneracaoBruta": 10266.67,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4542.13
+  },
+  {
+    "CargoNome": "COORD DE AP TEC DA PROC FISCAL E TRIBUT",
+    "cd_CargoServidor": 1832,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1988.40,
+    "OutrosVencimentos": 10947.88,
+    "RemuneracaoBruta": 12986.28,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4429.42
+  },
+  {
+    "CargoNome": "COORD DE APOIO GER E RELAC EXTERNAS",
+    "cd_CargoServidor": 1220,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 6100.00,
+    "RemuneracaoBruta": 9200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2753.15
+  },
+  {
+    "CargoNome": "COORD DE ARTICUL E PROJETOS ESTRATEGICOS",
+    "cd_CargoServidor": 1787,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 5934.60,
+    "RemuneracaoBruta": 9034.60,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5669.20
+  },
+  {
+    "CargoNome": "COORD DE ASSIST AO ATLETA E PROJ SOCIAIS",
+    "cd_CargoServidor": 1173,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 2648.60
+  },
+  {
+    "CargoNome": "COORD DE ASSISTENCIA TECNICA E INSUMOS",
+    "cd_CargoServidor": 1204,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORD DE ASSUNTOS TEC E ADMINISTRATIVOS",
+    "cd_CargoServidor": 1902,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 2583.33,
+    "RemuneracaoBruta": 5683.33,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORD DE ATENDIMENTO AO CONTRIBUINTE",
+    "cd_CargoServidor": 573,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2339.29,
+    "OutrosVencimentos": 13168.73,
+    "RemuneracaoBruta": 15508.02,
+    "Descontos": 70.18,
+    "RemuneracaoLiquida": 4333.53
+  },
+  {
+    "CargoNome": "COORD DE ATENDIMENTO E ORIENTACAO",
+    "cd_CargoServidor": 1369,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 7233.33,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3609.17
+  },
+  {
+    "CargoNome": "COORD DE AVALIACAO E DESEMPEN FUNCIONAL",
+    "cd_CargoServidor": 1222,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1930.48,
+    "OutrosVencimentos": 8360.48,
+    "RemuneracaoBruta": 12690.96,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4870.82
+  },
+  {
+    "CargoNome": "COORD DE CADAST IMOBILIARIO E MOBILIARIO",
+    "cd_CargoServidor": 422,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2339.29,
+    "OutrosVencimentos": 13315.52,
+    "RemuneracaoBruta": 15654.81,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5979.23
+  },
+  {
+    "CargoNome": "COORD DE CAPACITACAO E DESENV DE PESSOAS",
+    "cd_CargoServidor": 519,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 4600.00,
+    "RemuneracaoBruta": 9200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3931.62
+  },
+  {
+    "CargoNome": "COORD DE CLAS E REGISTRO DE MATERIAIS",
+    "cd_CargoServidor": 1202,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 7381.24,
+    "OutrosVencimentos": 18199.50,
+    "RemuneracaoBruta": 25580.74,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 9425.17
+  },
+  {
+    "CargoNome": "COORD DE COMUNICACAO ADMINISTRATIVA",
+    "cd_CargoServidor": 791,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1988.40,
+    "OutrosVencimentos": 6018.40,
+    "RemuneracaoBruta": 8006.80,
+    "Descontos": 60.72,
+    "RemuneracaoLiquida": 2651.28
+  },
+  {
+    "CargoNome": "COORD DE CONTRAT DE PESSOAL TERCEIRIZADO",
+    "cd_CargoServidor": 1862,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2015.00,
+    "OutrosVencimentos": 2015.00,
+    "RemuneracaoBruta": 4030.00,
+    "Descontos": 60.45,
+    "RemuneracaoLiquida": 1954.55
+  },
+  {
+    "CargoNome": "COORD DE DIREI E VANT DE PES DA EDUCACAO",
+    "cd_CargoServidor": 1903,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1930.48,
+    "OutrosVencimentos": 6960.48,
+    "RemuneracaoBruta": 9890.96,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3886.48
+  },
+  {
+    "CargoNome": "COORD DE DOCUMENTACAO E ATAS ESCOLARES",
+    "cd_CargoServidor": 1904,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 8746.42,
+    "RemuneracaoBruta": 13346.42,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 7847.06
+  },
+  {
+    "CargoNome": "COORD DE EDUCACAO PARA JOVENS E ADULTOS",
+    "cd_CargoServidor": 692,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 2583.33,
+    "RemuneracaoBruta": 5683.33,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORD DE FISCAL DE SERV TERCEIRIZADOS",
+    "cd_CargoServidor": 1986,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 2583.33,
+    "RemuneracaoBruta": 5683.33,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORD DE FISCALIZ DE OBRAS DA EDUCACAO",
+    "cd_CargoServidor": 1905,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 1550.00,
+    "RemuneracaoBruta": 4650.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORD DE FISCALIZ DE TRANSP INDIVIDUAL",
+    "cd_CargoServidor": 329,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 5716.67,
+    "RemuneracaoBruta": 8816.67,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4203.02
+  },
+  {
+    "CargoNome": "COORD DE FORMAL DE CONTRATOS E PARCERIAS",
+    "cd_CargoServidor": 1854,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1874.25,
+    "OutrosVencimentos": 5904.25,
+    "RemuneracaoBruta": 7778.50,
+    "Descontos": 56.23,
+    "RemuneracaoLiquida": 2691.23
+  },
+  {
+    "CargoNome": "COORD DE GESTAO DE PESSOAL DA EDUCACAO",
+    "cd_CargoServidor": 552,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 1550.00,
+    "RemuneracaoBruta": 4650.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORD DE GESTAO DE PESSOAL DA SAUDE",
+    "cd_CargoServidor": 1906,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1988.40,
+    "OutrosVencimentos": 12021.80,
+    "RemuneracaoBruta": 15010.20,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 7567.28
+  },
+  {
+    "CargoNome": "COORD DE GESTAO DOS CONSELHOS TUTELARES",
+    "cd_CargoServidor": 2102,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 2066.67,
+    "RemuneracaoBruta": 5166.67,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 4552.04
+  },
+  {
+    "CargoNome": "COORD DE GESTAO, PATRI E DE ALMOXARIFADO",
+    "cd_CargoServidor": 2067,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3742.87,
+    "OutrosVencimentos": 12056.14,
+    "RemuneracaoBruta": 19934.88,
+    "Descontos": 56.14,
+    "RemuneracaoLiquida": 6841.61
+  },
+  {
+    "CargoNome": "COORD DE GOVERNANCA DE TEC DA INFORMACAO",
+    "cd_CargoServidor": 1476,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 12765.49,
+    "RemuneracaoBruta": 15865.49,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 7889.39
+  },
+  {
+    "CargoNome": "COORD DE GUARDA E TRATA DE DOC FUNCIONAL",
+    "cd_CargoServidor": 1609,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 5350.00,
+    "RemuneracaoBruta": 12246.29,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5656.76
+  },
+  {
+    "CargoNome": "COORD DE HABIT POP E BENEF TRANSITORIOS ",
+    "cd_CargoServidor": 1410,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 5934.60,
+    "RemuneracaoBruta": 9034.60,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4299.45
+  },
+  {
+    "CargoNome": "COORD DE INFRAESTRUTURA E LOGISTICA",
+    "cd_CargoServidor": 1201,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1874.25,
+    "OutrosVencimentos": 5904.25,
+    "RemuneracaoBruta": 7778.50,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2692.26
+  },
+  {
+    "CargoNome": "COORD DE INOVACAO EM SERVICOS PUBLICOS",
+    "cd_CargoServidor": 1987,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 5775.00,
+    "RemuneracaoBruta": 8875.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6270.71
+  },
+  {
+    "CargoNome": "COORD DE INTELIGENCIA E PLANEJAMENTO",
+    "cd_CargoServidor": 2068,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3528.00,
+    "OutrosVencimentos": 7608.90,
+    "RemuneracaoBruta": 14629.62,
+    "Descontos": 52.92,
+    "RemuneracaoLiquida": 7079.77
+  },
+  {
+    "CargoNome": "COORD DE INTEROPERAB E CIENCIA DE DADOS",
+    "cd_CargoServidor": 1955,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2205.00,
+    "OutrosVencimentos": 9972.50,
+    "RemuneracaoBruta": 12177.50,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5985.80
+  },
+  {
+    "CargoNome": "COORD DE LOG E MAN DE EQUIP ESPORTIVOS",
+    "cd_CargoServidor": 2069,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 1550.00,
+    "RemuneracaoBruta": 4650.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORD DE MANIFESTACOES POPUL E CARNAVAL",
+    "cd_CargoServidor": 766,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORD DE MANUTEN DE VIAS NAO PAVIMENTADA",
+    "cd_CargoServidor": 273,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2334.60
+  },
+  {
+    "CargoNome": "COORD DE MANUTENCAO DE VIAS PAVIMENTADAS",
+    "cd_CargoServidor": 819,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3800.00,
+    "RemuneracaoBruta": 7600.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3365.84
+  },
+  {
+    "CargoNome": "COORD DE MAPEA E MONIT DE AREAS DE RISCO",
+    "cd_CargoServidor": 2070,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3400.00,
+    "RemuneracaoBruta": 8500.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4549.03
+  },
+  {
+    "CargoNome": "COORD DE MEDICINA HIG E SEG DO TRABALHO",
+    "cd_CargoServidor": 656,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 4600.00,
+    "RemuneracaoBruta": 9200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2971.03
+  },
+  {
+    "CargoNome": "COORD DE MICROCREDITO",
+    "cd_CargoServidor": 1370,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORD DE MOBILIARIO E EQUIPAMENT ESCOLAR",
+    "cd_CargoServidor": 1988,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 1550.00,
+    "RemuneracaoBruta": 4650.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORD DE ORC E FINAN DO FUN MUN DE SAUDE",
+    "cd_CargoServidor": 1863,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORD DE PLANEJ E CONTROLE ACAO FISCAL",
+    "cd_CargoServidor": 346,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3960.17,
+    "RemuneracaoBruta": 7060.17,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5682.47
+  },
+  {
+    "CargoNome": "COORD DE POL DOS DIREITOS DA JUVENTUDE",
+    "cd_CargoServidor": 1788,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2015.24
+  },
+  {
+    "CargoNome": "COORD DE PROCESSAM DA FOLHA DE PAGAMENTO",
+    "cd_CargoServidor": 968,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2015.00,
+    "OutrosVencimentos": 4265.00,
+    "RemuneracaoBruta": 8530.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4023.52
+  },
+  {
+    "CargoNome": "COORD DE PROCESSAMENTO DE LICITACAO",
+    "cd_CargoServidor": 1477,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 775.00,
+    "RemuneracaoBruta": 3875.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3551.48
+  },
+  {
+    "CargoNome": "COORD DE PROGRAMAS E SUBVENCAO A ESCOLA",
+    "cd_CargoServidor": 1907,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 775.00,
+    "RemuneracaoBruta": 3875.00,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 3365.48
+  },
+  {
+    "CargoNome": "COORD DE PROGRAMAS ESPORTIVOS E DE LAZER",
+    "cd_CargoServidor": 2071,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 2983.27,
+    "RemuneracaoBruta": 6083.27,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3417.78
+  },
+  {
+    "CargoNome": "COORD DE PROJ DE QUALIF PARA O TRABALHO ",
+    "cd_CargoServidor": 98,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORD DE PROJ, REG E AC DE COV EDUCACION",
+    "cd_CargoServidor": 1908,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 2648.60
+  },
+  {
+    "CargoNome": "COORD DE PROJETOS E PROG HABITACIONAIS",
+    "cd_CargoServidor": 306,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 1426.83
+  },
+  {
+    "CargoNome": "COORD DE PROT SOC DE MEDIA COMPLEXIDADE",
+    "cd_CargoServidor": 415,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3476.68,
+    "RemuneracaoBruta": 6576.68,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 4316.95
+  },
+  {
+    "CargoNome": "COORD DE QUALIF SOCIAL PROFISSIONAL",
+    "cd_CargoServidor": 740,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 2648.60
+  },
+  {
+    "CargoNome": "COORD DE RECRUTAMENTO SELECAO E ADMISSAO",
+    "cd_CargoServidor": 557,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2339.29,
+    "OutrosVencimentos": 18423.58,
+    "RemuneracaoBruta": 24612.87,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 13392.64
+  },
+  {
+    "CargoNome": "COORD DE REG E INVENT DE BENS IMOVEIS",
+    "cd_CargoServidor": 15,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 2841.67,
+    "RemuneracaoBruta": 5941.67,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 1988.91
+  },
+  {
+    "CargoNome": "COORD DE REG E INVENTARIO DE BENS MOVEIS",
+    "cd_CargoServidor": 430,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORD DE SEG ALIMENTAR E NUTRICIONAL",
+    "cd_CargoServidor": 297,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2017.23
+  },
+  {
+    "CargoNome": "COORD DE SERVICOS E GOVERNO DIGITAL",
+    "cd_CargoServidor": 2072,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 5258.33,
+    "RemuneracaoBruta": 8358.33,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6799.07
+  },
+  {
+    "CargoNome": "COORD DE SUP DE AVALIACAO EDUCACIONAL",
+    "cd_CargoServidor": 1909,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 2325.00,
+    "RemuneracaoBruta": 5425.00,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 2058.92
+  },
+  {
+    "CargoNome": "COORD DE SUPORTE AO LICENC AMBIENTAL",
+    "cd_CargoServidor": 1226,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 1498.33,
+    "RemuneracaoBruta": 4598.33,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3996.02
+  },
+  {
+    "CargoNome": "COORD DE TRABALHO SOCIAL E COMUNITARIO",
+    "cd_CargoServidor": 1425,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 1427.65
+  },
+  {
+    "CargoNome": "COORD DE TRIBUTOS DE MOVIMENT ECONOMICA",
+    "cd_CargoServidor": 337,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 16914.47,
+    "RemuneracaoBruta": 23863.77,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 7758.30
+  },
+  {
+    "CargoNome": "COORD DE VIG  AMBIEN E PROTECAO ANIMAL",
+    "cd_CargoServidor": 1910,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2240.49
+  },
+  {
+    "CargoNome": "COORD DE VIGILAN EM SAUDE DO TRABALHADOR",
+    "cd_CargoServidor": 764,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORD DE VIGILANCIA SOCIOASSISTENCIAL",
+    "cd_CargoServidor": 971,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3520.29,
+    "OutrosVencimentos": 7550.29,
+    "RemuneracaoBruta": 11070.58,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4184.09
+  },
+  {
+    "CargoNome": "COORD DO CERCO INT E VIDEOMONITORAMENTO",
+    "cd_CargoServidor": 2073,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3633.84,
+    "OutrosVencimentos": 11746.49,
+    "RemuneracaoBruta": 19395.72,
+    "Descontos": 54.51,
+    "RemuneracaoLiquida": 11063.71
+  },
+  {
+    "CargoNome": "COORD DO OBSERVATORIO DE INDICADORES",
+    "cd_CargoServidor": 1823,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2205.00,
+    "OutrosVencimentos": 6235.00,
+    "RemuneracaoBruta": 8440.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3738.64
+  },
+  {
+    "CargoNome": "COORD DO OBSERVATORIO MUN DE SEGURANCA",
+    "cd_CargoServidor": 2074,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3528.00,
+    "OutrosVencimentos": 7608.90,
+    "RemuneracaoBruta": 14629.62,
+    "Descontos": 52.92,
+    "RemuneracaoLiquida": 6253.44
+  },
+  {
+    "CargoNome": "COORD DO PROG DA FAM AC E APADRINHAMENTO",
+    "cd_CargoServidor": 2103,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORD DOS SERV DE AC INST P CRIAN E ADOL",
+    "cd_CargoServidor": 1052,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3520.29,
+    "OutrosVencimentos": 7550.29,
+    "RemuneracaoBruta": 11070.58,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3652.26
+  },
+  {
+    "CargoNome": "COORD DOS SERV DE AC INST PARA AD E ID",
+    "cd_CargoServidor": 988,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 1550.00,
+    "RemuneracaoBruta": 4650.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORD ESP DE ORC E FINANCAS EDUCACIONAIS",
+    "cd_CargoServidor": 1913,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 5500.00,
+    "OutrosVencimentos": 5500.00,
+    "RemuneracaoBruta": 11000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4528.17
+  },
+  {
+    "CargoNome": "COORD ESP DE PROT DE DEF DO CONSUMIDOR",
+    "cd_CargoServidor": 675,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 5500.00,
+    "OutrosVencimentos": 10500.00,
+    "RemuneracaoBruta": 18562.50,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 7928.76
+  },
+  {
+    "CargoNome": "COORDENADOR (ACESSUAS) ",
+    "cd_CargoServidor": 1399,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 1852.47
+  },
+  {
+    "CargoNome": "COORDENADOR ADMINISTRATIVO",
+    "cd_CargoServidor": 673,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 6200.00,
+    "OutrosVencimentos": 7133.33,
+    "RemuneracaoBruta": 14866.66,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 7351.68
+  },
+  {
+    "CargoNome": "COORDENADOR ADMINISTRATIVO FARMACEUTICO",
+    "cd_CargoServidor": 1884,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 1984.46
+  },
+  {
+    "CargoNome": "COORDENADOR DE ACAO CULTURAL",
+    "cd_CargoServidor": 50,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 2841.67,
+    "RemuneracaoBruta": 5941.67,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 1996.47
+  },
+  {
+    "CargoNome": "COORDENADOR DE ACOES ESTRATEGICAS",
+    "cd_CargoServidor": 1876,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2015.00,
+    "OutrosVencimentos": 2015.00,
+    "RemuneracaoBruta": 4030.00,
+    "Descontos": 4.03,
+    "RemuneracaoLiquida": 2010.97
+  },
+  {
+    "CargoNome": "COORDENADOR DE ACOES PREVENTIVAS",
+    "cd_CargoServidor": 2075,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 4875.00,
+    "RemuneracaoBruta": 11375.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 8025.38
+  },
+  {
+    "CargoNome": "COORDENADOR DE ACOMPANHAMENTO DE OBRAS",
+    "cd_CargoServidor": 1789,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORDENADOR DE AGRAVOS E ENDEMIAS",
+    "cd_CargoServidor": 808,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3036.00,
+    "OutrosVencimentos": 7066.00,
+    "RemuneracaoBruta": 10102.00,
+    "Descontos": 91.08,
+    "RemuneracaoLiquida": 4210.51
+  },
+  {
+    "CargoNome": "COORDENADOR DE ALIMENTACAO ESCOLAR",
+    "cd_CargoServidor": 979,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3625.90,
+    "OutrosVencimentos": 7655.90,
+    "RemuneracaoBruta": 11281.80,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4103.65
+  },
+  {
+    "CargoNome": "COORDENADOR DE ALMOXARIFADO",
+    "cd_CargoServidor": 647,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 2648.60
+  },
+  {
+    "CargoNome": "COORDENADOR DE ALMOXARIFADO DA EDUCACAO",
+    "cd_CargoServidor": 1990,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 516.67,
+    "RemuneracaoBruta": 1240.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 1147.01
+  },
+  {
+    "CargoNome": "COORDENADOR DE ALMOXARIFADO E PATRIMONIO",
+    "cd_CargoServidor": 1864,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3476.68,
+    "RemuneracaoBruta": 6576.68,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 4316.95
+  },
+  {
+    "CargoNome": "COORDENADOR DE ANALISE E PROJETOS",
+    "cd_CargoServidor": 1228,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 6100.00,
+    "RemuneracaoBruta": 10691.66,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3854.66
+  },
+  {
+    "CargoNome": "COORDENADOR DE ARQUIVO PUBLICO MUNICIPAL",
+    "cd_CargoServidor": 452,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3179.61,
+    "OutrosVencimentos": 7209.61,
+    "RemuneracaoBruta": 10389.22,
+    "Descontos": 186.20,
+    "RemuneracaoLiquida": 4342.99
+  },
+  {
+    "CargoNome": "COORDENADOR DE ASSISTENCIA COMPLEMENTAR",
+    "cd_CargoServidor": 1877,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3625.90,
+    "OutrosVencimentos": 14796.80,
+    "RemuneracaoBruta": 21053.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 11919.97
+  },
+  {
+    "CargoNome": "COORDENADOR DE ASSISTENCIA SOCIAL",
+    "cd_CargoServidor": 55,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 7233.33,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 2628.84
+  },
+  {
+    "CargoNome": "COORDENADOR DE ATENCAO BASICA",
+    "cd_CargoServidor": 1012,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORDENADOR DE ATENCAO ESPECIALIZADA",
+    "cd_CargoServidor": 1511,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 2066.67,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 4544.97
+  },
+  {
+    "CargoNome": "COORDENADOR DE ATENDIMENTO E CONCILIACAO",
+    "cd_CargoServidor": 376,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 2066.67,
+    "RemuneracaoBruta": 5166.67,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 2090.51
+  },
+  {
+    "CargoNome": "COORDENADOR DE ATRACAO DE INVESTIMENTOS",
+    "cd_CargoServidor": 1914,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2741.60
+  },
+  {
+    "CargoNome": "COORDENADOR DE BEM ESTAR ANIMAL",
+    "cd_CargoServidor": 1426,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 1550.00,
+    "RemuneracaoBruta": 4650.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORDENADOR DE CICLOS DE VIDA",
+    "cd_CargoServidor": 1878,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3417.75,
+    "OutrosVencimentos": 7447.75,
+    "RemuneracaoBruta": 10865.50,
+    "Descontos": 60.72,
+    "RemuneracaoLiquida": 4475.24
+  },
+  {
+    "CargoNome": "COORDENADOR DE CIDADES INTELIGENTES",
+    "cd_CargoServidor": 1969,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1988.40,
+    "OutrosVencimentos": 12225.29,
+    "RemuneracaoBruta": 16554.09,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 7060.23
+  },
+  {
+    "CargoNome": "COORDENADOR DE COMPETICOES ESPORTIVAS",
+    "cd_CargoServidor": 1174,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 2583.33,
+    "RemuneracaoBruta": 5683.33,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5208.21
+  },
+  {
+    "CargoNome": "COORDENADOR DE CONTRATOS E CONVENIOS",
+    "cd_CargoServidor": 606,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1874.25,
+    "OutrosVencimentos": 5904.25,
+    "RemuneracaoBruta": 7778.50,
+    "Descontos": 56.23,
+    "RemuneracaoLiquida": 3053.33
+  },
+  {
+    "CargoNome": "COORDENADOR DE CONTROLE DA ARRECADACAO",
+    "cd_CargoServidor": 480,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 9863.93,
+    "RemuneracaoBruta": 12963.93,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3628.50
+  },
+  {
+    "CargoNome": "COORDENADOR DE CONTROLE DE AUTUACOES",
+    "cd_CargoServidor": 765,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 14884.92,
+    "RemuneracaoBruta": 19709.92,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 8889.12
+  },
+  {
+    "CargoNome": "COORDENADOR DE CONTROLE DE CONTRATACAO",
+    "cd_CargoServidor": 1855,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 4700.00,
+    "RemuneracaoBruta": 10922.22,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5030.61
+  },
+  {
+    "CargoNome": "COORDENADOR DE CONTROLE E AVALIACAO",
+    "cd_CargoServidor": 3,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1874.25,
+    "OutrosVencimentos": 5904.25,
+    "RemuneracaoBruta": 7778.50,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2300.67
+  },
+  {
+    "CargoNome": "COORDENADOR DE CONTROLE TECNICO DE OBRAS",
+    "cd_CargoServidor": 910,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 1984.48
+  },
+  {
+    "CargoNome": "COORDENADOR DE CONTROLES FISCAIS",
+    "cd_CargoServidor": 514,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 10082.26,
+    "RemuneracaoBruta": 13182.26,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3522.47
+  },
+  {
+    "CargoNome": "COORDENADOR DE CONVENIOS DA EDUCACAO",
+    "cd_CargoServidor": 1915,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 775.00,
+    "RemuneracaoBruta": 3875.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3551.48
+  },
+  {
+    "CargoNome": "COORDENADOR DE DADOS E SISTEMAS",
+    "cd_CargoServidor": 383,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 6487.44,
+    "RemuneracaoBruta": 9587.44,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 4944.71
+  },
+  {
+    "CargoNome": "COORDENADOR DE DESPORTO ESCOLAR",
+    "cd_CargoServidor": 763,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 1550.00,
+    "RemuneracaoBruta": 4650.00,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 2648.60
+  },
+  {
+    "CargoNome": "COORDENADOR DE DIREITOS E VANTAGENS",
+    "cd_CargoServidor": 1273,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1988.40,
+    "OutrosVencimentos": 8268.40,
+    "RemuneracaoBruta": 12506.80,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5608.41
+  },
+  {
+    "CargoNome": "COORDENADOR DE DIREITOS HUMANOS",
+    "cd_CargoServidor": 1653,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 775.00,
+    "RemuneracaoBruta": 3875.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3551.48
+  },
+  {
+    "CargoNome": "COORDENADOR DE DISQUE SILENCIO",
+    "cd_CargoServidor": 44,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 9041.67,
+    "RemuneracaoBruta": 14391.67,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4969.54
+  },
+  {
+    "CargoNome": "COORDENADOR DE ECONOMIA SOLIDARIA",
+    "cd_CargoServidor": 852,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2125.01
+  },
+  {
+    "CargoNome": "COORDENADOR DE EDUCACAO ALIMENTAR",
+    "cd_CargoServidor": 459,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORDENADOR DE EDUCACAO AMBIENTAL",
+    "cd_CargoServidor": 1040,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 775.00,
+    "RemuneracaoBruta": 3875.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3551.48
+  },
+  {
+    "CargoNome": "COORDENADOR DE EDUCACAO PERMANENTE",
+    "cd_CargoServidor": 1865,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 1808.33,
+    "RemuneracaoBruta": 4908.33,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORDENADOR DE ELABORACAO DE MINUTAS ",
+    "cd_CargoServidor": 1856,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2079.08
+  },
+  {
+    "CargoNome": "COORDENADOR DE ELABORACAO ORCAMENTARIA",
+    "cd_CargoServidor": 515,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 9921.78,
+    "RemuneracaoBruta": 15130.55,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6496.41
+  },
+  {
+    "CargoNome": "COORDENADOR DE ESTATISTICAS EDUCACIONAIS",
+    "cd_CargoServidor": 1916,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 1989.16,
+    "RemuneracaoBruta": 5089.16,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3790.43
+  },
+  {
+    "CargoNome": "COORDENADOR DE ESTRUTURACAO URBANA",
+    "cd_CargoServidor": 416,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 7166.25,
+    "OutrosVencimentos": 15196.25,
+    "RemuneracaoBruta": 23362.50,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 8498.01
+  },
+  {
+    "CargoNome": "COORDENADOR DE ESTUDOS URBANOS",
+    "cd_CargoServidor": 681,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 6100.00,
+    "RemuneracaoBruta": 9200.00,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 3737.53
+  },
+  {
+    "CargoNome": "COORDENADOR DE FISCALIZACAO",
+    "cd_CargoServidor": 70,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 8100.00,
+    "RemuneracaoBruta": 11200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3367.12
+  },
+  {
+    "CargoNome": "COORDENADOR DE FISCALIZACAO AMBIENTAL",
+    "cd_CargoServidor": 1232,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 9116.67,
+    "RemuneracaoBruta": 14556.67,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 10983.65
+  },
+  {
+    "CargoNome": "COORDENADOR DE FISCALIZACAO ANIMAL",
+    "cd_CargoServidor": 1427,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 10350.00,
+    "RemuneracaoBruta": 15700.00,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 5628.40
+  },
+  {
+    "CargoNome": "COORDENADOR DE FISCALIZACAO DE FEIRAS",
+    "cd_CargoServidor": 2076,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 7600.00,
+    "RemuneracaoBruta": 12200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4821.06
+  },
+  {
+    "CargoNome": "COORDENADOR DE FISCALIZACAO DE POSTURAS",
+    "cd_CargoServidor": 2077,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 12000.00,
+    "RemuneracaoBruta": 19000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 7106.31
+  },
+  {
+    "CargoNome": "COORDENADOR DE FOMENTO AO ARTESANATO",
+    "cd_CargoServidor": 1611,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORDENADOR DE FOMENTO AO TURISMO",
+    "cd_CargoServidor": 1373,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 1985.60
+  },
+  {
+    "CargoNome": "COORDENADOR DE FREQUENCIA ESCOLAR",
+    "cd_CargoServidor": 1970,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3075.00,
+    "RemuneracaoBruta": 7175.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3584.84
+  },
+  {
+    "CargoNome": "COORDENADOR DE FROTA",
+    "cd_CargoServidor": 2078,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 7056.00,
+    "OutrosVencimentos": 15217.80,
+    "RemuneracaoBruta": 29259.24,
+    "Descontos": 105.84,
+    "RemuneracaoLiquida": 14159.54
+  },
+  {
+    "CargoNome": "COORDENADOR DE FROTA DE VEICULOS LEVES",
+    "cd_CargoServidor": 230,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2046.30
+  },
+  {
+    "CargoNome": "COORDENADOR DE GEORREFERENCIAMENTO",
+    "cd_CargoServidor": 771,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 3376.33,
+    "RemuneracaoBruta": 4640.09,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4364.78
+  },
+  {
+    "CargoNome": "COORDENADOR DE GESTAO FARMACEUTICA",
+    "cd_CargoServidor": 455,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 2648.60
+  },
+  {
+    "CargoNome": "COORDENADOR DE ILUMINACAO PUBLICA",
+    "cd_CargoServidor": 398,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3800.00,
+    "RemuneracaoBruta": 7600.00,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 3179.84
+  },
+  {
+    "CargoNome": "COORDENADOR DE INFORMACOES TECNICAS",
+    "cd_CargoServidor": 496,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 6100.00,
+    "RemuneracaoBruta": 9200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3923.53
+  },
+  {
+    "CargoNome": "COORDENADOR DE INFRA-ESTRUTURA",
+    "cd_CargoServidor": 1075,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2205.00,
+    "OutrosVencimentos": 10541.03,
+    "RemuneracaoBruta": 14733.98,
+    "Descontos": 66.15,
+    "RemuneracaoLiquida": 8084.72
+  },
+  {
+    "CargoNome": "COORDENADOR DE INOVACAO ABERTA",
+    "cd_CargoServidor": 2079,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 5840.59,
+    "RemuneracaoBruta": 9498.59,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5113.52
+  },
+  {
+    "CargoNome": "COORDENADOR DE INSPECAO",
+    "cd_CargoServidor": 572,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORDENADOR DE LIMPEZA PUBLICA",
+    "cd_CargoServidor": 846,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2319.93
+  },
+  {
+    "CargoNome": "COORDENADOR DE LOGISTICA DA EDUCACAO",
+    "cd_CargoServidor": 1917,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 4956.93,
+    "RemuneracaoBruta": 8056.93,
+    "Descontos": 1294.29,
+    "RemuneracaoLiquida": 3146.88
+  },
+  {
+    "CargoNome": "COORDENADOR DE MANUTENCAO DE REGIONAL 1",
+    "cd_CargoServidor": 1255,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORDENADOR DE MANUTENCAO DE REGIONAL 3",
+    "cd_CargoServidor": 2061,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 2066.67,
+    "RemuneracaoBruta": 5166.67,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4738.04
+  },
+  {
+    "CargoNome": "COORDENADOR DE MANUTENCAO PREDIAL",
+    "cd_CargoServidor": 1233,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3474.59,
+    "RemuneracaoBruta": 6574.59,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5008.35
+  },
+  {
+    "CargoNome": "COORDENADOR DE MOVIMENTACAO FINANCEIRA",
+    "cd_CargoServidor": 432,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 9944.13,
+    "RemuneracaoBruta": 13044.13,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3593.01
+  },
+  {
+    "CargoNome": "COORDENADOR DE OBRAS",
+    "cd_CargoServidor": 393,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 7816.67,
+    "RemuneracaoBruta": 11950.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3041.19
+  },
+  {
+    "CargoNome": "COORDENADOR DE PATRIMONIO CULTURAL",
+    "cd_CargoServidor": 996,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 1033.33,
+    "RemuneracaoBruta": 4329.33,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3986.44
+  },
+  {
+    "CargoNome": "COORDENADOR DE PATRIMONIO DA EDUCACAO",
+    "cd_CargoServidor": 1918,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 1808.33,
+    "RemuneracaoBruta": 4908.33,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4502.96
+  },
+  {
+    "CargoNome": "COORDENADOR DE PERICIA CONTABIL",
+    "cd_CargoServidor": 1833,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 8029.48,
+    "RemuneracaoBruta": 11129.48,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5157.27
+  },
+  {
+    "CargoNome": "COORDENADOR DE PESCA E AQUICULTURA",
+    "cd_CargoServidor": 784,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 2648.60
+  },
+  {
+    "CargoNome": "COORDENADOR DE PESSOAL TERCEIRIZADO",
+    "cd_CargoServidor": 895,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2004.56
+  },
+  {
+    "CargoNome": "COORDENADOR DE PLANEJAMENTO",
+    "cd_CargoServidor": 56,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 5934.60,
+    "RemuneracaoBruta": 9034.60,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 5463.20
+  },
+  {
+    "CargoNome": "COORDENADOR DE PRESTACAO DE CONTAS",
+    "cd_CargoServidor": 1141,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 7166.25,
+    "OutrosVencimentos": 17178.32,
+    "RemuneracaoBruta": 24344.57,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 8790.49
+  },
+  {
+    "CargoNome": "COORDENADOR DE PROGRAMACAO FINANCEIRA",
+    "cd_CargoServidor": 87,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2205.00,
+    "OutrosVencimentos": 13021.78,
+    "RemuneracaoBruta": 15226.78,
+    "Descontos": 66.15,
+    "RemuneracaoLiquida": 5919.65
+  },
+  {
+    "CargoNome": "COORDENADOR DE PROGRAMACAO ORCAMENTARIA",
+    "cd_CargoServidor": 610,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1930.48,
+    "OutrosVencimentos": 14304.61,
+    "RemuneracaoBruta": 17735.09,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5386.77
+  },
+  {
+    "CargoNome": "COORDENADOR DE PROJETOS E INOVACAO",
+    "cd_CargoServidor": 1498,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 9932.96,
+    "RemuneracaoBruta": 13032.96,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5130.71
+  },
+  {
+    "CargoNome": "COORDENADOR DE PRONTO ATENDIMENTO",
+    "cd_CargoServidor": 1866,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 294.71,
+    "RemuneracaoLiquida": 2002.06
+  },
+  {
+    "CargoNome": "COORDENADOR DE PROTOCOLO GERAL",
+    "cd_CargoServidor": 1234,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 2590.46
+  },
+  {
+    "CargoNome": "COORDENADOR DE RECURSOS NATURAIS",
+    "cd_CargoServidor": 721,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4088.07,
+    "OutrosVencimentos": 16208.07,
+    "RemuneracaoBruta": 26769.37,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 9207.98
+  },
+  {
+    "CargoNome": "COORDENADOR DE REGISTROS CONTABEIS",
+    "cd_CargoServidor": 747,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 7381.24,
+    "OutrosVencimentos": 18622.00,
+    "RemuneracaoBruta": 26003.24,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 9425.17
+  },
+  {
+    "CargoNome": "COORDENADOR DE REGULACAO",
+    "cd_CargoServidor": 484,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1988.40,
+    "OutrosVencimentos": 6018.40,
+    "RemuneracaoBruta": 8006.80,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2552.76
+  },
+  {
+    "CargoNome": "COORDENADOR DE REGULARIZACAO FUNDIARIA",
+    "cd_CargoServidor": 456,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORDENADOR DE SANEAMENTO AMBIENTAL",
+    "cd_CargoServidor": 475,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 8100.00,
+    "RemuneracaoBruta": 13066.66,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5702.25
+  },
+  {
+    "CargoNome": "COORDENADOR DE SAUDE BUCAL",
+    "cd_CargoServidor": 1083,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4327.68,
+    "OutrosVencimentos": 10767.68,
+    "RemuneracaoBruta": 16595.36,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6155.77
+  },
+  {
+    "CargoNome": "COORDENADOR DE SAUDE MENTAL",
+    "cd_CargoServidor": 1887,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 2325.00,
+    "RemuneracaoBruta": 5425.00,
+    "Descontos": 18.60,
+    "RemuneracaoLiquida": 2269.50
+  },
+  {
+    "CargoNome": "COORDENADOR DE SEGURANCA CIBERNETICA",
+    "cd_CargoServidor": 1499,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1988.40,
+    "OutrosVencimentos": 14424.35,
+    "RemuneracaoBruta": 16412.75,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5251.20
+  },
+  {
+    "CargoNome": "COORDENADOR DE SEGURANCA DA INFORMACAO",
+    "cd_CargoServidor": 620,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 7149.04,
+    "RemuneracaoBruta": 12143.16,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5174.82
+  },
+  {
+    "CargoNome": "COORDENADOR DE SERVICOS PUBLICOS",
+    "cd_CargoServidor": 1512,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 5934.60,
+    "RemuneracaoBruta": 10067.93,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6054.68
+  },
+  {
+    "CargoNome": "COORDENADOR DE SISTEMAS EDUCACIONAIS",
+    "cd_CargoServidor": 1919,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 2325.00,
+    "RemuneracaoBruta": 5425.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORDENADOR DE TRANSPORTE ESCOLAR",
+    "cd_CargoServidor": 1920,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3625.90,
+    "OutrosVencimentos": 7152.15,
+    "RemuneracaoBruta": 10778.05,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6317.48
+  },
+  {
+    "CargoNome": "COORDENADOR DE TRANSPORTES",
+    "cd_CargoServidor": 564,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 5934.60,
+    "RemuneracaoBruta": 9034.60,
+    "Descontos": 17.51,
+    "RemuneracaoLiquida": 5653.79
+  },
+  {
+    "CargoNome": "COORDENADOR DE TRIBUTOS IMOBILIARIOS",
+    "cd_CargoServidor": 611,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2339.29,
+    "OutrosVencimentos": 13309.96,
+    "RemuneracaoBruta": 15649.25,
+    "Descontos": 70.18,
+    "RemuneracaoLiquida": 5909.05
+  },
+  {
+    "CargoNome": "COORDENADOR DE UNIDADES INSTITUCIONAIS",
+    "cd_CargoServidor": 345,
+    "NumeroServidores": 12,
+    "VencimentoPadrao": 37620.29,
+    "OutrosVencimentos": 32866.95,
+    "RemuneracaoBruta": 71520.57,
+    "Descontos": 804.72,
+    "RemuneracaoLiquida": 34746.90
+  },
+  {
+    "CargoNome": "COORDENADOR DE USO E OCUPACAO DO SOLO",
+    "cd_CargoServidor": 1,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 6100.00,
+    "RemuneracaoBruta": 9200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3923.53
+  },
+  {
+    "CargoNome": "COORDENADOR DE VIGILANCIA EPIDEMIOLOGICA",
+    "cd_CargoServidor": 382,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2015.00,
+    "OutrosVencimentos": 2015.00,
+    "RemuneracaoBruta": 4030.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 1856.42
+  },
+  {
+    "CargoNome": "COORDENADOR DE VIGILANCIA SANITARIA",
+    "cd_CargoServidor": 13,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2015.00,
+    "OutrosVencimentos": 8948.20,
+    "RemuneracaoBruta": 12896.40,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5583.67
+  },
+  {
+    "CargoNome": "COORDENADOR DO DIARIO OFICIAL",
+    "cd_CargoServidor": 1921,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORDENADOR DO ESF/EACS",
+    "cd_CargoServidor": 752,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2283.62
+  },
+  {
+    "CargoNome": "COORDENADOR DO SINE",
+    "cd_CargoServidor": 556,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2834.60
+  },
+  {
+    "CargoNome": "COORDENADOR ENSINO",
+    "cd_CargoServidor": 735,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1600.83,
+    "OutrosVencimentos": 1600.83,
+    "RemuneracaoBruta": 3735.27,
+    "Descontos": 16.01,
+    "RemuneracaoLiquida": 2628.22
+  },
+  {
+    "CargoNome": "COORDENADOR ESP DE COMPRAS E CONTRATOS",
+    "cd_CargoServidor": 1922,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 11000.00,
+    "OutrosVencimentos": 6416.67,
+    "RemuneracaoBruta": 17416.67,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 10239.14
+  },
+  {
+    "CargoNome": "COORDENADOR MOBILIZA CARIACICA ",
+    "cd_CargoServidor": 1923,
+    "NumeroServidores": 7,
+    "VencimentoPadrao": 21493.33,
+    "OutrosVencimentos": 18058.33,
+    "RemuneracaoBruta": 40508.33,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 18000.03
+  },
+  {
+    "CargoNome": "COORDENADOR TECNICO DE COMPRAS",
+    "cd_CargoServidor": 1991,
+    "NumeroServidores": 3,
+    "VencimentoPadrao": 9300.00,
+    "OutrosVencimentos": 5520.11,
+    "RemuneracaoBruta": 14968.64,
+    "Descontos": 1908.88,
+    "RemuneracaoLiquida": 6812.43
+  },
+  {
+    "CargoNome": "COVEIRO",
+    "cd_CargoServidor": 849,
+    "NumeroServidores": 10,
+    "VencimentoPadrao": 19304.80,
+    "OutrosVencimentos": 22340.80,
+    "RemuneracaoBruta": 47215.67,
+    "Descontos": 2639.03,
+    "RemuneracaoLiquida": 17963.17
+  },
+  {
+    "CargoNome": "CUIDADOR ESCOLAR I",
+    "cd_CargoServidor": 1208,
+    "NumeroServidores": 45,
+    "VencimentoPadrao": 80592.75,
+    "OutrosVencimentos": 91838.25,
+    "RemuneracaoBruta": 230470.28,
+    "Descontos": 2476.99,
+    "RemuneracaoLiquida": 92501.59
+  },
+  {
+    "CargoNome": "EDUCADOR FISICO",
+    "cd_CargoServidor": 2105,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 6174.00,
+    "OutrosVencimentos": 3189.90,
+    "RemuneracaoBruta": 9363.90,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 7712.97
+  },
+  {
+    "CargoNome": "EDUCADOR SOCIAL",
+    "cd_CargoServidor": 78,
+    "NumeroServidores": 19,
+    "VencimentoPadrao": 32926.58,
+    "OutrosVencimentos": 28343.15,
+    "RemuneracaoBruta": 69640.65,
+    "Descontos": 6533.60,
+    "RemuneracaoLiquida": 31390.60
+  },
+  {
+    "CargoNome": "ENCARREGADO DE DADOS",
+    "cd_CargoServidor": 1781,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 11000.00,
+    "OutrosVencimentos": 11000.00,
+    "RemuneracaoBruta": 22000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5772.63
+  },
+  {
+    "CargoNome": "ENFERMEIRO",
+    "cd_CargoServidor": 949,
+    "NumeroServidores": 135,
+    "VencimentoPadrao": 451810.44,
+    "OutrosVencimentos": 722828.72,
+    "RemuneracaoBruta": 1600964.24,
+    "Descontos": 14795.68,
+    "RemuneracaoLiquida": 848917.71
+  },
+  {
+    "CargoNome": "ENFERMEIRO - BOLSISTA",
+    "cd_CargoServidor": 1345,
+    "NumeroServidores": 7,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 0.00,
+    "RemuneracaoBruta": 30625.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 30625.00
+  },
+  {
+    "CargoNome": "ENGENHEIRO AGRONOMO",
+    "cd_CargoServidor": 563,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 14983.93,
+    "OutrosVencimentos": 20983.93,
+    "RemuneracaoBruta": 39002.09,
+    "Descontos": 121.44,
+    "RemuneracaoLiquida": 13628.40
+  },
+  {
+    "CargoNome": "ENGENHEIRO AMBIENTAL",
+    "cd_CargoServidor": 1150,
+    "NumeroServidores": 3,
+    "VencimentoPadrao": 22143.72,
+    "OutrosVencimentos": 43624.96,
+    "RemuneracaoBruta": 68729.09,
+    "Descontos": 121.44,
+    "RemuneracaoLiquida": 25881.20
+  },
+  {
+    "CargoNome": "ENGENHEIRO CIVIL",
+    "cd_CargoServidor": 239,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 14762.48,
+    "OutrosVencimentos": 18762.48,
+    "RemuneracaoBruta": 34524.96,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 11950.56
+  },
+  {
+    "CargoNome": "ENGENHEIRO CIVIL I",
+    "cd_CargoServidor": 1163,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 5374.69,
+    "OutrosVencimentos": 6274.69,
+    "RemuneracaoBruta": 12549.38,
+    "Descontos": 60.72,
+    "RemuneracaoLiquida": 4851.63
+  },
+  {
+    "CargoNome": "ESTAGIARIO",
+    "cd_CargoServidor": 555,
+    "NumeroServidores": 43,
+    "VencimentoPadrao": 39173.00,
+    "OutrosVencimentos": 0.00,
+    "RemuneracaoBruta": 39627.88,
+    "Descontos": 92.47,
+    "RemuneracaoLiquida": 39444.31
+  },
+  {
+    "CargoNome": "ESTAGIARIO - NIVEL SUPERIOR",
+    "cd_CargoServidor": 1992,
+    "NumeroServidores": 309,
+    "VencimentoPadrao": 386127.00,
+    "OutrosVencimentos": 0.00,
+    "RemuneracaoBruta": 399436.60,
+    "Descontos": 2663.85,
+    "RemuneracaoLiquida": 392196.25
+  },
+  {
+    "CargoNome": "FARMACEUTICO",
+    "cd_CargoServidor": 1829,
+    "NumeroServidores": 19,
+    "VencimentoPadrao": 62064.91,
+    "OutrosVencimentos": 67444.38,
+    "RemuneracaoBruta": 142229.90,
+    "Descontos": 1232.96,
+    "RemuneracaoLiquida": 94750.88
+  },
+  {
+    "CargoNome": "FISCAL DE OBRAS",
+    "cd_CargoServidor": 551,
+    "NumeroServidores": 11,
+    "VencimentoPadrao": 17609.13,
+    "OutrosVencimentos": 83480.80,
+    "RemuneracaoBruta": 114245.47,
+    "Descontos": 581.80,
+    "RemuneracaoLiquida": 61282.99
+  },
+  {
+    "CargoNome": "FISCAL MUN DE SRV I - AMBIENTAL",
+    "cd_CargoServidor": 639,
+    "NumeroServidores": 9,
+    "VencimentoPadrao": 33034.84,
+    "OutrosVencimentos": 109094.64,
+    "RemuneracaoBruta": 173450.43,
+    "Descontos": 3031.93,
+    "RemuneracaoLiquida": 71639.61
+  },
+  {
+    "CargoNome": "FISCAL MUN DE SRV I - OBRAS E POSTURA",
+    "cd_CargoServidor": 788,
+    "NumeroServidores": 7,
+    "VencimentoPadrao": 24032.01,
+    "OutrosVencimentos": 73702.95,
+    "RemuneracaoBruta": 112300.90,
+    "Descontos": 3245.09,
+    "RemuneracaoLiquida": 35278.94
+  },
+  {
+    "CargoNome": "FISCAL MUN DE SRV I - SANITARIA",
+    "cd_CargoServidor": 892,
+    "NumeroServidores": 18,
+    "VencimentoPadrao": 65398.67,
+    "OutrosVencimentos": 207083.61,
+    "RemuneracaoBruta": 326030.16,
+    "Descontos": 5678.70,
+    "RemuneracaoLiquida": 107871.64
+  },
+  {
+    "CargoNome": "FISIOTERAPEUTA",
+    "cd_CargoServidor": 953,
+    "NumeroServidores": 8,
+    "VencimentoPadrao": 26475.66,
+    "OutrosVencimentos": 23737.42,
+    "RemuneracaoBruta": 55836.05,
+    "Descontos": 1961.56,
+    "RemuneracaoLiquida": 24236.64
+  },
+  {
+    "CargoNome": "FISIOTERAPEUTA - BOLSISTA",
+    "cd_CargoServidor": 1500,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 0.00,
+    "RemuneracaoBruta": 4375.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4375.00
+  },
+  {
+    "CargoNome": "FONOAUDIOLOGO",
+    "cd_CargoServidor": 1055,
+    "NumeroServidores": 8,
+    "VencimentoPadrao": 28274.07,
+    "OutrosVencimentos": 35195.87,
+    "RemuneracaoBruta": 70777.03,
+    "Descontos": 108.85,
+    "RemuneracaoLiquida": 34030.66
+  },
+  {
+    "CargoNome": "GARI",
+    "cd_CargoServidor": 52,
+    "NumeroServidores": 20,
+    "VencimentoPadrao": 32016.60,
+    "OutrosVencimentos": 38248.73,
+    "RemuneracaoBruta": 77093.92,
+    "Descontos": 1290.79,
+    "RemuneracaoLiquida": 38522.08
+  },
+  {
+    "CargoNome": "GER DE ACOMP DE CONTR DE SERV URBANOS",
+    "cd_CargoServidor": 370,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4500.00,
+    "RemuneracaoBruta": 9000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3860.03
+  },
+  {
+    "CargoNome": "GER DE APOIO TEC DA PROCURADORIA-GERAL",
+    "cd_CargoServidor": 1834,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1988.40,
+    "OutrosVencimentos": 14925.14,
+    "RemuneracaoBruta": 18413.54,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 7432.55
+  },
+  {
+    "CargoNome": "GER DE APROV DE PROJ E REG DE EDIFICACOE",
+    "cd_CargoServidor": 1236,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 7602.69,
+    "OutrosVencimentos": 19642.69,
+    "RemuneracaoBruta": 27995.38,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 10183.48
+  },
+  {
+    "CargoNome": "GER DE CONT DE OB E DE SER DE ENGENHARIA",
+    "cd_CargoServidor": 2094,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 3750.00,
+    "RemuneracaoBruta": 8250.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3860.03
+  },
+  {
+    "CargoNome": "GER DE CONTR DE TECNOLOGIA DA INFORMACAO",
+    "cd_CargoServidor": 1956,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2339.29,
+    "OutrosVencimentos": 13666.25,
+    "RemuneracaoBruta": 18116.21,
+    "Descontos": 70.18,
+    "RemuneracaoLiquida": 6670.33
+  },
+  {
+    "CargoNome": "GER DE CONV E PREST DE CON DA EDUCACAO",
+    "cd_CargoServidor": 1924,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4500.00,
+    "RemuneracaoBruta": 9000.00,
+    "Descontos": 45.00,
+    "RemuneracaoLiquida": 2958.58
+  },
+  {
+    "CargoNome": "GER DE ESTATIST E INFORMACAO EDUCACIONAL",
+    "cd_CargoServidor": 1925,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1930.48,
+    "OutrosVencimentos": 9280.48,
+    "RemuneracaoBruta": 12710.96,
+    "Descontos": 57.91,
+    "RemuneracaoLiquida": 5355.25
+  },
+  {
+    "CargoNome": "GER DE FOMENTO AO TURISMO",
+    "cd_CargoServidor": 1374,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 2625.00,
+    "RemuneracaoBruta": 7125.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2763.33
+  },
+  {
+    "CargoNome": "GER DE LICENC E FISCALIZACAO AMBIENTAL",
+    "cd_CargoServidor": 651,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 8333.33,
+    "RemuneracaoBruta": 12833.33,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 10095.14
+  },
+  {
+    "CargoNome": "GER DE NORMAS, PROC E REGULA DA EDUCACAO",
+    "cd_CargoServidor": 1971,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 1875.00,
+    "RemuneracaoBruta": 6375.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2648.38
+  },
+  {
+    "CargoNome": "GER DE PAGAMENTO DE PESSOAL",
+    "cd_CargoServidor": 1257,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1930.48,
+    "OutrosVencimentos": 11780.48,
+    "RemuneracaoBruta": 17710.96,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 7225.66
+  },
+  {
+    "CargoNome": "GER DE PROGRAMAS E PROJETOS EDUCACIONAIS",
+    "cd_CargoServidor": 1972,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 2625.00,
+    "RemuneracaoBruta": 7125.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3860.03
+  },
+  {
+    "CargoNome": "GER DE QUAL PROF E GER DE EMP E RENDA",
+    "cd_CargoServidor": 963,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4500.00,
+    "RemuneracaoBruta": 9000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2569.34
+  },
+  {
+    "CargoNome": "GER DO CEN INT DE APOIO A MIC E PEQ EMPR",
+    "cd_CargoServidor": 1375,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 1125.00,
+    "RemuneracaoBruta": 5625.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3749.47
+  },
+  {
+    "CargoNome": "GER DOS DIREITOS DA MULHER",
+    "cd_CargoServidor": 1337,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4500.00,
+    "RemuneracaoBruta": 9000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2702.17
+  },
+  {
+    "CargoNome": "GERENTE  ADMINISTRATIVO",
+    "cd_CargoServidor": 1973,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 750.00,
+    "RemuneracaoBruta": 5250.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4553.78
+  },
+  {
+    "CargoNome": "GERENTE (ACESSUAS) ",
+    "cd_CargoServidor": 1402,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 3957.50,
+    "RemuneracaoBruta": 9207.50,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4848.88
+  },
+  {
+    "CargoNome": "GERENTE ADMINISTRATIVO",
+    "cd_CargoServidor": 318,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 5962.50,
+    "RemuneracaoBruta": 16912.50,
+    "Descontos": 186.20,
+    "RemuneracaoLiquida": 8747.13
+  },
+  {
+    "CargoNome": "GERENTE ADMINISTRATIVO DA REDE DE ENSINO",
+    "cd_CargoServidor": 1145,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 3750.00,
+    "RemuneracaoBruta": 8250.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3860.03
+  },
+  {
+    "CargoNome": "GERENTE DA JUVENTUDE",
+    "cd_CargoServidor": 940,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 1500.00,
+    "RemuneracaoBruta": 6078.40,
+    "Descontos": 186.20,
+    "RemuneracaoLiquida": 4187.95
+  },
+  {
+    "CargoNome": "GERENTE DE  ORCAMENTO",
+    "cd_CargoServidor": 1824,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 7381.24,
+    "OutrosVencimentos": 36017.95,
+    "RemuneracaoBruta": 43399.19,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 20164.27
+  },
+  {
+    "CargoNome": "GERENTE DE ACOES ESTRATEGICAS",
+    "cd_CargoServidor": 1879,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 1875.00,
+    "RemuneracaoBruta": 6375.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3860.03
+  },
+  {
+    "CargoNome": "GERENTE DE ADM DE TRIBUTOS IMOBILIARIOS",
+    "cd_CargoServidor": 357,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2271.15,
+    "OutrosVencimentos": 19723.71,
+    "RemuneracaoBruta": 25844.16,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 9256.89
+  },
+  {
+    "CargoNome": "GERENTE DE ADMINISTRACAO FINANCEIRA",
+    "cd_CargoServidor": 359,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 15979.31,
+    "RemuneracaoBruta": 24328.61,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6263.45
+  },
+  {
+    "CargoNome": "GERENTE DE ALMOXARIFADO",
+    "cd_CargoServidor": 1613,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4500.00,
+    "RemuneracaoBruta": 9000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2705.57
+  },
+  {
+    "CargoNome": "GERENTE DE ALMOXARIFADO E PATRIMONIO",
+    "cd_CargoServidor": 1885,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 2625.00,
+    "RemuneracaoBruta": 10111.20,
+    "Descontos": 3244.95,
+    "RemuneracaoLiquida": 3785.72
+  },
+  {
+    "CargoNome": "GERENTE DE APOIO ESCOLAR",
+    "cd_CargoServidor": 1926,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 750.00,
+    "RemuneracaoBruta": 5250.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4553.78
+  },
+  {
+    "CargoNome": "GERENTE DE APOIO LOGISTICO",
+    "cd_CargoServidor": 286,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 8250.00,
+    "RemuneracaoBruta": 18750.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 8589.67
+  },
+  {
+    "CargoNome": "GERENTE DE ARRECADACAO E COBRANCA",
+    "cd_CargoServidor": 615,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 18787.85,
+    "RemuneracaoBruta": 31142.10,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 13010.89
+  },
+  {
+    "CargoNome": "GERENTE DE ASSISTENCIA FARMACEUTICA",
+    "cd_CargoServidor": 513,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3520.29,
+    "OutrosVencimentos": 9370.29,
+    "RemuneracaoBruta": 15039.01,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6957.49
+  },
+  {
+    "CargoNome": "GERENTE DE ATENCAO ESPECIALIZADA A SAUDE",
+    "cd_CargoServidor": 1867,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 9955.42,
+    "RemuneracaoBruta": 15205.42,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 8438.20
+  },
+  {
+    "CargoNome": "GERENTE DE ATENCAO PRIMARIA A SAUDE",
+    "cd_CargoServidor": 1880,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 3900.00,
+    "OutrosVencimentos": 5875.00,
+    "RemuneracaoBruta": 23275.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 15055.72
+  },
+  {
+    "CargoNome": "GERENTE DE ATENDIMENTO AO CONTRIBUINTE",
+    "cd_CargoServidor": 295,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 16030.35,
+    "RemuneracaoBruta": 24379.65,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5851.83
+  },
+  {
+    "CargoNome": "GERENTE DE ATIVIDADE FISICA E RECREACAO",
+    "cd_CargoServidor": 1175,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 8560.42,
+    "RemuneracaoBruta": 13060.42,
+    "Descontos": 186.20,
+    "RemuneracaoLiquida": 7543.74
+  },
+  {
+    "CargoNome": "GERENTE DE ATIVIDADES ARTESANAIS",
+    "cd_CargoServidor": 1502,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 3750.00,
+    "RemuneracaoBruta": 10403.82,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3863.66
+  },
+  {
+    "CargoNome": "GERENTE DE ATOS OFICIAIS",
+    "cd_CargoServidor": 1413,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4500.00,
+    "RemuneracaoBruta": 9000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3860.03
+  },
+  {
+    "CargoNome": "GERENTE DE AUDITORIA",
+    "cd_CargoServidor": 1195,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 7602.69,
+    "OutrosVencimentos": 11746.44,
+    "RemuneracaoBruta": 22858.36,
+    "Descontos": 186.20,
+    "RemuneracaoLiquida": 10197.86
+  },
+  {
+    "CargoNome": "GERENTE DE AVALIACAO EDUCACIONAL",
+    "cd_CargoServidor": 1927,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4517.36,
+    "OutrosVencimentos": 12647.91,
+    "RemuneracaoBruta": 19875.69,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6199.83
+  },
+  {
+    "CargoNome": "GERENTE DE BEM ESTAR ANIMAL",
+    "cd_CargoServidor": 1428,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 8333.33,
+    "RemuneracaoBruta": 12833.33,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2865.05
+  },
+  {
+    "CargoNome": "GERENTE DE CAPTACAO DE RECURSOS",
+    "cd_CargoServidor": 1004,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4125.00,
+    "RemuneracaoBruta": 8625.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3860.03
+  },
+  {
+    "CargoNome": "GERENTE DE CONSERVACAO",
+    "cd_CargoServidor": 775,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4500.00,
+    "RemuneracaoBruta": 9000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3661.95
+  },
+  {
+    "CargoNome": "GERENTE DE CONSERVACAO DE PARQUES",
+    "cd_CargoServidor": 1513,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4500.00,
+    "RemuneracaoBruta": 9000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2935.55
+  },
+  {
+    "CargoNome": "GERENTE DE CONTABILIDADE",
+    "cd_CargoServidor": 887,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 7381.24,
+    "OutrosVencimentos": 20155.15,
+    "RemuneracaoBruta": 27536.39,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 10929.88
+  },
+  {
+    "CargoNome": "GERENTE DE CONTRATOS",
+    "cd_CargoServidor": 1483,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 6100.00,
+    "RemuneracaoBruta": 12200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4541.21
+  },
+  {
+    "CargoNome": "GERENTE DE CONTROLE INTERNO",
+    "cd_CargoServidor": 848,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 7381.24,
+    "OutrosVencimentos": 23537.48,
+    "RemuneracaoBruta": 30918.72,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 14067.90
+  },
+  {
+    "CargoNome": "GERENTE DE CONTROLES URBANOS",
+    "cd_CargoServidor": 2080,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 6000.00,
+    "RemuneracaoBruta": 10500.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5411.28
+  },
+  {
+    "CargoNome": "GERENTE DE CONV E CONTRATOS DE REPASSE",
+    "cd_CargoServidor": 2095,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2271.15,
+    "OutrosVencimentos": 7524.97,
+    "RemuneracaoBruta": 10146.12,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4778.71
+  },
+  {
+    "CargoNome": "GERENTE DE DESENVOLV ECONOMICO",
+    "cd_CargoServidor": 1928,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 4350.00,
+    "OutrosVencimentos": 2971.88,
+    "RemuneracaoBruta": 10321.88,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6769.79
+  },
+  {
+    "CargoNome": "GERENTE DE DESENVOLVIMENTO RURAL",
+    "cd_CargoServidor": 410,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4500.00,
+    "RemuneracaoBruta": 10500.00,
+    "Descontos": 478.78,
+    "RemuneracaoLiquida": 4440.67
+  },
+  {
+    "CargoNome": "GERENTE DE DESPORTO E PARADESPORTO",
+    "cd_CargoServidor": 1176,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4500.00,
+    "RemuneracaoBruta": 9000.00,
+    "Descontos": 579.75,
+    "RemuneracaoLiquida": 3381.17
+  },
+  {
+    "CargoNome": "GERENTE DE DIREITOS HUMANOS",
+    "cd_CargoServidor": 302,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 7156.60,
+    "RemuneracaoBruta": 11656.60,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 7249.04
+  },
+  {
+    "CargoNome": "GERENTE DE ECONOMIA CRIATIVA",
+    "cd_CargoServidor": 1376,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4500.00,
+    "RemuneracaoBruta": 9000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2708.80
+  },
+  {
+    "CargoNome": "GERENTE DE EDUCACAO ESPECIAL",
+    "cd_CargoServidor": 1929,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3480.46,
+    "OutrosVencimentos": 9330.46,
+    "RemuneracaoBruta": 12810.92,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2671.45
+  },
+  {
+    "CargoNome": "GERENTE DE EDUCACAO INFANTIL",
+    "cd_CargoServidor": 1930,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 6000.00,
+    "RemuneracaoBruta": 12000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6077.78
+  },
+  {
+    "CargoNome": "GERENTE DE EMPREENDEDORISMO",
+    "cd_CargoServidor": 1974,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 3750.00,
+    "RemuneracaoBruta": 8250.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2702.19
+  },
+  {
+    "CargoNome": "GERENTE DE ENGENHARIA E OBRAS",
+    "cd_CargoServidor": 1614,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 8560.42,
+    "RemuneracaoBruta": 13060.42,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6443.40
+  },
+  {
+    "CargoNome": "GERENTE DE ENSINO FUNDAMENTAL",
+    "cd_CargoServidor": 1957,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3619.68,
+    "OutrosVencimentos": 11641.49,
+    "RemuneracaoBruta": 17432.98,
+    "Descontos": 36.20,
+    "RemuneracaoLiquida": 6852.21
+  },
+  {
+    "CargoNome": "GERENTE DE EQUIP ESPORTIVOS E DE LAZER",
+    "cd_CargoServidor": 2081,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 2250.00,
+    "RemuneracaoBruta": 6750.00,
+    "Descontos": 150.00,
+    "RemuneracaoLiquida": 4690.49
+  },
+  {
+    "CargoNome": "GERENTE DE FISCALIZACAO TRIBUTARIA",
+    "cd_CargoServidor": 187,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 19839.21,
+    "RemuneracaoBruta": 28958.01,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 10665.19
+  },
+  {
+    "CargoNome": "GERENTE DE GEORREFERENCIAMENTO ",
+    "cd_CargoServidor": 1931,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 7327.66,
+    "RemuneracaoBruta": 11827.66,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5873.27
+  },
+  {
+    "CargoNome": "GERENTE DE GESTAO DA ASSISTENCIA SOCIAL",
+    "cd_CargoServidor": 58,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4500.00,
+    "RemuneracaoBruta": 9000.00,
+    "Descontos": 186.20,
+    "RemuneracaoLiquida": 2940.56
+  },
+  {
+    "CargoNome": "GERENTE DE GESTAO DE PESSOAL DA EDUCACAO",
+    "cd_CargoServidor": 1932,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1988.40,
+    "OutrosVencimentos": 8838.40,
+    "RemuneracaoBruta": 11826.80,
+    "Descontos": 59.65,
+    "RemuneracaoLiquida": 3538.39
+  },
+  {
+    "CargoNome": "GERENTE DE GESTAO DE PROC LICITATORIOS",
+    "cd_CargoServidor": 1857,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4500.00,
+    "RemuneracaoBruta": 9000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2923.20
+  },
+  {
+    "CargoNome": "GERENTE DE GESTAO E INTEGRACAO",
+    "cd_CargoServidor": 2082,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3633.84,
+    "OutrosVencimentos": 13111.49,
+    "RemuneracaoBruta": 20760.72,
+    "Descontos": 54.51,
+    "RemuneracaoLiquida": 9405.05
+  },
+  {
+    "CargoNome": "GERENTE DE GOVERNO DIGITAL",
+    "cd_CargoServidor": 1958,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 17663.03,
+    "RemuneracaoBruta": 26663.03,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 16149.07
+  },
+  {
+    "CargoNome": "GERENTE DE IGUALDADE RACIAL",
+    "cd_CargoServidor": 1036,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 3750.00,
+    "RemuneracaoBruta": 8250.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3860.03
+  },
+  {
+    "CargoNome": "GERENTE DE ILUMINACAO PUBLICA",
+    "cd_CargoServidor": 1615,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4500.00,
+    "RemuneracaoBruta": 9000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3860.03
+  },
+  {
+    "CargoNome": "GERENTE DE IMAGEM",
+    "cd_CargoServidor": 2083,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 6450.00,
+    "RemuneracaoBruta": 12900.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5068.36
+  },
+  {
+    "CargoNome": "GERENTE DE INFORMACOES MUNICIPAIS",
+    "cd_CargoServidor": 310,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4125.00,
+    "RemuneracaoBruta": 8625.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3835.13
+  },
+  {
+    "CargoNome": "GERENTE DE INOVAC E CIDADES INTELIGENTES",
+    "cd_CargoServidor": 1959,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 10102.69,
+    "RemuneracaoBruta": 14602.69,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5873.27
+  },
+  {
+    "CargoNome": "GERENTE DE INTEGRIDADE E TRANSPARENCIA",
+    "cd_CargoServidor": 1484,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 7602.69,
+    "OutrosVencimentos": 13452.69,
+    "RemuneracaoBruta": 24564.61,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 8418.41
+  },
+  {
+    "CargoNome": "GERENTE DE LICITACAO",
+    "cd_CargoServidor": 1858,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1988.40,
+    "OutrosVencimentos": 8588.40,
+    "RemuneracaoBruta": 10576.80,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3123.07
+  },
+  {
+    "CargoNome": "GERENTE DE MARKETING E PUBLICIDADE",
+    "cd_CargoServidor": 946,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 5900.00,
+    "RemuneracaoBruta": 11800.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5585.43
+  },
+  {
+    "CargoNome": "GERENTE DE MIDIAS SOCIAIS",
+    "cd_CargoServidor": 1429,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 11536.42,
+    "RemuneracaoBruta": 17636.42,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 9700.26
+  },
+  {
+    "CargoNome": "GERENTE DE MONITORAMENTO AMBIENTAL",
+    "cd_CargoServidor": 1240,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 9500.00,
+    "RemuneracaoBruta": 14000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3788.28
+  },
+  {
+    "CargoNome": "GERENTE DE NORMAS E PROCEDIMENTOS",
+    "cd_CargoServidor": 1830,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 5250.00,
+    "RemuneracaoBruta": 12226.39,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6041.57
+  },
+  {
+    "CargoNome": "GERENTE DE PATRIMONIO IMOBILIARIO",
+    "cd_CargoServidor": 2064,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 3750.00,
+    "RemuneracaoBruta": 8250.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3860.03
+  },
+  {
+    "CargoNome": "GERENTE DE PATRIMONIO MOBILIARIO",
+    "cd_CargoServidor": 2065,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4500.00,
+    "RemuneracaoBruta": 9000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2929.78
+  },
+  {
+    "CargoNome": "GERENTE DE PESCA E AQUICULTURA",
+    "cd_CargoServidor": 373,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4500.00,
+    "RemuneracaoBruta": 9000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3860.03
+  },
+  {
+    "CargoNome": "GERENTE DE PLANEJAMENTO EDUCACIONAL",
+    "cd_CargoServidor": 727,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4763.25,
+    "OutrosVencimentos": 13471.20,
+    "RemuneracaoBruta": 23959.34,
+    "Descontos": 47.63,
+    "RemuneracaoLiquida": 10421.76
+  },
+  {
+    "CargoNome": "GERENTE DE PLANEJAMENTO URBANO",
+    "cd_CargoServidor": 510,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 8250.00,
+    "RemuneracaoBruta": 15500.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6562.56
+  },
+  {
+    "CargoNome": "GERENTE DE POLITICAS DE ABASTECIMENTO",
+    "cd_CargoServidor": 476,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4500.00,
+    "RemuneracaoBruta": 9000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3860.03
+  },
+  {
+    "CargoNome": "GERENTE DE PREST DE CONTAS E CONVENIOS",
+    "cd_CargoServidor": 1933,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1930.48,
+    "OutrosVencimentos": 7780.48,
+    "RemuneracaoBruta": 9710.96,
+    "Descontos": 150.00,
+    "RemuneracaoLiquida": 4188.59
+  },
+  {
+    "CargoNome": "GERENTE DE PREVENCAO CONTRA AS DROGAS",
+    "cd_CargoServidor": 1654,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 8560.42,
+    "RemuneracaoBruta": 13060.42,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6578.45
+  },
+  {
+    "CargoNome": "GERENTE DE PROCESSAMENTO DE AUTUACOES",
+    "cd_CargoServidor": 2084,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 6225.00,
+    "RemuneracaoBruta": 12450.00,
+    "Descontos": 1232.02,
+    "RemuneracaoLiquida": 4210.71
+  },
+  {
+    "CargoNome": "GERENTE DE PRODUCAO DE CONTEUDO",
+    "cd_CargoServidor": 1835,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 6100.00,
+    "RemuneracaoBruta": 12200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5022.13
+  },
+  {
+    "CargoNome": "GERENTE DE PROGRAMAS HABITACIONAIS",
+    "cd_CargoServidor": 1487,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 8560.42,
+    "RemuneracaoBruta": 13060.42,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6920.60
+  },
+  {
+    "CargoNome": "GERENTE DE PROJETOS E ORCAMENTOS",
+    "cd_CargoServidor": 42,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4500.00,
+    "RemuneracaoBruta": 9000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3860.03
+  },
+  {
+    "CargoNome": "GERENTE DE PROTECAO E DEFESA CIVIL",
+    "cd_CargoServidor": 2085,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 0.00,
+    "RemuneracaoBruta": 813.32,
+    "Descontos": 813.32,
+    "RemuneracaoLiquida": 0.00
+  },
+  {
+    "CargoNome": "GERENTE DE PROTECAO SOCIAL BASICA",
+    "cd_CargoServidor": 685,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3520.29,
+    "OutrosVencimentos": 9370.29,
+    "RemuneracaoBruta": 15039.01,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6412.09
+  },
+  {
+    "CargoNome": "GERENTE DE PROTECAO SOCIAL ESPECIAL",
+    "cd_CargoServidor": 695,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2925.00,
+    "OutrosVencimentos": 2193.75,
+    "RemuneracaoBruta": 5118.75,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2880.41
+  },
+  {
+    "CargoNome": "GERENTE DE REDE FISICA ESCOLAR",
+    "cd_CargoServidor": 1976,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 2625.00,
+    "RemuneracaoBruta": 7125.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6271.55
+  },
+  {
+    "CargoNome": "GERENTE DE REGUL CONTROLE E AVALIACAO",
+    "cd_CargoServidor": 928,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4650.00,
+    "RemuneracaoBruta": 9150.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2842.38
+  },
+  {
+    "CargoNome": "GERENTE DE REGULARIZACAO FUNDIARIA",
+    "cd_CargoServidor": 1415,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 5400.00,
+    "RemuneracaoBruta": 12375.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6169.70
+  },
+  {
+    "CargoNome": "GERENTE DE SEG ALIMENTAR E NUTRICIONAL",
+    "cd_CargoServidor": 671,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4500.00,
+    "RemuneracaoBruta": 9000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3864.97
+  },
+  {
+    "CargoNome": "GERENTE DE SEGURANCA DA INFORMACAO",
+    "cd_CargoServidor": 1488,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2339.29,
+    "OutrosVencimentos": 25841.68,
+    "RemuneracaoBruta": 28180.97,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 13567.17
+  },
+  {
+    "CargoNome": "GERENTE DE SERVICOS PUBLICOS",
+    "cd_CargoServidor": 1051,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4500.00,
+    "RemuneracaoBruta": 9000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3860.03
+  },
+  {
+    "CargoNome": "GERENTE DE SERVICOS TERC DA EDUCACAO",
+    "cd_CargoServidor": 1934,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 3900.00,
+    "RemuneracaoBruta": 8400.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5816.56
+  },
+  {
+    "CargoNome": "GERENTE DE TECNOLOGIA DA INFORMACAO",
+    "cd_CargoServidor": 460,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2339.29,
+    "OutrosVencimentos": 15173.29,
+    "RemuneracaoBruta": 19511.77,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 8713.71
+  },
+  {
+    "CargoNome": "GERENTE DE URGENCIA E EMERGENCIA",
+    "cd_CargoServidor": 1881,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4500.00,
+    "RemuneracaoBruta": 9000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3147.74
+  },
+  {
+    "CargoNome": "GERENTE DE VIGILANCIA EM SAUDE",
+    "cd_CargoServidor": 68,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 9886.64,
+    "RemuneracaoBruta": 14773.28,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5652.35
+  },
+  {
+    "CargoNome": "GERENTE DO FUNDO MUNICIPAL DE SAUDE",
+    "cd_CargoServidor": 1181,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1988.40,
+    "OutrosVencimentos": 7838.40,
+    "RemuneracaoBruta": 9826.80,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2207.64
+  },
+  {
+    "CargoNome": "GERENTE DO SISTEMA MUNICIPAL DE CULTURA",
+    "cd_CargoServidor": 1935,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 2165.63,
+    "RemuneracaoBruta": 6665.63,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4900.66
+  },
+  {
+    "CargoNome": "GERENTE GESTAO DE PESSOAS",
+    "cd_CargoServidor": 687,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 6900.00,
+    "RemuneracaoBruta": 13800.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4613.56
+  },
+  {
+    "CargoNome": "GESTOR DE FORMACAO CONTINUADA",
+    "cd_CargoServidor": 1960,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3764.47,
+    "OutrosVencimentos": 13173.15,
+    "RemuneracaoBruta": 19196.30,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4538.09
+  },
+  {
+    "CargoNome": "GUARDA MUNICIPAL",
+    "cd_CargoServidor": 120,
+    "NumeroServidores": 74,
+    "VencimentoPadrao": 261072.00,
+    "OutrosVencimentos": 246115.18,
+    "RemuneracaoBruta": 803641.57,
+    "Descontos": 3192.01,
+    "RemuneracaoLiquida": 521596.84
+  },
+  {
+    "CargoNome": "MECANICO DE AUTOMOVEIS",
+    "cd_CargoServidor": 121,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 3201.66,
+    "OutrosVencimentos": 5501.66,
+    "RemuneracaoBruta": 11003.32,
+    "Descontos": 60.72,
+    "RemuneracaoLiquida": 4556.60
+  },
+  {
+    "CargoNome": "MECANICO LUBRIFICADOR",
+    "cd_CargoServidor": 999,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1600.83,
+    "OutrosVencimentos": 2900.83,
+    "RemuneracaoBruta": 5251.94,
+    "Descontos": 156.76,
+    "RemuneracaoLiquida": 2072.69
+  },
+  {
+    "CargoNome": "MECANICO MOLEIRO",
+    "cd_CargoServidor": 131,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1600.83,
+    "OutrosVencimentos": 3513.62,
+    "RemuneracaoBruta": 5721.65,
+    "Descontos": 100.74,
+    "RemuneracaoLiquida": 2533.17
+  },
+  {
+    "CargoNome": "MEDICO",
+    "cd_CargoServidor": 371,
+    "NumeroServidores": 64,
+    "VencimentoPadrao": 503619.91,
+    "OutrosVencimentos": 677352.89,
+    "RemuneracaoBruta": 1441771.99,
+    "Descontos": 9843.86,
+    "RemuneracaoLiquida": 620863.97
+  },
+  {
+    "CargoNome": "MEDICO - BOLSISTA",
+    "cd_CargoServidor": 1346,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 0.00,
+    "RemuneracaoBruta": 23730.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 23730.00
+  },
+  {
+    "CargoNome": "MEDICO VETERINARIO",
+    "cd_CargoServidor": 851,
+    "NumeroServidores": 11,
+    "VencimentoPadrao": 42527.84,
+    "OutrosVencimentos": 84372.29,
+    "RemuneracaoBruta": 190342.70,
+    "Descontos": 324.11,
+    "RemuneracaoLiquida": 87660.86
+  },
+  {
+    "CargoNome": "MOTORISTA",
+    "cd_CargoServidor": 196,
+    "NumeroServidores": 33,
+    "VencimentoPadrao": 55577.62,
+    "OutrosVencimentos": 101217.29,
+    "RemuneracaoBruta": 193934.68,
+    "Descontos": 7253.31,
+    "RemuneracaoLiquida": 78465.11
+  },
+  {
+    "CargoNome": "MOTORISTA DE AMBULANCIA",
+    "cd_CargoServidor": 259,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1874.25,
+    "OutrosVencimentos": 2574.25,
+    "RemuneracaoBruta": 5148.50,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 1673.69
+  },
+  {
+    "CargoNome": "NUTRICIONISTA",
+    "cd_CargoServidor": 585,
+    "NumeroServidores": 32,
+    "VencimentoPadrao": 104104.27,
+    "OutrosVencimentos": 126782.26,
+    "RemuneracaoBruta": 249853.17,
+    "Descontos": 1525.75,
+    "RemuneracaoLiquida": 128963.93
+  },
+  {
+    "CargoNome": "NUTRICIONISTA - BOLSISTA",
+    "cd_CargoServidor": 1504,
+    "NumeroServidores": 4,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 0.00,
+    "RemuneracaoBruta": 17500.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 17500.00
+  },
+  {
+    "CargoNome": "OPER DE AUDIO E VIDEO",
+    "cd_CargoServidor": 1330,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1874.25,
+    "OutrosVencimentos": 3174.25,
+    "RemuneracaoBruta": 5889.92,
+    "Descontos": 56.23,
+    "RemuneracaoLiquida": 2353.83
+  },
+  {
+    "CargoNome": "OPERADOR DE MAQUINAS - DT",
+    "cd_CargoServidor": 1324,
+    "NumeroServidores": 3,
+    "VencimentoPadrao": 5622.75,
+    "OutrosVencimentos": 6533.55,
+    "RemuneracaoBruta": 16067.10,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 14691.27
+  },
+  {
+    "CargoNome": "OUVIDOR DA GUARDA MUNICIPAL",
+    "cd_CargoServidor": 1394,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 4825.00,
+    "RemuneracaoBruta": 9650.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3176.32
+  },
+  {
+    "CargoNome": "OUVIDOR SETORIAL DA SAUDE",
+    "cd_CargoServidor": 1868,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 3750.00,
+    "RemuneracaoBruta": 8250.00,
+    "Descontos": 3.38,
+    "RemuneracaoLiquida": 2696.99
+  },
+  {
+    "CargoNome": "OUVIDOR-GERAL DO MUNICIPIO",
+    "cd_CargoServidor": 1848,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 5500.00,
+    "OutrosVencimentos": 5500.00,
+    "RemuneracaoBruta": 11000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4483.63
+  },
+  {
+    "CargoNome": "PFOFESSOR MAPB - IV",
+    "cd_CargoServidor": 1993,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 11763.99,
+    "OutrosVencimentos": 20759.98,
+    "RemuneracaoBruta": 55359.94,
+    "Descontos": 103.80,
+    "RemuneracaoLiquida": 17097.41
+  },
+  {
+    "CargoNome": "PREFEITO",
+    "cd_CargoServidor": 178,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 0.00,
+    "RemuneracaoBruta": 27000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 14703.39
+  },
+  {
+    "CargoNome": "PROC CHE DO CEN DE EST JUR DA PROC GERAL",
+    "cd_CargoServidor": 1836,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 30362.50,
+    "RemuneracaoBruta": 65717.19,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 23749.67
+  },
+  {
+    "CargoNome": "PROC CHEFE DA PROC FISCAL E TRIBUTARIA",
+    "cd_CargoServidor": 1837,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 29741.80,
+    "RemuneracaoBruta": 52333.60,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 18744.85
+  },
+  {
+    "CargoNome": "PROCURADOR MUNICIPAL",
+    "cd_CargoServidor": 1085,
+    "NumeroServidores": 6,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 128618.37,
+    "RemuneracaoBruta": 268041.24,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 96236.90
+  },
+  {
+    "CargoNome": "PROCURADOR-GERAL ADJUNTO",
+    "cd_CargoServidor": 1838,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 16554.23,
+    "OutrosVencimentos": 16554.23,
+    "RemuneracaoBruta": 33108.46,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 12220.62
+  },
+  {
+    "CargoNome": "PROCURADOR-GERAL ADJUNTO ADMINISTRATIVO",
+    "cd_CargoServidor": 1839,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 44673.02,
+    "RemuneracaoBruta": 67825.52,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 20450.61
+  },
+  {
+    "CargoNome": "PROCURADOR-GERAL DO MUNICIPIO           ",
+    "cd_CargoServidor": 1840,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 23000.00,
+    "RemuneracaoBruta": 46000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 14467.15
+  },
+  {
+    "CargoNome": "PROF MaPA2-ENS FUND (ANOS INI E EJA) - I",
+    "cd_CargoServidor": 1994,
+    "NumeroServidores": 8,
+    "VencimentoPadrao": 29831.30,
+    "OutrosVencimentos": 43540.81,
+    "RemuneracaoBruta": 116441.36,
+    "Descontos": 924.07,
+    "RemuneracaoLiquida": 40664.14
+  },
+  {
+    "CargoNome": "PROF MaPA2-ENS FUND (ANOS INI E EJA)- II",
+    "cd_CargoServidor": 1995,
+    "NumeroServidores": 1212,
+    "VencimentoPadrao": 3762272.09,
+    "OutrosVencimentos": 4993785.89,
+    "RemuneracaoBruta": 12111263.31,
+    "Descontos": 62752.60,
+    "RemuneracaoLiquida": 6738515.83
+  },
+  {
+    "CargoNome": "PROF MaPA2-ENS FUND(ANOS INI E EJA) - I",
+    "cd_CargoServidor": 1996,
+    "NumeroServidores": 68,
+    "VencimentoPadrao": 178471.16,
+    "OutrosVencimentos": 212318.53,
+    "RemuneracaoBruta": 615182.55,
+    "Descontos": 13846.30,
+    "RemuneracaoLiquida": 361160.44
+  },
+  {
+    "CargoNome": "PROF MaPA2-ENS FUND(ANOS INI E EJA) - IV",
+    "cd_CargoServidor": 1997,
+    "NumeroServidores": 4,
+    "VencimentoPadrao": 18701.85,
+    "OutrosVencimentos": 33893.12,
+    "RemuneracaoBruta": 84805.59,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 35724.42
+  },
+  {
+    "CargoNome": "PROF MaPA2-ENS FUND(ANOS INI E EJA)-III",
+    "cd_CargoServidor": 1998,
+    "NumeroServidores": 37,
+    "VencimentoPadrao": 159304.83,
+    "OutrosVencimentos": 203192.76,
+    "RemuneracaoBruta": 521870.51,
+    "Descontos": 1390.54,
+    "RemuneracaoLiquida": 215956.55
+  },
+  {
+    "CargoNome": "PROFESSOR MaPA1 - EDUCACAO INFANTIL -  I",
+    "cd_CargoServidor": 1999,
+    "NumeroServidores": 39,
+    "VencimentoPadrao": 101325.30,
+    "OutrosVencimentos": 131386.83,
+    "RemuneracaoBruta": 351473.23,
+    "Descontos": 2990.01,
+    "RemuneracaoLiquida": 189265.08
+  },
+  {
+    "CargoNome": "PROFESSOR MaPA1 - EDUCACAO INFANTIL - I",
+    "cd_CargoServidor": 2000,
+    "NumeroServidores": 7,
+    "VencimentoPadrao": 19772.77,
+    "OutrosVencimentos": 17233.93,
+    "RemuneracaoBruta": 51095.37,
+    "Descontos": 182.56,
+    "RemuneracaoLiquida": 25661.44
+  },
+  {
+    "CargoNome": "PROFESSOR MaPA1 - EDUCACAO INFANTIL - II",
+    "cd_CargoServidor": 2001,
+    "NumeroServidores": 920,
+    "VencimentoPadrao": 3081125.76,
+    "OutrosVencimentos": 4165866.23,
+    "RemuneracaoBruta": 10414627.08,
+    "Descontos": 47546.97,
+    "RemuneracaoLiquida": 5009872.87
+  },
+  {
+    "CargoNome": "PROFESSOR MaPA1 - EDUCACAO INFANTIL - IV",
+    "cd_CargoServidor": 2002,
+    "NumeroServidores": 3,
+    "VencimentoPadrao": 13495.66,
+    "OutrosVencimentos": 28092.57,
+    "RemuneracaoBruta": 63226.27,
+    "Descontos": 134.95,
+    "RemuneracaoLiquida": 22636.07
+  },
+  {
+    "CargoNome": "PROFESSOR MaPA1- EDUCACAO INFANTIL - III",
+    "cd_CargoServidor": 2003,
+    "NumeroServidores": 33,
+    "VencimentoPadrao": 154513.72,
+    "OutrosVencimentos": 194972.04,
+    "RemuneracaoBruta": 452855.10,
+    "Descontos": 1371.06,
+    "RemuneracaoLiquida": 186335.55
+  },
+  {
+    "CargoNome": "PROFESSOR MaPA3 - EDUCACAO ESPECIAL -  I",
+    "cd_CargoServidor": 2004,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4003.54,
+    "OutrosVencimentos": 6213.49,
+    "RemuneracaoBruta": 18110.31,
+    "Descontos": 40.04,
+    "RemuneracaoLiquida": 7317.63
+  },
+  {
+    "CargoNome": "PROFESSOR MaPA3 - EDUCACAO ESPECIAL - II",
+    "cd_CargoServidor": 2005,
+    "NumeroServidores": 38,
+    "VencimentoPadrao": 153297.65,
+    "OutrosVencimentos": 213365.73,
+    "RemuneracaoBruta": 546465.47,
+    "Descontos": 3359.63,
+    "RemuneracaoLiquida": 196098.77
+  },
+  {
+    "CargoNome": "PROFESSOR MaPA3 - EDUCACAO ESPECIAL - IV",
+    "cd_CargoServidor": 2006,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 13578.75,
+    "OutrosVencimentos": 13578.75,
+    "RemuneracaoBruta": 36210.00,
+    "Descontos": 75.85,
+    "RemuneracaoLiquida": 13396.05
+  },
+  {
+    "CargoNome": "PROFESSOR MaPA3-EDUCACAO ESPECIAL - III",
+    "cd_CargoServidor": 2007,
+    "NumeroServidores": 8,
+    "VencimentoPadrao": 35628.42,
+    "OutrosVencimentos": 48852.66,
+    "RemuneracaoBruta": 113863.76,
+    "Descontos": 203.79,
+    "RemuneracaoLiquida": 45451.58
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - ARTE - I",
+    "cd_CargoServidor": 2008,
+    "NumeroServidores": 31,
+    "VencimentoPadrao": 76916.50,
+    "OutrosVencimentos": 99947.59,
+    "RemuneracaoBruta": 237959.03,
+    "Descontos": 1592.69,
+    "RemuneracaoLiquida": 167500.99
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - ARTE - II",
+    "cd_CargoServidor": 2009,
+    "NumeroServidores": 264,
+    "VencimentoPadrao": 773077.44,
+    "OutrosVencimentos": 998574.27,
+    "RemuneracaoBruta": 2389260.69,
+    "Descontos": 11872.53,
+    "RemuneracaoLiquida": 1399598.05
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - ARTE - III",
+    "cd_CargoServidor": 2010,
+    "NumeroServidores": 15,
+    "VencimentoPadrao": 55230.73,
+    "OutrosVencimentos": 83518.42,
+    "RemuneracaoBruta": 207757.86,
+    "Descontos": 256.83,
+    "RemuneracaoLiquida": 97289.06
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - CIENCIAS - I",
+    "cd_CargoServidor": 2011,
+    "NumeroServidores": 10,
+    "VencimentoPadrao": 26535.65,
+    "OutrosVencimentos": 30818.42,
+    "RemuneracaoBruta": 70535.36,
+    "Descontos": 369.76,
+    "RemuneracaoLiquida": 45788.94
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - CIENCIAS - II",
+    "cd_CargoServidor": 2012,
+    "NumeroServidores": 87,
+    "VencimentoPadrao": 254889.46,
+    "OutrosVencimentos": 337499.96,
+    "RemuneracaoBruta": 809750.86,
+    "Descontos": 6715.06,
+    "RemuneracaoLiquida": 457104.05
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - CIENCIAS - III",
+    "cd_CargoServidor": 2013,
+    "NumeroServidores": 17,
+    "VencimentoPadrao": 61735.01,
+    "OutrosVencimentos": 85164.11,
+    "RemuneracaoBruta": 191077.55,
+    "Descontos": 2004.62,
+    "RemuneracaoLiquida": 105870.82
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - CIENCIAS - IV",
+    "cd_CargoServidor": 2014,
+    "NumeroServidores": 6,
+    "VencimentoPadrao": 32815.36,
+    "OutrosVencimentos": 36920.09,
+    "RemuneracaoBruta": 89553.09,
+    "Descontos": 500.16,
+    "RemuneracaoLiquida": 45673.26
+  },
+  {
+    "CargoNome": "PROFESSOR MAPB - CIENCIAS SOCIAIS - I",
+    "cd_CargoServidor": 2015,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 608.47,
+    "OutrosVencimentos": 3042.36,
+    "RemuneracaoBruta": 8112.96,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3774.07
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - CIENCIAS SOCIAIS - II",
+    "cd_CargoServidor": 2016,
+    "NumeroServidores": 4,
+    "VencimentoPadrao": 17635.64,
+    "OutrosVencimentos": 17635.64,
+    "RemuneracaoBruta": 47984.14,
+    "Descontos": 196.36,
+    "RemuneracaoLiquida": 17607.64
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - CIENCIAS SOCIAIS - III",
+    "cd_CargoServidor": 2017,
+    "NumeroServidores": 3,
+    "VencimentoPadrao": 15690.17,
+    "OutrosVencimentos": 15690.17,
+    "RemuneracaoBruta": 41840.46,
+    "Descontos": 176.40,
+    "RemuneracaoLiquida": 17566.95
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - EDUCAÇÃO FISICA - I",
+    "cd_CargoServidor": 2018,
+    "NumeroServidores": 30,
+    "VencimentoPadrao": 70841.17,
+    "OutrosVencimentos": 81671.88,
+    "RemuneracaoBruta": 225951.37,
+    "Descontos": 1183.51,
+    "RemuneracaoLiquida": 156430.41
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - EDUCAÇÃO FISICA - II",
+    "cd_CargoServidor": 2019,
+    "NumeroServidores": 325,
+    "VencimentoPadrao": 967867.61,
+    "OutrosVencimentos": 1324861.69,
+    "RemuneracaoBruta": 3121133.30,
+    "Descontos": 25206.73,
+    "RemuneracaoLiquida": 1785479.28
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - EDUCAÇÃO FISICA - III",
+    "cd_CargoServidor": 2020,
+    "NumeroServidores": 26,
+    "VencimentoPadrao": 103561.12,
+    "OutrosVencimentos": 132047.28,
+    "RemuneracaoBruta": 323822.48,
+    "Descontos": 2183.87,
+    "RemuneracaoLiquida": 152995.63
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - EDUCAÇÃO FISICA - IV",
+    "cd_CargoServidor": 2021,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 10991.49,
+    "OutrosVencimentos": 19027.26,
+    "RemuneracaoBruta": 34616.09,
+    "Descontos": 67.43,
+    "RemuneracaoLiquida": 21456.80
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - ENSINO RELIGIOSO - I",
+    "cd_CargoServidor": 2104,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2052.58,
+    "OutrosVencimentos": 1115.53,
+    "RemuneracaoBruta": 5167.79,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4581.86
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - ENSINO RELIGIOSO - II",
+    "cd_CargoServidor": 2022,
+    "NumeroServidores": 101,
+    "VencimentoPadrao": 276094.86,
+    "OutrosVencimentos": 388196.84,
+    "RemuneracaoBruta": 933051.83,
+    "Descontos": 4633.78,
+    "RemuneracaoLiquida": 562720.70
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - ENSINO RELIGIOSO - III",
+    "cd_CargoServidor": 2023,
+    "NumeroServidores": 12,
+    "VencimentoPadrao": 53008.73,
+    "OutrosVencimentos": 67016.65,
+    "RemuneracaoBruta": 160656.20,
+    "Descontos": 3497.94,
+    "RemuneracaoLiquida": 65479.27
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - ENSINO RELIGIOSO - IV",
+    "cd_CargoServidor": 2024,
+    "NumeroServidores": 3,
+    "VencimentoPadrao": 17299.79,
+    "OutrosVencimentos": 17299.79,
+    "RemuneracaoBruta": 46323.62,
+    "Descontos": 55.42,
+    "RemuneracaoLiquida": 17154.63
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - FILOSOFIA - II",
+    "cd_CargoServidor": 2025,
+    "NumeroServidores": 3,
+    "VencimentoPadrao": 13211.67,
+    "OutrosVencimentos": 13740.14,
+    "RemuneracaoBruta": 36489.02,
+    "Descontos": 290.96,
+    "RemuneracaoLiquida": 14407.74
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - FILOSOFIA - III",
+    "cd_CargoServidor": 2026,
+    "NumeroServidores": 8,
+    "VencimentoPadrao": 35415.50,
+    "OutrosVencimentos": 47478.27,
+    "RemuneracaoBruta": 114471.48,
+    "Descontos": 2951.74,
+    "RemuneracaoLiquida": 42665.25
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - FILOSOFIA - IV",
+    "cd_CargoServidor": 2027,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 7292.85,
+    "OutrosVencimentos": 7292.85,
+    "RemuneracaoBruta": 14585.70,
+    "Descontos": 72.93,
+    "RemuneracaoLiquida": 5624.12
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - GEOGRAFIA - I",
+    "cd_CargoServidor": 2028,
+    "NumeroServidores": 9,
+    "VencimentoPadrao": 19214.22,
+    "OutrosVencimentos": 24338.88,
+    "RemuneracaoBruta": 60611.65,
+    "Descontos": 958.45,
+    "RemuneracaoLiquida": 48392.45
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - GEOGRAFIA - II",
+    "cd_CargoServidor": 2029,
+    "NumeroServidores": 94,
+    "VencimentoPadrao": 297486.20,
+    "OutrosVencimentos": 382540.52,
+    "RemuneracaoBruta": 924645.37,
+    "Descontos": 9190.96,
+    "RemuneracaoLiquida": 520799.26
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - GEOGRAFIA - III",
+    "cd_CargoServidor": 2030,
+    "NumeroServidores": 7,
+    "VencimentoPadrao": 28901.61,
+    "OutrosVencimentos": 50452.75,
+    "RemuneracaoBruta": 112993.38,
+    "Descontos": 2092.59,
+    "RemuneracaoLiquida": 54600.47
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - GEOGRAFIA - IV",
+    "cd_CargoServidor": 2031,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 14035.50,
+    "OutrosVencimentos": 20778.15,
+    "RemuneracaoBruta": 39308.75,
+    "Descontos": 67.43,
+    "RemuneracaoLiquida": 16802.09
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - HISTORIA - I",
+    "cd_CargoServidor": 2032,
+    "NumeroServidores": 11,
+    "VencimentoPadrao": 24473.70,
+    "OutrosVencimentos": 26523.43,
+    "RemuneracaoBruta": 67916.79,
+    "Descontos": 428.04,
+    "RemuneracaoLiquida": 48991.31
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - HISTORIA - II",
+    "cd_CargoServidor": 2033,
+    "NumeroServidores": 82,
+    "VencimentoPadrao": 244530.58,
+    "OutrosVencimentos": 294912.82,
+    "RemuneracaoBruta": 719179.74,
+    "Descontos": 6479.26,
+    "RemuneracaoLiquida": 442118.15
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - HISTORIA - III",
+    "cd_CargoServidor": 2034,
+    "NumeroServidores": 20,
+    "VencimentoPadrao": 84595.72,
+    "OutrosVencimentos": 92355.63,
+    "RemuneracaoBruta": 229970.90,
+    "Descontos": 1627.75,
+    "RemuneracaoLiquida": 96613.64
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - HISTORIA - IV",
+    "cd_CargoServidor": 2035,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 10482.79,
+    "OutrosVencimentos": 11775.91,
+    "RemuneracaoBruta": 30330.83,
+    "Descontos": 62.34,
+    "RemuneracaoLiquida": 17092.61
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - I",
+    "cd_CargoServidor": 2036,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 4003.54,
+    "OutrosVencimentos": 4003.54,
+    "RemuneracaoBruta": 10676.10,
+    "Descontos": 40.04,
+    "RemuneracaoLiquida": 4819.57
+  },
+  {
+    "CargoNome": "PROFESSOR MAPB - II",
+    "cd_CargoServidor": 2037,
+    "NumeroServidores": 11,
+    "VencimentoPadrao": 61293.81,
+    "OutrosVencimentos": 76924.66,
+    "RemuneracaoBruta": 179575.20,
+    "Descontos": 456.65,
+    "RemuneracaoLiquida": 82807.65
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - LINGUA INGLESA - I",
+    "cd_CargoServidor": 2039,
+    "NumeroServidores": 16,
+    "VencimentoPadrao": 40443.12,
+    "OutrosVencimentos": 49283.37,
+    "RemuneracaoBruta": 121481.24,
+    "Descontos": 733.07,
+    "RemuneracaoLiquida": 76089.60
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - LINGUA INGLESA - II",
+    "cd_CargoServidor": 2040,
+    "NumeroServidores": 63,
+    "VencimentoPadrao": 188497.41,
+    "OutrosVencimentos": 266787.58,
+    "RemuneracaoBruta": 654640.06,
+    "Descontos": 5011.62,
+    "RemuneracaoLiquida": 314234.89
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - LINGUA INGLESA - III",
+    "cd_CargoServidor": 2041,
+    "NumeroServidores": 3,
+    "VencimentoPadrao": 11431.97,
+    "OutrosVencimentos": 12369.02,
+    "RemuneracaoBruta": 33626.58,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 18206.76
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - LINGUA INGLESA - IV",
+    "cd_CargoServidor": 2042,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 6742.65,
+    "OutrosVencimentos": 6742.65,
+    "RemuneracaoBruta": 17980.40,
+    "Descontos": 67.43,
+    "RemuneracaoLiquida": 6726.95
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - LINGUA PORTUGUESA - I",
+    "cd_CargoServidor": 2043,
+    "NumeroServidores": 12,
+    "VencimentoPadrao": 24336.81,
+    "OutrosVencimentos": 29535.83,
+    "RemuneracaoBruta": 76915.91,
+    "Descontos": 2387.43,
+    "RemuneracaoLiquida": 57691.63
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - LINGUA PORTUGUESA - II",
+    "cd_CargoServidor": 2044,
+    "NumeroServidores": 136,
+    "VencimentoPadrao": 397013.39,
+    "OutrosVencimentos": 504000.61,
+    "RemuneracaoBruta": 1183951.83,
+    "Descontos": 7460.49,
+    "RemuneracaoLiquida": 734432.14
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - LINGUA PORTUGUESA - III",
+    "cd_CargoServidor": 2045,
+    "NumeroServidores": 14,
+    "VencimentoPadrao": 58691.67,
+    "OutrosVencimentos": 99664.01,
+    "RemuneracaoBruta": 224175.69,
+    "Descontos": 349.40,
+    "RemuneracaoLiquida": 105023.46
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - LINGUA PORTUGUESA - IV",
+    "cd_CargoServidor": 2046,
+    "NumeroServidores": 6,
+    "VencimentoPadrao": 26094.72,
+    "OutrosVencimentos": 34592.38,
+    "RemuneracaoBruta": 83647.55,
+    "Descontos": 133.49,
+    "RemuneracaoLiquida": 49397.92
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - MATEMATICA - I",
+    "cd_CargoServidor": 2047,
+    "NumeroServidores": 18,
+    "VencimentoPadrao": 42714.58,
+    "OutrosVencimentos": 45328.92,
+    "RemuneracaoBruta": 120206.81,
+    "Descontos": 1112.77,
+    "RemuneracaoLiquida": 91756.80
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - MATEMATICA - II",
+    "cd_CargoServidor": 2048,
+    "NumeroServidores": 120,
+    "VencimentoPadrao": 340123.34,
+    "OutrosVencimentos": 453115.27,
+    "RemuneracaoBruta": 1047622.73,
+    "Descontos": 7957.34,
+    "RemuneracaoLiquida": 666735.44
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - MATEMATICA - III",
+    "cd_CargoServidor": 2049,
+    "NumeroServidores": 11,
+    "VencimentoPadrao": 48971.77,
+    "OutrosVencimentos": 52050.65,
+    "RemuneracaoBruta": 132762.94,
+    "Descontos": 993.86,
+    "RemuneracaoLiquida": 66987.81
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB - MATEMATICA - IV",
+    "cd_CargoServidor": 2050,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 7292.85,
+    "OutrosVencimentos": 14585.70,
+    "RemuneracaoBruta": 26740.45,
+    "Descontos": 72.93,
+    "RemuneracaoLiquida": 10526.12
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB1 - EDUCACAO ESPECIAL - II",
+    "cd_CargoServidor": 2051,
+    "NumeroServidores": 26,
+    "VencimentoPadrao": 104033.16,
+    "OutrosVencimentos": 125911.75,
+    "RemuneracaoBruta": 341529.32,
+    "Descontos": 1375.57,
+    "RemuneracaoLiquida": 124473.60
+  },
+  {
+    "CargoNome": "PROFESSOR MaPB1-EDUCACAO ESPECIAL - III",
+    "cd_CargoServidor": 2052,
+    "NumeroServidores": 3,
+    "VencimentoPadrao": 14542.63,
+    "OutrosVencimentos": 23733.92,
+    "RemuneracaoBruta": 48558.39,
+    "Descontos": 103.66,
+    "RemuneracaoLiquida": 20030.27
+  },
+  {
+    "CargoNome": "PROFESSOR MaPEE - EDUCACAO ESPECIAL - I",
+    "cd_CargoServidor": 2053,
+    "NumeroServidores": 6,
+    "VencimentoPadrao": 16489.59,
+    "OutrosVencimentos": 17730.86,
+    "RemuneracaoBruta": 44471.97,
+    "Descontos": 31.64,
+    "RemuneracaoLiquida": 23538.56
+  },
+  {
+    "CargoNome": "PROFESSOR MaPEE - EDUCACAO ESPECIAL - II",
+    "cd_CargoServidor": 2054,
+    "NumeroServidores": 434,
+    "VencimentoPadrao": 1139798.38,
+    "OutrosVencimentos": 1412770.94,
+    "RemuneracaoBruta": 3173510.78,
+    "Descontos": 28702.97,
+    "RemuneracaoLiquida": 2204317.50
+  },
+  {
+    "CargoNome": "PROFESSOR MaPEE - EDUCACAO ESPECIAL - IV",
+    "cd_CargoServidor": 2055,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 11527.28,
+    "OutrosVencimentos": 11527.28,
+    "RemuneracaoBruta": 30739.40,
+    "Descontos": 57.64,
+    "RemuneracaoLiquida": 12642.24
+  },
+  {
+    "CargoNome": "PROFESSOR MaPEE-EDUCACAO ESPECIAL - III",
+    "cd_CargoServidor": 2056,
+    "NumeroServidores": 10,
+    "VencimentoPadrao": 37856.71,
+    "OutrosVencimentos": 46581.89,
+    "RemuneracaoBruta": 116013.45,
+    "Descontos": 266.52,
+    "RemuneracaoLiquida": 44246.35
+  },
+  {
+    "CargoNome": "PROFESSOR MaPP - PEDAGOGO - I",
+    "cd_CargoServidor": 2057,
+    "NumeroServidores": 12,
+    "VencimentoPadrao": 31769.87,
+    "OutrosVencimentos": 31441.94,
+    "RemuneracaoBruta": 81678.99,
+    "Descontos": 594.56,
+    "RemuneracaoLiquida": 49641.29
+  },
+  {
+    "CargoNome": "PROFESSOR MaPP - PEDAGOGO - II",
+    "cd_CargoServidor": 2058,
+    "NumeroServidores": 391,
+    "VencimentoPadrao": 1217411.00,
+    "OutrosVencimentos": 1518298.60,
+    "RemuneracaoBruta": 3647030.39,
+    "Descontos": 14724.34,
+    "RemuneracaoLiquida": 2047424.31
+  },
+  {
+    "CargoNome": "PROFESSOR MaPP - PEDAGOGO - III",
+    "cd_CargoServidor": 2059,
+    "NumeroServidores": 27,
+    "VencimentoPadrao": 109645.28,
+    "OutrosVencimentos": 134958.11,
+    "RemuneracaoBruta": 324568.67,
+    "Descontos": 3679.42,
+    "RemuneracaoLiquida": 132708.31
+  },
+  {
+    "CargoNome": "PROFESSOR MaPP - PEDAGOGO - IV ",
+    "cd_CargoServidor": 2060,
+    "NumeroServidores": 4,
+    "VencimentoPadrao": 27001.30,
+    "OutrosVencimentos": 27001.30,
+    "RemuneracaoBruta": 73720.92,
+    "Descontos": 202.58,
+    "RemuneracaoLiquida": 26987.96
+  },
+  {
+    "CargoNome": "PROFISSIONAL ARTE  EDUCADOR - BOLSISTA",
+    "cd_CargoServidor": 1977,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 0.00,
+    "RemuneracaoBruta": 4375.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4375.00
+  },
+  {
+    "CargoNome": "PSICOLOGO",
+    "cd_CargoServidor": 586,
+    "NumeroServidores": 36,
+    "VencimentoPadrao": 103145.57,
+    "OutrosVencimentos": 99449.84,
+    "RemuneracaoBruta": 224571.41,
+    "Descontos": 10635.85,
+    "RemuneracaoLiquida": 142720.75
+  },
+  {
+    "CargoNome": "PSICOLOGO  -  BOLSISTA",
+    "cd_CargoServidor": 1796,
+    "NumeroServidores": 4,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 0.00,
+    "RemuneracaoBruta": 17500.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 17500.00
+  },
+  {
+    "CargoNome": "REGENTE",
+    "cd_CargoServidor": 405,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 1930.48,
+    "OutrosVencimentos": 3230.48,
+    "RemuneracaoBruta": 6021.12,
+    "Descontos": 60.72,
+    "RemuneracaoLiquida": 3011.64
+  },
+  {
+    "CargoNome": "RESIDENTE-BOLSISTA",
+    "cd_CargoServidor": 1386,
+    "NumeroServidores": 6,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 0.00,
+    "RemuneracaoBruta": 27000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 24030.00
+  },
+  {
+    "CargoNome": "SEC CHEFE DE GABINETE",
+    "cd_CargoServidor": 1469,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 7666.67,
+    "RemuneracaoBruta": 30666.67,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 22720.77
+  },
+  {
+    "CargoNome": "SEC EXECUTIVO DO CONS MUNICIPAL DE SAUDE",
+    "cd_CargoServidor": 1869,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 7233.33,
+    "Descontos": 186.00,
+    "RemuneracaoLiquida": 3423.17
+  },
+  {
+    "CargoNome": "SEC EXTRAORD DE RELACOES INSTITUCIONAIS",
+    "cd_CargoServidor": 1827,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 1916.67,
+    "RemuneracaoBruta": 21850.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 16437.41
+  },
+  {
+    "CargoNome": "SEC EXTRAORDINARIO DE RELACOES POLITICAS",
+    "cd_CargoServidor": 1782,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 21083.33,
+    "RemuneracaoBruta": 44083.33,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 16893.81
+  },
+  {
+    "CargoNome": "SEC MUN DA MULHER E DIREITOS HUMANOS",
+    "cd_CargoServidor": 1797,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 9966.67,
+    "RemuneracaoBruta": 24916.67,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 8390.66
+  },
+  {
+    "CargoNome": "SEC MUN DE AGRICULTURA E PESCA ",
+    "cd_CargoServidor": 614,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 23000.00,
+    "RemuneracaoBruta": 46000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 15718.54
+  },
+  {
+    "CargoNome": "SEC MUN DE CONTROLE E TRANSPARENCIA",
+    "cd_CargoServidor": 465,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 9583.33,
+    "RemuneracaoBruta": 32583.33,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 12915.94
+  },
+  {
+    "CargoNome": "SEC MUN DE DESENV DA CIDADE E M AMBIENTE",
+    "cd_CargoServidor": 282,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 7666.67,
+    "RemuneracaoBruta": 30666.67,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 22720.77
+  },
+  {
+    "CargoNome": "SEC MUN DE DESENVOLVIMENTO ECONOMICO",
+    "cd_CargoServidor": 1936,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 21083.33,
+    "RemuneracaoBruta": 44083.33,
+    "Descontos": 3378.76,
+    "RemuneracaoLiquida": 9380.05
+  },
+  {
+    "CargoNome": "SEC MUN DE SEGURANCA E ORDEM PUBLICA",
+    "cd_CargoServidor": 2087,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 23000.00,
+    "RemuneracaoBruta": 46000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 16893.81
+  },
+  {
+    "CargoNome": "SEC MUNICIPAL DE ASSISTENCIA SOCIAL",
+    "cd_CargoServidor": 667,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 23000.00,
+    "RemuneracaoBruta": 46000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 16893.81
+  },
+  {
+    "CargoNome": "SECRETARIO DA JUNTA MILITAR",
+    "cd_CargoServidor": 1460,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 5250.00,
+    "RemuneracaoBruta": 10500.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3042.58
+  },
+  {
+    "CargoNome": "SECRETARIO ENSINO 'A'",
+    "cd_CargoServidor": 380,
+    "NumeroServidores": 4,
+    "VencimentoPadrao": 6403.32,
+    "OutrosVencimentos": 6269.92,
+    "RemuneracaoBruta": 13740.46,
+    "Descontos": 1991.10,
+    "RemuneracaoLiquida": 6224.30
+  },
+  {
+    "CargoNome": "SECRETARIO EXECUTIVO DO CONSELHO",
+    "cd_CargoServidor": 323,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3100.00,
+    "OutrosVencimentos": 3100.00,
+    "RemuneracaoBruta": 6200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2525.40
+  },
+  {
+    "CargoNome": "SECRETARIO EXTR DE ASSUNTOS COMUNITARIOS",
+    "cd_CargoServidor": 1937,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 21083.33,
+    "RemuneracaoBruta": 44083.33,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 16893.81
+  },
+  {
+    "CargoNome": "SECRETARIO MUN DE CULTURA E TURISMO",
+    "cd_CargoServidor": 1650,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 21083.33,
+    "RemuneracaoBruta": 44083.33,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 16893.81
+  },
+  {
+    "CargoNome": "SECRETARIO MUN DE ESPORTE E LAZER       ",
+    "cd_CargoServidor": 365,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 23000.00,
+    "RemuneracaoBruta": 46000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 16893.81
+  },
+  {
+    "CargoNome": "SECRETARIO MUNICIPAL DE ADMINISTRAÇÃO",
+    "cd_CargoServidor": 1783,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 23000.00,
+    "RemuneracaoBruta": 46000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 15467.49
+  },
+  {
+    "CargoNome": "SECRETARIO MUNICIPAL DE COMUNICAÇÃO",
+    "cd_CargoServidor": 1387,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 23000.00,
+    "RemuneracaoBruta": 46000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 14859.35
+  },
+  {
+    "CargoNome": "SECRETARIO MUNICIPAL DE EDUCAÇÃO",
+    "cd_CargoServidor": 111,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 23000.00,
+    "RemuneracaoBruta": 46000.00,
+    "Descontos": 2012.50,
+    "RemuneracaoLiquida": 22869.65
+  },
+  {
+    "CargoNome": "SECRETARIO MUNICIPAL DE FINANCAS",
+    "cd_CargoServidor": 659,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 45048.38,
+    "RemuneracaoBruta": 75715.05,
+    "Descontos": 186.20,
+    "RemuneracaoLiquida": 39159.75
+  },
+  {
+    "CargoNome": "SECRETARIO MUNICIPAL DE HABITACAO",
+    "cd_CargoServidor": 1418,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 23000.00,
+    "RemuneracaoBruta": 46000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 16893.81
+  },
+  {
+    "CargoNome": "SECRETARIO MUNICIPAL DE OBRAS",
+    "cd_CargoServidor": 483,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 23000.00,
+    "RemuneracaoBruta": 53666.67,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 22504.28
+  },
+  {
+    "CargoNome": "SECRETARIO MUNICIPAL DE SERVICOS",
+    "cd_CargoServidor": 583,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 23000.00,
+    "RemuneracaoBruta": 46000.00,
+    "Descontos": 186.20,
+    "RemuneracaoLiquida": 11732.83
+  },
+  {
+    "CargoNome": "SERVENTE",
+    "cd_CargoServidor": 804,
+    "NumeroServidores": 31,
+    "VencimentoPadrao": 49625.73,
+    "OutrosVencimentos": 50672.81,
+    "RemuneracaoBruta": 113638.79,
+    "Descontos": 1423.55,
+    "RemuneracaoLiquida": 69982.49
+  },
+  {
+    "CargoNome": "SUBS MUN DE PROTECAO E DEFESA CIVIL",
+    "cd_CargoServidor": 2088,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 11000.00,
+    "RemuneracaoBruta": 22000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 8770.94
+  },
+  {
+    "CargoNome": "SUBS MUNICIPAL DE TECNOLOGIA INFORMACAO",
+    "cd_CargoServidor": 1939,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 22372.21,
+    "RemuneracaoBruta": 31372.21,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 10967.02
+  },
+  {
+    "CargoNome": "SUBSEC DE CONTROLE E TRANSPARENCIA",
+    "cd_CargoServidor": 1137,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 7381.24,
+    "OutrosVencimentos": 28181.24,
+    "RemuneracaoBruta": 35562.48,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6384.91
+  },
+  {
+    "CargoNome": "SUBSEC MUN ADMINISTRATIVO E FINANCEIRO",
+    "cd_CargoServidor": 1940,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 10400.00,
+    "RemuneracaoBruta": 20800.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 9158.81
+  },
+  {
+    "CargoNome": "SUBSEC MUN DA MULHER E DIREITOS HUMANOS",
+    "cd_CargoServidor": 1792,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 7500.00,
+    "RemuneracaoBruta": 16500.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6743.81
+  },
+  {
+    "CargoNome": "SUBSEC MUN DE ASSISTENCIA SOCIAL",
+    "cd_CargoServidor": 1941,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 2887.50,
+    "RemuneracaoBruta": 11887.50,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 8131.31
+  },
+  {
+    "CargoNome": "SUBSEC MUN DE DESENVOLVIMENTO ECONOMICO",
+    "cd_CargoServidor": 1651,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 9466.67,
+    "RemuneracaoBruta": 18466.67,
+    "Descontos": 1348.76,
+    "RemuneracaoLiquida": 2441.18
+  },
+  {
+    "CargoNome": "SUBSEC MUN DE HAB E REGUL FUNDIARIA",
+    "cd_CargoServidor": 1472,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 9000.00,
+    "RemuneracaoBruta": 18000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6743.81
+  },
+  {
+    "CargoNome": "SUBSEC MUN DE PLANEJAMENTO E AVALIACAO",
+    "cd_CargoServidor": 1942,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 6233.95,
+    "OutrosVencimentos": 21674.32,
+    "RemuneracaoBruta": 31648.64,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 12098.67
+  },
+  {
+    "CargoNome": "SUBSEC MUN DE SUPORTE A EDUCACAO",
+    "cd_CargoServidor": 2062,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 10500.00,
+    "RemuneracaoBruta": 21000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 7831.31
+  },
+  {
+    "CargoNome": "SUBSEC MUN PARA ASSUNTOS ADMINISTRATIVOS",
+    "cd_CargoServidor": 1978,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 14140.42,
+    "RemuneracaoBruta": 23140.42,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 12466.84
+  },
+  {
+    "CargoNome": "SUBSEC MUNIC DE DESENVOLVIMENTO URBANO",
+    "cd_CargoServidor": 1979,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 9000.00,
+    "RemuneracaoBruta": 18000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5560.18
+  },
+  {
+    "CargoNome": "SUBSEC MUNIC DE GESTAO ADMINISTRATIVA",
+    "cd_CargoServidor": 1248,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 10800.00,
+    "RemuneracaoBruta": 21600.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 9098.81
+  },
+  {
+    "CargoNome": "SUBSEC MUNIC DE INTEGRACAO INSTITUCIONAL",
+    "cd_CargoServidor": 1980,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 5746.60,
+    "RemuneracaoBruta": 14746.60,
+    "Descontos": 1908.51,
+    "RemuneracaoLiquida": 8007.81
+  },
+  {
+    "CargoNome": "SUBSEC MUNICIPAL DE AGRICULTURA E PESCA ",
+    "cd_CargoServidor": 1943,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 9000.00,
+    "RemuneracaoBruta": 18000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5397.60
+  },
+  {
+    "CargoNome": "SUBSEC MUNICIPAL DE CAPTACAO DE RECURSOS",
+    "cd_CargoServidor": 1820,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 9000.00,
+    "RemuneracaoBruta": 18300.00,
+    "Descontos": 59.65,
+    "RemuneracaoLiquida": 6457.99
+  },
+  {
+    "CargoNome": "SUBSEC MUNICIPAL DE CONSERVACAO PUBLICA",
+    "cd_CargoServidor": 1261,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 0.00,
+    "RemuneracaoBruta": 9000.00,
+    "Descontos": 60.72,
+    "RemuneracaoLiquida": 6683.09
+  },
+  {
+    "CargoNome": "SUBSEC MUNICIPAL DE ESPORTE E LAZER",
+    "cd_CargoServidor": 1249,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 9750.00,
+    "RemuneracaoBruta": 22729.17,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 9628.70
+  },
+  {
+    "CargoNome": "SUBSEC MUNICIPAL DE SEGURANCA PUBLICA",
+    "cd_CargoServidor": 2089,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3528.00,
+    "OutrosVencimentos": 11586.40,
+    "RemuneracaoBruta": 30280.69,
+    "Descontos": 52.92,
+    "RemuneracaoLiquida": 19523.24
+  },
+  {
+    "CargoNome": "SUBSEC MUNICIPAL DE SERVICOS MUNICIPAIS",
+    "cd_CargoServidor": 1514,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 9000.00,
+    "RemuneracaoBruta": 18000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6795.94
+  },
+  {
+    "CargoNome": "SUBSECRETARIO DE GESTAO DE PESSOAS",
+    "cd_CargoServidor": 1962,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 9625.00,
+    "RemuneracaoBruta": 20125.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 7831.31
+  },
+  {
+    "CargoNome": "SUBSECRETARIO MUN DE ATENCAO A SAUDE",
+    "cd_CargoServidor": 1882,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 4475.00,
+    "RemuneracaoBruta": 14975.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 11250.69
+  },
+  {
+    "CargoNome": "SUBSECRETARIO MUN DE ESTUDOS E PROJETOS",
+    "cd_CargoServidor": 2090,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 9900.00,
+    "RemuneracaoBruta": 18900.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5095.64
+  },
+  {
+    "CargoNome": "SUBSECRETARIO MUN DE GESTAO PATRIMONIAL",
+    "cd_CargoServidor": 1841,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 7381.24,
+    "OutrosVencimentos": 19831.24,
+    "RemuneracaoBruta": 27962.48,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 10552.99
+  },
+  {
+    "CargoNome": "SUBSECRETARIO MUNIC DE GESTAO EM SAUDE",
+    "cd_CargoServidor": 1870,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 9750.00,
+    "RemuneracaoBruta": 19500.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5330.38
+  },
+  {
+    "CargoNome": "SUBSECRETARIO MUNICIPAL ADMINISTRATIVO",
+    "cd_CargoServidor": 1871,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 10475.00,
+    "RemuneracaoBruta": 19475.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6743.81
+  },
+  {
+    "CargoNome": "SUBSECRETARIO MUNICIPAL DE CULTURA",
+    "cd_CargoServidor": 1389,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 9000.00,
+    "RemuneracaoBruta": 18000.00,
+    "Descontos": 2023.14,
+    "RemuneracaoLiquida": 5277.03
+  },
+  {
+    "CargoNome": "SUBSECRETÁRIO MUNICIPAL DE ENSINO  ",
+    "cd_CargoServidor": 1947,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 5715.90,
+    "OutrosVencimentos": 17415.90,
+    "RemuneracaoBruta": 23131.80,
+    "Descontos": 57.16,
+    "RemuneracaoLiquida": 7989.15
+  },
+  {
+    "CargoNome": "SUBSECRETARIO MUNICIPAL DE FINANCAS",
+    "cd_CargoServidor": 1963,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 7381.24,
+    "OutrosVencimentos": 35578.32,
+    "RemuneracaoBruta": 42959.56,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 14767.02
+  },
+  {
+    "CargoNome": "SUBSECRETARIO MUNICIPAL DE JORNALISMO",
+    "cd_CargoServidor": 1849,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 9600.00,
+    "RemuneracaoBruta": 22200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 10058.08
+  },
+  {
+    "CargoNome": "SUBSECRETARIO MUNICIPAL DE MEIO AMBIENTE",
+    "cd_CargoServidor": 1981,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 8500.00,
+    "RemuneracaoBruta": 18700.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 7665.94
+  },
+  {
+    "CargoNome": "SUBSECRETARIO MUNICIPAL DE OBRAS",
+    "cd_CargoServidor": 2096,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 9000.00,
+    "RemuneracaoBruta": 18000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6743.81
+  },
+  {
+    "CargoNome": "SUBSECRETARIO MUNICIPAL DE PLANEJAMENTO",
+    "cd_CargoServidor": 1821,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 5850.00,
+    "OutrosVencimentos": 6600.00,
+    "RemuneracaoBruta": 13200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 5108.70
+  },
+  {
+    "CargoNome": "SUBSECRETARIO MUNICIPAL DE PUBLICIDADE",
+    "cd_CargoServidor": 1842,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 10600.00,
+    "RemuneracaoBruta": 21200.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 7933.04
+  },
+  {
+    "CargoNome": "SUBSECRETARIO MUNICIPAL DE TURISMO",
+    "cd_CargoServidor": 1964,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 9000.00,
+    "OutrosVencimentos": 7500.00,
+    "RemuneracaoBruta": 16500.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 6743.81
+  },
+  {
+    "CargoNome": "SUP DE APOIO CURRIC E EDUCACAO AMBIENTAL",
+    "cd_CargoServidor": 1948,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 5500.00,
+    "OutrosVencimentos": 5500.00,
+    "RemuneracaoBruta": 11000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3142.40
+  },
+  {
+    "CargoNome": "SUP DO CEN DE AT PSICOS INF JUV - CAPS i",
+    "cd_CargoServidor": 1873,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3520.29,
+    "OutrosVencimentos": 14840.58,
+    "RemuneracaoBruta": 20400.97,
+    "Descontos": 60.72,
+    "RemuneracaoLiquida": 11458.51
+  },
+  {
+    "CargoNome": "SUP EXEC  DE PLANEJAMENTO EM SEGURANÇA",
+    "cd_CargoServidor": 2091,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 5850.00,
+    "OutrosVencimentos": 4075.00,
+    "RemuneracaoBruta": 12225.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 10651.09
+  },
+  {
+    "CargoNome": "SUPERINTENDENTE DE LICITACAO",
+    "cd_CargoServidor": 2097,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 11000.00,
+    "OutrosVencimentos": 12500.00,
+    "RemuneracaoBruta": 24400.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 8950.58
+  },
+  {
+    "CargoNome": "SUPERINTENDENTE DE ORDEM PUBLICA",
+    "cd_CargoServidor": 2092,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 15000.00,
+    "OutrosVencimentos": 16500.00,
+    "RemuneracaoBruta": 33000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 12181.31
+  },
+  {
+    "CargoNome": "SUPERV DE UNID DE PRONTO ATENDIMENTO ",
+    "cd_CargoServidor": 1949,
+    "NumeroServidores": 3,
+    "VencimentoPadrao": 15000.00,
+    "OutrosVencimentos": 13750.00,
+    "RemuneracaoBruta": 28750.00,
+    "Descontos": 186.20,
+    "RemuneracaoLiquida": 9726.90
+  },
+  {
+    "CargoNome": "SUPERV DO CENTRO DE REFERENCIA IST/AIDS",
+    "cd_CargoServidor": 1874,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4000.00,
+    "OutrosVencimentos": 4000.00,
+    "RemuneracaoBruta": 8000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3511.84
+  },
+  {
+    "CargoNome": "SUPERV DO CENTRO MUNIC DE ESPECIALIDADES",
+    "cd_CargoServidor": 1886,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4000.00,
+    "OutrosVencimentos": 4000.00,
+    "RemuneracaoBruta": 9333.33,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4386.12
+  },
+  {
+    "CargoNome": "SUPERVISOR DE GESTAO ESCOLAR",
+    "cd_CargoServidor": 1950,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 5500.00,
+    "OutrosVencimentos": 4050.00,
+    "RemuneracaoBruta": 11725.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4673.83
+  },
+  {
+    "CargoNome": "SUPERVISOR DE UNIDADE BASICA DE SAUDE I",
+    "cd_CargoServidor": 79,
+    "NumeroServidores": 21,
+    "VencimentoPadrao": 71988.40,
+    "OutrosVencimentos": 67205.08,
+    "RemuneracaoBruta": 144183.51,
+    "Descontos": 675.85,
+    "RemuneracaoLiquida": 65132.88
+  },
+  {
+    "CargoNome": "SUPERVISOR DE UNIDADE BASICA DE SAUDE II",
+    "cd_CargoServidor": 581,
+    "NumeroServidores": 8,
+    "VencimentoPadrao": 32000.00,
+    "OutrosVencimentos": 28626.60,
+    "RemuneracaoBruta": 60842.20,
+    "Descontos": 864.01,
+    "RemuneracaoLiquida": 29362.84
+  },
+  {
+    "CargoNome": "SUPERVISOR DO CENTRO MULTIUSO",
+    "cd_CargoServidor": 2066,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4000.00,
+    "OutrosVencimentos": 2333.33,
+    "RemuneracaoBruta": 6333.33,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4604.56
+  },
+  {
+    "CargoNome": "SUPERVISOR ESCOLAR - REGIONAL 1",
+    "cd_CargoServidor": 1951,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 4500.00,
+    "RemuneracaoBruta": 10500.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4787.78
+  },
+  {
+    "CargoNome": "SUPERVISOR ESCOLAR - REGIONAL 2",
+    "cd_CargoServidor": 1982,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 3750.00,
+    "RemuneracaoBruta": 8250.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 2705.28
+  },
+  {
+    "CargoNome": "SUPERVISOR ESCOLAR - REGIONAL 3",
+    "cd_CargoServidor": 1983,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4500.00,
+    "OutrosVencimentos": 1275.00,
+    "RemuneracaoBruta": 5775.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4811.70
+  },
+  {
+    "CargoNome": "SUPERVISOR ESCOLAR GERAL",
+    "cd_CargoServidor": 1952,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 4580.05,
+    "OutrosVencimentos": 16278.08,
+    "RemuneracaoBruta": 25406.16,
+    "Descontos": 393.37,
+    "RemuneracaoLiquida": 10735.59
+  },
+  {
+    "CargoNome": "TECNICO DE ENFERMAGEM",
+    "cd_CargoServidor": 711,
+    "NumeroServidores": 279,
+    "VencimentoPadrao": 589745.80,
+    "OutrosVencimentos": 638265.77,
+    "RemuneracaoBruta": 1701429.92,
+    "Descontos": 23138.96,
+    "RemuneracaoLiquida": 1268210.06
+  },
+  {
+    "CargoNome": "TECNICO EM SEGURANCA DO TRABALHO",
+    "cd_CargoServidor": 1816,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2271.15,
+    "OutrosVencimentos": 6171.15,
+    "RemuneracaoBruta": 9942.30,
+    "Descontos": 455.40,
+    "RemuneracaoLiquida": 3220.87
+  },
+  {
+    "CargoNome": "TERAPEUTA OCUPACIONAL",
+    "cd_CargoServidor": 1091,
+    "NumeroServidores": 2,
+    "VencimentoPadrao": 6835.50,
+    "OutrosVencimentos": 7177.28,
+    "RemuneracaoBruta": 14012.78,
+    "Descontos": 372.40,
+    "RemuneracaoLiquida": 10451.46
+  },
+  {
+    "CargoNome": "TMNM I - CONTABILIDADE",
+    "cd_CargoServidor": 789,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2339.29,
+    "OutrosVencimentos": 9089.53,
+    "RemuneracaoBruta": 13322.00,
+    "Descontos": 70.18,
+    "RemuneracaoLiquida": 4530.44
+  },
+  {
+    "CargoNome": "TMNM I - EDIFICACOES",
+    "cd_CargoServidor": 1065,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 2339.29,
+    "OutrosVencimentos": 5339.29,
+    "RemuneracaoBruta": 8958.34,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 3526.37
+  },
+  {
+    "CargoNome": "TMNM I - INFORMATICA",
+    "cd_CargoServidor": 688,
+    "NumeroServidores": 12,
+    "VencimentoPadrao": 26769.31,
+    "OutrosVencimentos": 59768.44,
+    "RemuneracaoBruta": 94994.30,
+    "Descontos": 3558.85,
+    "RemuneracaoLiquida": 36539.37
+  },
+  {
+    "CargoNome": "TURISMOLOGO",
+    "cd_CargoServidor": 1818,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 3179.61,
+    "OutrosVencimentos": 4491.58,
+    "RemuneracaoBruta": 8947.73,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 4454.44
+  },
+  {
+    "CargoNome": "VICE-PREFEITO",
+    "cd_CargoServidor": 194,
+    "NumeroServidores": 1,
+    "VencimentoPadrao": 0.00,
+    "OutrosVencimentos": 23000.00,
+    "RemuneracaoBruta": 46000.00,
+    "Descontos": 0.00,
+    "RemuneracaoLiquida": 13700.64
+  }
+]

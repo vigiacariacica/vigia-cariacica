@@ -1,0 +1,35 @@
+unidade_solicitante,nome,slug,tipo
+SECRETARIA MUNICIPAL DE SAUDE DE CARIACICA,Pedidos registrados pela própria Secretaria de Saúde,secretaria,secretaria
+US JOAQUIM LOVATI SANTA FE,US Santa Fé (Joaquim Lovati),santa-fe,ubs
+US SEBASTIAO GONCALVES NRP II,US Nova Rosa da Penha II (Sebastião Gonçalves),nova-rosa-da-penha-2,ubs
+US PORTO DE SANTANA,US Porto de Santana,porto-de-santana,ubs
+US BELA AURORA,US Bela Aurora,bela-aurora,ubs
+US RIO MARINHO,US Rio Marinho,rio-marinho,ubs
+US JARDIM AMERICA CENTRO DE SAUDE JARDIM AMERICA,US Jardim América,jardim-america,ubs
+US SAO FRANCISCO,US São Francisco,sao-francisco,ubs
+US NOVA BRASILIA,US Nova Brasília,nova-brasilia,ubs
+US CARIACICA SEDE,US Cariacica Sede,cariacica-sede,ubs
+US NOVO BRASIL,US Novo Brasil,novo-brasil,ubs
+US BELA VISTA,US Bela Vista,bela-vista,ubs
+US SANTA BARBARA,US Santa Bárbara,santa-barbara,ubs
+US BAIRRO OPERARIO,US Bairro Operário,bairro-operario,ubs
+USF PADRE GABRIEL,USF Padre Gabriel,padre-gabriel,ubs
+US JARBAS CYPRESTE DE SA JARDIM BOTANICO,US Jardim Botânico (Jarbas Cypreste de Sá),jardim-botanico,ubs
+US ALTO LAGE,US Alto Lage,alto-lage,ubs
+US DE ITAPEMIRIM,US de Itapemirim,itapemirim,ubs
+US SANTANA,US Santana,santana,ubs
+US SOTELANDIA,US Sotelândia,sotelandia,ubs
+US NOVA CANAA FLEXAL I,US Flexal I (Nova Canaã),flexal-1,ubs
+USF DALMACIA PESTANA DE ALMEIDA ITAQUARI,USF Itaquari (Dalmácia Pestana de Almeida),itaquari,ubs
+US VALPARAISO,US Valparaíso,valparaiso,ubs
+US FLEXAL II,US Flexal II,flexal-2,ubs
+US ORIENTE,US Oriente,oriente,ubs
+US CAMPO VERDE,US Campo Verde,campo-verde,ubs
+US DARIO PAIVA SAO GERALDO,US São Geraldo (Dario Paiva),sao-geraldo,ubs
+US VILA GRAUNA,US Vila Graúna,vila-grauna,ubs
+US SAO JOAO BATISTA,US São João Batista,sao-joao-batista,ubs
+US ALICE COUTINHO SANTOS MUCURI,US Mucuri (Alice Coutinho Santos),mucuri,ubs
+US SANTA LUZIA,US Santa Luzia,santa-luzia,ubs
+UBS DURVAL INACIO DA SILVA RETIRO SAUDOSO,UBS Retiro Saudoso (Durval Inácio da Silva),retiro-saudoso,ubs
+CENTRO DE REFERENCIA ISTAIDS CARIACICA,Centro de Referência em IST/Aids,ist-aids,especializado
+CENTRO DE ATENCAO PSICOSSOCIAL INFANTOJUVENIL,CAPS Infantojuvenil,caps-infantojuvenil,especializado

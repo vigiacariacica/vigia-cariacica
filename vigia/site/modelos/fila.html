@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% from "_cat.html" import cat, icone with context %}
+{% block conteudo %}
+<section class="bloco" aria-labelledby="h1">
+  <p class="prot">{{ icone("saude") }} <b>Fila da saúde</b> · {{ fila.mes_texto }}</p>
+  <h1 id="h1" tabindex="-1">{% if u %}{{ u.nome }}{% else %}Quanto tempo se espera no seu posto?{% endif %}</h1>
+  {% if u %}<p><a href="/fila/">← Ver todos os postos</a></p>{% endif %}
+</section>
+
+<div class="grade-2">
+  <section class="folha" aria-label="Números da fila">
+    <p class="prot">{% if u %}Neste posto{% else %}Em toda Cariacica{% endif %}</p>
+    <p class="numero num">{{ br(d.pedidos) }}</p>
+    <p><strong>consultas e exames com especialista esperam vaga.</strong></p>
+    <div class="barras">
+      <div class="barra"><div class="cab"><strong>Metade espera há</strong><span class="v">{{ meses(d.mediana) }}</span></div></div>
+      <div class="barra"><div class="cab"><strong>Esperam há mais de 1 ano</strong><span class="v num">{{ br(d.ano) }}</span></div>
+        <div class="trilho" aria-hidden="true"><i style="width:{{ '%.1f'|format(100 * d.ano / d.pedidos) }}%"></i></div>
+        <small>São {{ de_cada(100 * d.ano / d.pedidos) }} pedidos{% if u %} deste posto{% endif %}.</small></div>
+    </div>
+    {% if u and u.bairro_slug %}<p class="miuda">Este posto fica no bairro <a href="/bairros/{{ u.bairro_slug }}/">{{ u.bairro_nome }}</a>. Veja como está o bairro.</p>{% endif %}
+    <p class="meta">Espera contada até {{ fila.data_ref_texto }}. Metade espera mais de {{ d.mediana }} dias.</p>
+  </section>
+
+  <div class="bloco">
+    <section class="outro" aria-labelledby="h-outro">
+      <p class="prot" id="h-outro">O outro lado</p>
+      <p>A Secretaria de Saúde diz que a fila <strong>não anda por ordem de chegada</strong>. Ela vai pela gravidade de cada caso. E quem marca a consulta é o <strong>governo do Estado</strong>.</p>
+      <p class="meta">Secretaria Municipal de Saúde, Nota Técnica 02/2026, de 16/04/2026.</p>
+    </section>
+    <section class="bloco" aria-labelledby="h-faca">
+      <h2 id="h-faca">O que você pode fazer</h2>
+      <ol class="faca">
+        <li><p><strong>Pergunte na recepção</strong> do seu posto como está o seu pedido.</p></li>
+        <li><p><strong>Espera há mais de 1 ano?</strong> Reclame na Ouvidoria da Saúde. Ligue <span class="fone">162</span> (prefeitura) ou <span class="fone">136</span> (Disque Saúde). Ou pela internet: <a href="https://transparencia.cariacica.es.gov.br/Pedido.Cadastro.aspx?tipoId=34">Ouvidoria da Saúde</a>.</p></li>
+        <li><p><strong>Mande esta página</strong> para quem está esperando.</p></li>
+      </ol>
+    </section>
+  </div>
+</div>
+
+<section class="bloco" aria-labelledby="h-todos">
+  <h2 id="h-todos">Todos os postos</h2>
+  <form class="busca" data-busca-bairro="postos" role="search">
+    <label for="q-postos">Procure o seu posto</label>
+    <input type="search" id="q-postos" autocomplete="off" placeholder="Ex.: Santa Fé">
+    <p class="miuda" data-aviso hidden>Não achamos. Tente outra parte do nome.</p>
+  </form>
+  <div class="ordem" role="group" aria-label="Ordenar os postos">
+    <span>Ordenar por:</span>
+    <button type="button" data-ordem="pedidos" aria-pressed="true">Mais gente esperando</button>
+    <button type="button" data-ordem="mediana" aria-pressed="false">Espera mais longa</button>
+    <button type="button" data-ordem="nome" aria-pressed="false">Nome</button>
+  </div>
+  <ol class="postos" id="postos">
+  {% for x in fila.unidades %}
+    <li data-nomes="{{ x.nome }}" data-nome="{{ x.nome }}" data-pedidos="{{ x.pedidos }}" data-mediana="{{ x.mediana }}"{% if u and x.slug == u.slug %} class="atual"{% endif %}>
+      <div class="linha"><a href="/fila/{{ x.slug }}/">{{ x.nome }}</a><span class="qtd num">{{ br(x.pedidos) }} <small>esperando</small></span></div>
+      <div class="trilho mini" aria-hidden="true"><i class="{{ 'eu' if u and x.slug == u.slug else '' }}" style="width:{{ '%.1f'|format(100 * x.pedidos / max_pedidos) }}%"></i></div>
+      <span class="miuda">Metade espera há {{ meses(x.mediana) }} · {{ br(x.ano) }} há mais de 1 ano</span>
+    </li>
+  {% endfor %}
+  </ol>
+</section>
+
+{% if pergunta_fila %}
+<section class="bloco folha" aria-labelledby="h-fez">
+  <p class="prot" id="h-fez">O que o Vigia já fez</p>
+  <p>Em {{ ddmm(pergunta_fila.enviado) }}, perguntamos à prefeitura: <strong>{{ pergunta_fila.pergunta }}</strong></p>
+  <p><span class="relogio" data-prazo="{{ pergunta_fila.prazo.isoformat() }}" data-respondido="{{ pergunta_fila.respondido_em }}" data-estado="{{ pergunta_fila.estado }}">Prazo: {{ pergunta_fila.prazo.strftime('%d/%m/%Y') }}</span></p>
+</section>
+{% endif %}
+
+{% include "_compartilhar.html" %}
+
+<div class="fonte">
+  <p>Fonte: planilha mensal da fila de espera de consultas e exames com especialista, Secretaria de Saúde de Cariacica, {{ fila.mes_texto }}. Contas do Vigia, sem nenhum dado pessoal.</p>
+  <p>Cada linha da planilha é um pedido de consulta ou exame. A mesma pessoa pode ter mais de um pedido.</p>
+</div>
+{% endblock %}

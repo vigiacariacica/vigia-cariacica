@@ -1,0 +1,14 @@
+[
+  {
+    "Id": 9,
+    "Nome": "Execução"
+  },
+  {
+    "Id": 10,
+    "Nome": "Paralisada"
+  },
+  {
+    "Id": 11,
+    "Nome": "Concluída"
+  }
+]

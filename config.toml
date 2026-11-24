@@ -1,0 +1,92 @@
+# =====================================================================
+#  VIGIA CARIACICA - configuração da coleta do PNCP e das regras R01–R20
+#  Todo limite usado num alerta está aqui, com comentário. Mudou algo?
+#  Registre o motivo em docs/DECISOES.md e na mensagem do commit.
+#  As regras do portal municipal (R21–R25) ficam em vigia/alertas/portal.py.
+# =====================================================================
+
+[projeto]
+municipio_nome = "Cariacica"
+municipio_ibge = "3201308"
+uf = "ES"
+# Esferas analisadas: M = municipal (prefeitura, fundos, câmara, autarquias).
+# Unidades estaduais/federais localizadas em Cariacica ficam de fora.
+esferas = ["M"]
+# CNPJs que sempre entram na coleta, mesmo que a descoberta automática não os ache.
+# 27150549000119 = Município de Cariacica | 13917136000102 = Fundo Municipal de Saúde
+cnpjs_extras = ["27150549000119", "13917136000102"]
+# A partir de quando coletar (AAAA-MM-DD). A Lei 14.133 e o PNCP valem desde 2021,
+# mas a maioria dos municípios só passou a publicar tudo no PNCP a partir de 2023/2024.
+data_inicial = "2023-01-01"
+# Deixe vazio para "até hoje".
+data_final = ""
+
+[vizinhos]
+# Preços pagos pelos vizinhos servem de referência para detectar sobrepreço.
+ativo = true
+# Quantos meses para trás coletar dos vizinhos (coleta pesada: pode levar horas).
+meses = 12
+# 6 = pregão eletrônico, 8 = dispensa. São as modalidades com itens comparáveis.
+modalidades = [6, 8]
+municipios = { "3205309" = "Vitória", "3205200" = "Vila Velha", "3205002" = "Serra", "3205101" = "Viana", "3202405" = "Guarapari", "3202207" = "Fundão" }
+
+[coleta]
+# Pausa entre chamadas (segundos). A API do PNCP bloqueia quem chama rápido demais.
+pausa_segundos = 1.5
+timeout_segundos = 90
+max_tentativas = 6
+# Períodos recentes são baixados de novo a cada execução (dados ainda mudam).
+recoletar_ultimos_dias = 60
+coletar_itens = true
+coletar_resultados = true
+coletar_termos = true
+coletar_atas = true
+coletar_compras_externas = true
+# 1..13 = todas as modalidades do PNCP
+modalidades = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+[apis]
+pncp_consulta = "https://pncp.gov.br/api/consulta"
+pncp = "https://pncp.gov.br/api/pncp"
+# Consulta de CNPJ (dados públicos da Receita). Tenta na ordem.
+cnpj = ["https://brasilapi.com.br/api/cnpj/v1/{cnpj}", "https://minhareceita.org/{cnpj}"]
+transparencia = "https://api.portaldatransparencia.gov.br/api-de-dados"
+# Chave GRATUITA para consultar empresas punidas (CEIS/CNEP).
+# Cadastre em: https://portaldatransparencia.gov.br/api-de-dados/cadastrar-email
+# NUNCA escreva a chave aqui (o repositório será público): no GitHub ela fica no segredo
+# CHAVE_TRANSPARENCIA (Settings > Secrets and variables > Actions).
+chave_transparencia = ""
+
+[alertas]
+# Sobrepreço: preço pago x mediana dos preços de referência
+sobrepreco_fator_medio = 1.5
+sobrepreco_fator_alto = 2.0
+sobrepreco_min_referencias = 3
+sobrepreco_min_orgaos = 2
+sobrepreco_min_excesso_reais = 5000
+sobrepreco_janela_meses = 18
+sobrepreco_similaridade = 0.6
+sobrepreco_apenas_materiais = true
+# Aditivos (art. 125 da Lei 14.133)
+aditivo_limite = 0.25
+aditivo_limite_reforma = 0.50
+aditivo_atencao = 0.20
+aditivo_muitos_termos = 4
+# Empresas
+empresa_nova_dias = 180
+empresa_nova_dias_grave = 90
+empresa_nova_valor_grave = 200000
+capital_minimo_pct = 0.05
+capital_valor_minimo = 200000
+mei_limite_anual = 81000
+# Licitação
+desconto_minimo = 0.03
+desconto_critico = 0.01
+desconto_valor_minimo = 100000
+fracionamento_similaridade = 0.5
+concentracao_pct = 0.30
+concentracao_valor_minimo = 1000000
+
+[ia]
+# Opcional e só local: segunda opinião por IA sobre um alerta (precisa de ANTHROPIC_API_KEY).
+modelo = "claude-sonnet-5-5"

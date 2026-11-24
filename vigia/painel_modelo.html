@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vigia __MUNICIPIO__ · Painel</title>
+<style>
+:root{
+  color-scheme: light;
+  --plano:#f9f9f7; --superficie:#fcfcfb; --superficie-2:#f3f2ee;
+  --tinta:#0b0b0b; --tinta-2:#52514e; --tinta-3:#898781;
+  --borda:rgba(11,11,11,.10); --grade:#e1e0d9; --base:#c3c2b7;
+  --serie:#2a78d6; --serie-forte:#1c5cab;
+  --critico:#d03b3b; --serio:#ec835a; --aviso:#fab219; --bom:#0ca30c;
+  --critico-fundo:#fbe7e7; --serio-fundo:#fdeee7; --aviso-fundo:#fef5df;
+  --raio:10px;
+}
+@media (prefers-color-scheme: dark){
+  :root:where(:not([data-theme="light"])){
+    color-scheme: dark;
+    --plano:#0d0d0d; --superficie:#1a1a19; --superficie-2:#232321;
+    --tinta:#f0efec; --tinta-2:#c3c2b7; --tinta-3:#898781;
+    --borda:rgba(255,255,255,.10); --grade:#2c2c2a; --base:#383835;
+    --serie:#3987e5; --serie-forte:#86b6ef;
+    --critico-fundo:#3a1d1d; --serio-fundo:#3a261d; --aviso-fundo:#3a311a;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --plano:#0d0d0d; --superficie:#1a1a19; --superficie-2:#232321;
+  --tinta:#f0efec; --tinta-2:#c3c2b7; --tinta-3:#898781;
+  --borda:rgba(255,255,255,.10); --grade:#2c2c2a; --base:#383835;
+  --serie:#3987e5; --serie-forte:#86b6ef;
+  --critico-fundo:#3a1d1d; --serio-fundo:#3a261d; --aviso-fundo:#3a311a;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--plano);color:var(--tinta);
+  font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--serie-forte)}
+.pagina{max-width:1240px;margin:0 auto;padding:24px 16px 64px}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between;margin-bottom:16px}
+h1{font-size:26px;margin:0;letter-spacing:-.01em}
+.sub{color:var(--tinta-2);font-size:13px}
+.aviso-topo{background:var(--aviso-fundo);border:1px solid var(--borda);border-left:4px solid var(--aviso);
+  border-radius:var(--raio);padding:10px 14px;font-size:14px;margin-bottom:20px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:20px}
+.tile{background:var(--superficie);border:1px solid var(--borda);border-radius:var(--raio);padding:14px 16px}
+.tile .rot{font-size:12px;color:var(--tinta-2);text-transform:uppercase;letter-spacing:.04em}
+.tile .val{font-size:26px;font-weight:650;margin-top:2px}
+.tile .det{font-size:12px;color:var(--tinta-3)}
+.abas{display:flex;gap:4px;border-bottom:1px solid var(--grade);margin:8px 0 16px;overflow-x:auto}
+.abas button{background:none;border:0;border-bottom:2px solid transparent;padding:10px 14px;font:inherit;
+  color:var(--tinta-2);cursor:pointer;white-space:nowrap}
+.abas button[aria-selected="true"]{color:var(--tinta);border-bottom-color:var(--serie);font-weight:600}
+.cartao{background:var(--superficie);border:1px solid var(--borda);border-radius:var(--raio);padding:16px;margin-bottom:16px}
+.cartao h2{font-size:15px;margin:0 0 12px}
+.grafico{display:grid;grid-template-columns:minmax(140px,300px) 1fr;gap:6px 12px;align-items:center}
+.grafico .nome{font-size:13px;color:var(--tinta-2);text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.grafico .trilho{position:relative;height:22px;cursor:pointer}
+.grafico .barra{position:absolute;left:0;top:3px;height:16px;background:var(--serie);border-radius:0 4px 4px 0;min-width:2px}
+.grafico .trilho:hover .barra,.grafico .trilho.ativo .barra{background:var(--serie-forte)}
+.grafico .num{position:absolute;top:1px;font-size:12px;color:var(--tinta-2);font-variant-numeric:tabular-nums}
+.dica{position:fixed;pointer-events:none;background:var(--superficie);color:var(--tinta);border:1px solid var(--borda);
+  box-shadow:0 4px 16px rgba(0,0,0,.12);border-radius:8px;padding:8px 10px;font-size:12px;display:none;z-index:9}
+.filtros{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.filtros input,.filtros select{font:inherit;font-size:14px;padding:7px 10px;border:1px solid var(--borda);
+  border-radius:8px;background:var(--superficie);color:var(--tinta);min-width:0}
+.filtros input{flex:1 1 220px}
+.filtros button{font:inherit;font-size:14px;padding:7px 12px;border-radius:8px;border:1px solid var(--borda);
+  background:var(--superficie-2);color:var(--tinta);cursor:pointer}
+.contagem{font-size:13px;color:var(--tinta-2);margin-bottom:8px}
+.alerta{background:var(--superficie);border:1px solid var(--borda);border-radius:var(--raio);margin-bottom:8px;overflow:hidden}
+.alerta>summary{list-style:none;cursor:pointer;padding:12px 14px;display:grid;
+  grid-template-columns:auto 1fr auto;gap:4px 12px;align-items:start}
+.alerta>summary::-webkit-details-marker{display:none}
+.alerta[open]>summary{border-bottom:1px solid var(--grade)}
+.selo{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;
+  white-space:nowrap}
+.selo i{font-style:normal}
+.selo.alta{background:var(--critico-fundo);color:var(--tinta)}.selo.alta i{color:var(--critico)}
+.selo.media{background:var(--serio-fundo);color:var(--tinta)}.selo.media i{color:var(--serio)}
+.selo.baixa{background:var(--aviso-fundo);color:var(--tinta)}.selo.baixa i{color:#b37a00}
+.alerta .tit{font-weight:600}
+.alerta .meta{grid-column:2;font-size:13px;color:var(--tinta-2)}
+.alerta .valor{text-align:right;font-variant-numeric:tabular-nums;font-size:14px;white-space:nowrap}
+.alerta .valor small{display:block;color:var(--tinta-3);font-size:11px}
+.corpo{padding:14px 16px;display:grid;gap:14px}
+.corpo h3{font-size:13px;margin:0 0 4px;text-transform:uppercase;letter-spacing:.04em;color:var(--tinta-2)}
+.corpo p,.corpo ul{margin:0}.corpo ul{padding-left:18px}
+.duas{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--grade);vertical-align:top}
+th{font-weight:600;color:var(--tinta-2);background:var(--superficie-2);position:sticky;top:0;cursor:pointer;user-select:none}
+td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.pago td{background:var(--critico-fundo)}
+.rolagem{overflow-x:auto;max-height:70vh}
+code{background:var(--superficie-2);padding:2px 6px;border-radius:6px;font-size:12px;word-break:break-all}
+.status{font-size:12px;color:var(--tinta-2)}
+.vazio{padding:32px;text-align:center;color:var(--tinta-2)}
+.metodo p{margin:0 0 10px}
+@media (max-width:720px){
+  .grafico{grid-template-columns:110px 1fr}
+  .alerta>summary{grid-template-columns:1fr}
+  .alerta .meta{grid-column:1}.alerta .valor{text-align:left}
+  .duas{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="pagina">
+  <header>
+    <div>
+      <h1>Vigia __MUNICIPIO__</h1>
+      <div class="sub" id="sub"></div>
+    </div>
+    <div class="sub">Dados públicos do PNCP, Receita Federal e CGU</div>
+  </header>
+
+  <div class="aviso-topo"><strong>Alertas são indícios, não provas.</strong>
+    Cada um aponta algo que merece ser conferido no processo original. Há explicações legítimas para muitos deles.
+    Antes de falar publicamente sobre qualquer caso, siga o protocolo de verificação.</div>
+
+  <div class="tiles" id="tiles"></div>
+
+  <nav class="abas" role="tablist">
+    <button role="tab" aria-selected="true" data-aba="alertas">Alertas</button>
+    <button role="tab" aria-selected="false" data-aba="fornecedores">Fornecedores</button>
+    <button role="tab" aria-selected="false" data-aba="orgaos">Órgãos</button>
+    <button role="tab" aria-selected="false" data-aba="metodo">Como ler</button>
+  </nav>
+
+  <section id="aba-alertas">
+    <div class="cartao">
+      <h2>Alertas por tipo <span class="sub">(clique numa barra para filtrar)</span></h2>
+      <div class="grafico" id="grafico"></div>
+    </div>
+    <div class="filtros">
+      <input id="f-busca" type="search" placeholder="Buscar fornecedor, objeto, CNPJ...">
+      <select id="f-grav"><option value="">Todas as gravidades</option>
+        <option value="alta">Alta</option><option value="media">Média</option><option value="baixa">Baixa</option></select>
+      <select id="f-regra"><option value="">Todos os tipos</option></select>
+      <select id="f-orgao"><option value="">Todos os órgãos</option></select>
+      <select id="f-ano"><option value="">Todos os anos</option></select>
+      <select id="f-status"><option value="">Todos os status</option>
+        <option value="novo">Novo</option><option value="em_analise">Em análise</option>
+        <option value="confirmado">Confirmado</option><option value="denunciado">Denunciado</option>
+        <option value="descartado">Descartado</option></select>
+      <button id="f-limpar" type="button">Limpar</button>
+    </div>
+    <div class="contagem" id="contagem"></div>
+    <div id="lista"></div>
+  </section>
+
+  <section id="aba-fornecedores" hidden>
+    <div class="filtros"><input id="f-forn" type="search" placeholder="Buscar fornecedor ou CNPJ..."></div>
+    <div class="cartao rolagem"><table id="t-forn"></table></div>
+  </section>
+
+  <section id="aba-orgaos" hidden>
+    <div class="cartao rolagem"><table id="t-org"></table></div>
+  </section>
+
+  <section id="aba-metodo" hidden>
+    <div class="cartao metodo" id="metodo"></div>
+  </section>
+</div>
+<div class="dica" id="dica"></div>
+
+<script>
+const D = /*__DADOS__*/null;
+const $ = s => document.querySelector(s);
+const el = (tag, props = {}, ...filhos) => {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(props)) {
+    if (k === "class") e.className = v; else if (k === "text") e.textContent = v;
+    else if (k.startsWith("on")) e.addEventListener(k.slice(2), v); else e.setAttribute(k, v);
+  }
+  for (const f of filhos) if (f != null) e.append(f instanceof Node ? f : document.createTextNode(String(f)));
+  return e;
+};
+const brl = v => v == null || isNaN(v) ? "-" :
+  Number(v).toLocaleString("pt-BR", {style: "currency", currency: "BRL", maximumFractionDigits: 2});
+const brlCurto = v => {
+  if (v == null) return "-"; const a = Math.abs(v);
+  if (a >= 1e9) return "R$ " + (v / 1e9).toLocaleString("pt-BR", {maximumFractionDigits: 1}) + " bi";
+  if (a >= 1e6) return "R$ " + (v / 1e6).toLocaleString("pt-BR", {maximumFractionDigits: 1}) + " mi";
+  if (a >= 1e3) return "R$ " + (v / 1e3).toLocaleString("pt-BR", {maximumFractionDigits: 0}) + " mil";
+  return brl(v);
+};
+const dataBR = s => s ? String(s).slice(0, 10).split("-").reverse().join("/") : "-";
+const GRAV = {alta: ["Alta", "▲"], media: ["Média", "●"], baixa: ["Baixa", "◆"]};
+const STATUS = {novo: "Novo", em_analise: "Em análise", confirmado: "Confirmado", denunciado: "Denunciado", descartado: "Descartado"};
+const selo = g => el("span", {class: "selo " + g}, el("i", {text: GRAV[g][1], "aria-hidden": "true"}), GRAV[g][0]);
+const E = D.estatisticas;
+
+$("#sub").textContent = `Gerado em ${E.gerado_em} · contratações de ${dataBR(E.periodo[0])} a ${dataBR(E.periodo[1])}` +
+  (E.ultima_coleta ? ` · última coleta ${E.ultima_coleta}` : "");
+
+// ---------- tiles
+const cont = {alta: 0, media: 0, baixa: 0};
+D.alertas.forEach(a => cont[a.gravidade]++);
+const tiles = [
+  ["Contratado (analisado)", brlCurto(E.valor_contratos), `${E.contratos.toLocaleString("pt-BR")} contratos`],
+  ["Contratações", E.contratacoes.toLocaleString("pt-BR"), `${E.itens.toLocaleString("pt-BR")} itens`],
+  ["Fornecedores", E.fornecedores.toLocaleString("pt-BR"), "com contrato"],
+];
+for (const [r, v, d] of tiles) $("#tiles").append(el("div", {class: "tile"}, el("div", {class: "rot", text: r}),
+  el("div", {class: "val", text: v}), el("div", {class: "det", text: d})));
+$("#tiles").append(el("div", {class: "tile"}, el("div", {class: "rot", text: "Alertas"}),
+  el("div", {class: "val", text: D.alertas.length.toLocaleString("pt-BR")}),
+  el("div", {class: "det contagens"}, ...["alta", "media", "baixa"].map(g =>
+    el("span", {style: "white-space:nowrap;margin-right:8px"}, selo(g), " ", cont[g])))));
+$("#tiles").append(el("div", {class: "tile"}, el("div", {class: "rot", text: "Excesso estimado em preços"}),
+  el("div", {class: "val", text: brlCurto(E.excesso_estimado)}),
+  el("div", {class: "det", text: "estimativa a confirmar (R01/R02)"})));
+
+// ---------- filtros
+const regrasUsadas = [...new Set(D.alertas.map(a => a.regra))].sort();
+regrasUsadas.forEach(r => $("#f-regra").append(el("option", {value: r, text: `${r} · ${D.regras[r].nome}`})));
+const orgaosUsados = [...new Set(D.alertas.map(a => a.nome_orgao).filter(Boolean))].sort();
+orgaosUsados.forEach(o => $("#f-orgao").append(el("option", {value: o, text: o})));
+const anos = [...new Set(D.alertas.map(a => (a.data_referencia || "").slice(0, 4)).filter(Boolean))].sort().reverse();
+anos.forEach(a => $("#f-ano").append(el("option", {value: a, text: a})));
+
+function filtrados() {
+  const b = $("#f-busca").value.trim().toLowerCase(), g = $("#f-grav").value, r = $("#f-regra").value,
+    o = $("#f-orgao").value, a = $("#f-ano").value, s = $("#f-status").value;
+  return D.alertas.filter(x => (!g || x.gravidade === g) && (!r || x.regra === r) && (!o || x.nome_orgao === o)
+    && (!a || (x.data_referencia || "").startsWith(a)) && (!s || x.status === s)
+    && (!b || [x.titulo, x.resumo, x.nome_fornecedor, x.ni_fornecedor, x.doc_fornecedor, x.nome_orgao, x.id]
+      .join(" ").toLowerCase().includes(b)));
+}
+
+// ---------- gráfico
+function desenharGrafico() {
+  const base = D.alertas.filter(x => (!$("#f-grav").value || x.gravidade === $("#f-grav").value)
+    && (!$("#f-orgao").value || x.nome_orgao === $("#f-orgao").value));
+  const por = {};
+  base.forEach(a => { por[a.regra] = por[a.regra] || {total: 0, alta: 0, media: 0, baixa: 0};
+    por[a.regra].total++; por[a.regra][a.gravidade]++; });
+  const lista = Object.entries(por).sort((a, b) => b[1].total - a[1].total);
+  const max = Math.max(1, ...lista.map(x => x[1].total));
+  const g = $("#grafico"); g.replaceChildren();
+  if (!lista.length) { g.append(el("div", {class: "vazio", text: "Nenhum alerta"})); return; }
+  for (const [r, c] of lista) {
+    const pct = c.total / max * 88;
+    const trilho = el("div", {class: "trilho" + ($("#f-regra").value === r ? " ativo" : ""), role: "button",
+      tabindex: "0", "aria-label": `${D.regras[r].nome}: ${c.total} alertas`});
+    trilho.append(el("div", {class: "barra", style: `width:${pct}%`}),
+      el("span", {class: "num", style: `left:calc(${pct}% + 6px)`, text: c.total}));
+    const mostrar = ev => { const d = $("#dica"); d.replaceChildren(el("strong", {text: `${r} · ${D.regras[r].nome}`}),
+      el("br"), `Alta ${c.alta} · Média ${c.media} · Baixa ${c.baixa}`); d.style.display = "block";
+      d.style.left = Math.min(ev.clientX + 14, innerWidth - 280) + "px"; d.style.top = ev.clientY + 14 + "px"; };
+    trilho.addEventListener("mousemove", mostrar);
+    trilho.addEventListener("mouseleave", () => $("#dica").style.display = "none");
+    const escolher = () => { $("#f-regra").value = $("#f-regra").value === r ? "" : r; atualizar(); };
+    trilho.addEventListener("click", escolher);
+    trilho.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); escolher(); } });
+    g.append(el("div", {class: "nome", title: D.regras[r].nome, text: `${D.regras[r].nome}`}), trilho);
+  }
+}
+
+// ---------- lista de alertas
+const COLS_EV = {
+  preco_pago: null, referencia: ["orgao", "municipio", "data", "descricao", "unidade", "quantidade", "preco", "fornecedor"],
+};
+const ROT = {orgao: "Órgão", municipio: "Município", data: "Data", descricao: "Descrição", unidade: "Un.",
+  quantidade: "Qtd.", preco: "Preço unit.", fornecedor: "Fornecedor", objeto: "Objeto", valor: "Valor",
+  valor_inicial: "Valor inicial", valor_global: "Valor global", valor_acrescido: "Acrescido", numero: "Número",
+  tipo_termo: "Tipo", data_assinatura: "Assinatura", assinatura: "Assinatura", prazo_aditado_dias: "Prazo +dias",
+  amparo: "Amparo", fornecedores: "Fornecedores", estimado: "Estimado", homologado: "Homologado", itens: "Itens",
+  modalidade: "Modalidade", nome: "Nome", cnpj: "CNPJ", total_recebido: "Total recebido", qualificacao: "Qualificação",
+  cargo: "Cargo", lotacao: "Lotação", abertura: "Abertura", capital_social: "Capital social", cnae: "Atividade",
+  endereco: "Endereço", cadastro: "Cadastro", orgao_sancionador: "Órgão sancionador", data_inicio: "Início",
+  data_fim: "Fim", telefone: "Telefone", "e-mail": "E-mail", "endereço": "Endereço", link: "Fonte", tipo: "Tipo"};
+const MOEDA = new Set(["preco", "valor", "valor_inicial", "valor_global", "valor_acrescido", "estimado", "homologado",
+  "total_recebido", "capital_social"]);
+
+function tabelaEvidencias(evs) {
+  if (!evs.length) return null;
+  const chaves = [];
+  evs.forEach(e => Object.keys(e).forEach(k => { if (!chaves.includes(k) && k !== "id_contrato" && k !== "cnpj") chaves.push(k); }));
+  const usar = chaves.filter(k => evs.some(e => e[k] != null && e[k] !== ""));
+  const t = el("table");
+  t.append(el("tr", {}, ...usar.map(k => el("th", {text: ROT[k] || k}))));
+  for (const e of evs) {
+    const tr = el("tr", {class: e.tipo === "preco_pago" ? "pago" : ""});
+    for (const k of usar) {
+      const v = e[k];
+      if (k === "link" && v) tr.append(el("td", {}, el("a", {href: v, target: "_blank", rel: "noopener", text: "abrir"})));
+      else if (k === "tipo") tr.append(el("td", {text: {preco_pago: "PAGO", referencia: "referência"}[v] || v}));
+      else if (MOEDA.has(k)) tr.append(el("td", {class: "n", text: brl(v)}));
+      else if (k.includes("data") || k === "assinatura" || k === "abertura") tr.append(el("td", {class: "n", text: dataBR(v)}));
+      else if (typeof v === "number") tr.append(el("td", {class: "n", text: v.toLocaleString("pt-BR")}));
+      else tr.append(el("td", {text: v == null ? "" : String(v)}));
+    }
+    t.append(tr);
+  }
+  return el("div", {class: "rolagem"}, t);
+}
+
+function cartaoAlerta(a) {
+  const r = D.regras[a.regra];
+  const det = el("details", {class: "alerta"});
+  det.append(el("summary", {},
+    selo(a.gravidade),
+    el("div", {}, el("div", {class: "tit", text: a.titulo})),
+    el("div", {class: "valor"}, a.valor_excesso ? brl(a.valor_excesso) : brl(a.valor_envolvido),
+      el("small", {text: a.valor_excesso ? "excesso estimado" : "valor envolvido"})),
+    el("div", {class: "meta", text: [a.regra + " · " + r.nome, a.nome_orgao, a.nome_fornecedor &&
+      (a.nome_fornecedor + (a.doc_fornecedor ? " (" + a.doc_fornecedor + ")" : "")),
+      a.data_referencia ? dataBR(a.data_referencia) : null,
+      STATUS[a.status] || a.status].filter(Boolean).join(" · ")})));
+  det.addEventListener("toggle", () => {
+    if (!det.open || det.dataset.pronto) return; det.dataset.pronto = 1;
+    const corpo = el("div", {class: "corpo"});
+    corpo.append(el("div", {}, el("h3", {text: "O que foi encontrado"}), el("p", {text: a.resumo})));
+    corpo.append(el("div", {class: "duas"},
+      el("div", {}, el("h3", {text: "Por que importa"}), el("p", {text: r.porque}),
+        el("p", {class: "status", text: "Base legal: " + r.base_legal})),
+      el("div", {}, el("h3", {text: "Como verificar"}), el("ul", {}, ...r.verificar.map(v => el("li", {text: v}))),
+        el("h3", {text: "Pode ser legítimo se", style: "margin-top:10px"}),
+        el("ul", {}, ...r.legitimas.map(v => el("li", {text: v}))))));
+    const tab = tabelaEvidencias(a.evidencias || []);
+    if (tab) corpo.append(el("div", {}, el("h3", {text: "Evidências (dados públicos)"}), tab));
+    if (a.links && a.links.length) corpo.append(el("div", {}, el("h3", {text: "Fontes oficiais"}),
+      el("ul", {}, ...a.links.map(l => el("li", {}, el("a", {href: l, target: "_blank", rel: "noopener", text: l}))))));
+    corpo.append(el("div", {class: "status"}, el("h3", {text: "Acompanhamento"}),
+      el("p", {text: `Status: ${STATUS[a.status] || a.status}${a.nota ? " · Nota: " + a.nota : ""}`}),
+      el("p", {}, "Gerar dossiê: ", el("code", {text: `python vigia.py dossie ${a.id}`})),
+      el("p", {}, "Marcar: ", el("code", {text: `python vigia.py marcar ${a.id} em_analise "sua nota"`}))));
+    det.append(corpo);
+  });
+  return det;
+}
+
+let limite = 100;
+function atualizar() {
+  const lista = filtrados();
+  $("#contagem").textContent = `${lista.length.toLocaleString("pt-BR")} alertas` +
+    (lista.length > limite ? ` · mostrando os ${limite} mais graves` : "");
+  const caixa = $("#lista"); caixa.replaceChildren();
+  if (!lista.length) caixa.append(el("div", {class: "cartao vazio", text: "Nenhum alerta com esses filtros."}));
+  lista.slice(0, limite).forEach(a => caixa.append(cartaoAlerta(a)));
+  if (lista.length > limite) caixa.append(el("button", {type: "button", class: "", style: "margin-top:8px",
+    onclick: () => { limite += 200; atualizar(); }, text: "Mostrar mais"}));
+  desenharGrafico();
+}
+["#f-busca", "#f-grav", "#f-regra", "#f-orgao", "#f-ano", "#f-status"].forEach(s =>
+  $(s).addEventListener("input", () => { limite = 100; atualizar(); }));
+$("#f-limpar").addEventListener("click", () => {
+  ["#f-busca", "#f-grav", "#f-regra", "#f-orgao", "#f-ano", "#f-status"].forEach(s => $(s).value = ""); atualizar(); });
+
+// ---------- tabelas simples ordenáveis
+function tabela(destino, colunas, linhas) {
+  let ordem = null, asc = false;
+  function render() {
+    const t = $(destino); t.replaceChildren();
+    const ls = [...linhas];
+    if (ordem) ls.sort((a, b) => { const x = a[ordem], y = b[ordem];
+      return (x > y ? 1 : x < y ? -1 : 0) * (asc ? 1 : -1); });
+    t.append(el("tr", {}, ...colunas.map(([k, rot]) => el("th", {text: rot + (ordem === k ? (asc ? " ▲" : " ▼") : ""),
+      onclick: () => { asc = ordem === k ? !asc : false; ordem = k; render(); }}))));
+    for (const l of ls.slice(0, 1500)) t.append(el("tr", {}, ...colunas.map(([k, , fmt]) =>
+      el("td", {class: fmt && fmt !== "t" ? "n" : "", text: fmt === "r" ? brl(l[k]) : fmt === "d" ? dataBR(l[k]) :
+        l[k] == null ? "" : String(l[k])}))));
+  }
+  render();
+  return linhas;
+}
+const fornLinhas = D.fornecedores;
+function renderForn() {
+  const b = $("#f-forn").value.trim().toLowerCase();
+  tabela("#t-forn", [["nome", "Fornecedor", "t"], ["doc", "CNPJ/CPF", "t"], ["n", "Contratos"], ["total", "Total contratado", "r"],
+    ["alertas", "Alertas"], ["pontos", "Pontos"], ["data_abertura", "Abertura", "d"], ["capital_social", "Capital", "r"],
+    ["situacao", "Situação", "t"], ["municipio", "Cidade", "t"]],
+    fornLinhas.filter(f => !b || (f.nome + " " + f.ni + " " + f.doc).toLowerCase().includes(b)));
+}
+$("#f-forn").addEventListener("input", renderForn);
+renderForn();
+tabela("#t-org", [["razao_social", "Órgão", "t"], ["cnpj", "CNPJ", "t"], ["n_compras", "Contratações"],
+  ["n_contratos", "Contratos"], ["total", "Total contratado", "r"]], D.orgaos);
+
+// ---------- método
+const m = $("#metodo");
+m.append(el("h2", {text: "Como ler este painel"}),
+  el("p", {text: "O sistema baixa as contratações publicadas pelos órgãos municipais no PNCP, os contratos, os aditivos, os itens comprados e o preço pago por item. Depois cruza com dados da Receita Federal sobre as empresas, com cadastros de empresas punidas e com os preços pagos por municípios vizinhos."}),
+  el("p", {text: "Cada regra procura um padrão conhecido de irregularidade. Gravidade alta significa que vários sinais coincidem ou que o desvio é grande. Gravidade baixa é informativa."}),
+  el("p", {text: "O que o sistema NÃO vê: pagamentos efetivos (empenho, liquidação), notas fiscais, se o produto foi entregue, participantes que perderam a licitação, e compras que a prefeitura não publicou no PNCP. Para isso use pedidos pela Lei de Acesso à Informação."}),
+  el("h2", {text: "Tipos de alerta", style: "margin-top:16px"}));
+const tr = el("table");
+tr.append(el("tr", {}, el("th", {text: "Código"}), el("th", {text: "Alerta"}), el("th", {text: "Por que importa"})));
+Object.entries(D.regras).forEach(([k, r]) => tr.append(el("tr", {}, el("td", {text: k}), el("td", {text: r.nome}), el("td", {text: r.porque}))));
+m.append(tr);
+
+// ---------- abas
+document.querySelectorAll(".abas button").forEach(b => b.addEventListener("click", () => {
+  document.querySelectorAll(".abas button").forEach(x => x.setAttribute("aria-selected", x === b));
+  document.querySelectorAll("section[id^=aba-]").forEach(s => s.hidden = s.id !== "aba-" + b.dataset.aba);
+}));
+atualizar();
+</script>
+</body>
+</html>

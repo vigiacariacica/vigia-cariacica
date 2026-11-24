@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% from "_cat.html" import cat, icone with context %}
+{% block conteudo %}
+<section class="bloco" aria-labelledby="h1">
+  <p class="prot"><b>Maiores problemas</b> · com fonte oficial</p>
+  <h1 id="h1" tabindex="-1">Os maiores problemas de Cariacica</h1>
+  <p class="lead">Escolhemos {{ problemas|length }}. São os que atingem mais gente, fazem mais estrago e podem ser resolvidos pela cidade.</p>
+  <div class="oque"><b>O que já fizemos</b><p>Para cada problema, fizemos perguntas oficiais com prazo e mostramos os números. Quem conserta é a prefeitura. Quando algo mudar de verdade, aparece no <a href="/#h-mudou">placar</a>.</p></div>
+</section>
+
+<ol class="lista-problemas grade-2">
+{% for x in problemas %}
+  <li>
+    <a class="problema-cartao" href="/problemas/{{ x.slug }}/">
+      {{ cat(x.cat, categorias[x.cat][0] ~ " · " ~ loop.index ~ " de " ~ problemas|length) }}
+      <b class="titulo">{{ x.titulo }}</b>
+      <span class="numero num">{{ x.numero }}</span>
+      <span class="t">{{ x.legenda }}</span>
+      <span class="mais">{% if x.perg %}{{ x.perg|length }} {{ "pergunta" if x.perg|length == 1 else "perguntas" }} do Vigia · {% endif %}Ver o problema →</span>
+    </a>
+  </li>
+{% endfor %}
+</ol>
+
+{% include "_compartilhar.html" %}
+<p class="fonte">Como escolhemos: muita gente atingida, dano grave e o quanto a cidade pode resolver. Números conferidos na fonte original em novembro de 2026. Fila, esgoto e contratos de emergência se atualizam sozinhos com os dados oficiais. A fonte de cada número está na página do problema.</p>
+{% endblock %}
