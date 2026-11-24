@@ -1,13 +1,13 @@
 # Qualidade dos dados
 
-_Última execução: 2026-11-15T07:21:58Z (UTC). Gerado automaticamente; regras em `vigia/qualidade.py`._
+_Última execução: 2026-11-24T16:41:05Z (UTC). Gerado automaticamente; regras em `vigia/qualidade.py`._
 
 **Status:** ❌ há problemas (ver abaixo)
 
-- Checagens feitas: 471 · falharam: 3 (bloqueantes: 0)
-- Fontes que não responderam: pncp (compras externas: 3 sem resposta)
-- Fora do ar há pouco tempo (bloqueio ou queda da fonte, sem alarme): pncp, vizinhos (histórico em `data/qualidade/fontes_fora.csv`)
-- Arquivos crus baixados hoje: 4 (hash SHA-256 em `data/qualidade/manifesto.csv`)
+- Checagens feitas: 876 · falharam: 12 (bloqueantes: 0)
+- Fontes que não responderam: externos
+- Fora do ar há pouco tempo (bloqueio ou queda da fonte, sem alarme): tesouro (histórico em `data/qualidade/fontes_fora.csv`)
+- Arquivos crus baixados hoje: 122 (hash SHA-256 em `data/qualidade/manifesto.csv`)
 
 Quando uma checagem bloqueante falha, o arquivo novo **não** é gravado: fica a versão anterior.
 
@@ -15,9 +15,18 @@ Quando uma checagem bloqueante falha, o arquivo novo **não** é gravado: fica a
 
 | Arquivo | Regra | Bloqueante | Detalhe |
 |---|---|---|---|
-| https://pncp.gov.br/api/pncp/v1/orgaos/00489828000155/compras/2024/59 | resposta_http | não | HTTP 0 |
-| https://pncp.gov.br/api/pncp/v1/orgaos/00536717000152/compras/2025/22 | resposta_http | não | HTTP 0 |
-| https://pncp.gov.br/api/pncp/v1/orgaos/02618132000107/compras/2025/24 | resposta_http | não | HTTP 0 |
+| emendas/anos | ano_fora_da_lista | não | a lista de anos da prefeitura não traz 2025, 2026; consultado(s) mesmo assim |
+| emendas_2025.csv | erro_na_fonte | não | emendas/csv?exercicio=2025 respondeu HTTP 500 { "Message": "An error has occurred." }; a prefeitura precisa corrigir; nada gravado |
+| emendas_2026.csv | erro_na_fonte | não | emendas/csv?exercicio=2026 respondeu HTTP 500 { "Message": "An error has occurred." }; a prefeitura precisa corrigir; nada gravado |
+| emendas_2027.csv | ano_no_futuro | não | a prefeitura lista emendas no exercício 2027 (provavelmente data de validade digitada como ano) |
+| emendas_2031.csv | ano_no_futuro | não | a prefeitura lista emendas no exercício 2031 (provavelmente data de validade digitada como ano) |
+| obras_2026.csv | sem_dados | não | a prefeitura respondeu 'sem dados' para as obras de 2026; nada gravado |
+| diarias | pseudonimo_sem_segredo | não | segredo VIGIA_SAL_PSEUDONIMO ausente: a coluna IdBeneficiario fica vazia (nome e CPF nunca são gravados) |
+| vinculos.csv | folha_nominal_adiada | não | 2026/8: HTTPError: 524 Server Error: <none> for url: https://wstransparencia.cariacica.es.gov.br/ap; tenta de novo amanhã |
+| vinculos.csv | folha_nominal_adiada | não | 2026/7: HTTPError: 524 Server Error: <none> for url: https://wstransparencia.cariacica.es.gov.br/ap; tenta de novo amanhã |
+| vinculos.csv | folha_nominal_adiada | não | 2026/4: HTTPError: 524 Server Error: <none> for url: https://wstransparencia.cariacica.es.gov.br/ap; tenta de novo amanhã |
+| vinculos.csv | folha_nominal_x_cargos | não | 2026/10: 8849 matrículas na folha nominal x 9063 na consulta por cargo (-2.4%) |
+| fila_resumo_mensal.csv | links_da_fila | não | página da fila fora para o robô e nenhum link guardado |
 
 ## Conciliação: portal da prefeitura x Tesouro (Siconfi)
 
@@ -34,15 +43,6 @@ Total empenhado no ano, em R$ milhões. As duas fontes são da própria prefeitu
 | 2025 | 1.695,8 | 1.713,8 | -1,05% | ✅ |
 
 A diferença de cerca de 1% se repete em todos os anos (classificação por área difere entre as duas bases). Uma mudança brusca nesse padrão é o sinal de alerta.
-
-## Exclusões aplicadas pelas regras
-
-Casos que uma regra deixou de fora de propósito, listados para que a exclusão possa ser conferida.
-
-| Regra | Detalhe |
-|---|---|
-| R25 | BANCO DO BRASIL SA (00.000.000/1143-67): R$ 1.095.651,75 pagos depois da eleição; fora porque o vínculo com a campanha é obrigação legal ou monopólio (banco, concessionária, Correios) ou órgão público |
-| R25 | EDP ESPIRITO SANTO DISTRIBUICAO DE ENERGIA S.A. (28.152.650/0001-71): R$ 34.583.298,42 pagos depois da eleição; fora porque o vínculo com a campanha é obrigação legal ou monopólio (banco, concessionária, Correios) ou órgão público |
 
 ## Dados antigos que mudaram depois de publicados
 
