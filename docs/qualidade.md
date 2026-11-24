@@ -1,6 +1,6 @@
 # Qualidade dos dados
 
-_Última execução: 2026-11-24T18:11:10Z (UTC). Gerado automaticamente; regras em `vigia/qualidade.py`._
+_Última execução: 2026-11-24T19:17:06Z (UTC). Gerado automaticamente; regras em `vigia/qualidade.py`._
 
 **Status:** ⚠️ fonte fora do ar há pouco tempo (sem alarme; vira alarme se passar de 20 h)
 
