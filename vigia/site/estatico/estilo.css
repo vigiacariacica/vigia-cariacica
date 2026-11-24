@@ -860,3 +860,6 @@ main h1{line-height:1.02}
 @media (max-width:759px){.menu-cel[open]::before{content:none}.menu-cel nav{box-shadow:0 0 0 100vmax rgba(12,42,28,.45);clip-path:inset(0 -100vmax -100vmax -100vmax)}}
 /* rodada 6 da crítica (24/11) */
 @media (max-width:759px){.sep{display:none}.prot .nw,.mais .nw{display:block}.capa-foto figcaption{left:16px;font-size:11px}}
+/* rodada 7 da crítica (24/11) */
+.cat:has(+ h2),.cat:has(+ h3){display:inline-flex}
+.opcional{white-space:nowrap}

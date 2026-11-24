@@ -234,12 +234,14 @@ def gerar(saida: Path, hoje: date | None = None) -> dict[str, dict]:
         ps += fixas
         ps = [p for p in ps if p][:3]
         esg = D.de_cada(b["pct_esgoto_rede"])
+        # "em 7 de cada 10 casas", "em quase todas as casas", "em nenhuma casa" (nunca "todas das casas")
+        esg = (f"{esg} casas" if "de cada" in esg else f"{esg} as casas" if "todas" in esg else f"{esg} casa")
         cartoes = D.cartoes_bairro(b, cid)
         for c in cartoes:
             c["cat"] = CAT_CARTAO.get(c["tema"], "saneamento")
         c0 = cartoes[0]
         escrever(f"/bairros/{b['slug']}/", "bairro.html", f"{b['nome']}, Cariacica: esgoto, posto de saúde e obras",
-                 f"{b['nome']}, Cariacica: esgoto na rede em {esg} das casas, posto de saúde, fila e mais. "
+                 f"{b['nome']}, Cariacica: esgoto na rede em {esg}, posto de saúde, fila e mais. "
                  "Comparado com a cidade, com fonte oficial.", "bairros",
                  b=b, cartoes=cartoes, postos=postos.get(b["slug"], []), fila=fl,
                  escolas=escolas.get(b["slug"], []), ideb_cidade=ideb_cid, perguntas=ps,
