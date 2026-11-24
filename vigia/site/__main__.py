@@ -42,13 +42,14 @@ _BUSCA = json.loads((D.DADOS / "site" / "buscadores.json").read_text(encoding="u
 VERIFICACAO = _BUSCA.get("verificacao", {})
 REDES = _BUSCA.get("redes", [])
 INDEXNOW = _BUSCA.get("indexnow", "")
-MENU = [("/", "Início", "inicio"), ("/bairros/", "Meu bairro", "bairros"), ("/mapa/", "Mapa", "mapa"),
-        ("/problemas/", "Maiores problemas", "problemas"),
-        ("/fila/", "Fila da saúde", "fila"),
-        ("/vereadores/", "Vereadores", "vereadores"), ("/perguntas/", "Perguntas", "perguntas"),
-        ("/dinheiro/", "Dinheiro", "dinheiro"), ("/novidades/", "O que fizemos", "novidades"),
-        ("/denuncie/", "Denuncie", "denuncie"),
-        ("/fontes/", "Nossas fontes", "fontes"), ("/quem-somos/", "Quem somos", "quem")]
+# Menu curto (24/11/2026): o que o morador mais procura. O resto fica em "Mais páginas" e no rodapé.
+# Até 5 itens (NN/g, UI/UX Pro Max "bottom-nav-limit"); o Início é a marca no topo.
+MENU = [("/bairros/", "Meu bairro", "bairros"), ("/denuncie/", "Fazer uma denúncia", "denuncie"),
+        ("/problemas/", "Os problemas da cidade", "problemas"), ("/perguntas/", "O que perguntamos", "perguntas"),
+        ("/novidades/", "O que o Vigia fez", "novidades")]
+MENU_MAIS = [("/fila/", "Fila da saúde", "fila"), ("/vereadores/", "Vereadores", "vereadores"),
+             ("/dinheiro/", "Dinheiro da prefeitura", "dinheiro"), ("/mapa/", "Mapa dos bairros", "mapa"),
+             ("/fontes/", "De onde vêm os números", "fontes"), ("/quem-somos/", "Quem somos", "quem")]
 # Formulário de denúncia (página /denuncie/): as respostas caem no Google Formulários da conta do Vigia, nunca no
 # site. Sem este arquivo, a página mostra só o direct do Instagram e o e-mail.
 _DEN_JSON = D.DADOS / "site" / "denuncia.json"
@@ -75,7 +76,7 @@ def gerar(saida: Path, hoje: date | None = None) -> dict[str, dict]:
     env = Environment(loader=FileSystemLoader(AQUI / "modelos"), autoescape=select_autoescape(["html"]),
                       trim_blocks=True, lstrip_blocks=True)
     css = (AQUI / "estatico" / "estilo.css").read_bytes() + (AQUI / "estatico" / "site.js").read_bytes()
-    comum = {"base": BASE, "menu": MENU, "versao": hashlib.sha1(css).hexdigest()[:8],
+    comum = {"base": BASE, "menu": MENU, "menu_mais": MENU_MAIS, "versao": hashlib.sha1(css).hexdigest()[:8],
              "hoje_texto": _data_texto(hoje), "br": D.br, "meses": D.meses, "falado": D.falado,
              "de_cada": D.de_cada, "ddmm": _ddmm, "cem": _cem, "rot": V.rot, "rot_palavras": V.rot_palavras,
              "verificacao": VERIFICACAO, "redes": REDES,

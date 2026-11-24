@@ -4,67 +4,16 @@
 {% from "_cat.html" import cat, icone with context %}
 {% block conteudo %}
 <section class="bloco" aria-labelledby="h1">
-  <p class="prot"><a href="/bairros/">Meu bairro</a> · Censo do IBGE de 2022</p>
+  <p class="voltar"><a href="/bairros/">← Todos os bairros</a></p>
   <h1 id="h1" tabindex="-1" data-guardar-bairro="{{ b.slug }}">{{ b.nome }}</h1>
   <p class="lead">{{ br(b.populacao) }} moradores em {{ br(b.domicilios) }} casas.</p>
   {% if b.pequeno %}<p class="miuda">É um bairro pequeno. Com poucas casas, cada uma muda muito a conta.</p>{% endif %}
 </section>
 
-<div class="filtro" data-filtro hidden>
-  <span class="rot">Ver só:</span>
-  <button type="button" data-ver="tudo" aria-pressed="true">Tudo</button>
-  {% for ch in ["saude", "saneamento", "educacao", "renda", "obras"] %}<button type="button" data-ver="{{ ch }}" aria-pressed="false">{{ icone(ch) }}{{ categorias[ch][0] }}</button>
-  {% endfor %}
-</div>
-
-<section class="bloco" aria-labelledby="h-como" data-grupo-cat>
-  <h2 id="h-como">Como está o bairro</h2>
-  <div class="grade-2">
-  {% for c in cartoes %}
-    <article class="cartao" data-cat="{{ c.cat }}">
-      {{ cat(c.cat, c.tema) }}
-      <h3>{{ c.pergunta }}</h3>
-      {% if c.selo %}<span class="selo">{{ c.selo }}</span>{% elif c.certo %}<span class="selo ok">Isso está certo</span>{% endif %}
-      <p class="valor">{{ c.numero }}</p>
-      <p>{{ c.frase }}</p>
-      {% if c.grafico == "dez" %}{{ dez(c.g_aqui, c.g_cid, "Neste bairro", "Em Cariacica", c.g_txt_aqui, c.g_txt_cid) }}
-      {% elif c.grafico == "cem" %}{{ cem(c.g_aqui, c.g_cid, "Neste bairro", "Em Cariacica") }}
-      {% elif c.cidade %}<p class="cid">{{ c.cidade }}</p>{% endif %}
-      {% if c.extra %}<p>{{ c.extra }}</p>{% endif %}
-      <p class="meta">Censo 2022: {{ c.exato }}{% if c.ref_exato %} · Cariacica: {{ c.ref_exato }}{% endif %}</p>
-    </article>
-  {% endfor %}
-  </div>
-</section>
-
-<div class="grade-2 larga-esq" data-cat="geral">
-  <section class="bloco" aria-labelledby="h-numeros">
-    <h2 id="h-numeros">Os números do bairro</h2>
-    <table class="tabela numeros-bairro">
-      <caption class="miuda">Posição: 1º é o bairro com o maior número entre os {{ n_bairros }}.</caption>
-      <thead><tr><th scope="col">O que contamos</th><th scope="col">{{ b.nome }}</th><th scope="col">Cariacica</th><th scope="col">Posição</th></tr></thead>
-      <tbody>
-      {% for r in numeros %}
-        <tr data-cat="{{ r.cat }}"><th scope="row">{{ r.rot }}</th><td data-rot="{{ b.nome }}" class="num"><b>{{ r.aqui }}</b></td><td data-rot="Cariacica" class="num">{{ r.cidade }}</td><td data-rot="Posição" class="num">{{ r.pos }}º de {{ n_bairros }}</td></tr>
-      {% endfor %}
-      </tbody>
-    </table>
-  </section>
-  {% if mapinha %}
-  <figure class="bloco mapinha" aria-labelledby="h-onde">
-    <h2 id="h-onde" class="h-pequeno">{{ icone("mapa") }}Onde fica</h2>
-    <div class="mapinha-tela">
-      <img src="/mapa/base.svg" alt="" width="{{ mapinha.largura }}" height="{{ mapinha.altura }}" loading="lazy">
-      <svg viewBox="0 0 {{ mapinha.largura }} {{ mapinha.altura }}" role="img" aria-label="{{ b.nome }} em rosa, no mapa de Cariacica"><path d="{{ mapinha.d }}"/></svg>
-    </div>
-    <figcaption class="miuda">{{ b.nome }} em rosa. <a href="/mapa/#{{ b.slug }}">Ver no mapa da cidade →</a></figcaption>
-  </figure>
-  {% endif %}
-</div>
-
 <div class="grade-2">
 <section class="bloco" aria-labelledby="h-posto" data-cat="saude">
   <h2 id="h-posto">{{ icone("saude") }}Posto de saúde no bairro</h2>
+  <p class="miuda">US e USF querem dizer unidade de saúde, o posto.</p>
   {% if postos %}
   <div class="bloco">
   {% for u in postos %}
@@ -80,7 +29,7 @@
 {% if escolas %}
 <section class="bloco" aria-labelledby="h-escolas" data-cat="educacao">
   <h2 id="h-escolas">{{ icone("educacao") }}Escolas no bairro</h2>
-  <p>A nota do MEC vai de 0 a 10 e mede se os alunos aprendem e passam de ano.</p>
+  <p>A nota do MEC vai de 0 a 10 e mede se os alunos aprendem e passam de ano. CMEI é creche e pré-escola. EMEF é escola da prefeitura, do ensino fundamental. EEEF e EEEFM são escolas do Estado.</p>
   <ul class="regras">
   {% for e in escolas %}<li><strong>{{ e.nome }}</strong>{% for n in e.ideb %}<br>{{ n.etapa }}: nota {{ n.nota|replace('.', ',') }} em {{ n.ano }}{% if ideb_cidade.get(n.etapa) %} (Cariacica: {{ ideb_cidade[n.etapa]|replace('.', ',') }}){% endif %}{% endfor %}</li>
   {% endfor %}
@@ -90,6 +39,52 @@
 
 {% if not escolas %}<section class="bloco" data-cat="educacao"><h2>{{ icone("educacao") }}Escolas no bairro</h2><p>Não achamos escola com endereço neste bairro no mapa do Governo do ES.</p></section>{% endif %}
 </div>
+
+<section class="bloco" aria-labelledby="h-como" data-grupo-cat>
+  <h2 id="h-como">Como está o bairro</h2>
+  <div class="grade-2">
+  {% for c in cartoes %}
+    <article class="cartao" data-cat="{{ c.cat }}">
+      {{ cat(c.cat, c.tema) }}
+      <h3>{{ c.pergunta }}</h3>
+      {% if c.selo %}<span class="selo">{{ c.selo }}</span>{% elif c.certo %}<span class="selo ok">Aqui está bom</span>{% endif %}
+      <p class="valor">{{ c.numero }}</p>
+      <p>{{ c.frase }}</p>
+      {% if c.grafico == "dez" %}{{ dez(c.g_aqui, c.g_cid, "Neste bairro", "Em Cariacica", c.g_txt_aqui, c.g_txt_cid) }}
+      {% elif c.grafico == "cem" %}{{ cem(c.g_aqui, c.g_cid, "Neste bairro", "Em Cariacica") }}
+      {% elif c.cidade %}<p class="cid">{{ c.cidade }}</p>{% endif %}
+      {% if c.extra %}<p>{{ c.extra }}</p>{% endif %}
+      <p class="meta">Censo 2022: {{ c.exato }}{% if c.ref_exato %} · Cariacica: {{ c.ref_exato }}{% endif %}</p>
+    </article>
+  {% endfor %}
+  </div>
+</section>
+
+<div class="grade-2 larga-esq" data-cat="geral">
+  <details class="grupo" aria-labelledby="h-numeros">
+    <summary><b id="h-numeros">Os números do bairro</b><span>abrir a tabela</span></summary>
+    <table class="tabela numeros-bairro">
+      <caption class="miuda">Posição: 1º é o bairro com o maior número entre os {{ n_bairros }}.</caption>
+      <thead><tr><th scope="col">O que contamos</th><th scope="col">{{ b.nome }}</th><th scope="col">Cariacica</th><th scope="col">Posição</th></tr></thead>
+      <tbody>
+      {% for r in numeros %}
+        <tr data-cat="{{ r.cat }}"><th scope="row">{{ r.rot }}</th><td data-rot="{{ b.nome }}" class="num"><b>{{ r.aqui }}</b></td><td data-rot="Cariacica" class="num">{{ r.cidade }}</td><td data-rot="Posição" class="num">{{ r.pos }}º de {{ n_bairros }}</td></tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </details>
+  {% if mapinha %}
+  <figure class="bloco mapinha" aria-labelledby="h-onde">
+    <h2 id="h-onde" class="h-pequeno">{{ icone("mapa") }}Onde fica</h2>
+    <div class="mapinha-tela">
+      <img src="/mapa/base.svg" alt="" width="{{ mapinha.largura }}" height="{{ mapinha.altura }}" loading="lazy">
+      <svg viewBox="0 0 {{ mapinha.largura }} {{ mapinha.altura }}" role="img" aria-label="{{ b.nome }} em rosa, no mapa de Cariacica"><path d="{{ mapinha.d }}"/></svg>
+    </div>
+    <figcaption class="miuda">{{ b.nome }} em rosa. <a href="/mapa/#{{ b.slug }}">Ver no mapa da cidade →</a></figcaption>
+  </figure>
+  {% endif %}
+</div>
+
 
 <section class="bloco" id="obras" aria-labelledby="h-obras" data-cat="obras">
   <h2 id="h-obras">{{ icone("obras") }}Obras pagas pela prefeitura no bairro</h2>
@@ -135,7 +130,7 @@
     <li><p><strong>Mande esta página</strong> no grupo do bairro. Quem sabe, cobra.</p></li>
     {% if b.pct_esgoto_rede < 95 %}<li><p><strong>Esgoto vazando ou a céu aberto?</strong> Ligue para a Cesan: <span class="fone">115</span>. A ligação é grátis.</p></li>{% endif %}
     <li><p><strong>Problema no posto de saúde?</strong> Ligue para a Ouvidoria da prefeitura: <span class="fone">162</span>.</p></li>
-    <li><p><strong>Tem uma pergunta sobre o bairro?</strong> Mande para o Vigia no <a href="https://www.instagram.com/vigiacariacica/">Instagram</a>.</p></li>
+    <li><p><strong>Viu algo errado no bairro?</strong> <a href="/denuncie/">Faça uma denúncia</a>. Não precisa dizer quem é.</p></li>
   </ol>
 </section>
 

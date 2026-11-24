@@ -1,33 +1,48 @@
 {% extends "base.html" %}
-{% from "_cat.html" import cat, icone with context %}
+{% macro selo(it) -%}
+{% if it.estado == 'respondido' %}<span class="selo ok">Respondida</span>{% elif it.estado == 'parcial' %}<span class="selo neutro">Respondida só em parte</span>{% elif it.estado == 'negado' %}<span class="selo">Negada</span>{% elif it.estado == 'vencido' %}<span class="selo">Passou do prazo</span>{% else %}<span class="selo apagado">Esperando resposta</span>{% endif %}
+{%- endmacro %}
+{% macro pedido(it, aberto=False) -%}
+<div class="ped">
+  {{ selo(it) }}
+  <p>{{ it.pergunta }}</p>
+  {% for r in it.resumos %}<p class="resposta"><b>O que responderam ({{ ddmm(r.data) }}):</b> {{ r.resumo }}</p>{% endfor %}
+  {% if aberto and not it.resumos and it.respondido_em %}<p class="resposta">A resposta chegou em {{ ddmm(it.respondido_em) }}. A gente está lendo e põe o resumo aqui.</p>{% endif %}
+  {% for pb in it.pubs %}<p class="miuda"><a href="{{ pb.link }}" rel="noopener">Falamos disso no {{ pb.rotulo|lower }} de {{ ddmm(pb.data) }} →</a></p>{% endfor %}
+  <span class="meta">Para: {{ it.para }} · enviada em {{ ddmm(it.enviado) }} · número {{ it.numeros|join(' e ') }}</span>
+</div>
+{%- endmacro %}
 {% block conteudo %}
 <section class="bloco" aria-labelledby="h1">
-  <p class="prot">{{ icone("pergunta") }} <b>Perguntas</b> · feitas pela lei de acesso à informação</p>
   <h1 id="h1" tabindex="-1">O que perguntamos à prefeitura</h1>
-  <p class="lead">Quando algo não está claro, a gente pergunta. A lei manda a prefeitura responder em até 20 dias. Ela pode pedir mais 10, se explicar o motivo.</p>
+  <p class="lead">Quando algo não está claro, a gente pergunta. A lei dá 20 dias para responder, ou 30 se a prefeitura explicar o motivo.</p>
 </section>
 
-<div class="placar">
-  <div><b class="num">{{ p.total }}</b><span>perguntas feitas</span></div>
-  {% if p.respondidas or not p.parciais %}<div><b class="num">{{ p.respondidas }}</b><span>respondidas por completo</span></div>{% endif %}
-  {% if p.parciais %}<div><b class="num">{{ p.parciais }}</b><span>respondidas só em parte</span></div>{% endif %}
-  <div><b class="num">{{ p.atrasadas }}</b><span>atrasadas, sem resposta</span></div>
+<div class="placar quatro">
+  <div><b class="num">{{ p.respondidas }}</b><span>respondidas por inteiro</span></div>
+  <div><b class="num">{{ p.parciais }}</b><span>respondidas só em parte</span></div>
+  <div><b class="num">{{ p.esperando }}</b><span>esperando, ainda no prazo</span></div>
+  {% if p.atrasadas %}<div><b class="num">{{ p.atrasadas }}</b><span>passaram do prazo sem resposta</span></div>{% else %}<div><b class="texto">Nenhuma</b><span>passou do prazo até agora</span></div>{% endif %}
 </div>
-{% if p.proximo %}<p class="lead">Próximo prazo: {{ p.proximo.strftime('%d/%m') }}, para {{ p.n_proximo }} {{ 'pergunta que ainda espera' if p.n_proximo == 1 else 'perguntas que ainda esperam' }} resposta.</p>{% endif %}
 
+{% if p.respondidos %}
+<details class="grupo" open>
+  <summary><b>Já responderam ({{ p.respondidos|length }})</b></summary>
+  <div class="peds">
+  {% for it in p.respondidos %}{{ pedido(it, aberto=True) }}
+  {% endfor %}
+  </div>
+</details>
+{% endif %}
+
+<h2>Todas as perguntas, pelo prazo</h2>
+{% if p.proximo %}<p>Próximo prazo: <b>{{ p.proximo.strftime('%d/%m') }}</b>, para {{ p.n_proximo }} {{ 'pergunta' if p.n_proximo == 1 else 'perguntas' }}.</p>{% endif %}
 <div class="bloco" style="gap:0">
 {% for prazo, itens in p.grupos.items() %}
-  <details class="grupo"{% if loop.first %} open{% endif %}>
+  <details class="grupo">
     <summary><b>Prazo {{ prazo.strftime('%d/%m') }}</b>{% set n = itens|length %}<span><span class="falta" data-prazo="{{ prazo.isoformat() }}">{{ quando(prazo) }}</span> · {{ n }} {{ 'pergunta' if n == 1 else 'perguntas' }}</span></summary>
     <div class="peds">
-    {% for it in itens %}
-    <div class="ped">
-      {% if it.estado == 'respondido' %}<span class="selo ok">Respondida</span>{% elif it.estado == 'parcial' %}<span class="selo neutro">Respondida só em parte</span>{% elif it.estado == 'negado' %}<span class="selo">Negada</span>{% elif it.estado == 'vencido' %}<span class="selo">Atrasada</span>{% else %}<span class="selo neutro">Esperando resposta</span>{% endif %}
-      <p>{{ it.pergunta }}</p>
-      {% for r in it.resumos %}<p class="resposta"><b>O que responderam ({{ ddmm(r.data) }}):</b> {{ r.resumo }}</p>{% endfor %}
-      {% for pb in it.pubs %}<p class="miuda"><a href="{{ pb.link }}" rel="noopener">Falamos disso no {{ pb.rotulo|lower }} de {{ ddmm(pb.data) }} →</a></p>{% endfor %}
-      <span class="meta">Para: {{ it.para }} · enviada em {{ ddmm(it.enviado) }} · número {{ it.numeros|join(' e ') }}</span>
-    </div>
+    {% for it in itens %}{{ pedido(it) }}
     {% endfor %}
     </div>
   </details>

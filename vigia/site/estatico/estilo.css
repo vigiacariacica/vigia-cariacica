@@ -506,3 +506,81 @@ ul.numeros-urgencia a{flex-direction:column;align-items:flex-start;gap:0;font-si
 @media (min-width:900px){ul.numeros-urgencia{grid-template-columns:repeat(6,minmax(0,1fr))}}
 .acoes-ev{display:flex;flex-wrap:wrap;gap:var(--e-2) var(--e-4)}
 .meta a[href^="tel:"]{display:inline-flex;align-items:center;min-height:44px;padding-inline:var(--e-1)}
+
+/* ===== 24/11/2026: site mais limpo para quem lê pouco. Uma mensagem por tela, menos rótulos, botões grandes. ===== */
+/* rótulos e selos na letra do texto (sem máquina de escrever, sem maiúsculas espaçadas) */
+.prot,.selo,.cat,.meta,.fonte{font-family:var(--texto);letter-spacing:0;text-transform:none}
+.prot{font-size:var(--t-2)}
+.selo{font-size:var(--t-1);padding:var(--e-0) var(--e-2)}
+.bloco>.prot:first-child:has(+ h1),.bloco>.prot:first-child:has(+ h2){display:none}
+h2,h3{text-transform:none;line-height:1.05}
+h2{font-size:clamp(30px,5vw,46px)}
+.visualmente-oculto{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.voltar{font-weight:700}
+.voltar a{display:inline-block;min-height:44px;padding-block:var(--e-2)}
+/* topo: marca, Denunciar e Menu numa linha só */
+.topo{border-bottom-width:3px}
+.topo-in{display:flex;align-items:center;gap:var(--e-2);flex-wrap:nowrap}
+.marca{margin-right:auto;gap:var(--e-2)}
+.marca img{width:40px;height:auto}
+.marca .nome{font-size:24px;line-height:.9;max-width:9ch}
+.btn.denunciar{background:var(--marca);border-color:var(--marca);color:var(--on-marca);white-space:nowrap}
+.btn.denunciar:hover{background:var(--tinta);border-color:var(--tinta);color:var(--papel)}
+@media (max-width:759px){
+  .topo-in{display:flex;padding-bottom:var(--e-2)}
+  .marca img{width:36px}
+  .marca .nome{font-size:19px}
+  .btn.denunciar,.menu-cel summary{min-height:44px;padding:var(--e-2) var(--e-3);font-size:var(--t-2)}
+}
+.menu-pc{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--e-2)}
+.menu-pc .ferr{display:flex;gap:var(--e-2)}
+.menu-pc .ferr .btn{min-height:40px;padding:var(--e-1) var(--e-3);font-size:var(--t-1)}
+@media (max-width:759px){.menu-pc{display:none}}
+.menu-cel nav{padding-bottom:var(--e-4)}
+.mais-rot{font-weight:700;color:var(--tinta-suave);font-size:var(--t-2);padding:var(--e-4) var(--e-3) var(--e-1)}
+.menu-cel nav ul.mais a{font-weight:400;font-size:var(--t-2);padding-block:var(--e-3)}
+.ferr-menu{display:grid;grid-template-columns:1fr;gap:var(--e-2);padding:var(--e-4) var(--e-3) 0}
+.ferr-menu .btn{justify-content:center;min-height:48px}
+/* início */
+.heroi{display:flex;flex-direction:column;gap:var(--e-3)}
+.heroi h1{max-width:18ch}
+.caminhos{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--e-3)}
+@media (min-width:900px){.caminhos{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.caminho{position:relative;display:flex;flex-direction:column;gap:var(--e-1);padding:var(--e-4) var(--e-7) var(--e-4) var(--e-4);border:2px solid var(--tinta);background:var(--folha);color:var(--tinta);text-decoration:none;min-height:80px;justify-content:center}
+.caminho b{font-size:var(--t-5);line-height:1.15}
+.caminho span{font-size:var(--t-2);color:var(--tinta-suave)}
+.caminho::after{content:"→";position:absolute;right:var(--e-4);top:50%;transform:translateY(-50%);font-family:var(--display);font-weight:900;font-size:36px;color:var(--verde)}
+.caminho:hover{border-color:var(--verde)}
+.caminho.forte{background:var(--marca);border-color:var(--marca);color:var(--on-marca)}
+.caminho.forte span,.caminho.forte::after{color:var(--on-marca)}
+.achado{background:var(--folha);border-top:3px solid var(--tinta);padding:var(--e-5)}
+/* rodapé curto */
+footer.rodape{display:flex;flex-direction:column;gap:var(--e-3)}
+ul.links-rodape{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:0 var(--e-4)}
+ul.links-rodape a{display:inline-block;min-height:44px;padding-block:var(--e-2)}
+/* denúncia */
+.urgente{gap:var(--e-1)}
+ul.numeros-urgencia b{font-size:28px}
+details.grupo summary b{text-transform:none;font-family:var(--texto);font-weight:700;font-size:var(--t-4)}
+.recebido h3{font-size:var(--t-6)}
+.opcional{font-weight:400;color:var(--tinta-suave);font-size:var(--t-2)}
+.menu-cel nav{box-shadow:0 16px 24px rgba(0,0,0,.18)}
+.oque b,table.tabela thead th,ol.tempo .data,.relogio,details.grupo summary span{font-family:var(--texto);letter-spacing:0;text-transform:none}
+.cem-par{flex-wrap:nowrap;gap:var(--e-4)}
+.cem-par .cem{width:min(120px,38vw);gap:2px}
+/* sem etiqueta pequena em cima do título dos cartões (Hallmark 54; Impeccable "eyebrow"): o título já diz o assunto */
+.cat:has(+ h2),.cat:has(+ h3),.prot:has(+ h3){display:none}
+/* uma cor de destaque só (Hallmark 23): o rosa fica no botão Denunciar do topo */
+.caminho.forte{background:var(--tinta);border-color:var(--tinta);color:var(--papel)}
+.caminho.forte span,.caminho.forte::after{color:var(--papel)}
+/* "Ouvir esta página" logo depois do título de toda página (a primeira parte do conteúdo vem antes dele) */
+main>*{order:2}
+main>.ouvir-topo+*{order:0}
+main>.ouvir-topo{order:1;margin-top:calc(-1 * var(--e-5))}
+.ouvir-topo .btn{min-height:44px;padding:var(--e-2) var(--e-4);font-size:var(--t-2)}
+.ouvir-topo .btn::before{content:"";width:0;height:0;border-style:solid;border-width:7px 0 7px 11px;border-color:transparent transparent transparent currentColor}
+.ouvir-topo .btn[aria-pressed="true"]::before{border:0;width:10px;height:12px;border-left:3px solid currentColor;border-right:3px solid currentColor}
+.emergencia-linha{font-weight:700}
+.emergencia-linha a{display:inline-flex;align-items:center;min-height:44px;padding-inline:var(--e-1);font-family:var(--display);font-weight:900;font-size:26px;color:var(--alerta);text-decoration:none}
+.emergencia-linha a.ver-todos{font-family:var(--texto);font-weight:700;font-size:var(--t-2);color:var(--verde);text-decoration:underline}
+.placar.quatro b.texto{font-family:var(--texto);font-size:var(--t-4);line-height:1.2}
