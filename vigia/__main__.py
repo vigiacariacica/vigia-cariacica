@@ -8,7 +8,8 @@ Etapas avulsas:
     coletar FONTE [FONTE ...]     transparencia | emendas | obras | diarias | receitas | siconfi | tcees | tesouro |
                                   ibge | pncp | vizinhos | empresas | sancoes | transferegov | tse |
                                   licitacoes | folha | divida | estado | externos (ISP e CAUC) |
-                                  fila | equipamentos (postos e escolas por bairro)
+                                  fila | equipamentos (postos e escolas por bairro) |
+                                  diario_oficial (contagens por edição do Diário Oficial)
     alertas                       roda as 32 regras e exporta data/alertas.csv
     refinar                       data/refinado/: o mapa do dinheiro (origem, tipo de gasto, quem recebe)
     exportar                      banco -> CSVs de data/pncp e data/receita
@@ -43,7 +44,7 @@ FONTES = ("transparencia", "siconfi", "tcees", "tesouro", "ibge", "pncp", "vizin
           "emendas", "obras", "diarias", "receitas", "transferegov", "tse",
           "licitacoes", "folha", "divida", "estado", "externos", "fila", "equipamentos")
 # Fontes da revisão de 10/11/2026, cada uma em vigia/coletores/<nome>.py com uma função coletar()
-SIMPLES = ("licitacoes", "folha", "divida", "estado", "externos", "fila", "equipamentos")
+SIMPLES = ("licitacoes", "folha", "divida", "estado", "externos", "fila", "equipamentos", "diario_oficial")
 PORTAL_EXTRA = ("emendas", "obras", "diarias", "receitas")   # vigia/coletores/portal_extra.py
 
 
@@ -289,7 +290,7 @@ def main(argv: list[str] | None = None) -> int:
         cmd = "diario" if args.comando == "tudo" else args.comando
         if cmd == "diario":
             falhas = coletar(["transparencia", *PORTAL_EXTRA, "licitacoes", "folha", "siconfi", "tcees", "tesouro", "ibge",
-                              "divida", "estado", "externos", "fila", "pncp", "empresas"], cfg, con, args)
+                              "divida", "estado", "externos", "fila", "pncp", "empresas", "diario_oficial"], cfg, con, args)
         elif cmd == "semanal":
             # PNCP de Cariacica de novo, revisitando compras do último ano ainda sem resultado
             cfg["coleta"]["revisitar_sem_resultado"] = True
