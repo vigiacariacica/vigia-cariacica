@@ -1,8 +1,8 @@
 {
  "ano": 2025,
  "total": 1663887316.63,
- "populacao": 375500,
- "fonte_total": "Tribunal de Contas do ES (TCE-ES), dados abertos, despesas da prefeitura em 2025, valor liquidado (o que a prefeitura conferiu que recebeu): R$ 1.663.887.316,63. População: IBGE, estimativa de 2025 usada pelo Tesouro Nacional (375.500).",
+ "populacao": 376200,
+ "fonte_total": "Tribunal de Contas do ES (TCE-ES), dados abertos, despesas da prefeitura em 2025, valor liquidado (o que a prefeitura conferiu que recebeu): R$ 1.663.887.316,63. População: IBGE, estimativa de 2025 (376.200 moradores, tabela 6579 do Sidra).",
  "blocos": [
   {
    "nome": "Salários e aposentadorias",
