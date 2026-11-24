@@ -452,3 +452,57 @@ table.numeros-bairro td b{font-size:var(--t-4)}
 .prot .ic{width:1.3em;height:1.3em;vertical-align:-.3em;margin-right:2px}
 .porta .cat{margin-bottom:var(--e-1)}
 @media (max-width:759px){.placar.extremos{grid-template-columns:1fr}}
+
+/* 24/11/2026: "O que fizemos" (linha do tempo) e "Deixe aqui sua denúncia" */
+@media (min-width:900px){footer.rodape>img{grid-row:span 5}}
+.placar.quatro{grid-template-columns:repeat(2,minmax(0,1fr));max-width:none}
+@media (min-width:900px){.placar.quatro{grid-template-columns:repeat(4,minmax(0,1fr))}}
+ol.linha{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:0;border-left:3px solid var(--linha);max-width:760px}
+ol.linha .ev{position:relative;padding:var(--e-4) 0 var(--e-4) var(--e-5);display:flex;flex-direction:column;gap:var(--e-2);min-width:0}
+ol.linha .ev::before{content:"";position:absolute;left:-9px;top:var(--e-5);width:15px;height:15px;border-radius:50%;background:var(--papel);border:3px solid var(--verde)}
+ol.linha .ev-video::before,ol.linha .ev-post::before,ol.linha .ev-apuracao::before,ol.linha .ev-carrossel::before{background:var(--verde)}
+ol.linha .ev-prazo::before{border-color:var(--alerta)}
+ol.linha .ev h3{font-family:var(--texto);font-weight:700;text-transform:none;font-size:var(--t-4);line-height:1.25}
+.ev-topo{display:flex;align-items:center;gap:var(--e-3);flex-wrap:wrap}
+.ev-topo .selo{font-size:var(--t-1)}
+.correcao{border-left:6px solid var(--alerta);background:var(--folha);padding:var(--e-3) var(--e-4)}
+.correcao b{color:var(--alerta)}
+.resposta{border-left:4px solid var(--verde);padding-left:var(--e-3)}
+.chamada-den{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:var(--e-4);background:var(--tinta);color:var(--papel);padding:var(--e-5)}
+.chamada-den h2{font-size:clamp(30px,5vw,44px)}
+.chamada-den p{max-width:46ch}
+.chamada-den .btn.cheio{background:var(--marca);border-color:var(--marca);color:var(--on-marca);font-size:var(--t-3)}
+.chamada-den .btn.cheio:hover{background:var(--folha);border-color:var(--folha);color:var(--tinta)}
+/* formulário de denúncia: campos grandes (48 px), rótulo sempre visível, dica antes do campo */
+.form-den{display:flex;flex-direction:column;gap:var(--e-5)}
+.campo{display:flex;flex-direction:column;gap:var(--e-2);min-width:0}
+.campo>label{font-weight:700;font-size:var(--t-4)}
+.pede{font-family:var(--protocolo);font-weight:700;font-size:var(--t-1);letter-spacing:.06em;text-transform:uppercase;color:var(--alerta);margin-left:var(--e-1)}
+.dica{font-size:var(--t-2);color:var(--tinta-suave)}
+input[type=text],textarea{font:inherit;font-size:var(--t-3);padding:var(--e-3);border:2px solid var(--tinta);background:var(--folha);color:var(--tinta);border-radius:0;width:100%;min-width:0;min-height:52px}
+textarea{resize:vertical;line-height:1.45}
+input[type=text]:focus-visible,textarea:focus-visible{outline:3px solid var(--marca);outline-offset:2px}
+.campo.marcar{flex-direction:row;align-items:flex-start;gap:var(--e-3)}
+.campo.marcar input{width:28px;height:28px;flex:0 0 28px;margin:2px 0 0;accent-color:var(--verde)}
+.campo.marcar label{font-weight:400;font-size:var(--t-3)}
+.isca{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.aviso{border-left:6px solid var(--alerta);padding:var(--e-2) var(--e-3);background:var(--papel);font-weight:700}
+.btn.enviar{justify-content:center;font-size:var(--t-4);min-height:56px;width:100%}
+@media (min-width:640px){.btn.enviar{width:auto;align-self:flex-start;padding-inline:var(--e-6)}}
+.btn.enviar[disabled]{opacity:.6;cursor:wait}
+.recebido{border:3px solid var(--verde);padding:var(--e-5);display:flex;flex-direction:column;gap:var(--e-3)}
+.recebido .codigo{font-family:var(--protocolo);font-size:var(--t-6);letter-spacing:.12em;background:var(--papel);padding:0 var(--e-2)}
+.urgente{border-color:var(--alerta)}
+ul.numeros-urgencia{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--e-2)}
+ul.numeros-urgencia a{display:flex;align-items:baseline;gap:var(--e-2);min-height:48px;padding:var(--e-2) 0;color:var(--tinta);text-decoration:none;font-size:var(--t-2);line-height:1.2}
+ul.numeros-urgencia b{font-family:var(--display);font-weight:900;font-size:32px;color:var(--alerta);line-height:1}
+dl.privacidade{margin:0;display:grid;grid-template-columns:minmax(0,1fr);gap:var(--e-1) var(--e-5);max-width:900px}
+dl.privacidade dt{font-weight:700;margin-top:var(--e-3)}
+dl.privacidade dd{margin:0;max-width:62ch}
+@media (min-width:760px){dl.privacidade{grid-template-columns:220px minmax(0,1fr)}dl.privacidade dt{margin-top:0}dl.privacidade dd{margin-bottom:var(--e-3)}}
+footer.rodape .btn.cheio{font-size:var(--t-3)}
+ul.numeros-urgencia{grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--e-2) var(--e-3)}
+ul.numeros-urgencia a{flex-direction:column;align-items:flex-start;gap:0;font-size:var(--t-1)}
+@media (min-width:900px){ul.numeros-urgencia{grid-template-columns:repeat(6,minmax(0,1fr))}}
+.acoes-ev{display:flex;flex-wrap:wrap;gap:var(--e-2) var(--e-4)}
+.meta a[href^="tel:"]{display:inline-flex;align-items:center;min-height:44px;padding-inline:var(--e-1)}

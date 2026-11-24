@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+{% from "_cat.html" import icone with context %}
+{% block conteudo %}
+<section class="bloco" aria-labelledby="h1">
+  <p class="prot">{{ icone("pergunta") }} <b>Denúncia</b> · você não precisa dizer quem é</p>
+  <h1 id="h1" tabindex="-1">Deixe aqui sua denúncia</h1>
+  <p class="lead">Viu dinheiro público mal usado? Um posto sem médico, uma obra parada, um buraco que ninguém tapa? Conte para a gente. A gente confere e cobra.</p>
+</section>
+
+<div class="outro urgente">
+  <p><strong>É emergência? Não espere a gente. Ligue agora, é de graça:</strong></p>
+  <ul class="numeros-urgencia">
+    {% for n, nome in urgencia %}<li><a href="tel:{{ n }}"><b class="num">{{ n }}</b> {{ nome }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="grade-2 larga-esq">
+  <section class="bloco folha" aria-labelledby="h-form">
+    <h2 id="h-form">Conte o que você viu</h2>
+{% if den.form %}
+    <form class="form-den" id="denuncia" method="post" action="{{ den.form }}" accept-charset="utf-8" data-denuncia data-link="{{ den.link }}">
+      <div class="campo">
+        <label for="d-assunto">Sobre o que é? <span class="pede">obrigatório</span></label>
+        <select id="d-assunto" name="{{ den.campos.assunto }}" required>
+          <option value="">Escolha um assunto</option>
+          {% for a in den.assuntos %}<option>{{ a }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="campo">
+        <label for="d-bairro">Em que bairro?</label>
+        <input type="text" id="d-bairro" name="{{ den.campos.bairro }}" list="den-bairros" maxlength="80" autocomplete="off" aria-describedby="dica-bairro">
+        <datalist id="den-bairros">{% for b in bairros %}<option value="{{ b.nome }}">{% endfor %}</datalist>
+        <p class="dica" id="dica-bairro">Comece a digitar e escolha na lista. Se é na cidade toda, deixe em branco.</p>
+      </div>
+      <div class="campo">
+        <label for="d-relato">O que aconteceu? <span class="pede">obrigatório</span></label>
+        <p class="dica" id="dica-relato">Conte o quê, onde e desde quando. Fatos, não acusações. Não escreva nome, CPF ou telefone de outras pessoas.</p>
+        <textarea id="d-relato" name="{{ den.campos.relato }}" rows="7" minlength="20" maxlength="3000" required aria-describedby="dica-relato aviso-dado"></textarea>
+        <p class="aviso" id="aviso-dado" role="alert" hidden></p>
+      </div>
+      <div class="campo">
+        <label for="d-prova">Onde dá para conferir?</label>
+        <p class="dica" id="dica-prova">Endereço, nome do posto ou da escola, número de um pedido, um link. Tem foto? Diga o que ela mostra. Se precisar, a gente pede depois.</p>
+        <textarea id="d-prova" name="{{ den.campos.prova }}" rows="3" maxlength="1500" aria-describedby="dica-prova"></textarea>
+      </div>
+      <div class="campo">
+        <label for="d-contato">Quer resposta? Deixe um contato</label>
+        <p class="dica" id="dica-contato">E-mail ou o seu @ do Instagram. <b>Deixe em branco para ficar anônimo.</b></p>
+        <input type="text" id="d-contato" name="{{ den.campos.contato }}" maxlength="120" autocomplete="off" aria-describedby="dica-contato">
+      </div>
+      <div class="isca" aria-hidden="true"><label>Deixe este campo vazio <input type="text" name="{{ den.campos.controle }}" tabindex="-1" autocomplete="off"></label></div>
+      <div class="campo marcar">
+        <input type="checkbox" id="d-ok" name="{{ den.campos.ok }}" value="{{ den.ok }}" required>
+        <label for="d-ok">{{ den.ok }} <a href="#privacidade">Ler o aviso</a></label>
+      </div>
+      <p class="aviso" data-erro role="alert" hidden></p>
+      <button class="btn cheio enviar" type="submit">Mandar a denúncia</button>
+    </form>
+    <div class="recebido" id="recebido" tabindex="-1" hidden>
+      <p class="prot">Recebido</p>
+      <h3>Obrigado. A gente vai conferir.</h3>
+      <p>O código da sua denúncia é <b class="codigo num" data-codigo></b>. Anote. Com ele, você pode pedir notícia ou pedir para apagar o que mandou.</p>
+      <p>Se deixou contato, a gente avisa. Se não, acompanhe em <a href="/novidades/">O que fizemos</a>.</p>
+      <p><button class="btn" type="button" data-outra>Mandar outra denúncia</button></p>
+    </div>
+    <p class="miuda">O formulário não funcionou? <a href="{{ den.link }}" rel="noopener">Abra a versão do Google</a>. As perguntas são as mesmas. Se você estiver logado no Google, lá aparece o seu e-mail com o aviso "Não compartilhado": ele não chega para a gente.</p>
+{% else %}
+    <p>O formulário está em preparação. Enquanto isso, mande uma mensagem no direct do <a href="https://www.instagram.com/vigiacariacica/">@vigiacariacica</a> ou um e-mail para <a href="mailto:vigiacariacica@gmail.com">vigiacariacica@gmail.com</a>.</p>
+{% endif %}
+  </section>
+
+  <div class="bloco">
+    <section class="bloco" aria-labelledby="h-depois">
+      <h2 id="h-depois">O que acontece depois</h2>
+      <ol class="passos">
+        <li><b>A gente lê</b><span>Só a equipe do Vigia vê o que você escreveu.</span></li>
+        <li><b>A gente confere</b><span>Nos dados oficiais, nos contratos e no lugar, quando dá.</span></li>
+        <li><b>Vira cobrança</b><span>Uma pergunta oficial à prefeitura, um vídeo ou um post. Sempre sem o seu nome.</span></li>
+        <li><b>Você fica sabendo</b><span>Se deixou contato, a gente avisa. Se não, veja em <a href="/novidades/">O que fizemos</a>.</span></li>
+      </ol>
+    </section>
+    <section class="bloco" aria-labelledby="h-nunca">
+      <h2 id="h-nunca">O que a gente nunca faz</h2>
+      <ul class="regras">
+        <li>Publicar a sua denúncia do jeito que chegou.</li>
+        <li>Contar a alguém quem mandou.</li>
+        <li>Publicar nome, foto ou dado de outra pessoa.</li>
+        <li>Acusar alguém sem prova. Primeiro a gente confere.</li>
+      </ul>
+    </section>
+  </div>
+</div>
+
+{% if canais %}
+<section class="bloco" aria-labelledby="h-canais">
+  <h2 id="h-canais">Quer reclamar direto no órgão?</h2>
+  <p class="lead">Você também pode abrir uma reclamação oficial. Ela ganha um número e um prazo para resposta. Se fizer isso, conte para a gente o número: a gente acompanha junto.</p>
+  <div class="grade-3">
+  {% for c in canais %}
+    <div class="folha">
+      <p class="prot">{{ c.quando }}</p>
+      <h3>{{ c.nome }}</h3>
+      <p>{{ c.para }}</p>
+      <p><a href="{{ c.link }}" rel="noopener">{{ c.botao }} →</a>{% if c.telefone %}<br><span class="meta">Telefone: <a href="tel:{{ c.telefone|replace(' ', '')|replace('-', '')|replace('(', '')|replace(')', '') }}">{{ c.telefone }}</a></span>{% endif %}</p>
+    </div>
+  {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section class="bloco" aria-labelledby="h-priv" id="privacidade">
+  <h2 id="h-priv">Aviso de privacidade</h2>
+  <p class="lead">Em poucas palavras: só a equipe do Vigia lê, nada é publicado do jeito que chegou, e você pode pedir para apagar.</p>
+  <dl class="privacidade">
+    <dt>Quem cuida dos dados</dt><dd>O Vigia Cariacica, um grupo de moradores. Contato: <a href="mailto:vigiacariacica@gmail.com">vigiacariacica@gmail.com</a>.</dd>
+    <dt>O que fica guardado</dt><dd>O que você escreve no formulário, com a data e a hora. O contato, só se você deixar. Também um código, para achar a sua denúncia depois. E quanto tempo você levou para preencher: isso ajuda a separar robô de gente.</dd>
+    <dt>O que não fica guardado</dt><dd>O seu nome, porque a gente não pede. Nem login, nem o e-mail da sua conta. A gente não recebe o endereço da sua internet (o IP). O Google, que guarda o formulário, recebe esse endereço, como qualquer site. Este site não usa contador de visitas nem rastreador.</dd>
+    <dt>Para que serve</dt><dd>Para conferir o que você contou e cobrar a prefeitura e a Câmara. Nunca para vender, nem para campanha de partido.</dd>
+    <dt>Quem vê</dt><dd>Só a equipe do Vigia. O que vai a público é só o que a gente conferiu nos documentos oficiais. Sem o seu nome e sem dado de outra pessoa. Se o caso for para o Tribunal de Contas ou para o Ministério Público, a gente leva os fatos conferidos. O seu nome e o seu contato, só se você deixar.</dd>
+    <dt>Onde fica</dt><dd>No Google Formulários, na conta do Vigia. O Google guarda os dados nos computadores dele, que podem ficar fora do Brasil. O formulário não pede login, então a gente não recebe o seu nome nem o e-mail da sua conta.</dd>
+    <dt>Por quanto tempo</dt><dd>Até 12 meses. O contato a gente apaga antes, quando o caso termina.</dd>
+    <dt>Os seus direitos</dt><dd>Saber o que a gente tem, corrigir, pedir para apagar e desistir a qualquer hora: aí a gente apaga. Mande um e-mail para <a href="mailto:vigiacariacica@gmail.com">vigiacariacica@gmail.com</a> com o código da denúncia. A gente responde em até 15 dias. Você também pode reclamar na ANPD, a autoridade de proteção de dados do governo (<a href="https://www.gov.br/anpd/" rel="noopener">gov.br/anpd</a>).</dd>
+  </dl>
+  <p class="fonte">Lei Geral de Proteção de Dados (Lei 13.709/2018): consentimento (art. 7º, I, e art. 11, I, para dado de saúde), transparência (art. 9º), revogação (art. 8º, § 5º) e direitos do titular (art. 18, inclusive reclamar à ANPD, § 1º). Quem manda escolhe o que contar e se deixa contato.</p>
+</section>
+
+{% include "_compartilhar.html" %}
+
+<p class="fonte">Fonte: números de emergência e canais oficiais conferidos nos sites do Governo Federal, da Prefeitura e dos órgãos citados em {{ den.conferido }}. O Vigia não é um órgão público: a denúncia feita aqui não substitui a reclamação oficial.</p>
+{% endblock %}

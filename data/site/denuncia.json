@@ -1,0 +1,105 @@
+{
+ "_leia": "Formulário de denúncia do site (página /denuncie/). As respostas caem no Google Formulários da conta do Vigia e NUNCA são publicadas sozinhas. Os 'campos' são os códigos entry.N do formulário; se mudar uma pergunta no Google, rode o leitor (docs/DECISOES.md, 24/11/2026) e atualize aqui. As opções de 'assuntos' e o texto de 'ok' precisam ser IGUAIS aos do Google, letra por letra.",
+ "form": "https://docs.google.com/forms/d/e/1FAIpQLSczxhbm38irL2huKqNvudFoyL7EBhb_TYBjnRoy_m3wnmbqjg/formResponse",
+ "link": "https://docs.google.com/forms/d/e/1FAIpQLSczxhbm38irL2huKqNvudFoyL7EBhb_TYBjnRoy_m3wnmbqjg/viewform",
+ "campos": {
+  "assunto": "entry.532718824",
+  "bairro": "entry.958051699",
+  "relato": "entry.716901499",
+  "prova": "entry.1627345802",
+  "contato": "entry.1035141450",
+  "controle": "entry.728493783",
+  "ok": "entry.700318883"
+ },
+ "ok": "Li o aviso de privacidade e quero mandar.",
+ "assuntos": [
+  "Saúde: posto, fila ou remédio",
+  "Escola ou creche",
+  "Obra parada ou malfeita",
+  "Rua, buraco, calçada ou luz",
+  "Lixo e limpeza",
+  "Esgoto, água ou alagamento",
+  "Morro, encosta ou chuva",
+  "Ônibus e transporte",
+  "Gasto ou contrato da prefeitura",
+  "Câmara e vereadores",
+  "Outro assunto"
+ ],
+ "conferido": "24/11/2026",
+ "urgencia": [
+  [
+   "190",
+   "Polícia Militar"
+  ],
+  [
+   "192",
+   "SAMU"
+  ],
+  [
+   "193",
+   "Bombeiros"
+  ],
+  [
+   "199",
+   "Defesa Civil"
+  ],
+  [
+   "180",
+   "Violência contra a mulher"
+  ],
+  [
+   "100",
+   "Direitos humanos"
+  ]
+ ],
+ "canais": [
+  {
+   "quando": "Prefeitura",
+   "nome": "Ouvidoria da Prefeitura",
+   "para": "Para reclamar ou denunciar algo da prefeitura de Cariacica.",
+   "link": "https://transparencia.cariacica.es.gov.br/Canal.Atendimento.aspx?CanalAtendimentoId=2",
+   "botao": "Abrir a Ouvidoria",
+   "telefone": "162"
+  },
+  {
+   "quando": "Pedido de informação",
+   "nome": "Pergunte à prefeitura",
+   "para": "Para pedir um documento ou um dado. A lei manda responder em até 20 dias. Pode passar para 30, se a prefeitura explicar.",
+   "link": "https://transparencia.cariacica.es.gov.br/esic.aspx",
+   "botao": "Fazer um pedido",
+   "telefone": "(27) 3354-5953"
+  },
+  {
+   "quando": "Câmara",
+   "nome": "Ouvidoria da Câmara",
+   "para": "Para reclamar ou denunciar algo da Câmara e dos vereadores.",
+   "link": "https://www.camaracariacica.es.gov.br/e-ouv",
+   "botao": "Abrir a Ouvidoria da Câmara",
+   "telefone": "(27) 3226-8255"
+  },
+  {
+   "quando": "Dinheiro público",
+   "nome": "Tribunal de Contas do ES",
+   "para": "Para avisar de dinheiro público mal usado. O Tribunal pode usar o aviso para decidir o que vai conferir.",
+   "link": "https://acessoidentificado.tcees.tc.br/Publica/Ouvidoria/",
+   "botao": "Abrir a Ouvidoria do Tribunal",
+   "telefone": ""
+  },
+  {
+   "quando": "Promotoria",
+   "nome": "Ministério Público do ES",
+   "para": "Para pedir que um promotor olhe o caso: saúde, escola, meio ambiente ou dinheiro público.",
+   "link": "https://ouvidoria.mpes.mp.br/",
+   "botao": "Abrir a Ouvidoria do MP",
+   "telefone": "127"
+  },
+  {
+   "quando": "Dinheiro federal",
+   "nome": "Fala.BR, do Governo Federal",
+   "para": "Para dinheiro federal mandado para Cariacica. Aceita denúncia sem nome, mas aí não dá resposta.",
+   "link": "https://falabr.cgu.gov.br/web/home",
+   "botao": "Abrir o Fala.BR",
+   "telefone": ""
+  }
+ ]
+}

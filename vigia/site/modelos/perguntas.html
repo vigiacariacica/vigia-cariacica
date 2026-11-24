@@ -24,6 +24,8 @@
     <div class="ped">
       {% if it.estado == 'respondido' %}<span class="selo ok">Respondida</span>{% elif it.estado == 'parcial' %}<span class="selo neutro">Respondida só em parte</span>{% elif it.estado == 'negado' %}<span class="selo">Negada</span>{% elif it.estado == 'vencido' %}<span class="selo">Atrasada</span>{% else %}<span class="selo neutro">Esperando resposta</span>{% endif %}
       <p>{{ it.pergunta }}</p>
+      {% for r in it.resumos %}<p class="resposta"><b>O que responderam ({{ ddmm(r.data) }}):</b> {{ r.resumo }}</p>{% endfor %}
+      {% for pb in it.pubs %}<p class="miuda"><a href="{{ pb.link }}" rel="noopener">Falamos disso no {{ pb.rotulo|lower }} de {{ ddmm(pb.data) }} →</a></p>{% endfor %}
       <span class="meta">Para: {{ it.para }} · enviada em {{ ddmm(it.enviado) }} · número {{ it.numeros|join(' e ') }}</span>
     </div>
     {% endfor %}
@@ -31,6 +33,8 @@
   </details>
 {% endfor %}
 </div>
+
+<p><a href="/novidades/">Veja tudo o que o Vigia fez, dia a dia →</a></p>
 
 {% include "_compartilhar.html" %}
 

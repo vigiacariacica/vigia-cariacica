@@ -100,3 +100,20 @@ com a data e o motivo, no mesmo commit da mudança. O histórico do git guarda o
   cada empresa atendeu. A coleta semanal deixa de baixar o TSE até a revisão.
 - **Sonda de fontes:** as amostras saem sem e-mail e, nas linhas de pessoa física, sem nome e sem histórico.
 - **Arquivos fora:** listas recebidas por LAI (`data/entrada/`) nunca vão para o git público.
+
+## Site: o que o Vigia fez e denúncia (24/11/2026)
+
+- **"O que fizemos" (`/novidades/`)**: uma linha do tempo com tudo o que o Vigia faz em público. Sai de arquivos
+  deste repositório, nunca de texto escrito na página: `data/site/publicacoes.csv` (só peça que JÁ FOI AO AR, com
+  link, resumo, outro lado e fonte da legenda original), as perguntas (`data/pedidos/`), as respostas conferidas
+  (`data/pedidos/respostas_publicas.csv`) e `data/resultados.csv`. Erro achado depois de publicar vai na coluna
+  `correcao` e aparece em destaque, junto da peça: o Vigia não apaga o erro, corrige à vista.
+- **Denúncia (`/denuncie/`)**: o formulário manda para um Google Formulários da conta do Vigia
+  (`data/site/denuncia.json`). Por quê: grátis, sem servidor, o site continua estático e as respostas ficam
+  fechadas. Issues do GitHub ficaram de fora porque publicam na hora, antes de qualquer moderação, e exigem conta.
+  Regras: sem login e sem coletar e-mail (o contato é opcional e é a única forma de resposta); nada é publicado
+  sozinho, toda denúncia passa pela conferência e só vira pergunta oficial ou peça depois de checada na fonte, sem o
+  nome de quem mandou nem dado de terceiros; o celular não guarda rascunho nem código (aparelho dividido com a
+  família pode expor quem denunciou); contra robô, campo isca, limite de 5 envios por aba e o tempo de preenchimento
+  vão no campo de controle; o texto que parece CPF é barrado e telefone gera aviso. Sem script, o formulário vai
+  direto para o Google. Os dados ficam até 12 meses e o contato sai quando o caso termina.

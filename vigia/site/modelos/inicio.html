@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% from "_graficos.html" import dez %}
 {% from "_cat.html" import cat, icone with context %}
+{% from "_evento.html" import evento with context %}
 {% block conteudo %}
 <div class="grade-2 larga-esq">
   <section class="bloco" aria-labelledby="h1">
@@ -14,6 +15,26 @@
     {% include "_busca.html" %}
   </section>
 </div>
+
+{% if ultimas %}
+<section class="bloco" aria-labelledby="h-ultimas">
+  <p class="prot">O que fizemos</p>
+  <h2 id="h-ultimas">Últimas do Vigia</h2>
+  <ol class="linha curta">
+  {% for e in ultimas %}{{ evento(e, curto=True) }}
+  {% endfor %}
+  </ol>
+  <p><a href="/novidades/">Veja tudo o que fizemos: {{ n_pubs }} vídeos e posts e {{ n_perguntas }} perguntas oficiais →</a></p>
+</section>
+{% endif %}
+
+<section class="chamada-den" aria-labelledby="h-den">
+  <div>
+    <h2 id="h-den">Viu algo errado na cidade?</h2>
+    <p>Conte para a gente. Você não precisa dizer quem é. A gente confere e cobra.</p>
+  </div>
+  <a class="btn cheio" href="/denuncie/">Deixe aqui sua denúncia</a>
+</section>
 
 <section class="bloco faixa" aria-labelledby="h-padrao">
   <div class="grade-2">
@@ -41,6 +62,8 @@
     <a class="porta" href="/dinheiro/">{{ cat("dinheiro") }}<b>Para onde vai o dinheiro</b><span class="t">É como se a prefeitura gastasse {{ por_mes }} por mês com cada morador. Veja em quê.</span><span class="seta" aria-hidden="true">→</span></a>
     <a class="porta" href="/vereadores/">{{ cat("camara") }}<b>O que fizeram os vereadores</b><span class="t">Os projetos de cada um, do que muda a vida ao simbólico. E a conta.</span><span class="seta" aria-hidden="true">→</span></a>
     <a class="porta" href="/mapa/">{{ cat("mapa") }}<b>Onde mora a gente</b><span class="t">{{ br(pop_total) }} pessoas em 99 bairros. Veja no mapa onde é mais apertado e onde falta esgoto.</span><span class="seta" aria-hidden="true">→</span></a>
+    <a class="porta" href="/novidades/">{{ cat("pergunta", "O que fizemos") }}<b>Tudo o que o Vigia fez</b><span class="t">Cada vídeo, cada pergunta, cada resposta e cada prazo, com data.</span><span class="seta" aria-hidden="true">→</span></a>
+    <a class="porta" href="/denuncie/">{{ cat("seguranca", "Denúncia") }}<b>Deixe sua denúncia</b><span class="t">Viu algo errado? Conte para a gente. Não precisa dizer quem é.</span><span class="seta" aria-hidden="true">→</span></a>
     <a class="porta" href="/fontes/">{{ cat("fonte", "Nossas fontes") }}<b>De onde vêm os números</b><span class="t">Cada fonte oficial, como fazemos a conta e o que o dado não mostra.</span><span class="seta" aria-hidden="true">→</span></a>
   </div>
 </section>
