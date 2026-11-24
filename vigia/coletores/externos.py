@@ -166,14 +166,19 @@ def coletar_cauc(s) -> None:
 def coletar(hoje: date | None = None, s=None) -> None:
     s = s or sessao()
     hoje = hoje or date.today()
-    erros = []
+    erros, excecoes = [], []
     for nome, f in (("ISP", lambda x: coletar_isp(x, hoje)), ("CAUC", coletar_cauc)):
         try:
             f(s)
         except Exception as e:  # noqa: BLE001
             log.exception("%s falhou", nome)
             erros.append(f"{nome}: {type(e).__name__}: {str(e)[:120]}")
+            excecoes.append(e)
     if erros:
+        # Site do governo recusando o GitHub ou fora do ar (24/11/2026: gov.br e Tesouro abortaram a conexão):
+        # é fonte fora, que só vira alarme se durar. Erro no nosso código continua sendo alarme na hora.
+        if all(qualidade.erro_passageiro(e, []) for e in excecoes):
+            raise RuntimeError("; ".join(erros)) from excecoes[0]
         raise RuntimeError("; ".join(erros))
 
 
