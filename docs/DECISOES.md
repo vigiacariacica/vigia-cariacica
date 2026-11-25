@@ -72,11 +72,13 @@ com a data e o motivo, no mesmo commit da mudança. O histórico do git guarda o
   dividir um pelo outro, porque a divisão premia quem apresenta mais projetos simbólicos e pune quem é minoria.
   Ordem alfabética, sem partido, sem foto, sem ranking.
 - **24/11/2026: correção dos vereadores, "Virou lei".** Depois que a lei sai, o sistema da Câmara muda a fase do
-  projeto para "Arquivamento", e a página lia isso como arquivado: mostrava 55 aprovados, quando eram 113. Agora a
-  situação vem de `ferramentas/camara_producao.py`, que baixa os CSVs oficiais (produção por autor e leis de
-  autoria) e liga cada lei ao projeto de origem dito no cadastro de leis, com duas travas, porque o cadastro às vezes
-  aponta o projeto errado (projeto repetido do mesmo autor; projeto não votado com ementa diferente da lei). A
-  correção fica escrita na própria página. A classificação por impacto continua do Vigia; projeto novo é lido e
+  projeto para "Arquivamento", e a página lia isso como arquivado: mostrava 55 aprovados, quando eram 127. Agora a
+  situação vem de `ferramentas/camara_producao.py`, que baixa os CSVs oficiais (produção por autor, leis de autoria,
+  mensagens de veto do prefeito) e a página de cada projeto. Aprovado é o que tem a votação final registrada no
+  histórico; "Virou lei" vem da "Norma resultante" ou da sanção na página do projeto, ou do cadastro de leis. O
+  cadastro de leis está incompleto e às vezes aponta o projeto errado (projeto repetido do mesmo autor; projeto não
+  votado com outra ementa), e a própria página do projeto já pôs norma em projeto nunca votado: sem votação
+  registrada, só vale a ligação do cadastro que passa pelas travas. A correção fica escrita na própria página. A classificação por impacto continua do Vigia; projeto novo é lido e
   entra em `data/camara/classificacao_extra.json`, ou aparece como "A classificar".
 - **12/11/2026: uma página, uma tarefa.** A primeira tela do celular é título e resposta; fontes e palavras
   difíceis moram em `/fontes/`; letras servidas pelo próprio site (nada de Google). O teste do site trava isso.

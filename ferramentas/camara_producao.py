@@ -39,6 +39,7 @@ SPL = "https://cariacica.camarasempapel.com.br/spl/"
 LEG = "https://cariacica.camarasempapel.com.br/legislacao/"
 UA = {"User-Agent": "Mozilla/5.0 (vigia-cariacica; leitura de dados publicos)"}
 ANOS = (2025, 2026)
+EXECUTIVO = "125"     # autor "Executivo Municipal" no sistema (vetos do prefeito)
 TIPOS_PL = {"Projeto de Lei Legislativo": ("PL", "Projeto de Lei"),
             "Projeto de Lei Complementar Legislativo": ("PLC", "Projeto de Lei Complementar"),
             "Projeto de Lei Complementar": ("PLC", "Projeto de Lei Complementar"),
@@ -91,15 +92,72 @@ def baixar(pasta: Path) -> None:
             time.sleep(1)
         (pasta / f"leis_{aid}.csv").write_bytes(_exportar_csv(LEG + f"consulta-legislacao.aspx?autor={aid}"))
         time.sleep(1)
+    for ano in ANOS:          # mensagens de veto do prefeito
+        (pasta / f"prod_{EXECUTIVO}_{ano}.csv").write_bytes(
+            _exportar_csv(SPL + f"consulta-producao.aspx?autor={EXECUTIVO}&ano_proposicao={ano}"))
     origem = {}
     for lei in _leis(pasta, autores).values():
-        pag = _abrir(urllib.request.build_opener(), LEG + f"norma.aspx?id={lei['cod']}").decode("utf-8", "replace")
+        try:
+            pag = _abrir(urllib.request.build_opener(), LEG + f"norma.aspx?id={lei['cod']}").decode("utf-8", "replace")
+        except Exception:  # noqa: BLE001 - código de norma quebrado no CSV: fica sem origem
+            origem[lei["cod"]] = None
+            continue
         m = re.search(r"processo\.aspx\?id=(\d+)'[^>]*>(?:\s*<[^>]+>)*\s*([^<]+)</a>", pag)
         origem[lei["cod"]] = m.group(1) if m else None
         time.sleep(0.5)
     (pasta / "leis_origem.json").write_text(json.dumps(origem, indent=0), encoding="utf-8")
+    # a página de cada projeto: "Norma resultante" e o histórico (votação, sanção, veto)
+    processos = {}
+    for x in _producao(pasta, autores):
+        if x["tipo"] in TIPOS_PL and x["id"] not in processos:
+            pag = _abrir(urllib.request.build_opener(), SPL + f"processo.aspx?id={x['id']}").decode("utf-8", "replace")
+            processos[x["id"]] = _so_texto(pag)
+            time.sleep(0.4)
+    (pasta / "processos.json").write_text(json.dumps(processos, ensure_ascii=False), encoding="utf-8")
     (pasta / "coleta.json").write_text(json.dumps({"coletado_em": date.today().isoformat()}), encoding="utf-8")
     print(f"{len(autores)} vereadores baixados em {pasta}")
+
+
+def _so_texto(t: str) -> str:
+    """Página do processo em texto, campos separados por " | " (do jeito que _estado_processo lê)."""
+    t = re.sub(r"<script.*?</script>|<style.*?</style>", " ", t, flags=re.S)
+    x = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " | ", t)))
+    x = re.sub(r"(\s*\|\s*)+", " | ", x)
+    a = x.find("Data de apresenta")
+    return x[a:] if a >= 0 else x[-20000:]
+
+
+def _estado_processo(p: str) -> dict:
+    """O que a página do projeto diz: norma resultante, votação final aprovada, sanção ou promulgação."""
+    acoes = []
+    for trecho in p.split("| Recebimento: |")[1:]:
+        f = re.search(r"Fase: \| ([^|]+) \|", trecho)
+        a = re.search(r"Ação: \| ([^|]+) \|", trecho)
+        acoes.append(((f.group(1).strip() if f else ""), (a.group(1).strip() if a else "")))
+    norma = re.search(r"Norma resultante \| ([^|]+) \|", p)
+    feitas = {a for _, a in acoes}
+    return {"norma": norma.group(1).strip() if norma else "",
+            "votado": any(a == "Proposição Aprovada" and ("2ª Discuss" in f or f.startswith("Para Discussão e Votação-PR"))
+                          for f, a in acoes),
+            "sancionado": bool(feitas & {"Sancionado", "Promulgado", "Sanção Tácita"})}
+
+
+def _vetos(pasta: Path) -> dict[tuple[str, str], str]:
+    """Mensagens de veto do prefeito -> (número, ano) do projeto do vereador: "total" ou "parcial"."""
+    if not (pasta / f"prod_{EXECUTIVO}_{ANOS[0]}.csv").exists():
+        return {}
+    out = {}
+    for x in _producao(pasta, {EXECUTIVO: "Executivo Municipal"}):
+        if x["tipo"] != "Veto":
+            continue
+        e = re.sub(r"\s+", " ", x["ementa"]).upper()
+        if "EXECUTIVO N" in e:          # veto a emenda em projeto do próprio prefeito
+            continue
+        m = re.search(r"(?:PROJETO|JOJETO|PROTEJOTO|PL)[^0-9]*?N?[°º\.]?\s*(\d+)/(\d{4})", e)
+        if m:
+            total = bool(re.search(r"VETAR? TOTALMENTE|VETA O AUT|DECIDI VETAR TOTALMENTE", e))
+            out[(m.group(1).lstrip("0"), m.group(2))] = "total" if total else "parcial"
+    return out
 
 
 # ---------------------------------------------------------------- ler
@@ -162,10 +220,15 @@ def _chave(s: str) -> str:
     return re.sub(r"[^A-Z ]", "", s).strip()
 
 
-def _situacao(x: dict, virou_lei: bool) -> str:
+def _situacao(x: dict, virou_lei: bool, est: dict | None, veto: str | None) -> str:
+    """Com a página do projeto (est), aprovado é só o que tem a votação final registrada no histórico; vetado é o
+    aprovado que recebeu mensagem de veto do prefeito e ainda não virou lei. Sem a página, vale a fase."""
     if virou_lei:
         return "Virou lei"
-    if x["fase"] in FASE_APROVADO:
+    if est is not None:
+        if est["votado"]:
+            return "Vetado pelo prefeito" if veto else "Aprovado pela Câmara"
+    elif x["fase"] in FASE_APROVADO:
         return "Aprovado pela Câmara"
     if x["situacao"] == "ARQUIVADO" or x["fase"] in FASE_ARQUIVO:
         return "Arquivado/encerrado"
@@ -190,7 +253,7 @@ def _homenagem(x: dict) -> bool:
     congratulação. Moção de pesar não entra."""
     e = x["ementa"].upper()
     if x["tipo"] == "Projeto de Decreto Legislativo":
-        return bool(re.search(r"CIDAD|COMENDA|MEDALHA|HONRA|M[ÉE]RITO|DIPLOMA|T[ÍI]TULO", e))
+        return bool(re.search(r"CIDAD[ÃA]|COMENDA|MEDALHA|HONRA|M[ÉE]RITO|DIPLOMA|T[ÍI]TULO", e))
     if x["tipo"] == "Moção":
         return "PESAR" not in e and bool(re.search(
             r"APLAUSO|CONGRATULA|LOUVOR|PARAB|RECONHEC|HOMENAG|AGRADEC|M[ÉE]RITO", e))
@@ -240,6 +303,10 @@ def montar(pasta: Path) -> None:
     leis = _leis(pasta, autores)
     origem = json.loads((pasta / "leis_origem.json").read_text(encoding="utf-8"))
     lei_do_processo = _ligar_leis(linhas, leis, origem)
+    proc_f = pasta / "processos.json"
+    processos = json.loads(proc_f.read_text(encoding="utf-8")) if proc_f.exists() else {}
+    estados = {k: _estado_processo(v) for k, v in processos.items()}
+    vetos = _vetos(pasta)
 
     antigos = json.loads((CAMARA / "projetos.json").read_text(encoding="utf-8"))
     resumo_antigo = json.loads((CAMARA / "producao_vereadores.json").read_text(encoding="utf-8"))
@@ -260,18 +327,36 @@ def montar(pasta: Path) -> None:
             continue
         sigla, tipo = TIPOS_PL[x["tipo"]]
         cods = sorted(lei_do_processo.get(x["id"], []), key=lambda c: leis[c]["data"])
+        est = estados.get(x["id"])
+        if est and not est["votado"]:
+            # a própria página às vezes põe "Norma resultante" em projeto que nunca foi votado (PL 342/2025, PR 4/2026,
+            # 24/11/2026): sem votação registrada, só vale a ligação do cadastro de leis que passou pelas travas
+            est = {**est, "norma": "", "sancionado": False}
+        if est and est["norma"] and cods:   # a página do projeto manda: a ligação do cadastro tem de bater com ela
+            n = re.sub(r"\D", "", est["norma"].split("/")[0])
+            cods = [k for k in cods if re.sub(r"\D", "", leis[k]["nome"].split("/")[0]).endswith(n)]
         c = clas.get(x["id"], {})
         ementa = re.sub(r"\s+", " ", x["ementa"]).strip(" \"'“”’")
+        if cods:
+            lei, lei_link = " e ".join(leis[k]["nome"] for k in cods), LEG + f"norma.aspx?id={cods[0]}"
+        elif est and est["norma"]:          # "Norma resultante" na página do projeto: "Lei Ordinária 6765/2025"
+            m = re.match(r"(.+?)\s+(\d+)/(\d{4})$", est["norma"])
+            lei = f"{m.group(1)} {int(m.group(2)):,}/{m.group(3)}".replace(",", ".") if m else est["norma"]
+            lei_link = SPL + f'processo.aspx?id={x["id"]}'
+        elif est and est["votado"] and est["sancionado"]:
+            lei, lei_link = "lei sancionada (o número não está ligado no sistema)", SPL + f'processo.aspx?id={x["id"]}'
+        else:
+            lei, lei_link = "", ""
+        veto = vetos.get((x["num"].lstrip("0"), x["ano"]))
         projetos.append({
             "vereador": nome_site.get(_chave(autores[x["vereador_id"]]), autores[x["vereador_id"]].title()),
             "numero": f'{sigla} {x["num"]}/{x["ano"]}', "tipo": tipo,
             "data": f'{x["data"][6:]}-{x["data"][3:5]}-{x["data"][:2]}',
             "categoria": c.get("categoria") or _categoria(ementa),
-            "status": _situacao(x, bool(cods)), "fase": x["fase"], "ementa": ementa,
+            "status": _situacao(x, bool(lei), est, veto), "fase": x["fase"], "ementa": ementa,
             "link": SPL + f'processo.aspx?id={x["id"]}',
             "utilidade": c.get("utilidade", "A classificar"), "motivo": c.get("motivo", ""),
-            "lei": " e ".join(leis[k]["nome"] for k in cods),
-            "lei_link": LEG + f"norma.aspx?id={cods[0]}" if cods else "",
+            "lei": lei, "lei_link": lei_link, "veto": veto or "",
         })
 
     por: dict[str, list[dict]] = defaultdict(list)
@@ -310,7 +395,7 @@ def montar(pasta: Path) -> None:
     cidade = {"papeis": len(unicos), "indicacoes": tu["Indicação"], "requerimentos": tu["Requerimento"],
               "homenagens": sum(1 for x in unicos.values() if _homenagem(x)),
               "titulos_cidadao": sum(1 for x in unicos.values() if x["tipo"] == "Projeto de Decreto Legislativo"
-                                     and "CIDAD" in x["ementa"].upper()),
+                                     and re.search(r"CIDAD[ÃA]", x["ementa"].upper())),
               "mocoes_aplauso": sum(1 for x in unicos.values() if x["tipo"] == "Moção" and _homenagem(x)),
               "decretos_homenagem": sum(1 for x in unicos.values()
                                         if x["tipo"] == "Projeto de Decreto Legislativo" and _homenagem(x))}

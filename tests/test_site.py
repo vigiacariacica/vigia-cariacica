@@ -157,7 +157,7 @@ def test_projeto_que_virou_lei_conta_como_aprovado():
     assert all(not p.get("lei") for p in projetos if p["status"] == "Arquivado/encerrado")
     v = V.vereadores()
     c = v["cidade"]
-    assert c["aprovados"] == c["virou_lei"] + c["esperando"]
+    assert c["aprovados"] == c["virou_lei"] + c["esperando"] + c["vetados"]
     assert c["virou_lei"] == len({p["link"] for p in com_lei})
     assert sum(x["virou_lei"] for x in v["lista"]) >= c["virou_lei"]
 

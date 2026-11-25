@@ -12,7 +12,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Juquinha",
@@ -27,7 +28,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -42,7 +44,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -50,14 +53,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-02-06",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Sanção do Executivo",
   "ementa": "Institui no município de Cariacica o Programa de Prevenção à Diabetes nas Creches e Escolas Públicas Municipais e dá outras providências.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=124645",
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Flávio Preto",
@@ -72,7 +76,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -87,7 +92,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -95,14 +101,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-03-26",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Resultado do Veto",
   "ementa": "Altera dispositivos da Lei nº 6.635, de 03 de junho de 2024, e dá outras providências.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=125768",
   "utilidade": "Ementa não permite avaliar",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Flávio Preto",
@@ -117,7 +124,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -132,7 +140,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -147,7 +156,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -162,7 +172,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "Lei Ordinária 6.803/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19051"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19051",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -177,7 +188,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -192,7 +204,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "Lei Ordinária 6.770/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18989"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18989",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -207,7 +220,8 @@
   "utilidade": "Ementa não permite avaliar",
   "motivo": "",
   "lei": "Lei Ordinária 6.773/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19030"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19030",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -215,14 +229,15 @@
   "tipo": "Projeto de Resolução",
   "data": "2025-09-03",
   "categoria": "Política pública/regra",
-  "status": "Arquivado/encerrado",
+  "status": "Virou lei",
   "fase": "Arquivar Proposição",
   "ementa": "INSTITUI O CÓDIGO DE ÉTICA E DECORO PARLAMENTAR DA CÂMARA MUNICIPAL DE CARIACICA, CRIA O CONSELHO DE ÉTICA E DECORO PARLAMENTAR, ESTABELECE NORMAS DISCIPLINARES E DÁ OUTRAS PROVIDÊNCIAS.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=128325",
   "utilidade": "Efeito concreto",
   "motivo": "",
-  "lei": "",
-  "lei_link": ""
+  "lei": "lei sancionada (o número não está ligado no sistema)",
+  "lei_link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=128325",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -237,7 +252,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -252,7 +268,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -267,7 +284,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -282,7 +300,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -297,7 +316,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -312,7 +332,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -327,7 +348,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -342,7 +364,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.860/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19121"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19121",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -357,7 +380,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -372,7 +396,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -387,7 +412,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -402,7 +428,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "Lei Ordinária 6.911/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19189"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19189",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -417,7 +444,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -432,7 +460,8 @@
   "utilidade": "Ementa não permite avaliar",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -440,14 +469,15 @@
   "tipo": "Projeto de Lei",
   "data": "2026-04-07",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Sanção do Executivo",
   "ementa": "Dispõe sobre diretrizes para promoção da transparência e da ampla divulgação dos dias, horários e rotas da coleta de resíduos sólidos domiciliares no Município de Cariacica, e dá outras providências.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=131859",
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "parcial"
  },
  {
   "vereador": "Flávio Preto",
@@ -462,7 +492,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -477,7 +508,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -492,7 +524,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -507,7 +540,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -522,7 +556,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -537,7 +572,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -552,7 +588,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -567,7 +604,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -582,7 +620,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Flávio Preto",
@@ -597,7 +636,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -612,7 +652,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -620,14 +661,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-01-28",
   "categoria": "Política pública/regra",
-  "status": "Arquivado/encerrado",
+  "status": "Virou lei",
   "fase": "Arquivamento",
   "ementa": "EMENTA: Dispõe sobre o atendimento preferencial a pessoas com câncer e pacientes de hemodiálise em tratamento nos estabelecimentos comerciais, bancários e serviços similares, no município de Cariacica.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=124282",
   "utilidade": "Efeito concreto",
   "motivo": "",
-  "lei": "",
-  "lei_link": ""
+  "lei": "Lei Ordinária 6.765/2025",
+  "lei_link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=124282",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -642,7 +684,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -657,7 +700,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -672,7 +716,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "Lei Ordinária 6.822/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19074"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19074",
+  "veto": "parcial"
  },
  {
   "vereador": "Marcelo Zonta",
@@ -687,7 +732,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -702,7 +748,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -717,7 +764,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -725,14 +773,15 @@
   "tipo": "Projeto de Resolução",
   "data": "2025-02-21",
   "categoria": "Política pública/regra",
-  "status": "Arquivado/encerrado",
+  "status": "Virou lei",
   "fase": "Arquivar Proposição",
   "ementa": "Altera o Artigo 47 do Regimento Internet da Câmara Municipal de Cariacica, criando a Comissão Permanente de Defesa dos Animais, e dá outras providências.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=125141",
   "utilidade": "Efeito fraco",
   "motivo": "",
-  "lei": "",
-  "lei_link": ""
+  "lei": "lei sancionada (o número não está ligado no sistema)",
+  "lei_link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=125141",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -747,7 +796,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "Lei Ordinária 6.863/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19138"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19138",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -762,7 +812,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -777,7 +828,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -792,7 +844,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -807,7 +860,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -822,7 +876,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -837,7 +892,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -852,7 +908,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -860,14 +917,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-04-22",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Sanção do Executivo",
   "ementa": "DISPÕE SOBRE A PROIBIÇÃO DE MANTER ANIMAIS DOMÉSTICOS PRESOS EM CORRENTES E ASSEMELHADOS NO ÂMBITO DO MUNICÍPIO DE CARIACICA E DÁ OUTRAS PROVIDÊNCIAS",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=126377",
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Marcelo Zonta",
@@ -882,7 +940,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.864/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19139"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19139",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -897,7 +956,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -912,7 +972,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -927,7 +988,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Marcelo Zonta",
@@ -942,7 +1004,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -950,14 +1013,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-05-20",
   "categoria": "Data comemorativa",
-  "status": "Arquivado/encerrado",
+  "status": "Virou lei",
   "fase": "Arquivamento",
   "ementa": "INSTITUI A SEMANA MUNICIPAL DE CONSCIENTIZAÇÃO SOBRE O PERÍODO DE ANDADA DO CARANGUEJO UÇÁ NO MUNICÍPIO DE CARIACICA E DÁ OUTRAS PROVIDÊNCIAS.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=126781",
   "utilidade": "Simbólico",
   "motivo": "",
-  "lei": "",
-  "lei_link": ""
+  "lei": "Lei Ordinária 6.802/2025",
+  "lei_link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=126781",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -972,7 +1036,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "Lei Ordinária 6.904/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19181"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19181",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -987,7 +1052,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1002,7 +1068,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1017,7 +1084,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.897/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19175"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19175",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1032,7 +1100,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1047,7 +1116,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1062,7 +1132,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.820/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19072"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19072",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1077,7 +1148,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1092,7 +1164,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1107,7 +1180,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1122,7 +1196,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1130,14 +1205,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-11-25",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Resultado do Veto",
   "ementa": "Dispõe sobre a obrigatoriedade de abertura de shows e eventos musicais nacionais e internacionais por artistas ou bandas locais no município de Cariacica e dá outras providências.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=130014",
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1152,7 +1228,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1160,14 +1237,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-12-02",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Sanção do Executivo",
   "ementa": "DISPÕE SOBRE A REGULAMENTAÇÃO E O FUNCIONAMENTO DE CÂMARAS DE BRONZEAMENTO ARTIFICIAL NO MUNICÍPIO DE CARIACICA E DÁ OUTRAS PROVIDÊNCIAS.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=130140",
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1182,7 +1260,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.877/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19152"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19152",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1197,7 +1276,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1212,7 +1292,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.886/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19164"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19164",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1227,7 +1308,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "Lei Ordinária 6.893/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19171"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19171",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1242,7 +1324,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1257,7 +1340,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.915/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19193"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19193",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1272,7 +1356,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1287,7 +1372,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1302,7 +1388,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1317,7 +1404,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1332,7 +1420,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1347,7 +1436,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1362,7 +1452,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Marcelo Zonta",
@@ -1377,7 +1468,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Paulo Foto",
@@ -1385,14 +1477,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-02-07",
   "categoria": "Política pública/regra",
-  "status": "Arquivado/encerrado",
+  "status": "Virou lei",
   "fase": "Arquivamento",
   "ementa": "DISPÕE SOBRE OS DIREITOS DAS PARTURIENTES EM SITUAÇÕES DE ÓBITOS PERINATAIS ATENDIDAS EM ESTABELECIMENTOS PÚBLICOS E PRIVADOS DE SAÚDE LOCALIZADOS NO MUNICÍPIO DE CARIACICA, E DÁ OUTRAS PROVIDÊNCIAS.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=124677",
   "utilidade": "Efeito concreto",
   "motivo": "",
-  "lei": "",
-  "lei_link": ""
+  "lei": "Lei Ordinária 6.766/2025",
+  "lei_link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=124677",
+  "veto": "total"
  },
  {
   "vereador": "Paulo Foto",
@@ -1407,7 +1500,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.795/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19043"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19043",
+  "veto": ""
  },
  {
   "vereador": "Paulo Foto",
@@ -1422,7 +1516,8 @@
   "utilidade": "Ementa não permite avaliar",
   "motivo": "",
   "lei": "Lei Ordinária 6.753/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18972"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18972",
+  "veto": ""
  },
  {
   "vereador": "Paulo Foto",
@@ -1437,7 +1532,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "Lei Ordinária 6.771/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18990"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18990",
+  "veto": "parcial"
  },
  {
   "vereador": "Paulo Foto",
@@ -1452,7 +1548,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "Lei Ordinária 6.770/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18989"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18989",
+  "veto": ""
  },
  {
   "vereador": "Paulo Foto",
@@ -1467,7 +1564,8 @@
   "utilidade": "Ementa não permite avaliar",
   "motivo": "",
   "lei": "Lei Ordinária 6.773/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19030"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19030",
+  "veto": ""
  },
  {
   "vereador": "Paulo Foto",
@@ -1475,14 +1573,15 @@
   "tipo": "Projeto de Resolução",
   "data": "2025-09-03",
   "categoria": "Política pública/regra",
-  "status": "Arquivado/encerrado",
+  "status": "Virou lei",
   "fase": "Arquivar Proposição",
   "ementa": "INSTITUI O CÓDIGO DE ÉTICA E DECORO PARLAMENTAR DA CÂMARA MUNICIPAL DE CARIACICA, CRIA O CONSELHO DE ÉTICA E DECORO PARLAMENTAR, ESTABELECE NORMAS DISCIPLINARES E DÁ OUTRAS PROVIDÊNCIAS.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=128325",
   "utilidade": "Efeito concreto",
   "motivo": "",
-  "lei": "",
-  "lei_link": ""
+  "lei": "lei sancionada (o número não está ligado no sistema)",
+  "lei_link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=128325",
+  "veto": ""
  },
  {
   "vereador": "Paulo Foto",
@@ -1497,7 +1596,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.842/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19098"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19098",
+  "veto": "parcial"
  },
  {
   "vereador": "Paulo Foto",
@@ -1512,7 +1612,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.841/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19097"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19097",
+  "veto": "parcial"
  },
  {
   "vereador": "Paulo Foto",
@@ -1527,7 +1628,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Paulo Foto",
@@ -1542,7 +1644,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Paulo Foto",
@@ -1557,7 +1660,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Paulo Foto",
@@ -1572,7 +1676,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Paulo Foto",
@@ -1587,7 +1692,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Paulo Foto",
@@ -1602,7 +1708,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.890/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19168"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19168",
+  "veto": ""
  },
  {
   "vereador": "Paulo Foto",
@@ -1617,7 +1724,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Paulo Foto",
@@ -1632,7 +1740,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "Lei Ordinária 6.894/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19172"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19172",
+  "veto": ""
  },
  {
   "vereador": "Paulo Foto",
@@ -1647,7 +1756,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.907/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19185"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19185",
+  "veto": ""
  },
  {
   "vereador": "Paulo Foto",
@@ -1662,7 +1772,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.908/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19186"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19186",
+  "veto": ""
  },
  {
   "vereador": "Paulo Foto",
@@ -1677,7 +1788,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Paulo Foto",
@@ -1692,7 +1804,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Paulo Foto",
@@ -1707,7 +1820,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Paulo Foto",
@@ -1722,7 +1836,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Lei",
@@ -1737,7 +1852,8 @@
   "utilidade": "Ementa não permite avaliar",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Lei",
@@ -1752,7 +1868,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Lei",
@@ -1760,14 +1877,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-10-10",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Resultado do Veto",
   "ementa": "DISPÕE SOBRE A PRÁTICA DA EQUOTERÁPIA, NO ÂMBITO DE MUNICÍPIO DE CARIACICA, E DÁ OUTRAS PROVIDÊNCIAS.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=129117",
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Lei",
@@ -1775,14 +1893,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-11-14",
   "categoria": "Nome de rua/local",
-  "status": "Arquivado/encerrado",
+  "status": "Virou lei",
   "fase": "Arquivamento",
   "ementa": "Dar-se-à ao Logradouro Atualmente sem nomeclatura, que passará a chamar-se Rua Antonia Andrade Alvez situada no Bairro Aparecida, Neste Município de Cariacica.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=129850",
   "utilidade": "Simbólico",
   "motivo": "",
-  "lei": "",
-  "lei_link": ""
+  "lei": "lei sancionada (o número não está ligado no sistema)",
+  "lei_link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=129850",
+  "veto": ""
  },
  {
   "vereador": "Lei",
@@ -1797,7 +1916,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.892/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19170"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19170",
+  "veto": "parcial"
  },
  {
   "vereador": "Açucena",
@@ -1812,7 +1932,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -1827,7 +1948,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -1842,7 +1964,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -1857,7 +1980,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -1872,7 +1996,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.831/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19087"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19087",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -1887,7 +2012,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -1902,7 +2028,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -1917,7 +2044,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -1932,7 +2060,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -1947,7 +2076,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -1962,7 +2092,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -1977,7 +2108,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -1992,7 +2124,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2007,7 +2140,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2022,7 +2156,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2037,7 +2172,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2052,7 +2188,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2067,7 +2204,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2082,7 +2220,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2097,7 +2236,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2112,7 +2252,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2127,7 +2268,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2142,7 +2284,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2157,7 +2300,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2172,7 +2316,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2187,7 +2332,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2202,7 +2348,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2210,14 +2357,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-11-12",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Sanção do Executivo",
   "ementa": "Dispõe sobre o Programa Municipal de Assistência à Saúde Mental de Vítimas de Racismo no Município de Cariacica e dá outras providências.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=129797",
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Açucena",
@@ -2232,7 +2380,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2247,7 +2396,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2262,7 +2412,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2277,7 +2428,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2292,7 +2444,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2307,7 +2460,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2322,7 +2476,8 @@
   "utilidade": "Ementa não permite avaliar",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2337,7 +2492,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2352,7 +2508,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2367,7 +2524,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2382,7 +2540,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2397,7 +2556,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2412,7 +2572,8 @@
   "utilidade": "Provavelmente inconstitucional",
   "motivo": "Jornada de trabalho é direito do trabalho, competência da União (Constituição, art. 22, I).",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2427,7 +2588,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2442,7 +2604,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2457,7 +2620,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2472,7 +2636,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2487,7 +2652,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2502,7 +2668,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2517,7 +2684,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2532,7 +2700,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2547,7 +2716,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2562,7 +2732,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Açucena",
@@ -2577,7 +2748,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cabo Fonseca",
@@ -2592,7 +2764,8 @@
   "utilidade": "Provavelmente inconstitucional",
   "motivo": "O STF garantiu as manifestações pela legalização de drogas como liberdade de expressão (ADPF 187).",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cabo Fonseca",
@@ -2607,7 +2780,8 @@
   "utilidade": "Ementa não permite avaliar",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cabo Fonseca",
@@ -2622,7 +2796,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cabo Fonseca",
@@ -2637,7 +2812,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "Lei Ordinária 6.769/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18988"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18988",
+  "veto": ""
  },
  {
   "vereador": "Cabo Fonseca",
@@ -2652,7 +2828,8 @@
   "utilidade": "Ementa não permite avaliar",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cabo Fonseca",
@@ -2667,7 +2844,8 @@
   "utilidade": "Ementa não permite avaliar",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cabo Fonseca",
@@ -2682,7 +2860,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cabo Fonseca",
@@ -2697,7 +2876,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cabo Fonseca",
@@ -2712,7 +2892,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cabo Fonseca",
@@ -2727,7 +2908,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cabo Fonseca",
@@ -2742,7 +2924,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cabo Fonseca",
@@ -2757,7 +2940,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cabo Fonseca",
@@ -2772,7 +2956,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.843/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19099"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19099",
+  "veto": "parcial"
  },
  {
   "vereador": "Cabo Fonseca",
@@ -2787,7 +2972,8 @@
   "utilidade": "Provavelmente inconstitucional",
   "motivo": "Trânsito e multas são competência da União (Constituição, art. 22, XI).",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jades Amorim",
@@ -2802,7 +2988,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jades Amorim",
@@ -2817,7 +3004,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jades Amorim",
@@ -2832,7 +3020,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jades Amorim",
@@ -2847,7 +3036,8 @@
   "utilidade": "Ementa não permite avaliar",
   "motivo": "",
   "lei": "Lei Ordinária 6.753/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18972"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18972",
+  "veto": ""
  },
  {
   "vereador": "Jades Amorim",
@@ -2862,7 +3052,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.800/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19048"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19048",
+  "veto": ""
  },
  {
   "vereador": "Jades Amorim",
@@ -2877,7 +3068,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "Lei Ordinária 6.770/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18989"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18989",
+  "veto": ""
  },
  {
   "vereador": "Jades Amorim",
@@ -2892,7 +3084,8 @@
   "utilidade": "Ementa não permite avaliar",
   "motivo": "",
   "lei": "Lei Ordinária 6.773/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19030"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19030",
+  "veto": ""
  },
  {
   "vereador": "Jades Amorim",
@@ -2907,7 +3100,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jades Amorim",
@@ -2922,7 +3116,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jades Amorim",
@@ -2930,14 +3125,15 @@
   "tipo": "Projeto de Resolução",
   "data": "2025-09-03",
   "categoria": "Política pública/regra",
-  "status": "Arquivado/encerrado",
+  "status": "Virou lei",
   "fase": "Arquivar Proposição",
   "ementa": "INSTITUI O CÓDIGO DE ÉTICA E DECORO PARLAMENTAR DA CÂMARA MUNICIPAL DE CARIACICA, CRIA O CONSELHO DE ÉTICA E DECORO PARLAMENTAR, ESTABELECE NORMAS DISCIPLINARES E DÁ OUTRAS PROVIDÊNCIAS.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=128325",
   "utilidade": "Efeito concreto",
   "motivo": "",
-  "lei": "",
-  "lei_link": ""
+  "lei": "lei sancionada (o número não está ligado no sistema)",
+  "lei_link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=128325",
+  "veto": ""
  },
  {
   "vereador": "Jades Amorim",
@@ -2945,14 +3141,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-10-21",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Sanção do Executivo",
   "ementa": "DISPÕE SOBRE INSTITUIR A POLÍTICA MUNICIPAL DESENSIBILIZAÇÃO E INFORMAÇÃO SOBRE A PRÉ-ECLÂMPSIA.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=129336",
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Jades Amorim",
@@ -2967,7 +3164,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jades Amorim",
@@ -2982,7 +3180,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.838/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19094"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19094",
+  "veto": ""
  },
  {
   "vereador": "Jades Amorim",
@@ -2990,14 +3189,15 @@
   "tipo": "Projeto de Lei",
   "data": "2026-02-20",
   "categoria": "Data comemorativa",
-  "status": "Arquivado/encerrado",
+  "status": "Virou lei",
   "fase": "Arquivamento",
   "ementa": "Institui o \"Dia Municipal do Terceiro Setor\", a ser celebrado anualmente no dia 23 de Março.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=131128",
   "utilidade": "Simbólico",
   "motivo": "",
-  "lei": "",
-  "lei_link": ""
+  "lei": "Lei Ordinária 6.874/2026",
+  "lei_link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=131128",
+  "veto": ""
  },
  {
   "vereador": "Jades Amorim",
@@ -3012,7 +3212,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jades Amorim",
@@ -3027,7 +3228,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jades Amorim",
@@ -3041,8 +3243,9 @@
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=131885",
   "utilidade": "Simbólico",
   "motivo": "",
-  "lei": "Lei Ordinária 6.874/2026 e Lei Ordinária 6.896/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id= a ser celebrado anualmente no dia 23 de Março.\""
+  "lei": "Lei Ordinária 6.896/2026",
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19174",
+  "veto": ""
  },
  {
   "vereador": "Dr. Fernando Santório",
@@ -3057,7 +3260,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.768/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18987"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18987",
+  "veto": ""
  },
  {
   "vereador": "Dr. Fernando Santório",
@@ -3072,7 +3276,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "Lei Ordinária 6.801/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19049"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19049",
+  "veto": ""
  },
  {
   "vereador": "Dr. Fernando Santório",
@@ -3087,7 +3292,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Dr. Fernando Santório",
@@ -3102,7 +3308,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "Lei Ordinária 6.804/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19052"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19052",
+  "veto": ""
  },
  {
   "vereador": "Dr. Fernando Santório",
@@ -3117,7 +3324,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Dr. Fernando Santório",
@@ -3132,7 +3340,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.829/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19085"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19085",
+  "veto": ""
  },
  {
   "vereador": "Dr. Fernando Santório",
@@ -3147,7 +3356,8 @@
   "utilidade": "Provavelmente inconstitucional",
   "motivo": "Salário de servidor da prefeitura só pode ser mudado por projeto do prefeito (Constituição, art. 61, §1º, II, a).",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Dr. Fernando Santório",
@@ -3162,7 +3372,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.794/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19042"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19042",
+  "veto": ""
  },
  {
   "vereador": "Dr. Fernando Santório",
@@ -3170,14 +3381,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-08-12",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Sanção do Executivo",
   "ementa": "DISPÕE SOBRE A INCLUSÃO DE NOÇÕES BÁSICAS DE PRIMEIROS SOCORROS, COM ÊNFASE NA MANOBRA DE HEIMLICH, NO CURRÍCULO DAS ESCOLAS DA REDE MUNICIPAL DE ENSINO DE CARIACICA E DÁ OUTRAS PROVIDÊNCIAS.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=127973",
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Dr. Fernando Santório",
@@ -3192,7 +3404,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Dr. Fernando Santório",
@@ -3207,7 +3420,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.851/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19108"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19108",
+  "veto": "parcial"
  },
  {
   "vereador": "Dr. Fernando Santório",
@@ -3222,7 +3436,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Dr. Fernando Santório",
@@ -3237,7 +3452,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.926/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19205"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19205",
+  "veto": ""
  },
  {
   "vereador": "Dr. Fernando Santório",
@@ -3252,7 +3468,8 @@
   "utilidade": "Provavelmente inconstitucional",
   "motivo": "Trânsito e multas são competência da União (Constituição, art. 22, XI).",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Dr. Fernando Santório",
@@ -3267,7 +3484,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Dr. Fernando Santório",
@@ -3275,14 +3493,15 @@
   "tipo": "Projeto de Lei",
   "data": "2026-02-13",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Sanção do Executivo",
   "ementa": "EMENTA: DISPÕE SOBRE A DISPONIBILIZAÇÃO DE, NO MÍNIMO, 01 (UMA) CADEIRA DE RODAS EM CADA UNIDADE DO CENTRO DE REFERÊNCIA DE ASSISTÊNCIA SOCIAL - CRAS DO MUNICÍPIO DE CARIACICA E DÁ OUTRAS PROVIDÊNCIAS.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=131084",
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Dr. Fernando Santório",
@@ -3297,7 +3516,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Dr. Fernando Santório",
@@ -3312,7 +3532,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Dr. Fernando Santório",
@@ -3327,7 +3548,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.895/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19173"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19173",
+  "veto": ""
  },
  {
   "vereador": "Dr. Fernando Santório",
@@ -3342,7 +3564,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Dr. Fernando Santório",
@@ -3357,7 +3580,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Dr. Fernando Santório",
@@ -3372,7 +3596,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3387,7 +3612,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3402,7 +3628,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3417,7 +3644,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3432,7 +3660,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3447,7 +3676,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3462,7 +3692,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3477,7 +3708,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3492,7 +3724,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3507,7 +3740,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3522,7 +3756,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3537,7 +3772,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3552,7 +3788,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3567,7 +3804,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3582,7 +3820,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3597,7 +3836,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3612,7 +3852,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3627,7 +3868,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3642,7 +3884,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3657,7 +3900,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3672,7 +3916,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3687,7 +3932,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3702,7 +3948,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3717,7 +3964,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3732,7 +3980,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3747,7 +3996,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3762,7 +4012,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3777,7 +4028,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3792,7 +4044,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3807,7 +4060,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3822,7 +4076,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3837,7 +4092,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3852,7 +4108,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3867,7 +4124,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3882,7 +4140,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3897,7 +4156,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3912,7 +4172,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3927,7 +4188,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3942,7 +4204,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3957,7 +4220,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3972,7 +4236,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -3987,7 +4252,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4002,7 +4268,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4017,7 +4284,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4032,7 +4300,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4047,7 +4316,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4062,7 +4332,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4077,7 +4348,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4092,7 +4364,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4107,7 +4380,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4122,7 +4396,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4137,7 +4412,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4152,7 +4428,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4167,7 +4444,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4182,7 +4460,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4197,7 +4476,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4212,7 +4492,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "Lei Ordinária 6.868/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19142"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19142",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4227,7 +4508,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4242,7 +4524,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4257,7 +4540,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4272,7 +4556,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4287,7 +4572,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4302,7 +4588,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4317,7 +4604,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4332,7 +4620,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4347,7 +4636,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4362,7 +4652,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4377,7 +4668,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4392,7 +4684,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4407,7 +4700,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4422,7 +4716,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4437,7 +4732,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4452,7 +4748,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4467,7 +4764,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4482,7 +4780,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4497,7 +4796,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4512,7 +4812,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4527,7 +4828,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4542,7 +4844,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4557,7 +4860,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4572,7 +4876,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4587,7 +4892,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4602,7 +4908,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4610,14 +4917,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-07-07",
   "categoria": "Data comemorativa",
-  "status": "Arquivado/encerrado",
+  "status": "Virou lei",
   "fase": "Arquivamento",
   "ementa": "INSTITUI O \"DIA MUNICIPAL DA SAÚDE\" E DÁ OUTRAS PROVIDÊNCIAS.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=127617",
   "utilidade": "Simbólico",
   "motivo": "",
-  "lei": "",
-  "lei_link": ""
+  "lei": "Lei Ordinária 6.821/2025",
+  "lei_link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=127617",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4632,7 +4940,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4647,7 +4956,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4655,14 +4965,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-07-17",
   "categoria": "Utilidade pública",
-  "status": "Arquivado/encerrado",
+  "status": "Virou lei",
   "fase": "Arquivamento",
   "ementa": "DISPÕE SOBRE DECLARAR DE UTILIDADE PÚBLICA, O INSTITUTO NEOBACES - NÚCLEO DE ORQUESTRAS, BANDAS E CORAIS DO ESPIRITO SANTO, COM SEDE NESTE MUNICÍPIO DE CARIACICA, E DÁ OUTRAS PROVIDÊNCIAS.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=127739",
   "utilidade": "Simbólico",
   "motivo": "",
-  "lei": "",
-  "lei_link": ""
+  "lei": "Lei Ordinária 6.797/2025",
+  "lei_link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=127739",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4677,7 +4988,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4692,7 +5004,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4707,7 +5020,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4715,14 +5029,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-08-08",
   "categoria": "Data comemorativa",
-  "status": "Arquivado/encerrado",
+  "status": "Virou lei",
   "fase": "Arquivamento",
   "ementa": "INSTITUI O “JULHO CINZA”, MÊS DE CONSCIENTIZAÇÃO, ORIENTAÇÃO E COMBATE ÀS FAKE NEWS NO CALENDÁRIO OFICIAL DO MUNICÍPIO, COM OBJETIVO DE PROMOVER A EDUCAÇÃO E CONSCIENTIZAÇÃO DOS CIDADÃOS QUANTO AOS PERIGOS E IMPACTOS DAS NOTÍCIAS FALSAS NA SOCIEDADE, ALÉM DE INCENTIVAR PRÁTICAS RESPONSÁVEIS NA DIVULGAÇÃO E CONSUMO DE INFORMAÇÕES NO ÂMBITO DO MUNICÍPIO DE CARIACICA, E DÁ OUTRAS PROVIDÊNCIAS",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=127932",
   "utilidade": "Simbólico",
   "motivo": "",
-  "lei": "",
-  "lei_link": ""
+  "lei": "Lei Ordinária 6.824/2025",
+  "lei_link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=127932",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4737,7 +5052,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4752,7 +5068,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4767,7 +5084,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4782,7 +5100,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4797,7 +5116,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4812,7 +5132,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4827,7 +5148,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4842,7 +5164,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4857,7 +5180,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4872,7 +5196,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4887,7 +5212,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4902,7 +5228,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4917,7 +5244,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4932,7 +5260,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4947,7 +5276,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4962,7 +5292,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4977,7 +5308,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -4992,7 +5324,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5007,7 +5340,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5022,7 +5356,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5037,7 +5372,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5052,7 +5388,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5067,7 +5404,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.905/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19182"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19182",
+  "veto": "parcial"
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5082,7 +5420,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5097,7 +5436,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5112,7 +5452,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5127,7 +5468,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5142,7 +5484,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5157,7 +5500,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5172,7 +5516,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5187,7 +5532,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5202,7 +5548,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5217,7 +5564,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5232,7 +5580,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5247,7 +5596,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5262,7 +5612,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5277,7 +5628,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5292,7 +5644,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5307,7 +5660,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5322,7 +5676,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5337,7 +5692,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5352,7 +5708,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5367,7 +5724,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5382,7 +5740,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5397,7 +5756,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5412,7 +5772,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5427,7 +5788,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5442,7 +5804,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5457,7 +5820,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5472,7 +5836,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5487,7 +5852,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5502,7 +5868,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5517,7 +5884,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5532,7 +5900,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5547,7 +5916,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5562,7 +5932,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5577,7 +5948,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5592,7 +5964,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5607,7 +5980,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.898/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19176"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19176",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5622,7 +5996,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5637,7 +6012,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5652,7 +6028,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5667,7 +6044,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5682,7 +6060,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5697,7 +6076,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5712,7 +6092,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5727,7 +6108,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5742,7 +6124,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5757,7 +6140,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5772,7 +6156,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5787,7 +6172,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.885/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19163"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19163",
+  "veto": "parcial"
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5802,7 +6188,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5817,7 +6204,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5832,7 +6220,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5847,7 +6236,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5862,7 +6252,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.900/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19178"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19178",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5877,7 +6268,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5892,7 +6284,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5907,7 +6300,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5922,7 +6316,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5937,7 +6332,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5952,7 +6348,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5967,7 +6364,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.902/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19179"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19179",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5982,7 +6380,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.869/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19143"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19143",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -5997,7 +6396,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6012,7 +6412,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6027,7 +6428,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6042,7 +6444,8 @@
   "utilidade": "Provavelmente inconstitucional",
   "motivo": "Trânsito e multas são competência da União (Constituição, art. 22, XI).",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6057,7 +6460,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "parcial"
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6072,7 +6476,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6087,7 +6492,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6102,7 +6508,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6117,7 +6524,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6132,7 +6540,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6147,7 +6556,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.873/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19148"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19148",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6162,7 +6572,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6177,7 +6588,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6192,7 +6604,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6207,7 +6620,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6222,7 +6636,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6237,7 +6652,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6252,7 +6668,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6267,7 +6684,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6282,7 +6700,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6297,7 +6716,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.912/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19190"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19190",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6312,7 +6732,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.913/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19191"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19191",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6327,7 +6748,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6342,7 +6764,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6357,7 +6780,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6372,7 +6796,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6387,7 +6812,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6402,7 +6828,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6417,7 +6844,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6432,7 +6860,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6447,7 +6876,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6462,7 +6892,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6477,7 +6908,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6492,7 +6924,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6507,7 +6940,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6522,7 +6956,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6537,7 +6972,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6552,7 +6988,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6567,7 +7004,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6582,7 +7020,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6597,7 +7036,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6612,7 +7052,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6627,7 +7068,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6642,7 +7084,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6657,7 +7100,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6672,7 +7116,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6687,7 +7132,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6702,7 +7148,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6717,7 +7164,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6732,7 +7180,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6747,7 +7196,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6762,7 +7212,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6777,7 +7228,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6792,7 +7244,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6807,7 +7260,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6822,7 +7276,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6837,7 +7292,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6852,7 +7308,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6867,7 +7324,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6882,7 +7340,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6897,7 +7356,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6912,7 +7372,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6927,7 +7388,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6942,7 +7404,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6957,7 +7420,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6972,7 +7436,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -6987,7 +7452,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -7002,7 +7468,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -7017,7 +7484,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -7032,7 +7500,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -7047,7 +7516,8 @@
   "utilidade": "Ementa não permite avaliar",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -7062,7 +7532,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -7077,7 +7548,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -7092,7 +7564,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -7107,7 +7580,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -7122,7 +7596,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Jocemir da Enfermagem",
@@ -7137,7 +7612,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Ribeirinho",
@@ -7145,14 +7621,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-10-13",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Sanção do Executivo",
   "ementa": "INSTITUI NORMAS PARA CIRCULAÇÃO, SEGURANÇA E INCENTIVO AO USO DE BICICLETAS ELÉTRICAS NO ÂMBITO DO MUNICÍPIO DE CARIACICA E DÁ OUTRAS PROVIDÊNCIAS.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=129134",
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Ribeirinho",
@@ -7167,7 +7644,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Ribeirinho",
@@ -7182,7 +7660,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7197,7 +7676,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7212,7 +7692,8 @@
   "utilidade": "Provavelmente inconstitucional",
   "motivo": "O STF já derrubou leis municipais que proíbem o tema gênero nas escolas (ex.: ADPF 457 e 461).",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7227,7 +7708,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7242,7 +7724,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.861/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19122"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19122",
+  "veto": ""
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7250,14 +7733,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-05-13",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Sanção do Executivo",
   "ementa": "Institui a “Rota do Esporte Radical” no Município de Cariacica/ES e dá outras providências.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=126680",
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7272,7 +7756,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7287,7 +7772,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7302,7 +7788,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7310,14 +7797,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-09-10",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Sanção do Executivo",
   "ementa": "Institui o Programa “Escola Verde” nas unidades de ensino da rede municipal de Cariacica/ES e dá outras providências.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=128492",
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7325,14 +7813,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-09-16",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Sanção do Executivo",
   "ementa": "DISPÕE SOBRE MEDIDAS DE PREVENÇÃO E COMBATE À IMPORTUNAÇÃO SEXUAL EM ESTABELECIMENTOS DE ATIVIDADE FÍSICA NO MUNICÍPIO DE CARIACICA/ES DE, E DÁ OUTRAS PROVIDÊNCIAS.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=128555",
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7347,7 +7836,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7362,7 +7852,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7377,7 +7868,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7392,7 +7884,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7407,7 +7900,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7422,7 +7916,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7430,14 +7925,15 @@
   "tipo": "Projeto de Lei",
   "data": "2026-03-03",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Virou lei",
   "fase": "Aguardando Sanção do Executivo",
   "ementa": "Institui o Serviço Municipal de Capelania Institucional no âmbito da Administração Pública do Município de Cariacica e dá outras providências.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=131293",
   "utilidade": "Efeito fraco",
   "motivo": "",
-  "lei": "",
-  "lei_link": ""
+  "lei": "lei sancionada (o número não está ligado no sistema)",
+  "lei_link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=131293",
+  "veto": ""
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7452,7 +7948,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7467,7 +7964,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7482,7 +7980,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7497,7 +7996,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7512,7 +8012,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7527,7 +8028,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7542,7 +8044,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.939/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19224"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19224",
+  "veto": ""
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7557,7 +8060,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Cleidimar Alemão",
@@ -7572,7 +8076,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Sérgio Camilo",
@@ -7587,7 +8092,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Sérgio Camilo",
@@ -7602,7 +8108,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Sérgio Camilo",
@@ -7617,7 +8124,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Sérgio Camilo",
@@ -7632,7 +8140,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Sérgio Camilo",
@@ -7647,7 +8156,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Sérgio Camilo",
@@ -7662,7 +8172,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Sérgio Camilo",
@@ -7677,7 +8188,8 @@
   "utilidade": "Provavelmente inconstitucional",
   "motivo": "Tema que o STF tem derrubado em leis municipais sobre gênero nas escolas (ex.: ADPF 457).",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Sérgio Camilo",
@@ -7692,7 +8204,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.799/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19047"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19047",
+  "veto": ""
  },
  {
   "vereador": "Sérgio Camilo",
@@ -7707,7 +8220,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Sérgio Camilo",
@@ -7722,7 +8236,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.889/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19167"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19167",
+  "veto": ""
  },
  {
   "vereador": "Sérgio Camilo",
@@ -7737,7 +8252,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Sérgio Camilo",
@@ -7752,7 +8268,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Sérgio Camilo",
@@ -7767,7 +8284,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Sérgio Camilo",
@@ -7782,7 +8300,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Sérgio Camilo",
@@ -7797,7 +8316,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Sérgio Camilo",
@@ -7812,7 +8332,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Lelo Couto",
@@ -7820,14 +8341,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-01-17",
   "categoria": "Política pública/regra",
-  "status": "Arquivado/encerrado",
+  "status": "Virou lei",
   "fase": "Arquivamento",
   "ementa": "DISPÕE SOBRE A REVOGAÇÃO DA LEI MUNICIPAL Nº 6.711, DE 10 DE DEZEMBRO DE 2024, E A FIXAÇÃO DOS SUBSÍDIOS DO PREFEITO, DO VICE-PREFEITO, DOS SECRETÁRIOS MUNICIPAIS E CARGOS ASSEMELHADOS PARA A LEGISLATURA DE 2025/2028, E DÁ OUTRAS PROVIDÊNCIAS.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=124150",
   "utilidade": "Efeito concreto",
   "motivo": "",
-  "lei": "",
-  "lei_link": ""
+  "lei": "lei sancionada (o número não está ligado no sistema)",
+  "lei_link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=124150",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -7842,7 +8364,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "Lei Ordinária 6.769/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18988"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18988",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -7857,7 +8380,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "Lei Ordinária 6.859/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19120"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19120",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -7865,14 +8389,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-04-07",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Sanção do Executivo",
   "ementa": "DISPÕE SOBRE A SUBSTITUIÇÃO DO SINAL SONORO TRADICIONAL POR SINAIS MUSICAIS NOS ESTABELECIMENTOS DE ENSINO PÚBLICOS, PRIVADOS, FILATRÓPICOS E COOPERADOS, NO ÂMBITO DO MUNICÍPIO DE CARIACICA, E DÁ OUTRAS PROVIDÊNCIAS",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=126104",
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Lelo Couto",
@@ -7880,14 +8405,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-04-15",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Resultado do Veto",
   "ementa": "DISPÕE SOBRE A OBRIGATORIEDADE DE DISPONIBILIZAÇÃO DE CADEIRA DE RODAS E MACA NOS ESTABELECIMENTOS PÚBLICOS, PRIVADOS, CONDOMÍNIOS RESIDENCIAIS E COMERCIAIS INSTALADOS NO MUNICÍPIO DE CARIACICA, E DÁ OUTRAS PROVIDÊNCIAS",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=126332",
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Lelo Couto",
@@ -7902,7 +8428,8 @@
   "utilidade": "Ementa não permite avaliar",
   "motivo": "",
   "lei": "Lei Ordinária 6.753/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18972"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18972",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -7917,7 +8444,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.800/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19048"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19048",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -7932,7 +8460,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -7947,7 +8476,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "Lei Ordinária 6.770/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18989"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18989",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -7962,7 +8492,8 @@
   "utilidade": "Ementa não permite avaliar",
   "motivo": "",
   "lei": "Lei Ordinária 6.773/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19030"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19030",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -7970,14 +8501,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-08-01",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Sanção do Executivo",
   "ementa": "DISPÕE SOBRE A OBRIGATORIEDADE DA DISPONIBILIZAÇÃO DE BANHEIROS QUÍMICOS EM FEIRAS LIVRES NO MUNICÍPIO DE CARIACICA E DÁ OUTRAS PROVIDÊNCIAS",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=127839",
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Lelo Couto",
@@ -7985,14 +8517,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-08-19",
   "categoria": "Utilidade pública",
-  "status": "Arquivado/encerrado",
+  "status": "Virou lei",
   "fase": "Arquivamento",
   "ementa": "Dispõe sobre declarar de utilidade pública, a Igreja Pentencostal Fonte Agua Viva, com endereço na Rua São João, nº105, Bairro Novo Horizonte, Cariacica - ES",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=128051",
   "utilidade": "Simbólico",
   "motivo": "",
-  "lei": "",
-  "lei_link": ""
+  "lei": "Lei Ordinária 6.793/2025",
+  "lei_link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=128051",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -8007,7 +8540,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -8015,14 +8549,15 @@
   "tipo": "Projeto de Resolução",
   "data": "2025-09-03",
   "categoria": "Política pública/regra",
-  "status": "Arquivado/encerrado",
+  "status": "Virou lei",
   "fase": "Arquivar Proposição",
   "ementa": "INSTITUI O CÓDIGO DE ÉTICA E DECORO PARLAMENTAR DA CÂMARA MUNICIPAL DE CARIACICA, CRIA O CONSELHO DE ÉTICA E DECORO PARLAMENTAR, ESTABELECE NORMAS DISCIPLINARES E DÁ OUTRAS PROVIDÊNCIAS.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=128325",
   "utilidade": "Efeito concreto",
   "motivo": "",
-  "lei": "",
-  "lei_link": ""
+  "lei": "lei sancionada (o número não está ligado no sistema)",
+  "lei_link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=128325",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -8036,8 +8571,9 @@
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=128391",
   "utilidade": "Simbólico",
   "motivo": "",
-  "lei": "Lei Ordinária 6.839/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19095"
+  "lei": "Lei Ordinária 6.823/2025",
+  "lei_link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=128391",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -8045,14 +8581,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-09-12",
   "categoria": "Data comemorativa",
-  "status": "Arquivado/encerrado",
+  "status": "Virou lei",
   "fase": "Arquivamento",
   "ementa": "DISPÕE SOBRE A INSTITUIÇÃO DO DIA MUNICIPAL DO ANTIGOMOBILISTA NO ÂMBITO DO MUNICÍPIO DE CARIACICA E DÁ OUTRAS PROVIDÊNCIAS",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=128538",
   "utilidade": "Simbólico",
   "motivo": "",
-  "lei": "",
-  "lei_link": ""
+  "lei": "Lei Ordinária 6.817/2025",
+  "lei_link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=128538",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -8060,14 +8597,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-09-22",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Sanção do Executivo",
   "ementa": "DISPÕE SOBRE A PROIBIÇÃO DE COLAGEM, AFIXAÇÃO OU QUALQUER OUTRA FORMA DE FIXAÇÃO DE MATERIAL PUBLICITÁRIO EM EQUIPAMENTOS PÚBLICOS NO ÂMBITO DO MUNICÍPIO DE CARIACICA E DÁ OUTRAS PROVIDÊNCIAS.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=128683",
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Lelo Couto",
@@ -8075,14 +8613,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-10-10",
   "categoria": "Data comemorativa",
-  "status": "Arquivado/encerrado",
+  "status": "Virou lei",
   "fase": "Arquivamento",
   "ementa": "INSTITUI A SEMANA MUNICIPAL DA AMAMENTAÇÃO E O DIA MUNICIPAL DE INCENTIVO AO ALEITAMENTO MATERNO E DÁ OUTRAS PROVIDÊNCIAS",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=129116",
   "utilidade": "Simbólico",
   "motivo": "",
-  "lei": "",
-  "lei_link": ""
+  "lei": "lei sancionada (o número não está ligado no sistema)",
+  "lei_link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=129116",
+  "veto": "parcial"
  },
  {
   "vereador": "Lelo Couto",
@@ -8097,7 +8636,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -8105,14 +8645,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-10-13",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Resultado do Veto",
   "ementa": "DISPÕE SOBRE O DEPÓSITO, TRANSPORTE E DESTINAÇÃO DE MATERIAIS E RESÍDUOS DA CONSTRUÇÃO CIVIL NO MUNICÍPIO DE CARIACICA E DÁ OUTRAS PROVIDÊNCIAS",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=129135",
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Lelo Couto",
@@ -8120,14 +8661,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-10-13",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Sanção do Executivo",
   "ementa": "INSTITUI NORMAS PARA CIRCULAÇÃO, SEGURANÇA E INCENTIVO AO USO DE BICICLETAS ELÉTRICAS NO ÂMBITO DO MUNICÍPIO DE CARIACICA E DÁ OUTRAS PROVIDÊNCIAS.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=129134",
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Lelo Couto",
@@ -8142,7 +8684,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.840/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19096"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19096",
+  "veto": "parcial"
  },
  {
   "vereador": "Lelo Couto",
@@ -8157,7 +8700,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.852/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19109"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19109",
+  "veto": "parcial"
  },
  {
   "vereador": "Lelo Couto",
@@ -8172,7 +8716,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.891/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19169"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19169",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -8187,7 +8732,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.876/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19151"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19151",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -8195,14 +8741,15 @@
   "tipo": "Projeto de Lei",
   "data": "2026-02-20",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Sanção do Executivo",
   "ementa": "INSTITUI O PROGRAMA MUNICIPAL DE ABRIGAMENTO PROVISÓRIO DE ANIMAIS EM SITUAÇÃO DE VULNERABILIDADE NO ÂMBITO DO MUNICÍPIO DE CARIACICA.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=131119",
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Lelo Couto",
@@ -8217,7 +8764,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.875/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19150"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19150",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -8232,7 +8780,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.914/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19192"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19192",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -8247,7 +8796,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "Lei Complementar 176/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19184"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19184",
+  "veto": "parcial"
  },
  {
   "vereador": "Lelo Couto",
@@ -8262,7 +8812,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.899/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19177"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19177",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -8277,7 +8828,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -8292,7 +8844,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -8307,7 +8860,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -8322,7 +8876,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -8337,7 +8892,8 @@
   "utilidade": "Ementa não permite avaliar",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -8352,7 +8908,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -8367,7 +8924,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -8382,7 +8940,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Lelo Couto",
@@ -8397,7 +8956,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Renato Machado",
@@ -8412,7 +8972,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Renato Machado",
@@ -8427,7 +8988,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "Lei Ordinária 6.772/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18991"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18991",
+  "veto": ""
  },
  {
   "vereador": "Renato Machado",
@@ -8442,7 +9004,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Renato Machado",
@@ -8457,7 +9020,8 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Renato Machado",
@@ -8472,7 +9036,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "Lei Ordinária 6.770/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18989"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=18989",
+  "veto": ""
  },
  {
   "vereador": "Renato Machado",
@@ -8487,7 +9052,8 @@
   "utilidade": "Ementa não permite avaliar",
   "motivo": "",
   "lei": "Lei Ordinária 6.773/2025",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19030"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19030",
+  "veto": ""
  },
  {
   "vereador": "Renato Machado",
@@ -8495,14 +9061,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-08-08",
   "categoria": "Utilidade pública",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Sanção do Executivo",
   "ementa": "Dispõe sobre declarar de Utilidade Pública, a \"Associação Esportiva Independência\", localizada na Av: Santa Luzia, nº 488 - loja 2, Bairro Mucuri, Cariacica -Espirito Santo.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=127933",
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Renato Machado",
@@ -8510,14 +9077,15 @@
   "tipo": "Projeto de Resolução",
   "data": "2025-09-03",
   "categoria": "Política pública/regra",
-  "status": "Arquivado/encerrado",
+  "status": "Virou lei",
   "fase": "Arquivar Proposição",
   "ementa": "INSTITUI O CÓDIGO DE ÉTICA E DECORO PARLAMENTAR DA CÂMARA MUNICIPAL DE CARIACICA, CRIA O CONSELHO DE ÉTICA E DECORO PARLAMENTAR, ESTABELECE NORMAS DISCIPLINARES E DÁ OUTRAS PROVIDÊNCIAS.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=128325",
   "utilidade": "Efeito concreto",
   "motivo": "",
-  "lei": "",
-  "lei_link": ""
+  "lei": "lei sancionada (o número não está ligado no sistema)",
+  "lei_link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=128325",
+  "veto": ""
  },
  {
   "vereador": "Renato Machado",
@@ -8532,7 +9100,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Renato Machado",
@@ -8547,7 +9116,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Romildo Alves",
@@ -8562,7 +9132,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Romildo Alves",
@@ -8577,7 +9148,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Romildo Alves",
@@ -8585,14 +9157,15 @@
   "tipo": "Projeto de Lei",
   "data": "2025-04-08",
   "categoria": "Política pública/regra",
-  "status": "Aprovado pela Câmara",
+  "status": "Vetado pelo prefeito",
   "fase": "Aguardando Sanção do Executivo",
   "ementa": "Dispõe sobre a obrigatoriedade de o executivo municipal tratar como prioridade nas repartições públicas os pais de autistas desacompanhados de seus filhos, mediante apresentação de laudo médico ou carteirinha que comprove tal condição e da outras providências.",
   "link": "https://cariacica.camarasempapel.com.br/spl/processo.aspx?id=126118",
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": "total"
  },
  {
   "vereador": "Romildo Alves",
@@ -8607,7 +9180,8 @@
   "utilidade": "Efeito concreto",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Romildo Alves",
@@ -8622,7 +9196,8 @@
   "utilidade": "Simbólico",
   "motivo": "",
   "lei": "",
-  "lei_link": ""
+  "lei_link": "",
+  "veto": ""
  },
  {
   "vereador": "Romildo Alves",
@@ -8637,6 +9212,7 @@
   "utilidade": "Efeito fraco",
   "motivo": "",
   "lei": "Lei Ordinária 6.867/2026",
-  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19141"
+  "lei_link": "https://cariacica.camarasempapel.com.br/legislacao/norma.aspx?id=19141",
+  "veto": ""
  }
 ]

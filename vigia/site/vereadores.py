@@ -56,9 +56,10 @@ EXEMPLOS = {   # exemplos reais, com o número do projeto para quem quiser confe
     "simbolico": ("Dia municipal de conscientização de uma doença", "PL 347/2025"),
     "barrado": ("Trocar multa de trânsito por doação de sangue", "PL 363/2025"),
 }
-SITUACAO = {"Virou lei": "Virou lei", "Aprovado pela Câmara": "Aprovado", "Em análise": "Em análise",
-            "Arquivado/encerrado": "Arquivado", "Pronto para plenário": "Pronto para votar"}
-APROVADO = {"Virou lei", "Aprovado pela Câmara"}   # aprovado pela Câmara: já com número de lei ou esperando a sanção
+SITUACAO = {"Virou lei": "Virou lei", "Aprovado pela Câmara": "Aprovado", "Vetado pelo prefeito": "Vetado",
+            "Em análise": "Em análise", "Arquivado/encerrado": "Arquivado", "Pronto para plenário": "Pronto para votar"}
+# aprovado pela Câmara (votação final registrada): já vale, foi vetado pelo prefeito ou espera a sanção
+APROVADO = {"Virou lei", "Aprovado pela Câmara", "Vetado pelo prefeito"}
 SIGLAS = ["SUS", "CRAS", "CREAS", "CAPS", "UBS", "APP", "TEA", "PcD", "ECA", "LGBTQIAPN+", "IPTU", "ISS", "EJA"]
 NOMES = ["Cariacica", "Espírito Santo", "Vitória", "Vila Velha", "Serra", "Viana", "Brasil", "Maria da Penha",
          "Câmara Municipal", "Libras", "Moxuara", "Guarda Municipal"]
@@ -188,6 +189,9 @@ def vereadores(hoje: date | None = None) -> dict:
         "aprovados": len(aprov), "cont_aprov": cont_aprov, "pilha_aprov": _pilha(cont_aprov, len(aprov)),
         "virou_lei": sum(1 for p in aprov if p["status"] == "Virou lei"),
         "esperando": sum(1 for p in aprov if p["status"] == "Aprovado pela Câmara"),
+        "vetados": sum(1 for p in aprov if p["status"] == "Vetado pelo prefeito"),
+        "conc_vale": sum(1 for p in aprov if p["nivel"] == "concreto" and p["status"] == "Virou lei"),
+        "conc_vetado": sum(1 for p in aprov if p["nivel"] == "concreto" and p["status"] == "Vetado pelo prefeito"),
         "datas_aprov": len(datas), "parte_datas_aprov": D.de_cada(100 * len(datas) / len(aprov)),
         "parte_aprovados": D.de_cada(100 * len(aprov) / len(todos)),
         "parte_simb_aprov": D.de_cada(100 * cont_aprov["simbolico"] / len(aprov)),
