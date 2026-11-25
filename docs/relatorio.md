@@ -1,6 +1,6 @@
 # Vigia Cariacica: relatório automático
 
-_Gerado em 25/11/2026 11:29 (UTC). Dados públicos oficiais; como cada dado é obtido em [METODOLOGIA.md](METODOLOGIA.md)._
+_Gerado em 25/11/2026 15:55 (UTC). Dados públicos oficiais; como cada dado é obtido em [METODOLOGIA.md](METODOLOGIA.md)._
 
 ## Placar de resultados
 
@@ -35,7 +35,7 @@ Fonte: Portal da Transparência de Cariacica, campo "fonte de recursos" e "natur
 
 | Origem | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 | % em 2026 |
 |---|---|---|---|---|---|---|---|
-| Impostos e transferências livres (IPTU, ISS, ICMS, FPM…) | 467,6 | 610,0 | 666,9 | 772,7 | 902,7 | 892,7 | 52,6% |
+| Impostos e transferências livres (IPTU, ISS, ICMS, FPM…) | 467,6 | 610,0 | 666,9 | 772,7 | 902,7 | 892,9 | 52,6% |
 | FUNDEB (educação básica) | 250,7 | 312,2 | 354,3 | 432,5 | 445,6 | 451,6 | 26,6% |
 | Saúde: SUS (fundo a fundo) e convênios | 55,3 | 54,0 | 57,6 | 84,6 | 93,0 | 69,4 | 4,1% |
 | Convênios e outras transferências da União e do Estado | 10,4 | 28,1 | 30,1 | 32,9 | 54,4 | 68,0 | 4,0% |
@@ -54,9 +54,9 @@ Fonte: Portal da Transparência de Cariacica, campo "fonte de recursos" e "natur
 
 | Tipo de gasto | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 | % em 2026 |
 |---|---|---|---|---|---|---|---|
-| Custeio (serviços, materiais, contratos) | 385,7 | 485,6 | 525,8 | 682,1 | 703,7 | 709,7 | 41,8% |
+| Custeio (serviços, materiais, contratos) | 385,7 | 485,6 | 525,8 | 682,1 | 703,7 | 709,9 | 41,8% |
 | Pessoal e encargos | 381,3 | 461,3 | 523,5 | 605,7 | 677,7 | 618,1 | 36,4% |
-| Investimentos (obras e equipamentos) | 96,8 | 184,9 | 234,9 | 285,9 | 252,1 | 304,9 | 18,0% |
+| Investimentos (obras e equipamentos) | 96,8 | 184,9 | 234,9 | 285,9 | 252,1 | 305,0 | 18,0% |
 | Amortização da dívida | 20,7 | 19,3 | 28,7 | 34,3 | 40,4 | 36,4 | 2,1% |
 | Juros da dívida | 9,8 | 21,5 | 28,5 | 27,1 | 31,7 | 28,8 | 1,7% |
 | Inversões financeiras | 0,0 | 0,0 | 0,0 | 1,1 | 0,0 | 0,0 | 0,0% |
@@ -65,7 +65,7 @@ Fonte: Portal da Transparência de Cariacica, campo "fonte de recursos" e "natur
 
 | Quem recebeu | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 | % em 2026 |
 |---|---|---|---|---|---|---|---|
-| Empresa | 348,3 | 471,8 | 567,8 | 742,0 | 699,5 | 774,1 | 45,6% |
+| Empresa | 348,3 | 471,8 | 567,8 | 742,0 | 699,5 | 774,3 | 45,6% |
 | Servidores ativos e aposentados (folha, encargos, previdência) | 381,3 | 461,3 | 525,8 | 616,1 | 684,3 | 624,7 | 36,8% |
 | Órgão público, consórcio público ou previdência | 57,4 | 76,8 | 53,5 | 49,1 | 106,9 | 111,6 | 6,6% |
 | Entidade sem fins lucrativos | 52,6 | 63,5 | 64,3 | 80,8 | 84,8 | 79,7 | 4,7% |
@@ -85,7 +85,7 @@ População: a declarada ao Tesouro em cada ano (IBGE). Preços de 2025 pelo IPC
 | 2023 | 1.341,4 | 386.495 | 3.471 | 3.804 |
 | 2024 | 1.636,1 | 375.500 | 4.357 | 4.576 |
 | 2025 | 1.705,7 | 375.500 | 4.542 | 4.542 |
-| 2026 | 1.697,9 | 376.200 | 4.513 | 4.334 |
+| 2026 | 1.698,1 | 376.200 | 4.514 | 4.334 |
 
 ## Arrecadação de 2026 x previsão do orçamento (R$ milhões)
 
@@ -302,7 +302,7 @@ _Qualidade do dado oficial: em 2026-09, a coluna "Idade do paciente" bate com a 
 
 ## Quem mais recebe dinheiro da prefeitura (R$ milhões pagos, 2021–2026)
 
-Fonte: Portal da Transparência de Cariacica (pagamentos por empenho). Exclui folha de pagamento, previdência, tributos e outros órgãos públicos. Total pago a empresas e pessoas no período: R$ 4.407,2 mi; os 25 abaixo somam 55%.
+Fonte: Portal da Transparência de Cariacica (pagamentos por empenho). Exclui folha de pagamento, previdência, tributos e outros órgãos públicos. Total pago a empresas e pessoas no período: R$ 4.407,4 mi; os 25 abaixo somam 55%.
 
 | Fornecedor | CNPJ/CPF | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 | Total |
 |---|---|---|---|---|---|---|---|---|
@@ -328,7 +328,7 @@ Fonte: Portal da Transparência de Cariacica (pagamentos por empenho). Exclui fo
 | CONSORCIO CINCO-SERPENGE | 51.199.890/0001-43 | 0,0 | 0,0 | 2,2 | 42,3 | 9,6 | 0,0 | 54,1 |
 | IGIS - INSTITUTO DA GESTÃO DE INOVAÇÃO DA SAUDE - FILIAL | 07.156.945/0003-08 | 34,2 | 14,0 | 0,0 | 0,0 | 0,0 | 0,0 | 48,3 |
 | SOLUCOES SERVICOS TERCEIRIZADOS LTDA | 09.445.502/0001-09 | 0,0 | 0,0 | 18,0 | 20,6 | 9,2 | 0,2 | 48,0 |
-| SUPRISERVICE INFORMATICA LTDA | 03.607.073/0001-34 | 1,5 | 12,3 | 6,7 | 6,9 | 7,2 | 13,1 | 47,7 |
+| SUPRISERVICE INFORMATICA LTDA | 03.607.073/0001-34 | 1,5 | 12,3 | 6,7 | 6,9 | 7,2 | 13,2 | 47,7 |
 | SERDEL SERVICOS E CONSERVACAO LTDA | 27.436.815/0001-74 | 13,6 | 17,9 | 5,5 | 1,0 | 0,3 | 7,8 | 46,1 |
 | CONECTAR SOLUCOES EDUCACIONAIS LTDA | 24.847.132/0001-11 | 0,0 | 0,0 | 0,0 | 0,0 | 6,7 | 38,4 | 45,1 |
 
