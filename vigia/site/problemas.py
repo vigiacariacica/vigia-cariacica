@@ -177,7 +177,7 @@ def problemas(fl: dict, cid: dict, pad: dict) -> list[dict]:
             "resumo": "52 assassinatos de janeiro a 4 de agosto de 2025.",
             "slug": "violencia", "titulo": "Violência",
             "numero": "52",
-            "legenda": "homicídios dolosos (com intenção de matar) e feminicídios em Cariacica de 1º de janeiro a 4 de agosto de 2025. Dado parcial do governo do ES.",
+            "legenda": "homicídios com intenção de matar e feminicídios, de janeiro a 4 de agosto de 2025. Dado parcial do governo do ES.",
             "texto": ["É o número do governo do Estado. Ainda não achamos o total oficial de 2025 inteiro."],
             "melhorou": "Caiu em 2025: no mesmo período de 2024, foram 66. São 21 de cada 100 a menos.",
             "outro_lado": "",
