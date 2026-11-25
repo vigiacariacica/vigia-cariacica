@@ -179,6 +179,34 @@ def test_projeto_que_virou_lei_conta_como_aprovado():
     assert sum(x["ja_vale"] for x in v["lista"]) >= c["ja_vale"]
 
 
+def test_veto_conta_como_aprovado_e_moção_de_título_é_homenagem():
+    """O veto é sobre o texto já aprovado: projeto com veto é aprovado (salvo a exceção a conferir). Total ou parcial
+    é a palavra depois do verbo. Moção que concede título de cidadão é homenagem; de repúdio, não."""
+    import importlib.util
+    import json
+    from pathlib import Path
+    caminho = Path(__file__).resolve().parents[1] / "ferramentas" / "camara_producao.py"
+    spec = importlib.util.spec_from_file_location("camara_producao", caminho)
+    C = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(C)
+    assert C.tipo_veto("VETA TOTALMENTE O AUTÓGRAFO N°046/2025, QUE ALTERA PARCIALMENTE A LEI N°6.635") == "total"
+    assert C.tipo_veto("VETAR PACIALMENTE O AUTÓGRAFO N° 130/2025") == "parcial"
+    assert C.tipo_veto("VETA PARCIALMENTE O AUTÓGRAFO N. 73/2026") == "parcial"
+    pl = {"tipo": "Projeto de Lei Legislativo", "fase": "Elaborar Parecer nas Comissões", "situacao": "TRAMITANDO"}
+    assert C._situacao(pl, False, {"votado": False}, "total") == "Vetado pelo prefeito"
+    assert C._situacao(pl, False, {"votado": False}, None) == "Em análise"
+    assert C._situacao(pl, True, {"votado": True}, "total") == "Virou lei"
+    mocao = {"tipo": "Moção", "ementa": "CONCEDE “TÍTULO DE CIDADÃO CARIACIQUENSE” À SRA. FULANA"}
+    assert C._homenagem(mocao)
+    assert not C._homenagem({"tipo": "Moção", "ementa": "MOÇÃO DE REPÚDIO EM DEFESA DOS CIDADÃOS"})
+    projetos = json.loads((D.DADOS / "camara" / "projetos.json").read_text(encoding="utf-8"))
+    for p in projetos:
+        n = p["numero"].split()[1].split("/")
+        chave = (p["numero"].split()[0], n[0], n[1])
+        if p["veto"] and chave not in C.VETO_A_CONFERIR:
+            assert p["status"] in ("Vetado pelo prefeito", "Virou lei"), p["numero"]
+
+
 def test_leis_que_mudam_a_sua_vida(gerado):
     """O bloco "Leis que mudam a sua vida" (/vereadores/): os aprovados que mudam algo na prática, cada projeto uma
     vez, com os números tirados de projetos.json e link para a Câmara em todo projeto (e para a lei, se já vale)."""
@@ -208,6 +236,7 @@ def test_leis_que_mudam_a_sua_vida(gerado):
     # regra que vale só dentro da Câmara fica no grupo dela
     assert all(V.tema(p["ementa"]) == "camara" for p in conc if p["numero"] in ("PL 175/2025", "PR 12/2025"))
     assert V.tema("DISPÕE SOBRE O SOCORRO AOS ANIMAIS ATROPELADOS") == "animais"
+    assert V.tema("DISPÕE SOBRE A CRIAÇÃO E A COMERCIALIZAÇÃO DE CÃES E GATOS") == "animais"
     assert V.tema("Dispõe sobre o atendimento de idosos e pessoas com deficiência") == "deficiencia"
     assert V.tema("Institui a cor oficial do município") == "outros"
     # concordância

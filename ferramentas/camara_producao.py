@@ -51,6 +51,10 @@ FASE_APROVADO = {"Aguardando Sanção do Executivo", "Para Encaminhar Autógrafo
                  "Aguardando Resultado do Veto", "Elaborar Resolução"}
 FASE_ARQUIVO = {"Arquivamento", "Arquivar Proposição", "Para Ciência ao Autor"}
 FASE_PLENARIO = {"Incluir Proposição na Ordem do Dia", "Incluir Proposição no Expediente", "Leitura-PLL"}
+# Veto do prefeito que não conta como aprovação até a Câmara confirmar. [A CONFERIR] PL 169/2025: o Veto 7/2025
+# (mensagem 111/2025) cita o autógrafo 121/2025, mas a página do projeto diz que ele foi arquivado a pedido do autor
+# depois da 1ª votação (24/11/2026).
+VETO_A_CONFERIR = {("PL", "169", "2025")}
 
 
 # ---------------------------------------------------------------- baixar
@@ -145,6 +149,13 @@ def _estado_processo(p: str) -> dict:
             "sancionado": bool(feitas & {"Sancionado", "Promulgado", "Sanção Tácita"})}
 
 
+def tipo_veto(e: str) -> str:
+    """"VETA PARCIALMENTE" (e o erro de digitação "VETAR PACIALMENTE", mensagem 007/2026) é parcial; o resto diz
+    "VETA TOTALMENTE", "VETA O AUTÓGRAFO" ou "DECIDI VETAR TOTALMENTE". Só vale a palavra logo depois do verbo:
+    "VETA TOTALMENTE ... QUE ALTERA PARCIALMENTE A LEI" é total (mensagem 057/2025, PL 81/2025)."""
+    return "parcial" if re.search(r"\bVETA\w*\s+PAR?CIAL", e.upper()) else "total"
+
+
 def _vetos(pasta: Path) -> dict[tuple[str, str, str], str]:
     """Mensagens de veto do prefeito -> (sigla, número, ano) do projeto do vereador: "total" ou "parcial".
     A sigla entra na chave porque PL 1/2026 e PLC 1/2026 são projetos diferentes; resolução não tem veto."""
@@ -159,9 +170,8 @@ def _vetos(pasta: Path) -> dict[tuple[str, str, str], str]:
             continue
         m = re.search(r"(?:PROJETO|JOJETO|PROTEJOTO|PL)[^0-9]*?N?[°º\.]?\s*(\d+)/(\d{4})", e)
         if m:
-            total = bool(re.search(r"VETAR? TOTALMENTE|VETA O AUT|DECIDI VETAR TOTALMENTE", e))
             sigla = "PLC" if "COMPLEMENTAR" in m.group(0) else "PL"
-            out[(sigla, m.group(1).lstrip("0"), m.group(2))] = "total" if total else "parcial"
+            out[(sigla, m.group(1).lstrip("0"), m.group(2))] = tipo_veto(e)
     return out
 
 
@@ -201,7 +211,14 @@ def _producao(pasta: Path, autores: dict) -> list[dict]:
                 d = dict(zip(CAMPOS, (g.strip() for g in m.groups())))
                 d["vereador_id"], d["ano_consulta"] = aid, ano
                 linhas.append(d)
-    return linhas
+    # o CSV oficial às vezes repete o mesmo papel no arquivo de um autor (Indicação 1290/2025, id 125895, em
+    # 24/11/2026): cada id conta uma vez por autor
+    vistos, unicas = set(), []
+    for d in linhas:
+        if (d["vereador_id"], d["id"]) not in vistos:
+            vistos.add((d["vereador_id"], d["id"]))
+            unicas.append(d)
+    return unicas
 
 
 def _leis(pasta: Path, autores: dict) -> dict:
@@ -226,13 +243,17 @@ def _chave(s: str) -> str:
 
 
 def _situacao(x: dict, virou_lei: bool, est: dict | None, veto: str | None) -> str:
-    """Com a página do projeto (est), aprovado é só o que tem a votação final registrada no histórico; vetado é o
-    aprovado que recebeu mensagem de veto do prefeito e ainda não virou lei. Sem a página, vale a fase."""
+    """Com a página do projeto (est), aprovado é o que tem a votação final registrada no histórico. Vetado é o que
+    recebeu mensagem de veto do prefeito e ainda não virou lei: o veto é sobre o autógrafo, que só existe depois da
+    aprovação, então conta como aprovado mesmo sem a votação na página (PL 113/2025 e PL 153/2026, 24/11/2026).
+    Sem a página, vale a fase."""
     if virou_lei:
         return "Virou resolução" if x["tipo"] == "Projeto de Resolução" else "Virou lei"
+    if veto:
+        return "Vetado pelo prefeito"
     if est is not None:
         if est["votado"]:
-            return "Vetado pelo prefeito" if veto else "Aprovado pela Câmara"
+            return "Aprovado pela Câmara"
     elif x["fase"] in FASE_APROVADO:
         return "Aprovado pela Câmara"
     if x["situacao"] == "ARQUIVADO" or x["fase"] in FASE_ARQUIVO:
@@ -260,8 +281,9 @@ def _homenagem(x: dict) -> bool:
     if x["tipo"] == "Projeto de Decreto Legislativo":
         return bool(re.search(r"CIDAD[ÃA]|COMENDA|MEDALHA|HONRA|M[ÉE]RITO|DIPLOMA|T[ÍI]TULO", e))
     if x["tipo"] == "Moção":
-        return "PESAR" not in e and bool(re.search(
-            r"APLAUSO|CONGRATULA|LOUVOR|PARAB|RECONHEC|HOMENAG|AGRADEC|M[ÉE]RITO", e))
+        # moção que concede "Título de Cidadão Cariaciquense" também é homenagem (24/11/2026)
+        return "PESAR" not in e and not re.search(r"REP[ÚU]DIO", e) and bool(re.search(
+            r"APLAUSO|CONGRATULA|LOUVOR|PARAB|RECONHEC|HOMENAG|AGRADEC|M[ÉE]RITO|T[ÍI]TULO|CIDAD[ÃA]", e))
     return False
 
 
@@ -355,13 +377,15 @@ def montar(pasta: Path) -> None:
             lei_link = SPL + f'processo.aspx?id={x["id"]}'
         else:
             lei, lei_link = "", ""
-        veto = vetos.get((sigla, x["num"].lstrip("0"), x["ano"]))
+        chave_veto = (sigla, x["num"].lstrip("0"), x["ano"])
+        veto = vetos.get(chave_veto)
         projetos.append({
             "vereador": nome_site.get(_chave(autores[x["vereador_id"]]), autores[x["vereador_id"]].title()),
             "numero": f'{sigla} {x["num"]}/{x["ano"]}', "tipo": tipo,
             "data": f'{x["data"][6:]}-{x["data"][3:5]}-{x["data"][:2]}',
             "categoria": c.get("categoria") or _categoria(ementa),
-            "status": _situacao(x, bool(lei), est, veto), "fase": x["fase"], "ementa": ementa,
+            "status": _situacao(x, bool(lei), est, None if chave_veto in VETO_A_CONFERIR else veto),
+            "fase": x["fase"], "ementa": ementa,
             "link": SPL + f'processo.aspx?id={x["id"]}',
             "utilidade": c.get("utilidade", "A classificar"), "motivo": c.get("motivo", ""),
             "lei": lei, "lei_link": lei_link, "veto": veto or "",
@@ -404,8 +428,10 @@ def montar(pasta: Path) -> None:
     tu = Counter(x["tipo"] for x in unicos.values())
     cidade = {"papeis": len(unicos), "indicacoes": tu["Indicação"], "requerimentos": tu["Requerimento"],
               "homenagens": sum(1 for x in unicos.values() if _homenagem(x)),
-              "titulos_cidadao": sum(1 for x in unicos.values() if x["tipo"] == "Projeto de Decreto Legislativo"
-                                     and re.search(r"CIDAD[ÃA]", x["ementa"].upper())),
+              "titulos_cidadao": sum(1 for x in unicos.values() if (
+                  x["tipo"] == "Projeto de Decreto Legislativo" and re.search(r"CIDAD[ÃA]", x["ementa"].upper()))
+                  or (x["tipo"] == "Moção" and _homenagem(x)
+                      and re.search(r"T[ÍI]TULO", x["ementa"].upper()) and re.search(r"CIDAD[ÃA]O", x["ementa"].upper()))),
               "mocoes_aplauso": sum(1 for x in unicos.values() if x["tipo"] == "Moção" and _homenagem(x)),
               "decretos_homenagem": sum(1 for x in unicos.values()
                                         if x["tipo"] == "Projeto de Decreto Legislativo" and _homenagem(x))}

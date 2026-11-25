@@ -71,7 +71,7 @@ A_CLASSIFICAR = "A classificar"     # projeto novo que o Vigia ainda não leu (f
 # vale). Sem nenhuma, "Outros". Mostrados na ordem de ORDEM_TEMAS, sempre a mesma: não é ranking.
 TEMAS = [
     ("camara", "Regras da própria Câmara", r"SERVIDORES DA C[ÂA]MARA|DECORO PARLAMENTAR|REGIMENTO INTERNO"),
-    ("animais", "Animais", r"\bANIMA(IS|L)\b"),
+    ("animais", "Animais", r"\bANIMA(IS|L)\b|\bC[ÃA]ES\b|\bGATOS?\b|CACHORRO"),
     ("deficiencia", "Pessoa com deficiência, autismo e idoso",
      r"DEFICI[ÊE]NCIA|AUTIS|\bTEA\b|CADEIRAS? DE RODAS|MOBILIDADE REDUZIDA|ACESSIBILIDADE|\bLIBRAS\b|IDOS[OA]S?\b"),
     ("crianca", "Criança e escola", r"CRIAN[ÇC]A|INFANT|ADOLESCENTE|ESCOLA|ENSINO|ALUNO|CRECHE|ESTUDANTE"),
@@ -260,6 +260,8 @@ def vereadores(hoje: date | None = None) -> dict:
         elif p["status"] == "Aprovado pela Câmara":
             p["situacao"] = sem_lei(p)
         p["lei_curta"] = lei_curta(p.get("lei", ""))
+        # veto total e mesmo assim virou lei: a Câmara derrubou o veto (PL 18/2025, veto derrubado em 28/05/2025)
+        p["veto_derrubado"] = p["status"] == "Virou lei" and p.get("veto") == "total"
         p["cor"] = COR_SITUACAO.get(p["status"], "neutro")
         p["ementa_txt"] = ementa_simples(p["ementa"])
         p["data_txt"] = f"{p['data'][8:10]}/{p['data'][5:7]}/{p['data'][:4]}"

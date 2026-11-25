@@ -49,7 +49,7 @@
         <p class="linha"><span class="prot">{{ p.numero }} · {{ p.data_txt }}</span><span class="selo {{ p.cor }}">{{ p.situacao }}</span></p>
         <p data-fora-da-regua>{{ p.ementa_txt }}</p>
         {% if p.motivo %}<p class="miuda" data-fora-da-regua>Por que pode ser barrado: {{ p.motivo }}</p>{% endif %}
-        <p class="miuda">{% if p.novo %}Projeto novo: ainda vamos ler o resumo. {% endif %}{% if p.coautoria %}Apresentado junto com outro vereador. {% endif %}{% if p.lei_curta %}Virou a <a href="{{ p.lei_link }}">{{ p.lei_curta }}</a>. {% elif p.lei %}<a href="{{ p.lei_link }}">{{ p.lei[:1]|upper }}{{ p.lei[1:] }}</a>. {% endif %}<a href="{{ p.link }}">Ver na Câmara →</a></p>
+        <p class="miuda">{% if p.novo %}Projeto novo: ainda vamos ler o resumo. {% endif %}{% if p.coautoria %}Apresentado junto com outro vereador. {% endif %}{% if p.veto_derrubado %}O prefeito vetou, e a Câmara derrubou o veto. {% endif %}{% if p.lei_curta %}Virou a <a href="{{ p.lei_link }}">{{ p.lei_curta }}</a>. {% elif p.lei %}<a href="{{ p.lei_link }}">{{ p.lei[:1]|upper }}{{ p.lei[1:] }}</a>. {% endif %}<a href="{{ p.link }}">Ver na Câmara →</a></p>
       </li>
     {% endfor %}
     </ol>

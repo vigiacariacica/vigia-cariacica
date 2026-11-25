@@ -134,10 +134,10 @@
  },
  {
   "vereador": "Jocemir da Enfermagem",
-  "total": 1465,
-  "total_2025": 957,
+  "total": 1464,
+  "total_2025": 956,
   "total_2026": 508,
-  "indicacoes": 1050,
+  "indicacoes": 1049,
   "requerimentos": 7,
   "mocoes": 98,
   "decretos_legislativos": 55,
@@ -206,7 +206,7 @@
   "vetados": 7,
   "arquivados": 0,
   "em_analise": 11,
-  "titulos_mocoes": 168
+  "titulos_mocoes": 169
  },
  {
   "vereador": "Léo do Iapi",
@@ -238,12 +238,12 @@
   "decretos_legislativos": 96,
   "projetos": 52,
   "emendas": 3,
-  "aprovados": 18,
+  "aprovados": 19,
   "virou_lei": 12,
   "virou_resolucao": 1,
-  "vetados": 3,
+  "vetados": 4,
   "arquivados": 4,
-  "em_analise": 30,
+  "em_analise": 29,
   "titulos_mocoes": 132
  },
  {
@@ -263,7 +263,7 @@
   "vetados": 0,
   "arquivados": 0,
   "em_analise": 0,
-  "titulos_mocoes": 17
+  "titulos_mocoes": 18
  },
  {
   "vereador": "Paulo Foto",
@@ -301,7 +301,7 @@
   "vetados": 1,
   "arquivados": 1,
   "em_analise": 3,
-  "titulos_mocoes": 136
+  "titulos_mocoes": 137
  },
  {
   "vereador": "Ribeirinho",
@@ -352,12 +352,12 @@
   "decretos_legislativos": 26,
   "projetos": 16,
   "emendas": 2,
-  "aprovados": 3,
+  "aprovados": 4,
   "virou_lei": 2,
   "virou_resolucao": 0,
-  "vetados": 0,
+  "vetados": 1,
   "arquivados": 1,
-  "em_analise": 12,
+  "em_analise": 11,
   "titulos_mocoes": 27
  }
 ]
