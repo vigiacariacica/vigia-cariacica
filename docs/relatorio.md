@@ -1,6 +1,6 @@
 # Vigia Cariacica: relatório automático
 
-_Gerado em 24/11/2026 21:54 (UTC). Dados públicos oficiais; como cada dado é obtido em [METODOLOGIA.md](METODOLOGIA.md)._
+_Gerado em 25/11/2026 11:29 (UTC). Dados públicos oficiais; como cada dado é obtido em [METODOLOGIA.md](METODOLOGIA.md)._
 
 ## Placar de resultados
 
@@ -435,6 +435,18 @@ Cada pedido protocolado pelo Vigia e o prazo da resposta: 20 dias na Lei de Aces
 | 30/11/2026 | Pedido 35 | 008947.2026-92 | Iluminação LED: contrato de R$ 107 mi que vence em 21/03/2027 |
 | 30/11/2026 | Pedido 37 | 008949.2026-38 | Fila de consultas especializadas e exames, por posto |
 | 30/11/2026 | Pedido 38 | 008950.2026-11 | Alfabetização por escola, 2023 a 2025, e metas |
+| 02/12/2026 | Pedido 39 | 009023.2026-77 | Contratos que chegam ao prazo máximo até março de 2027 |
+| 02/12/2026 | Pedido 41 | 009025.2026-23 | Anexos do orçamento de 2027 e origem das transferências de capital |
+| 02/12/2026 | Pedido 43 | 009037.2026-87 | Quatro licitações paradas enquanto as emergências continuam (pregões 5/2026, 21/2026, 39/2025 e 52/2026) |
+| 02/12/2026 | Pedido 44 | 009038.2026-60 | Cronograma e andamento das obras dos convênios com o Estado (Sedurb) |
+| 02/12/2026 | Pedido 42 | 009040.2026-06 | PA do Trevo: como a entidade da emergência 184/2026 foi escolhida e por que os chamamentos 2/2025 e 2/2026 pararam |
+| 02/12/2026 | Pedido 45 | 009044.2026-92 | Cargos comissionados e temporários: leis, atribuições, quantidades e concurso |
+| 02/12/2026 | Pedido 46 | 009045.2026-65 | PA do Trevo 2022-2023: contrato 85/2022 chamado de emergencial, aditivos e indenização de R$ 2,64 mi |
+| 02/12/2026 | Pedido 47 | 009046.2026-38 | Conselho de Transparência sem reunião desde 2019 e relatório anual da Ouvidoria |
+| 02/12/2026 | Pedido 48 | 009048.2026-81 | Seis concorrências presenciais: motivação, atas, gravações, participantes e propostas |
+| 02/12/2026 | Câmara | 2026111226344 | Custo de cada gabinete de vereador |
+| 02/12/2026 | Câmara | 2026111252305 | Obra da sede nova da Câmara (R$ 13,7 mi) |
+| 02/12/2026 | Câmara | 2026111273015 | Presença e voto de cada vereador |
 
 ## Alertas (perguntas que merecem resposta)
 
@@ -493,7 +505,7 @@ Um alerta não é acusação: é um padrão que pede explicação. Confira sempr
 | 34bdbed1bde0 | alta | R20 | 3 emergências para o mesmo serviço: "Contratação emergencial de entidade de direito privado, sem fins lucra" | Por que esse serviço voltou a ser contratado por emergência e quando sai a licitação definitiva? | [ver](https://pncp.gov.br/app/editais/27150549000119/2024/124) |
 | 0b21899fd263 | alta | R27 | Contrato 76/2022 com CONSORCIO S3 ILUMINACAO termina em 21/03/2027, depois de 60 meses, sem licitação parecida no PNCP | O contrato chega ao fim do prazo máximo em breve. Já existe licitação publicada para substituí-lo? | [ver](https://wstransparencia.cariacica.es.gov.br/api/contratos/csv?unidadeGestoraId=6&exercicio=2022) |
 | 767f38c7535d | alta | R32 | Concorrência - Presencial 08/2025 de R$ 67.681.016,78 feita na forma presencial | A lei manda fazer licitação de preferência pela internet. Por que esta foi presencial, onde está a motivação e onde estão as gravações da sessão? | [ver](https://pncp.gov.br/app/editais/27150549000119/2025/125) |
-| 6854005fa915 | alta | R30 | Seleção sem conclusão há 140 dias, suspensa desde 25/08/2026 enquanto a emergência com HOSPITAL E MATERNIDADE SAO SEBASTIAO - SANTA CASA DE MISERICORDIA DE SALTO GRANDE (184/2026) está valendo | A licitação (ou o chamamento) para este serviço ainda não foi concluída, meses depois de publicada. O que falta para concluí-la, e até quando a emergência vai continuar? | [ver](https://wstransparencia.cariacica.es.gov.br/api/contratos-emergenciais/csv?unidadeGestoraId=6&exercicio=2026) |
+| 6854005fa915 | alta | R30 | Seleção sem conclusão há 141 dias, suspensa desde 25/08/2026 enquanto a emergência com HOSPITAL E MATERNIDADE SAO SEBASTIAO - SANTA CASA DE MISERICORDIA DE SALTO GRANDE (184/2026) está valendo | A licitação (ou o chamamento) para este serviço ainda não foi concluída, meses depois de publicada. O que falta para concluí-la, e até quando a emergência vai continuar? | [ver](https://wstransparencia.cariacica.es.gov.br/api/contratos-emergenciais/csv?unidadeGestoraId=6&exercicio=2026) |
 | 800798c1b0aa | alta | R23 | Contrato emergencial (sem licitação) 184/2026 com HOSPITAL E MATERNIDADE SAO SEBASTIAO - SANTA CASA DE MISERICORDIA DE SALTO GRANDE: R$ 54.334.515,72 | Qual foi a emergência e quando sai a licitação definitiva? | [ver](https://wstransparencia.cariacica.es.gov.br/api/contratos-emergenciais/csv?unidadeGestoraId=6&exercicio=2026) |
 | 6dcfb14e1221 | alta | R21 | CINCO ESTRELAS CONSTRUTORA E INCORPORADORA EIRELI: R$ 51.104.741,59 pagos sobre empenhos de 2026 | Qual contrato explica esse aumento e como ele foi licitado? | [ver](https://wstransparencia.cariacica.es.gov.br/api/despesa/fornecedor?exercicio=2026&nomeCPFCNPJ=30.686.869/0001-00) |
 | 1f142f5c28e9 | alta | R23 | Contrato emergencial (sem licitação) 85/2022 com INSTITUTO ESPERANCA: R$ 49.554.441,87 | Qual foi a emergência e quando sai a licitação definitiva? | [ver](https://wstransparencia.cariacica.es.gov.br/api/contratos-emergenciais/csv?unidadeGestoraId=6&exercicio=2022) |
@@ -511,7 +523,7 @@ Um alerta não é acusação: é um padrão que pede explicação. Confira sempr
 | 59af558c7358 | alta | R21 | ARTT ENGENHARIA LTDA.: R$ 20.708.708,04 pagos sobre empenhos de 2024 | Qual contrato explica esse aumento e como ele foi licitado? | [ver](https://wstransparencia.cariacica.es.gov.br/api/despesa/fornecedor?exercicio=2024&nomeCPFCNPJ=29.935.750/0001-37) |
 | d1d15c3193c3 | alta | R06 | 3 contratações emergenciais com SERDEL SERVIÇOS E CONSERVAÇÃO LTDA | Qual foi a emergência em cada contratação e por que ela se repetiu com o mesmo fornecedor? | [ver](https://pncp.gov.br/app/contratos/27150549000119/2026/21) |
 | 461c0d9da045 | alta | R23 | Contrato emergencial (sem licitação) 62/2026 com SERDEL SERVIÇOS E CONSERVAÇÃO LTDA: R$ 13.547.427,36 | Qual foi a emergência e quando sai a licitação definitiva? | [ver](https://wstransparencia.cariacica.es.gov.br/api/contratos-emergenciais/csv?unidadeGestoraId=6&exercicio=2026) |
-| e7c4f5e4fd16 | alta | R30 | Seleção sem conclusão há 243 dias, suspensa enquanto a emergência com SERDEL SERVIÇOS E CONSERVAÇÃO LTDA (62/2026) está valendo | A licitação (ou o chamamento) para este serviço ainda não foi concluída, meses depois de publicada. O que falta para concluí-la, e até quando a emergência vai continuar? | [ver](https://wstransparencia.cariacica.es.gov.br/api/contratos-emergenciais/csv?unidadeGestoraId=6&exercicio=2026) |
+| e7c4f5e4fd16 | alta | R30 | Seleção sem conclusão há 244 dias, suspensa enquanto a emergência com SERDEL SERVIÇOS E CONSERVAÇÃO LTDA (62/2026) está valendo | A licitação (ou o chamamento) para este serviço ainda não foi concluída, meses depois de publicada. O que falta para concluí-la, e até quando a emergência vai continuar? | [ver](https://wstransparencia.cariacica.es.gov.br/api/contratos-emergenciais/csv?unidadeGestoraId=6&exercicio=2026) |
 
 ## Limitações conhecidas
 

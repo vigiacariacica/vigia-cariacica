@@ -1,13 +1,13 @@
 # Qualidade dos dados
 
-_Última execução: 2026-11-24T21:54:25Z (UTC). Gerado automaticamente; regras em `vigia/qualidade.py`._
+_Última execução: 2026-11-25T11:29:22Z (UTC). Gerado automaticamente; regras em `vigia/qualidade.py`._
 
 **Status:** ⚠️ fonte fora do ar há pouco tempo (sem alarme; vira alarme se passar de 20 h)
 
-- Checagens feitas: 701 · falharam: 12 (bloqueantes: 0)
+- Checagens feitas: 808 · falharam: 12 (bloqueantes: 0)
 - Fontes que não responderam: nenhuma
 - Fora do ar há pouco tempo (bloqueio ou queda da fonte, sem alarme): tesouro, externos (histórico em `data/qualidade/fontes_fora.csv`)
-- Arquivos crus baixados hoje: 85 (hash SHA-256 em `data/qualidade/manifesto.csv`)
+- Arquivos crus baixados hoje: 109 (hash SHA-256 em `data/qualidade/manifesto.csv`)
 
 Quando uma checagem bloqueante falha, o arquivo novo **não** é gravado: fica a versão anterior.
 
