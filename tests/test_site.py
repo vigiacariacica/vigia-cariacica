@@ -135,9 +135,17 @@ def test_vereadores_sem_partido_e_em_ordem_alfabetica(gerado):
 
 
 def test_conta_dos_vereadores():
+    """Os meses saem da data da coleta (a coleta roda toda segunda): em 24/11/2026 eram 22 meses, R$ 297.000."""
+    import json
     v = V.vereadores()
     k, c = v["conta"], v["cidade"]
-    assert k["meses"] == 22 and k["salario_periodo_exato"] == "R$ 297.000"
+    meta = json.loads((D.DADOS / "camara" / "fonte.json").read_text(encoding="utf-8"))
+    coleta = date.fromisoformat(meta["coletado_em"])
+    meses = (coleta.year - 2025) * 12 + coleta.month - 1
+    assert k["meses"] == meses and k["salario_periodo_exato"] == D.reais(13_500 * meses)
+    assert V.tempo(date(2025, 1, 1), date(2026, 11, 24)) == "quase 2 anos"
+    assert V.tempo(date(2025, 1, 1), date(2027, 1, 10)) == "2 anos"
+    assert V.tempo(date(2025, 1, 1), date(2027, 4, 10)) == "mais de 2 anos"
     assert c["n"] == sum(c["cont"].values()) and c["aprovados"] == sum(c["cont_aprov"].values())
     assert sum(x["n"] for x in v["lista"]) >= c["n"]          # coautoria conta para cada autor
     assert len(c["cem"]) == 100
@@ -146,6 +154,107 @@ def test_conta_dos_vereadores():
     assert V.ementa_simples("INSTITUI O DIA DO SUS NO MUNICÍPIO DE CARIACICA E DÁ OUTRAS PROVIDÊNCIAS") == \
         "Institui o dia do SUS no município de Cariacica"
     assert V.ementa_simples("PROÍBE A COLAGEM EM BENS PÚBLICOS E DÁ OUTR…") == "Proíbe a colagem em bens públicos…"
+    assert V.ementa_simples("DISPÕE SOBRE O TRANSPORTE DE ANIMAIS E DÁ OUTRAS PROVIDÊNCIAS”.") == \
+        "Dispõe sobre o transporte de animais"
+    assert V.ementa_simples("INCLUI NO CALENDÁRIO A “FEIRA EXPO FESTAR”.") == "Inclui no calendário a “Feira expo festar”"
+    assert V.ementa_simples('NOS TERMOS DA RENAME E DÁ OUTRAS PROVIDÊNCIAS.".') == "Nos termos da RENAME"
+
+
+def test_projeto_que_virou_lei_conta_como_aprovado():
+    """Depois que a lei sai, o sistema da Câmara põe o projeto em "Arquivamento". Projeto com lei é aprovado."""
+    import json
+    projetos = json.loads((D.DADOS / "camara" / "projetos.json").read_text(encoding="utf-8"))
+    com_lei = [p for p in projetos if p.get("lei")]
+    assert com_lei and all(p["status"] in V.JA_VALE and p["lei_link"] for p in com_lei)
+    # resolução não vira lei nem vai à sanção (24/11/2026)
+    for p in projetos:
+        if p["tipo"] == "Projeto de Resolução":
+            assert p["status"] != "Virou lei" and "sancionad" not in p["lei"] and not p["veto"], p["numero"]
+        assert "não está ligado" not in p["lei"], p["numero"]
+    assert all(not p.get("lei") for p in projetos if p["status"] == "Arquivado/encerrado")
+    v = V.vereadores()
+    c = v["cidade"]
+    assert c["aprovados"] == c["ja_vale"] + c["sem_lei"] + c["vetados"]
+    assert c["ja_vale"] == len({p["link"] for p in com_lei})
+    assert sum(x["ja_vale"] for x in v["lista"]) >= c["ja_vale"]
+
+
+def test_veto_conta_como_aprovado_e_moção_de_título_é_homenagem():
+    """O veto é sobre o texto já aprovado: projeto com veto é aprovado (salvo a exceção a conferir). Total ou parcial
+    é a palavra depois do verbo. Moção que concede título de cidadão é homenagem; de repúdio, não."""
+    import importlib.util
+    import json
+    from pathlib import Path
+    caminho = Path(__file__).resolve().parents[1] / "ferramentas" / "camara_producao.py"
+    spec = importlib.util.spec_from_file_location("camara_producao", caminho)
+    C = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(C)
+    assert C.tipo_veto("VETA TOTALMENTE O AUTÓGRAFO N°046/2025, QUE ALTERA PARCIALMENTE A LEI N°6.635") == "total"
+    assert C.tipo_veto("VETAR PACIALMENTE O AUTÓGRAFO N° 130/2025") == "parcial"
+    assert C.tipo_veto("VETA PARCIALMENTE O AUTÓGRAFO N. 73/2026") == "parcial"
+    pl = {"tipo": "Projeto de Lei Legislativo", "fase": "Elaborar Parecer nas Comissões", "situacao": "TRAMITANDO"}
+    assert C._situacao(pl, False, {"votado": False}, "total") == "Vetado pelo prefeito"
+    assert C._situacao(pl, False, {"votado": False}, None) == "Em análise"
+    assert C._situacao(pl, True, {"votado": True}, "total") == "Virou lei"
+    mocao = {"tipo": "Moção", "ementa": "CONCEDE “TÍTULO DE CIDADÃO CARIACIQUENSE” À SRA. FULANA"}
+    assert C._homenagem(mocao)
+    assert not C._homenagem({"tipo": "Moção", "ementa": "MOÇÃO DE REPÚDIO EM DEFESA DOS CIDADÃOS"})
+    projetos = json.loads((D.DADOS / "camara" / "projetos.json").read_text(encoding="utf-8"))
+    for p in projetos:
+        n = p["numero"].split()[1].split("/")
+        chave = (p["numero"].split()[0], n[0], n[1])
+        if p["veto"] and chave not in C.VETO_A_CONFERIR:
+            assert p["status"] in ("Vetado pelo prefeito", "Virou lei"), p["numero"]
+
+
+def test_leis_que_mudam_a_sua_vida(gerado):
+    """O bloco "Leis que mudam a sua vida" (/vereadores/): os aprovados que mudam algo na prática, cada projeto uma
+    vez, com os números tirados de projetos.json e link para a Câmara em todo projeto (e para a lei, se já vale)."""
+    import json
+    projetos = json.loads((D.DADOS / "camara" / "projetos.json").read_text(encoding="utf-8"))
+    unicos = {p["link"]: p for p in projetos}
+    conc = [p for p in unicos.values() if p["utilidade"] == "Efeito concreto" and p["status"] in V.APROVADO]
+    leis = V.vereadores()["leis"]
+    itens = [p for g in leis["grupos"] for p in g["itens"]]
+    assert conc and leis["total"] == len(itens) == len(conc)
+    assert {p["link"] for p in itens} == {p["link"] for p in conc}          # cada projeto uma vez
+    assert leis["vale"] == sum(p["status"] in V.JA_VALE for p in conc)
+    assert leis["vetado"] == sum(p["status"] == "Vetado pelo prefeito" for p in conc)
+    assert leis["sem_lei"] == sum(p["status"] == "Aprovado pela Câmara" for p in conc)
+    assert leis["vale"] + leis["vetado"] + leis["sem_lei"] == leis["total"]
+    for p in itens:
+        assert p["link"].startswith("https://cariacica.camarasempapel.com.br/"), p["numero"]
+        if p["status"] in V.JA_VALE:
+            assert p["selo_lei"][0] == "Já vale" and p["lei_link"].startswith("https://"), p["numero"]
+        if p.get("veto") == "parcial" and p["status"] == "Vetado pelo prefeito":
+            assert p["selo_lei"][0] == "Vetado em parte"
+    # sem ranking: temas na ordem fixa e, dentro do tema, do mais novo para o mais antigo
+    chaves = [g["chave"] for g in leis["grupos"]]
+    assert chaves == [k for k in V.ORDEM_TEMAS if k in chaves]
+    for g in leis["grupos"]:
+        assert [p["data"] for p in g["itens"]] == sorted((p["data"] for p in g["itens"]), reverse=True)
+    # regra que vale só dentro da Câmara fica no grupo dela
+    assert all(V.tema(p["ementa"]) == "camara" for p in conc if p["numero"] in ("PL 175/2025", "PR 12/2025"))
+    assert V.tema("DISPÕE SOBRE O SOCORRO AOS ANIMAIS ATROPELADOS") == "animais"
+    assert V.tema("DISPÕE SOBRE A CRIAÇÃO E A COMERCIALIZAÇÃO DE CÃES E GATOS") == "animais"
+    assert V.tema("Dispõe sobre o atendimento de idosos e pessoas com deficiência") == "deficiencia"
+    assert V.tema("Institui a cor oficial do município") == "outros"
+    # concordância
+    assert V.frases_leis(2, 1, 1, 0, "24/11/2026") == (
+        "Dos 2 projetos aprovados que mudam algo na prática, 1 já vale e 1 foi vetado pelo prefeito.", "")
+    assert V.frases_leis(31, 13, 17, 1, "24/11/2026")[1] == \
+        "Mais 1 está sem lei ou resolução publicada no sistema até 24/11/2026."
+    # na página: logo depois de "Quantos foram aprovados", com a abertura e o link de cada projeto
+    saida, _ = gerado
+    t = (saida / "vereadores" / "index.html").read_text(encoding="utf-8")
+    assert t.index("Quantos foram aprovados") < t.index('id="h-leis"') < t.index('id="h-cada"')
+    bloco = t[t.index('id="h-leis"'):t.index('id="h-cada"')]
+    assert leis["lead"] in bloco and str(leis["total"]) in leis["lead"] and str(leis["vale"]) in leis["lead"]
+    assert (not leis["sem_lei"]) or leis["resto"] in bloco
+    for p in itens:
+        assert f'href="{p["link"]}"' in bloco, p["numero"]
+        if p["status"] in V.JA_VALE and p["lei_curta"]:
+            assert f'href="{p["lei_link"]}"' in bloco, p["numero"]
 
 
 def test_obras_no_bairro(gerado):

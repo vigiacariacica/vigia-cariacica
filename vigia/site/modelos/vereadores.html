@@ -6,7 +6,7 @@
 <section class="bloco" aria-labelledby="h1">
   <p class="prot">{{ icone("camara") }} <b>Vereadores</b> · dados da Câmara de {{ v.coleta }}</p>
   <h1 id="h1" tabindex="-1">O que fizeram os 19 vereadores</h1>
-  <p class="lead"><strong>Em quase 2 anos, os 19 apresentaram {{ c.n }} projetos de lei. {{ de_cada(100 * c.cont.concreto / c.n)|capitalize }} mudam algo na prática. E {{ c.aprovados }} foram aprovados.</strong></p>
+  <p class="lead"><strong>Em {{ v.tempo }}, os 19 apresentaram {{ c.n }} projetos ({{ c.tipos }}). {{ de_cada(100 * c.cont.concreto / c.n)|capitalize }} mudam algo na prática. E {{ c.aprovados }} foram aprovados.</strong></p>
   <p>Contamos tudo o que cada um apresentou {{ v.periodo }}. E separamos pelo que muda na vida de quem mora aqui.</p>
   <div class="oque"><b>Mesma régua para os 19</b><p>Ordem alfabética, sem partido e sem foto. Cada projeto tem link para o site da Câmara. Assim você mesmo confere.</p></div>
 </section>
@@ -36,11 +36,15 @@
     </li>
   {% endfor %}
   </ol>
+  {% if c.novos %}
+  <p class="miuda">Outros {{ c.cont.sem }} projetos ficaram sem nível.{% if c.sem_resumo %} Em {{ c.sem_resumo }}, o resumo só diz que muda outra lei.{% endif %} {{ c.novos }} {{ "é novo" if c.novos == 1 else "são novos" }}, e ainda vamos ler o resumo.</p>
+  {% else %}
   <p class="miuda">Outros {{ c.cont.sem }} projetos ficaram sem nível: o resumo só diz que muda outra lei, sem dizer o quê.</p>
+  {% endif %}
 </section>
 
 <section class="bloco" aria-labelledby="h-cidade">
-  <h2 id="h-cidade">Em quase 2 anos, {{ c.n }} projetos de lei</h2>
+  <h2 id="h-cidade">Em {{ v.tempo }}, {{ c.n }} projetos</h2>
   <div class="grade-2">
     <div class="folha">
       <h3>Se fossem 100 projetos</h3>
@@ -48,14 +52,38 @@
       <ul class="niveis">{% for s in c.pilha %}<li><i class="nv n-{{ s.chave }}" aria-hidden="true"></i><span><b class="num">{{ s.pct|round|int }}</b> {{ rot_palavras(s.chave, 2) }}</span></li>{% endfor %}</ul>
     </div>
     <div class="folha">
-      <h3>Poucos foram aprovados</h3>
+      <h3>Quantos foram aprovados</h3>
       <p class="valor">{{ c.aprovados }} <small>aprovados pela Câmara</small></p>
-      <p>É {{ c.parte_aprovados }} projetos. Os outros estão em análise, prontos para votar ou foram arquivados.</p>
+      <p>É {{ c.parte_aprovados }} projetos. {{ c.ja_vale }} já valem e {{ c.vetados }} foram vetados pelo prefeito. Outros {{ c.sem_lei }} estão sem lei ou resolução publicada no sistema até {{ v.coleta }}. Os demais projetos estão em análise, prontos para votar ou foram arquivados.</p>
+      <p>Dos aprovados, {{ c.datas_aprov }} só criam uma data no calendário (dia, semana, mês ou evento): {{ c.parte_datas_aprov }}. <a href="#h-leis">Veja os {{ c.cont_aprov.concreto }} que mudam algo na prática →</a></p>
       {{ pilha(c.pilha_aprov, "Projetos aprovados") }}
       {{ legenda(c.pilha_aprov) }}
-      <p>Os vereadores também fizeram {{ br(c.pedidos) }} pedidos à prefeitura e {{ br(c.homenagens) }} homenagens, como moções e títulos.</p>
+      <p>Os vereadores também fizeram {{ br(c.pedidos) }} pedidos à prefeitura e {{ br(c.homenagens) }} homenagens: títulos ({{ br(c.titulos_cidadao) }} de cidadão), comendas e moções de aplauso.</p>
     </div>
   </div>
+</section>
+
+<section class="bloco" id="leis" aria-labelledby="h-leis">
+  {% set L = v.leis %}
+  <h2 id="h-leis">Leis que mudam a sua vida</h2>
+  <p class="lead"><strong>{{ L.lead }}</strong></p>
+  {% if L.resto %}<p>{{ L.resto }}</p>{% endif %}
+  <p class="miuda">Muda algo na prática: cria direito, obrigação ou proibição que dá para cobrar, ou aumenta a transparência. Essa leitura é do Vigia. Veto é o prefeito dizer não à lei, em tudo ou em parte.</p>
+  {% for g in L.grupos %}
+  <details class="grupo"{% if loop.first %} open{% endif %}>
+    <summary><b>{{ g.nome }}</b><span>{{ g.itens|length }} {{ "projeto" if g.itens|length == 1 else "projetos" }}</span></summary>
+    {% if g.nota %}<p class="miuda">{{ g.nota }}</p>{% endif %}
+    <ol class="projetos">
+    {% for p in g.itens %}
+      <li>
+        <p class="linha"><span class="prot">{{ p.numero }}</span><span class="selo {{ p.selo_lei[1] }}">{{ p.selo_lei[0] }}</span>{% if p.selo_lei[0] == "Já vale" and p.lei_curta %}<a href="{{ p.lei_link }}">{{ p.lei_curta }}</a>{% endif %}</p>
+        <p data-fora-da-regua>{{ p.ementa_txt }}</p>
+        <p class="miuda">{% if p.veto_derrubado %}O prefeito vetou, e a Câmara derrubou o veto. {% endif %}<a href="{{ p.link }}">Ver na Câmara →</a></p>
+      </li>
+    {% endfor %}
+    </ol>
+  </details>
+  {% endfor %}
 </section>
 
 <section class="bloco" aria-labelledby="h-cada">
@@ -70,7 +98,7 @@
   {% for x in v.lista %}
     <li data-nomes="{{ x.nome }}"><a class="ver-linha" href="/vereadores/{{ x.slug }}/" id="{{ x.slug }}">
       <b class="nome">{{ x.nome }}</b>
-      {% if x.n %}{{ pilha(x.pilha, "Projetos de " ~ x.nome) }}{% else %}<span class="pilha vazia">Nenhum projeto de lei</span>{% endif %}
+      {% if x.n %}{{ pilha(x.pilha, "Projetos de " ~ x.nome) }}{% else %}<span class="pilha vazia">Nenhum projeto</span>{% endif %}
       <span class="nums">
         <span><b class="num">{{ x.n }}</b> {{ "projeto" if x.n == 1 else "projetos" }}</span>
         <span><b class="num">{{ x.cont.concreto }}</b> {{ "muda" if x.cont.concreto == 1 else "mudam" }} algo</span>
@@ -98,12 +126,12 @@
     <div class="folha">
       <p class="prot">A Câmara inteira</p>
       <h3>Quanto custou cada lei aprovada</h3>
-      <p>A Câmara gastou {{ k.gasto }} ({{ k.gasto_ext }}) de janeiro de 2025 a {{ k.gasto_ate }}. Nesse tempo, aprovou {{ c.aprovados }} projetos de lei dos vereadores.</p>
+      <p>A Câmara gastou {{ k.gasto }} ({{ k.gasto_ext }}) de janeiro de 2025 a {{ k.gasto_ate }}. Nesse tempo, aprovou {{ c.aprovados }} projetos dos vereadores.</p>
       <p class="numero num cheio">{{ k.por_lei }}</p>
       <p class="extenso">{{ k.por_lei_ext }}</p>
       <p class="lead"><strong>por lei aprovada, dividindo uma coisa pela outra.</strong></p>
       <p>Só {{ c.cont_aprov.concreto }} delas mudam algo na prática. Contando só essas, cada uma saiu por {{ k.por_lei_concreta }} ({{ k.por_lei_concreta_ext }}).</p>
-      <p>E {{ c.cont_aprov.simbolico }} das aprovadas são simbólicas, quase todas datas no calendário: {{ c.parte_simb_aprov }}.</p>
+      <p>E {{ c.cont_aprov.simbolico }} das aprovadas são simbólicas, a maioria datas no calendário: {{ c.parte_simb_aprov }}.</p>
       <p class="miuda">A Câmara também vota as leis da prefeitura e o orçamento. Por isso, essa conta não é o preço de uma lei. Ela mostra o tamanho.</p>
     </div>
   </div>
@@ -146,5 +174,6 @@
 </div>
 
 {% include "_compartilhar.html" %}
-<p class="fonte">Fontes: Câmara Municipal de Cariacica, <a href="{{ v.meta.url_producao }}">sistema de projetos</a>, consulta por autor de 01/01/2025 a {{ v.coleta }}; <a href="{{ v.meta.url_gasto }}">Portal da Transparência da Câmara</a>, despesa liquidada de 2025 ({{ k.gasto_anos['2025'] }}) e de 2026 até {{ k.gasto_ate }} ({{ k.gasto_anos['2026'] }}), e folha de pagamento ({{ k.salario_mes }} por vereador; era R$ 8.016,94 em 2024); {{ k.gabinete_lei }}. Salário no período: {{ k.salario_mes }} × {{ k.meses }} meses = {{ k.salario_periodo_exato }}. A separação por impacto é do Vigia, feita lendo a ementa de cada projeto. Projeto com mais de um autor conta para cada autor ({{ c.coautoria }} casos); na conta da cidade, conta uma vez. <a href="/fontes/#vereadores">Como fizemos esta página →</a></p>
+<p class="fonte">Fontes: Câmara Municipal de Cariacica, <a href="{{ v.meta.url_producao }}">sistema de projetos</a>, consulta por autor de 01/01/2025 a {{ v.coleta }}; <a href="{{ v.meta.url_gasto }}">Portal da Transparência da Câmara</a>, despesa liquidada de 2025 ({{ k.gasto_anos['2025'] }}) e de 2026 até {{ k.gasto_ate }} ({{ k.gasto_anos['2026'] }}), e folha de pagamento ({{ k.salario_mes }} por vereador; era R$ 8.016,94 em 2024); {{ k.gabinete_lei }}. Salário no período: {{ k.salario_mes }} × {{ k.meses }} meses = {{ k.salario_periodo_exato }}. A separação por impacto é do Vigia, feita lendo a ementa de cada projeto. Projeto com mais de um autor conta para cada autor ({{ c.coautoria }} casos); na conta da cidade, conta uma vez. Aprovado: a votação final está registrada na página do projeto, ou o prefeito mandou veto (o veto é sobre o texto que a Câmara aprovou). "Já vale": a página do projeto mostra a norma resultante, a sanção ou a promulgação, ou o <a href="{{ v.meta.url_leis }}">cadastro de leis da Câmara</a> liga a lei ao projeto; projeto de resolução vira resolução, promulgada pela própria Câmara, e não lei. "Vetado": o prefeito mandou mensagem de veto e o projeto ainda não virou lei; se o veto foi derrubado e a lei saiu, o projeto aparece como "Já vale". O PL 169/2025 tem mensagem de veto, mas a página diz que foi arquivado a pedido do autor: ficou como arquivado até a Câmara confirmar. "Sem lei publicada": aprovado, mas o sistema ainda não mostra lei nem resolução; pode ter havido sanção tácita, promulgação ou veto derrubado sem registro. Em "Leis que mudam a sua vida", o tema é do Vigia, pelas palavras do resumo oficial. <a href="/fontes/#vereadores">Como fizemos esta página →</a></p>
+<p class="fonte"><b>Correção em 24/11/2026:</b> até esta data, a página contava como arquivados os projetos que já tinham virado lei, porque o sistema da Câmara muda a fase do projeto para "Arquivamento" depois que a lei sai. Por isso, mostrava 55 aprovados. O número certo, com dados de {{ v.coleta }}, é {{ c.aprovados }}, lido na página de cada um dos {{ c.n }} projetos e nas mensagens de veto do prefeito.</p>
 {% endblock %}

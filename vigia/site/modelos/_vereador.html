@@ -6,13 +6,13 @@
 {%- endmacro %}
 {% macro resumo(x, periodo) -%}
 {% if x.n %}
-<p class="valor">{{ x.n }} <small>{{ "projeto de lei" if x.n == 1 else "projetos de lei" }}</small></p>
+<p class="valor">{{ x.n }} <small>{{ "projeto" if x.n == 1 else "projetos" }}</small></p>
 {{ pilha(x.pilha, "Projetos de " ~ x.nome) }}
 {{ legenda(x.pilha) }}
-<p>Aprovados pela Câmara: <b class="num">{{ x.aprovados }}</b>{% if x.aprovados %}. {{ "Muda" if x.concreto_aprovado == 1 else "Mudam" }} algo na prática: <b class="num">{{ x.concreto_aprovado }}</b>{% endif %}.</p>
+<p>Aprovados pela Câmara: <b class="num">{{ x.aprovados }}</b>{% if x.aprovados %} ({{ x.ja_vale }} já {{ "vale" if x.ja_vale == 1 else "valem" }}{% if x.vetados %}, {{ x.vetados }} {{ "vetado" if x.vetados == 1 else "vetados" }} pelo prefeito{% endif %}). {{ "Muda" if x.concreto_aprovado == 1 else "Mudam" }} algo na prática: <b class="num">{{ x.concreto_aprovado }}</b>{% endif %}.</p>
 {% else %}
-<p class="valor">0 <small>projetos de lei</small></p>
-<p>Não apresentou projeto de lei {{ periodo }}.</p>
+<p class="valor">0 <small>projetos</small></p>
+<p>Não apresentou projeto de lei nem de resolução {{ periodo }}.</p>
 {% endif %}
 <p class="miuda">Pedidos à prefeitura: <b class="num">{{ br(x.pedidos) }}</b> · Homenagens: <b class="num">{{ br(x.homenagens) }}</b></p>
 {%- endmacro %}

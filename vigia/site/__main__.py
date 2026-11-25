@@ -312,23 +312,23 @@ def gerar(saida: Path, hoje: date | None = None) -> dict[str, dict]:
     ver = V.vereadores(hoje)
     perg_camara = [q for q in (pergunta("2026111226344"), pergunta("2026111273015")) if q]
     escrever("/vereadores/", "vereadores.html", "O que fizeram os 19 vereadores",
-             f"Os {ver['cidade']['n']} projetos de lei dos 19 vereadores de Cariacica, separados pelo que muda na vida "
+             f"Os {ver['cidade']['n']} projetos ({ver['cidade']['tipos']}) dos 19 vereadores de Cariacica, separados pelo que muda na vida "
              "de quem mora aqui. E a conta: salário, gasto da Câmara e leis aprovadas.", "vereadores",
              v=ver, perguntas=perg_camara,
              zap="O que fez cada vereador de Cariacica? Veja os projetos, separados pelo que muda na vida da gente.",
-             **previa("vereadores", "Os 19 vereadores de Cariacica", f"{ver['cidade']['n']} projetos de lei",
+             **previa("vereadores", "Os 19 vereadores de Cariacica", f"{ver['cidade']['n']} projetos",
                       f"{D.de_cada(100 * ver['cidade']['cont']['concreto'] / ver['cidade']['n'])} mudam algo na "
                       f"prática. {ver['cidade']['aprovados']} foram aprovados. {ver['periodo'].capitalize()}.",
                       f"Câmara de Cariacica, {ver['coleta']}"))
     for x in ver["lista"]:
-        escrever(f"/vereadores/{x['slug']}/", "vereador.html", f"{x['nome']}: projetos de lei na Câmara de Cariacica",
-                 f"{x['nome']}, vereador de Cariacica: {x['n']} projetos de lei {ver['periodo']}, separados pelo que "
+        escrever(f"/vereadores/{x['slug']}/", "vereador.html", f"{x['nome']}: projetos na Câmara de Cariacica",
+                 f"{x['nome']}, vereador de Cariacica: {x['n']} projetos {ver['periodo']}, separados pelo que "
                  "muda na vida de quem mora aqui.", "vereadores", v=ver, x=x,
                  zap=f"Veja o que {x['nome']} apresentou na Câmara de Cariacica.",
                  # na prévia, o nome é o destaque e os números vêm na legenda, iguais para os 19: um "0" gigante
                  # com marca-texto viraria figurinha de ataque, e o Vigia não humilha ninguém
                  **previa(f"vereador-{x['slug']}", "Vereadores de Cariacica · o que cada um fez", x["nome"],
-                          f"{x['n']} {'projeto' if x['n'] == 1 else 'projetos'} de lei"
+                          f"{x['n']} {'projeto' if x['n'] == 1 else 'projetos'}"
                           + (f": {V.rot('concreto', x['cont']['concreto'])}, "
                              f"{V.rot('simbolico', x['cont']['simbolico'])}. {x['aprovados']} aprovados"
                              if x["n"] else "") + f". {D.br(x['pedidos'])} pedidos à prefeitura. "
@@ -337,8 +337,8 @@ def gerar(saida: Path, hoje: date | None = None) -> dict[str, dict]:
     partes = [dict(p) for p in F.PARTES]
     for p in partes:
         if p["id"] == "vereadores":
-            p["atualiza"] = ("A Câmara bloqueia o robô. Por enquanto, copiamos os dados pelo navegador. "
-                             f"A última cópia é de {ver['coleta']}.")
+            p["atualiza"] = ("Toda segunda de manhã, o robô lê de novo o sistema da Câmara. "
+                             f"A última leitura é de {ver['coleta']}. Projeto novo fica sem nível até lermos o resumo.")
     escrever("/fontes/", "fontes.html", "De onde vêm os nossos números",
              "Todas as fontes do Vigia Cariacica: de onde vem cada número do site, como fazemos a conta, quando "
              "atualiza e o que o dado não mostra.", "fontes", principios=F.PRINCIPIOS, partes=partes,

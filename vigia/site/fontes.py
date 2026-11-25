@@ -130,12 +130,12 @@ PARTES = [
              "limite de gasto de cada gabinete"),
         ],
         "como": [
-            "Contamos os projetos de lei de cada vereador desde janeiro de 2025.",
+            "Contamos os projetos de cada vereador (de lei, de lei complementar e de resolução) desde janeiro de 2025.",
             "Lemos o resumo oficial de cada um e separamos por impacto: muda algo, muda pouco, simbólico ou pode ser barrado.",
             "A conta da Câmara divide o gasto total pelas leis aprovadas.",
             "Não dividimos o salário de cada vereador pelas leis dele. Mais projetos não quer dizer mais trabalho bom.",
         ],
-        "atualiza": "A Câmara bloqueia o robô. Por enquanto, copiamos os dados pelo navegador, uma vez por mês.",
+        "atualiza": "Toda segunda de manhã, o robô lê de novo o sistema da Câmara.",
         "limites": [
             "A separação por impacto é nossa e pode ter erro. Cada projeto tem link para você conferir.",
             "Ainda não mostramos votos e presença. Já perguntamos à Câmara.",
