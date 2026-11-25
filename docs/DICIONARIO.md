@@ -258,7 +258,10 @@ outros_links, primeira_vez, status, nota. As 26 regras estão em `docs/REGRAS.md
 
 - bairros-cariacica.csv e bairros-indicadores.csv: por bairro (Censo 2022): população, domicílios,
   renda média e mediana, % esgoto em rede, % esgoto precário, % sem banheiro, % água em rede, % lixo
-  coletado, % alfabetizados 15+.
+  coletado, % alfabetizados 15+. Desde 24/11/2026, bairros-cariacica.csv traz também as contagens exatas
+  domicilios_sem_rede (domicílios permanentes menos os ligados à rede, V00309 + V00310) e pessoas_15mais.
+- cariacica-municipio.csv: Cariacica inteira (agregado por município do Censo 2022, com a zona rural), as mesmas
+  variáveis. É a coluna "Cariacica" do site (`ferramentas/raiox/processar_municipio.py`).
 - ideb-escolas-cariacica.csv: por escola: rede, etapa, Ideb 2023 e 2025, aprovação, notas.
 - ideb-cidades.csv, ideb-municipios.csv, indicadores-grande-vitoria.csv: comparação com as vizinhas
   (pobreza no CadÚnico, Ideb, etc.), com fonte e data em cada linha.

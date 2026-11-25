@@ -42,7 +42,7 @@
   <h2 id="h-destaques">Os extremos</h2>
   <div class="grade-3 placar extremos">
     <div><span class="prot">Mais gente</span><b class="num">{{ br(r.maior.populacao) }}</b><p>moradores em <a href="/bairros/{{ r.maior.slug }}/">{{ r.maior.nome }}</a>.</p></div>
-    <div><span class="prot">Mais apertado</span><b class="num">{{ br(r.densidade_max) }}</b><p>moradores por km² em <a href="/bairros/{{ r.mais_denso.slug }}/">{{ r.mais_denso.nome }}</a>. Na cidade, a média é {{ br(r.dens_cidade) }}.</p></div>
+    <div><span class="prot">Mais apertado</span><b class="num">{{ br(r.densidade_max) }}</b><p>moradores por km² em <a href="/bairros/{{ r.mais_denso.slug }}/">{{ r.mais_denso.nome }}</a>. Somando os {{ r.bairros }} bairros, a média é {{ br(r.dens_cidade) }} (a zona rural fica de fora). Na cidade toda, {{ br(r.dens_municipio, 1) }}.</p></div>
     <div><span class="prot">Menos gente</span><b class="num">{{ br(r.menor.populacao) }}</b><p>moradores em <a href="/bairros/{{ r.menor.slug }}/">{{ r.menor.nome }}</a>.</p></div>
   </div>
 </section>
@@ -58,11 +58,11 @@
         <th scope="col"><button type="button" data-col="2">Casas</button></th>
         <th scope="col"><button type="button" data-col="3">Por km²</button></th>
         <th scope="col"><button type="button" data-col="4">Casas sem esgoto na rede</button></th>
-        <th scope="col"><button type="button" data-col="5">Metade ganha até</button></th>
+        <th scope="col"><button type="button" data-col="5">Metade com renda ganha até</button></th>
       </tr></thead>
       <tbody>
       {% for b in tabela %}
-        <tr><th scope="row" data-v="{{ b.nome }}"><a href="/bairros/{{ b.slug }}/">{{ b.nome }}</a></th><td data-rot="Moradores" data-v="{{ b.populacao }}">{{ br(b.populacao) }}</td><td data-rot="Casas" data-v="{{ b.domicilios }}">{{ br(b.domicilios) }}</td><td data-rot="Por km²" data-v="{{ b.densidade|round|int }}">{{ br(b.densidade|round|int) }}</td><td data-rot="Sem esgoto na rede" data-v="{{ b.sem_rede }}">{{ br(b.sem_rede) }}</td><td data-rot="Metade ganha até" data-v="{{ b.renda_mediana|round|int }}">R$ {{ br(b.renda_mediana|round|int) }}</td></tr>
+        <tr><th scope="row" data-v="{{ b.nome }}"><a href="/bairros/{{ b.slug }}/">{{ b.nome }}</a></th><td data-rot="Moradores" data-v="{{ b.populacao }}">{{ br(b.populacao) }}</td><td data-rot="Casas" data-v="{{ b.domicilios }}">{{ br(b.domicilios) }}</td><td data-rot="Por km²" data-v="{{ b.densidade|round|int }}">{{ br(b.densidade|round|int) }}</td><td data-rot="Sem esgoto na rede" data-v="{{ b.sem_rede }}">{{ br(b.sem_rede) }}</td><td data-rot="Metade com renda ganha até"data-v="{{ b.renda_mediana|round|int }}">R$ {{ br(b.renda_mediana|round|int) }}</td></tr>
       {% endfor %}
       </tbody>
     </table>
@@ -70,5 +70,5 @@
 </section>
 
 {% include "_compartilhar.html" %}
-<p class="fonte">Fontes: IBGE, Censo 2022, resultados por bairro (moradores, casas, esgoto e renda de quem sustenta a casa) e malha de bairros do Censo 2022 (o desenho de cada bairro e a área em km²). Contas do Vigia: moradores por km² = moradores ÷ área. O Censo junta alguns bairros pequenos com o vizinho. <a href="/fontes/#mapa">Como fizemos →</a></p>
+<p class="fonte">Fontes: IBGE, Censo 2022, resultados por bairro (moradores, casas, esgoto e renda de quem sustenta a casa) e malha de bairros do Censo 2022 (o desenho de cada bairro e a área em km²). Contas do Vigia: moradores por km² = moradores ÷ área. Renda: metade dos responsáveis pela casa que têm renda ganha até esse valor. Cariacica inteira: IBGE, agregado por município. O Censo junta alguns bairros pequenos com o vizinho. <a href="/fontes/#mapa">Como fizemos →</a></p>
 {% endblock %}

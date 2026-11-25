@@ -54,6 +54,16 @@ def publicacoes() -> list[dict]:
     return sorted(out, key=lambda x: x["data"], reverse=True)
 
 
+ARQ_CORR = D.SITE / "correcoes.csv"
+
+
+def correcoes() -> list[dict]:
+    """A lista de correções da página Quem somos (data/site/correcoes.csv), da mais nova para a mais antiga. Toda
+    peça com `correcao` em publicacoes.csv tem de estar aqui (tests/test_site.py confere)."""
+    out = [{k: _junto(v) if k == "texto" else v for k, v in r.items()} for r in _ler(ARQ_CORR)]
+    return sorted(out, key=lambda c: c["data"], reverse=True)
+
+
 def respostas() -> dict[str, dict]:
     """Resumo público de cada resposta já conferida, por número do pedido."""
     return {r["protocolo"]: r for r in _ler(ARQ_RESP)}

@@ -78,7 +78,7 @@ def gerar(saida: Path, hoje: date | None = None) -> dict[str, dict]:
     css = (AQUI / "estatico" / "estilo.css").read_bytes() + (AQUI / "estatico" / "site.js").read_bytes()
     comum = {"base": BASE, "menu": MENU, "menu_mais": MENU_MAIS, "versao": hashlib.sha1(css).hexdigest()[:8],
              "hoje_texto": _data_texto(hoje), "hoje_dm": hoje.strftime("%d/%m/%Y"), "br": D.br, "meses": D.meses, "falado": D.falado,
-             "de_cada": D.de_cada, "ddmm": _ddmm, "cem": _cem, "rot": V.rot, "rot_palavras": V.rot_palavras,
+             "de_cada": D.de_cada, "parte_ano": D.parte_ano, "ddmm": _ddmm, "cem": _cem, "rot": V.rot, "rot_palavras": V.rot_palavras,
              "verificacao": VERIFICACAO, "redes": REDES,
              "rf": D.reais_cheio, "cheio": D.reais_cheio, "extenso": D.extenso, "categorias": C.CATEGORIAS}
 
@@ -104,6 +104,7 @@ def gerar(saida: Path, hoje: date | None = None) -> dict[str, dict]:
     pad = D.padroes(bs)
     fl = D.fila()
     postos = D.postos_por_bairro(bs, fl)
+    vizinhos = D.postos_com_nome_do_bairro(bs, postos)
     nome_bairro = {b["slug"]: b["nome"] for b in bs}
     for u in fl["unidades"]:
         if u.get("bairro_slug"):
@@ -176,7 +177,8 @@ def gerar(saida: Path, hoje: date | None = None) -> dict[str, dict]:
              "O Vigia Cariacica mostra como a prefeitura de Cariacica (ES) usa o seu dinheiro: o seu bairro, a fila "
              "do seu posto, os vereadores e as perguntas que fizemos. Feito por moradores, com fonte oficial.", "inicio",
              bairros=bs, busca_id="inicio", busca_so_com_texto=True, padrao_baixa=padrao_baixa, pad=pad,
-             padrao_alta=padrao_alta, pop_total=sum(b["populacao"] for b in bs), fila_falado=D.br(fl["pedidos"]), n_perguntas=perg["total"],
+             padrao_alta=padrao_alta, pop_total=cid["populacao"], fila_falado=D.br(fl["pedidos"]), n_perguntas=perg["total"],
+             destinos=perg["destinos"],
              por_mes=D.reais(round(por_morador / 12)), resultados=resultados, primeiro_prazo=primeiro_prazo, parciais=perg['parciais'], respondidas=perg['respondidas'],
              ultimas=eventos[:4], n_pubs=len(pubs), zap=zap_padrao,
              mapa_inicio=M.mapa(bs) if M.existe() else None)
@@ -198,13 +200,15 @@ def gerar(saida: Path, hoje: date | None = None) -> dict[str, dict]:
     tot = {"pop": sum(b["populacao"] for b in validos), "casas": sum(b["domicilios"] for b in validos),
            "area": sum(b["area_km2"] for b in validos),
            "nao_le": sum(b["pessoas_15mais_nao_alfabetizadas"] for b in validos)}
-    LINHAS = [("Moradores", "geral", "populacao", D.br(tot["pop"])),
-              ("Casas", "geral", "domicilios", D.br(tot["casas"])),
-              ("Moradores por km²", "geral", "densidade", D.br(round(tot["pop"] / tot["area"]))),
+    # coluna "Cariacica": o total oficial do município (IBGE), não a soma dos bairros, que deixa a zona rural de fora
+    # (24/11/2026). Sem o arquivo do município, o rótulo vira "Soma dos 99 bairros".
+    LINHAS = [("Moradores", "geral", "populacao", D.br(cid["populacao"])),
+              ("Casas", "geral", "domicilios", D.br(cid["domicilios"])),
+              ("Moradores por km²", "geral", "densidade", D.br(cid["densidade"], 1)),
               ("Casas sem esgoto ligado na rede", "saneamento", "sem_rede", D.br(cid["sem_rede"])),
               ("Pessoas de 15 anos ou mais que não sabem ler", "educacao", "pessoas_15mais_nao_alfabetizadas",
-               D.br(tot["nao_le"])),
-              ("Metade das famílias ganha até", "renda", "renda_mediana", "—")]
+               D.br(cid["nao_le"])),
+              ("Metade dos responsáveis com renda ganha até", "renda", "renda_mediana", "—")]
     todos_val = {campo: [x[campo] for x in validos] for _, _, campo, _ in LINHAS}
 
     def numeros(b):
@@ -243,7 +247,8 @@ def gerar(saida: Path, hoje: date | None = None) -> dict[str, dict]:
         escrever(f"/bairros/{b['slug']}/", "bairro.html", f"{b['nome']}, Cariacica: esgoto, posto de saúde e obras",
                  f"{b['nome']}, Cariacica: esgoto na rede em {esg}, posto de saúde, fila e mais. "
                  "Comparado com a cidade, com fonte oficial.", "bairros",
-                 b=b, cartoes=cartoes, postos=postos.get(b["slug"], []), fila=fl,
+                 b=b, cartoes=cartoes, postos=postos.get(b["slug"], []), vizinhos=vizinhos.get(b["slug"], []), fila=fl,
+                 rotulo_cidade=cid["rotulo"],
                  escolas=escolas.get(b["slug"], []), ideb_cidade=ideb_cid, perguntas=ps,
                  obras_b=ob["por_bairro"].get(b["slug"], []), obras=ob, numeros=numeros(b), n_bairros=len(validos),
                  mapinha=({"largura": mp["largura"], "altura": mp["altura"], "d": caminho_de[b["slug"]]}
@@ -254,7 +259,8 @@ def gerar(saida: Path, hoje: date | None = None) -> dict[str, dict]:
 
     if mp:
         rm = M.resumo(bs)
-        rm["dens_cidade"] = round(tot["pop"] / tot["area"])
+        rm["dens_cidade"] = round(tot["pop"] / tot["area"])        # soma dos 99 bairros (zona rural fora)
+        rm["dens_municipio"] = cid["densidade"]                    # Cariacica inteira, IBGE
         escrever("/mapa/", "mapa.html", "Mapa de Cariacica: onde mora a gente",
                  f"{D.br(rm['total'])} pessoas em {rm['bairros']} bairros. Veja no mapa onde mora mais gente, onde é "
                  "mais apertado, onde falta esgoto e onde a renda é menor.", "mapa", m=mp, r=rm,
@@ -345,7 +351,7 @@ def gerar(saida: Path, hoje: date | None = None) -> dict[str, dict]:
              palavras=F.PALAVRAS, zap="De onde vêm os números do Vigia Cariacica: todas as fontes oficiais.")
 
     escrever("/perguntas/", "perguntas.html", "O que perguntamos à prefeitura",
-             f"{perg['total']} perguntas oficiais à prefeitura e à Câmara de Cariacica, com prazo e resposta.",
+             f"{perg['total']} perguntas oficiais {perg['destinos']}, com prazo e resposta.",
              "perguntas", p=perg, quando=quando,
              zap="Veja o que o Vigia perguntou à prefeitura de Cariacica e quem já respondeu.",
              **previa("perguntas", "Perguntas oficiais do Vigia", f"{perg['total']} perguntas",
@@ -358,7 +364,7 @@ def gerar(saida: Path, hoje: date | None = None) -> dict[str, dict]:
              p=perg, n_pubs=len(pubs), por_mes=N.por_mes(eventos),
              zap="Tudo o que o Vigia Cariacica já fez: vídeos, perguntas à prefeitura, respostas e prazos.",
              **previa("novidades", "O que o Vigia fez", f"{len(pubs)} vídeos e posts",
-                      f"e {perg['total']} perguntas oficiais à prefeitura e à Câmara. Veja as respostas e os prazos.",
+                      f"e {perg['total']} perguntas oficiais {perg['destinos']}. Veja as respostas e os prazos.",
                       "Vigia Cariacica"))
 
     escrever("/denuncie/", "denuncie.html", "Deixe aqui sua denúncia",
@@ -377,20 +383,20 @@ def gerar(saida: Path, hoje: date | None = None) -> dict[str, dict]:
     saude_top = max(g["saude"], key=lambda s: s["por_morador"])
     saude_diferenca = (saude_top["por_morador"] - saude_car) * g["populacao"] if saude_top["cidade"] != "Cariacica" else 0
     escrever("/dinheiro/", "dinheiro.html", "Para onde vai o dinheiro da prefeitura?",
-             f"Em {g['ano']}, a prefeitura de Cariacica gastou o equivalente a {D.reais(round(por_morador / 12))} "
-             "por mês com cada morador. Veja em quê.", "dinheiro",
-             g=g, por_mes_num=D.br(round(por_morador / 12)), total_texto="R$ 1,66 bilhão",
-             por_dia_texto=f"R$ {D.br(g['total'] / 365 / 1e6, 1)} milhões", max_bloco=max_bloco,
+             f"Em {g['ano']}, Cariacica (prefeitura, Câmara e previdência) gastou o equivalente a "
+             f"{D.reais(round(por_morador / 12))} por mês com cada morador. Veja em quê.", "dinheiro",
+             g=g, por_mes_num=D.br(round(por_morador / 12)), max_bloco=max_bloco,
              max_saude=max_saude, saude_dia=D.br(saude_car / 365, 2), pergunta_saude=pergunta(g["pergunta_saude"]),
              saude_diferenca=saude_diferenca, saude_ref=saude_top["cidade"],
              zap="Para onde vai o dinheiro da prefeitura de Cariacica? Veja em números simples.",
              **previa("dinheiro", "Dinheiro da prefeitura", D.reais(round(por_morador / 12)),
-                      f"por mês com cada morador: é o que a prefeitura gastou em {g['ano']}. Veja em quê.",
-                      "Tribunal de Contas do ES e IBGE"))
+                      f"por mês com cada morador: é o que Cariacica gastou em {g['ano']}. Veja em quê.",
+                      "Tesouro Nacional (Siconfi) e IBGE"))
 
     escrever("/quem-somos/", "quem.html", "Quem somos",
              "Somos moradores de Cariacica. Olhamos as contas da prefeitura e mostramos para todo mundo. Sem partido: "
              "nosso lado é o povo de Cariacica.", "quem", pergunta_saude=pergunta(g["pergunta_saude"]),
+             correcoes=N.correcoes(),
              zap="Conheça o Vigia Cariacica: moradores que olham as contas da prefeitura, sem partido.")
     red = saida / "como-trabalhamos" / "index.html"
     red.parent.mkdir(parents=True, exist_ok=True)

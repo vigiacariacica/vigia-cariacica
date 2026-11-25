@@ -158,7 +158,7 @@ def test_obras_no_bairro(gerado):
     if o["por_bairro"]:
         slug, xs = next(iter(o["por_bairro"].items()))
         t = (saida / "bairros" / slug / "index.html").read_text(encoding="utf-8")
-        assert "Obras pagas pela prefeitura no bairro" in t and xs[0]["id"] in t
+        assert "Obras da prefeitura no bairro" in t and xs[0]["id"] in t
 
 
 def test_previa_de_cada_pagina(gerado):
@@ -182,7 +182,7 @@ def test_mapa_e_numeros_brutos(gerado):
     assert D.extenso(1_663_887_316) == "1 bilhão e 664 milhões de reais"
     assert D.extenso(297_000) == "297 mil reais" and D.posicao(10, [10, 20, 5]) == 2
     d = (saida / "dinheiro" / "index.html").read_text(encoding="utf-8")
-    assert "R$ 1.663.887.317" in d
+    assert "R$ 1.619.123.621" in d
 
 
 def test_denuncia_cai_no_formulario_e_nada_e_publicado(gerado):
@@ -234,3 +234,146 @@ def test_sinais_para_buscadores(gerado):
     assert (saida / "favicon.ico").exists() and (saida / "icone-48.png").exists()
     b = (saida / "bairros" / "itaquari" / "index.html").read_text(encoding="utf-8")
     assert "<title>Itaquari, Cariacica:" in b
+
+
+# ---------------------------------------------------------------- correções do juiz de dados (24/11/2026)
+
+def _texto(saida, caminho):
+    return L.texto_da_pagina((saida / caminho.strip("/") / "index.html").read_text(encoding="utf-8"))
+
+
+def test_coluna_cariacica_e_o_total_oficial_do_ibge():
+    """A soma dos 99 bairros deixava de fora 4.387 moradores e a zona rural; a coluna Cariacica é o município."""
+    bs = D.bairros()
+    c = D.cidade(bs)
+    assert (c["populacao"], c["domicilios"], c["sem_rede"], c["nao_le"]) == (353_491, 130_183, 23_545, 12_745)
+    assert c["populacao"] - sum(b["populacao"] for b in bs) == 4_387
+    assert round(c["densidade"], 1) == 1263.7 and round(c["pct_nao_le"]) == 5
+    assert (c["pct_esgoto_rede"], c["pct_agua_rede"], c["pct_lixo_coletado"]) == (81.8, 97.4, 98.5)
+    assert c["rotulo"] == "Cariacica"
+
+
+def test_bairro_com_posto_no_cnes_nunca_diz_nao_achamos(gerado):
+    saida, _ = gerado
+    bs = D.bairros()
+    postos = D.postos_por_bairro(bs, D.fila())
+    assert {"itaciba", "campo-grande", "alto-da-boa-vista"} <= set(postos)
+    for slug in postos:
+        assert "Não achamos um posto" not in _texto(saida, f"/bairros/{slug}/"), slug
+    assert "US Itacibá" in _texto(saida, "/bairros/itaciba/")
+    assert "US Bom Pastor" in _texto(saida, "/bairros/campo-grande/")
+    # a US com o nome do bairro que fica no vizinho
+    assert "A US Rio Marinho, que tem o nome do bairro, fica em Castelo Branco." in _texto(saida, "/bairros/rio-marinho/")
+    assert "fica em Maracanã" in _texto(saida, "/bairros/itapemirim/")
+    assert "fica em Vila Independência" in _texto(saida, "/bairros/mucuri/")
+    # presídio e vigilância não são o posto do bairro
+    assert all("PENITENCIARIA" not in D.normalizar(p["nome"]) for ps in postos.values() for p in ps)
+
+
+def test_empate_da_renda_entra_inteiro(gerado):
+    saida, _ = gerado
+    bs = D.bairros()
+    grandes = [b for b in bs if b["domicilios"] >= D.MIN_DOMICILIOS_RANKING]
+    n_1212 = sum(1 for b in grandes if b["renda_mediana"] == 1212)
+    pad = D.padroes(bs)
+    assert n_1212 == 29 == pad["n_renda_baixa"] == sum(1 for b in bs if b["renda_baixa"])
+    assert round(pad["esgoto_renda_baixa"], 1) == 68.2
+    for slug in ("santa-luzia", "vista-linda", "tiradentes"):
+        assert "Está entre os 29 bairros onde metade ganha até 1 salário mínimo (R$ 1.212)." in \
+            _texto(saida, f"/bairros/{slug}/"), slug
+    assert "Nos 29 bairros de menor renda (R$ 1.212), 7 de cada 10 casas têm esgoto na rede." in _texto(saida, "/bairros/")
+
+
+def test_renda_diz_que_so_conta_quem_tem_renda(gerado):
+    saida, _ = gerado
+    t = _texto(saida, "/bairros/itaquari/")
+    assert "metade dos responsáveis pela casa que têm renda ganha até esse valor" in t
+    assert "Metade dos responsáveis com renda ganha até" in t
+    assert "Metade das famílias" not in t and "responsáveis pelas casas ganha" not in t
+
+
+def test_casas_sem_rede_exatas_e_frase_do_zero():
+    b = {x["slug"]: x for x in D.bairros()}
+    assert b["nova-rosa-da-penha"]["sem_rede"] == 2_038
+    assert D.casas(0, "têm esgoto ligado na rede.") == ("Nenhuma", "casa tem esgoto ligado na rede.")
+    assert D.casas(71.7, "têm esgoto ligado na rede.") == ("7 de cada 10", "casas têm esgoto ligado na rede.")
+    assert D.casas(99.7, "têm esgoto ligado na rede.")[1] == "as casas têm esgoto ligado na rede."
+
+
+def test_bairro_pequeno_mostra_pessoas(gerado):
+    saida, _ = gerado
+    t = _texto(saida, "/bairros/foz-do-rio-bubu/")
+    assert "No Censo, só 3 pessoas de 15 anos ou mais foram contadas aqui. As 3 não sabem ler e escrever." in t
+    assert "Nenhuma casa tem esgoto" in t.replace("\n", " ") and "Nenhuma as casas" not in t
+
+
+def test_escola_com_nota_usa_nome_e_rede_do_inep(gerado):
+    saida, _ = gerado
+    esc = D.escolas_por_bairro(D.bairros())
+    ja = {x["nome"]: x for x in esc["jardim-america"]}
+    assert "EMEFTI Professor Cerqueira Lima" in ja and ja["EMEFTI Professor Cerqueira Lima"]["ideb"][0]["nota"] == "6.7"
+    assert not any("Pautila" in n and x["ideb"] for n, x in ja.items())
+    nrp = {x["nome"]: x for x in esc["nova-rosa-da-penha"]}
+    assert nrp["EMEF Teotônio Brandão Vilela"]["rede"] == "Municipal"
+    # a cidade no mesmo ano da escola
+    t = _texto(saida, "/bairros/itaciba/")
+    assert "nota 4,1 em 2023 (Cariacica, escolas públicas: 4,7 em 2023)" in t
+    assert D.ideb_cidade()["Anos finais (6º–9º)"]["2023"] == "4.7"
+
+
+def test_obras_citadas_no_nome_e_contrato_que_junta_obras(gerado):
+    saida, _ = gerado
+    o = D.obras(D.bairros(), date(2026, 11, 12))
+    ids = {s: {x["id"] for x in xs} for s, xs in o["por_bairro"].items()}
+    assert "1748" in ids["nova-campo-grande"] and "1748" in ids["vista-dourada"]
+    assert "1748" not in {x["id"] for x in o["sem_bairro"]}
+    juntas = {x["id"]: x["junta"] for xs in o["por_bairro"].values() for x in xs}
+    assert juntas["8"] == juntas["9"] == juntas["10"] == 3 and juntas["132"] == juntas["133"] == 2
+    t = _texto(saida, "/bairros/novo-brasil/").replace("\xa0", " ")
+    assert "pagos no contrato 154/2012, que junta 3 obras" in t
+    # a rua Santa Luzia não é o bairro Santa Luzia; Jardim Campo Grande não é Campo Grande
+    chaves = {D.normalizar(b["bairro"]): b["slug"] for b in D.bairros()}
+    assert D.bairros_no_nome("Drenagem da Avenida Santa Luzia, no Bairro Piranema", chaves) == ["piranema"]
+    assert D.bairros_no_nome("Reforma da EMEF X - Bairro Jardim Campo Grande", chaves) == ["jardim-campo-grande"]
+    lista = _texto(saida, "/bairros/")
+    assert "citam um lugar que o Censo não separa" in lista
+
+
+def test_fila_em_palavras_e_anos_meses():
+    from vigia.site import problemas as P
+    assert D.parte_ano(5, 177, " deste posto") == "Só 5 pedidos deste posto esperam há mais de 1 ano."
+    assert D.parte_ano(82, 177, " deste posto") == "Quase metade dos pedidos deste posto."
+    assert D.parte_ano(16_218, 42_679) == "São 4 de cada 10 pedidos."
+    assert P._anos_meses(512) == "1 ano e 4 meses"      # 16,8 meses: "mais de 1 ano e 5 meses" seria falso
+    assert P._anos_meses(497) == "1 ano e 4 meses"
+
+
+def test_dinheiro_sem_contar_duas_vezes():
+    g = D.dinheiro()
+    assert round(g["total"], 2) == 1_619_123_621.02
+    assert round(sum(b["de_cada_100"] for b in g["blocos"]), 1) == 100.0
+    car = next(s["por_morador"] for s in g["saude"] if s["cidade"] == "Cariacica")
+    vit = next(s["por_morador"] for s in g["saude"] if s["cidade"] == "Vitória")
+    assert D.reais_cheio((vit - car) * g["populacao"]) == "R$ 272.844.661"
+    assert D.reais_cheio(g["total"] / 365) == "R$ 4.435.955" and round(g["total"] / g["populacao"] / 12) == 359
+
+
+def test_correcoes_a_vista(gerado):
+    from vigia.site import novidades as N
+    saida, _ = gerado
+    corr = N.correcoes()
+    links = {c["link"] for c in corr}
+    for p in N.publicacoes():
+        if p.get("correcao"):
+            assert p["link"] in links, p["titulo"]
+    t = _texto(saida, "/quem-somos/")
+    assert "Nenhuma até agora" not in t and "Vídeo do PA do Trevo" in t
+
+
+def test_perguntas_dizem_a_quem_foram(gerado):
+    saida, _ = gerado
+    assert D.destinos_texto({"prefeitura": 53, "camara": 3, "estado": 4}) == "à prefeitura, à Câmara e ao Governo do ES"
+    assert D.destinos_texto({"prefeitura": 2}) == "à prefeitura"
+    p = D.perguntas(date(2026, 11, 12))
+    assert sum(p["por_destino"].values()) == p["total"]
+    assert f"{p['total']} perguntas oficiais {p['destinos']}" in _texto(saida, "/")

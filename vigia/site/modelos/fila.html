@@ -16,7 +16,7 @@
       <div class="barra"><div class="cab"><strong>Metade espera há</strong><span class="v">{{ meses(d.mediana) }}</span></div></div>
       <div class="barra"><div class="cab"><strong>Esperam há mais de 1 ano</strong><span class="v num">{{ br(d.ano) }}</span></div>
         <div class="trilho" aria-hidden="true"><i style="width:{{ '%.1f'|format(100 * d.ano / d.pedidos) }}%"></i></div>
-        <small>São {{ de_cada(100 * d.ano / d.pedidos) }} pedidos{% if u %} deste posto{% endif %}.</small></div>
+        <small>{{ parte_ano(d.ano, d.pedidos, " deste posto" if u else "") }}</small></div>
     </div>
     {% if u and u.bairro_slug %}<p class="miuda">Este posto fica no bairro <a href="/bairros/{{ u.bairro_slug }}/">{{ u.bairro_nome }}</a>. Veja como está o bairro.</p>{% endif %}
     <p class="meta">Espera contada até {{ fila.data_ref_texto }}. Metade espera mais de {{ d.mediana }} dias.</p>

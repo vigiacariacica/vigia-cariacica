@@ -14,12 +14,21 @@
 <section class="bloco" aria-labelledby="h-posto" data-cat="saude">
   <h2 id="h-posto">{{ icone("saude") }}Posto de saúde no bairro</h2>
   <p class="miuda">US e USF querem dizer unidade de saúde, o posto.</p>
+  {% macro porta(u) %}<a class="porta" href="/fila/{{ u.slug }}/"><span class="prot">Fila da saúde<span class="sep"> · </span><span class="nw">{{ fila.mes_texto }}</span></span><b>{{ u.nome }}</b><span class="t">{{ br(u.pedidos) }} consultas e exames esperam vaga. Metade espera há {{ meses(u.mediana) }}.</span><span class="seta" aria-hidden="true">→</span></a>{% endmacro %}
   {% if postos %}
   <div class="bloco">
-  {% for u in postos %}
-    <a class="porta" href="/fila/{{ u.slug }}/"><span class="prot">Fila da saúde<span class="sep"> · </span><span class="nw">{{ fila.mes_texto }}</span></span><b>{{ u.nome }}</b><span class="t">{{ br(u.pedidos) }} consultas e exames esperam vaga. Metade espera há {{ meses(u.mediana) }}.</span><span class="seta" aria-hidden="true">→</span></a>
+  {% for p in postos %}
+    {% if p.fila %}{{ porta(p.fila) }}
+    {% else %}<div class="folha"><p><b>{{ p.nome }}</b></p><p>Este posto não aparece com esse nome na planilha da fila de {{ fila.mes_texto }}.</p>{% if p.cnes %}<p class="meta">Cadastro do Ministério da Saúde (CNES) nº {{ p.cnes }}</p>{% endif %}</div>
+    {% endif %}
   {% endfor %}
   </div>
+  {% elif vizinhos %}
+  {% for p in vizinhos %}
+  <p>A {{ p.nome }}, que tem o nome do bairro, fica em <a href="/bairros/{{ p.bairro_slug }}/">{{ p.bairro_nome }}</a>.</p>
+  {% if p.fila %}<div class="bloco">{{ porta(p.fila) }}</div>{% endif %}
+  {% endfor %}
+  <p><a href="/fila/">Veja a fila de todos os postos →</a></p>
   {% else %}
   <p>Não achamos um posto de saúde com endereço neste bairro. Quem mora aqui é atendido num posto perto.</p>
   <p><a href="/fila/">Veja a fila de todos os postos →</a></p>
@@ -30,8 +39,9 @@
 <section class="bloco" aria-labelledby="h-escolas" data-cat="educacao">
   <h2 id="h-escolas">{{ icone("educacao") }}Escolas no bairro</h2>
   <p>A nota do MEC vai de 0 a 10 e mede se os alunos aprendem e passam de ano. CMEI é creche e pré-escola. EMEF é escola da prefeitura, do ensino fundamental. EEEF e EEEFM são escolas do Estado.</p>
+  <p class="meta">Escola com nota: nome e rede do INEP, que dá a nota. As outras: mapa do Governo do ES.</p>
   <ul class="regras">
-  {% for e in escolas %}<li><strong>{{ e.nome }}</strong>{% if not e.ideb and e.nome.startswith('CMEI') %}<br>Creche e pré-escola não têm nota do MEC.{% endif %}{% for n in e.ideb %}<br>{{ n.etapa }}: nota {{ n.nota|replace('.', ',') }} em {{ n.ano }}{% if ideb_cidade.get(n.etapa) %} (Cariacica: {{ ideb_cidade[n.etapa]|replace('.', ',') }}){% endif %}{% endfor %}</li>
+  {% for e in escolas %}<li><strong>{{ e.nome }}</strong>{% if e.rede in ('Municipal', 'Estadual') %} <span class="miuda">({{ 'da prefeitura' if e.rede == 'Municipal' else 'do Estado' }})</span>{% endif %}{% if not e.ideb and e.nome.startswith('CMEI') %}<br>Creche e pré-escola não têm nota do MEC.{% endif %}{% for n in e.ideb %}{% set cid = ideb_cidade.get(n.etapa, {}).get(n.ano) %}<br>{{ n.etapa }}: nota {{ n.nota|replace('.', ',') }} em {{ n.ano }}{% if cid %} (Cariacica, escolas públicas: {{ cid|replace('.', ',') }} em {{ n.ano }}){% endif %}{% endfor %}</li>
   {% endfor %}
   </ul>
 </section>
@@ -64,11 +74,11 @@
   <details class="grupo" aria-labelledby="h-numeros">
     <summary><b id="h-numeros">Os números do bairro</b><span>abrir a tabela</span></summary>
     <table class="tabela numeros-bairro">
-      <caption class="miuda">Posição: 1º é o bairro com o maior número entre os {{ n_bairros }}.</caption>
-      <thead><tr><th scope="col">O que contamos</th><th scope="col">{{ b.nome }}</th><th scope="col">Cariacica</th><th scope="col">Posição</th></tr></thead>
+      <caption class="miuda">Posição: 1º é o bairro com o maior número entre os {{ n_bairros }}. {% if rotulo_cidade == "Cariacica" %}Cariacica é a cidade inteira, com a zona rural.{% else %}{{ rotulo_cidade }}: a zona rural fica de fora.{% endif %}</caption>
+      <thead><tr><th scope="col">O que contamos</th><th scope="col">{{ b.nome }}</th><th scope="col">{{ rotulo_cidade }}</th><th scope="col">Posição</th></tr></thead>
       <tbody>
       {% for r in numeros %}
-        <tr data-cat="{{ r.cat }}"><th scope="row">{{ r.rot }}</th><td data-rot="{{ b.nome }}" class="num"><b>{{ r.aqui }}</b></td><td data-rot="Cariacica" class="num">{{ r.cidade }}</td><td data-rot="Posição" class="num">{{ r.pos }}º de {{ n_bairros }}</td></tr>
+        <tr data-cat="{{ r.cat }}"><th scope="row">{{ r.rot }}</th><td data-rot="{{ b.nome }}" class="num"><b>{{ r.aqui }}</b></td><td data-rot="{{ rotulo_cidade }}" class="num">{{ r.cidade }}</td><td data-rot="Posição" class="num">{{ r.pos }}º de {{ n_bairros }}</td></tr>
       {% endfor %}
       </tbody>
     </table>
@@ -87,9 +97,9 @@
 
 
 <section class="bloco" id="obras" aria-labelledby="h-obras" data-cat="obras">
-  <h2 id="h-obras">{{ icone("obras") }}Obras pagas pela prefeitura no bairro</h2>
+  <h2 id="h-obras">{{ icone("obras") }}Obras da prefeitura no bairro</h2>
   {% if obras_b %}
-  <p>{{ "Esta é a obra" if obras_b|length == 1 else "Estas são as " ~ obras_b|length ~ " obras" }} que a prefeitura registrou com o nome de {{ b.nome }}. A situação é a que o sistema de obras mostra hoje.</p>
+  <p>{{ "Esta é a obra" if obras_b|length == 1 else "Estas são as " ~ obras_b|length ~ " obras" }} que a prefeitura registrou com o nome de {{ b.nome }}. A situação é a que o sistema de obras mostra hoje. Nem toda obra tem pagamento no sistema.</p>
   <ol class="obras grade-2">
   {% for o in obras_b[:4] %}{{ obra(o) }}
   {% endfor %}
@@ -106,7 +116,7 @@
   {% else %}
   <p>O sistema de obras da prefeitura não tem nenhuma obra com o nome de {{ b.nome }}.</p>
   {% endif %}
-  <p class="miuda">O sistema tem {{ obras.total }} obras desde {{ obras.primeiro_ano }}. {{ obras.recentes }} Outras {{ obras.sem_bairro|length }}, que somam {{ rf(obras.sem_bairro_pago) }}, são da cidade toda ou não dizem o bairro. <a href="/bairros/#cidade-toda">Veja a lista</a>. <a href="/fontes/#obras">Como lemos as obras →</a></p>
+  <p class="miuda">O sistema tem {{ obras.total }} obras desde {{ obras.primeiro_ano }}. {{ obras.recentes }} Outras {{ obras.sem_bairro|length }} somam {{ rf(obras.sem_bairro_pago) }}. Elas não dizem o bairro, citam um lugar que o Censo não separa ou servem a cidade toda. <a href="/bairros/#cidade-toda">Veja a lista</a>. <a href="/fontes/#obras">Como lemos as obras →</a></p>
 </section>
 
 <section class="bloco" aria-labelledby="h-perg">
@@ -116,7 +126,7 @@
   <div class="folha">
     <p><strong>{{ p.pergunta }}</strong></p>
     <p class="meta">Para: {{ p.para }} · número {{ p.numeros|join(' e ') }}</p>
-    <p><span class="relogio" data-prazo="{{ p.prazo.isoformat() }}" data-respondido="{{ p.respondido_em }}" data-estado="{{ p.estado }}">Prazo: {{ p.prazo.strftime('%d/%m/%Y') }}</span></p>
+    <p><span class="relogio" data-prazo="{{ p.prazo.isoformat() }}" data-respondido="{{ p.respondido_em }}" data-estado="{{ p.estado }}">Prazo: {{ p.prazo.strftime('%d/%m/%Y') }}</span>{% if p.recurso %} Recurso desde {{ p.recurso }}.{% endif %}</p>
   </div>
   {% endfor %}
   </div>

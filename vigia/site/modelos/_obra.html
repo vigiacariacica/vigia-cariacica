@@ -2,10 +2,12 @@
 <li class="obra">
   <p class="linha"><span class="prot">Contrato de {{ o.ano }}</span><span class="selo {{ 'ok' if o.estado == 'pronta' else 'neutro' if o.estado == 'andamento' else '' }}">{{ o.situacao }}</span></p>
   <h3 class="obra-nome" data-fora-da-regua>{{ o.nome_txt }}</h3>
-  {% if o.pago %}<p><span class="valor-obra num">{{ rf(o.pago) }}</span> pagos{% if o.contratado and o.contratado > o.pago * 1.01 %}, de {{ rf(o.contratado) }} do contrato{% endif %}.</p>
+  {% if o.pago and o.junta > 1 %}<p><span class="valor-obra num">{{ rf(o.pago) }}</span> pagos no contrato {{ o.contrato }}, que junta {{ o.junta }} obras.</p>
+  {% elif o.pago %}<p><span class="valor-obra num">{{ rf(o.pago) }}</span> pagos{% if o.contratado and o.contratado > o.pago * 1.01 %}, de {{ rf(o.contratado) }} do contrato{% endif %}.</p>
   {% else %}<p>O sistema não mostra nenhum pagamento.</p>{% endif %}
   {% if o.vencido %}<p class="miuda">O prazo do contrato no sistema acabou em {{ o.fim }}.</p>{% endif %}
   {% if o.varios %}<p class="miuda">Obra em mais de um bairro ({{ o.bairros_txt }}). O valor é da obra inteira.</p>{% endif %}
+  {% if o.citados_txt %}<p class="miuda">{{ o.citados_txt }} {{ "estão" if " e " in o.citados_txt else "está" }} no nome da obra{% if o.campo_txt %}. O campo de bairro do sistema diz {{ o.campo_txt }}{% endif %}.</p>{% endif %}
   <p class="meta">{% if o.inicio %}Contrato de {{ o.inicio }} a {{ o.fim }} · {% endif %}obra nº {{ o.id }}</p>
 </li>
 {%- endmacro %}

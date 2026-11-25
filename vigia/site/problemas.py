@@ -18,7 +18,9 @@ from . import dados as D
 
 
 def _anos_meses(dias: int) -> str:
-    m = round(dias / 30.44)
+    """Vai depois de "mais de": arredonda para baixo (512 dias = 16,8 meses = "1 ano e 4 meses"; arredondar para
+    cima dava "mais de 1 ano e 5 meses", que é falso, 24/11/2026)."""
+    m = int(dias / 30.44)
     a, r = divmod(m, 12)
     if a == 0:
         return f"{m} meses"
@@ -60,7 +62,8 @@ def problemas(fl: dict, cid: dict, pad: dict) -> list[dict]:
                 f"Metade espera há mais de {_anos_meses(neuro_med)}.",
                 f"A fila cresceu: eram {D.br(int(primeiro['pedidos']))} pedidos em maio e "
                 f"{D.br(fl['pedidos'])} em {fl['mes_texto'].split(' de ')[0]}. Parte é exame novo na lista.",
-                "Na Câmara, um projeto para mostrar a fila com transparência está parado desde junho de 2022.",
+                "Na Câmara, um projeto para mostrar o tempo de espera foi apresentado em junho de 2022. "
+                "Está parado nas comissões desde julho de 2022.",
             ],
             "melhorou": "",
             "outro_lado": "A Secretaria de Saúde diz que a fila vai pela gravidade de cada caso. "
@@ -82,15 +85,20 @@ def problemas(fl: dict, cid: dict, pad: dict) -> list[dict]:
             "legenda": "de cada 1.000 bebês nascidos em 2024 morreram antes de fazer 1 ano.",
             "texto": [
                 "Em Vitória, foram quase 11 de cada 1.000.",
-                "Em 2024, 131 bebês nasceram com sífilis, passada pela mãe na gravidez. O teste e o remédio são de graça no SUS.",
+                # sífilis: o número único do projeto é o do DataSUS/SINAN (124, preliminar), não o do Plano Municipal
+                # (131, outra base); e é caso de sífilis congênita, nunca "nasceram" (24/11/2026)
+                "Em 2024, foram 124 casos de sífilis congênita, passada da mãe para o bebê na gravidez "
+                "(DataSUS, dado preliminar). O teste e o remédio são de graça no SUS.",
                 "Muitas dessas mortes podem ser evitadas com pré-natal bem feito no posto.",
             ],
-            "melhorou": "Em 2025, o número ainda preliminar caiu para quase 14 de cada 1.000.",
+            "melhorou": "Em 2025, o número ainda preliminar foi de quase 14 de cada 1.000. "
+                        "É menos que em 2024, mas mais que de 2020 a 2023.",
+            "selo_melhorou": ("Em 2025", "neutro"),
             "outro_lado": "",
             "fontes": [("DataSUS, mortes de bebês (SIM)", "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sim/cnv/inf10es.def"),
                        ("DataSUS, nascimentos (SINASC)", "http://tabnet.datasus.gov.br/cgi/deftohtm.exe?sinasc/cnv/nves.def"),
-                       ("Plano Municipal de Saúde 2026–2029 (sífilis)",
-                        "https://cariacica.es.gov.br/uploads/files/secretarias/semus/2026/anexos/plano-municipal-de-saude---2026-2029/plano-municipal-de-saude-quadrienio-2026_2029.pdf")],
+                       ("DataSUS, sífilis congênita (SINAN, dado preliminar de 2024)",
+                        "https://datasus.saude.gov.br/acesso-a-informacao/doencas-e-agravos-de-notificacao-de-2007-em-diante-sinan/")],
             "perguntas": ["008925.2026-07", "008926.2026-77", "008936.2026-98"],
             "link": None,
             "acoes": [("Está grávida?", "Comece o pré-natal no posto logo no começo. É de graça."),
@@ -102,11 +110,14 @@ def problemas(fl: dict, cid: dict, pad: dict) -> list[dict]:
             "numero": D.br(sem_rede),
             "legenda": "casas não têm esgoto ligado na rede.",
             "texto": [
-                f"Nos 20 bairros de menor renda, {D.de_cada(100 - pad['esgoto_renda_baixa'])} casas estão fora da rede.",
-                "E nem todo esgoto que entra na rede é tratado. Em 2024, só cerca de 4 de cada 10 moradores tinham coleta de esgoto.",
-                "Em 2021, a Justiça mandou resolver o esgoto da cidade.",
+                f"Nos {pad['n_renda_baixa']} bairros de menor renda, {D.de_cada(100 - pad['esgoto_renda_baixa'])} casas "
+                "estão fora da rede.",
+                "Pelo dado nacional do saneamento, em 2024 só cerca de 4 de cada 10 moradores tinham coleta de esgoto. "
+                "O Censo mostra mais casas \"na rede\" porque conta também o cano de chuva.",
+                # "Em 2021, a Justiça mandou resolver o esgoto" saiu: não achamos a decisão para pôr o link (24/11/2026)
             ],
-            "melhorou": "Em janeiro de 2026, o governo do Estado abriu estações de tratamento que atendem 18 bairros.",
+            "melhorou": "Em janeiro de 2026, o governo do Estado inaugurou a estação de esgoto de Flexal e ampliou a de "
+                        "Bandeirantes. O governo diz que a cobertura chegou a 80%.",
             "outro_lado": "",
             "fontes": [("IBGE, Censo 2022 por bairro", "https://www.ibge.gov.br/estatisticas/sociais/trabalho/22827-censo-demografico-2022.html"),
                        ("Ranking do saneamento 2026 (dados de 2024)",
@@ -121,9 +132,9 @@ def problemas(fl: dict, cid: dict, pad: dict) -> list[dict]:
             "resumo": "Mais de 25 mil pessoas em área de risco.",
             "slug": "morros", "titulo": "Morros com risco de deslizar",
             "numero": "Mais de 25 mil",
-            "legenda": "pessoas moram em lugares com risco alto de deslizamento.",
+            "legenda": "pessoas moram em áreas de risco alto ou muito alto de deslizamento, enxurrada ou inundação.",
             "texto": [
-                "São 92 lugares mapeados pelo Serviço Geológico do Brasil em 2023.",
+                "São 92 áreas mapeadas pelo Serviço Geológico do Brasil em 2023: 48 de risco alto e 44 de risco muito alto.",
                 "Em dia de chuva forte, quem mora ali precisa saber a hora de sair de casa.",
             ],
             "melhorou": "",
@@ -136,19 +147,23 @@ def problemas(fl: dict, cid: dict, pad: dict) -> list[dict]:
                       ("Rachadura na parede ou no chão?", "Ligue para a Defesa Civil: 199.")],
         },
         {
-            "resumo": "1 de cada 3 crianças terminou o 2º ano sem ler.",
+            "resumo": "Mais de 1 de cada 3 crianças terminou o 2º ano sem ler.",
             "slug": "escola", "titulo": "Aprender a ler e creche",
-            "numero": "1 de cada 3",
-            "legenda": "crianças terminou o 2º ano sem saber ler e escrever, em 2024.",
+            # MEC, Indicador Criança Alfabetizada 2024: 64,57% alfabetizadas (35,4% não)
+            "numero": "Mais de 1 de cada 3",
+            "legenda": "crianças das escolas públicas terminou o 2º ano sem saber ler e escrever. Dado de 2024.",
             "texto": [
-                "Só cerca de 2 de cada 10 crianças de 0 a 3 anos têm vaga em creche.",
+                # INEP Sinopse 2025 (matrículas em creche) ÷ IBGE Censo 2022 (crianças de 0 a 3 anos): 24,3%
+                "Só cerca de 1 de cada 4 crianças de 0 a 3 anos está matriculada em creche.",
                 "Sem creche, muitas mães não conseguem trabalhar.",
             ],
             "melhorou": "Está melhorando: em 2023, eram mais de 4 de cada 10 crianças sem saber ler no fim do 2º ano.",
             "outro_lado": "",
-            "fontes": [("MEC, alfabetização (A Tribuna)", "https://tribunaonline.com.br/_/268056"),
-                       ("Vagas de creche (A Tribuna)",
-                        "https://tribunaonline.com.br/educacao/escolas-de-cariacica-vao-abrir-11-mil-novas-vagas-283974"),
+            "fontes": [("MEC, Indicador Criança Alfabetizada 2024, Espírito Santo (Cariacica: 64,57)",
+                        "https://www.gov.br/mec/pt-br/crianca-alfabetizada/monitoramento-e-avaliacao/es_ica2024.pdf"),
+                       ("MEC, alfabetização de 2023 (A Tribuna)", "https://tribunaonline.com.br/_/268056"),
+                       ("Creche: INEP, Sinopse Estatística da Educação Básica 2025, e IBGE, Censo 2022 (24,3%)",
+                        "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/sinopses-estatisticas/educacao-basica"),
                        ("Lei 14.685/2023, fila da creche pública",
                         "https://www.camara.leg.br/noticias/1000169-lei-determina-divulgacao-obrigatoria-de-lista-de-espera-por-vaga-em-escolas-e-creches/")],
             "perguntas": ["008950.2026-11", "008935.2026-28", "008924.2026-34"],
@@ -156,15 +171,18 @@ def problemas(fl: dict, cid: dict, pad: dict) -> list[dict]:
             "acoes": [("Precisa de creche?", "Peça a vaga e peça, por escrito, a sua posição na fila. A lei manda mostrar essa fila.")],
         },
         {
-            "resumo": "A maior taxa de assassinatos da Grande Vitória em 2024.",
+            # 24/11/2026: saiu a taxa de 2024 ("28 por 100 mil, a maior da Grande Vitória"): estava sem link e sem o
+            # recorte (o Fórum só calcula cidades com mais de 100 mil moradores), e não achamos a tabela municipal
+            # oficial de 2025. Saiu também "Quem mais morre são os jovens", sem fonte. Fica o número do governo do ES.
+            "resumo": "52 assassinatos de janeiro a 4 de agosto de 2025.",
             "slug": "violencia", "titulo": "Violência",
-            "numero": "28",
-            "legenda": "assassinatos para cada 100 mil moradores em 2024. Foi a maior taxa da Grande Vitória.",
-            "texto": ["Quem mais morre são os jovens."],
-            "melhorou": "Está caindo: de janeiro a agosto de 2025, a polícia registrou 61 assassinatos, o menor número desde 1996.",
+            "numero": "52",
+            "legenda": "homicídios e feminicídios em Cariacica de 1º de janeiro a 4 de agosto de 2025.",
+            "texto": ["É o número do governo do Estado. Ainda não achamos o total oficial de 2025 inteiro."],
+            "melhorou": "Está caindo: no mesmo período de 2024, foram 66. São 21 de cada 100 a menos.",
             "outro_lado": "",
-            "fontes": [("Fórum Brasileiro de Segurança Pública, taxa de 2024 (27,7)", ""),
-                       ("A Tribuna, 2025", "https://tribunaonline.com.br/_/273811")],
+            "fontes": [("Governo do ES, notícia de 05/08/2025 (Secretaria de Segurança)",
+                        "https://www.es.gov.br/Noticia/cariacica-completa-30-dias-consecutivos-sem-registros-de-assassinatos")],
             "perguntas": ["2026111048", "008932.2026-12"],
             "link": None,
             "acoes": [("Em perigo?", "Ligue 190."),
@@ -174,7 +192,8 @@ def problemas(fl: dict, cid: dict, pad: dict) -> list[dict]:
             "resumo": f"{mi(em[ult_ano][1])} em contratos sem concorrência em {ult_ano}." if em else "",
             "slug": "emergencias", "titulo": "Contratos sem concorrência",
             "numero": mi(em[ult_ano][1]) if em else "",
-            "legenda": f"em contratos de emergência em {ult_ano}. Emergência é contrato feito sem concorrência.",
+            "legenda": f"em contratos de emergência assinados em {ult_ano} (valor total de cada um). "
+                       "Emergência é contrato feito sem concorrência.",
             "texto": [
                 (f"Em 2024 foram {mi(em[2024][1])}. Em 2025, {mi(em[2025][1])}." if 2024 in em and 2025 in em else ""),
                 "Sem concorrência, ninguém sabe se aquele era o melhor preço.",
@@ -193,12 +212,13 @@ def problemas(fl: dict, cid: dict, pad: dict) -> list[dict]:
             "acoes": [("Fale com o seu vereador.", "A Câmara aprova o orçamento e pode chamar o secretário para explicar.")],
         },
         {
-            "resumo": "R$ 122 de IPTU por morador, quase metade da Serra.",
+            "resumo": "R$ 122 de IPTU por morador, pouco mais da metade da Serra.",
             "slug": "dinheiro", "titulo": "Pouco dinheiro próprio",
             "numero": "R$ 122",
             "legenda": "de IPTU por morador em 2025. Na Serra, foram R$ 234.",
             "texto": [
-                "O IPTU e os outros impostos da cidade rendem pouco. Por isso sobra pouco para saúde e creche.",
+                "O IPTU e os outros impostos da cidade rendem pouco. "
+                "Com pouco dinheiro próprio, a cidade depende mais do dinheiro do Estado e da União.",
                 "A prefeitura gastou R$ 649 por morador com saúde em 2025, o menor valor da Grande Vitória.",
             ],
             "melhorou": "",

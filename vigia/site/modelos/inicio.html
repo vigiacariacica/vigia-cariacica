@@ -29,7 +29,7 @@
 <nav class="caminhos" aria-label="O que você quer fazer">
   <a class="caminho forte" href="/denuncie/"><b>Fazer uma denúncia</b><span>Viu algo errado? Conte. Não precisa dizer quem é.</span></a>
   <a class="caminho" href="/problemas/"><b>Os problemas da cidade</b><span>Saúde, esgoto, escola e mais, com número oficial.</span></a>
-  <a class="caminho" href="/perguntas/"><b>O que perguntamos</b><span>{{ n_perguntas }} perguntas à prefeitura. Veja quem respondeu.</span></a>
+  <a class="caminho" href="/perguntas/"><b>O que perguntamos</b><span>{{ n_perguntas }} perguntas oficiais {{ destinos }}. Veja quem respondeu.</span></a>
 </nav>
 
 {% if mapa_inicio %}
@@ -56,7 +56,7 @@
 <section class="bloco achado" aria-labelledby="h-padrao">
   <h2 id="h-padrao">Onde a renda é menor, falta mais esgoto</h2>
   {{ dez(pad.esgoto_renda_baixa, pad.esgoto_renda_alta, "Bairros mais pobres", "Bairros mais ricos", padrao_baixa, padrao_alta) }}
-  <p class="fonte">Casas com esgoto ligado na rede, de cada 10. Fonte: IBGE, Censo 2022, nos 20 bairros de menor e nos 20 de maior renda, com 100 casas ou mais. Contas do Vigia.</p>
+  <p class="fonte">Casas com esgoto ligado na rede, de cada 10. Fonte: IBGE, Censo 2022. Bairros com 100 casas ou mais: os {{ pad.n_renda_baixa }} de menor renda (metade dos responsáveis com renda ganha até {{ br(pad.renda_baixa_ate) }} reais) e os {{ pad.n_renda_alta }} de maior renda ({{ br(pad.renda_alta_desde) }} reais ou mais). Empate no corte entra inteiro. Contas do Vigia.</p>
 </section>
 
 {% if ultimas %}
