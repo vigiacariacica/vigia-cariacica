@@ -9,7 +9,7 @@
 <p class="valor">{{ x.n }} <small>{{ "projeto de lei" if x.n == 1 else "projetos de lei" }}</small></p>
 {{ pilha(x.pilha, "Projetos de " ~ x.nome) }}
 {{ legenda(x.pilha) }}
-<p>Aprovados pela Câmara: <b class="num">{{ x.aprovados }}</b>{% if x.aprovados %}. {{ "Muda" if x.concreto_aprovado == 1 else "Mudam" }} algo na prática: <b class="num">{{ x.concreto_aprovado }}</b>{% endif %}.</p>
+<p>Aprovados pela Câmara: <b class="num">{{ x.aprovados }}</b>{% if x.aprovados %} ({{ x.virou_lei }} já {{ "virou lei" if x.virou_lei == 1 else "viraram lei" }}). {{ "Muda" if x.concreto_aprovado == 1 else "Mudam" }} algo na prática: <b class="num">{{ x.concreto_aprovado }}</b>{% endif %}.</p>
 {% else %}
 <p class="valor">0 <small>projetos de lei</small></p>
 <p>Não apresentou projeto de lei {{ periodo }}.</p>

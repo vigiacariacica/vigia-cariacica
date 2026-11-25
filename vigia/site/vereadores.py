@@ -56,8 +56,9 @@ EXEMPLOS = {   # exemplos reais, com o número do projeto para quem quiser confe
     "simbolico": ("Dia municipal de conscientização de uma doença", "PL 347/2025"),
     "barrado": ("Trocar multa de trânsito por doação de sangue", "PL 363/2025"),
 }
-SITUACAO = {"Aprovado pela Câmara": "Aprovado", "Em análise": "Em análise", "Arquivado/encerrado": "Arquivado",
-            "Pronto para plenário": "Pronto para votar"}
+SITUACAO = {"Virou lei": "Virou lei", "Aprovado pela Câmara": "Aprovado", "Em análise": "Em análise",
+            "Arquivado/encerrado": "Arquivado", "Pronto para plenário": "Pronto para votar"}
+APROVADO = {"Virou lei", "Aprovado pela Câmara"}   # aprovado pela Câmara: já com número de lei ou esperando a sanção
 SIGLAS = ["SUS", "CRAS", "CREAS", "CAPS", "UBS", "APP", "TEA", "PcD", "ECA", "LGBTQIAPN+", "IPTU", "ISS", "EJA"]
 NOMES = ["Cariacica", "Espírito Santo", "Vitória", "Vila Velha", "Serra", "Viana", "Brasil", "Maria da Penha",
          "Câmara Municipal", "Libras", "Moxuara", "Guarda Municipal"]
@@ -135,6 +136,7 @@ def vereadores(hoje: date | None = None) -> dict:
     meta = _ler("fonte.json")
     resumo = {r["vereador"]: r for r in _ler("producao_vereadores.json")}
     linhas = _ler("projetos.json")
+    unicos_cidade = _ler("cidade.json")
     coleta = date.fromisoformat(meta["coletado_em"])
     inicio = date.fromisoformat(meta["periodo_inicio"])
     meses = (coleta.year - inicio.year) * 12 + coleta.month - inicio.month   # meses fechados até a coleta
@@ -160,11 +162,12 @@ def vereadores(hoje: date | None = None) -> dict:
             p["coautoria"] = autores[p["numero"]] > 1
         r = resumo.get(nome, {})
         cont = _contagem(ps)
-        aprov = [p for p in ps if p["status"] == "Aprovado pela Câmara"]
+        aprov = [p for p in ps if p["status"] in APROVADO]
         avaliados = len(ps) - cont["sem"]
         lista.append({
             "nome": nome, "slug": D.slug(nome), "n": len(ps), "cont": cont, "pilha": _pilha(cont, len(ps)),
             "aprovados": len(aprov), "concreto_aprovado": sum(1 for p in aprov if p["nivel"] == "concreto"),
+            "virou_lei": sum(1 for p in aprov if p["status"] == "Virou lei"),
             "pronto": sum(1 for p in ps if p["status"] == "Pronto para plenário"),
             "parte_concreto": _parte(cont["concreto"], avaliados) if avaliados else "",
             "pedidos": r.get("indicacoes", 0), "homenagens": r.get("titulos_mocoes", 0),
@@ -175,18 +178,23 @@ def vereadores(hoje: date | None = None) -> dict:
 
     todos = list(unicos.values())
     cont = _contagem(todos)
-    aprov = [p for p in todos if p["status"] == "Aprovado pela Câmara"]
+    aprov = [p for p in todos if p["status"] in APROVADO]
     cont_aprov = _contagem(aprov)
+    datas = [p for p in aprov if re.search(r"\bDIA\b|\bSEMANA\b|\bM[ÊE]S\b|CALEND[ÁA]RIO", p["ementa"].upper())]
     gasto = sum(meta["gasto_camara"].values())
     gasto_ate = date.fromisoformat(meta["gasto_camara_ate"])
     cidade = {
         "n": len(todos), "cont": cont, "cem": _cem(cont, len(todos)), "pilha": _pilha(cont, len(todos)),
         "aprovados": len(aprov), "cont_aprov": cont_aprov, "pilha_aprov": _pilha(cont_aprov, len(aprov)),
+        "virou_lei": sum(1 for p in aprov if p["status"] == "Virou lei"),
+        "esperando": sum(1 for p in aprov if p["status"] == "Aprovado pela Câmara"),
+        "datas_aprov": len(datas), "parte_datas_aprov": D.de_cada(100 * len(datas) / len(aprov)),
         "parte_aprovados": D.de_cada(100 * len(aprov) / len(todos)),
         "parte_simb_aprov": D.de_cada(100 * cont_aprov["simbolico"] / len(aprov)),
         "parte_conc_aprov": D.de_cada(100 * cont_aprov["concreto"] / len(aprov)),
-        "pedidos": sum(r["indicacoes"] for r in resumo.values()),
-        "homenagens": sum(r["titulos_mocoes"] for r in resumo.values()),
+        # papel com vários autores conta uma vez na conta da cidade (cidade.json, de ferramentas/camara_producao.py)
+        "pedidos": unicos_cidade["indicacoes"], "homenagens": unicos_cidade["homenagens"],
+        "titulos_cidadao": unicos_cidade["titulos_cidadao"],
         "coautoria": sum(1 for v in autores.values() if v > 1),
     }
     conta = {
@@ -206,5 +214,4 @@ def vereadores(hoje: date | None = None) -> dict:
     }
     return {"lista": lista, "cidade": cidade, "conta": conta, "meta": meta, "niveis": NIVEIS,
             "exemplos": EXEMPLOS, "coleta": coleta.strftime("%d/%m/%Y"),
-            "periodo": f"de janeiro de {inicio.year} a {MESES[(coleta.month - 2) % 12]} de "
-                       f"{coleta.year if coleta.month > 1 else coleta.year - 1}"}
+            "periodo": f"de janeiro de {inicio.year} a {coleta.day} de {MESES[coleta.month - 1]} de {coleta.year}"}

@@ -148,6 +148,20 @@ def test_conta_dos_vereadores():
     assert V.ementa_simples("PROÍBE A COLAGEM EM BENS PÚBLICOS E DÁ OUTR…") == "Proíbe a colagem em bens públicos…"
 
 
+def test_projeto_que_virou_lei_conta_como_aprovado():
+    """Depois que a lei sai, o sistema da Câmara põe o projeto em "Arquivamento". Projeto com lei é aprovado."""
+    import json
+    projetos = json.loads((D.DADOS / "camara" / "projetos.json").read_text(encoding="utf-8"))
+    com_lei = [p for p in projetos if p.get("lei")]
+    assert com_lei and all(p["status"] == "Virou lei" and p["lei_link"] for p in com_lei)
+    assert all(not p.get("lei") for p in projetos if p["status"] == "Arquivado/encerrado")
+    v = V.vereadores()
+    c = v["cidade"]
+    assert c["aprovados"] == c["virou_lei"] + c["esperando"]
+    assert c["virou_lei"] == len({p["link"] for p in com_lei})
+    assert sum(x["virou_lei"] for x in v["lista"]) >= c["virou_lei"]
+
+
 def test_obras_no_bairro(gerado):
     saida, _ = gerado
     o = D.obras(D.bairros(), date(2026, 11, 12))

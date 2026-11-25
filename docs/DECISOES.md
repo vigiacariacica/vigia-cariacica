@@ -71,6 +71,13 @@ com a data e o motivo, no mesmo commit da mudança. O histórico do git guarda o
   inteira (gasto ÷ leis aprovadas). Por vereador, o salário do cargo fica ao lado do que saiu do gabinete, sem
   dividir um pelo outro, porque a divisão premia quem apresenta mais projetos simbólicos e pune quem é minoria.
   Ordem alfabética, sem partido, sem foto, sem ranking.
+- **24/11/2026: correção dos vereadores, "Virou lei".** Depois que a lei sai, o sistema da Câmara muda a fase do
+  projeto para "Arquivamento", e a página lia isso como arquivado: mostrava 55 aprovados, quando eram 113. Agora a
+  situação vem de `ferramentas/camara_producao.py`, que baixa os CSVs oficiais (produção por autor e leis de
+  autoria) e liga cada lei ao projeto de origem dito no cadastro de leis, com duas travas, porque o cadastro às vezes
+  aponta o projeto errado (projeto repetido do mesmo autor; projeto não votado com ementa diferente da lei). A
+  correção fica escrita na própria página. A classificação por impacto continua do Vigia; projeto novo é lido e
+  entra em `data/camara/classificacao_extra.json`, ou aparece como "A classificar".
 - **12/11/2026: uma página, uma tarefa.** A primeira tela do celular é título e resposta; fontes e palavras
   difíceis moram em `/fontes/`; letras servidas pelo próprio site (nada de Google). O teste do site trava isso.
 - **13/11/2026: números inteiros.** Dinheiro com todos os zeros e, ao lado, como se lê ("1 bilhão e 664 milhões

@@ -48,12 +48,13 @@
       <ul class="niveis">{% for s in c.pilha %}<li><i class="nv n-{{ s.chave }}" aria-hidden="true"></i><span><b class="num">{{ s.pct|round|int }}</b> {{ rot_palavras(s.chave, 2) }}</span></li>{% endfor %}</ul>
     </div>
     <div class="folha">
-      <h3>Poucos foram aprovados</h3>
+      <h3>Quantos foram aprovados</h3>
       <p class="valor">{{ c.aprovados }} <small>aprovados pela Câmara</small></p>
-      <p>É {{ c.parte_aprovados }} projetos. Os outros estão em análise, prontos para votar ou foram arquivados.</p>
+      <p>É {{ c.parte_aprovados }} projetos. {{ c.virou_lei }} já viraram lei e {{ c.esperando }} esperam a sanção do prefeito. Os outros estão em análise, prontos para votar ou foram arquivados.</p>
+      <p>Dos aprovados, {{ c.datas_aprov }} só criam uma data no calendário (dia, semana ou mês): {{ c.parte_datas_aprov }}.</p>
       {{ pilha(c.pilha_aprov, "Projetos aprovados") }}
       {{ legenda(c.pilha_aprov) }}
-      <p>Os vereadores também fizeram {{ br(c.pedidos) }} pedidos à prefeitura e {{ br(c.homenagens) }} homenagens, como moções e títulos.</p>
+      <p>Os vereadores também fizeram {{ br(c.pedidos) }} pedidos à prefeitura e {{ br(c.homenagens) }} homenagens: títulos ({{ br(c.titulos_cidadao) }} de cidadão), comendas e moções de aplauso.</p>
     </div>
   </div>
 </section>
@@ -146,5 +147,6 @@
 </div>
 
 {% include "_compartilhar.html" %}
-<p class="fonte">Fontes: Câmara Municipal de Cariacica, <a href="{{ v.meta.url_producao }}">sistema de projetos</a>, consulta por autor de 01/01/2025 a {{ v.coleta }}; <a href="{{ v.meta.url_gasto }}">Portal da Transparência da Câmara</a>, despesa liquidada de 2025 ({{ k.gasto_anos['2025'] }}) e de 2026 até {{ k.gasto_ate }} ({{ k.gasto_anos['2026'] }}), e folha de pagamento ({{ k.salario_mes }} por vereador; era R$ 8.016,94 em 2024); {{ k.gabinete_lei }}. Salário no período: {{ k.salario_mes }} × {{ k.meses }} meses = {{ k.salario_periodo_exato }}. A separação por impacto é do Vigia, feita lendo a ementa de cada projeto. Projeto com mais de um autor conta para cada autor ({{ c.coautoria }} casos); na conta da cidade, conta uma vez. <a href="/fontes/#vereadores">Como fizemos esta página →</a></p>
+<p class="fonte">Fontes: Câmara Municipal de Cariacica, <a href="{{ v.meta.url_producao }}">sistema de projetos</a>, consulta por autor de 01/01/2025 a {{ v.coleta }}; <a href="{{ v.meta.url_gasto }}">Portal da Transparência da Câmara</a>, despesa liquidada de 2025 ({{ k.gasto_anos['2025'] }}) e de 2026 até {{ k.gasto_ate }} ({{ k.gasto_anos['2026'] }}), e folha de pagamento ({{ k.salario_mes }} por vereador; era R$ 8.016,94 em 2024); {{ k.gabinete_lei }}. Salário no período: {{ k.salario_mes }} × {{ k.meses }} meses = {{ k.salario_periodo_exato }}. A separação por impacto é do Vigia, feita lendo a ementa de cada projeto. Projeto com mais de um autor conta para cada autor ({{ c.coautoria }} casos); na conta da cidade, conta uma vez. "Virou lei": o projeto é a origem de uma lei no <a href="{{ v.meta.url_leis }}">cadastro de leis da Câmara</a> (lançamento mais recente lá: {{ v.meta.leis_ultimo_lancamento[8:10] }}/{{ v.meta.leis_ultimo_lancamento[5:7] }}/{{ v.meta.leis_ultimo_lancamento[:4] }}). <a href="/fontes/#vereadores">Como fizemos esta página →</a></p>
+<p class="fonte"><b>Correção em 24/11/2026:</b> até esta data, a página contava como arquivados os projetos que já tinham virado lei, porque o sistema da Câmara muda a fase do projeto para "Arquivamento" depois que a lei sai. Por isso, mostrava 55 aprovados. O número certo, com dados de {{ v.coleta }}, é {{ c.aprovados }}.</p>
 {% endblock %}

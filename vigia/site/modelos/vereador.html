@@ -42,10 +42,10 @@
     <ol class="projetos">
     {% for p in g.itens %}
       <li>
-        <p class="linha"><span class="prot">{{ p.numero }} · {{ p.data_txt }}</span><span class="selo {{ 'cheio' if p.situacao == 'Aprovado' else 'apagado' if p.situacao == 'Arquivado' else 'neutro' }}">{{ p.situacao }}</span></p>
+        <p class="linha"><span class="prot">{{ p.numero }} · {{ p.data_txt }}</span><span class="selo {{ 'cheio' if p.situacao in ('Aprovado', 'Virou lei') else 'apagado' if p.situacao == 'Arquivado' else 'neutro' }}">{{ p.situacao }}</span></p>
         <p data-fora-da-regua>{{ p.ementa_txt }}</p>
         {% if p.motivo %}<p class="miuda" data-fora-da-regua>Por que pode ser barrado: {{ p.motivo }}</p>{% endif %}
-        <p class="miuda">{% if p.coautoria %}Apresentado junto com outro vereador. {% endif %}<a href="{{ p.link }}">Ver na Câmara →</a></p>
+        <p class="miuda">{% if p.coautoria %}Apresentado junto com outro vereador. {% endif %}{% if p.lei %}Virou a <a href="{{ p.lei_link }}">{{ p.lei }}</a>. {% endif %}<a href="{{ p.link }}">Ver na Câmara →</a></p>
       </li>
     {% endfor %}
     </ol>
