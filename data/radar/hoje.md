@@ -15,6 +15,3 @@
 - C1 · 008842.2026-17 · vence 27/11
 - C2 · 008843.2026-87 · vence 27/11
 - C4 · 008841.2026-44 · vence 27/11
-### Diário Oficial
-- Edição 3040 (2026-11-25): 3 × inexigibilidade, 5 × aditivo, créditos extras R$ 1.184.898,04
-Ler: https://diariooficial.cariacica.es.gov.br/
