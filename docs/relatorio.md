@@ -1,6 +1,6 @@
 # Vigia Cariacica: relatório automático
 
-_Gerado em 25/11/2026 15:55 (UTC). Dados públicos oficiais; como cada dado é obtido em [METODOLOGIA.md](METODOLOGIA.md)._
+_Gerado em 25/11/2026 16:55 (UTC). Dados públicos oficiais; como cada dado é obtido em [METODOLOGIA.md](METODOLOGIA.md)._
 
 ## Placar de resultados
 
@@ -280,25 +280,26 @@ _Somas do Vigia sobre a planilha mensal da Secretaria de Saúde ([página oficia
 | 2026-07 | 37.964 | 30.533 | 248 dias | 13.890 | 7.899 | 13.790 | 5.046 / 485 dias |
 | 2026-08 | 36.591 | 30.221 | 285 dias | 15.102 | 7.316 | 13.524 | 4.849 / 509 dias |
 | 2026-09 | 40.829 | — | 236 dias | 15.349 | — | — | 5.063 / 497 dias |
+| 2026-10 | 42.679 | 33.759 | 238 dias | 16.218 | 8.156 | 16.117 | 5.173 / 512 dias |
 
-**Crescimento de 2026-05 a 2026-09:** 30.329 → 40.829 pedidos (+34,6%). Parte disso é procedimento novo na lista; contando só os 78 procedimentos que aparecem em todos os meses: 29.693 → 38.535 (+29,8%).
+**Crescimento de 2026-05 a 2026-10:** 30.329 → 42.679 pedidos (+40,7%). Parte disso é procedimento novo na lista; contando só os 78 procedimentos que aparecem em todos os meses: 29.693 → 39.912 (+34,4%).
 
-_Qualidade do dado oficial: em 2026-09, a coluna "Idade do paciente" bate com a data de nascimento em —% das linhas._
+_Qualidade do dado oficial: em 2026-10, a coluna "Idade do paciente" bate com a data de nascimento em 100% das linhas._
 
-**As 10 maiores filas em 2026-09**
+**As 10 maiores filas em 2026-10**
 
 | Procedimento | Pedidos | Metade espera mais de | Mais de 1 ano |
 |---|---:|---:|---:|
-| CONSULTA EM NEUROLOGIA PEDIATRIA | 5.063 | 497 dias | 3.265 |
-| CONSULTA EM NEUROLOGIA ADULTO | 2.000 | 1.306 dias | 1.917 |
-| ENDOSCOPIA DIGESTIVA ALTA ADULTO | 1.958 | 70 dias | 0 |
-| CONSULTA EM CARDIOLOGIA ADULTO | 1.559 | 246 dias | 385 |
-| CONSULTA EM OTORRINOLARINGOLOGIA ADULTO | 1.550 | 235 dias | 554 |
-| GRUPO TOMOGRAFIA COMPUTADORIZADA | 1.511 | 84 dias | 1 |
-| CONSULTA EM OFTALMOLOGIA RETINA | 1.429 | 615 dias | 997 |
-| CONSULTA EM ENDOCRINOLOGIA ADULTO | 1.359 | 428 dias | 825 |
-| CONSULTA EM OTORRINOLARINGOLOGIA AUDIOLOGIA | 1.310 | 424 dias | 738 |
-| CONSULTA EM PSIQUIATRIA ADULTO | 1.233 | 235 dias | 304 |
+| CONSULTA EM NEUROLOGIA PEDIATRIA | 5.173 | 512 dias | 3.396 |
+| ENDOSCOPIA DIGESTIVA ALTA ADULTO | 2.222 | 85 dias | 0 |
+| CONSULTA EM NEUROLOGIA ADULTO | 2.004 | 1.336 dias | 1.917 |
+| CONSULTA EM OTORRINOLARINGOLOGIA ADULTO | 1.689 | 209 dias | 605 |
+| CONSULTA EM CARDIOLOGIA ADULTO | 1.665 | 246 dias | 476 |
+| CONSULTA EM OFTALMOLOGIA RETINA | 1.423 | 638 dias | 1.021 |
+| CONSULTA EM ENDOCRINOLOGIA ADULTO | 1.406 | 449 dias | 888 |
+| CONSULTA EM PSIQUIATRIA ADULTO | 1.323 | 239 dias | 388 |
+| CONSULTA EM OTORRINOLARINGOLOGIA AUDIOLOGIA | 1.313 | 439 dias | 760 |
+| GRUPO RESSONANCIA MAGNETICA | 1.295 | 67 dias | 0 |
 
 ## Quem mais recebe dinheiro da prefeitura (R$ milhões pagos, 2021–2026)
 
