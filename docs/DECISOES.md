@@ -72,7 +72,7 @@ com a data e o motivo, no mesmo commit da mudança. O histórico do git guarda o
   dividir um pelo outro, porque a divisão premia quem apresenta mais projetos simbólicos e pune quem é minoria.
   Ordem alfabética, sem partido, sem foto, sem ranking.
 - **24/11/2026: correção dos vereadores, "Virou lei".** Depois que a lei sai, o sistema da Câmara muda a fase do
-  projeto para "Arquivamento", e a página lia isso como arquivado: mostrava 55 aprovados, quando eram 129. Agora a
+  projeto para "Arquivamento", e a página lia isso como arquivado: mostrava 55 aprovados, quando eram 130 (conta de 25/11/2026). Agora a
   situação vem de `ferramentas/camara_producao.py`, que baixa os CSVs oficiais (produção por autor, leis de autoria,
   mensagens de veto do prefeito) e a página de cada projeto. Aprovado é o que tem a votação final registrada no
   histórico; "Virou lei" vem da "Norma resultante" ou da sanção na página do projeto, ou do cadastro de leis. O
@@ -96,8 +96,9 @@ com a data e o motivo, no mesmo commit da mudança. O histórico do git guarda o
     pelo tipo do projeto (PL 1/2026 e PLC 1/2026 são projetos diferentes; antes o veto do PLC caía nos dois).
   - **Veto conta como aprovado.** O veto do prefeito é sobre o autógrafo, que só existe depois da aprovação: projeto
     com mensagem de veto fica "Vetado pelo prefeito" mesmo sem a votação registrada na página (PL 113/2025 e PL
-    153/2026). Exceção, até a Câmara confirmar: PL 169/2025 (`VETO_A_CONFERIR`), com veto que cita o autógrafo mas
-    página que diz arquivado a pedido do autor depois da 1ª votação. Veto total em projeto que virou lei aparece como
+    153/2026). O PL 169/2025, que a página mostra arquivado a pedido do autor,
+    conta como vetado: atas 67 e 68 (aprovado em 2ª discussão em 19/11/2025) e mensagem 111/2025, que veta o autógrafo
+    121/2025; o pedido de arquivamento veio depois das votações (conferido em 25/11/2026). Veto total em projeto que virou lei aparece como
     veto derrubado (PL 18/2025, derrubado em 28/05/2025). Total ou parcial é a palavra logo depois do verbo vetar.
   - **Contagem por vereador:** o CSV oficial às vezes repete o mesmo papel no arquivo de um autor (Indicação
     1290/2025, id 125895): cada id conta uma vez por autor. Moção que concede Título de Cidadão Cariaciquense conta

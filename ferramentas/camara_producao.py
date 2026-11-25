@@ -51,10 +51,10 @@ FASE_APROVADO = {"Aguardando Sanção do Executivo", "Para Encaminhar Autógrafo
                  "Aguardando Resultado do Veto", "Elaborar Resolução"}
 FASE_ARQUIVO = {"Arquivamento", "Arquivar Proposição", "Para Ciência ao Autor"}
 FASE_PLENARIO = {"Incluir Proposição na Ordem do Dia", "Incluir Proposição no Expediente", "Leitura-PLL"}
-# Veto do prefeito que não conta como aprovação até a Câmara confirmar. [A CONFERIR] PL 169/2025: o Veto 7/2025
-# (mensagem 111/2025) cita o autógrafo 121/2025, mas a página do projeto diz que ele foi arquivado a pedido do autor
-# depois da 1ª votação (24/11/2026).
-VETO_A_CONFERIR = {("PL", "169", "2025")}
+# Veto do prefeito que não conta como aprovação até a Câmara confirmar (vazio hoje). O PL 169/2025 esteve aqui:
+# conferido em 25/11/2026 nas atas 67 e 68 (aprovado em 2ª discussão em 19/11/2025) e na mensagem 111/2025, que veta
+# o autógrafo 121/2025 desse projeto; o pedido de arquivamento do autor veio depois das votações.
+VETO_A_CONFERIR: set = set()
 
 
 # ---------------------------------------------------------------- baixar
