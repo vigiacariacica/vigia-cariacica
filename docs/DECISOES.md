@@ -189,3 +189,39 @@ com a data e o motivo, no mesmo commit da mudança. O histórico do git guarda o
   colchetes. Foto real de Cariacica na capa (Moxuara, Wikimedia Commons, CC BY 4.0, com crédito). O mapa volta ao
   menu e ao início, em tons de tinta (mais escuro = mais casas sem esgoto na rede, também no modo escuro), e cada
   bairro leva à sua página. O texto continua na Atkinson e o contraste segue a v5.
+
+## Site: correções do juiz de dados (24/11/2026)
+
+A dona pediu "nenhuma informação errada no site". Três juízes de dados conferiram bairros, páginas gerais, problemas
+e fila na fonte oficial. O que muda e por quê:
+
+- **Coluna "Cariacica" = o município do IBGE**, não a soma dos 99 bairros (que deixa de fora 4.387 moradores e a
+  zona rural). Arquivo `data/raiox/cariacica-municipio.csv`, uma linha, feito por
+  `ferramentas/raiox/processar_municipio.py` a partir do agregado por município do Censo 2022, com as mesmas variáveis
+  dos bairros: 353.491 moradores, 130.183 casas, 1.263,7 por km², 23.545 casas sem rede, 4,6% sem saber ler. Sem o
+  arquivo, o rótulo vira "Soma dos 99 bairros". No mapa, a média dos bairros (3.106) aparece como soma dos bairros.
+- **Posto do bairro pelo cadastro (CNES e mapa do ES), não pela fila.** Só unidade básica (US, USF, UBS); a fila só
+  diz quanto se espera. Posto fora da planilha aparece com o nome e o número do CNES. Bairro sem posto, mas com uma
+  US que leva o nome dele em outro bairro, diz onde ela fica (Rio Marinho, Itapemirim, Mucuri).
+- **Renda:** a mediana do IBGE (V06006) só conta quem tem renda; o texto diz isso.
+- **Empate no corte entra inteiro:** "os bairros de menor renda" são os 29 empatados em R$ 1.212, não 20 por ordem
+  alfabética; os de maior renda, os 22 com R$ 1.900 ou mais. O número sai do código.
+- **Contagens exatas do IBGE:** casas sem rede = domicílios permanentes menos os ligados à rede (V00309 + V00310), e
+  pessoas de 15 anos ou mais, em duas colunas novas de `bairros-cariacica.csv`. Bairro com menos de 100 casas mostra o
+  número de pessoas, não "de cada 100".
+- **Escola com nota: nome e rede do INEP**, que dá a nota (o mapa do ES está desatualizado em 17 escolas e trocou o
+  código de uma em Jardim América). A comparação com a cidade usa o mesmo ano da escola.
+- **Obras:** o bairro citado no nome da obra depois da palavra "bairro" também liga a obra ao bairro, com aviso de
+  que o campo do sistema diz outro (obra 1748: Nova Campo Grande e Vista Dourada). Obras do mesmo contrato com o mesmo
+  valor pago mostram "R$ X pagos no contrato N, que junta K obras", e a soma conta o valor uma vez.
+- **Dinheiro:** o total e os blocos "de cada R$ 100" saem das contas anuais do Siconfi (DCA), sem as
+  intraorçamentárias: R$ 1.619.123.621 em 2025, igual ao TCE-ES sem a modalidade 91. Antes, R$ 45 milhões que passam
+  de um órgão do município para outro eram contados duas vezes. A diferença da saúde é calculada sem arredondar antes.
+  Os blocos mudaram de regra (elementos de despesa, em `vigia/site/dados.py`), porque a conta antiga não estava no
+  repositório.
+- **Correções à vista** também em Quem somos, a partir de `data/site/correcoes.csv`; toda peça com `correcao` em
+  `publicacoes.csv` tem de estar lá (teste).
+- **Fila:** "Só 5 pedidos" quando são poucos, "quase metade" de 45% a 50%; "mais de 1 ano e 4 meses" arredonda para
+  baixo. A planilha de outubro de 2026 tem 1.243 datas depois do fim do mês (`data/fila/LEIA-ME.md`).
+- **Problemas:** sem taxa de assassinatos sem link e sem recorte; sífilis pelo número único do projeto (124 casos,
+  DataSUS); sem frase de decisão da Justiça sem link.

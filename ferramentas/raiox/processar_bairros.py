@@ -81,6 +81,9 @@ for cd, r in bas.items():
         "pct_lixo_jogado": pct(num(x2.get("V00401")), lixo_tot),
         "pct_alfabetizados_15mais": pct(alfab, pop15),
         "pessoas_15mais_nao_alfabetizadas": int(pop15 - alfab) if pop15 is not None and alfab is not None else None,
+        # contagens exatas (24/11/2026): casas sem rede = domicílios permanentes menos os ligados à rede
+        "domicilios_sem_rede": int(dppo - rede) if dppo is not None and rede is not None else None,
+        "pessoas_15mais": int(pop15) if pop15 is not None else None,
     })
 
 os.makedirs(OUT, exist_ok=True)

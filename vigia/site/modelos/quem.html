@@ -51,7 +51,7 @@
   <h2 id="h-como">Como a gente trabalha</h2>
   <p class="lead">Ninguém lê sozinho as contas de uma cidade inteira. Por isso a gente usa um programa de computador. E a gente confere tudo.</p>
   <ol class="passos grade-4">
-    <li><b>Contas oficiais</b><span>Todo dia, o programa baixa as contas da prefeitura, do Tribunal de Contas, do Tesouro Nacional e da Câmara.</span></li>
+    <li><b>Contas oficiais</b><span>Todo dia, o programa baixa as contas da prefeitura, do Tribunal de Contas e do Tesouro Nacional. Os dados da Câmara a gente baixa do sistema da própria Câmara.</span></li>
     <li><b>Comparação</b><span>O programa compara pagamentos, contratos, prazos e preços. E aponta o que foge do normal.</span></li>
     <li><b>Conferência</b><span>A gente confere cada ponto no documento original. Apontar não é acusar.</span></li>
     <li><b>Pergunta</b><span>O que não está claro vira pergunta à prefeitura. A resposta entra aqui, do jeito que veio.</span></li>
@@ -78,7 +78,15 @@
 <div class="grade-2">
   <section class="bloco folha" aria-labelledby="h-correcoes">
     <p class="prot" id="h-correcoes">Correções</p>
+    {% if correcoes %}
+    <p>Quando a gente erra, a correção aparece aqui, com a data e o que mudou. O erro não é apagado.</p>
+    <ul class="regras">
+    {% for c in correcoes %}<li><b>{{ ddmm(c.data) }}/{{ c.data[:4] }} · {% if c.link %}<a href="{{ c.link }}">{{ c.onde }}</a>{% else %}{{ c.onde }}{% endif %}.</b> {{ c.texto }}</li>
+    {% endfor %}
+    </ul>
+    {% else %}
     <p>Nenhuma até agora. Se a gente errar, a correção aparece aqui, com a data e o que mudou.</p>
+    {% endif %}
   </section>
   <section class="bloco folha" aria-labelledby="h-contato">
     <p class="prot" id="h-contato">Fale com a gente</p>

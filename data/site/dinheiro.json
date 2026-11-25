@@ -1,44 +1,44 @@
 {
  "ano": 2025,
- "total": 1663887316.63,
+ "total": 1619123621.02,
  "populacao": 376200,
- "fonte_total": "Tribunal de Contas do ES (TCE-ES), dados abertos, despesas da prefeitura em 2025, valor liquidado (o que a prefeitura conferiu que recebeu): R$ 1.663.887.316,63. População: IBGE, estimativa de 2025 (376.200 moradores, tabela 6579 do Sidra).",
+ "fonte_total": "Tesouro Nacional (Siconfi), contas anuais de 2025 (DCA), despesa liquidada sem as intraorçamentárias: R$ 1.619.123.621,02. É o mesmo total do Tribunal de Contas do ES sem a modalidade 91. Inclui prefeitura, Câmara e previdência dos servidores. A modalidade 91 é dinheiro que passa de um órgão do município para outro: somá-la contaria R$ 45 milhões duas vezes. Os blocos saem dos elementos de despesa do mesmo arquivo (vigia/site/dados.py). População: IBGE, estimativa de 2025 (376.200 moradores, tabela 6579 do Sidra).",
  "blocos": [
   {
    "nome": "Salários e aposentadorias",
-   "detalhe": "dos servidores da prefeitura",
-   "milhoes": 750.6,
-   "de_cada_100": 45.1
+   "detalhe": "dos servidores, da Câmara e da previdência, com o auxílio-alimentação",
+   "milhoes": 705.4,
+   "de_cada_100": 43.6
   },
   {
    "nome": "Empresas contratadas",
-   "detalhe": "obras, limpeza, coleta de lixo e manutenção",
-   "milhoes": 664.6,
-   "de_cada_100": 39.9
+   "detalhe": "obras, limpeza, coleta de lixo, manutenção e material",
+   "milhoes": 655.7,
+   "de_cada_100": 40.5
   },
   {
    "nome": "Entidades",
    "detalhe": "que cuidam de unidades de saúde e de assistência social",
    "milhoes": 91.2,
-   "de_cada_100": 5.5
+   "de_cada_100": 5.6
   },
   {
    "nome": "Parcelas de empréstimos",
    "detalhe": "e os juros",
    "milhoes": 72.2,
-   "de_cada_100": 4.3
+   "de_cada_100": 4.5
   },
   {
    "nome": "Compras junto com outras cidades",
    "detalhe": "os consórcios, como o da merenda",
-   "milhoes": 55.4,
-   "de_cada_100": 3.3
+   "milhoes": 55.6,
+   "de_cada_100": 3.4
   },
   {
    "nome": "Outros gastos",
-   "detalhe": "impostos, auxílios e indenizações",
-   "milhoes": 30.0,
-   "de_cada_100": 1.8
+   "detalhe": "impostos, auxílios, indenizações e sentenças",
+   "milhoes": 39.1,
+   "de_cada_100": 2.4
   }
  ],
  "saude": [
@@ -67,7 +67,7 @@
    "por_morador": 649
   }
  ],
- "fonte_saude": "Tesouro Nacional (Siconfi), contas anuais de 2025: gasto com saúde dividido pela população estimada pelo IBGE para 2025.",
+ "fonte_saude": "Tesouro Nacional (Siconfi), contas anuais de 2025 (DCA, função saúde, liquidado): gasto com saúde dividido pela população estimada pelo IBGE para 2025. A conta da diferença usa os valores sem arredondar.",
  "pergunta_saude": "008907.2026-08",
- "atualizado": "2026-11-11"
+ "atualizado": "2026-11-24"
 }

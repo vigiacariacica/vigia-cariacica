@@ -13,7 +13,8 @@
 <section class="bloco" aria-labelledby="h-padrao">
   <p class="prot">O que os números mostram</p>
   <h2 id="h-padrao">Onde a renda é menor, falta mais esgoto</h2>
-  <p class="lead">Nos 20 bairros de menor renda, <strong>{{ padrao_baixa }}</strong> têm esgoto ligado na rede. Nos 20 bairros de maior renda, <strong>{{ padrao_alta }}</strong>.</p>
+  <p class="lead">Nos {{ pad.n_renda_baixa }} bairros de menor renda (R$ {{ br(pad.renda_baixa_ate) }}), <strong>{{ padrao_baixa }}</strong> têm esgoto na rede. Nos {{ pad.n_renda_alta }} bairros de maior renda (R$ {{ br(pad.renda_alta_desde) }} ou mais), <strong>{{ padrao_alta }}</strong>.</p>
+  <p class="miuda">Renda: metade dos responsáveis pela casa que têm renda ganha até esse valor. Bairros empatados no corte entram todos.</p>
   <p><strong>Casas com esgoto ligado na rede, de cada 10</strong></p>
   {{ dez(pad.esgoto_renda_baixa, pad.esgoto_renda_alta, "Bairros de menor renda", "Bairros de maior renda", padrao_baixa, padrao_alta) }}
 </section>
@@ -39,7 +40,7 @@
   <p>{{ obras.recentes }} <strong>Por que o sistema quase parou de receber obras?</strong></p>
   <details class="grupo">
     <summary><b>Obras da cidade toda</b><span>{{ obras.sem_bairro|length }} obras e serviços sem bairro</span></summary>
-    <p>Estes não dizem o bairro, ou servem a cidade inteira, como o tapa-buraco.</p>
+    <p>Estas obras não dizem o bairro, citam um lugar que o Censo não separa, ou servem a cidade toda. Um exemplo é o tapa-buraco.</p>
     <ol class="obras grade-2">
     {% for o in obras.sem_bairro %}{{ obra(o) }}
     {% endfor %}

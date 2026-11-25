@@ -9,7 +9,7 @@
 <div class="grade-2 larga-esq">
   <section class="bloco" aria-label="O número">
     {% for t in x.texto if t %}<p>{{ t }}</p>{% endfor %}
-    {% if x.melhorou %}<div class="melhorou"><span class="selo ok">Está melhorando</span><p>{{ x.melhorou }}</p></div>{% endif %}
+    {% if x.melhorou %}{% set sm = x.selo_melhorou or ("Está melhorando", "ok") %}<div class="melhorou"><span class="selo {{ sm[1] }}">{{ sm[0] }}</span><p>{{ x.melhorou }}</p></div>{% endif %}
     {% if x.outro_lado %}<div class="outro"><p class="prot">O outro lado</p><p>{{ x.outro_lado }}</p></div>{% endif %}
   </section>
   <div class="bloco">
@@ -20,7 +20,7 @@
       <div class="ped">
         <p><strong>{{ p.pergunta }}</strong></p>
         <span class="meta">Para: {{ p.para }} · número {{ p.numeros|join(' e ') }}</span>
-        <span><span class="relogio" data-prazo="{{ p.prazo.isoformat() }}" data-respondido="{{ p.respondido_em }}" data-estado="{{ p.estado }}">Prazo: {{ p.prazo.strftime('%d/%m/%Y') }}</span></span>
+        <span><span class="relogio" data-prazo="{{ p.prazo.isoformat() }}" data-respondido="{{ p.respondido_em }}" data-estado="{{ p.estado }}">Prazo: {{ p.prazo.strftime('%d/%m/%Y') }}</span>{% if p.recurso %} Recurso desde {{ p.recurso }}.{% endif %}</span>
       </div>
       {% endfor %}
       {% if x.link %}<p><a href="{{ x.link[0] }}">{{ x.link[1] }} →</a></p>{% endif %}

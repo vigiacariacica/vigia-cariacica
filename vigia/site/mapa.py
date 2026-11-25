@@ -23,7 +23,7 @@ CAMADAS = {
     "esg": ("Casas sem esgoto na rede", "sem_rede", lambda v: D.br(round(v)),
             "Quanto mais escuro, mais casas sem esgoto ligado na rede."),
     "ren": ("Renda", "renda_mediana", lambda v: f"R$ {D.br(round(v))}",
-            "Quanto mais escuro, maior a renda. Metade das famílias ganha até esse valor."),
+            "Quanto mais escuro, maior a renda. Metade dos responsáveis pela casa que têm renda ganha até esse valor."),
 }
 CLASSES = 5
 

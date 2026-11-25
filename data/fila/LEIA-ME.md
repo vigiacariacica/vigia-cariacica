@@ -11,6 +11,11 @@ Somas feitas pelo Vigia a partir das planilhas mensais publicadas pela Secretari
   são a mesma coisa.
 - Maio a julho vêm com datas no formato mês/dia/ano; agosto em dia/mês/ano; setembro como data do Excel. O cálculo
   detecta o formato de cada arquivo.
+- **Outubro de 2026: 1.243 datas depois do fim do mês.** Na planilha de outubro, 1.243 dos 42.679 pedidos têm data
+  de solicitação em novembro ou dezembro de 2026 (707 e 536), o que não pode ser: tudo indica dia e mês trocados
+  (todas viram datas válidas até 31/10 se trocar). O coletor não corrige: essas linhas entram com espera negativa.
+  Efeito, conferido em 24/11/2026: a mediana da cidade sai 238 dias (242 se trocar dia e mês); os 16.218 pedidos com
+  mais de 1 ano não mudam. As duas contas dão "quase 8 meses".
 - **Pedido não é pessoa.** A mesma pessoa pode esperar mais de um procedimento; o resumo traz as duas contas. As
   pessoas são contadas por uma impressão digital de nome + nascimento feita na memória com uma chave aleatória
   de cada execução; nada disso é gravado.

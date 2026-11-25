@@ -6,13 +6,14 @@
     <p class="prot">{{ icone("dinheiro") }} <b>Prefeitura de Cariacica</b> · {{ g.ano }}</p>
     <h1 id="h1" tabindex="-1">Para onde vai o dinheiro da prefeitura?</h1>
     <p class="numero num cheio">{{ cheio(g.total) }}</p>
-    <p class="extenso">{{ extenso(g.total) }} gastos em {{ g.ano }}.</p>
+    <p class="extenso">{{ extenso(g.total) }} gastos em {{ g.ano }} pela prefeitura, a Câmara e a previdência dos servidores.</p>
+    <p>A conta não soma duas vezes o dinheiro que passa de um órgão para outro.</p>
     <p class="lead">Dá {{ cheio(g.total / 365) }} por dia, todo dia do ano.</p>
   </section>
   <section class="folha" aria-label="Por morador">
     <p class="prot">Por morador</p>
     <p class="numero num">R$ {{ por_mes_num }}</p>
-    <p><strong>por mês, com cada morador.</strong> É como se a prefeitura gastasse isso com cada pessoa da cidade em {{ g.ano }}.</p>
+    <p><strong>por mês, com cada morador.</strong> É como se o gasto de {{ g.ano }} fosse dividido igual entre todas as pessoas da cidade.</p>
     <p>No ano, são {{ cheio(g.total / g.populacao) }} por morador. Uma família de 4 pessoas: {{ cheio(4 * g.total / g.populacao) }}.</p>
   </section>
 </div>
