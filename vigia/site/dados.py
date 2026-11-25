@@ -806,7 +806,7 @@ ELEM_EMPRESAS = {"30", "32", "35", "37", "39", "40", "51", "52"}   # material, s
 ELEM_SALARIO = {"08", "46", "49"}                                   # benefícios e auxílio-alimentação/transporte
 BLOCOS = [("salarios", "Salários e aposentadorias", "dos servidores, da Câmara e da previdência, com o auxílio-alimentação"),
           ("empresas", "Empresas contratadas", "obras, limpeza, coleta de lixo, manutenção e material"),
-          ("entidades", "Entidades", "que cuidam de unidades de saúde e de assistência social"),
+          ("entidades", "Entidades", "sem fins lucrativos, a maior parte em saúde e assistência social"),
           ("emprestimos", "Parcelas de empréstimos", "e os juros"),
           ("consorcios", "Compras junto com outras cidades", "os consórcios, como o da merenda"),
           ("outros", "Outros gastos", "impostos, auxílios, indenizações e sentenças")]
