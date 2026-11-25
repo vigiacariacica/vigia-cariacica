@@ -6,9 +6,13 @@
   <p class="prot"><a href="/vereadores/">Vereadores</a> · dados da Câmara de {{ v.coleta }}</p>
   <h1 id="h1" tabindex="-1">{{ x.nome }}</h1>
   {% if x.n %}
-  <p class="lead">Apresentou {{ x.n }} {{ "projeto de lei" if x.n == 1 else "projetos de lei" }} {{ v.periodo }}. Aqui está cada um, pelo que muda na vida de quem mora em Cariacica.</p>
+  {% if x.um_tipo %}
+  <p class="lead">Apresentou {{ x.n }} {{ "projeto" if x.n == 1 else "projetos" }} {{ x.tipos }} {{ v.periodo }}. Aqui está cada um, pelo que muda na vida de quem mora em Cariacica.</p>
   {% else %}
-  <p class="lead">Não apresentou projeto de lei {{ v.periodo }}. Fez {{ br(x.pedidos) }} pedidos à prefeitura e {{ br(x.homenagens) }} homenagens.</p>
+  <p class="lead">Apresentou {{ x.n }} projetos {{ v.periodo }}: {{ x.tipos }}. Aqui está cada um, pelo que muda na vida de quem mora em Cariacica.</p>
+  {% endif %}
+  {% else %}
+  <p class="lead">Não apresentou projeto de lei nem de resolução {{ v.periodo }}. Fez {{ br(x.pedidos) }} pedidos à prefeitura e {{ br(x.homenagens) }} homenagens.</p>
   {% endif %}
 </section>
 
@@ -42,10 +46,10 @@
     <ol class="projetos">
     {% for p in g.itens %}
       <li>
-        <p class="linha"><span class="prot">{{ p.numero }} · {{ p.data_txt }}</span><span class="selo {{ 'cheio' if p.situacao in ('Aprovado', 'Virou lei') else 'apagado' if p.situacao == 'Arquivado' else 'neutro' }}">{{ p.situacao }}</span></p>
+        <p class="linha"><span class="prot">{{ p.numero }} · {{ p.data_txt }}</span><span class="selo {{ p.cor }}">{{ p.situacao }}</span></p>
         <p data-fora-da-regua>{{ p.ementa_txt }}</p>
         {% if p.motivo %}<p class="miuda" data-fora-da-regua>Por que pode ser barrado: {{ p.motivo }}</p>{% endif %}
-        <p class="miuda">{% if p.coautoria %}Apresentado junto com outro vereador. {% endif %}{% if p.lei %}Virou a <a href="{{ p.lei_link }}">{{ p.lei }}</a>. {% endif %}<a href="{{ p.link }}">Ver na Câmara →</a></p>
+        <p class="miuda">{% if p.novo %}Projeto novo: ainda vamos ler o resumo. {% endif %}{% if p.coautoria %}Apresentado junto com outro vereador. {% endif %}{% if p.lei_curta %}Virou a <a href="{{ p.lei_link }}">{{ p.lei_curta }}</a>. {% elif p.lei %}<a href="{{ p.lei_link }}">{{ p.lei[:1]|upper }}{{ p.lei[1:] }}</a>. {% endif %}<a href="{{ p.link }}">Ver na Câmara →</a></p>
       </li>
     {% endfor %}
     </ol>

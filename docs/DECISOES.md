@@ -80,6 +80,28 @@ com a data e o motivo, no mesmo commit da mudança. O histórico do git guarda o
   votado com outra ementa), e a própria página do projeto já pôs norma em projeto nunca votado: sem votação
   registrada, só vale a ligação do cadastro que passa pelas travas. A correção fica escrita na própria página. A classificação por impacto continua do Vigia; projeto novo é lido e
   entra em `data/camara/classificacao_extra.json`, ou aparece como "A classificar".
+- **24/11/2026: vereadores, "Leis que mudam a sua vida" e leitura toda segunda.**
+  - **O bloco** (logo depois de "Quantos foram aprovados") lista, por tema, os projetos aprovados com nível
+    "Muda algo na prática", cada projeto uma vez, com o resumo oficial, o selo da situação e o link para a Câmara.
+    Selos: "Já vale" (com link para a lei), "Vetado pelo prefeito" ou "Vetado em parte", e "Aprovado, sem lei
+    publicada". Não escrevemos "espera a sanção": o sistema pode não registrar sanção tácita, promulgação ou veto
+    derrubado, e resolução nem vai à sanção. A abertura diz o critério do nível: cria direito, obrigação ou
+    proibição que dá para cobrar, ou aumenta a transparência (leitura do Vigia).
+  - **Tema:** sai de palavras do resumo oficial (`TEMAS` em `vigia/site/vereadores.py`); sem nenhuma, "Outros".
+    Regra que vale só dentro da Câmara (servidores da Câmara, Código de Ética) fica em "Regras da própria Câmara".
+    Sem ranking: os temas têm ordem fixa e, dentro de cada um, vai do mais novo para o mais antigo. Todo número do
+    bloco sai do código; o teste confere com `projetos.json`.
+  - **Resolução não vira lei.** Projeto de resolução aprovado e promulgado fica "Virou resolução" (texto da norma:
+    "resolução promulgada"), nunca "lei sancionada", e não recebe veto. O veto do prefeito passa a ser ligado também
+    pelo tipo do projeto (PL 1/2026 e PLC 1/2026 são projetos diferentes; antes o veto do PLC caía nos dois).
+  - **Nome:** a primeira menção diz "projetos (de lei, de lei complementar e de resolução)"; depois, "projetos".
+  - **Leitura toda segunda** (`.github/workflows/vereadores.yml`, 08:07 de Brasília): baixa da Câmara para uma pasta
+    temporária (os arquivos crus não entram no git), monta `data/camara/`, roda os testes e só faz o commit, como
+    vigia-bot, se algo além da data da coleta mudou. Projeto novo entra como "A classificar", conta como "Sem como
+    saber" com a explicação de que ainda não foi lido, e o resumo da execução diz quantos são e quais, para o Vigia
+    pôr o nível em `classificacao_extra.json`. O resumo também avisa se o gasto da Câmara em `fonte.json` ficou mais
+    de 45 dias atrás da coleta, porque a conta "por lei aprovada" mistura os períodos. Se a Câmara barrar o robô do
+    GitHub, o workflow fica vermelho e o texto de `/fontes/` ("toda segunda, o robô lê de novo") tem de voltar.
 - **12/11/2026: uma página, uma tarefa.** A primeira tela do celular é título e resposta; fontes e palavras
   difíceis moram em `/fontes/`; letras servidas pelo próprio site (nada de Google). O teste do site trava isso.
 - **13/11/2026: números inteiros.** Dinheiro com todos os zeros e, ao lado, como se lê ("1 bilhão e 664 milhões

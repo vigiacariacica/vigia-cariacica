@@ -2,14 +2,17 @@
 
     python ferramentas/camara_producao.py baixar <pasta>   # CSVs oficiais (exportação "CSV" da própria consulta)
     python ferramentas/camara_producao.py montar <pasta>   # gera data/camara/projetos.json e producao_vereadores.json
+    python ferramentas/camara_producao.py resumo [arquivo] # o que mudou e quantos estão "A classificar" (Actions)
 
 O que cada etapa faz:
 - baixar: para cada vereador da legislatura (página "Vereadores"), a consulta "Proposições apresentadas" de cada ano
   desde 2025 e a consulta "Leis de sua autoria"; para cada lei desde 2025, a página da norma, que diz o projeto de
   origem. Nada de navegador: são as mesmas consultas públicas do site, com o botão "CSV".
 - montar: um projeto de lei por linha e por autor (coautoria aparece para cada autor), com a situação lida assim:
-  "Virou lei" quando o projeto é a origem de uma lei no cadastro oficial; "Aprovado pela Câmara" quando a fase é
-  depois da votação (sanção, autógrafo, veto); "Arquivado/encerrado"; "Pronto para plenário"; "Em análise".
+  "Virou lei" quando o projeto é a origem de uma lei no cadastro oficial; "Virou resolução" no projeto de resolução
+  (não vai à sanção do prefeito: a Câmara promulga); "Aprovado pela Câmara" quando a votação final está registrada e
+  o sistema ainda não mostra a norma; "Vetado pelo prefeito"; "Arquivado/encerrado"; "Pronto para plenário";
+  "Em análise".
   A classificação por impacto (coluna "utilidade") é do Vigia, feita lendo a ementa: é mantida de uma coleta para
   a outra e, para projeto novo, vem de data/camara/classificacao_extra.json (ou fica "A classificar").
 
@@ -142,8 +145,9 @@ def _estado_processo(p: str) -> dict:
             "sancionado": bool(feitas & {"Sancionado", "Promulgado", "Sanção Tácita"})}
 
 
-def _vetos(pasta: Path) -> dict[tuple[str, str], str]:
-    """Mensagens de veto do prefeito -> (número, ano) do projeto do vereador: "total" ou "parcial"."""
+def _vetos(pasta: Path) -> dict[tuple[str, str, str], str]:
+    """Mensagens de veto do prefeito -> (sigla, número, ano) do projeto do vereador: "total" ou "parcial".
+    A sigla entra na chave porque PL 1/2026 e PLC 1/2026 são projetos diferentes; resolução não tem veto."""
     if not (pasta / f"prod_{EXECUTIVO}_{ANOS[0]}.csv").exists():
         return {}
     out = {}
@@ -156,7 +160,8 @@ def _vetos(pasta: Path) -> dict[tuple[str, str], str]:
         m = re.search(r"(?:PROJETO|JOJETO|PROTEJOTO|PL)[^0-9]*?N?[°º\.]?\s*(\d+)/(\d{4})", e)
         if m:
             total = bool(re.search(r"VETAR? TOTALMENTE|VETA O AUT|DECIDI VETAR TOTALMENTE", e))
-            out[(m.group(1).lstrip("0"), m.group(2))] = "total" if total else "parcial"
+            sigla = "PLC" if "COMPLEMENTAR" in m.group(0) else "PL"
+            out[(sigla, m.group(1).lstrip("0"), m.group(2))] = "total" if total else "parcial"
     return out
 
 
@@ -224,7 +229,7 @@ def _situacao(x: dict, virou_lei: bool, est: dict | None, veto: str | None) -> s
     """Com a página do projeto (est), aprovado é só o que tem a votação final registrada no histórico; vetado é o
     aprovado que recebeu mensagem de veto do prefeito e ainda não virou lei. Sem a página, vale a fase."""
     if virou_lei:
-        return "Virou lei"
+        return "Virou resolução" if x["tipo"] == "Projeto de Resolução" else "Virou lei"
     if est is not None:
         if est["votado"]:
             return "Vetado pelo prefeito" if veto else "Aprovado pela Câmara"
@@ -344,10 +349,13 @@ def montar(pasta: Path) -> None:
             lei = f"{m.group(1)} {int(m.group(2)):,}/{m.group(3)}".replace(",", ".") if m else est["norma"]
             lei_link = SPL + f'processo.aspx?id={x["id"]}'
         elif est and est["votado"] and est["sancionado"]:
-            lei, lei_link = "lei sancionada (o número não está ligado no sistema)", SPL + f'processo.aspx?id={x["id"]}'
+            # resolução não vai à sanção: a Câmara promulga. Lei sancionada sem o número da norma na página.
+            lei = ("resolução promulgada" if x["tipo"] == "Projeto de Resolução"
+                   else "lei sancionada (o número não aparece no sistema)")
+            lei_link = SPL + f'processo.aspx?id={x["id"]}'
         else:
             lei, lei_link = "", ""
-        veto = vetos.get((x["num"].lstrip("0"), x["ano"]))
+        veto = vetos.get((sigla, x["num"].lstrip("0"), x["ano"]))
         projetos.append({
             "vereador": nome_site.get(_chave(autores[x["vereador_id"]]), autores[x["vereador_id"]].title()),
             "numero": f'{sigla} {x["num"]}/{x["ano"]}', "tipo": tipo,
@@ -377,8 +385,10 @@ def montar(pasta: Path) -> None:
             "indicacoes": t["Indicação"], "requerimentos": t["Requerimento"], "mocoes": t["Moção"],
             "decretos_legislativos": t["Projeto de Decreto Legislativo"], "projetos": n_pl,
             "emendas": sum(v for k, v in t.items() if k.startswith("Emenda")),
-            "aprovados": sit[(ns, "Aprovado pela Câmara")] + sit[(ns, "Virou lei")],
-            "virou_lei": sit[(ns, "Virou lei")],
+            "aprovados": sum(sit[(ns, s)] for s in ("Aprovado pela Câmara", "Virou lei", "Virou resolução",
+                                                     "Vetado pelo prefeito")),
+            "virou_lei": sit[(ns, "Virou lei")], "virou_resolucao": sit[(ns, "Virou resolução")],
+            "vetados": sit[(ns, "Vetado pelo prefeito")],
             "arquivados": sit[(ns, "Arquivado/encerrado")],
             "em_analise": sit[(ns, "Em análise")] + sit[(ns, "Pronto para plenário")],
             "titulos_mocoes": sum(1 for x in xs if _homenagem(x)),
@@ -406,11 +416,47 @@ def montar(pasta: Path) -> None:
     fonte["url_leis"] = LEG + "consulta-legislacao.aspx"
     fonte["leis_ultimo_lancamento"] = max(v["data"] for v in leis.values()) if leis else ""
     (CAMARA / "fonte.json").write_text(json.dumps(fonte, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    falta = sum(1 for p in projetos if p["utilidade"] == "A classificar")
-    print(f"{len(projetos)} linhas de projeto; {len({p['link'] for p in projetos})} projetos; "
-          f"situações: {dict(Counter(p['status'] for p in {p['link']: p for p in projetos}.values()))}; "
-          f"a classificar: {falta}")
+    unicos = {p["link"]: p for p in projetos}
+    falta = sum(1 for p in unicos.values() if p["utilidade"] == "A classificar")
+    print(f"{len(projetos)} linhas de projeto; {len(unicos)} projetos; "
+          f"situações: {dict(Counter(p['status'] for p in unicos.values()))}; a classificar: {falta}")
+
+
+def resumo(saida: str = "-") -> int:
+    """Resumo em markdown para a página da execução no Actions (GITHUB_STEP_SUMMARY): situações, projetos novos
+    sem classificação (o Vigia lê a ementa e põe o nível em data/camara/classificacao_extra.json) e aviso se o gasto
+    da Câmara em fonte.json ficou velho. Devolve quantos estão "A classificar"."""
+    projetos = json.loads((CAMARA / "projetos.json").read_text(encoding="utf-8"))
+    fonte = json.loads((CAMARA / "fonte.json").read_text(encoding="utf-8"))
+    unicos = {p["link"]: p for p in projetos}
+    sit = Counter(p["status"] for p in unicos.values())
+    novos = [p for p in unicos.values() if p["utilidade"] == "A classificar"]
+    linhas = [f"## Vereadores: dados da Câmara de {fonte['coletado_em']}", "",
+              f"{len(unicos)} projetos. " + "; ".join(f"{k}: {v}" for k, v in sorted(sit.items())) + ".", ""]
+    if novos:
+        linhas += [f"**{len(novos)} projetos novos sem classificação (\"A classificar\").** Leia a ementa e ponha o "
+                   "nível em `data/camara/classificacao_extra.json` (chave: o id do link). Até lá, no site, eles "
+                   "ficam em \"Sem como saber\".", ""]
+        linhas += [f"- [{p['numero']}]({p['link']}): {p['ementa'][:160]}" for p in sorted(novos, key=lambda p: p["data"])]
+    else:
+        linhas.append("Nenhum projeto sem classificação.")
+    dias = (date.fromisoformat(fonte["coletado_em"]) - date.fromisoformat(fonte["gasto_camara_ate"])).days
+    if dias > 45:
+        linhas += ["", f"**O gasto da Câmara em `data/camara/fonte.json` é de {fonte['gasto_camara_ate']}** "
+                   f"({dias} dias antes da coleta). A conta \"por lei aprovada\" mistura períodos: atualize."]
+    texto = "\n".join(linhas) + "\n"
+    if saida == "-":
+        sys.stdout.write(texto)
+    else:
+        with open(saida, "a", encoding="utf-8") as f:
+            f.write(texto)
+    if novos:
+        print(f"::warning::{len(novos)} projetos novos da Câmara estão \"A classificar\" (ver o resumo da execução).")
+    return len(novos)
 
 
 if __name__ == "__main__":
-    {"baixar": baixar, "montar": montar}[sys.argv[1]](Path(sys.argv[2]))
+    if sys.argv[1] == "resumo":
+        resumo(sys.argv[2] if len(sys.argv) > 2 else "-")
+    else:
+        {"baixar": baixar, "montar": montar}[sys.argv[1]](Path(sys.argv[2]))

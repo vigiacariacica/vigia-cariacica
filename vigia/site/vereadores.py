@@ -56,13 +56,112 @@ EXEMPLOS = {   # exemplos reais, com o número do projeto para quem quiser confe
     "simbolico": ("Dia municipal de conscientização de uma doença", "PL 347/2025"),
     "barrado": ("Trocar multa de trânsito por doação de sangue", "PL 363/2025"),
 }
-SITUACAO = {"Virou lei": "Virou lei", "Aprovado pela Câmara": "Aprovado", "Vetado pelo prefeito": "Vetado",
+SITUACAO = {"Virou lei": "Virou lei", "Virou resolução": "Virou resolução", "Vetado pelo prefeito": "Vetado",
             "Em análise": "Em análise", "Arquivado/encerrado": "Arquivado", "Pronto para plenário": "Pronto para votar"}
-# aprovado pela Câmara (votação final registrada): já vale, foi vetado pelo prefeito ou espera a sanção
-APROVADO = {"Virou lei", "Aprovado pela Câmara", "Vetado pelo prefeito"}
-SIGLAS = ["SUS", "CRAS", "CREAS", "CAPS", "UBS", "APP", "TEA", "PcD", "ECA", "LGBTQIAPN+", "IPTU", "ISS", "EJA"]
+# cor do selo de cada situação (estilo.css): verde cheio, verde claro, amarelo, cinza; o resto, azul
+COR_SITUACAO = {"Virou lei": "cheio", "Virou resolução": "cheio", "Aprovado pela Câmara": "ok",
+                "Vetado pelo prefeito": "parcial", "Arquivado/encerrado": "apagado"}
+JA_VALE = {"Virou lei", "Virou resolução"}
+# aprovado pela Câmara (votação final registrada): já vale, foi vetado pelo prefeito ou ainda não tem lei publicada
+APROVADO = JA_VALE | {"Aprovado pela Câmara", "Vetado pelo prefeito"}
+RESOLUCAO = "Projeto de Resolução"   # resolução não vai à sanção do prefeito e não vira lei: é promulgada pela Câmara
+A_CLASSIFICAR = "A classificar"     # projeto novo que o Vigia ainda não leu (ferramentas/camara_producao.py)
+
+# "Leis que mudam a sua vida": o tema sai de palavras do resumo oficial, testadas nesta ordem (a primeira que bate
+# vale). Sem nenhuma, "Outros". Mostrados na ordem de ORDEM_TEMAS, sempre a mesma: não é ranking.
+TEMAS = [
+    ("camara", "Regras da própria Câmara", r"SERVIDORES DA C[ÂA]MARA|DECORO PARLAMENTAR|REGIMENTO INTERNO"),
+    ("animais", "Animais", r"\bANIMA(IS|L)\b"),
+    ("deficiencia", "Pessoa com deficiência, autismo e idoso",
+     r"DEFICI[ÊE]NCIA|AUTIS|\bTEA\b|CADEIRAS? DE RODAS|MOBILIDADE REDUZIDA|ACESSIBILIDADE|\bLIBRAS\b|IDOS[OA]S?\b"),
+    ("crianca", "Criança e escola", r"CRIAN[ÇC]A|INFANT|ADOLESCENTE|ESCOLA|ENSINO|ALUNO|CRECHE|ESTUDANTE"),
+    ("saude", "Saúde", r"SA[ÚU]DE|M[ÉE]DIC|C[ÂA]NCER|HEMODI[ÁA]LISE|PARTURIENTE|\bSUS\b|BRONZEAMENTO|MEDICAMENTO|"
+                       r"HOSPITA|VACINA|DOEN[ÇC]A|PACIENTE"),
+    ("cidade", "Cidade e trânsito", r"TR[ÂA]NSITO|BICICLETA|TRANSPORTE|PASSAGEIRO|T[ÁA]XI|[ÔO]NIBUS|FEIRAS?\b|"
+                                    r"RES[ÍI]DUOS|\bLIXO\b|COLETA|CAL[ÇC]ADA|\bRUAS?\b|VIAS? P[ÚU]BLICAS?|"
+                                    r"EQUIPAMENTOS P[ÚU]BLICOS|ESTACIONAMENTO|\bOBRAS?\b|ILUMINA[ÇC][ÃA]O|"
+                                    r"\bPRA[ÇC]AS?\b|ESGOTO|ALAGAMENTO|SINALIZA[ÇC]"),
+]
+NOME_TEMA = {k: nome for k, nome, _ in TEMAS} | {"outros": "Outros"}
+NOTA_TEMA = {"camara": "Valem só dentro da Câmara."}
+ORDEM_TEMAS = ["crianca", "saude", "deficiencia", "animais", "cidade", "outros", "camara"]
+TIPOS = [("Projeto de Lei", "de lei"), ("Projeto de Lei Complementar", "de lei complementar"),
+         (RESOLUCAO, "de resolução")]
+
+
+def tema(ementa: str) -> str:
+    e = ementa.upper()
+    return next((k for k, _, rx in TEMAS if re.search(rx, e)), "outros")
+
+
+def _n(n: int, um: str, varios: str) -> str:
+    return um if n == 1 else varios
+
+
+def _junta(partes: list[str]) -> str:
+    return partes[0] if len(partes) == 1 else ", ".join(partes[:-1]) + " e " + partes[-1]
+
+
+def tipos_txt(projetos: list[dict]) -> str:
+    """'de lei, de lei complementar e de resolução': só os tipos que aparecem, na ordem de TIPOS."""
+    tem = {p["tipo"] for p in projetos}
+    return _junta([t for k, t in TIPOS if k in tem]) if tem else ""
+
+
+def sem_lei(p: dict) -> str:
+    """Aprovado pela Câmara, mas o sistema ainda não mostra a norma. Não dizemos "espera a sanção": pode ter havido
+    sanção tácita, promulgação ou veto derrubado sem registro, e resolução nem vai à sanção."""
+    return "Aprovado, sem resolução publicada" if p["tipo"] == RESOLUCAO else "Aprovado, sem lei publicada"
+
+
+def selo_lei(p: dict) -> tuple[str, str]:
+    """(texto, cor) da situação de um projeto aprovado, para o bloco "Leis que mudam a sua vida"."""
+    if p["status"] in JA_VALE:
+        return "Já vale", "cheio"
+    if p["status"] == "Vetado pelo prefeito":
+        return ("Vetado em parte" if p.get("veto") == "parcial" else "Vetado pelo prefeito"), "parcial"
+    return sem_lei(p), "ok"
+
+
+def lei_curta(lei: str) -> str:
+    """'Lei Ordinária 6.765/2025' -> 'Lei 6.765/2025'. Norma sem número no sistema -> ''."""
+    if not re.search(r"\d", lei or ""):
+        return ""
+    return re.sub(r"\bLei Ordinária\b", "Lei", lei)
+
+
+def frases_leis(total: int, vale: int, vetado: int, sem: int, ate: str) -> tuple[str, str]:
+    """A abertura do bloco, com a concordância certa para qualquer número."""
+    partes = []
+    if vale:
+        partes.append(f"{vale} já {_n(vale, 'vale', 'valem')}")
+    if vetado:
+        partes.append(f"{vetado} {_n(vetado, 'foi vetado', 'foram vetados')} pelo prefeito")
+    lead = (f"{_n(total, 'Do', 'Dos')} {total} {_n(total, 'projeto aprovado', 'projetos aprovados')} que "
+            f"{_n(total, 'muda', 'mudam')} algo na prática, " + (_junta(partes) if partes else "nenhum vale ainda") + ".")
+    if not sem or not partes:
+        return lead, ""
+    return lead, (f"{_n(sem, 'Mais', 'Outros')} {sem} {_n(sem, 'está', 'estão')} sem lei ou resolução publicada no "
+                  f"sistema até {ate}.")
+
+
+def tempo(inicio: date, fim: date) -> str:
+    """Quanto tempo passou, como se fala: 'quase 2 anos', '2 anos', 'mais de 2 anos'."""
+    anos = (fim - inicio).days / 365.25
+    f, resto = int(anos), anos - int(anos)
+    if resto > 11 / 12:                  # menos de 1 mês para fechar o ano
+        f, resto = f + 1, 0
+    if resto < 1 / 12 and f:
+        return f"{f} {_n(f, 'ano', 'anos')}"
+    if resto >= 0.75:
+        return f"quase {f + 1} {_n(f + 1, 'ano', 'anos')}"
+    return f"mais de {f} {_n(f, 'ano', 'anos')}" if f else "menos de 1 ano"
+
+
+SIGLAS = ["SUS", "CRAS", "CREAS", "CAPS", "UBS", "APP", "TEA", "PcD", "ECA", "LGBTQIAPN+", "IPTU", "ISS", "EJA",
+          "RENAME"]
 NOMES = ["Cariacica", "Espírito Santo", "Vitória", "Vila Velha", "Serra", "Viana", "Brasil", "Maria da Penha",
-         "Câmara Municipal", "Libras", "Moxuara", "Guarda Municipal"]
+         "Câmara Municipal", "Libras", "Moxuara", "Guarda Municipal", "Heimlich"]
 
 
 def _ler(nome: str):
@@ -85,6 +184,11 @@ def ementa_simples(t: str) -> str:
     """Ementa oficial em letra normal (o sistema da Câmara grava tudo em maiúsculas), sem o 'e dá outras
     providências'. O texto continua o oficial; só muda a caixa das letras."""
     t = re.sub(r"^\s*(EMENTA|PROJETO DE LEI LEGISLATIVO)\s*:\s*", "", t.strip(), flags=re.I)
+    # aspas do fim sem par ('… E DÁ OUTRAS PROVIDÊNCIAS”.'): a de abertura já saiu na coleta; as que fecham um nome
+    # ('A “FEIRA EXPO”.') ficam
+    fim = re.search(r'\s*([”"])\s*\.?\s*$', t)
+    if fim and (t.count("“") < t.count("”") if fim.group(1) == "”" else t.count('"') % 2 == 1):
+        t = t[:fim.start()]
     t = re.sub(r",?\s*E\s+D[ÁA](\s+OUTRAS(\s+PROVID\w*)?)?\.?\s*$", "", t, flags=re.I)
     # ementa cortada pelo sistema no meio do "e dá outras providências": "…Cariacica e dá outr…"
     t = re.sub(r"[,\s]+E(\s+D[ÁA]?(\s+O\w*(\s+P\w*)?)?)?\s*…$", "…", t, flags=re.I).strip().rstrip(".,;")
@@ -148,8 +252,15 @@ def vereadores(hoje: date | None = None) -> dict:
     autores: Counter = Counter()
     for p in linhas:
         p = dict(p)
-        p["nivel"] = POR_NOME.get(p["utilidade"], "sem")
+        p["nivel"] = POR_NOME.get(p["utilidade"], "sem")      # "A classificar" fica em "Sem como saber"
+        p["novo"] = p["utilidade"] == A_CLASSIFICAR
         p["situacao"] = SITUACAO.get(p["status"], p["status"])
+        if p["status"] == "Vetado pelo prefeito" and p.get("veto") == "parcial":
+            p["situacao"] = "Vetado em parte"
+        elif p["status"] == "Aprovado pela Câmara":
+            p["situacao"] = sem_lei(p)
+        p["lei_curta"] = lei_curta(p.get("lei", ""))
+        p["cor"] = COR_SITUACAO.get(p["status"], "neutro")
         p["ementa_txt"] = ementa_simples(p["ementa"])
         p["data_txt"] = f"{p['data'][8:10]}/{p['data'][5:7]}/{p['data'][:4]}"
         por_ver.setdefault(p["vereador"], []).append(p)
@@ -168,12 +279,16 @@ def vereadores(hoje: date | None = None) -> dict:
         lista.append({
             "nome": nome, "slug": D.slug(nome), "n": len(ps), "cont": cont, "pilha": _pilha(cont, len(ps)),
             "aprovados": len(aprov), "concreto_aprovado": sum(1 for p in aprov if p["nivel"] == "concreto"),
-            "virou_lei": sum(1 for p in aprov if p["status"] == "Virou lei"),
+            "ja_vale": sum(1 for p in aprov if p["status"] in JA_VALE),
+            "vetados": sum(1 for p in aprov if p["status"] == "Vetado pelo prefeito"),
+            "tipos": tipos_txt(ps), "um_tipo": len({p["tipo"] for p in ps}) <= 1,
             "pronto": sum(1 for p in ps if p["status"] == "Pronto para plenário"),
             "parte_concreto": _parte(cont["concreto"], avaliados) if avaliados else "",
             "pedidos": r.get("indicacoes", 0), "homenagens": r.get("titulos_mocoes", 0),
             "projetos": ps,
-            "grupos": [{"chave": k, "nome": nm, "o_que": oq, "itens": [p for p in ps if p["nivel"] == k]}
+            "grupos": [{"chave": k, "nome": nm, "itens": [p for p in ps if p["nivel"] == k],
+                        "o_que": oq + (" Ou o projeto é novo e ainda vamos ler o resumo." if k == "sem" and any(
+                            p["novo"] for p in ps if p["nivel"] == k) else "")}
                        for k, _, nm, oq in NIVEIS],
         })
 
@@ -187,11 +302,10 @@ def vereadores(hoje: date | None = None) -> dict:
     cidade = {
         "n": len(todos), "cont": cont, "cem": _cem(cont, len(todos)), "pilha": _pilha(cont, len(todos)),
         "aprovados": len(aprov), "cont_aprov": cont_aprov, "pilha_aprov": _pilha(cont_aprov, len(aprov)),
-        "virou_lei": sum(1 for p in aprov if p["status"] == "Virou lei"),
-        "esperando": sum(1 for p in aprov if p["status"] == "Aprovado pela Câmara"),
+        "ja_vale": sum(1 for p in aprov if p["status"] in JA_VALE),
+        "sem_lei": sum(1 for p in aprov if p["status"] == "Aprovado pela Câmara"),
         "vetados": sum(1 for p in aprov if p["status"] == "Vetado pelo prefeito"),
-        "conc_vale": sum(1 for p in aprov if p["nivel"] == "concreto" and p["status"] == "Virou lei"),
-        "conc_vetado": sum(1 for p in aprov if p["nivel"] == "concreto" and p["status"] == "Vetado pelo prefeito"),
+        "tipos": tipos_txt(todos),
         "datas_aprov": len(datas), "parte_datas_aprov": D.de_cada(100 * len(datas) / len(aprov)),
         "parte_aprovados": D.de_cada(100 * len(aprov) / len(todos)),
         "parte_simb_aprov": D.de_cada(100 * cont_aprov["simbolico"] / len(aprov)),
@@ -200,7 +314,22 @@ def vereadores(hoje: date | None = None) -> dict:
         "pedidos": unicos_cidade["indicacoes"], "homenagens": unicos_cidade["homenagens"],
         "titulos_cidadao": unicos_cidade["titulos_cidadao"],
         "coautoria": sum(1 for v in autores.values() if v > 1),
+        "novos": sum(1 for p in todos if p["novo"]),
     }
+    cidade["sem_resumo"] = cont["sem"] - cidade["novos"]
+
+    # Leis que mudam a sua vida: aprovados que mudam algo na prática, cada projeto uma vez, por tema
+    conc = [p for p in aprov if p["nivel"] == "concreto"]
+    for p in conc:
+        p["tema"], p["selo_lei"] = tema(p["ementa"]), selo_lei(p)
+    leis = {"total": len(conc), "vale": sum(1 for p in conc if p["status"] in JA_VALE),
+            "vetado": sum(1 for p in conc if p["status"] == "Vetado pelo prefeito"),
+            "sem_lei": sum(1 for p in conc if p["status"] == "Aprovado pela Câmara"),
+            "grupos": [{"chave": k, "nome": NOME_TEMA[k], "nota": NOTA_TEMA.get(k, ""),
+                        "itens": sorted((p for p in conc if p["tema"] == k), key=lambda p: p["data"], reverse=True)}
+                       for k in ORDEM_TEMAS if any(p["tema"] == k for p in conc)]}
+    leis["lead"], leis["resto"] = frases_leis(leis["total"], leis["vale"], leis["vetado"], leis["sem_lei"],
+                                              coleta.strftime("%d/%m/%Y"))
     conta = {
         "salario_mes": D.reais(meta["salario_mensal"]), "meses": meses,
         # valores com todos os zeros (o tamanho tem que pesar) e, ao lado, como se lê
@@ -216,6 +345,6 @@ def vereadores(hoje: date | None = None) -> dict:
         "por_morador": D.br(meta["gasto_por_morador_2025"], 2),
         "gasto_anos": {a: D.reais(round(v)) for a, v in meta["gasto_camara"].items()},
     }
-    return {"lista": lista, "cidade": cidade, "conta": conta, "meta": meta, "niveis": NIVEIS,
-            "exemplos": EXEMPLOS, "coleta": coleta.strftime("%d/%m/%Y"),
+    return {"lista": lista, "cidade": cidade, "conta": conta, "meta": meta, "niveis": NIVEIS, "leis": leis,
+            "exemplos": EXEMPLOS, "coleta": coleta.strftime("%d/%m/%Y"), "tempo": tempo(inicio, coleta),
             "periodo": f"de janeiro de {inicio.year} a {coleta.day} de {MESES[coleta.month - 1]} de {coleta.year}"}

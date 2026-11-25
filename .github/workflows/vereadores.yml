@@ -1,0 +1,68 @@
+name: Câmara (vereadores)
+
+# Toda segunda de manhã: lê de novo, no sistema oficial da Câmara (Câmara Sem Papel), o que os 19 vereadores
+# apresentaram, as leis, os vetos do prefeito e a página de cada projeto, e refaz data/camara/
+# (ferramentas/camara_producao.py). Os arquivos baixados ficam numa pasta temporária, fora do git.
+# Só faz commit se algo além da data da coleta mudou, e só se os testes passarem.
+# Projeto novo entra como "A classificar" e aparece no resumo da execução, para o Vigia ler a ementa e pôr o nível em
+# data/camara/classificacao_extra.json (docs/DECISOES.md, 24/11/2026).
+on:
+  schedule:
+    - cron: "7 11 * * 1"   # segunda, 08:07 de Brasília
+  workflow_dispatch:        # botão "Run workflow"
+
+permissions:
+  contents: write           # commit dos dados
+
+concurrency:
+  group: vereadores
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main          # sempre a versão mais nova
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Baixar da Câmara
+        run: python ferramentas/camara_producao.py baixar "$RUNNER_TEMP/camara"
+
+      - name: Montar data/camara
+        run: python ferramentas/camara_producao.py montar "$RUNNER_TEMP/camara"
+
+      - name: Resumo (quantos estão "A classificar")
+        run: python ferramentas/camara_producao.py resumo "$GITHUB_STEP_SUMMARY"
+
+      - name: Testes
+        run: python -m pytest -q
+
+      - name: Salvar dados no repositório
+        run: |
+          git config user.name "vigia-bot"
+          git config user.email "vigia-bot@users.noreply.github.com"
+          git add data/camara
+          # Só a data da coleta mudou (fonte.json, "coletado_em")? Então nada mudou na Câmara: não faz commit.
+          if git diff --cached --quiet || [ -z "$(git diff --cached -U0 -- data/camara | grep -E '^[+-] ' | grep -v '"coletado_em"')" ]; then
+            echo "Nada mudou na Câmara desde a última leitura."
+            echo "Nada mudou na Câmara desde a última leitura: sem commit." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git commit -m "dados: vereadores, Câmara de $(date -u +%Y-%m-%d)"
+          # Se alguém publicou algo durante a leitura: os dados desta leitura (mais novos) prevalecem.
+          # Se mesmo assim não der para salvar, o passo falha (vermelho) em vez de perder em silêncio.
+          for tentativa in 1 2 3; do
+            if git pull --rebase -X theirs origin main && git push; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep 10
+          done
+          exit 1
