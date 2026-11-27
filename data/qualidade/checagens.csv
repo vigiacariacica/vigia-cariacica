@@ -7,21 +7,21 @@ transparencia,pagamentos_2025.csv,formato_ValorEmpenhado,True,True,0 linhas fora
 transparencia,pagamentos_2025.csv,formato_CpfCnpjFornecedor,True,True,0 linhas fora do padrão (100.0000% ok)
 transparencia,pagamentos_2025.csv,sem_queda_de_linhas,True,True,21050→21050 (+0.00%)
 transparencia,pagamentos_2025.csv,sem_queda_do_total,True,True,"R$ 1.695.786.990,39→1.695.786.990,39 (-0.00%)"
-transparencia,pagamentos_2026.csv,nao_vazio,True,True,23650 linhas
+transparencia,pagamentos_2026.csv,nao_vazio,True,True,23698 linhas
 transparencia,pagamentos_2026.csv,colunas,True,True,todas presentes
 transparencia,pagamentos_2026.csv,formato_IdEmpenho,True,True,0 linhas fora do padrão (100.0000% ok)
 transparencia,pagamentos_2026.csv,formato_Data,True,True,0 linhas fora do padrão (100.0000% ok)
 transparencia,pagamentos_2026.csv,formato_ValorEmpenhado,True,True,0 linhas fora do padrão (100.0000% ok)
 transparencia,pagamentos_2026.csv,formato_CpfCnpjFornecedor,True,True,0 linhas fora do padrão (100.0000% ok)
-transparencia,pagamentos_2026.csv,sem_queda_de_linhas,True,True,23591→23650 (+0.25%)
-transparencia,pagamentos_2026.csv,sem_queda_do_total,True,True,"R$ 1.918.598.025,37→1.931.449.549,20 (+0.67%)"
+transparencia,pagamentos_2026.csv,sem_queda_de_linhas,True,True,23650→23698 (+0.20%)
+transparencia,pagamentos_2026.csv,sem_queda_do_total,True,True,"R$ 1.931.449.549,20→1.931.683.210,45 (+0.01%)"
 transparencia,contratos_2025.csv,nao_vazio,True,True,135 linhas
 transparencia,contratos_2025.csv,colunas,True,True,todas presentes
 transparencia,contratos_2025.csv,formato_NumeroContrato,True,True,0 linhas fora do padrão (100.0000% ok)
 transparencia,contratos_2025.csv,formato_AnoContrato,True,True,0 linhas fora do padrão (100.0000% ok)
 transparencia,contratos_2025.csv,formato_ValorContratado,True,True,0 linhas fora do padrão (100.0000% ok)
 transparencia,contratos_2025.csv,sem_queda_de_linhas,True,True,135→135 (+0.00%)
-transparencia,contratos_2025.csv,sem_queda_do_total,True,True,"R$ 615.752.278,80→615.752.278,80 (+0.00%)"
+transparencia,contratos_2025.csv,sem_queda_do_total,True,True,"R$ 615.752.278,80→619.799.516,14 (+0.66%)"
 transparencia,contratos_2026.csv,nao_vazio,True,True,207 linhas
 transparencia,contratos_2026.csv,colunas,True,True,todas presentes
 transparencia,contratos_2026.csv,formato_NumeroContrato,True,True,0 linhas fora do padrão (100.0000% ok)
@@ -197,7 +197,7 @@ transparencia,diarias_2025.csv,formato_Ano,True,True,0 linhas fora do padrão (1
 transparencia,diarias_2025.csv,formato_Data,True,True,0 linhas fora do padrão (100.0000% ok)
 transparencia,diarias_2025.csv,formato_ValorEmpenhado,True,True,0 linhas fora do padrão (100.0000% ok)
 transparencia,diarias_2025.csv,sem_queda_de_linhas,True,True,94→94 (+0.00%)
-transparencia,diarias_2025.csv,sem_queda_do_total,True,True,"R$ 86.248,20→86.248,20 (-0.00%)"
+transparencia,diarias_2025.csv,sem_queda_do_total,True,True,"R$ 86.248,20→86.248,20 (+0.00%)"
 transparencia,diarias_2026.csv,nao_vazio,True,True,129 linhas
 transparencia,diarias_2026.csv,colunas,True,True,todas presentes
 transparencia,diarias_2026.csv,formato_Ano,True,True,0 linhas fora do padrão (100.0000% ok)
@@ -218,7 +218,7 @@ transparencia,receitas_2026.csv,formato_Numero,True,True,0 linhas fora do padrã
 transparencia,receitas_2026.csv,formato_ValorPrevisto,True,True,0 linhas fora do padrão (100.0000% ok)
 transparencia,receitas_2026.csv,formato_ValorRealizado,True,True,6 linhas fora do padrão (99.9834% ok)
 transparencia,receitas_2026.csv,sem_queda_de_linhas,True,True,36108→36108 (+0.00%)
-transparencia,receitas_2026.csv,sem_queda_do_total,True,True,"R$ 11.304.803.405,44→11.417.303.540,83 (+1.00%)"
+transparencia,receitas_2026.csv,sem_queda_do_total,True,True,"R$ 11.417.303.540,83→11.566.543.549,42 (+1.31%)"
 transparencia,licitacoes_2025.csv,nao_vazio,True,True,8040 linhas
 transparencia,licitacoes_2025.csv,colunas,True,True,todas presentes
 transparencia,licitacoes_2025.csv,formato_Modalidade,True,True,0 linhas fora do padrão (100.0000% ok)
@@ -226,13 +226,13 @@ transparencia,licitacoes_2025.csv,formato_ValorTotal,True,True,0 linhas fora do 
 transparencia,licitacoes_2025.csv,formato_ValorTotalHomologado,True,True,0 linhas fora do padrão (100.0000% ok)
 transparencia,licitacoes_2025.csv,sem_queda_de_linhas,True,True,8040→8040 (+0.00%)
 transparencia,licitacoes_2025.csv,sem_queda_do_total,True,True,"R$ 899.141.768,34→899.141.768,34 (+0.00%)"
-transparencia,licitacoes_2026.csv,nao_vazio,True,True,6762 linhas
+transparencia,licitacoes_2026.csv,nao_vazio,True,True,6765 linhas
 transparencia,licitacoes_2026.csv,colunas,True,True,todas presentes
 transparencia,licitacoes_2026.csv,formato_Modalidade,True,True,0 linhas fora do padrão (100.0000% ok)
 transparencia,licitacoes_2026.csv,formato_ValorTotal,True,True,0 linhas fora do padrão (100.0000% ok)
 transparencia,licitacoes_2026.csv,formato_ValorTotalHomologado,True,True,0 linhas fora do padrão (100.0000% ok)
-transparencia,licitacoes_2026.csv,sem_queda_de_linhas,True,True,6761→6762 (+0.01%)
-transparencia,licitacoes_2026.csv,sem_queda_do_total,True,True,"R$ 1.134.860.051,45→1.135.094.651,45 (+0.02%)"
+transparencia,licitacoes_2026.csv,sem_queda_de_linhas,True,True,6762→6765 (+0.04%)
+transparencia,licitacoes_2026.csv,sem_queda_do_total,True,True,"R$ 1.135.094.651,45→1.144.256.151,11 (+0.81%)"
 folha,folha_mensal.csv,nao_vazio,True,True,94 linhas
 folha,folha_mensal.csv,colunas,True,True,todas presentes
 folha,folha_mensal.csv,formato_ano,True,True,0 linhas fora do padrão (100.0000% ok)
@@ -386,7 +386,7 @@ estado,convenios_pagamentos_2025.csv,nao_vazio,True,True,154 linhas
 estado,convenios_pagamentos_2025.csv,colunas,True,True,todas presentes
 estado,convenios_pagamentos_2025.csv,formato_Ano,True,True,0 linhas fora do padrão (100.0000% ok)
 estado,convenios_pagamentos_2025.csv,sem_queda_de_linhas,True,True,154→154 (+0.00%)
-estado,convenios_pagamentos_2025.csv,sem_queda_do_total,True,True,"R$ 64.014.132,45→64.014.132,45 (+0.00%)"
+estado,convenios_pagamentos_2025.csv,sem_queda_do_total,True,True,"R$ 64.014.132,45→64.014.132,45 (-0.00%)"
 estado,convenios_pagamentos_2026.csv,nao_vazio,True,True,86 linhas
 estado,convenios_pagamentos_2026.csv,colunas,True,True,todas presentes
 estado,convenios_pagamentos_2026.csv,formato_Ano,True,True,0 linhas fora do padrão (100.0000% ok)
@@ -424,7 +424,7 @@ estado,convenios_aditivos_2025.csv,sem_queda_do_total,True,True,"R$ 0,00→0,00 
 estado,convenios_aditivos_2026.csv,sem_linhas_de_cariacica,True,False,"10 linhas no arquivo do Estado, nenhuma de Cariacica"
 fila,fila_resumo_mensal.csv,links_da_fila,False,False,página da fila fora para o robô e nenhum link guardado
 todas,data/cauc/cauc.csv,guarda_final,True,True,registros 980→980
-todas,data/diario_oficial/edicoes.csv,guarda_final,True,True,registros 23→24
+todas,data/diario_oficial/edicoes.csv,guarda_final,True,True,registros 24→25
 todas,data/divida/pedidos_emprestimo.csv,guarda_final,True,True,registros 18→18
 todas,data/equipamentos/escolas.csv,guarda_final,True,True,registros 200→200
 todas,data/equipamentos/saude.csv,guarda_final,True,True,registros 40→40
@@ -495,11 +495,11 @@ todas,data/ibge/ipca.csv,guarda_final,True,True,registros 142→142
 todas,data/pedidos/pedidos.csv,guarda_final,True,True,registros 62→62
 todas,data/pedidos/perguntas_publicas.csv,guarda_final,True,True,registros 62→62
 todas,data/pedidos/respostas_publicas.csv,guarda_final,True,True,registros 4→4
-todas,data/pncp/arquivos_compras.csv,guarda_final,True,True,registros 2944→2944
+todas,data/pncp/arquivos_compras.csv,guarda_final,True,True,registros 2946→2946
 todas,data/pncp/atas.csv,guarda_final,True,True,registros 292→292
-todas,data/pncp/contratacoes.csv,guarda_final,True,True,registros 908→908
-todas,data/pncp/contratos.csv,guarda_final,True,True,registros 278→278
-todas,data/pncp/itens.csv,guarda_final,True,True,registros 13219→13219
+todas,data/pncp/contratacoes.csv,guarda_final,True,True,registros 909→909
+todas,data/pncp/contratos.csv,guarda_final,True,True,registros 279→279
+todas,data/pncp/itens.csv,guarda_final,True,True,registros 13220→13220
 todas,data/pncp/orgaos.csv,guarda_final,True,True,registros 4→4
 todas,data/pncp/resultados.csv,guarda_final,True,True,registros 2843→2843
 todas,data/pncp/termos.csv,guarda_final,True,True,registros 186→186
@@ -519,7 +519,7 @@ todas,data/refinado/funcao_ano.csv,guarda_final,True,True,registros 148→148
 todas,data/refinado/modalidade_ano.csv,guarda_final,True,True,registros 30→30
 todas,data/refinado/orgao_ano.csv,guarda_final,True,True,registros 204→204
 todas,data/refinado/origem_ano.csv,guarda_final,True,True,registros 103→103
-todas,data/refinado/origem_detalhe_ano.csv,guarda_final,True,True,registros 1035→1035
+todas,data/refinado/origem_detalhe_ano.csv,guarda_final,True,True,registros 1036→1036
 todas,data/refinado/recebedor_ano.csv,guarda_final,True,True,registros 63→63
 todas,data/refinado/resumo_ano.csv,guarda_final,True,True,registros 8→8
 todas,data/refinado/tipo_ano.csv,guarda_final,True,True,registros 41→41
@@ -531,8 +531,8 @@ todas,data/siconfi/rgf_caixa.csv,guarda_final,True,True,registros 5395→5395
 todas,data/siconfi/rgf_divida.csv,guarda_final,True,True,registros 12309→12309
 todas,data/siconfi/rgf_operacoes_credito.csv,guarda_final,True,True,registros 2566→2566
 todas,data/siconfi/rgf_pessoal.csv,guarda_final,True,True,registros 28720→28720
-todas,data/siconfi/rreo_balanco_orcamentario.csv,guarda_final,True,True,registros 25120→25120
-todas,data/siconfi/rreo_despesa_funcao.csv,guarda_final,True,True,registros 54619→54619
+todas,data/siconfi/rreo_balanco_orcamentario.csv,guarda_final,True,True,registros 25120→25957
+todas,data/siconfi/rreo_despesa_funcao.csv,guarda_final,True,True,registros 54619→56647
 todas,data/site/correcoes.csv,guarda_final,True,True,registros 5→5
 todas,data/site/publicacoes.csv,guarda_final,True,True,registros 9→9
 todas,data/tcees/despesas_2019.csv,guarda_final,True,True,registros 821→821
@@ -594,7 +594,7 @@ todas,data/transparencia/licitacoes_2022.csv,guarda_final,True,True,registros 43
 todas,data/transparencia/licitacoes_2023.csv,guarda_final,True,True,registros 9161→9161
 todas,data/transparencia/licitacoes_2024.csv,guarda_final,True,True,registros 2556→2556
 todas,data/transparencia/licitacoes_2025.csv,guarda_final,True,True,registros 8040→8040
-todas,data/transparencia/licitacoes_2026.csv,guarda_final,True,True,registros 6761→6762
+todas,data/transparencia/licitacoes_2026.csv,guarda_final,True,True,registros 6762→6765
 todas,data/transparencia/obras_2010.csv,guarda_final,True,True,registros 1→1
 todas,data/transparencia/obras_2011.csv,guarda_final,True,True,registros 4→4
 todas,data/transparencia/obras_2012.csv,guarda_final,True,True,registros 11→11
@@ -618,9 +618,9 @@ todas,data/transparencia/pagamentos_2022.csv,guarda_final,True,True,registros 19
 todas,data/transparencia/pagamentos_2023.csv,guarda_final,True,True,registros 24623→24623
 todas,data/transparencia/pagamentos_2024.csv,guarda_final,True,True,registros 20473→20473
 todas,data/transparencia/pagamentos_2025.csv,guarda_final,True,True,registros 21050→21050
-todas,data/transparencia/pagamentos_2026.csv,guarda_final,True,True,registros 23591→23650
+todas,data/transparencia/pagamentos_2026.csv,guarda_final,True,True,registros 23650→23698
 todas,data/transparencia/penalizados.csv,guarda_final,True,True,registros 4→4
-todas,data/transparencia/receita_acompanhamento.csv,guarda_final,True,True,registros 150→165
+todas,data/transparencia/receita_acompanhamento.csv,guarda_final,True,True,registros 165→180
 todas,data/transparencia/receitas_2019.csv,guarda_final,True,True,registros 19164→19164
 todas,data/transparencia/receitas_2020.csv,guarda_final,True,True,registros 19185→19185
 todas,data/transparencia/receitas_2021.csv,guarda_final,True,True,registros 19221→19221
@@ -630,7 +630,7 @@ todas,data/transparencia/receitas_2024.csv,guarda_final,True,True,registros 3595
 todas,data/transparencia/receitas_2025.csv,guarda_final,True,True,registros 36006→36006
 todas,data/transparencia/receitas_2026.csv,guarda_final,True,True,registros 36108→36108
 todas,data/transparencia/situacao_corrigida.csv,guarda_final,True,True,registros 3→3
-banco,banco/vigia.db,banco_nao_encolhe,True,True,"bruto 39094, orgaos 159, contratacoes 10076, itens 68670, resultados 28198, contratos 279, termos 186, atas 292, fornecedores 300, socios 701, sancoes 0, servidores 0, alertas 502"
+banco,banco/vigia.db,banco_nao_encolhe,True,True,"bruto 39117, orgaos 159, contratacoes 10077, itens 68672, resultados 28198, contratos 279, termos 186, atas 292, fornecedores 300, socios 701, sancoes 0, servidores 0, alertas 502"
 conciliacao,pagamentos_2019.csv,portal_x_siconfi,True,False,"portal 702,0 mi x Siconfi 708,9 mi (-0.97%)"
 conciliacao,pagamentos_2020.csv,portal_x_siconfi,True,False,"portal 778,2 mi x Siconfi 785,6 mi (-0.94%)"
 conciliacao,pagamentos_2021.csv,portal_x_siconfi,True,False,"portal 892,4 mi x Siconfi 903,5 mi (-1.22%)"
@@ -640,7 +640,7 @@ conciliacao,pagamentos_2024.csv,portal_x_siconfi,True,False,"portal 1.646,0 mi x
 conciliacao,pagamentos_2025.csv,portal_x_siconfi,True,False,"portal 1.695,8 mi x Siconfi 1.713,8 mi (-1.05%)"
 alertas,data/alertas.csv,lista_publica_nao_encolhe,True,True,alertas 462→462
 todas,data/cauc/cauc.csv,guarda_final,True,True,registros 980→980
-todas,data/diario_oficial/edicoes.csv,guarda_final,True,True,registros 23→24
+todas,data/diario_oficial/edicoes.csv,guarda_final,True,True,registros 24→25
 todas,data/divida/pedidos_emprestimo.csv,guarda_final,True,True,registros 18→18
 todas,data/equipamentos/escolas.csv,guarda_final,True,True,registros 200→200
 todas,data/equipamentos/saude.csv,guarda_final,True,True,registros 40→40
@@ -711,11 +711,11 @@ todas,data/ibge/ipca.csv,guarda_final,True,True,registros 142→142
 todas,data/pedidos/pedidos.csv,guarda_final,True,True,registros 62→62
 todas,data/pedidos/perguntas_publicas.csv,guarda_final,True,True,registros 62→62
 todas,data/pedidos/respostas_publicas.csv,guarda_final,True,True,registros 4→4
-todas,data/pncp/arquivos_compras.csv,guarda_final,True,True,registros 2944→2946
+todas,data/pncp/arquivos_compras.csv,guarda_final,True,True,registros 2946→2955
 todas,data/pncp/atas.csv,guarda_final,True,True,registros 292→292
-todas,data/pncp/contratacoes.csv,guarda_final,True,True,registros 908→909
-todas,data/pncp/contratos.csv,guarda_final,True,True,registros 278→279
-todas,data/pncp/itens.csv,guarda_final,True,True,registros 13219→13220
+todas,data/pncp/contratacoes.csv,guarda_final,True,True,registros 909→910
+todas,data/pncp/contratos.csv,guarda_final,True,True,registros 279→279
+todas,data/pncp/itens.csv,guarda_final,True,True,registros 13220→13222
 todas,data/pncp/orgaos.csv,guarda_final,True,True,registros 4→4
 todas,data/pncp/resultados.csv,guarda_final,True,True,registros 2843→2843
 todas,data/pncp/termos.csv,guarda_final,True,True,registros 186→186
@@ -730,12 +730,12 @@ todas,data/raiox/indicadores-grande-vitoria.csv,guarda_final,True,True,registros
 todas,data/receita/empresas.csv,guarda_final,True,True,registros 300→300
 todas,data/refinado/deflator.csv,guarda_final,True,True,registros 8→8
 todas,data/refinado/elemento_ano.csv,guarda_final,True,True,registros 358→358
-todas,data/refinado/fornecedores.csv,guarda_final,True,True,registros 2341→2341
+todas,data/refinado/fornecedores.csv,guarda_final,True,True,registros 2341→2342
 todas,data/refinado/funcao_ano.csv,guarda_final,True,True,registros 148→148
 todas,data/refinado/modalidade_ano.csv,guarda_final,True,True,registros 30→30
 todas,data/refinado/orgao_ano.csv,guarda_final,True,True,registros 204→204
 todas,data/refinado/origem_ano.csv,guarda_final,True,True,registros 103→103
-todas,data/refinado/origem_detalhe_ano.csv,guarda_final,True,True,registros 1035→1036
+todas,data/refinado/origem_detalhe_ano.csv,guarda_final,True,True,registros 1036→1036
 todas,data/refinado/recebedor_ano.csv,guarda_final,True,True,registros 63→63
 todas,data/refinado/resumo_ano.csv,guarda_final,True,True,registros 8→8
 todas,data/refinado/tipo_ano.csv,guarda_final,True,True,registros 41→41
@@ -747,8 +747,8 @@ todas,data/siconfi/rgf_caixa.csv,guarda_final,True,True,registros 5395→5395
 todas,data/siconfi/rgf_divida.csv,guarda_final,True,True,registros 12309→12309
 todas,data/siconfi/rgf_operacoes_credito.csv,guarda_final,True,True,registros 2566→2566
 todas,data/siconfi/rgf_pessoal.csv,guarda_final,True,True,registros 28720→28720
-todas,data/siconfi/rreo_balanco_orcamentario.csv,guarda_final,True,True,registros 25120→25120
-todas,data/siconfi/rreo_despesa_funcao.csv,guarda_final,True,True,registros 54619→54619
+todas,data/siconfi/rreo_balanco_orcamentario.csv,guarda_final,True,True,registros 25120→25957
+todas,data/siconfi/rreo_despesa_funcao.csv,guarda_final,True,True,registros 54619→56647
 todas,data/site/correcoes.csv,guarda_final,True,True,registros 5→5
 todas,data/site/publicacoes.csv,guarda_final,True,True,registros 9→9
 todas,data/tcees/despesas_2019.csv,guarda_final,True,True,registros 821→821
@@ -810,7 +810,7 @@ todas,data/transparencia/licitacoes_2022.csv,guarda_final,True,True,registros 43
 todas,data/transparencia/licitacoes_2023.csv,guarda_final,True,True,registros 9161→9161
 todas,data/transparencia/licitacoes_2024.csv,guarda_final,True,True,registros 2556→2556
 todas,data/transparencia/licitacoes_2025.csv,guarda_final,True,True,registros 8040→8040
-todas,data/transparencia/licitacoes_2026.csv,guarda_final,True,True,registros 6761→6762
+todas,data/transparencia/licitacoes_2026.csv,guarda_final,True,True,registros 6762→6765
 todas,data/transparencia/obras_2010.csv,guarda_final,True,True,registros 1→1
 todas,data/transparencia/obras_2011.csv,guarda_final,True,True,registros 4→4
 todas,data/transparencia/obras_2012.csv,guarda_final,True,True,registros 11→11
@@ -834,9 +834,9 @@ todas,data/transparencia/pagamentos_2022.csv,guarda_final,True,True,registros 19
 todas,data/transparencia/pagamentos_2023.csv,guarda_final,True,True,registros 24623→24623
 todas,data/transparencia/pagamentos_2024.csv,guarda_final,True,True,registros 20473→20473
 todas,data/transparencia/pagamentos_2025.csv,guarda_final,True,True,registros 21050→21050
-todas,data/transparencia/pagamentos_2026.csv,guarda_final,True,True,registros 23591→23650
+todas,data/transparencia/pagamentos_2026.csv,guarda_final,True,True,registros 23650→23698
 todas,data/transparencia/penalizados.csv,guarda_final,True,True,registros 4→4
-todas,data/transparencia/receita_acompanhamento.csv,guarda_final,True,True,registros 150→165
+todas,data/transparencia/receita_acompanhamento.csv,guarda_final,True,True,registros 165→180
 todas,data/transparencia/receitas_2019.csv,guarda_final,True,True,registros 19164→19164
 todas,data/transparencia/receitas_2020.csv,guarda_final,True,True,registros 19185→19185
 todas,data/transparencia/receitas_2021.csv,guarda_final,True,True,registros 19221→19221

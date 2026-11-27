@@ -1,4 +1,4 @@
 fonte,fora_desde,ultima_falha,avisado_em,detalhe
 vizinhos,2026-11-15T07:21:26Z,2026-11-15T07:21:26Z,,LimiteDeTentativas: Não consegui baixar https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?codigoModalidadeContratacao=6&codigoMunicipioIbge=3205309&dataFinal=20
-tesouro,2026-11-24T20:54:13Z,2026-11-26T11:39:52Z,2026-11-25T16:54:54Z,"ConnectionError: HTTPSConnectionPool(host='www.tesourotransparente.gov.br', port=443): Max retries exceeded with url: /ckan/api/3/action/package_show?id=af4e7c47-2132-"
-externos,2026-11-24T20:54:13Z,2026-11-26T11:39:52Z,2026-11-25T16:54:54Z,"RuntimeError: ISP: ConnectionError: HTTPSConnectionPool(host='www.gov.br', port=443): Max retries exceeded with url: /previdencia/pt-br/assuntos/rpps/indice; CAUC: "
+tesouro,2026-11-24T20:54:13Z,2026-11-27T11:36:38Z,2026-11-25T16:54:54Z,"ConnectionError: HTTPSConnectionPool(host='www.tesourotransparente.gov.br', port=443): Max retries exceeded with url: /ckan/api/3/action/package_show?id=af4e7c47-2132-"
+externos,2026-11-24T20:54:13Z,2026-11-27T11:36:38Z,2026-11-25T16:54:54Z,"RuntimeError: ISP: ConnectionError: HTTPSConnectionPool(host='www.gov.br', port=443): Max retries exceeded with url: /previdencia/pt-br/assuntos/rpps/indice; CAUC: "

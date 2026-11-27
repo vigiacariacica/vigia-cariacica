@@ -1,6 +1,6 @@
 # Vigia Cariacica: relatório automático
 
-_Gerado em 26/11/2026 11:40 (UTC). Dados públicos oficiais; como cada dado é obtido em [METODOLOGIA.md](METODOLOGIA.md)._
+_Gerado em 27/11/2026 11:37 (UTC). Dados públicos oficiais; como cada dado é obtido em [METODOLOGIA.md](METODOLOGIA.md)._
 
 ## Placar de resultados
 
@@ -35,13 +35,13 @@ Fonte: Portal da Transparência de Cariacica, campo "fonte de recursos" e "natur
 
 | Origem | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 | % em 2026 |
 |---|---|---|---|---|---|---|---|
-| Impostos e transferências livres (IPTU, ISS, ICMS, FPM…) | 467,6 | 610,0 | 666,9 | 772,7 | 902,7 | 892,9 | 52,6% |
-| FUNDEB (educação básica) | 250,7 | 312,2 | 354,3 | 432,5 | 445,6 | 451,6 | 26,6% |
-| Saúde: SUS (fundo a fundo) e convênios | 55,3 | 54,0 | 57,6 | 84,6 | 93,0 | 69,4 | 4,1% |
+| Impostos e transferências livres (IPTU, ISS, ICMS, FPM…) | 467,6 | 610,0 | 666,9 | 772,7 | 902,7 | 901,3 | 52,7% |
+| FUNDEB (educação básica) | 250,7 | 312,2 | 354,3 | 432,5 | 445,6 | 456,3 | 26,7% |
+| Saúde: SUS (fundo a fundo) e convênios | 55,3 | 54,0 | 57,6 | 84,6 | 93,0 | 69,5 | 4,1% |
 | Convênios e outras transferências da União e do Estado | 10,4 | 28,1 | 30,1 | 32,9 | 54,4 | 68,1 | 4,0% |
 | Operações de crédito (empréstimos) | 4,6 | 45,3 | 62,4 | 64,9 | 14,7 | 49,2 | 2,9% |
 | COSIP (contribuição de iluminação pública) | 41,6 | 31,2 | 41,2 | 38,3 | 37,9 | 40,9 | 2,4% |
-| Educação: salário-educação, FNDE (merenda, transporte) e convênios | 24,4 | 38,3 | 31,6 | 52,8 | 53,4 | 39,1 | 2,3% |
+| Educação: salário-educação, FNDE (merenda, transporte) e convênios | 24,4 | 38,3 | 31,6 | 52,8 | 53,4 | 39,0 | 2,3% |
 | Royalties e compensações financeiras (petróleo, minerais) | 13,4 | 17,8 | 21,3 | 21,5 | 22,3 | 24,3 | 1,4% |
 | Previdência dos servidores (RPPS) | 12,0 | 13,0 | 32,7 | 22,0 | 25,0 | 21,5 | 1,3% |
 | Assistência social: FNAS e convênios | 10,8 | 11,2 | 12,6 | 18,1 | 20,7 | 19,2 | 1,1% |
@@ -54,9 +54,9 @@ Fonte: Portal da Transparência de Cariacica, campo "fonte de recursos" e "natur
 
 | Tipo de gasto | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 | % em 2026 |
 |---|---|---|---|---|---|---|---|
-| Custeio (serviços, materiais, contratos) | 385,7 | 485,6 | 525,8 | 682,1 | 703,7 | 709,9 | 41,8% |
-| Pessoal e encargos | 381,3 | 461,3 | 523,5 | 605,7 | 677,7 | 618,1 | 36,4% |
-| Investimentos (obras e equipamentos) | 96,8 | 184,9 | 234,9 | 285,9 | 252,1 | 305,2 | 18,0% |
+| Custeio (serviços, materiais, contratos) | 385,7 | 485,6 | 525,8 | 682,1 | 703,7 | 719,9 | 42,1% |
+| Pessoal e encargos | 381,3 | 461,3 | 523,5 | 605,7 | 677,7 | 621,3 | 36,3% |
+| Investimentos (obras e equipamentos) | 96,8 | 184,9 | 234,9 | 285,9 | 252,1 | 305,2 | 17,8% |
 | Amortização da dívida | 20,7 | 19,3 | 28,7 | 34,3 | 40,4 | 36,4 | 2,1% |
 | Juros da dívida | 9,8 | 21,5 | 28,5 | 27,1 | 31,7 | 28,8 | 1,7% |
 | Inversões financeiras | 0,0 | 0,0 | 0,0 | 1,1 | 0,0 | 0,0 | 0,0% |
@@ -65,14 +65,14 @@ Fonte: Portal da Transparência de Cariacica, campo "fonte de recursos" e "natur
 
 | Quem recebeu | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 | % em 2026 |
 |---|---|---|---|---|---|---|---|
-| Empresa | 348,3 | 471,8 | 567,8 | 742,0 | 699,5 | 774,6 | 45,6% |
-| Servidores ativos e aposentados (folha, encargos, previdência) | 381,3 | 461,3 | 525,8 | 616,1 | 684,3 | 624,7 | 36,8% |
-| Órgão público, consórcio público ou previdência | 57,4 | 76,8 | 53,5 | 49,1 | 106,9 | 111,6 | 6,6% |
-| Entidade sem fins lucrativos | 52,6 | 63,5 | 64,3 | 80,8 | 84,8 | 79,7 | 4,7% |
+| Empresa | 348,3 | 471,8 | 567,8 | 742,0 | 699,5 | 780,1 | 45,6% |
+| Servidores ativos e aposentados (folha, encargos, previdência) | 381,3 | 461,3 | 525,8 | 616,1 | 684,3 | 628,0 | 36,7% |
+| Órgão público, consórcio público ou previdência | 57,4 | 76,8 | 53,5 | 49,1 | 106,9 | 113,5 | 6,6% |
+| Entidade sem fins lucrativos | 52,6 | 63,5 | 64,3 | 80,8 | 84,8 | 82,3 | 4,8% |
 | Dívida (bancos e credores) | 30,5 | 40,8 | 57,2 | 61,4 | 72,2 | 65,2 | 3,8% |
 | Consórcio de empresas | 0,0 | 30,2 | 52,4 | 63,7 | 33,3 | 22,4 | 1,3% |
 | Concessionária (energia, água, telefonia, correios) | 19,2 | 19,4 | 13,9 | 16,9 | 19,2 | 16,0 | 0,9% |
-| Pessoa física | 5,0 | 8,8 | 6,6 | 6,2 | 5,4 | 4,3 | 0,3% |
+| Pessoa física | 5,0 | 8,8 | 6,6 | 6,2 | 5,4 | 4,3 | 0,2% |
 
 ### Gasto por morador
 
@@ -85,7 +85,7 @@ População: a declarada ao Tesouro em cada ano (IBGE). Preços de 2025 pelo IPC
 | 2023 | 1.341,4 | 386.495 | 3.471 | 3.804 |
 | 2024 | 1.636,1 | 375.500 | 4.357 | 4.576 |
 | 2025 | 1.705,7 | 375.500 | 4.542 | 4.542 |
-| 2026 | 1.698,4 | 376.200 | 4.515 | 4.335 |
+| 2026 | 1.711,7 | 376.200 | 4.550 | 4.369 |
 
 ## Arrecadação de 2026 x previsão do orçamento (R$ milhões)
 
@@ -101,7 +101,7 @@ Fonte: TCE-ES, receita e despesa mensal dos municípios (dados enviados pela pre
 | Distância projetada da previsão | 121,6 | 132,1 |
 | Aumento líquido da dotação (créditos adicionais menos cancelamentos) | 57,2 | 294,6 |
 
-_Receita conferida com o RREO do Tesouro até o 4º bimestre: TCE-ES R$ 1.484,5 mi, RREO R$ 1.484,5 mi._
+_Receita conferida com o RREO do Tesouro até o 5º bimestre: TCE-ES R$ 1.807,8 mi, RREO R$ 1.807,8 mi._
 
 _Aumento da dotação conferido com o RREO (Anexo 01) do Tesouro no mesmo bimestre._
 
@@ -267,7 +267,7 @@ Fonte: Portal da Transparência de Cariacica, `licitacoes/csv` (dispensas e inex
 | 2023 | 255 | 3 | 56 | 1 | 2 | 8 |
 | 2024 | 90 | 0 | 29 | 1 | 0 | 5 |
 | 2025 | 215 | 1 | 73 | 0 | 5 | 4 |
-| 2026 | 136 | 1 | 45 | 1 | 6 | 0 |
+| 2026 | 138 | 1 | 45 | 1 | 6 | 0 |
 
 ## Fila de espera de consultas e exames especializados
 
@@ -303,7 +303,7 @@ _Qualidade do dado oficial: em 2026-10, a coluna "Idade do paciente" bate com a 
 
 ## Quem mais recebe dinheiro da prefeitura (R$ milhões pagos, 2021–2026)
 
-Fonte: Portal da Transparência de Cariacica (pagamentos por empenho). Exclui folha de pagamento, previdência, tributos e outros órgãos públicos. Total pago a empresas e pessoas no período: R$ 4.407,7 mi; os 25 abaixo somam 55%.
+Fonte: Portal da Transparência de Cariacica (pagamentos por empenho). Exclui folha de pagamento, previdência, tributos e outros órgãos públicos. Total pago a empresas e pessoas no período: R$ 4.415,9 mi; os 25 abaixo somam 55%.
 
 | Fornecedor | CNPJ/CPF | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 | Total |
 |---|---|---|---|---|---|---|---|---|
@@ -313,25 +313,25 @@ Fonte: Portal da Transparência de Cariacica (pagamentos por empenho). Exclui fo
 | IDEAL ENGENHARIA LTDA | 06.021.395/0001-95 | 0,0 | 1,9 | 1,2 | 28,4 | 40,4 | 67,1 | 139,0 |
 | INSTITUTO ESPERANCA | 10.779.749/0001-32 | 0,0 | 21,6 | 33,3 | 45,2 | 37,9 | 0,0 | 138,0 |
 | LIMPSERVICE SERVIÇOS LTDA - EPP | 05.361.150/0001-44 | 18,3 | 18,6 | 22,1 | 20,3 | 28,2 | 25,0 | 132,4 |
-| EDP ESPIRITO SANTO DISTRIBUICAO DE ENERGIA S.A. | 28.152.650/0001-71 | 18,8 | 18,3 | 12,5 | 16,4 | 18,8 | 15,8 | 100,5 |
+| EDP ESPIRITO SANTO DISTRIBUICAO DE ENERGIA S.A. | 28.152.650/0001-71 | 18,8 | 18,3 | 12,5 | 16,4 | 18,8 | 15,8 | 100,6 |
 | CONSORCIO S3 ILUMINACAO | 43.663.727/0001-61 | 0,0 | 16,9 | 18,2 | 19,0 | 20,8 | 19,4 | 94,2 |
 | MAPA CONSTRUTORA E SERVICOS EIRELI | 08.362.784/0001-00 | 13,2 | 17,7 | 13,8 | 19,7 | 14,0 | 13,6 | 92,0 |
-| COMPROCARD LTDA | 06.175.892/0001-48 | 0,0 | 0,0 | 17,3 | 24,7 | 23,3 | 21,6 | 86,9 |
+| COMPROCARD LTDA | 06.175.892/0001-48 | 0,0 | 0,0 | 17,3 | 24,7 | 23,3 | 23,7 | 89,0 |
 | URGON CONSTRUTORA LTDA EPP | 14.292.067/0001-51 | 9,9 | 34,0 | 24,5 | 6,3 | 0,0 | 0,0 | 74,8 |
 | C. S. COSTA COMERCIO E SERVICOS AMBIENTAIS LTDA | 06.178.268/0001-02 | 9,5 | 13,0 | 14,0 | 16,1 | 13,1 | 8,1 | 73,7 |
-| AGENCIA ADVENTISTA DE DESENVOLVIMENTO E RECURSOS ASSISTENCIAIS SUDESTE BRASILEIRA | 16.524.054/0007-81 | 8,3 | 8,8 | 9,3 | 10,9 | 14,1 | 14,6 | 65,9 |
+| AGENCIA ADVENTISTA DE DESENVOLVIMENTO E RECURSOS ASSISTENCIAIS SUDESTE BRASILEIRA | 16.524.054/0007-81 | 8,3 | 8,8 | 9,3 | 10,9 | 14,1 | 16,8 | 68,1 |
 | ENGEVIL ENGENHARIA LTDA | 05.764.427/0001-80 | 0,3 | 3,2 | 14,0 | 19,9 | 15,3 | 9,6 | 62,4 |
 | MARCA CONSTRUTORA E SERVICOS LTDA | 35.971.738/0001-80 | 9,4 | 8,6 | 8,1 | 11,3 | 12,6 | 11,5 | 61,5 |
 | CINCO ESTRELAS CONSTRUTORA E INCORPORADORA EIRELI | 30.686.869/0001-00 | 3,8 | 3,3 | 0,1 | 0,0 | 3,0 | 51,1 | 61,3 |
 | ANDARES CONSTRUCAO CIVIL EIRELI EPP | 31.500.069/0001-08 | 0,0 | 9,6 | 16,2 | 17,6 | 12,1 | 5,6 | 61,2 |
+| PLUXEE BENEFICIOS BRASIL S.A. | 69.034.668/0001-56 | 0,0 | 0,0 | 11,6 | 16,4 | 15,6 | 15,5 | 59,1 |
 | DUTO ENGENHARIA EIRELI | 27.557.792/0001-56 | 8,2 | 9,6 | 8,2 | 13,3 | 13,6 | 5,0 | 57,8 |
-| PLUXEE BENEFICIOS BRASIL S.A. | 69.034.668/0001-56 | 0,0 | 0,0 | 11,6 | 16,4 | 15,6 | 14,1 | 57,7 |
 | CONSORCIO CINCO-SERPENGE | 51.199.890/0001-43 | 0,0 | 0,0 | 2,2 | 42,3 | 9,6 | 0,0 | 54,1 |
 | IGIS - INSTITUTO DA GESTÃO DE INOVAÇÃO DA SAUDE - FILIAL | 07.156.945/0003-08 | 34,2 | 14,0 | 0,0 | 0,0 | 0,0 | 0,0 | 48,3 |
 | SOLUCOES SERVICOS TERCEIRIZADOS LTDA | 09.445.502/0001-09 | 0,0 | 0,0 | 18,0 | 20,6 | 9,2 | 0,2 | 48,0 |
 | SUPRISERVICE INFORMATICA LTDA | 03.607.073/0001-34 | 1,5 | 12,3 | 6,7 | 6,9 | 7,2 | 13,2 | 47,7 |
 | SERDEL SERVICOS E CONSERVACAO LTDA | 27.436.815/0001-74 | 13,6 | 17,9 | 5,5 | 1,0 | 0,3 | 7,8 | 46,1 |
-| CONECTAR SOLUCOES EDUCACIONAIS LTDA | 24.847.132/0001-11 | 0,0 | 0,0 | 0,0 | 0,0 | 6,7 | 38,4 | 45,1 |
+| LE CARD ADMINISTRADORA DE CARTOES LTDA | 19.207.352/0001-40 | 0,0 | 0,0 | 3,8 | 9,5 | 12,6 | 19,6 | 45,6 |
 
 ## Contratos emergenciais (sem licitação)
 
@@ -506,7 +506,7 @@ Um alerta não é acusação: é um padrão que pede explicação. Confira sempr
 | 34bdbed1bde0 | alta | R20 | 3 emergências para o mesmo serviço: "Contratação emergencial de entidade de direito privado, sem fins lucra" | Por que esse serviço voltou a ser contratado por emergência e quando sai a licitação definitiva? | [ver](https://pncp.gov.br/app/editais/27150549000119/2024/124) |
 | 0b21899fd263 | alta | R27 | Contrato 76/2022 com CONSORCIO S3 ILUMINACAO termina em 21/03/2027, depois de 60 meses, sem licitação parecida no PNCP | O contrato chega ao fim do prazo máximo em breve. Já existe licitação publicada para substituí-lo? | [ver](https://wstransparencia.cariacica.es.gov.br/api/contratos/csv?unidadeGestoraId=6&exercicio=2022) |
 | 767f38c7535d | alta | R32 | Concorrência - Presencial 08/2025 de R$ 67.681.016,78 feita na forma presencial | A lei manda fazer licitação de preferência pela internet. Por que esta foi presencial, onde está a motivação e onde estão as gravações da sessão? | [ver](https://pncp.gov.br/app/editais/27150549000119/2025/125) |
-| 6854005fa915 | alta | R30 | Seleção sem conclusão há 142 dias, suspensa desde 25/08/2026 enquanto a emergência com HOSPITAL E MATERNIDADE SAO SEBASTIAO - SANTA CASA DE MISERICORDIA DE SALTO GRANDE (184/2026) está valendo | A licitação (ou o chamamento) para este serviço ainda não foi concluída, meses depois de publicada. O que falta para concluí-la, e até quando a emergência vai continuar? | [ver](https://wstransparencia.cariacica.es.gov.br/api/contratos-emergenciais/csv?unidadeGestoraId=6&exercicio=2026) |
+| 6854005fa915 | alta | R30 | Seleção sem conclusão há 143 dias, suspensa desde 25/08/2026 enquanto a emergência com HOSPITAL E MATERNIDADE SAO SEBASTIAO - SANTA CASA DE MISERICORDIA DE SALTO GRANDE (184/2026) está valendo | A licitação (ou o chamamento) para este serviço ainda não foi concluída, meses depois de publicada. O que falta para concluí-la, e até quando a emergência vai continuar? | [ver](https://wstransparencia.cariacica.es.gov.br/api/contratos-emergenciais/csv?unidadeGestoraId=6&exercicio=2026) |
 | 800798c1b0aa | alta | R23 | Contrato emergencial (sem licitação) 184/2026 com HOSPITAL E MATERNIDADE SAO SEBASTIAO - SANTA CASA DE MISERICORDIA DE SALTO GRANDE: R$ 54.334.515,72 | Qual foi a emergência e quando sai a licitação definitiva? | [ver](https://wstransparencia.cariacica.es.gov.br/api/contratos-emergenciais/csv?unidadeGestoraId=6&exercicio=2026) |
 | 6dcfb14e1221 | alta | R21 | CINCO ESTRELAS CONSTRUTORA E INCORPORADORA EIRELI: R$ 51.104.741,59 pagos sobre empenhos de 2026 | Qual contrato explica esse aumento e como ele foi licitado? | [ver](https://wstransparencia.cariacica.es.gov.br/api/despesa/fornecedor?exercicio=2026&nomeCPFCNPJ=30.686.869/0001-00) |
 | 1f142f5c28e9 | alta | R23 | Contrato emergencial (sem licitação) 85/2022 com INSTITUTO ESPERANCA: R$ 49.554.441,87 | Qual foi a emergência e quando sai a licitação definitiva? | [ver](https://wstransparencia.cariacica.es.gov.br/api/contratos-emergenciais/csv?unidadeGestoraId=6&exercicio=2022) |
@@ -524,7 +524,7 @@ Um alerta não é acusação: é um padrão que pede explicação. Confira sempr
 | 59af558c7358 | alta | R21 | ARTT ENGENHARIA LTDA.: R$ 20.708.708,04 pagos sobre empenhos de 2024 | Qual contrato explica esse aumento e como ele foi licitado? | [ver](https://wstransparencia.cariacica.es.gov.br/api/despesa/fornecedor?exercicio=2024&nomeCPFCNPJ=29.935.750/0001-37) |
 | d1d15c3193c3 | alta | R06 | 3 contratações emergenciais com SERDEL SERVIÇOS E CONSERVAÇÃO LTDA | Qual foi a emergência em cada contratação e por que ela se repetiu com o mesmo fornecedor? | [ver](https://pncp.gov.br/app/contratos/27150549000119/2026/21) |
 | 461c0d9da045 | alta | R23 | Contrato emergencial (sem licitação) 62/2026 com SERDEL SERVIÇOS E CONSERVAÇÃO LTDA: R$ 13.547.427,36 | Qual foi a emergência e quando sai a licitação definitiva? | [ver](https://wstransparencia.cariacica.es.gov.br/api/contratos-emergenciais/csv?unidadeGestoraId=6&exercicio=2026) |
-| e7c4f5e4fd16 | alta | R30 | Seleção sem conclusão há 245 dias, suspensa enquanto a emergência com SERDEL SERVIÇOS E CONSERVAÇÃO LTDA (62/2026) está valendo | A licitação (ou o chamamento) para este serviço ainda não foi concluída, meses depois de publicada. O que falta para concluí-la, e até quando a emergência vai continuar? | [ver](https://wstransparencia.cariacica.es.gov.br/api/contratos-emergenciais/csv?unidadeGestoraId=6&exercicio=2026) |
+| e7c4f5e4fd16 | alta | R30 | Seleção sem conclusão há 246 dias, suspensa enquanto a emergência com SERDEL SERVIÇOS E CONSERVAÇÃO LTDA (62/2026) está valendo | A licitação (ou o chamamento) para este serviço ainda não foi concluída, meses depois de publicada. O que falta para concluí-la, e até quando a emergência vai continuar? | [ver](https://wstransparencia.cariacica.es.gov.br/api/contratos-emergenciais/csv?unidadeGestoraId=6&exercicio=2026) |
 
 ## Limitações conhecidas
 

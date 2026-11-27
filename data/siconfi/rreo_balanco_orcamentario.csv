@@ -4516,6 +4516,453 @@ exercicio,demonstrativo,periodo,periodicidade,instituicao,cod_ibge,uf,populacao,
 2026,RREO,4,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),InversoesFinanceirasIntra,INVERSÕES FINANCEIRAS,800.0
 2026,RREO,4,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),InversoesFinanceirasIntra,INVERSÕES FINANCEIRAS,800.0
 2026,RREO,4,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),InversoesFinanceirasIntra,INVERSÕES FINANCEIRAS,800.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitasExcetoIntraOrcamentarias,RECEITAS (EXCETO INTRA-ORÇAMENTÁRIAS) (I),2088965231.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitasExcetoIntraOrcamentarias,RECEITAS (EXCETO INTRA-ORÇAMENTÁRIAS) (I),3430144297.83
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitasExcetoIntraOrcamentarias,RECEITAS (EXCETO INTRA-ORÇAMENTÁRIAS) (I),323338088.35
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),ReceitasExcetoIntraOrcamentarias,RECEITAS (EXCETO INTRA-ORÇAMENTÁRIAS) (I),9.43
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitasExcetoIntraOrcamentarias,RECEITAS (EXCETO INTRA-ORÇAMENTÁRIAS) (I),1807795419.3
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),ReceitasExcetoIntraOrcamentarias,RECEITAS (EXCETO INTRA-ORÇAMENTÁRIAS) (I),52.7
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitasExcetoIntraOrcamentarias,RECEITAS (EXCETO INTRA-ORÇAMENTÁRIAS) (I),1622348878.53
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitasCorrentes,RECEITAS CORRENTES,1771938373.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitasCorrentes,RECEITAS CORRENTES,3188505128.75
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitasCorrentes,RECEITAS CORRENTES,315135441.57
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),ReceitasCorrentes,RECEITAS CORRENTES,9.88
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitasCorrentes,RECEITAS CORRENTES,1656322755.79
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),ReceitasCorrentes,RECEITAS CORRENTES,51.95
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitasCorrentes,RECEITAS CORRENTES,1532182372.96
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitaTributaria,"IMPOSTOS, TAXAS E CONTRIBUIÇÕES DE MELHORIA",348220000.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitaTributaria,"IMPOSTOS, TAXAS E CONTRIBUIÇÕES DE MELHORIA",644818850.7
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitaTributaria,"IMPOSTOS, TAXAS E CONTRIBUIÇÕES DE MELHORIA",61692504.89
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),ReceitaTributaria,"IMPOSTOS, TAXAS E CONTRIBUIÇÕES DE MELHORIA",9.57
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitaTributaria,"IMPOSTOS, TAXAS E CONTRIBUIÇÕES DE MELHORIA",314075481.78
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),ReceitaTributaria,"IMPOSTOS, TAXAS E CONTRIBUIÇÕES DE MELHORIA",48.71
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitaTributaria,"IMPOSTOS, TAXAS E CONTRIBUIÇÕES DE MELHORIA",330743368.92
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,Impostos,Impostos,316655500.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),Impostos,Impostos,603108352.7
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),Impostos,Impostos,58357958.07
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),Impostos,Impostos,9.68
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),Impostos,Impostos,286579011.63
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),Impostos,Impostos,47.52
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),Impostos,Impostos,316529341.07
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,Taxas,Taxas,31564500.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),Taxas,Taxas,41710498.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),Taxas,Taxas,3334546.82
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),Taxas,Taxas,7.99
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),Taxas,Taxas,27496470.15
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),Taxas,Taxas,65.92
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),Taxas,Taxas,14214027.85
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitaDeContribuicoes,CONTRIBUIÇÕES,69878200.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitaDeContribuicoes,CONTRIBUIÇÕES,107368810.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitaDeContribuicoes,CONTRIBUIÇÕES,15290875.93
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),ReceitaDeContribuicoes,CONTRIBUIÇÕES,14.24
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitaDeContribuicoes,CONTRIBUIÇÕES,67059720.87
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),ReceitaDeContribuicoes,CONTRIBUIÇÕES,62.46
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitaDeContribuicoes,CONTRIBUIÇÕES,40309089.13
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ContribuicoesSociais,Contribuições Sociais,30598200.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ContribuicoesSociais,Contribuições Sociais,30598200.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),ContribuicoesSociais,Contribuições Sociais,7973921.22
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),ContribuicoesSociais,Contribuições Sociais,26.06
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ContribuicoesSociais,Contribuições Sociais,29569110.87
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),ContribuicoesSociais,Contribuições Sociais,96.64
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),ContribuicoesSociais,Contribuições Sociais,1029089.13
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ContribuicaoDeIluminacaoPublica,Contribuição para o Custeio do Serviço de Iluminação Pública,39280000.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ContribuicaoDeIluminacaoPublica,Contribuição para o Custeio do Serviço de Iluminação Pública,76770610.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),ContribuicaoDeIluminacaoPublica,Contribuição para o Custeio do Serviço de Iluminação Pública,7316954.71
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),ContribuicaoDeIluminacaoPublica,Contribuição para o Custeio do Serviço de Iluminação Pública,9.53
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ContribuicaoDeIluminacaoPublica,Contribuição para o Custeio do Serviço de Iluminação Pública,37490610.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),ContribuicaoDeIluminacaoPublica,Contribuição para o Custeio do Serviço de Iluminação Pública,48.83
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),ContribuicaoDeIluminacaoPublica,Contribuição para o Custeio do Serviço de Iluminação Pública,39280000.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitaPatrimonial,RECEITA PATRIMONIAL,77098563.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitaPatrimonial,RECEITA PATRIMONIAL,90231834.75
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitaPatrimonial,RECEITA PATRIMONIAL,12749453.08
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),ReceitaPatrimonial,RECEITA PATRIMONIAL,14.13
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitaPatrimonial,RECEITA PATRIMONIAL,90293048.41
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),ReceitaPatrimonial,RECEITA PATRIMONIAL,100.07
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitaPatrimonial,RECEITA PATRIMONIAL,-61213.66
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitasImobiliarias,Exploração do Patrimônio Imobiliário do Estado,1503400.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitasImobiliarias,Exploração do Patrimônio Imobiliário do Estado,5068812.83
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitasImobiliarias,Exploração do Patrimônio Imobiliário do Estado,447056.26
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),ReceitasImobiliarias,Exploração do Patrimônio Imobiliário do Estado,8.82
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitasImobiliarias,Exploração do Patrimônio Imobiliário do Estado,3568247.17
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),ReceitasImobiliarias,Exploração do Patrimônio Imobiliário do Estado,70.4
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitasImobiliarias,Exploração do Patrimônio Imobiliário do Estado,1500565.66
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitasDeValoresMobiliarios,Valores Mobiliários,75295163.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitasDeValoresMobiliarios,Valores Mobiliários,85156081.49
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitasDeValoresMobiliarios,Valores Mobiliários,12301726.66
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),ReceitasDeValoresMobiliarios,Valores Mobiliários,14.45
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitasDeValoresMobiliarios,Valores Mobiliários,86717190.65
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),ReceitasDeValoresMobiliarios,Valores Mobiliários,101.83
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitasDeValoresMobiliarios,Valores Mobiliários,-1561109.16
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ExploracaoDeRecursosNaturais,Exploração de Recursos Naturais,300000.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ExploracaoDeRecursosNaturais,Exploração de Recursos Naturais,6940.43
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),ExploracaoDeRecursosNaturais,Exploração de Recursos Naturais,670.16
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),ExploracaoDeRecursosNaturais,Exploração de Recursos Naturais,9.66
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ExploracaoDeRecursosNaturais,Exploração de Recursos Naturais,7610.59
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),ExploracaoDeRecursosNaturais,Exploração de Recursos Naturais,109.66
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),ExploracaoDeRecursosNaturais,Exploração de Recursos Naturais,-670.16
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitaDeServicos,RECEITA DE SERVIÇOS,4976500.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ServicosAdministrativosEComerciaisGerais,Serviços Administrativos e Comerciais Gerais,4976500.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,TransferenciasCorrentes,TRANSFERÊNCIAS CORRENTES,1254874246.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),TransferenciasCorrentes,TRANSFERÊNCIAS CORRENTES,2310424969.23
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),TransferenciasCorrentes,TRANSFERÊNCIAS CORRENTES,220064501.04
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),TransferenciasCorrentes,TRANSFERÊNCIAS CORRENTES,9.52
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),TransferenciasCorrentes,TRANSFERÊNCIAS CORRENTES,1161358372.47
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),TransferenciasCorrentes,TRANSFERÊNCIAS CORRENTES,50.27
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),TransferenciasCorrentes,TRANSFERÊNCIAS CORRENTES,1149066596.76
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,TransferenciasCorrentesDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,320724011.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),TransferenciasCorrentesDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,539166791.23
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),TransferenciasCorrentesDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,62292977.92
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),TransferenciasCorrentesDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,11.55
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),TransferenciasCorrentesDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,305479950.1
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),TransferenciasCorrentesDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,56.66
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),TransferenciasCorrentesDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,233686841.13
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,TransferenciasCorrentesDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,521751252.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),TransferenciasCorrentesDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,970789509.64
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),TransferenciasCorrentesDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,86383541.5
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),TransferenciasCorrentesDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,8.9
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),TransferenciasCorrentesDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,474725763.64
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),TransferenciasCorrentesDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,48.9
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),TransferenciasCorrentesDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,496063746.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,TransferenciasCorrentesDeInstituicoesPrivadas,Transferências de Instituições Privadas,500000.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),TransferenciasCorrentesDeInstituicoesPrivadas,Transferências de Instituições Privadas,1258949.89
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),TransferenciasCorrentesDeInstituicoesPrivadas,Transferências de Instituições Privadas,29421.9
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),TransferenciasCorrentesDeInstituicoesPrivadas,Transferências de Instituições Privadas,2.34
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),TransferenciasCorrentesDeInstituicoesPrivadas,Transferências de Instituições Privadas,1155038.45
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),TransferenciasCorrentesDeInstituicoesPrivadas,Transferências de Instituições Privadas,91.75
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),TransferenciasCorrentesDeInstituicoesPrivadas,Transferências de Instituições Privadas,103911.44
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,TransferenciasCorrentesDeOutrasInstituicoesPublicas,Transferências de Outras Instituições Públicas,411898983.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),TransferenciasCorrentesDeOutrasInstituicoesPublicas,Transferências de Outras Instituições Públicas,799209718.47
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),TransferenciasCorrentesDeOutrasInstituicoesPublicas,Transferências de Outras Instituições Públicas,71358559.72
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),TransferenciasCorrentesDeOutrasInstituicoesPublicas,Transferências de Outras Instituições Públicas,8.93
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),TransferenciasCorrentesDeOutrasInstituicoesPublicas,Transferências de Outras Instituições Públicas,379997620.28
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),TransferenciasCorrentesDeOutrasInstituicoesPublicas,Transferências de Outras Instituições Públicas,47.55
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),TransferenciasCorrentesDeOutrasInstituicoesPublicas,Transferências de Outras Instituições Públicas,419212098.19
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,OutrasReceitasCorrentes,OUTRAS RECEITAS CORRENTES,16890864.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),OutrasReceitasCorrentes,OUTRAS RECEITAS CORRENTES,35660664.07
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),OutrasReceitasCorrentes,OUTRAS RECEITAS CORRENTES,5338106.63
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),OutrasReceitasCorrentes,OUTRAS RECEITAS CORRENTES,14.97
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),OutrasReceitasCorrentes,OUTRAS RECEITAS CORRENTES,23536132.26
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),OutrasReceitasCorrentes,OUTRAS RECEITAS CORRENTES,66.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),OutrasReceitasCorrentes,OUTRAS RECEITAS CORRENTES,12124531.81
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,MultasEJurosDeMora,"Multas Administrativas, Contratuais e Judiciais",8823300.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),MultasEJurosDeMora,"Multas Administrativas, Contratuais e Judiciais",19738651.99
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),MultasEJurosDeMora,"Multas Administrativas, Contratuais e Judiciais",2183977.7
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),MultasEJurosDeMora,"Multas Administrativas, Contratuais e Judiciais",11.06
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),MultasEJurosDeMora,"Multas Administrativas, Contratuais e Judiciais",8291576.92
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),MultasEJurosDeMora,"Multas Administrativas, Contratuais e Judiciais",42.01
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),MultasEJurosDeMora,"Multas Administrativas, Contratuais e Judiciais",11447075.07
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,IndenizacoesERestituicoes,"Indenizações, Restituições e Ressarcimentos",4304150.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),IndenizacoesERestituicoes,"Indenizações, Restituições e Ressarcimentos",7646387.23
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),IndenizacoesERestituicoes,"Indenizações, Restituições e Ressarcimentos",1773778.32
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),IndenizacoesERestituicoes,"Indenizações, Restituições e Ressarcimentos",23.2
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),IndenizacoesERestituicoes,"Indenizações, Restituições e Ressarcimentos",7421597.37
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),IndenizacoesERestituicoes,"Indenizações, Restituições e Ressarcimentos",97.06
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),IndenizacoesERestituicoes,"Indenizações, Restituições e Ressarcimentos",224789.86
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitasCorrentesDiversas,Demais Receitas Correntes,3763414.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitasCorrentesDiversas,Demais Receitas Correntes,8275624.85
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitasCorrentesDiversas,Demais Receitas Correntes,1380350.61
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),ReceitasCorrentesDiversas,Demais Receitas Correntes,16.68
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitasCorrentesDiversas,Demais Receitas Correntes,7822957.97
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),ReceitasCorrentesDiversas,Demais Receitas Correntes,94.53
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitasCorrentesDiversas,Demais Receitas Correntes,452666.88
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitasDeCapital,RECEITAS DE CAPITAL,317026858.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitasDeCapital,RECEITAS DE CAPITAL,241639169.08
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitasDeCapital,RECEITAS DE CAPITAL,8202646.78
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),ReceitasDeCapital,RECEITAS DE CAPITAL,3.39
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitasDeCapital,RECEITAS DE CAPITAL,151472663.51
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),ReceitasDeCapital,RECEITAS DE CAPITAL,62.69
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitasDeCapital,RECEITAS DE CAPITAL,90166505.57
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitasDeOperacoesDeCredito,OPERAÇÕES DE CRÉDITO,65441386.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitasDeOperacoesDeCredito,OPERAÇÕES DE CRÉDITO,110906897.66
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitasDeOperacoesDeCredito,OPERAÇÕES DE CRÉDITO,50000000.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),ReceitasDeOperacoesDeCredito,OPERAÇÕES DE CRÉDITO,45.08
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitasDeOperacoesDeCredito,OPERAÇÕES DE CRÉDITO,60906897.66
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,OperacoesDeCreditoInternas,Operações de Crédito - Mercado Interno,65441386.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),OperacoesDeCreditoInternas,Operações de Crédito - Mercado Interno,110906897.66
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),OperacoesDeCreditoInternas,Operações de Crédito - Mercado Interno,50000000.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),OperacoesDeCreditoInternas,Operações de Crédito - Mercado Interno,45.08
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),OperacoesDeCreditoInternas,Operações de Crédito - Mercado Interno,60906897.66
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,AlienacaoDeBens,ALIENAÇÃO DE BENS,1528960.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),AlienacaoDeBens,ALIENAÇÃO DE BENS,2812813.2
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),AlienacaoDeBens,ALIENAÇÃO DE BENS,229065.7
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),AlienacaoDeBens,ALIENAÇÃO DE BENS,8.14
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),AlienacaoDeBens,ALIENAÇÃO DE BENS,2496146.56
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),AlienacaoDeBens,ALIENAÇÃO DE BENS,88.74
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),AlienacaoDeBens,ALIENAÇÃO DE BENS,316666.64
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,AlienacaoDeBensMoveis,Alienação de Bens Móveis,450000.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),AlienacaoDeBensMoveis,Alienação de Bens Móveis,316666.64
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),AlienacaoDeBensMoveis,Alienação de Bens Móveis,316666.64
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,AlienacaoDeBensImoveis,Alienação de Bens Imóveis,1078960.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),AlienacaoDeBensImoveis,Alienação de Bens Imóveis,2496146.56
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),AlienacaoDeBensImoveis,Alienação de Bens Imóveis,229065.7
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),AlienacaoDeBensImoveis,Alienação de Bens Imóveis,9.18
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),AlienacaoDeBensImoveis,Alienação de Bens Imóveis,2496146.56
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),AlienacaoDeBensImoveis,Alienação de Bens Imóveis,100.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,TransferenciasDeCapital,TRANSFERÊNCIAS DE CAPITAL,250056512.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),TransferenciasDeCapital,TRANSFERÊNCIAS DE CAPITAL,127919458.22
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),TransferenciasDeCapital,TRANSFERÊNCIAS DE CAPITAL,7973581.08
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),TransferenciasDeCapital,TRANSFERÊNCIAS DE CAPITAL,6.23
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),TransferenciasDeCapital,TRANSFERÊNCIAS DE CAPITAL,98976516.95
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),TransferenciasDeCapital,TRANSFERÊNCIAS DE CAPITAL,77.37
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),TransferenciasDeCapital,TRANSFERÊNCIAS DE CAPITAL,28942941.27
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,TransferenciasDeCapitalDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,95625687.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),TransferenciasDeCapitalDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,28087796.41
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),TransferenciasDeCapitalDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,2688869.02
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),TransferenciasDeCapitalDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,9.57
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),TransferenciasDeCapitalDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,10062159.92
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),TransferenciasDeCapitalDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,35.82
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),TransferenciasDeCapitalDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,18025636.49
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,TransferenciasDeCapitalDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,154430825.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),TransferenciasDeCapitalDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,99831661.81
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),TransferenciasDeCapitalDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,5284712.06
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),TransferenciasDeCapitalDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,5.29
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),TransferenciasDeCapitalDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,88914357.03
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),TransferenciasDeCapitalDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,89.06
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),TransferenciasDeCapitalDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,10917304.78
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitasIntraOrcamentariasTotal,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),42496024.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitasIntraOrcamentariasTotal,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),42494244.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitasIntraOrcamentariasTotal,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),9237258.16
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),ReceitasIntraOrcamentariasTotal,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),21.74
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitasIntraOrcamentariasTotal,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),34364027.41
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),ReceitasIntraOrcamentariasTotal,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),80.87
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitasIntraOrcamentariasTotal,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),8130216.59
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,SubtotalDasReceitas,SUBTOTAL DAS RECEITAS (III) = (I + II),2131461255.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),SubtotalDasReceitas,SUBTOTAL DAS RECEITAS (III) = (I + II),3472638541.83
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),SubtotalDasReceitas,SUBTOTAL DAS RECEITAS (III) = (I + II),332575346.51
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),SubtotalDasReceitas,SUBTOTAL DAS RECEITAS (III) = (I + II),9.58
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),SubtotalDasReceitas,SUBTOTAL DAS RECEITAS (III) = (I + II),1842159446.71
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),SubtotalDasReceitas,SUBTOTAL DAS RECEITAS (III) = (I + II),53.05
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),SubtotalDasReceitas,SUBTOTAL DAS RECEITAS (III) = (I + II),1630479095.12
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,TotalReceitas,TOTAL DAS RECEITAS (V) = (III + IV),2131461255.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),TotalReceitas,TOTAL DAS RECEITAS (V) = (III + IV),3472638541.83
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),TotalReceitas,TOTAL DAS RECEITAS (V) = (III + IV),332575346.51
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),TotalReceitas,TOTAL DAS RECEITAS (V) = (III + IV),9.58
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),TotalReceitas,TOTAL DAS RECEITAS (V) = (III + IV),1842159446.71
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),TotalReceitas,TOTAL DAS RECEITAS (V) = (III + IV),53.05
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),TotalReceitas,TOTAL DAS RECEITAS (V) = (III + IV),1630479095.12
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,TotalReceitasComDeficit,TOTAL COM DÉFICIT (VII) = (V + VI),2131461255.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),TotalReceitasComDeficit,TOTAL COM DÉFICIT (VII) = (V + VI),3472638541.83
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),TotalReceitasComDeficit,TOTAL COM DÉFICIT (VII) = (V + VI),332575346.51
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),TotalReceitasComDeficit,TOTAL COM DÉFICIT (VII) = (V + VI),9.58
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),TotalReceitasComDeficit,TOTAL COM DÉFICIT (VII) = (V + VI),1842159446.71
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),TotalReceitasComDeficit,TOTAL COM DÉFICIT (VII) = (V + VI),53.05
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),SaldoDeExerciciosAnterioresUtilizadosParaCreditosAdicionais,SALDOS DE EXERCÍCIOS ANTERIORES,144167388.43
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),SaldoDeExerciciosAnterioresUtilizadosParaCreditosAdicionais,SALDOS DE EXERCÍCIOS ANTERIORES,144167388.43
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),SuperavitFinanceiro,Superávit Financeiro Utilizado para Créditos Adicionais,144167388.43
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),SuperavitFinanceiro,Superávit Financeiro Utilizado para Créditos Adicionais,144167388.43
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),DespesasExcetoIntraOrcamentarias,DESPESAS (EXCETO INTRA-ORÇAMENTÁRIAS) (VIII),1987411481.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),DespesasExcetoIntraOrcamentarias,DESPESAS (EXCETO INTRA-ORÇAMENTÁRIAS) (VIII),2276995874.61
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,DespesasExcetoIntraOrcamentarias,DESPESAS (EXCETO INTRA-ORÇAMENTÁRIAS) (VIII),247010251.06
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),DespesasExcetoIntraOrcamentarias,DESPESAS (EXCETO INTRA-ORÇAMENTÁRIAS) (VIII),1769960393.6
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),DespesasExcetoIntraOrcamentarias,DESPESAS (EXCETO INTRA-ORÇAMENTÁRIAS) (VIII),507035481.01
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,DespesasExcetoIntraOrcamentarias,DESPESAS (EXCETO INTRA-ORÇAMENTÁRIAS) (VIII),346392488.45
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),DespesasExcetoIntraOrcamentarias,DESPESAS (EXCETO INTRA-ORÇAMENTÁRIAS) (VIII),1571404425.31
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),DespesasExcetoIntraOrcamentarias,DESPESAS (EXCETO INTRA-ORÇAMENTÁRIAS) (VIII),705591449.3
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),DespesasExcetoIntraOrcamentarias,DESPESAS (EXCETO INTRA-ORÇAMENTÁRIAS) (VIII),1564480286.62
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),DespesasCorrentes,DESPESAS CORRENTES,1435012296.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),DespesasCorrentes,DESPESAS CORRENTES,1646108539.68
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,DespesasCorrentes,DESPESAS CORRENTES,179442139.8
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),DespesasCorrentes,DESPESAS CORRENTES,1376284138.04
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),DespesasCorrentes,DESPESAS CORRENTES,269824401.64
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,DespesasCorrentes,DESPESAS CORRENTES,267310263.29
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),DespesasCorrentes,DESPESAS CORRENTES,1265695669.57
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),DespesasCorrentes,DESPESAS CORRENTES,380412870.11
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),DespesasCorrentes,DESPESAS CORRENTES,1259386894.01
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),PessoalEEncargosSociais,PESSOAL E ENCARGOS SOCIAIS,714278485.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),PessoalEEncargosSociais,PESSOAL E ENCARGOS SOCIAIS,764900930.41
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,PessoalEEncargosSociais,PESSOAL E ENCARGOS SOCIAIS,131610012.33
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),PessoalEEncargosSociais,PESSOAL E ENCARGOS SOCIAIS,586981094.49
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),PessoalEEncargosSociais,PESSOAL E ENCARGOS SOCIAIS,177919835.92
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,PessoalEEncargosSociais,PESSOAL E ENCARGOS SOCIAIS,132583133.72
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),PessoalEEncargosSociais,PESSOAL E ENCARGOS SOCIAIS,585455555.17
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),PessoalEEncargosSociais,PESSOAL E ENCARGOS SOCIAIS,179445375.24
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),PessoalEEncargosSociais,PESSOAL E ENCARGOS SOCIAIS,581493540.04
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),JurosEEncargosDaDivida,JUROS E ENCARGOS DA DÍVIDA,39707520.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),JurosEEncargosDaDivida,JUROS E ENCARGOS DA DÍVIDA,38337069.15
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),JurosEEncargosDaDivida,JUROS E ENCARGOS DA DÍVIDA,33806087.26
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),JurosEEncargosDaDivida,JUROS E ENCARGOS DA DÍVIDA,4530981.89
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,JurosEEncargosDaDivida,JUROS E ENCARGOS DA DÍVIDA,4961147.57
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),JurosEEncargosDaDivida,JUROS E ENCARGOS DA DÍVIDA,26883812.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),JurosEEncargosDaDivida,JUROS E ENCARGOS DA DÍVIDA,11453257.15
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),JurosEEncargosDaDivida,JUROS E ENCARGOS DA DÍVIDA,26883812.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),OutrasDespesasCorrentes,OUTRAS DESPESAS CORRENTES,681026291.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),OutrasDespesasCorrentes,OUTRAS DESPESAS CORRENTES,842870540.12
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,OutrasDespesasCorrentes,OUTRAS DESPESAS CORRENTES,47832127.47
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),OutrasDespesasCorrentes,OUTRAS DESPESAS CORRENTES,755496956.29
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),OutrasDespesasCorrentes,OUTRAS DESPESAS CORRENTES,87373583.83
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,OutrasDespesasCorrentes,OUTRAS DESPESAS CORRENTES,129765982.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),OutrasDespesasCorrentes,OUTRAS DESPESAS CORRENTES,653356302.4
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),OutrasDespesasCorrentes,OUTRAS DESPESAS CORRENTES,189514237.72
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),OutrasDespesasCorrentes,OUTRAS DESPESAS CORRENTES,651009541.97
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),DespesasDeCapital,DESPESAS DE CAPITAL,552099185.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),DespesasDeCapital,DESPESAS DE CAPITAL,630670503.51
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,DespesasDeCapital,DESPESAS DE CAPITAL,67568111.26
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),DespesasDeCapital,DESPESAS DE CAPITAL,393676255.56
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),DespesasDeCapital,DESPESAS DE CAPITAL,236994247.95
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,DespesasDeCapital,DESPESAS DE CAPITAL,79082225.16
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),DespesasDeCapital,DESPESAS DE CAPITAL,305708755.74
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),DespesasDeCapital,DESPESAS DE CAPITAL,324961747.77
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),DespesasDeCapital,DESPESAS DE CAPITAL,305093392.61
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),Investimentos,INVESTIMENTOS,507099185.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),Investimentos,INVESTIMENTOS,590500555.96
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,Investimentos,INVESTIMENTOS,67568111.26
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),Investimentos,INVESTIMENTOS,353871760.65
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),Investimentos,INVESTIMENTOS,236628795.31
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,Investimentos,INVESTIMENTOS,72506563.37
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),Investimentos,INVESTIMENTOS,272630926.58
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),Investimentos,INVESTIMENTOS,317869629.38
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,272015563.45
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),AmortizacaoDaDivida,AMORTIZAÇÃO DA DÍVIDA,45000000.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),AmortizacaoDaDivida,AMORTIZAÇÃO DA DÍVIDA,40169947.55
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),AmortizacaoDaDivida,AMORTIZAÇÃO DA DÍVIDA,39804494.91
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),AmortizacaoDaDivida,AMORTIZAÇÃO DA DÍVIDA,365452.64
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,AmortizacaoDaDivida,AMORTIZAÇÃO DA DÍVIDA,6575661.79
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),AmortizacaoDaDivida,AMORTIZAÇÃO DA DÍVIDA,33077829.16
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),AmortizacaoDaDivida,AMORTIZAÇÃO DA DÍVIDA,7092118.39
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),AmortizacaoDaDivida,AMORTIZAÇÃO DA DÍVIDA,33077829.16
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),ReservaDeContingencia,RESERVA DE CONTINGÊNCIA,300000.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),ReservaDeContingencia,RESERVA DE CONTINGÊNCIA,216831.42
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),ReservaDeContingencia,RESERVA DE CONTINGÊNCIA,216831.42
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),ReservaDeContingencia,RESERVA DE CONTINGÊNCIA,216831.42
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),DespesasIntraOrcamentariasTotal,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),42496024.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),DespesasIntraOrcamentariasTotal,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),47476932.86
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,DespesasIntraOrcamentariasTotal,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),6499513.22
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),DespesasIntraOrcamentariasTotal,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),35005963.29
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),DespesasIntraOrcamentariasTotal,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),12470969.57
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,DespesasIntraOrcamentariasTotal,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),6997206.47
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),DespesasIntraOrcamentariasTotal,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),34393143.4
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),DespesasIntraOrcamentariasTotal,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),13083789.46
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),DespesasIntraOrcamentariasTotal,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),34364027.41
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),SubtotalDasDespesas,SUBTOTAL DAS DESPESAS (X) = (VIII + IX),2029907505.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),SubtotalDasDespesas,SUBTOTAL DAS DESPESAS (X) = (VIII + IX),2324472807.47
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,SubtotalDasDespesas,SUBTOTAL DAS DESPESAS (X) = (VIII + IX),253509764.28
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),SubtotalDasDespesas,SUBTOTAL DAS DESPESAS (X) = (VIII + IX),1804966356.89
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),SubtotalDasDespesas,SUBTOTAL DAS DESPESAS (X) = (VIII + IX),519506450.58
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,SubtotalDasDespesas,SUBTOTAL DAS DESPESAS (X) = (VIII + IX),353389694.92
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),SubtotalDasDespesas,SUBTOTAL DAS DESPESAS (X) = (VIII + IX),1605797568.71
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),SubtotalDasDespesas,SUBTOTAL DAS DESPESAS (X) = (VIII + IX),718675238.76
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),SubtotalDasDespesas,SUBTOTAL DAS DESPESAS (X) = (VIII + IX),1598844314.03
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),TotalDespesas,TOTAL DAS DESPESAS (XII) = (X + XI),2029907505.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),TotalDespesas,TOTAL DAS DESPESAS (XII) = (X + XI),2324472807.47
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,TotalDespesas,TOTAL DAS DESPESAS (XII) = (X + XI),253509764.28
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),TotalDespesas,TOTAL DAS DESPESAS (XII) = (X + XI),1804966356.89
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),TotalDespesas,TOTAL DAS DESPESAS (XII) = (X + XI),519506450.58
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,TotalDespesas,TOTAL DAS DESPESAS (XII) = (X + XI),353389694.92
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),TotalDespesas,TOTAL DAS DESPESAS (XII) = (X + XI),1605797568.71
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),TotalDespesas,TOTAL DAS DESPESAS (XII) = (X + XI),718675238.76
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),TotalDespesas,TOTAL DAS DESPESAS (XII) = (X + XI),1598844314.03
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),Superavit,SUPERÁVIT (XIII),37193089.82
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),Superavit,SUPERÁVIT (XIII),236361878.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Superavit,SUPERÁVIT (XIII),243315132.68
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),TotalDespesasComSuperavit,TOTAL COM SUPERÁVIT (XIV) = (XII + XIII),2029907505.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),TotalDespesasComSuperavit,TOTAL COM SUPERÁVIT (XIV) = (XII + XIII),2324472807.47
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,TotalDespesasComSuperavit,TOTAL COM SUPERÁVIT (XIV) = (XII + XIII),253509764.28
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),TotalDespesasComSuperavit,TOTAL COM SUPERÁVIT (XIV) = (XII + XIII),1842159446.71
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,TotalDespesasComSuperavit,TOTAL COM SUPERÁVIT (XIV) = (XII + XIII),353389694.92
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),TotalDespesasComSuperavit,TOTAL COM SUPERÁVIT (XIV) = (XII + XIII),1842159446.71
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),TotalDespesasComSuperavit,TOTAL COM SUPERÁVIT (XIV) = (XII + XIII),1842159446.71
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),ReservaDoRPPS,RESERVA DO RPPS,101553750.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),ReservaDoRPPS,RESERVA DO RPPS,101553750.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),ReservaDoRPPS,RESERVA DO RPPS,101553750.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),ReservaDoRPPS,RESERVA DO RPPS,101553750.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitasIntraOrcamentarias,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),42496024.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitasIntraOrcamentarias,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),42494244.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitasIntraOrcamentarias,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),9237258.16
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),ReceitasIntraOrcamentarias,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),21.74
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitasIntraOrcamentarias,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),34364027.41
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),ReceitasIntraOrcamentarias,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),80.87
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitasIntraOrcamentarias,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),8130216.59
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitasCorrentesIntra,RECEITAS CORRENTES,42493354.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitasCorrentesIntra,RECEITAS CORRENTES,42493354.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitasCorrentesIntra,RECEITAS CORRENTES,9237258.16
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),ReceitasCorrentesIntra,RECEITAS CORRENTES,21.74
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitasCorrentesIntra,RECEITAS CORRENTES,34364027.41
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),ReceitasCorrentesIntra,RECEITAS CORRENTES,80.87
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitasCorrentesIntra,RECEITAS CORRENTES,8129326.59
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitaDeContribuicoesIntra,CONTRIBUIÇÕES,36493354.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitaDeContribuicoesIntra,CONTRIBUIÇÕES,36493354.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitaDeContribuicoesIntra,CONTRIBUIÇÕES,8763624.36
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),ReceitaDeContribuicoesIntra,CONTRIBUIÇÕES,24.01
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitaDeContribuicoesIntra,CONTRIBUIÇÕES,31995858.36
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),ReceitaDeContribuicoesIntra,CONTRIBUIÇÕES,87.68
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitaDeContribuicoesIntra,CONTRIBUIÇÕES,4497495.64
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ContribuicoesSociaisIntra,Contribuições Sociais,36493354.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ContribuicoesSociaisIntra,Contribuições Sociais,36493354.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),ContribuicoesSociaisIntra,Contribuições Sociais,8763624.36
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),ContribuicoesSociaisIntra,Contribuições Sociais,24.01
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ContribuicoesSociaisIntra,Contribuições Sociais,31995858.36
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),ContribuicoesSociaisIntra,Contribuições Sociais,87.68
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),ContribuicoesSociaisIntra,Contribuições Sociais,4497495.64
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,OutrasReceitasCorrentesIntra,OUTRAS RECEITAS CORRENTES,6000000.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),OutrasReceitasCorrentesIntra,OUTRAS RECEITAS CORRENTES,6000000.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),OutrasReceitasCorrentesIntra,OUTRAS RECEITAS CORRENTES,473633.8
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),OutrasReceitasCorrentesIntra,OUTRAS RECEITAS CORRENTES,7.89
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),OutrasReceitasCorrentesIntra,OUTRAS RECEITAS CORRENTES,2368169.05
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),OutrasReceitasCorrentesIntra,OUTRAS RECEITAS CORRENTES,39.47
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),OutrasReceitasCorrentesIntra,OUTRAS RECEITAS CORRENTES,3631830.95
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitasCorrentesDiversasIntra,Demais Receitas Correntes,6000000.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitasCorrentesDiversasIntra,Demais Receitas Correntes,6000000.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitasCorrentesDiversasIntra,Demais Receitas Correntes,473633.8
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (b/a),ReceitasCorrentesDiversasIntra,Demais Receitas Correntes,7.89
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitasCorrentesDiversasIntra,Demais Receitas Correntes,2368169.05
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,% (c/a),ReceitasCorrentesDiversasIntra,Demais Receitas Correntes,39.47
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitasCorrentesDiversasIntra,Demais Receitas Correntes,3631830.95
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitasDeCapitalIntra,RECEITAS DE CAPITAL,2670.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitasDeCapitalIntra,RECEITAS DE CAPITAL,890.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitasDeCapitalIntra,RECEITAS DE CAPITAL,890.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,AlienacaoDeBensIntra,ALIENAÇÃO DE BENS,2670.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),AlienacaoDeBensIntra,ALIENAÇÃO DE BENS,890.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),AlienacaoDeBensIntra,ALIENAÇÃO DE BENS,890.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,AlienacaoDeBensImoveisIntra,Alienação de Bens Imóveis,2670.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),AlienacaoDeBensImoveisIntra,Alienação de Bens Imóveis,890.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (a-c),AlienacaoDeBensImoveisIntra,Alienação de Bens Imóveis,890.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),DespesasIntraOrcamentarias,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),42496024.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),DespesasIntraOrcamentarias,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),47476932.86
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,DespesasIntraOrcamentarias,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),6499513.22
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),DespesasIntraOrcamentarias,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),35005963.29
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),DespesasIntraOrcamentarias,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),12470969.57
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,DespesasIntraOrcamentarias,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),6997206.47
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),DespesasIntraOrcamentarias,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),34393143.4
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),DespesasIntraOrcamentarias,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),13083789.46
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),DespesasIntraOrcamentarias,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),34364027.41
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),DespesasCorrentesIntra,DESPESAS CORRENTES,42493354.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),DespesasCorrentesIntra,DESPESAS CORRENTES,47475142.86
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,DespesasCorrentesIntra,DESPESAS CORRENTES,6499513.22
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),DespesasCorrentesIntra,DESPESAS CORRENTES,35005963.29
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),DespesasCorrentesIntra,DESPESAS CORRENTES,12469179.57
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,DespesasCorrentesIntra,DESPESAS CORRENTES,6997206.47
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),DespesasCorrentesIntra,DESPESAS CORRENTES,34393143.4
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),DespesasCorrentesIntra,DESPESAS CORRENTES,13081999.46
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),DespesasCorrentesIntra,DESPESAS CORRENTES,34364027.41
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),PessoalEEncargosSociaisIntra,PESSOAL E ENCARGOS SOCIAIS,36493354.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),PessoalEEncargosSociaisIntra,PESSOAL E ENCARGOS SOCIAIS,44403246.95
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,PessoalEEncargosSociaisIntra,PESSOAL E ENCARGOS SOCIAIS,6499513.22
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),PessoalEEncargosSociaisIntra,PESSOAL E ENCARGOS SOCIAIS,32038836.93
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),PessoalEEncargosSociaisIntra,PESSOAL E ENCARGOS SOCIAIS,12364410.02
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,PessoalEEncargosSociaisIntra,PESSOAL E ENCARGOS SOCIAIS,6523572.67
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),PessoalEEncargosSociaisIntra,PESSOAL E ENCARGOS SOCIAIS,32024974.35
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),PessoalEEncargosSociaisIntra,PESSOAL E ENCARGOS SOCIAIS,12378272.6
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),PessoalEEncargosSociaisIntra,PESSOAL E ENCARGOS SOCIAIS,31995858.36
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),OutrasDespesasCorrentesIntra,OUTRAS DESPESAS CORRENTES,6000000.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),OutrasDespesasCorrentesIntra,OUTRAS DESPESAS CORRENTES,3071895.91
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),OutrasDespesasCorrentesIntra,OUTRAS DESPESAS CORRENTES,2967126.36
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),OutrasDespesasCorrentesIntra,OUTRAS DESPESAS CORRENTES,104769.55
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,OutrasDespesasCorrentesIntra,OUTRAS DESPESAS CORRENTES,473633.8
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),OutrasDespesasCorrentesIntra,OUTRAS DESPESAS CORRENTES,2368169.05
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),OutrasDespesasCorrentesIntra,OUTRAS DESPESAS CORRENTES,703726.86
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),OutrasDespesasCorrentesIntra,OUTRAS DESPESAS CORRENTES,2368169.05
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),DespesasDeCapitalIntra,DESPESAS DE CAPITAL,2670.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),DespesasDeCapitalIntra,DESPESAS DE CAPITAL,1790.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),DespesasDeCapitalIntra,DESPESAS DE CAPITAL,1790.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),DespesasDeCapitalIntra,DESPESAS DE CAPITAL,1790.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),InvestimentosIntra,INVESTIMENTOS,1870.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),InvestimentosIntra,INVESTIMENTOS,1290.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),InvestimentosIntra,INVESTIMENTOS,1290.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),InvestimentosIntra,INVESTIMENTOS,1290.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),InversoesFinanceirasIntra,INVERSÕES FINANCEIRAS,800.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),InversoesFinanceirasIntra,INVERSÕES FINANCEIRAS,500.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),InversoesFinanceirasIntra,INVERSÕES FINANCEIRAS,500.0
+2026,RREO,5,B,Prefeitura Municipal de Cariacica - ES,3201308,ES,376200,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),InversoesFinanceirasIntra,INVERSÕES FINANCEIRAS,500.0
 2025,RREO,1,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,132915,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitasExcetoIntraOrcamentarias,RECEITAS (EXCETO INTRA-ORÇAMENTÁRIAS) (I),654729340.0
 2025,RREO,1,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,132915,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitasExcetoIntraOrcamentarias,RECEITAS (EXCETO INTRA-ORÇAMENTÁRIAS) (I),654729340.0
 2025,RREO,1,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,132915,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitasExcetoIntraOrcamentarias,RECEITAS (EXCETO INTRA-ORÇAMENTÁRIAS) (I),136897224.09
@@ -8479,6 +8926,396 @@ exercicio,demonstrativo,periodo,periodicidade,instituicao,cod_ibge,uf,populacao,
 2026,RREO,4,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),OutrasDespesasCorrentesIntra,OUTRAS DESPESAS CORRENTES,10955.0
 2026,RREO,4,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),OutrasDespesasCorrentesIntra,OUTRAS DESPESAS CORRENTES,10955.0
 2026,RREO,4,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),OutrasDespesasCorrentesIntra,OUTRAS DESPESAS CORRENTES,10955.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitasExcetoIntraOrcamentarias,RECEITAS (EXCETO INTRA-ORÇAMENTÁRIAS) (I),796295469.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitasExcetoIntraOrcamentarias,RECEITAS (EXCETO INTRA-ORÇAMENTÁRIAS) (I),796295469.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitasExcetoIntraOrcamentarias,RECEITAS (EXCETO INTRA-ORÇAMENTÁRIAS) (I),115286007.06
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),ReceitasExcetoIntraOrcamentarias,RECEITAS (EXCETO INTRA-ORÇAMENTÁRIAS) (I),14.48
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitasExcetoIntraOrcamentarias,RECEITAS (EXCETO INTRA-ORÇAMENTÁRIAS) (I),675040386.82
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),ReceitasExcetoIntraOrcamentarias,RECEITAS (EXCETO INTRA-ORÇAMENTÁRIAS) (I),84.77
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitasExcetoIntraOrcamentarias,RECEITAS (EXCETO INTRA-ORÇAMENTÁRIAS) (I),121255082.18
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitasCorrentes,RECEITAS CORRENTES,775085945.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitasCorrentes,RECEITAS CORRENTES,775085945.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitasCorrentes,RECEITAS CORRENTES,114956044.8
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),ReceitasCorrentes,RECEITAS CORRENTES,14.83
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitasCorrentes,RECEITAS CORRENTES,660127337.26
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),ReceitasCorrentes,RECEITAS CORRENTES,85.17
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitasCorrentes,RECEITAS CORRENTES,114958607.74
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitaTributaria,"IMPOSTOS, TAXAS E CONTRIBUIÇÕES DE MELHORIA",265665267.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitaTributaria,"IMPOSTOS, TAXAS E CONTRIBUIÇÕES DE MELHORIA",265665267.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitaTributaria,"IMPOSTOS, TAXAS E CONTRIBUIÇÕES DE MELHORIA",28250709.78
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),ReceitaTributaria,"IMPOSTOS, TAXAS E CONTRIBUIÇÕES DE MELHORIA",10.63
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitaTributaria,"IMPOSTOS, TAXAS E CONTRIBUIÇÕES DE MELHORIA",185155895.79
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),ReceitaTributaria,"IMPOSTOS, TAXAS E CONTRIBUIÇÕES DE MELHORIA",69.7
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitaTributaria,"IMPOSTOS, TAXAS E CONTRIBUIÇÕES DE MELHORIA",80509371.21
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,Impostos,Impostos,224118533.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),Impostos,Impostos,224118533.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),Impostos,Impostos,24590605.57
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),Impostos,Impostos,10.97
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),Impostos,Impostos,151063360.28
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),Impostos,Impostos,67.4
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),Impostos,Impostos,73055172.72
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,Taxas,Taxas,41546734.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),Taxas,Taxas,41546734.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),Taxas,Taxas,3660104.21
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),Taxas,Taxas,8.81
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),Taxas,Taxas,34092535.51
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),Taxas,Taxas,82.06
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),Taxas,Taxas,7454198.49
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitaDeContribuicoes,CONTRIBUIÇÕES,48169077.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitaDeContribuicoes,CONTRIBUIÇÕES,48169077.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitaDeContribuicoes,CONTRIBUIÇÕES,9108485.57
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),ReceitaDeContribuicoes,CONTRIBUIÇÕES,18.91
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitaDeContribuicoes,CONTRIBUIÇÕES,46379202.39
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),ReceitaDeContribuicoes,CONTRIBUIÇÕES,96.28
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitaDeContribuicoes,CONTRIBUIÇÕES,1789874.61
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ContribuicoesSociais,Contribuições Sociais,14538110.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ContribuicoesSociais,Contribuições Sociais,14538110.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),ContribuicoesSociais,Contribuições Sociais,2728366.77
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),ContribuicoesSociais,Contribuições Sociais,18.77
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ContribuicoesSociais,Contribuições Sociais,13131452.92
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),ContribuicoesSociais,Contribuições Sociais,90.32
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),ContribuicoesSociais,Contribuições Sociais,1406657.08
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ContribuicaoDeIluminacaoPublica,Contribuição para o Custeio do Serviço de Iluminação Pública,33630967.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ContribuicaoDeIluminacaoPublica,Contribuição para o Custeio do Serviço de Iluminação Pública,33630967.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),ContribuicaoDeIluminacaoPublica,Contribuição para o Custeio do Serviço de Iluminação Pública,6380118.8
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),ContribuicaoDeIluminacaoPublica,Contribuição para o Custeio do Serviço de Iluminação Pública,18.97
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ContribuicaoDeIluminacaoPublica,Contribuição para o Custeio do Serviço de Iluminação Pública,33247749.47
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),ContribuicaoDeIluminacaoPublica,Contribuição para o Custeio do Serviço de Iluminação Pública,98.86
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),ContribuicaoDeIluminacaoPublica,Contribuição para o Custeio do Serviço de Iluminação Pública,383217.53
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitaPatrimonial,RECEITA PATRIMONIAL,11165074.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitaPatrimonial,RECEITA PATRIMONIAL,11165074.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitaPatrimonial,RECEITA PATRIMONIAL,2533134.89
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),ReceitaPatrimonial,RECEITA PATRIMONIAL,22.69
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitaPatrimonial,RECEITA PATRIMONIAL,13697294.95
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),ReceitaPatrimonial,RECEITA PATRIMONIAL,122.68
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitaPatrimonial,RECEITA PATRIMONIAL,-2532220.95
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitasImobiliarias,Exploração do Patrimônio Imobiliário do Estado,180220.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitasImobiliarias,Exploração do Patrimônio Imobiliário do Estado,180220.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitasImobiliarias,Exploração do Patrimônio Imobiliário do Estado,184035.85
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),ReceitasImobiliarias,Exploração do Patrimônio Imobiliário do Estado,102.12
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitasImobiliarias,Exploração do Patrimônio Imobiliário do Estado,834568.86
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),ReceitasImobiliarias,Exploração do Patrimônio Imobiliário do Estado,463.08
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitasImobiliarias,Exploração do Patrimônio Imobiliário do Estado,-654348.86
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitasDeValoresMobiliarios,Valores Mobiliários,10840189.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitasDeValoresMobiliarios,Valores Mobiliários,10840189.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitasDeValoresMobiliarios,Valores Mobiliários,2349099.04
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),ReceitasDeValoresMobiliarios,Valores Mobiliários,21.67
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitasDeValoresMobiliarios,Valores Mobiliários,12862726.09
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),ReceitasDeValoresMobiliarios,Valores Mobiliários,118.66
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitasDeValoresMobiliarios,Valores Mobiliários,-2022537.09
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ExploracaoDoPatrimonioIntangivel,Exploração do Patrimônio Intangível,144665.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ExploracaoDoPatrimonioIntangivel,Exploração do Patrimônio Intangível,144665.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),ExploracaoDoPatrimonioIntangivel,Exploração do Patrimônio Intangível,144665.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,TransferenciasCorrentes,TRANSFERÊNCIAS CORRENTES,445083277.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),TransferenciasCorrentes,TRANSFERÊNCIAS CORRENTES,445083277.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),TransferenciasCorrentes,TRANSFERÊNCIAS CORRENTES,73773622.49
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),TransferenciasCorrentes,TRANSFERÊNCIAS CORRENTES,16.58
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),TransferenciasCorrentes,TRANSFERÊNCIAS CORRENTES,409774228.28
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),TransferenciasCorrentes,TRANSFERÊNCIAS CORRENTES,92.07
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),TransferenciasCorrentes,TRANSFERÊNCIAS CORRENTES,35309048.72
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,TransferenciasCorrentesDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,199436882.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),TransferenciasCorrentesDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,199436882.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),TransferenciasCorrentesDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,33009862.88
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),TransferenciasCorrentesDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,16.55
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),TransferenciasCorrentesDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,184689501.43
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),TransferenciasCorrentesDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,92.61
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),TransferenciasCorrentesDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,14747380.57
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,TransferenciasCorrentesDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,70831237.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),TransferenciasCorrentesDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,70831237.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),TransferenciasCorrentesDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,10482358.83
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),TransferenciasCorrentesDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,14.8
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),TransferenciasCorrentesDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,70487753.32
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),TransferenciasCorrentesDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,99.52
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),TransferenciasCorrentesDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,343483.68
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,TransferenciasCorrentesDeInstituicoesPrivadas,Transferências de Instituições Privadas,568482.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),TransferenciasCorrentesDeInstituicoesPrivadas,Transferências de Instituições Privadas,568482.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),TransferenciasCorrentesDeInstituicoesPrivadas,Transferências de Instituições Privadas,1678596.45
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),TransferenciasCorrentesDeInstituicoesPrivadas,Transferências de Instituições Privadas,295.28
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),TransferenciasCorrentesDeInstituicoesPrivadas,Transferências de Instituições Privadas,2218616.58
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),TransferenciasCorrentesDeInstituicoesPrivadas,Transferências de Instituições Privadas,390.27
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),TransferenciasCorrentesDeInstituicoesPrivadas,Transferências de Instituições Privadas,-1650134.58
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,TransferenciasCorrentesDeOutrasInstituicoesPublicas,Transferências de Outras Instituições Públicas,174246676.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),TransferenciasCorrentesDeOutrasInstituicoesPublicas,Transferências de Outras Instituições Públicas,174246676.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),TransferenciasCorrentesDeOutrasInstituicoesPublicas,Transferências de Outras Instituições Públicas,28602804.33
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),TransferenciasCorrentesDeOutrasInstituicoesPublicas,Transferências de Outras Instituições Públicas,16.42
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),TransferenciasCorrentesDeOutrasInstituicoesPublicas,Transferências de Outras Instituições Públicas,152378356.95
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),TransferenciasCorrentesDeOutrasInstituicoesPublicas,Transferências de Outras Instituições Públicas,87.45
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),TransferenciasCorrentesDeOutrasInstituicoesPublicas,Transferências de Outras Instituições Públicas,21868319.05
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,OutrasReceitasCorrentes,OUTRAS RECEITAS CORRENTES,5003250.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),OutrasReceitasCorrentes,OUTRAS RECEITAS CORRENTES,5003250.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),OutrasReceitasCorrentes,OUTRAS RECEITAS CORRENTES,1290092.07
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),OutrasReceitasCorrentes,OUTRAS RECEITAS CORRENTES,25.79
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),OutrasReceitasCorrentes,OUTRAS RECEITAS CORRENTES,5120715.85
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),OutrasReceitasCorrentes,OUTRAS RECEITAS CORRENTES,102.35
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),OutrasReceitasCorrentes,OUTRAS RECEITAS CORRENTES,-117465.85
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,MultasEJurosDeMora,"Multas Administrativas, Contratuais e Judiciais",397471.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),MultasEJurosDeMora,"Multas Administrativas, Contratuais e Judiciais",397471.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),MultasEJurosDeMora,"Multas Administrativas, Contratuais e Judiciais",305109.73
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),MultasEJurosDeMora,"Multas Administrativas, Contratuais e Judiciais",76.76
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),MultasEJurosDeMora,"Multas Administrativas, Contratuais e Judiciais",1679372.52
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),MultasEJurosDeMora,"Multas Administrativas, Contratuais e Judiciais",422.51
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),MultasEJurosDeMora,"Multas Administrativas, Contratuais e Judiciais",-1281901.52
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,IndenizacoesERestituicoes,"Indenizações, Restituições e Ressarcimentos",535903.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),IndenizacoesERestituicoes,"Indenizações, Restituições e Ressarcimentos",535903.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),IndenizacoesERestituicoes,"Indenizações, Restituições e Ressarcimentos",854169.63
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),IndenizacoesERestituicoes,"Indenizações, Restituições e Ressarcimentos",159.39
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),IndenizacoesERestituicoes,"Indenizações, Restituições e Ressarcimentos",1562840.41
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),IndenizacoesERestituicoes,"Indenizações, Restituições e Ressarcimentos",291.63
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),IndenizacoesERestituicoes,"Indenizações, Restituições e Ressarcimentos",-1026937.41
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitasCorrentesDiversas,Demais Receitas Correntes,4069876.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitasCorrentesDiversas,Demais Receitas Correntes,4069876.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitasCorrentesDiversas,Demais Receitas Correntes,130812.71
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),ReceitasCorrentesDiversas,Demais Receitas Correntes,3.21
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitasCorrentesDiversas,Demais Receitas Correntes,1878502.92
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),ReceitasCorrentesDiversas,Demais Receitas Correntes,46.16
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitasCorrentesDiversas,Demais Receitas Correntes,2191373.08
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitasDeCapital,RECEITAS DE CAPITAL,21209524.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitasDeCapital,RECEITAS DE CAPITAL,21209524.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitasDeCapital,RECEITAS DE CAPITAL,329962.26
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),ReceitasDeCapital,RECEITAS DE CAPITAL,1.56
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitasDeCapital,RECEITAS DE CAPITAL,14913049.56
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),ReceitasDeCapital,RECEITAS DE CAPITAL,70.31
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitasDeCapital,RECEITAS DE CAPITAL,6296474.44
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,AlienacaoDeBens,ALIENAÇÃO DE BENS,254108.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),AlienacaoDeBens,ALIENAÇÃO DE BENS,254108.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),AlienacaoDeBens,ALIENAÇÃO DE BENS,254108.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,AlienacaoDeBensMoveis,Alienação de Bens Móveis,254108.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),AlienacaoDeBensMoveis,Alienação de Bens Móveis,254108.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),AlienacaoDeBensMoveis,Alienação de Bens Móveis,254108.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,TransferenciasDeCapital,TRANSFERÊNCIAS DE CAPITAL,20955416.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),TransferenciasDeCapital,TRANSFERÊNCIAS DE CAPITAL,20955416.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),TransferenciasDeCapital,TRANSFERÊNCIAS DE CAPITAL,329962.26
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),TransferenciasDeCapital,TRANSFERÊNCIAS DE CAPITAL,1.57
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),TransferenciasDeCapital,TRANSFERÊNCIAS DE CAPITAL,14913049.56
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),TransferenciasDeCapital,TRANSFERÊNCIAS DE CAPITAL,71.17
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),TransferenciasDeCapital,TRANSFERÊNCIAS DE CAPITAL,6042366.44
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,TransferenciasDeCapitalDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,5430521.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),TransferenciasDeCapitalDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,5430521.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),TransferenciasDeCapitalDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,7799886.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),TransferenciasDeCapitalDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,143.63
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),TransferenciasDeCapitalDaUniaoEDeSuasEntidades,Transferências da União e de suas Entidades,-2369365.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,TransferenciasDeCapitalDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,15519000.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),TransferenciasDeCapitalDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,15519000.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),TransferenciasDeCapitalDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,329962.26
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),TransferenciasDeCapitalDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,2.13
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),TransferenciasDeCapitalDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,7113163.56
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),TransferenciasDeCapitalDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,45.84
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),TransferenciasDeCapitalDosEstadosEDoDistritoFederalEDeSuasEntidades,Transferências dos Estados e do Distrito Federal e de suas Entidades,8405836.44
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,DemaisTransferenciasDeCapital,Demais Transferências de Capital,5895.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),DemaisTransferenciasDeCapital,Demais Transferências de Capital,5895.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),DemaisTransferenciasDeCapital,Demais Transferências de Capital,5895.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitasIntraOrcamentariasTotal,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),18473351.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitasIntraOrcamentariasTotal,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),18473351.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitasIntraOrcamentariasTotal,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),2940185.5
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),ReceitasIntraOrcamentariasTotal,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),15.92
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitasIntraOrcamentariasTotal,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),14220456.59
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),ReceitasIntraOrcamentariasTotal,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),76.98
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitasIntraOrcamentariasTotal,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),4252894.41
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,SubtotalDasReceitas,SUBTOTAL DAS RECEITAS (III) = (I + II),814768820.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),SubtotalDasReceitas,SUBTOTAL DAS RECEITAS (III) = (I + II),814768820.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),SubtotalDasReceitas,SUBTOTAL DAS RECEITAS (III) = (I + II),118226192.56
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),SubtotalDasReceitas,SUBTOTAL DAS RECEITAS (III) = (I + II),14.51
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),SubtotalDasReceitas,SUBTOTAL DAS RECEITAS (III) = (I + II),689260843.41
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),SubtotalDasReceitas,SUBTOTAL DAS RECEITAS (III) = (I + II),84.6
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),SubtotalDasReceitas,SUBTOTAL DAS RECEITAS (III) = (I + II),125507976.59
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,TotalReceitas,TOTAL DAS RECEITAS (V) = (III + IV),814768820.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),TotalReceitas,TOTAL DAS RECEITAS (V) = (III + IV),814768820.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),TotalReceitas,TOTAL DAS RECEITAS (V) = (III + IV),118226192.56
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),TotalReceitas,TOTAL DAS RECEITAS (V) = (III + IV),14.51
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),TotalReceitas,TOTAL DAS RECEITAS (V) = (III + IV),689260843.41
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),TotalReceitas,TOTAL DAS RECEITAS (V) = (III + IV),84.6
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),TotalReceitas,TOTAL DAS RECEITAS (V) = (III + IV),125507976.59
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,TotalReceitasComDeficit,TOTAL COM DÉFICIT (VII) = (V + VI),814768820.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),TotalReceitasComDeficit,TOTAL COM DÉFICIT (VII) = (V + VI),814768820.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),TotalReceitasComDeficit,TOTAL COM DÉFICIT (VII) = (V + VI),118226192.56
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),TotalReceitasComDeficit,TOTAL COM DÉFICIT (VII) = (V + VI),14.51
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),TotalReceitasComDeficit,TOTAL COM DÉFICIT (VII) = (V + VI),689260843.41
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),TotalReceitasComDeficit,TOTAL COM DÉFICIT (VII) = (V + VI),84.6
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),SaldoDeExerciciosAnterioresUtilizadosParaCreditosAdicionais,SALDOS DE EXERCÍCIOS ANTERIORES,58531761.21
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),SaldoDeExerciciosAnterioresUtilizadosParaCreditosAdicionais,SALDOS DE EXERCÍCIOS ANTERIORES,58531761.21
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),SuperavitFinanceiro,Superávit Financeiro Utilizado para Créditos Adicionais,58531761.21
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),SuperavitFinanceiro,Superávit Financeiro Utilizado para Créditos Adicionais,58531761.21
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),DespesasExcetoIntraOrcamentarias,DESPESAS (EXCETO INTRA-ORÇAMENTÁRIAS) (VIII),781295469.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),DespesasExcetoIntraOrcamentarias,DESPESAS (EXCETO INTRA-ORÇAMENTÁRIAS) (VIII),872668278.21
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,DespesasExcetoIntraOrcamentarias,DESPESAS (EXCETO INTRA-ORÇAMENTÁRIAS) (VIII),114294276.34
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),DespesasExcetoIntraOrcamentarias,DESPESAS (EXCETO INTRA-ORÇAMENTÁRIAS) (VIII),716713396.92
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),DespesasExcetoIntraOrcamentarias,DESPESAS (EXCETO INTRA-ORÇAMENTÁRIAS) (VIII),155954881.29
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,DespesasExcetoIntraOrcamentarias,DESPESAS (EXCETO INTRA-ORÇAMENTÁRIAS) (VIII),139155765.59
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),DespesasExcetoIntraOrcamentarias,DESPESAS (EXCETO INTRA-ORÇAMENTÁRIAS) (VIII),654275094.77
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),DespesasExcetoIntraOrcamentarias,DESPESAS (EXCETO INTRA-ORÇAMENTÁRIAS) (VIII),218393183.44
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),DespesasExcetoIntraOrcamentarias,DESPESAS (EXCETO INTRA-ORÇAMENTÁRIAS) (VIII),624544078.72
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),DespesasCorrentes,DESPESAS CORRENTES,691638711.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),DespesasCorrentes,DESPESAS CORRENTES,783309274.7
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,DespesasCorrentes,DESPESAS CORRENTES,106095718.62
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),DespesasCorrentes,DESPESAS CORRENTES,664394586.49
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),DespesasCorrentes,DESPESAS CORRENTES,118914688.21
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,DespesasCorrentes,DESPESAS CORRENTES,128975316.38
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),DespesasCorrentes,DESPESAS CORRENTES,608853823.38
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),DespesasCorrentes,DESPESAS CORRENTES,174455451.32
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),DespesasCorrentes,DESPESAS CORRENTES,583433358.31
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),PessoalEEncargosSociais,PESSOAL E ENCARGOS SOCIAIS,365006248.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),PessoalEEncargosSociais,PESSOAL E ENCARGOS SOCIAIS,369102185.4
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,PessoalEEncargosSociais,PESSOAL E ENCARGOS SOCIAIS,63823489.91
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),PessoalEEncargosSociais,PESSOAL E ENCARGOS SOCIAIS,305661366.1
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),PessoalEEncargosSociais,PESSOAL E ENCARGOS SOCIAIS,63440819.3
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,PessoalEEncargosSociais,PESSOAL E ENCARGOS SOCIAIS,63280203.46
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),PessoalEEncargosSociais,PESSOAL E ENCARGOS SOCIAIS,305110392.65
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),PessoalEEncargosSociais,PESSOAL E ENCARGOS SOCIAIS,63991792.75
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),PessoalEEncargosSociais,PESSOAL E ENCARGOS SOCIAIS,302809306.62
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),JurosEEncargosDaDivida,JUROS E ENCARGOS DA DÍVIDA,4961846.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),JurosEEncargosDaDivida,JUROS E ENCARGOS DA DÍVIDA,6952346.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,JurosEEncargosDaDivida,JUROS E ENCARGOS DA DÍVIDA,1313709.56
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),JurosEEncargosDaDivida,JUROS E ENCARGOS DA DÍVIDA,6855494.03
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),JurosEEncargosDaDivida,JUROS E ENCARGOS DA DÍVIDA,96851.97
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,JurosEEncargosDaDivida,JUROS E ENCARGOS DA DÍVIDA,1312928.67
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),JurosEEncargosDaDivida,JUROS E ENCARGOS DA DÍVIDA,6703449.38
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),JurosEEncargosDaDivida,JUROS E ENCARGOS DA DÍVIDA,248896.62
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),JurosEEncargosDaDivida,JUROS E ENCARGOS DA DÍVIDA,6463940.89
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),OutrasDespesasCorrentes,OUTRAS DESPESAS CORRENTES,321670617.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),OutrasDespesasCorrentes,OUTRAS DESPESAS CORRENTES,407254743.3
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,OutrasDespesasCorrentes,OUTRAS DESPESAS CORRENTES,40958519.15
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),OutrasDespesasCorrentes,OUTRAS DESPESAS CORRENTES,351877726.36
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),OutrasDespesasCorrentes,OUTRAS DESPESAS CORRENTES,55377016.94
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,OutrasDespesasCorrentes,OUTRAS DESPESAS CORRENTES,64382184.25
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),OutrasDespesasCorrentes,OUTRAS DESPESAS CORRENTES,297039981.35
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),OutrasDespesasCorrentes,OUTRAS DESPESAS CORRENTES,110214761.95
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),OutrasDespesasCorrentes,OUTRAS DESPESAS CORRENTES,274160110.8
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),DespesasDeCapital,DESPESAS DE CAPITAL,82617293.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),DespesasDeCapital,DESPESAS DE CAPITAL,88307201.51
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,DespesasDeCapital,DESPESAS DE CAPITAL,8198557.72
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),DespesasDeCapital,DESPESAS DE CAPITAL,52318810.43
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),DespesasDeCapital,DESPESAS DE CAPITAL,35988391.08
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,DespesasDeCapital,DESPESAS DE CAPITAL,10180449.21
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),DespesasDeCapital,DESPESAS DE CAPITAL,45421271.39
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),DespesasDeCapital,DESPESAS DE CAPITAL,42885930.12
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),DespesasDeCapital,DESPESAS DE CAPITAL,41110720.41
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),Investimentos,INVESTIMENTOS,75066942.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),Investimentos,INVESTIMENTOS,78753550.51
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,Investimentos,INVESTIMENTOS,6667803.64
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),Investimentos,INVESTIMENTOS,43142179.95
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),Investimentos,INVESTIMENTOS,35611370.56
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,Investimentos,INVESTIMENTOS,8434695.13
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),Investimentos,INVESTIMENTOS,37650474.29
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),Investimentos,INVESTIMENTOS,41103076.22
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,33588281.21
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),AmortizacaoDaDivida,AMORTIZAÇÃO DA DÍVIDA,7550351.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),AmortizacaoDaDivida,AMORTIZAÇÃO DA DÍVIDA,9553651.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,AmortizacaoDaDivida,AMORTIZAÇÃO DA DÍVIDA,1530754.08
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),AmortizacaoDaDivida,AMORTIZAÇÃO DA DÍVIDA,9176630.48
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),AmortizacaoDaDivida,AMORTIZAÇÃO DA DÍVIDA,377020.52
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,AmortizacaoDaDivida,AMORTIZAÇÃO DA DÍVIDA,1745754.08
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),AmortizacaoDaDivida,AMORTIZAÇÃO DA DÍVIDA,7770797.1
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),AmortizacaoDaDivida,AMORTIZAÇÃO DA DÍVIDA,1782853.9
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),AmortizacaoDaDivida,AMORTIZAÇÃO DA DÍVIDA,7522439.2
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),ReservaDeContingencia,RESERVA DE CONTINGÊNCIA,7039465.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),ReservaDeContingencia,RESERVA DE CONTINGÊNCIA,1051802.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),ReservaDeContingencia,RESERVA DE CONTINGÊNCIA,1051802.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),ReservaDeContingencia,RESERVA DE CONTINGÊNCIA,1051802.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),DespesasIntraOrcamentariasTotal,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),18473351.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),DespesasIntraOrcamentariasTotal,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),17959006.88
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,DespesasIntraOrcamentariasTotal,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),2947366.17
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),DespesasIntraOrcamentariasTotal,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),14135599.23
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),DespesasIntraOrcamentariasTotal,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),3823407.65
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,DespesasIntraOrcamentariasTotal,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),2947366.17
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),DespesasIntraOrcamentariasTotal,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),14135599.23
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),DespesasIntraOrcamentariasTotal,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),3823407.65
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),DespesasIntraOrcamentariasTotal,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),12688071.76
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),SubtotalDasDespesas,SUBTOTAL DAS DESPESAS (X) = (VIII + IX),799768820.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),SubtotalDasDespesas,SUBTOTAL DAS DESPESAS (X) = (VIII + IX),890627285.09
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,SubtotalDasDespesas,SUBTOTAL DAS DESPESAS (X) = (VIII + IX),117241642.51
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),SubtotalDasDespesas,SUBTOTAL DAS DESPESAS (X) = (VIII + IX),730848996.15
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),SubtotalDasDespesas,SUBTOTAL DAS DESPESAS (X) = (VIII + IX),159778288.94
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,SubtotalDasDespesas,SUBTOTAL DAS DESPESAS (X) = (VIII + IX),142103131.76
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),SubtotalDasDespesas,SUBTOTAL DAS DESPESAS (X) = (VIII + IX),668410694.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),SubtotalDasDespesas,SUBTOTAL DAS DESPESAS (X) = (VIII + IX),222216591.09
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),SubtotalDasDespesas,SUBTOTAL DAS DESPESAS (X) = (VIII + IX),637232150.48
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),TotalDespesas,TOTAL DAS DESPESAS (XII) = (X + XI),799768820.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),TotalDespesas,TOTAL DAS DESPESAS (XII) = (X + XI),890627285.09
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,TotalDespesas,TOTAL DAS DESPESAS (XII) = (X + XI),117241642.51
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),TotalDespesas,TOTAL DAS DESPESAS (XII) = (X + XI),730848996.15
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),TotalDespesas,TOTAL DAS DESPESAS (XII) = (X + XI),159778288.94
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,TotalDespesas,TOTAL DAS DESPESAS (XII) = (X + XI),142103131.76
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),TotalDespesas,TOTAL DAS DESPESAS (XII) = (X + XI),668410694.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),TotalDespesas,TOTAL DAS DESPESAS (XII) = (X + XI),222216591.09
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),TotalDespesas,TOTAL DAS DESPESAS (XII) = (X + XI),637232150.48
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),Superavit,SUPERÁVIT (XIII),20850149.41
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Superavit,SUPERÁVIT (XIII),52028692.93
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),TotalDespesasComSuperavit,TOTAL COM SUPERÁVIT (XIV) = (XII + XIII),799768820.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),TotalDespesasComSuperavit,TOTAL COM SUPERÁVIT (XIV) = (XII + XIII),890627285.09
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,TotalDespesasComSuperavit,TOTAL COM SUPERÁVIT (XIV) = (XII + XIII),117241642.51
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),TotalDespesasComSuperavit,TOTAL COM SUPERÁVIT (XIV) = (XII + XIII),730848996.15
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,TotalDespesasComSuperavit,TOTAL COM SUPERÁVIT (XIV) = (XII + XIII),142103131.76
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),TotalDespesasComSuperavit,TOTAL COM SUPERÁVIT (XIV) = (XII + XIII),689260843.41
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),TotalDespesasComSuperavit,TOTAL COM SUPERÁVIT (XIV) = (XII + XIII),689260843.41
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),ReservaDoRPPS,RESERVA DO RPPS,15000000.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),ReservaDoRPPS,RESERVA DO RPPS,5080000.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),ReservaDoRPPS,RESERVA DO RPPS,5080000.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),ReservaDoRPPS,RESERVA DO RPPS,5080000.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitasIntraOrcamentarias,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),18473351.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitasIntraOrcamentarias,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),18473351.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitasIntraOrcamentarias,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),2940185.5
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),ReceitasIntraOrcamentarias,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),15.92
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitasIntraOrcamentarias,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),14220456.59
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),ReceitasIntraOrcamentarias,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),76.98
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitasIntraOrcamentarias,RECEITAS (INTRA-ORÇAMENTÁRIAS) (II),4252894.41
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitasCorrentesIntra,RECEITAS CORRENTES,18473351.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitasCorrentesIntra,RECEITAS CORRENTES,18473351.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitasCorrentesIntra,RECEITAS CORRENTES,2940185.5
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),ReceitasCorrentesIntra,RECEITAS CORRENTES,15.92
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitasCorrentesIntra,RECEITAS CORRENTES,14220456.59
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),ReceitasCorrentesIntra,RECEITAS CORRENTES,76.98
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitasCorrentesIntra,RECEITAS CORRENTES,4252894.41
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitaDeContribuicoesIntra,CONTRIBUIÇÕES,14927632.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitaDeContribuicoesIntra,CONTRIBUIÇÕES,14927632.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitaDeContribuicoesIntra,CONTRIBUIÇÕES,2940185.5
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),ReceitaDeContribuicoesIntra,CONTRIBUIÇÕES,19.7
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ReceitaDeContribuicoesIntra,CONTRIBUIÇÕES,14220456.59
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),ReceitaDeContribuicoesIntra,CONTRIBUIÇÕES,95.26
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitaDeContribuicoesIntra,CONTRIBUIÇÕES,707175.41
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ContribuicoesSociaisIntra,Contribuições Sociais,14927632.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ContribuicoesSociaisIntra,Contribuições Sociais,14927632.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,No Bimestre (b),ContribuicoesSociaisIntra,Contribuições Sociais,2940185.5
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (b/a),ContribuicoesSociaisIntra,Contribuições Sociais,19.7
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,Até o Bimestre (c),ContribuicoesSociaisIntra,Contribuições Sociais,14220456.59
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,% (c/a),ContribuicoesSociaisIntra,Contribuições Sociais,95.26
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),ContribuicoesSociaisIntra,Contribuições Sociais,707175.41
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitaDeServicosIntra,RECEITA DE SERVIÇOS,3545719.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitaDeServicosIntra,RECEITA DE SERVIÇOS,3545719.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),ReceitaDeServicosIntra,RECEITA DE SERVIÇOS,3545719.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ServicosAdministrativosEComerciaisGeraisIntra,Serviços Administrativos e Comerciais Gerais,3545719.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ServicosAdministrativosEComerciaisGeraisIntra,Serviços Administrativos e Comerciais Gerais,3545719.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (a-c),ServicosAdministrativosEComerciaisGeraisIntra,Serviços Administrativos e Comerciais Gerais,3545719.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),DespesasIntraOrcamentarias,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),18473351.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),DespesasIntraOrcamentarias,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),17959006.88
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,DespesasIntraOrcamentarias,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),2947366.17
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),DespesasIntraOrcamentarias,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),14135599.23
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),DespesasIntraOrcamentarias,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),3823407.65
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,DespesasIntraOrcamentarias,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),2947366.17
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),DespesasIntraOrcamentarias,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),14135599.23
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),DespesasIntraOrcamentarias,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),3823407.65
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),DespesasIntraOrcamentarias,DESPESAS (INTRA-ORÇAMENTÁRIAS) (IX),12688071.76
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),DespesasCorrentesIntra,DESPESAS CORRENTES,18473351.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),DespesasCorrentesIntra,DESPESAS CORRENTES,17959006.88
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,DespesasCorrentesIntra,DESPESAS CORRENTES,2947366.17
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),DespesasCorrentesIntra,DESPESAS CORRENTES,14135599.23
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),DespesasCorrentesIntra,DESPESAS CORRENTES,3823407.65
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,DespesasCorrentesIntra,DESPESAS CORRENTES,2947366.17
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),DespesasCorrentesIntra,DESPESAS CORRENTES,14135599.23
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),DespesasCorrentesIntra,DESPESAS CORRENTES,3823407.65
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),DespesasCorrentesIntra,DESPESAS CORRENTES,12688071.76
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),PessoalEEncargosSociaisIntra,PESSOAL E ENCARGOS SOCIAIS,18462396.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),PessoalEEncargosSociaisIntra,PESSOAL E ENCARGOS SOCIAIS,17948051.88
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS NO BIMESTRE,PessoalEEncargosSociaisIntra,PESSOAL E ENCARGOS SOCIAIS,2947366.17
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS EMPENHADAS ATÉ O BIMESTRE (f),PessoalEEncargosSociaisIntra,PESSOAL E ENCARGOS SOCIAIS,14135599.23
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),PessoalEEncargosSociaisIntra,PESSOAL E ENCARGOS SOCIAIS,3812452.65
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS NO BIMESTRE,PessoalEEncargosSociaisIntra,PESSOAL E ENCARGOS SOCIAIS,2947366.17
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h),PessoalEEncargosSociaisIntra,PESSOAL E ENCARGOS SOCIAIS,14135599.23
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),PessoalEEncargosSociaisIntra,PESSOAL E ENCARGOS SOCIAIS,3812452.65
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),PessoalEEncargosSociaisIntra,PESSOAL E ENCARGOS SOCIAIS,12688071.76
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO INICIAL (d),OutrasDespesasCorrentesIntra,OUTRAS DESPESAS CORRENTES,10955.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,DOTAÇÃO ATUALIZADA (e),OutrasDespesasCorrentesIntra,OUTRAS DESPESAS CORRENTES,10955.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (g) = (e-f),OutrasDespesasCorrentesIntra,OUTRAS DESPESAS CORRENTES,10955.0
+2026,RREO,5,B,Prefeitura Municipal de Guarapari - ES,3202405,ES,136311,RREO-Anexo 01,M,Padrão,SALDO (i) = (e-h),OutrasDespesasCorrentesIntra,OUTRAS DESPESAS CORRENTES,10955.0
 2025,RREO,1,B,Prefeitura Municipal de Serra - ES,3205002,ES,546405,RREO-Anexo 01,M,Padrão,PREVISÃO INICIAL,ReceitasExcetoIntraOrcamentarias,RECEITAS (EXCETO INTRA-ORÇAMENTÁRIAS) (I),3079547194.0
 2025,RREO,1,B,Prefeitura Municipal de Serra - ES,3205002,ES,546405,RREO-Anexo 01,M,Padrão,PREVISÃO ATUALIZADA (a),ReceitasExcetoIntraOrcamentarias,RECEITAS (EXCETO INTRA-ORÇAMENTÁRIAS) (I),3079547194.0
 2025,RREO,1,B,Prefeitura Municipal de Serra - ES,3205002,ES,546405,RREO-Anexo 01,M,Padrão,No Bimestre (b),ReceitasExcetoIntraOrcamentarias,RECEITAS (EXCETO INTRA-ORÇAMENTÁRIAS) (I),381507201.43
